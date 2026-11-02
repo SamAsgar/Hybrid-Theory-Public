@@ -96,6 +96,6 @@ Een belangrijke beperking is dat het onderzoek plaatsvindt binnen een gecontrole
 
 ## Publicatiestatus
 
-**GitHub-zichtbaarheid: PRIVATE (laatst gecontroleerd 02-11-2026; eerder die dag PUBLIC).** De publicatiegates van het **APPROVED** [publicatiebeleid](governance/PUBLICATIEBELEID.md) staan nog **OPEN**: Git-geschiedenis, secrets-/identifierscan, pixelredactie en ontbrekende bestanden. **Geen publicatie-PASS en geen EXCEPTION**. Zie [migratiestatus](MIGRATIE_STATUS.md) en [statuslegenda](governance/STATUSLEGENDA.md).
+**GitHub-repository: PUBLIC. Deze repository bevat de openbare documentatie, onderzoeksconcepten en technische bewijsvoering van Hybrid-Theory.
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.
