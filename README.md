@@ -96,6 +96,6 @@ Een belangrijke beperking is dat het onderzoek plaatsvindt binnen een gecontrole
 
 ## Publicatiestatus
 
-**GitHub-repository: PUBLIC. Deze repository bevat de openbare documentatie, onderzoeksconcepten en technische bewijsvoering van Hybrid-Theory.
+GitHub-repository: PUBLIC. Deze repository bevat de openbare documentatie, onderzoeksconcepten en technische bewijsvoering van Hybrid-Theory.
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.
