@@ -82,7 +82,7 @@ De vergelijkingen beoordelen onder meer de herkenning van kwetsbaarheden, kritie
 
 ## 7. Future research and limitations
 
-Het langetermijndoel is om meer dan 100 technische labs uit te voeren als basis voor verdere methodiekontwikkeling en mogelijk toekomstig academisch onderzoek. De praktische labuitvoering behoudt daarbij prioriteit.
+Het langetermijndoel is om ongeveer 30 (plus) relevante technische labs uit te voeren als basis voor verdere methodiekontwikkeling en mogelijk toekomstig academisch onderzoek. De praktische labuitvoering behoudt daarbij prioriteit.
 
 Een belangrijke beperking is dat het onderzoek plaatsvindt binnen een gecontroleerde en deels gesimuleerde bedrijfsomgeving. Technische resultaten kunnen worden getest, maar echte organisatorische besluitvorming wordt daarmee niet bewezen. De onderzoeksaanpak wordt daarom aan de hand van zowel positieve als negatieve resultaten verder beoordeeld.
 
