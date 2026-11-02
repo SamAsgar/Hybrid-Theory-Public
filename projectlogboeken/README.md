@@ -1,0 +1,18 @@
+# Projectlogboeken | Hybrid-Theory
+
+De acht overgenomen logs vormen **historische momentopnamen of later afgeleide rapporten**. Nieuwere bevindingen overschrijven de oorspronkelijke testuitslagen niet. Voor actuele interpretatie: [roadmap](ROADMAP.md) en [statuslegenda](../governance/STATUSLEGENDA.md).
+
+| Datum | Verslag | Reikwijdte |
+|---|---|---|
+| 25 oktober | [Ubuntu/Cockpit en eerste engineeringstatus](2026-10-25-projectstatus.md) | Gesaneerde historische momentopname |
+| 26 oktober | [pfSense gerichte netwerkproeven](2026-10-26-projectstatus.md) | Historische afgeleide testnotitie; beperkte ICMP-blokkade |
+| 27 oktober | [Hostcapaciteit en geheugendiagnose](2026-10-27-hostcapaciteit-geheugendiagnose.md) | Metingen en destijds voorgesteld RAM-budget |
+| 28 oktober | [GNS3/KVM, VPCS en parkeerregister](2026-10-28-gns3-kvm-diagnose-parkeerregister.md) | Gesaneerde historische diagnose |
+| 31 oktober | [Windows 11-installatie](2026-10-31-windows11-client-installatie.md) | Installatie-PASS; later configuratiewerk afzonderlijk |
+| 1 november, eerdere sessie | [Windows 11/pfSense/Windows Server](2026-11-01-windows-client-pfsense-windows-server-ad-ds.md) | Installatie en netwerkbaseline; AD-promotie op dit sessiemoment nog PENDING |
+| 1 november, later | [AD DS, DNS, domain join en GPO](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | Afgebakende technische PASS na de eerdere sessie |
+| 1 november | [M01 — Lab 01: Hypervisor Security & Virtualization Hardening](2026-11-01-hypervisor-fortress-deelreview.md) | Gerichte controlerondes, PASS met één EXCEPTION; lab IN PROGRESS |
+
+**Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
+
+**Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.
