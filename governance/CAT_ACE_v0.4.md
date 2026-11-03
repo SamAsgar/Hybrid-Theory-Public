@@ -193,7 +193,7 @@ Het benchmarkprogramma gebruikt **alle relevante** kaders voor het concrete expe
 
 ## 5. Kernframeworks: werking, bijdrage en relevante beperkingen
 
-### 4.1 NIST Cybersecurity Framework 2.0
+### 5.1 NIST Cybersecurity Framework 2.0
 
 **Govern, Identify, Protect, Detect, Respond en Recover** bieden een taal voor cybersecurity-uitkomsten. De **Current Profile** en **Target Profile** maken een onderbouwde gap mogelijk; **Tiers** karakteriseren de inrichting van risicogovernance en management, niet één enkele hostconfiguratie.
 
@@ -203,7 +203,7 @@ Het benchmarkprogramma gebruikt **alle relevante** kaders voor het concrete expe
 
 **Bronnen:** [NIST CSF 2.0](https://www.nist.gov/cyberframework) · [CSF Tiers guidance](https://csrc.nist.gov/pubs/sp/1302/final).
 
-### 4.2 ISO/IEC 27001:2022, ISO/IEC 27002:2022 en ISO/IEC 27005:2022
+### 5.2 ISO/IEC 27001:2022, ISO/IEC 27002:2022 en ISO/IEC 27005:2022
 
 - **ISO/IEC 27001:** eisen voor opzetten, onderhouden en verbeteren van een ISMS, inclusief risicobehandeling, eigenaarschap, scope en managementverantwoordelijkheid.
 - **ISO/IEC 27002:** guidance bij informatiebeveiligingscontrols; helpt geschikte maatregelen te selecteren en contextueel te interpreteren.
@@ -215,7 +215,7 @@ Het benchmarkprogramma gebruikt **alle relevante** kaders voor het concrete expe
 
 **Bronnen:** [ISO/IEC 27001](https://www.iso.org/standard/27001) · [ISO/IEC 27005](https://www.iso.org/standard/80585.html).
 
-### 4.3 COBIT 2019
+### 5.3 COBIT 2019
 
 COBIT onderscheidt **governance** van **management** en biedt doelen en modellen voor waardecreatie, besluitvorming, verantwoordelijkheden, processen en performance.
 
@@ -225,7 +225,7 @@ COBIT onderscheidt **governance** van **management** en biedt doelen en modellen
 
 **Bron:** [ISACA COBIT](https://www.isaca.org/resources/cobit).
 
-### 4.4 CIS Critical Security Controls v8.1 + Assessment Specification + CIS Benchmarks
+### 5.4 CIS Critical Security Controls v8.1 + Assessment Specification + CIS Benchmarks
 
 De **18 CIS Controls** bieden een geprioriteerde set Safeguards. **Implementation Groups** ondersteunen selectie op basis van context. De **Assessment Specification** beschrijft inputs, operations, measures en metrics voor geselecteerde Safeguards; **CIS Benchmarks** geven veel concretere productspecifieke configuratieaanbevelingen.
 
@@ -235,7 +235,7 @@ De **18 CIS Controls** bieden een geprioriteerde set Safeguards. **Implementatio
 
 **Bronnen:** [CIS Controls v8.1](https://www.cisecurity.org/controls/v8-1) · [Assessment Specification](https://www.cisecurity.org/controls/cis-controls-assessment-specification) · [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks).
 
-### 4.5 NIST SP 800-53 en SP 800-53A Rev. 5
+### 5.5 NIST SP 800-53 en SP 800-53A Rev. 5
 
 **SP 800-53** is een catalogus van security- en privacycontrols; **SP 800-53A** biedt procedures om geselecteerde controls te **assessen**. Relevante methoden zijn **Examine, Interview en Test**. Selecteer controlobjective, scope en passende diepgang, en leg bewijs/uitzonderingen vast.
 
@@ -245,7 +245,7 @@ De **18 CIS Controls** bieden een geprioriteerde set Safeguards. **Implementatio
 
 **Bronnen:** [NIST SP 800-53](https://csrc.nist.gov/pubs/sp/800/53/r5/final) · [NIST SP 800-53A Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final).
 
-### 4.6 ISO 19011 en auditpraktijk
+### 5.6 ISO 19011 en auditpraktijk
 
 **ISO 19011:2026** biedt richtlijnen voor het auditen van managementsystemen, zoals auditprogrammering, bewijs, onafhankelijkheid en auditcompetentie. Het is **auditguidance**, geen cybersecuritycontrolcatalogus.
 
