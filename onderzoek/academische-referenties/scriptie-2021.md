@@ -45,7 +45,7 @@ Deze uitkomsten zijn **historische onderzoeksresultaten van een afgebakende data
 | Transmitters / receivers | Componenten die gevolgen veroorzaken/doorgeven of ontvangen |
 | Financiële connectedness | Technische en organisatorische dependency graph |
 | Scenariovergelijking tussen crisisperioden | Baseline, gecontroleerde verstoring, positieve/negatieve test en herstel |
-| Empirische DCC-GARCH-resultaten | Nog te ontwikkelen, evidence-driven technische assurance en CAT/ACE v0.2 |
+| Empirische DCC-GARCH-resultaten | Nog te onderzoeken, evidence-driven [CAT/ACE v0.4](../../governance/CAT_ACE_v0.4.md): interne/externe/hybride Audit, Cost & Efficiency, inclusief dependency-analyse en Revalidation (geen gevalideerde overdracht van DCC-GARCH) |
 
 **Cruciale beperking:** DCC-GARCH is in deze scriptie toegepast op financiële tijdreeksen; dat maakt het **niet automatisch geschikt voor cyberrisico's**. De onderzoekslijn is een **inhoudelijke analogie en inspiratie**, geen bewezen overdracht van de oorspronkelijke modellen naar digitale infrastructuren. CAT/ACE is nog `CONCEPT / NOT VALIDATED`.
 

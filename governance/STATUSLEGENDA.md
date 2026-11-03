@@ -1,6 +1,7 @@
 # Statuslegenda | Hybrid-Theory
 
 **Documentstatus:** **APPROVED — Project Owner, 02-11-2026**  
+**Redactionele onderzoeksupdate:** 03-11-2026, CAT/ACE v0.4-duiding; oorspronkelijke engineeringverdicts niet gewijzigd.  
 **Toepassing:** actuele README's, beleidsdocumenten, roadmap, labrapporten en duiding van historische logs. Een status mag alleen worden toegekend voor zover de vermelde scope en het bestaande bewijs dat ondersteunen.
 
 ## 1. Componentstatus
@@ -41,7 +42,7 @@
 
 ## 5. Uitsluitend onderzoeksbeoordeling
 
-**CAT/ACE v0.2:** `CONCEPT / NOT VALIDATED`. Dit is een experimenteel onderzoeksmodel en geen gecertificeerde auditmethode.
+**[CAT/ACE v0.4](CAT_ACE_v0.4.md):** `CONCEPT / NOT VALIDATED`. **CAT** bepaalt toepasselijke eisen, eigenaarschap en technische scope; **ACE = Audit, Cost & Efficiency** toetst controls en evidence, analyseert kosten en weegt veilige optimalisaties. ACE kan **INTERNAL, EXTERNAL of HYBRID** worden uitgevoerd, met vastgelegde onafhankelijkheidsgrenzen en **Revalidation** na wijzigingen. Dit is geen gecertificeerde auditmethode of automatische complianceverklaring.
 
 **Onderzoeksschaal:** `PASS / REWORK / EXCEPTION / N/A / NOT VERIFIED`. Gebruik deze schaal uitsluitend voor een geselecteerde onderzoeks- of benchmarkeis en label die uitkomst als **onderzoeksbeoordeling**; vermeng haar niet met een operationeel engineeringverdict.
 

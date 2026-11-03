@@ -13,7 +13,7 @@ Hybrid-Theory valt zelf niet onder deze wetten en standaarden. Het lab gebruikt 
 
 Uitgangspunten:
 
-- **Voor de nog niet geactiveerde controlmapping is ISO/IEC 27001:2022 Annex A als primaire control-sleutel voorgesteld.** Dit is een documentatiekeuze, niet de enige benchmark: de onderzoekskaders worden per toepasselijk scenario geselecteerd. Zie [CAT/ACE v0.2](CAT_ACE_v0.2.md).
+- **Voor de nog niet geactiveerde controlmapping is ISO/IEC 27001:2022 Annex A als primaire control-sleutel voorgesteld.** Dit is een documentatiekeuze, niet de enige benchmark: de onderzoekskaders worden per toepasselijk scenario geselecteerd. Zie [CAT/ACE v0.4](CAT_ACE_v0.4.md), waarin **CAT-C** toepasselijke vereisten afbakent en **ACE-Audit** ze binnen scope toetst, ook bij interne of hybride beoordeling.
 - **Geen claim zonder bewijs.** Een component krijgt slechts VERIFIED binnen een passend geteste scope. Een control krijgt uitsluitend een gescopeerd PASS als vooraf vastgelegde acceptatiecriteria met bewijs zijn gehaald. Kennis van een kader is geen naleving ervan.
 - **De mapping in het controledossier blijft **PARKED**** tot besluit van de Project Owner. Dit document is de voorbereiding daarop.
 - **NIST CSF 2.0**, **CIS Controls v8.1** (met Assessment Specification) en **NIST SP 800-53A Rev. 5** zijn mogelijke **onderzoeks- en assessmentreferenties**, geen wetgeving en geen drie gelijkwaardige auditmethoden. De actieve controlmapping is **PARKED**; dit document levert geen onderbouwd besluit om NIST CSF of CIS daarvan categorisch uit te sluiten of op te nemen. Een toekomstige keuze vraagt expliciete goedkeuring en toepasselijkheidscontrole.
@@ -42,7 +42,7 @@ De volgende bronnen kunnen bij een afgebakende technische beoordeling worden geb
 | [NIST SP 800-53A Rev. 5](https://csrc.nist.gov/pubs/sp/800/53/a/r5/final) | Beoordelingsprocedures en bewijs voor gekozen controls |
 | [COBIT 2019](https://www.isaca.org/resources/cobit) | Governance, management en eigenaarschap van besluiten analyseren |
 
-**ISO/IEC 27001:2022** blijft in dit document de gekozen referentie voor de **voorbereide, nog niet geactiveerde** controlmapping. COBIT en de overige bronnen zijn aanvullend; hun gebruik impliceert geen formele audit, certificering of nieuw goedgekeurd beleid. De technische onderzoeksaanpak en bewijsgrenzen staan in [CAT/ACE v0.2 — onderzoeksconcept, frameworks en gap-analyses](CAT_ACE_v0.2.md).
+**ISO/IEC 27001:2022** blijft in dit document de gekozen referentie voor de **voorbereide, nog niet geactiveerde** controlmapping. COBIT en de overige bronnen zijn aanvullend; hun gebruik impliceert geen formele audit, certificering of nieuw goedgekeurd beleid. De technische onderzoeksaanpak, bewijsgrenzen en praktische **Audit / Cost / Efficiency / Revalidation**-casussen staan in [CAT/ACE v0.4 — onderzoeksconcept, frameworks en gap-analyses](CAT_ACE_v0.4.md).
 
 ## Hoe de kaders samenhangen
 
@@ -315,7 +315,7 @@ Deze tabel is een startpunt voor het controledossier, geen volledige mapping. El
 - IAASB: ISAE 3402 en ISAE 3000 (Revised)
 - AICPA: 2017 Trust Services Criteria (met herziene points of focus, 2022)
 
-**Benchmarkdiscipline:** dit document beschrijft bestaande ISO-, ISAE-, SOC 2-, NIS2-, DORA- en AVG-referenties. [CAT/ACE v0.2](CAT_ACE_v0.2.md) beschrijft hun onderzoeksfunctie en gap-analysetypen; geen enkele referentie wordt daarmee automatisch toepasselijk of juridisch bindend voor het lab.
+**Benchmarkdiscipline:** dit document beschrijft bestaande ISO-, ISAE-, SOC 2-, NIS2-, DORA- en AVG-referenties. [CAT/ACE v0.4](CAT_ACE_v0.4.md) beschrijft hun onderzoeksfunctie, gap-analysetypen en de interne, externe of hybride ACE-beoordeling; geen enkele referentie wordt daarmee automatisch toepasselijk of juridisch bindend voor het lab.
 
 **Statusgebruik:** [STATUSLEGENDA](STATUSLEGENDA.md).
 

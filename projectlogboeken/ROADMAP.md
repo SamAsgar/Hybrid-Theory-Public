@@ -21,7 +21,7 @@
 | **M02** | **Lab 02 — Backup, Recovery & Disaster Resilience** | **PENDING**; geen onafhankelijke off-host restore | [AD-herstelgrens](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M03** | **Lab 03 — Hybrid Identity & Access Management** | **IN PROGRESS**; AD-basis gescopeerd PASS; Entra/IAM-uitbreiding niet aangetoond | [AD/DNS/domain join/GPO](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M04** | **Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**; beperkte pfSense- en GNS3-tests PASS; volledige isolatie niet bewezen | [pfSense](2026-10-26-projectstatus.md), [GNS3](2026-10-28-gns3-kvm-diagnose-parkeerregister.md) |
-| **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | **PENDING**; geen afgeronde assurance-acceptatie | [onderzoek en benchmarks](../governance/CAT_ACE_v0.2.md) (concept, geen lab-PASS) |
+| **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | **PENDING**; geen afgeronde assurance-acceptatie | [CAT/ACE v0.4: Audit, Cost & Efficiency](../governance/CAT_ACE_v0.4.md) (intern/extern/hybride; concept, geen lab-PASS) |
 
 ## Koppeltabel Fase ↔ Lab
 

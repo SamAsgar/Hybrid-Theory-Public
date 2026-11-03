@@ -1,7 +1,7 @@
 # Azure free-first | Conceptueel hybride doelontwerp
 
 **Type:** ontwerpvoorstel / **PLANNED**, niet gedeployed.  
-**Onderzoekskader:** CAT/ACE v0.2, **NOT VALIDATED**.
+**Onderzoekskader:** [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) — **Audit / Cost / Efficiency**, intern, extern of hybride; **NOT VALIDATED**. Voor Azure is Cost relevant om onverwachte verbruikskosten te voorkomen; dit doelontwerp is nog niet uitgerold.
 
 ## Doel
 

@@ -1,7 +1,7 @@
 # Architectuurbaseline | Hybrid-Theory
 
 **Status:** technische architectuur als labreferentie; implementatie en geverifieerde werking worden afzonderlijk gedocumenteerd.  
-**Onderzoekscontext:** CAT/ACE v0.2, **CONCEPT / NOT VALIDATED**.
+**Onderzoekscontext:** [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md), **CONCEPT / NOT VALIDATED**.
 
 ## 1. Beoordelingslagen CAT/ACE
 
@@ -11,7 +11,7 @@
 | **A / 02** | Accountability & Management | Gesimuleerde eigenaren, beslissingsmandaten, processen en risicoacceptatie |
 | **T / 01** | Technology & Operations | VMware, pfSense, Windows, Ubuntu, GNS3 en geplande cloud-/OT-componenten |
 
-ACE (**Automation, Compliance & Efficiency**) is een evaluatiedimensie over alle lagen. Afhankelijkheden worden waar relevant zowel van eis naar control als van technisch defect terug naar besluit en proces gevolgd.
+ACE (**Audit, Cost & Efficiency**) toetst als **interne, externe of hybride beoordelingsfunctie** de controlwerking en het bewijs (**Audit**), de directe en indirecte beheerkosten (**Cost**) en verantwoorde optimalisatie onder dezelfde beveiligingseisen (**Efficiency**). Na wijzigingen volgt gerichte **Revalidation**. CAT-C bepaalt toepasselijke eisen; ACE-Audit beoordeelt die één keer binnen afgebakende scope. Automatisering kan reproduceerbaarheid ondersteunen. Afhankelijkheden worden zowel van eis naar techniek als van technisch defect terug naar eigenaar en beleid onderzocht.
 
 **Interpretatie:** een fictieve governancebeslissing is geen bewijs van echte organisatorische effectiviteit. Benchmarkvergelijkingen zijn onderzoeksinstrumenten, geen bewijs dat CAT/ACE een erkende norm is.
 
@@ -38,4 +38,4 @@ Technische bewijsvoering volgt de keten: `securitydoel → control → configura
 
 **Lab 02 (M02) en Azure:** onafhankelijk off-host herstel en clouddeployment zijn nog niet aangetoond (**PENDING/PLANNED** naar onderwerp).
 
-**Operationele werkwijze:** pragmatische, risicogestuurde controles vóór de benodigde werkzaamheden; uitgebreide hardening binnen de relevante lab. [CAT/ACE v0.2](../governance/CAT_ACE_v0.2.md) is een afzonderlijk experimenteel assurance- en dependency-onderzoeksconcept, **geen** gevalideerde vervanger van bestaande beoordelingsprocedures.
+**Operationele werkwijze:** pragmatische, risicogestuurde controles vóór de benodigde werkzaamheden; uitgebreide hardening binnen de relevante lab. [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) is een afzonderlijk experimenteel audit-, kosten-, efficiency- en dependency-onderzoeksconcept, **geen** gevalideerde vervanger van bestaande beoordelingsprocedures.
