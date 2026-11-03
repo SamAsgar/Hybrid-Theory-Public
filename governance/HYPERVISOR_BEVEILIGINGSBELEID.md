@@ -4,7 +4,8 @@
 **Versie:** 0.1 (opgesteld 29-10-2026) | **Documentstatus:** **APPROVED — Project Owner, 02-11-2026**  
 **Classificatie:** PUBLIC  
 **Eigenaar:** Project Owner  
-**Onderzoekskader:** CAT/ACE v0.2 (experimenteel; geen formeel auditverdict)  
+**Onderzoekskader:** [CAT/ACE v0.4](CAT_ACE_v0.4.md) (Audit, Cost & Efficiency; experimenteel, geen formeel auditverdict)  
+**Redactionele update:** 03-11-2026, alleen onderzoeksverwijzingen; bestaande HV-controls, beleidsbesluit en testuitslagen ongewijzigd.  
 **Scope:** Windows-virtualisatiehost, VMware Workstation Pro, VM-grenzen, beheer, logging, herstel en gecontroleerd bewijs.
 
 > Dit beleid is door Sam goedgekeurd op 02-11-2026. Dat betekent **niet** dat iedere control is geïmplementeerd of dat bestaande tests een bredere PASS hebben. Beleidsgoedkeuring autoriseert geen ongedocumenteerde technische wijziging.
@@ -58,22 +59,25 @@ De virtualisatielaag vormt een trust boundary onder meerdere gastbesturingssyste
 
 Schakel VBS of Memory Integrity niet alleen voor nested virtualisatie uit. Iedere voorgestelde concessie aan hostbeveiliging vereist een expliciete risicoafweging, rollback en toestemming van de Project Owner.
 
-## 5. Technische uitvoering en CAT/ACE v0.2 als onderzoekscontext
+## 5. Technische uitvoering en CAT/ACE v0.4 als onderzoekscontext
 
 De operationele hardeningwerkzaamheden volgen een risicogestuurde volgorde: infrastructuur inventariseren, systeem instellen, beheer organiseren en tijdens alle stappen gericht beveiligen en troubleshooten. Dat is een **praktische engineeringworkflow**, geen automatische auditmethode of bewijs van normconformiteit.
 
-Binnen een **afzonderlijk, nog niet gevalideerd onderzoek** kan CAT/ACE v0.2 vervolgens relaties onderzoeken tussen:
+Binnen een **afzonderlijk, nog niet gevalideerd onderzoek** koppelt CAT/ACE v0.4 de volgende CAT-lagen aan een **interne, externe of hybride ACE-beoordeling**:
 
 - **Corporate Governance & Compliance:** beveiligingsdoelen, toepasselijke eisen en beleid rond virtualisatie.
 - **Accountability & Management:** wie autoriseert beheer, host-guest-uitzonderingen, wijzigingen en restrisico?
 - **Technology & Operations:** host, VMware Workstation, VM's, geïsoleerde segmenten, logbronnen en back-ups.
-- **Automation, Compliance & Efficiency:** welke tests zijn reproduceerbaar, wat is van toepassing, en welke inspanning leveren betrouwbare resultaten op?
+- **ACE-Audit:** controleer per VM de instellingen, daadwerkelijke isolatiewerking, uitzonderingen en bewijs; een screenshot is geen formele onafhankelijke audit.
+- **ACE-Cost:** documenteer licenties, opslag, beheer-/hersteluren en kosten van onafhankelijke back-ups (gemeten of expliciet geraamd).
+- **ACE-Efficiency:** vergelijk alternatieven onder dezelfde isolatie-, herstel- en risicogrenzen; een goedkope snapshot is geen hersteloplossing.
+- **Revalidation:** hertest gewijzigde VM-isolatie en herstelcontrols binnen scope. Automatisering kan tests ondersteunen, maar is niet de ACE-definitie.
 
 **Illustratieve gap-analyses:** control-design (isolatiedoel), technische configuratie (clipboard/shared folders), operating effectiveness (gerelateerde netwerk-/toegangsproeven), afhankelijkheden (gedeelde host/management), herstelbaarheid (off-host restore) en bewijskwaliteit (logs en testprovenance). Een bekende uitzondering op een instelling is geen brede beveiligings-PASS.
 
 **Benchmarkselectie:** bijvoorbeeld passende ISO/IEC 27001-controls, CIS Safeguards en productbenchmarks, NIST SP 800-53A-assessmentprocedures en COBIT-rollen. Selecteer alleen kaders die relevant zijn voor de concrete controlescope; beoordeel verschillen in hun functie. De onderzoeksmethode kan na een test worden genuanceerd of weerlegd.
 
-Zie [CAT/ACE v0.2 — volledige onderzoeksdocumentatie](CAT_ACE_v0.2.md). Deze koppeling bewijst niet dat de hier genoemde voorgestelde hypervisorcontrols al zijn geïmplementeerd.
+Zie [CAT/ACE v0.4 — volledige onderzoeksdocumentatie met VMware-praktijkcasus](CAT_ACE_v0.4.md). Deze koppeling bewijst niet dat de hier genoemde voorgestelde hypervisorcontrols al zijn geïmplementeerd.
 
 ## 6. Verificatiecriteria
 

@@ -20,7 +20,7 @@ De aanwezigheid van een snapshot bewijst geen onafhankelijke back-up of succesvo
 
 **Lab 01 (M01): IN PROGRESS.** Gerichte deelcontrols PASS met één geaccepteerde EXCEPTION; geen volledige labacceptatie.  
 **Lab 02 (M02): PENDING.** Onafhankelijke back-up en daadwerkelijke restore niet aangetoond.  
-**CAT/ACE v0.2:** onderzoeksconcept, **NOT VALIDATED**.
+**[CAT/ACE v0.4](CAT_ACE_v0.4.md):** huidig experimenteel **Audit / Cost / Efficiency**-onderzoeksmodel (**intern/extern/hybride**), **NOT VALIDATED**. Eventuele resource- en herstelkosten zijn nog geen bewezen efficiëntiewinst; gerichte hertest blijft vereist.
 
 **Laatst gedocumenteerde pfSense-egress (1 november):** tijdelijke, brede IPv4 **ALLOW Any** voor uitsluitend de betreffende Windows 11-testclient, onder de bestaande RFC1918-blockregel, bedoeld voor internet/activatie. **Geen definitieve egress-hardening; actuele live-regelstatus niet opnieuw gecontroleerd.** Zie [Windows/pfSense-sessielog](../projectlogboeken/2026-11-01-windows-client-pfsense-windows-server-ad-ds.md). 
 

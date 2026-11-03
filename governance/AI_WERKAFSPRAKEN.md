@@ -32,6 +32,6 @@ Sam: **Project Owner & Lead Architect (mens)**. ChatGPT: **Engineering Orchestra
 - Geen ongeteste claim over domeinredundantie, netwerkisolatie, backup/restore, Azure-resources of wettelijke compliance.
 - Archivering van historische observaties verandert hun oorspronkelijke testverdict niet.
 
-**Onderzoek:** CAT/ACE v0.2 is een experimenteel concept; het vervangt **Risk-Based Validation** niet automatisch. Zie [statuslegenda](STATUSLEGENDA.md).
+**Onderzoek:** [CAT/ACE v0.4](CAT_ACE_v0.4.md) is een experimentele **interne, externe of hybride Audit / Cost / Efficiency-beoordeling**, met toetsbaar bewijs, risicogebonden kostenafweging en **Revalidation** na wijzigingen. Dit vervangt **Risk-Based Validation** voor operationele engineering niet automatisch. Een AI-review is geen formele onafhankelijke audit. Zie [statuslegenda](STATUSLEGENDA.md).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

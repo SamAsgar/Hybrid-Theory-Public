@@ -10,7 +10,7 @@
 | Ubuntu, Cockpit en beheer | Project Owner / ChatGPT | Claude | Service- en connectiviteitsobservaties |
 | GNS3/Wireshark | Project Owner / ChatGPT | Claude | VPCS, ARP, ICMP en packet captures (niet als ruwe privé-captures publiceren) |
 | Scripting/automatisering | GitHub Copilot / Project Owner | Claude wanneer security-impact | Reproduceerbare en reviewbare code |
-| CAT/ACE-onderzoek | Project Owner / ChatGPT | Claude | Hypothesen, benchmarks en afhankelijkheidstests |
+| CAT/ACE v0.4-onderzoek (Audit, Cost & Efficiency) | Project Owner / ChatGPT | Claude (kritische AI-review, geen formele onafhankelijke audit) | Internal/External/Hybrid-scope, controlbewijs, kostenbaseline, veilige optimalisatie, revalidation en afhankelijkheidstests |
 
 **Toelichting:** dit zijn rolvoorkeuren, geen claim dat de genoemde specialist elke taak daadwerkelijk heeft uitgevoerd. De Project Owner kan een taak gericht delegeren. Alleen echte uitgevoerde tests onderbouwen een technische PASS binnen scope. Zie [AI-rollen](ROLLEN_EN_OVERDRACHT.md) en [statuslegenda](../governance/STATUSLEGENDA.md).
 

@@ -27,7 +27,7 @@ Akkoord Sam (Project Owner):
 
 ## Onderzoekscontext
 
-CAT/ACE v0.2 onderzoekt Corporate Governance & Compliance, Accountability & Management en Technology & Operations, overkoepelend beoordeeld op Automation, Compliance & Efficiency. **Status: CONCEPT / NOT VALIDATED.** Het actieve technische werk volgt de geldende engineeringafspraken; een onderzoeksvoorstel is geen technische wijzigingsopdracht.
+Het [CAT/ACE v0.4-onderzoek](../governance/CAT_ACE_v0.4.md) verbindt **CAT** (Corporate Governance & Compliance; Accountability & Management; Technology & Operations) met **ACE = Audit, Cost & Efficiency**. ACE kan **intern, extern of hybride** worden uitgevoerd, met vastgelegde rolconflicten: eerst controlwerking en evidence beoordelen, vervolgens kosten en veilige optimalisaties vergelijken en wijzigingen **hervalideren**. Claude of een andere AI kan kritisch reviewen, maar is geen formele onafhankelijke auditor. **Status: CONCEPT / NOT VALIDATED.** De technische uitvoering blijft aan de geldende engineeringafspraken en eigenaarbesluiten gebonden.
 
 **Statusgebruik:** [statuslegenda](../governance/STATUSLEGENDA.md). 
 

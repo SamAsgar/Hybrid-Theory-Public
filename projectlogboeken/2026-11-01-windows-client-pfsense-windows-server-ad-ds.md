@@ -85,7 +85,9 @@ De regels zijn in de pfSense-GUI toegepast. DNS, TCP/443 en een echte browserpag
 
 ---
 
-## Avondaanvulling | 1 november 2026 — Lab-1, evidence en CAT/ACE v0.2
+## Avondaanvulling | 1 november 2026 — Lab-1, evidence en CAT/ACE v0.2 (historische fase)
+
+> **Redactionele verwijzing toegevoegd 03-11-2026:** deze log beschrijft de **op 1 november geldende v0.2-onderzoeksfase** en is bewust niet met terugwerkende kracht herschreven. De **actuele onderzoeksversie is [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md)**: **Audit, Cost & Efficiency**, intern/extern/hybride, met toetsbaar bewijs, kosten- en efficiëntieafwegingen en Revalidation. De logstatus en toenmalige experimenten blijven historisch; v0.4 is **CONCEPT / NOT VALIDATED**.
 
 **Aard van deze aanvulling:** nieuwe werkzaamheden en inzichten van later op dezelfde datum. Het eerdere gedeelte van dit log blijft een historische momentopname. De terminologie, beleidsstatus en testuitslagen van de eerdere sessie worden **niet met terugwerkende kracht herschreven**. De projectlogboeken van 25 t/m 31 oktober zijn ongewijzigd gelaten.
 
@@ -131,11 +133,11 @@ De nieuwe Windows Server-README verwijst momenteel alleen naar de **vijf op GitH
 
 ### 4. Methodologie en AI-samenwerking: nieuw onderzoeksconcept
 
-Vandaag is de richting **CAT/ACE v0.2** verder uitgewerkt als **experimenteel, nog niet gevalideerd onderzoeksconcept** voor Hybrid-Theory. De beoogde analyse betrekt drie lagen: **governance**, **administration & management** en **technische infrastructuur**. Centraal staan traceerbare controls, veranderingsimpact, zwakheden, eigenaarschap, verborgen afhankelijkheden, single points of failure en cascaderende gevolgen.
+Vandaag is de destijds geldende richting **CAT/ACE v0.2 (historisch, inmiddels opgevolgd door v0.4)** verder uitgewerkt als **experimenteel, nog niet gevalideerd onderzoeksconcept** voor Hybrid-Theory. De beoogde analyse betrekt drie lagen: **governance**, **administration & management** en **technische infrastructuur**. Centraal staan traceerbare controls, veranderingsimpact, zwakheden, eigenaarschap, verborgen afhankelijkheden, single points of failure en cascaderende gevolgen.
 
 Als vergelijkingsmateriaal zijn o.a. **NIST CSF 2.0, CIS Controls v8.1 en NIST SP 800-53A** benoemd. Dat impliceert **geen** formele methodiekvalidatie, certificering of complianceclaim. De langetermijnambitie blijft empirische toetsing in **100+ labs**; de praktische labs behouden prioriteit boven theorievorming.
 
-Het bestand [`ai-samenwerking/ROLLEN_EN_OVERDRACHT.md`](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md) is **vandaag** gericht aangepast: oude methodologieverwijzingen daar zijn vervangen door **CAT/ACE v0.2**, met onderzoekskader en benchmarkreferenties. Dit is een **documentatieaanpassing in één bestand** en geen geautoriseerde projectbrede conversie van de bestaande governance. De nog bestaande verwijzingen naar de eerdere Risk-Based Validation-werkdefinitie in andere documenten en oude logs blijven vooralsnog als historische of nog niet geharmoniseerde context staan. **Geen stilzwijgende vervanging van HT-009 of oudere testuitslagen.**
+Het bestand [`ai-samenwerking/ROLLEN_EN_OVERDRACHT.md`](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md) is **vandaag** gericht aangepast: oude methodologieverwijzingen daar zijn destijds vervangen door **CAT/ACE v0.2 (historische momentopname)**, met onderzoekskader en benchmarkreferenties. Dit is een **documentatieaanpassing in één bestand** en geen geautoriseerde projectbrede conversie van de bestaande governance. De nog bestaande verwijzingen naar de eerdere Risk-Based Validation-werkdefinitie in andere documenten en oude logs blijven vooralsnog als historische of nog niet geharmoniseerde context staan. **Geen stilzwijgende vervanging van HT-009 of oudere testuitslagen.**
 
 Voor operationele uitvoering blijven de geldende eigenaarafspraken leidend, met name **HT-011: Flexible Security / Mission-Based Hardening**, bestaande trust boundaries, autorisatie, secretsbescherming en passende rollback. Een concept is niet automatisch een uitvoeringsbesluit.
 
