@@ -32,6 +32,12 @@ Windows 11-VM met geheugen, CPU en virtuele opslag.
 
 ![VMware Windows 11 Client](05-Windows-11-Client.png)
 
+## 6. Wazuh | VMware-hardwareconfiguratie
+
+Gesanitized VMware-screenshot van de Wazuh-VM (SIEM/XDR) met **8 GB RAM, 4 virtuele processors, 50 GB schijfruimte** en een netwerkadapter op **LAN Segment**. De VM staat uit op het moment van vastlegging. VM-namen zijn vervangen door generieke LAB-aliassen; de oorspronkelijke hardwarewaarden zijn behouden. **Bewijsstatus: CAPTURED** (VM-inventarisatie, geen bewijs van werkende detectie, agentcommunicatie, netwerkisolatie of securityhardening).
+
+![Wazuh VM | VMware-hardwareconfiguratie, gesanitized](07-Wazuh-VMware-Sanitized.png)
+
 ---
 
 **Publicatierisico:** deze afbeeldingen staan reeds **PUBLIC**. Lokale ISO-/hostpaden kunnen zichtbaar zijn; onomkeerbare pixelredactie, metadatareview en controle van eerdere commits zijn nog vereist. Dit vormt geen geslaagde publicatiecontrole.
