@@ -29,7 +29,7 @@ Veel bestaande kaders bieden al volwassen manieren om beveiligingsdoelen, risico
 4. Hoe verhouden de totale kosten van technische beheersing, assessment, onderhoud en herstel zich tot die van passende alternatieven bij vergelijkbare beveiligingsuitkomsten?
 5. Onder welke omstandigheden levert de aanpak **geen** voordeel op, creëert zij belangenconflicten, of produceert zij vals-positieve afhankelijkheden, schijnbesparingen en onnodige beoordelingslast?
 
-**Herkomst van de onderzoeksvraag:** [masterscriptie over systemisch risico en financiële spillover-effecten](../onderzoek/academische-referenties/scriptie-2021.md) biedt academische inspiratie voor het herkennen van transmitters, receivers en keteneffecten. Een economische connectedness-analyse of DCC-GARCH-model is daarmee **niet automatisch gevalideerd voor cybersecurity**.
+**Herkomst van de onderzoeksvraag:** [masterscriptie over systemic risk en financiële spillover-effecten](../onderzoek/academische-referenties/scriptie-2021.md) biedt academische inspiratie voor het herkennen van transmitters, receivers en keteneffecten. Een economische connectedness-analyse of DCC-GARCH-model is daarmee **niet automatisch gevalideerd voor cybersecurity**.
 
 ## 2. Conceptueel model: CAT-structuur en ACE-beoordelingsfunctie
 
