@@ -30,13 +30,13 @@ De centrale onderzoeksvraag is:
 
 ### 2.1 Eigen onderzoeksconcept en wetenschappelijk uitgangspunt
 
-**CAT/ACE v0.2 is een experimenteel, modulair assurance- en dependency-onderzoeksmodel dat governance, managementverantwoordelijkheid en technische systemen met elkaar verbindt.** Dit onderzoeksconcept is door mijzelf bedacht en wordt binnen Hybrid-Theory verder ontwikkeld en getoetst.
+**CAT/ACE v0.4 is een experimenteel model dat governance, management en techniek koppelt aan interne, externe of hybride Audit, Cost & Efficiency-beoordelingen.** Dit onderzoeksconcept is door mijzelf bedacht en wordt binnen Hybrid-Theory verder ontwikkeld en getoetst.
 
 Bestaande frameworks zoals **COBIT, ISO/IEC 27001 en NIST CSF** behandelen al governance en management. **De drie lagen zijn op zichzelf geen nieuwe uitvinding.** De te onderzoeken meerwaarde ligt in een reproduceerbare koppeling van verantwoordelijkheden, technische controls, afhankelijkheden, gecontroleerde foutinjectie, bewijsvoering en restrisicobesluiten.
 
 De ontwikkeling is *evidence-driven*: de resultaten kunnen de aannames ondersteunen, nuanceren of weerleggen. **CAT/ACE is niet bewezen beter** dan bestaande beoordelingsprocedures.
 
-De drie samenhangende lagen zijn **Corporate Governance & Compliance**, **Accountability & Management** en **Technology & Operations**. Automatisering, compliance en efficiëntie worden over deze lagen heen beoordeeld. Zie de [uitgebreide onderzoeksdocumentatie over frameworks en gap-analyses](governance/CAT_ACE_v0.2.md) en de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) voor de uitwerking.
+De drie samenhangende lagen zijn **Corporate Governance & Compliance**, **Accountability & Management** en **Technology & Operations**. ACE toetst controls en compliancebewijs, vergelijkt kosten en veilige optimalisatie, en valideert wijzigingen opnieuw. Zie de [uitgebreide onderzoeksdocumentatie over frameworks en gap-analyses](governance/CAT_ACE_v0.4.md) en de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) voor de uitwerking.
 
 ### 2.2 Cross-layer dependencies
 
@@ -78,7 +78,7 @@ De vijf canonieke labs. **M01–M05 zijn IDs**, geen automatische completion-ver
 
 **Benchmarkreferentiekader: alle relevante regulatory frameworks, wettelijke vereisten, normen, controlframeworks en bestaande beoordelingsprocedures**, voor zover deze van toepassing zijn op de onderzochte organisatie, technische scope en scenario's. Dit is dus **niet beperkt tot drie frameworks**. Mogelijke referenties zijn onder meer **ISO/IEC 27001, COBIT 2019, NIST CSF 2.0, CIS Controls v8.1 en NIST SP 800-53A**, aangevuld met bijvoorbeeld **AVG/GDPR, NIS2 of DORA** wanneer de fictieve organisatie en het scenario binnen hun toepassingsgebied vallen.
 
-De vergelijkingen beoordelen onder meer de herkenning van kwetsbaarheden, kritieke afhankelijkheden, mogelijke oorzaken, reproduceerbaarheid, bewijskwaliteit en benodigde beoordelingsinspanning. Niet elk framework is een wettelijke verplichting of een rechtstreeks vergelijkbare auditmethodiek. Daarom worden **toepasselijkheid en type referentiekader per experiment onderbouwd**. Het gebruik van deze kaders impliceert geen certificering of bewezen compliance. De [vergelijkingsmethoden, typen gap-analyses en toepasselijkheidsregels](governance/CAT_ACE_v0.2.md) zijn afzonderlijk uitgewerkt. [Wet- en regelgevingskaders](governance/WET_EN_REGELGEVING.md) bespreken ook **ISAE 3402, ISAE 3000 en SOC 2** als bestaande assurance- en attestatieperspectieven.
+De vergelijkingen beoordelen onder meer kwetsbaarheden, afhankelijkheden, oorzaken, reproduceerbaarheid, bewijskwaliteit, kosten, efficiëntie en beoordelingsinspanning. Niet elk framework is een wettelijke verplichting of een rechtstreeks vergelijkbare auditmethodiek. Daarom worden **toepasselijkheid en type referentiekader per experiment onderbouwd**. Het gebruik van deze kaders impliceert geen certificering of bewezen compliance. De [vergelijkingsmethoden, typen gap-analyses en toepasselijkheidsregels](governance/CAT_ACE_v0.4.md) zijn afzonderlijk uitgewerkt. [Wet- en regelgevingskaders](governance/WET_EN_REGELGEVING.md) bespreken ook **ISAE 3402, ISAE 3000 en SOC 2** als bestaande assurance- en attestatieperspectieven.
 
 ## 7. Future research and limitations
 
