@@ -1,6 +1,6 @@
 # Projectlogboeken | Hybrid-Theory
 
-De acht overgenomen logs vormen **historische momentopnamen of later afgeleide rapporten**. Nieuwere bevindingen overschrijven de oorspronkelijke testuitslagen niet. Voor actuele interpretatie: [roadmap](ROADMAP.md) en [statuslegenda](../governance/STATUSLEGENDA.md).
+De acht oorspronkelijke logs vormen **historische momentopnamen of later afgeleide rapporten**. Nieuwere, afzonderlijk gedateerde onderzoeksnotities overschrijven de oorspronkelijke testuitslagen niet. Voor actuele interpretatie: [roadmap](ROADMAP.md) en [statuslegenda](../governance/STATUSLEGENDA.md).
 
 | Datum | Verslag | Reikwijdte |
 |---|---|---|
@@ -12,6 +12,8 @@ De acht overgenomen logs vormen **historische momentopnamen of later afgeleide r
 | 1 november, eerdere sessie | [Windows 11/pfSense/Windows Server](2026-11-01-windows-client-pfsense-windows-server-ad-ds.md) | Installatie en netwerkbaseline; AD-promotie op dit sessiemoment nog PENDING |
 | 1 november, later | [AD DS, DNS, domain join en GPO](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | Afgebakende technische PASS na de eerdere sessie |
 | 1 november | [M01 — Lab 01: Hypervisor Security & Virtualization Hardening](2026-11-01-hypervisor-fortress-deelreview.md) | Gerichte controlerondes, PASS met één EXCEPTION; lab IN PROGRESS |
+
+| 4 november | [Phoenix Recovery en private-cloudonderzoek](2026-11-04-onderzoeksdag-phoenix-recovery-private-cloud.md) | Alleen architectuur-, risico- en vergelijkingsonderzoek; **geen technische labuitvoering** |
 
 **Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
 
