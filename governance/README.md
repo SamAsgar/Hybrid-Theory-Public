@@ -11,6 +11,7 @@ Beleidsdocumenten beschrijven verantwoordelijkheden en eisen. **Goedkeuring van 
 - [Hardwarebaseline](HARDWARE_BASELINE.md)
 - [CAT/ACE v0.4 — Audit, Cost & Efficiency (actuele onderzoeksversie)](CAT_ACE_v0.4.md)
 - [CAT/ACE v0.2 — historisch onderzoeksarchief (niet de actuele werkwijze)](CAT_ACE_v0.2.md)
+- [**M02 Phoenix Recovery — herstelarchitectuur v0.5.1 (ontwerp, niet technisch gevalideerd)**](M02-Phoenix-Recovery/README.md)
 - [Wet- en regelgeving en assurancekaders](WET_EN_REGELGEVING.md)
 
 **Zichtbaarheid (laatst gecontroleerd 02-11-2026): PRIVATE; eerder PUBLIC.** De publicatiereview staat nog **OPEN**: oude Git-geschiedenis, secrets/identifiers, binaire pixelredactie en ontbrekende bestanden zijn niet volledig gecontroleerd. Dit is **geen EXCEPTION en geen publicatie-PASS**. Zie [migratiestatus](../MIGRATIE_STATUS.md).
