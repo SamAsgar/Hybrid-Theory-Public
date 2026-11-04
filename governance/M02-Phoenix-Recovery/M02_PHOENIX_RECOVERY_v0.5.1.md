@@ -33,7 +33,7 @@ De herstelserver krijgt **geen noodzakelijke rol in de offsite back-upketen**. A
 
 Het diagram toont de **beoogde architectuur**, niet een reeds werkende koppeling. De twee gestippelde paden zijn afzonderlijke back-upjobs vanuit de Lenovo.
 
-\`\`\`mermaid
+```mermaid
 flowchart TB
   subgraph SITE["Primaire locatie — bestaande fysieke infrastructuur"]
     ROUTER["KPN-router / lokaal netwerk"]
@@ -54,7 +54,7 @@ flowchart TB
   HOST -.->|"Pad B: Restic via HTTPS, rechtstreeks"| CLOUD
   CLOUD -.->|"Herstel na verlies primaire locatie"| CLEAN
   KIT -.->|"Herstelinstructies en toegangsgegevens"| CLEAN
-\`\`\`
+```
 
 **Pad A, lokaal:** Lenovo → Restic → authenticerende REST-server op MacBook → externe opslag. **Pad B, offsite:** Lenovo → Restic → Backblaze B2 via de S3-compatibele API. Het offsite pad loopt **niet** via de MacBook.
 
@@ -67,7 +67,7 @@ flowchart TB
 | **A — complete VM** | Uitgeschakelde VM-map inclusief virtuele disks en noodzakelijke VMware-configuratie | Wekelijks | 4 wekelijkse en 3 maandelijkse herstelpunten | 7 dagen |
 | **B — configuratie** | Netwerkconfiguraties, pfSense-exports, ondersteunde AD DS/DNS/GPO-herstelgegevens, Linux-/Wazuh-/FUXA-instellingen, GNS3-projecten en recoverydocumentatie | Dagelijks na relevante wijzigingen | 7 dagelijkse, 4 wekelijkse en 3 maandelijkse herstelpunten | 24 uur na een wijziging, mits de job slaagt |
 
-**Vier afzonderlijke repositories zijn voorzien:** \`lokaal-vm\`, \`lokaal-config\`, \`b2-vm\` en \`b2-config\`. Versleutelingsgeheimen en operationele rollen worden per repository beheerd; bruikbare herstelgegevens mogen niet uitsluitend op de primaire host staan.
+**Vier afzonderlijke repositories zijn voorzien:** `lokaal-vm`, `lokaal-config`, `b2-vm` en `b2-config`. Versleutelingsgeheimen en operationele rollen worden per repository beheerd; bruikbare herstelgegevens mogen niet uitsluitend op de primaire host staan.
 
 **Consistentiegrens:** een gewone bestandskopie of snapshot van een draaiende VMware-machine is niet automatisch applicatieconsistent. Voor klasse A is een nette VM-shutdown vereist. Voor Active Directory is bovendien een **ondersteunde herstelprocedure** nodig; alleen een gekopieerde virtuele disk geldt niet als bewijs van werkend identiteitsherstel.
 
@@ -85,7 +85,7 @@ flowchart TB
 | **Geheimen en versleuteling** | Restic versleutelt back-upinhoud; afzonderlijke herstelgegevens worden beschermd | Restore zonder primaire host en controle van resterende onversleutelde hostgegevens |
 | **Capaciteit en signalering** | Opslaglimieten, monitoring en waarschuwingen bij mislukte jobs | Aantoonbare melding via een kanaal dat niet uitsluitend op de Lenovo draait |
 
-**Onderhoud:** vooraf job pauzeren, \`restic check\` uitvoeren, snapshots en tijdstempels beoordelen, \`forget --dry-run\` controleren, uitsluitend goedgekeurde retentie toepassen en opnieuw controleren. Bij object-lock kan \`prune\` worden geblokkeerd; de samenwerking tussen retentie, immutable versies en repositorybeheer moet eerst op een **testrepository** worden vastgesteld. Nooit verwijderrechten toekennen aan de normale back-upidentiteit om een onderhoudsprobleem snel te omzeilen.
+**Onderhoud:** vooraf job pauzeren, `restic check` uitvoeren, snapshots en tijdstempels beoordelen, `forget --dry-run` controleren, uitsluitend goedgekeurde retentie toepassen en opnieuw controleren. Bij object-lock kan `prune` worden geblokkeerd; de samenwerking tussen retentie, immutable versies en repositorybeheer moet eerst op een **testrepository** worden vastgesteld. Nooit verwijderrechten toekennen aan de normale back-upidentiteit om een onderhoudsprobleem snel te omzeilen.
 
 **B2-configuratie:** een retentie van **30 dagen in Governance Mode** is alleen een **testkandidaat**. Lifecycle-instellingen mogen nog benodigde objectversies niet vroegtijdig verwijderen. Zonder bewezen versieherstel is er geen claim van ransomwarebestendigheid.
 
@@ -99,7 +99,7 @@ Twee afzonderlijk beschermde herstelpakketten zijn voorzien, waarvan één buite
 
 Back-upbestanden kunnen waar mogelijk parallel worden teruggezet. **Functionele validatie** volgt de werkelijke afhankelijkheden.
 
-\`\`\`mermaid
+```mermaid
 flowchart TD
   NEW["Vervangende hardware + VMware"]
   VMNET["VMware virtuele netwerken"]
@@ -118,7 +118,7 @@ flowchart TD
   VMNET --> MON
   VMNET --> OT
   VMNET --> SIM
-\`\`\`
+```
 
 **Toelichting:** de pijlen geven de *beoogde herstel- en validatievolgorde* voor de belangrijkste diensten weer, niet elke mogelijke technische afhankelijkheid. Diensten zoals Ubuntu, Wazuh, FUXA en GNS3 worden afzonderlijk gevalideerd zodra hun eigen netwerk- en servicevoorwaarden zijn vervuld. Voor Windows Server gelden aanvullende AD DS-/DNS-/tijd-/systeemstateisen. Versleutelde VMware-VM's of BitLocker vereisen hun eigen herstelsleutels.
 
