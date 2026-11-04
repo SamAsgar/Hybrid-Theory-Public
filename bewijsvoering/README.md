@@ -1,6 +1,6 @@
 # Technische bewijsvoering | Hybrid-Theory
 
-**GitHub-zichtbaarheid (laatst gecontroleerd 02-11-2026): PRIVATE, eerder PUBLIC; 42 technische PNG's aanwezig.** De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
+**GitHub-zichtbaarheid: PUBLIC (4 november 2026). Eerdere telling: 42 PNG's op 02-11-2026; nu ten minste één gesanitized FUXA-inventarisopname toegevoegd.** De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
 
 | Bewijsmap | Aanwezig | Publicatie-/testgrens |
 |---|---:|---|
@@ -24,3 +24,7 @@ De eerder aanwezige architectuur-WebP's zijn verwijderd. De actuele [architectuu
 - **AD/DNS/domain join/GPO:** zie het afzonderlijke [gesaneerde AD-baselinerapport](../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md).
 
 **Deze repository stond eerder PUBLIC en is nu PRIVATE, terwijl de beeldredactie, secretscan en geschiedenisreview nog OPEN zijn.** Screenshots zijn geen publicatie-PASS. Zie [goedgekeurd publicatiebeleid](../governance/PUBLICATIEBELEID.md), [migratiestatus](../MIGRATIE_STATUS.md) en [statuslegenda](../governance/STATUSLEGENDA.md).
+
+## Aanvulling 4 november 2026 — FUXA VM-inventaris
+
+Nieuwe **gesanitized VMware-hardwareopname** toegevoegd onder [VMware](VMware/08-FUXA-VMware-Inventory-Sanitized.png) en beschreven in de [VMware-bewijsindex](VMware/README.md). **2 GB RAM, 2 processors, 20 GB SCSI, Custom (VMnet8)**; VM uitgeschakeld. Naamgeving en lokaal ISO-pad geredigeerd. **CAPTURED, geen isolatie- of functionele FUXA-PASS.** De eerder vermelde aantallen dateren uit een oude inventaris en zijn niet opnieuw integraal geteld.

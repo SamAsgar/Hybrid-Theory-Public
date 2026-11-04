@@ -43,3 +43,11 @@ Gesanitized VMware-screenshot van de Wazuh-VM (SIEM/XDR) met **8 GB RAM, 4 virtu
 **Publicatierisico:** deze afbeeldingen staan reeds **PUBLIC**. Lokale ISO-/hostpaden kunnen zichtbaar zijn; onomkeerbare pixelredactie, metadatareview en controle van eerdere commits zijn nog vereist. Dit vormt geen geslaagde publicatiecontrole.
 
 **Statusgebruik:** [statuslegenda](../../governance/STATUSLEGENDA.md).
+
+## 8. FUXA | VM-inventaris en netwerkadapter (4 november 2026)
+
+Sanitized momentopname van de **uitgeschakelde FUXA-VM** in VMware Workstation. De afbeelding toont **2 GB RAM, 2 processors, 20 GB SCSI-opslag**, een **Custom (VMnet8)**-netwerkadapter en aanwezige USB-, audio- en displaydevices. Het gemonteerde ISO-pad en de VM-/hostlabels zijn vervangen door onherleidbare LAB-aliassen. De overige hardwarewaarden zijn **niet gewijzigd**.
+
+![FUXA VM-inventaris met geredigeerde namen en ISO-pad](08-FUXA-VMware-Inventory-Sanitized.png)
+
+**Evidence:** CAPTURED / hardware-inventarisatie. De VM staat op dit vastlegmoment **uit**. Dit beeld bewijst geen werkende FUXA-webinterface, PLC/Modbus-integratie, firewallisolatie of security-hardening. **VMnet8 is een VMware-netwerkselectie, geen bewijs van OT-segmentatie.**

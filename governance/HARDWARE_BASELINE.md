@@ -27,3 +27,7 @@ De aanwezigheid van een snapshot bewijst geen onafhankelijke back-up of succesvo
 **Statusgebruik:** [statuslegenda](STATUSLEGENDA.md).
 
 Zie [actuele engineeringroadmap](../projectlogboeken/ROADMAP.md), [AD-basisrapport](../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) en [M01-deelreview](../projectlogboeken/2026-11-01-hypervisor-fortress-deelreview.md).
+
+## Aanvulling 4 november 2026 | FUXA-hardwarebewijs
+
+De FUXA OT/HMI-VM is in VMware vastgelegd met **2 GB RAM, 2 processors, 20 GB SCSI-schijf** en netwerkadapter **Custom (VMnet8)**. De VM was uitgeschakeld; een lokaal ISO-pad is gesaneerd. [Screenshot](../bewijsvoering/VMware/08-FUXA-VMware-Inventory-Sanitized.png). **CAPTURED** voor de hardwarewaarden, niet voor IT/OT-isolatie of runtime-functionaliteit.
