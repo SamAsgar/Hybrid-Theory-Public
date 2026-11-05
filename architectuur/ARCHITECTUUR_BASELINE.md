@@ -15,6 +15,12 @@ ACE (**Audit, Cost & Efficiency**) toetst als **interne, externe of hybride beoo
 
 **Interpretatie:** een fictieve governancebeslissing is geen bewijs van echte organisatorische effectiviteit. Benchmarkvergelijkingen zijn onderzoeksinstrumenten, geen bewijs dat CAT/ACE een erkende norm is.
 
+## Actuele netwerktopologie (5 november 2026)
+
+De [gesaneerde Architectuur-visualisatie](README.md) vervangt afwijkende historische visuele varianten in de actuele portfolio-weergave. Het HT-C-010-ontwerp scheidt bestaande LAB/MGMT/NAT-waarnemingen van geplande IT-, Security-, OT-, GNS3- en Azure-zones. Echte host-/beheer-/routeradressen zijn niet gepubliceerd; open punten dragen **TWIJFEL / NOT VERIFIED**.
+
+FUXA en Wazuh hebben beperkte UI-/service-PASS, geen aangetoonde OT/PLC-integratie of end-to-end SIEM-detectie. M02 en Azure blijven **PLANNED**. CAT/ACE v0.4 blijft een onderzoeksconcept, geen behaalde certificering.
+
 ## 2. Technische basis
 
 De host draait VMware Workstation met meerdere lab-VM's. pfSense vervult netwerk- en firewallfuncties. Ubuntu Server levert een Linuxbeheeromgeving met Cockpit; GNS3 ondersteunt gesimuleerde netwerkproeven met Wireshark. Windows Server 2025 fungeert in de geteste configuratie als AD-domain controller en DNS-server voor een Windows 11-domainclient.
