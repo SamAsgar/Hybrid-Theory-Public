@@ -12,7 +12,8 @@
 | [GNS3 / Wireshark](GNS3/) | **3** | Basistopologie en ARP/ICMP; aanvullende review voor publicatie |
 | [VMware](VMware/) | **7** | Sommige beelden tonen delen van lokale installatiepaden; privacyreview OPEN |
 | [FUXA](FUXA/) | **0** (verwijst naar VMware-opname 08) | Alleen hardware-inventaris; geen functioneel FUXA/PLC-bewijs |
-| [OpenPLC Runtime](OpenPLC/) | **8** | Web-UI bereikbaar, PLC Stopped; geen Modbus/FUXA/OT-isolatie-PASS |\n| **Totaal (op basis van eerdere telling)** | **41 PNG's** | **PUBLIC; reviewgates voor oudere beelden OPEN** |
+| [OpenPLC Runtime](OpenPLC/) | **8** | Web-UI bereikbaar, PLC Stopped; geen Modbus/FUXA/OT-isolatie-PASS |
+| **Totaal (op basis van eerdere telling)** | **41 PNG's** | **PUBLIC; reviewgates voor oudere beelden OPEN** |
 
 De eerder aanwezige architectuur-WebP's zijn verwijderd. De actuele [architectuurdocumentatie](../architectuur/README.md) is tekstueel.
 
