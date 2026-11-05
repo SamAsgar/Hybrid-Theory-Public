@@ -1,6 +1,6 @@
 # Technische bewijsvoering | Hybrid-Theory
 
-**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Telling 05-11-2026: 33 bewijs-PNG's.** De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
+**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Inventarisatie vóór OpenPLC: 33 bewijs-PNG's.** Op 5 november zijn 8 gesaneerde OpenPLC-opnamen toegevoegd; integrale herinventarisatie van oudere bewijzen blijft OPEN. De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
 
 | Bewijsmap | Aanwezig | Publicatie-/testgrens |
 |---|---:|---|
@@ -12,7 +12,7 @@
 | [GNS3 / Wireshark](GNS3/) | **3** | Basistopologie en ARP/ICMP; aanvullende review voor publicatie |
 | [VMware](VMware/) | **7** | Sommige beelden tonen delen van lokale installatiepaden; privacyreview OPEN |
 | [FUXA](FUXA/) | **0** (verwijst naar VMware-opname 08) | Alleen hardware-inventaris; geen functioneel FUXA/PLC-bewijs |
-| **Totaal** | **33 PNG's** | **PUBLIC; reviewgates OPEN** |
+| [OpenPLC Runtime](OpenPLC/) | **8** | Web-UI bereikbaar, PLC Stopped; geen Modbus/FUXA/OT-isolatie-PASS |\n| **Totaal (op basis van eerdere telling)** | **41 PNG's** | **PUBLIC; reviewgates voor oudere beelden OPEN** |
 
 De eerder aanwezige architectuur-WebP's zijn verwijderd. De actuele [architectuurdocumentatie](../architectuur/README.md) is tekstueel.
 
