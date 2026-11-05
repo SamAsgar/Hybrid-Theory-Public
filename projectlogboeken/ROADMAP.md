@@ -4,7 +4,7 @@
 
 | Fase | Technisch werkpakket | Aangetoonde status | Nog uit te voeren |
 |---|---|---|---|
-| **0** | Documentatie en portfolio-export | Repository is **PRIVATE** (eerder PUBLIC), publicatiegates **OPEN** | Secrets/history-scan, pixelredactie, ontbrekende bestanden, eigenaar-PASS voor gates |
+| **0** | Documentatie en portfolio-export | GitHub-zichtbaarheid **PUBLIC** (gecontroleerd 05-11-2026), publicatiegates **OPEN** | Secrets/history-scan, pixelredactie, ontbrekende bestanden, eigenaar-PASS voor gates |
 | **1** | Ubuntu en Cockpit | **IMPLEMENTED**, gerichte beheerproeven **PASS** | Verder service- en herstelontwerp |
 | **2** | pfSense en LAB-beveiliging | **IMPLEMENTED**; gerichte DHCP-/ICMP-/firewallproeven **PASS** | Volledige isolatie en bredere protocollen niet aangetoond; tijdelijke egressregel beoordelen |
 | **3** | Windows Server 2025, AD/DNS, Windows 11 en GPO | **VERIFIED** voor gerichte AD/client-basistests op 1 november | Hardening, tijdbron, herstel, aanvullende negatieve tests |
@@ -44,6 +44,6 @@ Dit zijn **inhoudelijke raakvlakken**, geen afrondingscriteria en geen bewijs da
 
 **Laatst gedocumenteerde pfSense-configuratie (1 november):** een tijdelijke IPv4 ALLOW Any-egressregel voor de Windows 11-testclient, onder de bestaande RFC1918-blockregel, was gebruikt voor gerichte internet-/activatietests. De actuele live-toestand is niet opnieuw gecontroleerd. Zie [sessielog](2026-11-01-windows-client-pfsense-windows-server-ad-ds.md).
 
-**PRIVATE na eerdere PUBLIC-zichtbaarheid is evenmin publicatievrijgave.** Beeldredactie, volledige secretscan en Git-geschiedenis zijn niet volledig geverifieerd. Zie het [goedgekeurde publicatiebeleid](../governance/PUBLICATIEBELEID.md) en [migratiestatus](../MIGRATIE_STATUS.md).
+**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026); **publieke zichtbaarheid is geen publicatievrijgave.** Beeldredactie, volledige secretscan en Git-geschiedenis zijn niet volledig geverifieerd. Zie het [goedgekeurde publicatiebeleid](../governance/PUBLICATIEBELEID.md).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

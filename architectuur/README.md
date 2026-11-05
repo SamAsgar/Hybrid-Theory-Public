@@ -22,4 +22,4 @@ Het [CAT/ACE v0.4-onderzoeksmodel](../governance/CAT_ACE_v0.4.md) gebruikt **CAT
 
 **Operationeel op componentniveau:** VMware-host, Ubuntu, pfSense, GNS3, Windows Server en Windows 11. **Gericht geverifieerd:** AD-forest, DNS/SRV, domain join, testlogin en één GPO. **Gepland:** tweede fysieke Linux-host, Azure/Arc, aanvullende subnetten en OT-labs. Volledige netwerkisolatie en onafhankelijke disaster recovery zijn nog niet aangetoond.
 
-**GitHub-zichtbaarheid (laatst gecontroleerd 02-11-2026): PRIVATE; eerder PUBLIC.** De publicatiereview blijft **OPEN**: historische bytes, beeldredactie en alle publicatiegates zijn niet volledig gecontroleerd. Dit is **geen publicatie-PASS**. Zie [publicatiebeleid](../governance/PUBLICATIEBELEID.md) en [migratiestatus](../MIGRATIE_STATUS.md).
+**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). De publicatiereview blijft **OPEN**: historische bytes, beeldredactie en alle publicatiegates zijn niet volledig gecontroleerd. Dit is **geen publicatie-PASS**. Zie [publicatiebeleid](../governance/PUBLICATIEBELEID.md).

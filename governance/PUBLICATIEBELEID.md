@@ -28,9 +28,9 @@
 - Een **schone, onafhankelijke Git-geschiedenis** zonder historische gevoelige commits.
 - Expliciet eigenaar-PASS vóór wijziging naar PUBLIC; daarna controle als anonieme bezoeker.
 
-**Feitelijke GitHub-zichtbaarheid (laatste controle 02-11-2026): PRIVATE, eerder dezelfde dag PUBLIC.** De hierboven goedgekeurde publicatiegates staan echter **OPEN**. De geschiedenis is niet aantoonbaar volledig gescand/opgeschoond, een afgeronde secrets-/identifierscan ontbreekt, pixelredactie en metadatareview van alle binaire bestanden zijn niet afgerond en vier eerdere bewijs-PNG's ontbreken. Dit is **geen EXCEPTION, geen eigenaar-PASS voor publicatie en geen bewijs van veilige vrijgave**. De inmiddels uitgevoerde wijziging naar PRIVATE herstelt eerdere publieke blootstelling niet.
+**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). De hierboven goedgekeurde publicatiegates staan echter **OPEN**. De geschiedenis is niet aantoonbaar volledig gescand/opgeschoond, een afgeronde secrets-/identifierscan ontbreekt, pixelredactie en metadatareview van alle binaire bestanden zijn niet afgerond en vier eerdere bewijs-PNG's ontbreken. Dit is **geen EXCEPTION, geen eigenaar-PASS voor publicatie en geen bewijs van veilige vrijgave**.
 
-**Statusgebruik:** [STATUSLEGENDA](STATUSLEGENDA.md). Zie tevens [migratiestatus](../MIGRATIE_STATUS.md).
+**Statusgebruik:** [STATUSLEGENDA](STATUSLEGENDA.md).
 
 **Documentstatus:** **APPROVED — Project Owner, 02-11-2026**.
 

@@ -30,6 +30,6 @@ De `hostnamectl`-weergave toont de virtuele Ubuntu-omgeving. Unieke machine- en 
 
 **Nog ontbrekend wegens technische overdrachtslimiet:** `01-Cockpit-Overzicht.png`, `05-Linux-Netwerkbeheer.png` en `06-Linux-Netwerkinterfaces.png`. Deze drie grote PNG's konden niet via de huidige GitHub-connector worden gedownload en zijn niet via de galerij gekoppeld.
 
-**Publicatie:** repository is nu PRIVATE (eerder PUBLIC), terwijl beeld-/identifierscans nog OPEN zijn. De beelden bewijzen geen volledige netwerkrol- of afhankelijkheidsvalidatie.
+**Publicatie:** GitHub-zichtbaarheid **PUBLIC** (gecontroleerd 05-11-2026), terwijl beeld-/identifierscans nog OPEN zijn. De beelden bewijzen geen volledige netwerkrol- of afhankelijkheidsvalidatie.
 
 **Statusgebruik:** [statuslegenda](../../governance/STATUSLEGENDA.md).

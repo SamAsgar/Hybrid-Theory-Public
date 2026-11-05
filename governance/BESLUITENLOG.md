@@ -31,7 +31,7 @@ Het historische experiment naar verkeer over een grens buiten het eigen lab word
 
 **CAT/ACE v0.4:** [actuele documentatie](CAT_ACE_v0.4.md), `CONCEPT / NOT VALIDATED`. **CAT-C** bepaalt eisen; **ACE-Audit** toetst controles, **ACE-Cost** onderzoekt uitgaven en **ACE-Efficiency** onderbouwt veilige verbeteringen; wijzigingen worden opnieuw beoordeeld. Intern/extern/hybride zijn opties; publicatie of inhoudelijke review is geen implementatiegoedkeuring. De [v0.2-tekst](CAT_ACE_v0.2.md) blijft uitsluitend als historisch onderzoeksdocument bewaard.
 
-**Publicatiestatus (laatst gecontroleerd 02-11-2026):** GitHub-repository **PRIVATE** na eerdere **PUBLIC**-zichtbaarheid. De HT-001/HT-007-publicatiegates zijn nog niet aantoonbaar afgerond. Zie [goedgekeurd publicatiebeleid](PUBLICATIEBELEID.md); dit is **geen EXCEPTION**.
+**Publicatiestatus:** **GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). De HT-001/HT-007-publicatiegates zijn nog niet aantoonbaar afgerond. Zie [goedgekeurd publicatiebeleid](PUBLICATIEBELEID.md); dit is **geen EXCEPTION**.
 
 **Statusgebruik:** [STATUSLEGENDA](STATUSLEGENDA.md).
 
