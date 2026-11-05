@@ -1,25 +1,43 @@
 # Architectuur | Hybrid-Theory
 
-Deze map beschrijft de **gerealiseerde technische basis** en de **beoogde hybride doelarchitectuur**. Niet alle componenten of verbindingen uit het ontwerp zijn geïmplementeerd of gevalideerd.
+**Bijgewerkt:** 5 november 2026 · **Bron:** private HT-C-010-doelarchitectuur · **Weergave:** gesaneerd.
 
-## 1. Secure Hybrid Enterprise Network — doelarchitectuur
+## 1. Netwerktopologie — publieke visualisatie
 
-Conceptueel doelontwerp van VMware, pfSense, Windows Server/Client, Ubuntu, GNS3 en toekomstige Azure- en IT/OT-zones. Aanvullende VLAN's, 3 × 25 VPCS en toekomstige cloudverbindingen zijn **PLANNED**, tenzij afzonderlijk getest. Verwijderde conceptdiagrammen worden hier niet als aanwezig voorgesteld.
+![Hybrid-Theory — gesaneerde netwerkarchitectuur, huidige labcontext, toekomstige zones, recovery en Azure](diagrammen/HT-NETWERKARCHITECTUUR-PUBLIC-2026-11-05.svg)
 
-## 2. CAT/ACE v0.4 — actuele onderzoeksreferentie
+*Figuur 1. **Gesaneerde architectuurillustratie** in GitHub Dark-stijl. Werkelijke host-, router-, beheer- en lab-IP-adressen ontbreken bewust. De getoonde relaties zijn logisch/conceptueel, geen live-netwerktopologie en geen testbewijs.*
 
-Het [CAT/ACE v0.4-onderzoeksmodel](../governance/CAT_ACE_v0.4.md) gebruikt **CAT** voor Corporate Governance & Compliance (toepasselijke eisen), Accountability & Management (eigenaarschap/besluiten) en Technology & Operations (feitelijke controls en afhankelijkheden). **ACE = Audit, Cost & Efficiency** is een **interne, externe of hybride beoordelingsfunctie**: controleer controlwerking en bewijs, onderzoek de werkelijke of geraamde kosten, vergelijk veilige optimalisaties en **hervalideer na wijzigingen**. CAT-C definieert de eis; ACE-Audit toetst haar, zonder dubbele compliance-PASS. Automatisering ondersteunt herhaalbare tests, maar is geen afzonderlijke ACE-letter.
+Deze weergave is afgeleid van de bijgewerkte **private Architecture**, maar publiceert geen interne IP-mapping, de originele private afbeelding of adresgegevens. De private HT-C-010 is door de Project Owner als **doelontwerp** gevalideerd, niet technisch uitgerold. Een toekomstige zone is niet automatisch een actieve VLAN of pfSense-interface.
 
-**Onderzoeksstatus:** CAT/ACE v0.4 blijft **CONCEPT / NOT VALIDATED**, zonder formele audit- of complianceverklaring. De afzonderlijke fysieke Linux-server is **PLANNED**; de actuele voortgang staat in de [roadmap](../projectlogboeken/ROADMAP.md).
+## 2. Huidige en geplande onderdelen
 
-## 3. Tekstuele architectuurdocumentatie
+| Onderdeel | Bewezen basis | Doel / resterende validatie |
+|---|---|---|
+| VMware en pfSense | Host met meerdere VM's; gerichte LAB-, DHCP- en firewallproeven | Verdere segmentatie en volledige isolatietests |
+| Windows Server en Windows 11 | AD DS, DNS/SRV, domain join, testlogin en GPO binnen afgebakende scope | Hardening, redundantie en herstelbaarheid |
+| Ubuntu en Cockpit | Linuxbeheer en beperkte beheertoegang getest | Private services, optionele Azure Arc-agent |
+| Wazuh SIEM | Manager/indexer/dashboard gestart, dashboardlogin bereikt | Agentingestie, detectie en dedicated Security-zone |
+| GNS3 en Wireshark | Gescheiden VPCS-switch-test met ARP/ICMP | Uitgebreid netwerk, isolatie en routevalidatie |
+| FUXA / OpenPLC | FUXA UI en editor bereikbaar | OpenPLC, Modbus-communicatie en OT-zone |
+| Phoenix Recovery M02 | Architectuur B ontworpen | Onafhankelijke recoveryhost, offsite en restoretest |
+| Azure / Entra / Arc | Architectuurvoorstel | Twee afzonderlijke subscriptions/VNets, kostenreview en deployment |
 
-- [Architectuurbaseline](ARCHITECTUUR_BASELINE.md)
-- [Netwerkmodel en trust boundaries](NETWERKONTWERP.md)
-- [pfSense implementatiegrenzen](PFSENSE_PLAN.md)
-- [Linux en Cockpit](LINUX_COCKPIT_SERVICE.md)
+**Bewijsregel:** een geïnstalleerde VM of werkend dashboard is niet automatisch een voltooide securitycontrole. Losse tests gelden alleen binnen hun gedocumenteerde scope.
+
+## 3. Netwerkgrenzen en onzekerheid
+
+De huidige LAB-, MGMT- en NAT-context wordt uitdrukkelijk **gescheiden** van geplande IT-, Security-, OT-, GNS3- en private-serviceszones. Een historisch mogelijk dubbel LAB-adres is **TWIJFEL / NOG TE VERIFIËREN**, geen bewezen huidige storing. Concrete waarden staan uitsluitend in de private bron.
+
+[Netwerkontwerp](NETWERKONTWERP.md) beschrijft de toegestane doelverbindingen en openstaande verificaties. De netwerkvisualisatie bevat geen geheime netwerkkaart, geen beheermapping en geen ongecontroleerde IP-voorbeelden.
+
+## 4. Documentatie en governance
+
+- [Architectuurbaseline / CAT/ACE v0.4](ARCHITECTUUR_BASELINE.md)
+- [Netwerkontwerp en trust boundaries](NETWERKONTWERP.md)
+- [pfSense-plan](PFSENSE_PLAN.md)
+- [Linux/Cockpit](LINUX_COCKPIT_SERVICE.md)
 - [Azure free-first doelontwerp](VOORBEELDMODEL-HYBRIDE-TOPOLOGIE-AZURE-GRATIS.md)
+- [M02 Phoenix Recovery](../governance/M02-Phoenix-Recovery/README.md)
 
-**Operationeel op componentniveau:** VMware-host, Ubuntu, pfSense, GNS3, Windows Server en Windows 11. **Gericht geverifieerd:** AD-forest, DNS/SRV, domain join, testlogin en één GPO. **Gepland:** tweede fysieke Linux-host, Azure/Arc, aanvullende subnetten en OT-labs. Volledige netwerkisolatie en onafhankelijke disaster recovery zijn nog niet aangetoond.
-
-**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). De publicatiereview blijft **OPEN**: historische bytes, beeldredactie en alle publicatiegates zijn niet volledig gecontroleerd. Dit is **geen publicatie-PASS**. Zie [publicatiebeleid](../governance/PUBLICATIEBELEID.md).
+**Publicatiegrens:** deze afzonderlijke figuur is gesaneerd; een volledige review van repo-historie, issues en alle artifacts blijft een aparte controle. Zie het [publicatiebeleid](../governance/PUBLICATIEBELEID.md).

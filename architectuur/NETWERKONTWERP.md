@@ -1,32 +1,49 @@
-# Netwerkontwerp en beveiligingsgrenzen
+# Netwerkontwerp en beveiligingsgrenzen | Hybrid-Theory
 
-**Type:** gesaneerde logische beschrijving. Geen echte thuisnetwerk-, provider- of beheeradressen.
+**Bijgewerkt:** 5 november 2026 · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** HT-C-010 in de private bron.
 
-| Segment | Technologie | Beoogde functie | Bewijsstatus |
-|---|---|---|---|
-| LAB | VMware LAN Segment + pfSense | Gescheiden virtuele client/serveromgeving | **IMPLEMENTED**; gerichte IPv4-netwerk- en DHCP-tests PASS |
-| MGMT | Afzonderlijk host-only beheer | Cockpit, pfSense-beheer en lokale toegang | Beheertoegang binnen beschreven tests bevestigd; algehele actuele toegangstoestand niet opnieuw getest |
-| UPDATE | Tijdelijke VMware NAT | Onderhouds- en updatesessies | Alleen gecontroleerd waar gedocumenteerd |
-| WAN-SIM | VMware NAT voor pfSense | Simulatie van externe verbinding | IMPLEMENTED; NAT is geen zelfstandige isolatiegarantie |
-| GNS3 dataplane | VPCS–switch–VPCS | ARP/ICMP en packetanalyse | **PASS** voor kleine losstaande testopstelling |
-| Azure en IT/OT | Geplande uitbreidingen | Hybride governance, monitoring en industriële simulatie | **PLANNED** |
+## 1. Geobserveerde infrastructuur (afgebakend bewijs)
 
-## Laatst gedocumenteerde tijdelijke egressregel (1 november 2026)
+| Onderdeel | Technologie | Status en bewijsgrens |
+|---|---|---|
+| LAB | VMware LAN Segment, pfSense/Kea DHCP | **IMPLEMENTED**; gerichte netwerk-/DHCP-/firewalltests PASS |
+| Beheer | VMware host-only, Cockpit/pfSense GUI | Beheer binnen eerdere tests bereikbaar; actuele NIC-/routingstatus deels OPEN |
+| Updates en WAN-simulatie | VMware NAT | Tijdelijk egresspad gebruikt; NAT is geen isolatiegarantie voor het thuisnetwerk |
+| Windows/Identity | Windows Server en Windows 11 | AD DS/forest, DNS/SRV, domain join, testlogin en GPO **PASS binnen scope** |
+| GNS3 | VPCS, switch, Wireshark | ARP/ICMP/capture **PASS** in een losstaande simulatie |
+| FUXA | Ubuntu/Docker/HMI | Editor/webinterface **PASS**; OT-/PLC-integratie **NIET BEWEZEN** |
+| Wazuh | SIEM-manager/indexer/dashboard | Start en dashboardlogin **PASS**; agentingestie en detectie **OPEN** |
+| Recovery | M02 Phoenix Recovery | **PLANNED**; onafhankelijke restore niet aangetoond |
+| Azure | Arc/Entra/VNets | **PLANNED**; niet gedeployed |
 
-Voor de Windows 11-testclient is in pfSense tijdelijk een **IPv4 ALLOW Any-egressregel** toegepast voor toegang tot internetdiensten en evaluatie-activatie. De bestaande RFC1918-blockregel stond **erboven**. Daardoor zijn DNS, HTTPS en browsertoegang binnen die beperkte testscope geslaagd. Dit is een **brede tijdelijke uitzondering**, geen definitieve firewallhardening en geen bewijs van algemene isolatie. **De huidige live-regelstatus is vanuit de repository niet vast te stellen.** Zie [sessielog](../projectlogboeken/2026-11-01-windows-client-pfsense-windows-server-ad-ds.md).
+Deze gegevens komen uit historische sessielogs en zijn **geen nieuwe live-meting**. Echte adres-/hostmappings worden niet in de publieke bron gepubliceerd.
 
-## Reproduceerbare netwerkverificatie
+## 2. HT-C-010: toekomstige netwerkgrenzen
 
-Een gerichte positieve test controleert of een expliciet toegestane verbinding functioneert. Een gerichte negatieve test controleert of relevant niet-geautoriseerd verkeer inderdaad wordt geblokkeerd. Beide resultaten worden inclusief protocol, bron/destination-scope, tijdstip en configuratiecontext beoordeeld.
+![Gesaneerde network architecture, ontwerp versus bestaand lab](diagrammen/HT-NETWERKARCHITECTUUR-PUBLIC-2026-11-05.svg)
 
-**Bestaand bewijs is niet onbeperkt generaliseerbaar.** Een ICMP-test zegt bijvoorbeeld niets over alle andere protocollen, IPv6 of toekomstige routewijzigingen.
+De doelarchitectuur scheidt IT-servers, clients, private services, Security/Wazuh, OT/FUXA/OpenPLC en GNS3. pfSense **default deny** met expliciet goedgekeurde diensten is de ontwerpregel, maar zulke zoneinterfaces en VLAN's zijn **niet automatisch gerealiseerd**.
 
-## Open ontwerpconflict
+| Van | Naar | Doeleis / status |
+|---|---|---|
+| IT | OT/PLC | Directe toegang blokkeren; **nog niet als volledige zonegrens bewezen** |
+| GNS3 | Andere zones | Geen route; afzonderlijk GNS3-bewijs bewijst dit niet zelfstandig |
+| IT- en OT-agents | Wazuh | Alleen toegestaan agentverkeer; end-to-end ingestie nog te testen |
+| FUXA | OpenPLC | Strikt begrensde Modbus-communicatie; OpenPLC nog gepland |
+| IT-services | Azure | Alleen compatibele en toegestane uitgaande HTTPS-/proxyverbindingen |
+| Labhost | Recovery-host/offsite | Onafhankelijke M02-back-uproutes volgens goedgekeurd herstelontwerp |
 
-In twee **gescheiden** labs werd een overlappend adres gebruikt. Zolang deze dataplanes losstaan, is er geen bewezen productieconflict. Voor een toekomstige koppeling van GNS3 aan pfSense is een goedgekeurd, niet-overlappend adresplan nodig.
+## 3. Recovery en Azure
 
-## Beheer- en publicatiegrenzen
+De M02-doelarchitectuur houdt een toekomstige recoveryhost **buiten de virtuele labzones** en voorziet in een zelfstandig offsite-back-uppad. Geen restore-PASS of werkende immutable retentie wordt geclaimd.
 
-Geen echte interne IP's, MAC-adressen, actuele domeinnaam, provideridentiteiten of privéapparaten in dit document. Nieuwe netwerkverbindingen vereisen een expliciet gekozen scope, veiligheidscheck en passende rollback.
+De huidige cloudbaseline gebruikt twee voorgestelde subscriptions, elk met een eigen VNet: één voor management en één voor private-cloudoefeningen. Azure Arc vereist **op zichzelf geen VNet**. Geen cloudresource of kosten zijn op basis van deze afbeelding geautoriseerd of geïmplementeerd.
 
-**Statusgebruik:** [statuslegenda](../governance/STATUSLEGENDA.md).
+## 4. Openstaande punten en publicatiebeperkingen
+
+- **TWIJFEL:** hetzelfde LAB-adres is historisch voor twee verschillende VM's gedocumenteerd; gelijktijdig conflict niet aangetoond. De waarde blijft privé.
+- **TWIJFEL:** een adres in een zelfstandige GNS3-test kwam overeen met een adres in een ander LAB. Gedeelde netwerkscope of daadwerkelijke botsing is daarmee niet bewezen.
+- **OPEN:** actuele lease-/interfacegegevens, Wazuh-agentingestie, security/OT-segmentatie, hersteltests en Azure-toegang.
+- **DOEL / GEEN AUTO-MIGRATIE:** nieuwe zones, routes, firewallregels of cloudresources vereisen expliciete scope, autorisatie, kostencontrole en relevante positieve/negatieve tests.
+
+**Publicatie:** geen fysieke hostnamen, privérouteradressen, concrete IP-/MAC-adressen of private aliasvertalingen. Deze gesaneerde illustratie is geen audit- of compliancebewijs. Zie [Architecture](README.md) en [publicatiebeleid](../governance/PUBLICATIEBELEID.md).

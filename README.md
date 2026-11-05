@@ -66,9 +66,9 @@ Configuraties, logs en testresultaten vormen de technische bewijsvoering. Organi
 
 ## 4. Hybrid network architecture
 
-De [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md) beschrijven de bestaande en beoogde samenhang tussen VMware, pfSense, Windows, Ubuntu en GNS3. FUXA (HMI) en Wazuh (SIEM) zijn later toegevoegd; de architectuurdocumentatie moet hiervoor nog worden bijgewerkt. Azure en de volledige IT/OT-koppeling blijven onderdeel van het doelmodel. De beoogde segmentatie en cloudverbindingen vormen een **doelmodel**: niet alle VLAN's, verbindingen en diensten zijn geïmplementeerd of getest.
+De [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md) beschrijven de bestaande en beoogde samenhang tussen VMware, pfSense, Windows, Ubuntu en GNS3. FUXA (HMI) en Wazuh (SIEM) zijn in de geactualiseerde architectuur opgenomen, met hun beperkte testscope en openstaande integratiestappen. Azure en de volledige IT/OT-koppeling blijven onderdeel van het doelmodel. De beoogde segmentatie en cloudverbindingen vormen een **doelmodel**: niet alle VLAN's, verbindingen en diensten zijn geïmplementeerd of getest.
 
-De [architectuurdocumentatie](architectuur/README.md) beschrijft de conceptuele doelarchitectuur en technische grenzen. De tweede fysieke Linux-host, Azure, OpenPLC en Suricata zijn nog **PLANNED**. FUXA en Wazuh zijn inmiddels ingericht; hun verdere integratie en veiligheidstests staan open.
+De [architectuurdocumentatie met gesaneerde visualisatie](architectuur/README.md) toont de huidige testcontext, de HT-C-010-doelarchitectuur en de technische grenzen. De tweede fysieke Linux-host, Azure, OpenPLC en Suricata zijn nog **PLANNED**. FUXA en Wazuh zijn inmiddels ingericht; hun verdere integratie en veiligheidstests staan open.
 
 **GNS3: basisomgeving IMPLEMENTED en beperkte VPCS/ARP/ICMP-tests PASS.** De uitbreiding met drie groepen van 25 virtuele clients, aanvullende subnetten en uitgebreidere isolatietests is nog gepland. Zie [GNS3-bewijsvoering](bewijsvoering/GNS3/README.md).
 
