@@ -51,3 +51,12 @@ Sanitized momentopname van de **uitgeschakelde FUXA-VM** in VMware Workstation. 
 ![FUXA VM-inventaris met geredigeerde namen en ISO-pad](08-FUXA-VMware-Inventory-Sanitized.png)
 
 **Evidence:** CAPTURED / hardware-inventarisatie. De VM staat op dit vastlegmoment **uit**. Dit beeld bewijst geen werkende FUXA-webinterface, PLC/Modbus-integratie, firewallisolatie of security-hardening. **VMnet8 is een VMware-netwerkselectie, geen bewijs van OT-segmentatie.**
+
+
+## 9. OpenPLC | VMware-hardware-inventaris (5 november 2026)
+
+Gesaneerde momentopname van de virtuele machine `PS-HT-OT-PLC01` in VMware Workstation. Zichtbaar op het moment van vastlegging: **2 GB RAM, 2 processors, 20 GB SCSI-opslag** en één netwerkadapter op **NAT**. De VM staat **uit** (VMware toont *Power on this virtual machine*). De overige VM-inventaris is buiten beeld gelaten en het lokale CD/DVD-/ISO-pad is onomkeerbaar afgeschermd. Het beeld is voor compacte en veilige publicatie in zwart-wit opgeslagen; de getoonde resourcewaarden zijn niet gewijzigd.
+
+![OpenPLC | gesaneerde VMware-hardware-inventaris](09-OpenPLC-VMware-Inventory-Sanitized.png)
+
+**Bewijsstatus: CAPTURED / configuratie-inventarisatie.** De opname bewijst dat de VM als object met deze virtuele resources bestaat, **niet** dat OpenPLC Runtime werkt, dat PLC-/Modbus-verkeer plaatsvindt, dat FUXA gekoppeld is of dat netwerkisolatie en hardening zijn gevalideerd. **NAT is geen isolatiebewijs.**

@@ -1,6 +1,6 @@
 # Technische bewijsvoering | Hybrid-Theory
 
-**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Inventarisatie vóór OpenPLC: 33 bewijs-PNG's.** Op 5 november zijn 8 gesaneerde OpenPLC-opnamen toegevoegd; integrale herinventarisatie van oudere bewijzen blijft OPEN. De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
+**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Inventarisatie vóór OpenPLC: 33 bewijs-PNG's.** Op 5 november zijn 8 gesaneerde OpenPLC-opnamen en 1 gesaneerde VMware-OpenPLC-inventaris toegevoegd; integrale herinventarisatie van oudere bewijzen blijft OPEN. De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
 
 | Bewijsmap | Aanwezig | Publicatie-/testgrens |
 |---|---:|---|
@@ -10,10 +10,10 @@
 | [Windows Server 2025](<Windows%20Server%202025/>) | **5** | Oud eerste Server Manager-beeld heeft een automatisch hostlabel |
 | [Ubuntu / Cockpit](Linux/) | **4** | Drie grote PNG's ontbreken nog; volledige beeldcontrole OPEN |
 | [GNS3 / Wireshark](GNS3/) | **3** | Basistopologie en ARP/ICMP; aanvullende review voor publicatie |
-| [VMware](VMware/) | **7** | Sommige beelden tonen delen van lokale installatiepaden; privacyreview OPEN |
+| [VMware](VMware/) | **8** | Sommige beelden tonen delen van lokale installatiepaden; privacyreview OPEN |
 | [FUXA](FUXA/) | **0** (verwijst naar VMware-opname 08) | Alleen hardware-inventaris; geen functioneel FUXA/PLC-bewijs |
 | [OpenPLC Runtime](OpenPLC/) | **8** | Web-UI bereikbaar, PLC Stopped; geen Modbus/FUXA/OT-isolatie-PASS |
-| **Totaal (op basis van eerdere telling)** | **41 PNG's** | **PUBLIC; reviewgates voor oudere beelden OPEN** |
+| **Totaal (op basis van eerdere telling)** | **42 PNG's** | **PUBLIC; reviewgates voor oudere beelden OPEN** |
 
 De eerder aanwezige architectuur-WebP's zijn verwijderd. De actuele [architectuurdocumentatie](../architectuur/README.md) is tekstueel.
 
@@ -30,3 +30,7 @@ De eerder aanwezige architectuur-WebP's zijn verwijderd. De actuele [architectuu
 ## Aanvulling 4 november 2026 — FUXA VM-inventaris
 
 Nieuwe **gesanitized VMware-hardwareopname** toegevoegd onder [VMware](VMware/08-FUXA-VMware-Inventory-Sanitized.png) en beschreven in de [VMware-bewijsindex](VMware/README.md). **2 GB RAM, 2 processors, 20 GB SCSI, Custom (VMnet8)**; VM uitgeschakeld. Naamgeving en lokaal ISO-pad geredigeerd. **CAPTURED, geen isolatie- of functionele FUXA-PASS.** De eerder vermelde aantallen dateren uit een oude inventaris en zijn niet opnieuw integraal geteld.
+
+## Aanvulling 5 november 2026 — VMware-baseline OpenPLC
+
+[Gesaneerde OpenPLC-VMware-inventaris](VMware/09-OpenPLC-VMware-Inventory-Sanitized.png) met technische toelichting in de [VMware-bewijsindex](VMware/README.md). Vastgelegd: **2 GB RAM / 2 processors / 20 GB SCSI / NAT**, VM uitgeschakeld; ISO-pad afgeschermd. **CAPTURED**, geen bewijs van PLC-runtime, OT-integratie, netwerkisolatie of hardening.
