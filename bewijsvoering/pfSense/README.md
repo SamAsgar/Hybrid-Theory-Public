@@ -42,6 +42,6 @@ WAN-regeloverzicht zonder claims over alle protocollen.
 
 Het grote pfSense-dashboardbeeld ontbreekt in deze repository omdat de GitHub-verbinding de bronbytes niet kon overzetten; een aanvullende visuele publicatiecontrole is eveneens nog nodig.
 
-**Publicatie:** repository is nu PRIVATE (eerder PUBLIC op 02-11-2026); volledige beeld-/identifierscan en publicatiegates zijn nog OPEN. De screenshots bewijzen uitsluitend de weergegeven configuratie binnen hun scope.
+**Publicatie:** GitHub-zichtbaarheid **PUBLIC** (gecontroleerd 05-11-2026); volledige beeld-/identifierscan en publicatiegates zijn nog OPEN. De screenshots bewijzen uitsluitend de weergegeven configuratie binnen hun scope.
 
 **Statusgebruik:** [statuslegenda](../../governance/STATUSLEGENDA.md).

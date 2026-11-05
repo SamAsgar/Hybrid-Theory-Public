@@ -4,7 +4,7 @@ De screenshots leggen de eerste Windows Server-installatie-, netwerk- en AD DS-r
 
 ## 1. Eerste Server Manager-overzicht
 
-**PRIVATE (eerder PUBLIC) — pixelredactie OPEN:** oudere dashboardopname met een automatisch Windows-hostlabel. Niet aantoonbaar volledig geanonimiseerd.
+**PUBLIC (gecontroleerd 05-11-2026) — pixelredactie OPEN:** oudere dashboardopname met een automatisch Windows-hostlabel. Niet aantoonbaar volledig geanonimiseerd.
 
 ![Windows Server Manager — initiële baseline](01-Server-Manager-Initial-Baseline.png)
 

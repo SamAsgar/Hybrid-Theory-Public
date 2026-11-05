@@ -489,6 +489,6 @@ Bij de verdere ontwikkeling moeten onder meer **effectieve scoring zonder willek
 
 **Statusdefinities:** [STATUSLEGENDA](STATUSLEGENDA.md). De vijf labnamen en M01–M05 volgen de [roadmap](../projectlogboeken/ROADMAP.md); onderzoeksassessments zijn geen technische labverdicts.
 
-**Conceptregistratie:** [HT-C-007 / CAT/ACE v0.4 in RTBL-HT-Concepts](https://github.com/SamAsgar/Hybrid-Theory/issues/2#issuecomment-6602136641). 
+**Conceptregistratie:** HT-C-007 / CAT/ACE v0.4 in het interne RTBL-HT-Concepts-kanaal (niet openbaar).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

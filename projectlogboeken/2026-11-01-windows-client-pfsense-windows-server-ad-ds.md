@@ -119,7 +119,7 @@ De structuur onder [`bewijsvoering/`](../bewijsvoering/) is verder ingericht met
 
 | Onderdeel | Op GitHub gecontroleerde bestanden | Betekenis |
 |---|---|---|
-| [Lab-1](<../bewijsvoering/Lab-1 | Hypervisor Security & Virtualization Hardening/>) | README + **11** screenshots | HV-01, HV-02 en HV-04; controle- en uitzonderingsbewijs |
+| Lab-1 (niet gepubliceerd in deze repository) | README + **11** screenshots | HV-01, HV-02 en HV-04; controle- en uitzonderingsbewijs |
 | [pfSense](../bewijsvoering/pfSense/) | README + **7** screenshots | Dashboard, ARP, aliassen en LAB/LAN/WAN-regels; historische configuratieopnamen |
 | [VMware](../bewijsvoering/VMware/) | README + **5** screenshots | VM-infrastructuurinventarisatie en configuratieoverzicht |
 | [Linux](../bewijsvoering/Linux/) | README + **7** screenshots | Ubuntu/Cockpit en Linux-omgeving |
@@ -152,6 +152,6 @@ Voor operationele uitvoering blijven de geldende eigenaarafspraken leidend, met 
 
 **Verificatieregel:** `PLANNED / IMPLEMENTED / VERIFIED` betreft componentstatus; `PASS / REWORK / EXCEPTION` betreft een geteste uitspraak binnen een vastgelegde scope. Een GitHub-commit of screenshot is niet op zichzelf een technische PASS.
 
-**Bronnen voor deze aanvulling:** [Lab 01 README](<../bewijsvoering/Lab-1 | Hypervisor Security & Virtualization Hardening/README.md>) · [pfSense README](../bewijsvoering/pfSense/README.md) · [Windows Server 2025 README](<../bewijsvoering/Windows Server 2025/README.md>) · [Rollen en overdracht](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md).
+**Bronnen voor deze aanvulling:** Lab 01 README (niet gepubliceerd) · [pfSense README](../bewijsvoering/pfSense/README.md) · [Windows Server 2025 README](<../bewijsvoering/Windows Server 2025/README.md>) · [Rollen en overdracht](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md).
 
 **Einde aanvulling:** status op basis van op 1 november beschikbare logs, screenshots en repositorycontrole; geen nieuwe live-VM-test door deze logboekupdate.
