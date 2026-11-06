@@ -4,11 +4,11 @@
 **Experimental Research on Cybersecurity, Systemic Risk and Cross-Layer Dependencies**  
 **Research status:** Exploratory | Methodology under development
 
-> **English summary:** Hybrid-Theory is a hands-on hybrid enterprise cybersecurity lab exploring systemic risk, cross-layer dependencies and security assurance. It combines VMware, pfSense, Windows, Linux and GNS3; Azure and full IT/OT integration remain planned; FUXA HMI and Wazuh SIEM have now been deployed with limited functional checks. The research approach is experimental and not yet validated.
+> **English summary:** Hybrid-Theory is a hands-on hybrid enterprise cybersecurity lab exploring systemic risk and cross-layer dependencies. VMware, pfSense, Windows, Linux, GNS3, OpenPLC and FUXA are deployed. The OpenPLC motor simulation is functionally verified; end-to-end FUXA read/write, OT segmentation, Wazuh agent detection, Azure and Suricata remain unverified or planned. The research methodology remains experimental.
 
 ### Wat ik heb gebouwd en getest
 
-**Stand van zaken: 4 november 2026.** Hieronder staat wat daadwerkelijk is ingericht en op beperkte punten getest. **PASS geldt uitsluitend binnen de genoemde scope**. De [statuslegenda](governance/STATUSLEGENDA.md) maakt onderscheid tussen implementatie, verificatie en openstaand werk.
+**Stand van zaken: 6 november 2026.** Hieronder staat wat daadwerkelijk is ingericht en op beperkte punten getest. **PASS geldt uitsluitend binnen de genoemde scope**. De [statuslegenda](governance/STATUSLEGENDA.md) maakt onderscheid tussen implementatie, verificatie en openstaand werk.
 
 | Component | Gebouwd en getest | Nog open |
 |---|---|---|
@@ -17,10 +17,10 @@
 | **Windows Server 2025 / AD DS / DNS / Windows 11** | Forest/DC-promotie, DNS/SRV, domain join, testlogin en één GPO **PASS**. [AD-rapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | Hardening, redundantie, onafhankelijk herstel |
 | **Ubuntu Server + Cockpit** | Linuxserver en beheerinterface ingericht; basisbeheer bereikt. [Linux-bewijs](bewijsvoering/Linux/README.md) | Aanvullende services en hardening |
 | **GNS3 + Wireshark** | VPCS–switch–VPCS, bidirectionele ICMP, ARP en packetcapture **PASS** in LAB01. [Bewijs](bewijsvoering/GNS3/README.md) | Grotere netwerken en gedetailleerde isolatie |
-| **FUXA (SCADA/HMI)** | Eigen Ubuntu-VM, Docker en FUXA-container geïnstalleerd; webinterface en HMI-editor bereikbaar vanuit de host (**beperkte functie-PASS**, 2–3 nov.). | **Geen** gekoppelde OpenPLC, Modbus-verkeer, OT-segmentatie of gevalideerde authenticatie/TLS. Publiek bewijs van de VM-hardware: [FUXA VMware-inventaris (gesanitized)](bewijsvoering/VMware/08-FUXA-VMware-Inventory-Sanitized.png); een volledige FUXA/PLC-functionele test blijft open. |
+| **FUXA (SCADA/HMI)** | Docker-container en editor bereikbaar, Modbus TCP-driver en PLC-device toegevoegd, TCP-bereikbaarheid en twee Boolean-tags met nulwaarden/timestamps waargenomen. [M04-log](projectlogboeken/2026-11-06-m04-network-citadel-ot-baseline.md) | Dynamische registeruitlezing **AC02 PENDING**, geautoriseerde schrijfproef **AC03 PENDING**, HMI-dashboard en pfSense-OT-segmentatie nog open. |
 | **Wazuh 4.14.9 (SIEM)** | OVA geïmporteerd, CPU/VMware-opstartprobleem verholpen, DHCP/gateway gecontroleerd, manager/indexer/dashboard-services actief en dashboardlogin bereikbaar (**beperkte functie-PASS**, 3–4 nov.). GPT-header gerepareerd en rootpartitie uitgebreid. [Publieke hardware-inventaris](bewijsvoering/VMware/README.md). | **0 agents**: geen bewezen end-to-end detectie; definitieve XFS-groei, indexer write-health, negatieve toegangsproef en restore nog open. Functioneel bewijs is nog niet publiek gepubliceerd. |
 
-**PLANNED / niet aangetoond:** OpenPLC, FUXA↔PLC/Modbus-koppeling, Suricata, Wazuh-agentdetectie, volledige IT/OT-isolatie, Azure/Entra/Arc en onafhankelijke off-host restore. De VM's worden binnen het RAM-budget niet noodzakelijk tegelijk gedraaid.
+**M04-update 6 november:** OpenPLC v3 is geïnstalleerd, de runtimebuild succesvol en een eenvoudige motorlogica UIT/AAN functioneel gevalideerd (**AC01 PASS binnen testscope**). FUXA is via Modbus TCP als device geconfigureerd, maar een dynamische tag- en schrijfactietest is **nog niet bewezen**. [Publiek M04-log](projectlogboeken/2026-11-06-m04-network-citadel-ot-baseline.md). **PLANNED / niet aangetoond:** volledige FUXA↔PLC functionele integratie, Suricata, Wazuh-agentdetectie, volledige IT/OT-isolatie, Azure/Entra/Arc en onafhankelijke off-host restore. De VM's worden binnen het RAM-budget niet noodzakelijk tegelijk gedraaid.
 
 **Onderzoeksupdate · 4 november 2026:** Architectuur B gekozen voor **M02 Phoenix Recovery**, met gescheiden lokale en offsite back-uproutes. Daarnaast zijn private-cloudopties, Azure Arc, ransomwaredreigingen en gecombineerde IT/OT-storingsscenario's onderzocht onder **CAT/ACE v0.4**. **Geen technische acties of hersteltests uitgevoerd op 4 november; M02 blijft PENDING.** [Lees het nieuwe onderzoekslogboek](projectlogboeken/2026-11-04-onderzoeksdag-phoenix-recovery-private-cloud.md).
 
@@ -68,13 +68,13 @@ Configuraties, logs en testresultaten vormen de technische bewijsvoering. Organi
 
 De [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md) beschrijven de bestaande en beoogde samenhang tussen VMware, pfSense, Windows, Ubuntu en GNS3. FUXA (HMI) en Wazuh (SIEM) zijn in de geactualiseerde architectuur opgenomen, met hun beperkte testscope en openstaande integratiestappen. Azure en de volledige IT/OT-koppeling blijven onderdeel van het doelmodel. De beoogde segmentatie en cloudverbindingen vormen een **doelmodel**: niet alle VLAN's, verbindingen en diensten zijn geïmplementeerd of getest.
 
-De [architectuurdocumentatie met gesaneerde visualisatie](architectuur/README.md) toont de huidige testcontext, de HT-C-010-doelarchitectuur en de technische grenzen. De tweede fysieke Linux-host, Azure, OpenPLC en Suricata zijn nog **PLANNED**. FUXA en Wazuh zijn inmiddels ingericht; hun verdere integratie en veiligheidstests staan open.
+De [architectuurdocumentatie met gesaneerde visualisatie](architectuur/README.md) toont de huidige testcontext, de HT-C-010-doelarchitectuur en de technische grenzen. De tweede fysieke Linux-host, Azure en Suricata zijn nog **PLANNED**; OpenPLC is geïnstalleerd en de motorsimulatie getest, maar OT-isolatie niet. FUXA en Wazuh zijn inmiddels ingericht; hun verdere integratie en veiligheidstests staan open.
 
 **GNS3: basisomgeving IMPLEMENTED en beperkte VPCS/ARP/ICMP-tests PASS.** De uitbreiding met drie groepen van 25 virtuele clients, aanvullende subnetten en uitgebreidere isolatietests is nog gepland. Zie [GNS3-bewijsvoering](bewijsvoering/GNS3/README.md).
 
 **Windows/AD: basis VERIFIED binnen de geteste scope.** Forest/DC, DNS, domain join, testlogin en één GPO zijn aangetoond; uitgebreide identity-hardening, domeinredundantie en een onafhankelijke restore niet. Zie het [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md).
 
-**FUXA en Wazuh: basisomgevingen IMPLEMENTED, beperkte functietests PASS.** De FUXA-webeditor is bereikbaar, zonder PLC-integratie. Wazuh is toegankelijk als SIEM-dashboard, zonder gevalideerde agentdetectie. Voor beide staan netwerk-/securityacceptatie en publieke end-to-end bewijsvoering nog open.
+**FUXA en Wazuh: basisomgevingen IMPLEMENTED, beperkte functietests PASS.** Een FUXA-ModbusTCP-device is geconfigureerd en netwerkbereikbaar, maar dynamische PLC-tagvalidatie en HMI-schrijfacties zijn nog niet bewezen. Wazuh is toegankelijk als SIEM-dashboard, zonder gevalideerde agentdetectie. Voor beide staan netwerk-/securityacceptatie en publieke end-to-end bewijsvoering nog open.
 
 ## 5. Foundational labs
 
@@ -85,7 +85,7 @@ De vijf canonieke labs. **M01–M05 zijn IDs**, geen automatische completion-ver
 | **M01 · Lab 01 — Hypervisor Security & Virtualization Hardening** | **IN PROGRESS**; gerichte HV-01–HV-04-controles **PASS met één EXCEPTION**. [M01-review](projectlogboeken/2026-11-01-hypervisor-fortress-deelreview.md) |
 | **M02 · Lab 02 — Backup, Recovery & Disaster Resilience** | **PENDING**; geen off-host restore aangetoond. [AD-/herstelrapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M03 · Lab 03 — Hybrid Identity & Access Management** | **IN PROGRESS**; AD/DNS/domain join/GPO **PASS binnen scope**; Entra **PLANNED**. [AD-rapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04 · Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**; gerichte pfSense- en GNS3-tests **PASS binnen hun afzonderlijke scopes**; volledige isolatie niet aangetoond. FUXA- en Wazuh-netwerkgrenzen vragen nog aanvullende tests. [pfSense](architectuur/PFSENSE_PLAN.md) · [GNS3](bewijsvoering/GNS3/README.md) |
+| **M04 · Lab 04 — Network Citadel** | **ACTIVE / HIGH PRIORITY**; OpenPLC-motorbaseline **AC01 PASS**, FUXA dynamic reads/writes **AC02/AC03 PENDING**. Gerichte pfSense- en GNS3-basistests afzonderlijk PASS; integrale OT-segmentatie niet aangetoond. [M04-log](projectlogboeken/2026-11-06-m04-network-citadel-ot-baseline.md) |
 | **M05 · Lab 05 — Regulatory Assessment & Security Assurance** | **PENDING**; geen afgeronde assurance-acceptatie. [Regulatory frameworks](governance/WET_EN_REGELGEVING.md) |
 
 ## 6. Comparative evaluation
@@ -98,7 +98,7 @@ De vergelijkingen beoordelen onder meer kwetsbaarheden, afhankelijkheden, oorzak
 
 Het langetermijndoel is om circa 30 relevante technische labs uit te voeren als basis voor verdere methodiekontwikkeling en mogelijk toekomstig academisch onderzoek. De praktische labuitvoering behoudt daarbij prioriteit.
 
-Openstaande concrete vervolgtests zijn onder meer **OpenPLC installeren en met FUXA via Modbus verbinden, Suricata correct positioneren, Wazuh-agents en gecontroleerde detectie toevoegen, extra firewall-isolatietests en een onafhankelijk herstel aantonen**. De volgorde hangt mede af van het beschikbare RAM- en opslagbudget.
+Openstaande concrete vervolgtests zijn onder meer **FUXA-registers en write vanuit HMI valideren, daarna OpenPLC/FUXA achter pfSense segmenteren; Suricata correct positioneren, Wazuh-agents en gecontroleerde detectie toevoegen, extra firewall-isolatietests en een onafhankelijk herstel aantonen**. De volgorde hangt mede af van het beschikbare RAM- en opslagbudget.
 
 Een belangrijke beperking is dat het onderzoek plaatsvindt binnen een gecontroleerde en deels gesimuleerde bedrijfsomgeving. Technische resultaten kunnen worden getest, maar echte organisatorische besluitvorming wordt daarmee niet bewezen. De onderzoeksaanpak wordt daarom aan de hand van zowel positieve als negatieve resultaten verder beoordeeld.
 
