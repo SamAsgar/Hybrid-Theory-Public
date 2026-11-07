@@ -14,6 +14,8 @@ De acht oorspronkelijke logs vormen **historische momentopnamen of later afgelei
 | 1 november | [M01 — Lab 01: Hypervisor Security & Virtualization Hardening](2026-11-01-hypervisor-fortress-deelreview.md) | Gerichte controlerondes, PASS met één EXCEPTION; lab IN PROGRESS |
 
 | 4 november | [Phoenix Recovery en private-cloudonderzoek](2026-11-04-onderzoeksdag-phoenix-recovery-private-cloud.md) | Alleen architectuur-, risico- en vergelijkingsonderzoek; **geen technische labuitvoering** |
+| 6 november | [M04 functionele OT-baseline](2026-11-06-m04-network-citadel-ot-baseline.md) | Gescopeerde AC01–AC03 PASS; OT-segmentatie nog PENDING |
+| 7 november | [M04-CORE pre-migratiecheckpoint](2026-11-07-m04-core-pre-migratie-checkpoint.md) | Snapshotvoorbereiding gemeld; geen nieuwe technische tests of security-PASS |
 
 **Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
 
