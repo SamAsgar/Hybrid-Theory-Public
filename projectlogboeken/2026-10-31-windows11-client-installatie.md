@@ -13,7 +13,7 @@
 **Project:** Hybrid-Theory  
 **Component:** `PS-HT-CLIENT01-Win11` (VMware Workstation Pro)  
 **Sessietype:** OS-installatie en eerste inrichting (OOBE)  
-**Uitvoering:** Project Owner met stapsgewijze begeleiding van ChatGPT  
+**Uitvoering:** Sam met stapsgewijze begeleiding van ChatGPT  
 **Methodologie:** Risk-Based Validation  
 **Verdict:** **PASS — Windows 11 OS-installatie en eerste desktop zichtbaar**; **PENDING — configuratie, verificatie en domeinintegratie**
 
@@ -31,7 +31,7 @@ De Windows 11-client is als afzonderlijke virtuele machine geïnstalleerd. De ee
 6. De Windows 11-desktop met taakbalk en Startmenu was zichtbaar in de VMware-console. Dit is het concrete bewijs van de bereikte OS-installatiefase.
 7. Onder in VMware Workstation stond nog de Easy Install-aanwijzing/knop **I Finished Installing**. Het afronden van deze VMware-wizard en de status van VMware Tools zijn **niet aangetoond**.
 
-**Bewijsbasis:** schermopnamen tijdens de gebruikerssessie van 31-10-2026 (UEFI, installatiedoelschijf, OOBE en desktop) door de Project Owner getoond. De originele screenshots zijn **niet** naar de repository geüpload en hebben **geen afgeronde publicatie-/sanitisatiereview**.
+**Bewijsbasis:** schermopnamen tijdens de gebruikerssessie van 31-10-2026 (UEFI, installatiedoelschijf, OOBE en desktop) door Sam getoond. De originele screenshots zijn **niet** naar de repository geüpload en hebben **geen afgeronde publicatie-/sanitisatiereview**.
 
 ### Afbakening van de PASS
 
