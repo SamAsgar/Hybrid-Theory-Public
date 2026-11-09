@@ -8,7 +8,7 @@
 
 ## Nieuwe voortgang sinds 6 november
 
-De Project Owner heeft gemeld dat **drie VMware-pre-migratiesnapshots** zijn aangemaakt voor de virtuele PLC, de HMI en de firewall. Dit is een **voorbereidende herstelmaatregel**, geen geteste restore. Onafhankelijke controle van snapshotintegriteit, beheerbereikbaarheid en daadwerkelijke terugzetbaarheid staat nog open.
+Sam heeft gemeld dat **drie VMware-pre-migratiesnapshots** zijn aangemaakt voor de virtuele PLC, de HMI en de firewall. Dit is een **voorbereidende herstelmaatregel**, geen geteste restore. Onafhankelijke controle van snapshotintegriteit, beheerbereikbaarheid en daadwerkelijke terugzetbaarheid staat nog open.
 
 Op 7 november is **geen nieuwe OT-netwerkmigratie of isolatietest als uitgevoerd vastgelegd**. De huidige stand blijft daarom een voorbereidingscheckpoint.
 

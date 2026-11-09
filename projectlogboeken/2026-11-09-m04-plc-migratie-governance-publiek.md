@@ -3,7 +3,7 @@
 **Repository:** Hybrid-Theory-Public · gesanitiseerde portfolio-update  
 **Registratie:** 9 november 2026  
 **Periode:** terugblik op de circa 22 voorafgaande uren  
-**Status:** M04-CORE **IN PROGRESS**; PLC-netwerkmigratie **IMPLEMENTED**, geselecteerde deeltests **TESTED (door de Project Owner gerapporteerd)**; bewijsimport en overige acceptatietests **PENDING**  
+**Status:** M04-CORE **IN PROGRESS**; PLC-netwerkmigratie **IMPLEMENTED**, geselecteerde deeltests **TESTED (door Sam gerapporteerd)**; bewijsimport en overige acceptatietests **PENDING**  
 **Aansluiting op historie:** [OT-firewallinterface 7–8 november](2026-11-08-m04-ot-firewallinterface.md), [pre-migratiecheckpoint](2026-11-07-m04-core-pre-migratie-checkpoint.md), [functionele OT-baseline](2026-11-06-m04-network-citadel-ot-baseline.md)
 
 ## 1. Samenvatting
@@ -49,7 +49,7 @@ Parallel aan het labwerk is het documentatie- en wijzigingsproces aangescherpt:
 - **Wijzigingscontrole:** formele scheiding tussen plan, goedkeuring, uitvoering, verificatie, harmonisatie en review/merge.
 - **Repositorybrede impactanalyse:** een private impactmatrix helpt bepalen welke afhankelijke documenten door technische wijzigingen geraakt worden. Deze matrix wordt **niet** rechtstreeks geëxporteerd.
 - **Public Release Harmonization:** publicatie-impactcheck, gegevensclassificatie en sanitization, expliciet eigenaarakkoord voor de scope, een afzonderlijke publieke draft-PR en finale review vóór merge.
-- **Rolafbakening:** één uitvoerende assistent per publieke PR; een afzonderlijke beveiligingsreview waar relevant; de Project Owner neemt publicatiebesluiten.
+- **Rolafbakening:** één uitvoerende assistent per publieke PR; een afzonderlijke beveiligingsreview waar relevant; Sam neemt publicatiebesluiten.
 
 **Vervolgplan:** eerst HMI en PLC functioneel op het nieuwe segment controleren, daarna de complete segmentatie- en negatieve beveiligingstests afronden. Tussentijdse publieke statusupdates mogen nooit suggereren dat de hele M04-missie is afgerond.
 
@@ -59,4 +59,4 @@ Deze publieke samenvatting bevat geen werkelijke interne IP-, IPv6- of MAC-adres
 
 Originele screenshots en ruwe uitvoer blijven buiten deze publicatie. Eventuele latere evidence-publicatie vereist afzonderlijke controle van pixels, metadata, hyperlinks en commitinhoud.
 
-**Redactie:** gesanitiseerde afgeleide rapportage van waarnemingen van de Project Owner; geen claim van externe onafhankelijke audit of certificering.
+**Redactie:** gesanitiseerde afgeleide rapportage van waarnemingen van Sam; geen claim van externe onafhankelijke audit of certificering.

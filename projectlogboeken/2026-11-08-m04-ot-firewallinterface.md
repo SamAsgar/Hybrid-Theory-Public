@@ -8,7 +8,7 @@
 
 ## Wat er is gedaan
 
-In een begeleide avondsessie heeft de Project Owner de firewallkant van de OT-zone gebouwd. Claude (Critical Security Auditor & Chaos Engineer) begeleidde de stappen en beoordeelde elk resultaat aan de hand van screenshots.
+In een begeleide avondsessie heeft Sam de firewallkant van de OT-zone gebouwd. Claude (Critical Security Auditor & Chaos Engineer) begeleidde de stappen en beoordeelde elk resultaat aan de hand van screenshots.
 
 1. **Virtuele netwerkadapter:** de firewall-VM kreeg een vierde netwerkadapter op een eigen, afgezonderd virtueel segment dat alleen voor de OT-zone bedoeld is. Een eerste poging werd niet opgeslagen; de tweede wel. Het bestaande LAB-segment is daarbij bewust niet gekozen.
 2. **Preflight na het opstarten:** de bestaande WAN-, beheer- en LAB-interfaces stonden na de wijziging nog op dezelfde adapters met dezelfde adressen. Een extra netwerkkaart kan in VMware de volgorde van adapters veranderen; dat is hier niet gebeurd.
