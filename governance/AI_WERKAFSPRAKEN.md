@@ -1,6 +1,6 @@
 # AI-werkafspraken | Publieke samenvatting
 
-**Status:** operationele, risicogestuurde engineeringafspraken. De Project Owner beslist over scope, rechten, kosten, risicovolle wijzigingen en acceptatie. Deze samenvatting bevat geen private overlegverwijzingen.
+**Status:** operationele, risicogestuurde engineeringafspraken. Sam beslist over scope, rechten, kosten, risicovolle wijzigingen en acceptatie. Deze samenvatting bevat geen private overlegverwijzingen.
 
 ## 1. Doelgericht, proportioneel en veilig
 
@@ -19,11 +19,11 @@ Bestaande, valide PASS-tests worden hergebruikt zolang configuratie en scope ong
 - Symptoom, hypothese, onderscheidende test, bewijs, herstel en verdict vastleggen.
 - **PASS** = acceptatiecriteria gehaald binnen specifieke scope.
 - **REWORK** = concrete fout, ontbrekend essentieel bewijs of risico.
-- **EXCEPTION** = bewuste en vastgelegde risicoacceptatie door Project Owner.
+- **EXCEPTION** = bewuste en vastgelegde risicoacceptatie door Sam.
 
 ## 4. AI Collaboration
 
-Sam: **Project Owner & Lead Architect (mens)**. ChatGPT: **Engineering Orchestrator (AI)**. Claude: **Critical Security Auditor & Chaos Engineer (AI)**. Microsoft Copilot: **Microsoft Specialist & Automation Engineer (AI)**. GitHub Copilot: **Coding & Automation Assistant (AI)**. De rollen zijn ondersteunend; Sam beslist over scope en risicoacceptatie. Een gerichte tweede AI-beoordeling is geen formele onafhankelijke audit.
+Sam: **Sam & Lead Architect (mens)**. ChatGPT: **Engineering Orchestrator (AI)**. Claude: **Critical Security Auditor & Chaos Engineer (AI)**. Microsoft Copilot: **Microsoft Specialist & Automation Engineer (AI)**. GitHub Copilot: **Coding & Automation Assistant (AI)**. De rollen zijn ondersteunend; Sam beslist over scope en risicoacceptatie. Een gerichte tweede AI-beoordeling is geen formele onafhankelijke audit.
 
 ## 5. Technische scope en publicatie
 
