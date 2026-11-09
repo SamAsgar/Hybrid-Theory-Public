@@ -1,6 +1,6 @@
 # Publicatiebeleid | Portfolio-export
 
-**Documentstatus:** **APPROVED — Project Owner, 02-11-2026**. De goedkeuring betreft het beleid, **niet** de naleving van de publicatiegates.
+**Documentstatus:** **APPROVED — Sam, 02-11-2026**. De goedkeuring betreft het beleid, **niet** de naleving van de publicatiegates.
 
 ## Classificatie
 
@@ -32,6 +32,6 @@
 
 **Statusgebruik:** [STATUSLEGENDA](STATUSLEGENDA.md).
 
-**Documentstatus:** **APPROVED — Project Owner, 02-11-2026**.
+**Documentstatus:** **APPROVED — Sam, 02-11-2026**.
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.
