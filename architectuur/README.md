@@ -8,7 +8,7 @@
 
 *Figuur 1. **Gesaneerde architectuurillustratie** in GitHub Dark-stijl. Werkelijke host-, router-, beheer- en lab-IP-adressen ontbreken bewust. De getoonde relaties zijn logisch/conceptueel, geen live-netwerktopologie en geen testbewijs.*
 
-Deze weergave is afgeleid van de bijgewerkte **private Architecture**, maar publiceert geen interne IP-mapping, de originele private afbeelding of adresgegevens. De private HT-C-010 is door de Project Owner als **doelontwerp** gevalideerd, niet technisch uitgerold. Een toekomstige zone is niet automatisch een actieve VLAN of pfSense-interface.
+Deze weergave is afgeleid van de bijgewerkte **private Architecture**, maar publiceert geen interne IP-mapping, de originele private afbeelding of adresgegevens. De private HT-C-010 is door Sam als **doelontwerp** gevalideerd, niet technisch uitgerold. Een toekomstige zone is niet automatisch een actieve VLAN of pfSense-interface.
 
 ## 2. Huidige en geplande onderdelen
 
