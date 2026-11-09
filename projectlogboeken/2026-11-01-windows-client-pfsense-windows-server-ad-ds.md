@@ -13,7 +13,7 @@
 
 **Project:** Hybrid-Theory  
 **Scope:** pfSense LAB + `PS-HT-CLIENT01-Win11` + `PS-HT-VM03-WindowsServer` (hostname `PS-HT-DC01`)  
-**Uitvoering:** Project Owner, met technische begeleiding door ChatGPT  
+**Uitvoering:** Sam, met technische begeleiding door ChatGPT  
 **Aanpak:** Risk-Based Validation, korte functionele tests, geen onnodige extra hardening  
 **Resultaat:** **PASS** voor gerichte netwerk-, activatie- en AD DS-installatietests; **PENDING** voor domeinpromotie, AD DNS, domain join, GPO en volledige missieacceptatie  
 **Volgende sessie:** maandag 2 november 2026 — focus op werkende demonstraties en vijf primaire missies

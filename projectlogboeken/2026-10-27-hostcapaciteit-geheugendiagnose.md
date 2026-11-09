@@ -15,7 +15,7 @@
 **Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.**  
 **Scope:** Windows-host Lenovo, VMware-capaciteitsplanning voor Fase 3/4  
 **Status:** Diagnose UITGEVOERD; VM-belastingstest OPEN; geen permanente systeemwijzigingen bevestigd.  
-**Bewijsbasis:** door Project Owner gedeelde screenshots uit Task Manager, VMware Workstation, PowerShell en Windows Settings. Momentopnamen zijn niet simultaan en hebben verschillende achtergrondbelasting.  
+**Bewijsbasis:** door Sam gedeelde screenshots uit Task Manager, VMware Workstation, PowerShell en Windows Settings. Momentopnamen zijn niet simultaan en hebben verschillende achtergrondbelasting.  
 **Publicatie:** geredigeerd, zonder accountinformatie, interne paden met persoonsinformatie of identifiers van het thuisnetwerk.
 
 ## 1. Hardwarebaseline (VERIFIED via Task Manager/VMware screenshots)

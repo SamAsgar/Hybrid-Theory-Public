@@ -1,6 +1,6 @@
 # Statuslegenda | Hybrid-Theory
 
-**Documentstatus:** **APPROVED — Project Owner, 02-11-2026**  
+**Documentstatus:** **APPROVED — Sam, 02-11-2026**  
 **Redactionele onderzoeksupdate:** 03-11-2026, CAT/ACE v0.4-duiding; oorspronkelijke engineeringverdicts niet gewijzigd.  
 **Toepassing:** actuele README's, beleidsdocumenten, roadmap, labrapporten en duiding van historische logs. Een status mag alleen worden toegekend voor zover de vermelde scope en het bestaande bewijs dat ondersteunen.
 
@@ -18,7 +18,7 @@
 |---|---|
 | **PASS** | Vastgelegde acceptatiecriteria gehaald binnen de expliciete testscope. |
 | **REWORK** | Aantoonbare afwijking of essentieel bewijs voor de betreffende controle ontbreekt; oorzaak en vervolgactie specificeren. |
-| **EXCEPTION** | Door de Project Owner bewust geaccepteerd en vastgelegd restrisico binnen afgebakende omstandigheden. Geen automatische PASS. |
+| **EXCEPTION** | Door Sam bewust geaccepteerd en vastgelegd restrisico binnen afgebakende omstandigheden. Geen automatische PASS. |
 
 **Geen vervangende verdicts:** `NOT VERIFIED`, `OPEN`, `INCONCLUSIVE` en `DONE` zijn geen afzonderlijke engineeringverdicts. Beschrijf ontbrekend bewijs in woorden en koppel het werk aan een werkstatus.
 
@@ -35,8 +35,8 @@
 | Status | Betekenis |
 |---|---|
 | **DRAFT** | Conceptdocument, nog niet door de eigenaar goedgekeurd. |
-| **PENDING OWNER APPROVAL** | Voorgelegd aan de Project Owner; besluit ontbreekt nog. |
-| **APPROVED** | Uitdrukkelijk door de Project Owner goedgekeurd, met datum en scope. |
+| **PENDING OWNER APPROVAL** | Voorgelegd aan Sam; besluit ontbreekt nog. |
+| **APPROVED** | Uitdrukkelijk door Sam goedgekeurd, met datum en scope. |
 
 **APPROVED** van een beleid betekent **niet** dat de daarin voorgeschreven technische controls zijn uitgevoerd of dat publicatiegates zijn gehaald.
 

@@ -42,7 +42,7 @@
 - 4 GiB (4096 MB) RAM, 2 vCPU ingesteld. OVA presenteert twee virtuele SCSI-schijven van 100 GB en 1 TB virtuele capaciteit; werkelijk ruimtegebruik en benodigde volumes nog niet gecontroleerd.
 - NIC1 VMware host-only, NIC2 NAT met **Connected** en **Connect at power on** uit. Geen empirisch bewijs van volledige segmentisolatie.
 - Eerste start met nested AMD-V/RVI ingeschakeld toonde `Virtualized AMD-V/RVI is not supported on this platform`. Na uitschakelen van doorgifte in VM-instellingen start de GNS3-appliance.
-- Console: GNS3 server 2.2.61, VM 0.21.0, QEMU 10.2.1, `KVM support available: False`, GNS3 management-IP `GNS3_MGMT_IP` (host-only), poort 80. GNS3 Web UI vanaf Windows-host bereikbaar, door Project Owner bevestigd na correctie van verkeerd ingetikt IP. Alleen bereikbaarheids-PASS; nog geen echte appliance-workload getest.
+- Console: GNS3 server 2.2.61, VM 0.21.0, QEMU 10.2.1, `KVM support available: False`, GNS3 management-IP `GNS3_MGMT_IP` (host-only), poort 80. GNS3 Web UI vanaf Windows-host bereikbaar, door Sam bevestigd na correctie van verkeerd ingetikt IP. Alleen bereikbaarheids-PASS; nog geen echte appliance-workload getest.
 - PowerShell `Get-CimInstance Win32_ComputerSystem | Select-Object HypervisorPresent`: **True**.
 - `Win32_DeviceGuard`: `VirtualizationBasedSecurityStatus = 2` en `SecurityServicesConfigured = {2,3,4}`, `SecurityServicesRunning = {2,3,4}`. Windows Security screenshot bevestigt Memory Integrity On, Firmware Protection On, LSA Protection On, Kernel-mode hardware-enforced stack protection Off.
 - VMware `vmware.log`: **`Monitor Mode: ULM`**. Dit bevestigt Windows-hypervisor-gebaseerde VMware-uitvoeringsmodus. Samen met VBS en ontbrekende KVM is dit een sterke verklaring voor het nested-virtualizationprobleem, maar niet elke afhankelijke instelling is afzonderlijk causaal getest.
@@ -61,7 +61,7 @@
 | PK-HT-002 | Volledige GNS3 network-isolation-validatie inclusief NAT-gedrag | NAT NIC administratief uit, host-only bereikbaarheid wel bevestigd; dat bewijst geen verkeersgrens | Vóór koppeling GNS3-dataplane aan pfSense, LAB of fysiek netwerk | Interface-/routeinventaris, positieve en negatieve test naar geautoriseerde/onbevoegde netwerken, evidence |
 | PK-HT-003 | GNS3 virtuele SCSI-schijven (100 GB + 1 TB) en daadwerkelijke hostopslag | OVA-defaults; geen opslag- of datapadinspectie verricht | Vóór grotere image-imports of diskdruk | Thin/sparse status, daadwerkelijke grootte, doel tweede volume vastleggen; geen disk verwijderen zonder appliance-eis te controleren |
 | PK-HT-004 | Vijf VM's tegelijk / RAM-headroom | Alleen snapshots, geen gezamenlijke stress/loadtest | Als alle vijf VM's geïnstalleerd zijn of simultane test noodzakelijk is | Host Available/Committed, disk swapping en VM-respons onder representatieve belasting meten |
-| PK-HT-005 | MacBook Pro 2014 format safety | Project Owner wil bare-metal Ubuntu; backup/SSD/hardwarechecks ontbreken | Vóór enig wissen van macOS | Gegevensbesluit, herstelbare backup, SSD/SMART, installatiemedia, compatibiliteit en doelvolume controle; expliciete format-go |
+| PK-HT-005 | MacBook Pro 2014 format safety | Sam wil bare-metal Ubuntu; backup/SSD/hardwarechecks ontbreken | Vóór enig wissen van macOS | Gegevensbesluit, herstelbare backup, SSD/SMART, installatiemedia, compatibiliteit en doelvolume controle; expliciete format-go |
 | PK-HT-006 | Azure Arc/private cloud services op tweede host | Hardware-/OS-ready en gratis SKU/featurelimieten nog niet geverifieerd | MacBook Linux-server stabiel en netwerkroute ontworpen | Arc-agentcompatibiliteit, TLS egress, RBAC en kostencontrole; services gefaseerd |
 | PK-HT-007 | pfSense/Ubuntu baseline, snapshot, netwerkroute, logtijd en bewijs | Bestaande openpunten uit 26 oktober, niet opnieuw getest | Bij hervatten core lab-netwerkwerk | Herlees bestaande log, gerichte validatie en alleen reeds geldige issues sluiten |
 
@@ -80,7 +80,7 @@
 
 **Scope:** Alleen de nieuwe gebeurtenissen na de eerste GNS3-VM-boot en KVM-diagnose. OVA-import, VBS/ULM-diagnose, parkeerregister, hostcapaciteit en MacBook/Windows-ISO-voorbereiding staan al in dit log of de andere logs en worden niet herhaald. **Dit addendum vervangt de eerdere status 'GNS3 Desktop nog te installeren' door PASS.**
 
-### 1. Nieuwe observaties (screenshots Project Owner)
+### 1. Nieuwe observaties (screenshots Sam)
 
 1. **Installer gecontroleerd:** GNS3 2.2.61 all-in-one geopend; Windows Properties > Digital Signatures > Details meldde **“This digital signature is OK”**. Signer: **SolarWinds Worldwide, LLC**, signing time **30 juli 2026**, Microsoft-countersignature zichtbaar. De digitale handtekening werd gecontroleerd; onafhankelijke vergelijking met een officiële vendor-SHA-256 is **niet** uitgevoerd.
 2. **Installatiecomponenten beoordeeld:** GNS3 Desktop geselecteerd; afzonderlijke GNS3 VM-installer niet nodig (appliance is reeds in VMware geïmporteerd). Opties voor Npcap, Wireshark, Dynamips, QEMU, VPCS en console-viewers besproken. De definitieve set geïnstalleerde optionele onderdelen is **niet afzonderlijk geïnventariseerd**.
@@ -96,7 +96,7 @@
 - PowerShell Get-ChildItem toonde dat **vmrun.exe daadwerkelijk aanwezig** was in **C:\Program Files\VMware\VMware Workstation\vmrun.exe**.
 - **where.exe vmrun** gaf eerst **“Could not find files for the given pattern(s)”**: bestand stond niet in de PATH die deze sessie gebruikte.
 - Door uitsluitend in de lopende PowerShell-sessie de VMware Workstation-directory aan de omgevingsvariabele **PATH** toe te voegen, gaf een tweede **where.exe vmrun** het verwachte volledige pad. **PASS: PATH-test in PowerShell**.
-- De Project Owner kreeg instructie via Windows **Advanced > Environment Variables > User variables > Path** het pad blijvend beschikbaar te maken en GNS3 opnieuw te starten. Het volgende screenshot liet GNS3 normaal starten **zonder zichtbare vmrun-foutmelding**.
+- Sam kreeg instructie via Windows **Advanced > Environment Variables > User variables > Path** het pad blijvend beschikbaar te maken en GNS3 opnieuw te starten. Het volgende screenshot liet GNS3 normaal starten **zonder zichtbare vmrun-foutmelding**.
 - **Beperking:** er is geen aparte screenshot van blijvende User Path-configuratie en nog geen bewijs dat Desktop de GNS3 VM werkelijk kan starten/beheren. Daarom **geen end-to-end VMware-integratie-PASS**.
 - Geen herinstallatie van VMware, geen wijziging van host-VBS/Hyper-V, en geen aanpassing aan pfSense of het thuisnetwerk.
 
@@ -137,7 +137,7 @@
 2. **VM boot / beperking:** eerste poging met nested AMD-V/RVI gaf incompatibiliteitsmelding en `FeatureCompatLate`/ `hv.capable`-startfout. CPU-checkbox `Virtualize Intel VT-x/EPT or AMD-V/RVI` uitgeschakeld; GNS3 VM start. Console: GNS3 2.2.61, `KVM support available: False`. PK-HT-001 blijft **PARKED**, niet opgelost.
 3. **Desktop ↔ VM:** GNS3 Desktop toont twee groene servers: lokale server en `PS-HT-VM02-GNS3`. PASS voor beheerverbinding en lichte workload, niet voor brede appliance-compatibiliteit.
 4. **Topologie:** `HT-GNS3-LAB01-Network-Baseline`; VPCS PC1 — Ethernet Switch1 — VPCS PC2; geen Cloud/NAT/bridge/pfSense toegevoegd. PC1 `LAB_IP_REDACTED`, PC2 `LAB_IP_REDACTED`.
-5. **Connectivity en ARP:** Project Owner bevestigde ping in beide richtingen. Screenshot PC1 toont vijf ICMP-antwoorden van `LAB_IP_REDACTED`; daarna `show arp` met een geldige MAC-mapping. Tijdelijke lege ARP-cache vóór ping is verklaard.
+5. **Connectivity en ARP:** Sam bevestigde ping in beide richtingen. Screenshot PC1 toont vijf ICMP-antwoorden van `LAB_IP_REDACTED`; daarna `show arp` met een geldige MAC-mapping. Tijdelijke lege ARP-cache vóór ping is verklaard.
 6. **Wireshark capture:** capture op PC1–Switch1; screenshot met **12 frames**: 2 ARP (request/reply), 10 ICMP (5 requests/5 replies). PASS voor L2/L3-verkeer in deze topologie.
 7. **Lokale opslag:** File Explorer toont projectbestand `HT-GNS3-LAB01-Network-Baseline.gns3` (~9 KB), capture `HT-LAB01-ARP-ICMP-Baseline.pcapng` (~2 KB), en `project-files` onder lokale `GNS3/projects/HT-GNS3-LAB01-Network-Baseline`. Aanwezigheid bevestigd; heropenings-/restoretest nog OPEN.
 
