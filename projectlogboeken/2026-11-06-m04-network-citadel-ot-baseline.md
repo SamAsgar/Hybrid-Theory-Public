@@ -24,7 +24,7 @@ Tijdens deze preflight staan de PLC- en HMI-VM's tijdelijk samen op een VMware N
 ### Vervolg
 Eerst de dynamische FUXA-reads en een geautoriseerde HMI-write aantonen, daarna tags/dashboard completeren, vervolgens pfSense-OT-isolatie en Wazuh. De toekomstige koelsimulatie is een afzonderlijk geparkeerd idee en geen afgeronde implementatie.
 
-**Evidence:** de Project Owner beschikt over een lokaal privé-ZIP met 27 originele screenshots; dit bestand is nadrukkelijk **niet gesaneerd en niet publiek beschikbaar**. Publieke evidence wordt uitsluitend na afzonderlijke publicatiecontrole toegevoegd.
+**Evidence:** Sam beschikt over een lokaal privé-ZIP met 27 originele screenshots; dit bestand is nadrukkelijk **niet gesaneerd en niet publiek beschikbaar**. Publieke evidence wordt uitsluitend na afzonderlijke publicatiecontrole toegevoegd.
 
 ---
 
@@ -36,7 +36,7 @@ Eerst de dynamische FUXA-reads en een geautoriseerde HMI-write aantonen, daarna 
 - OpenPLC-runtime **Running**; Modbus TCP-listener actief op poort 502. Verbinding vanaf Windows-host én afzonderlijk vanaf FUXA Linux-VM naar de PLC getest (**TCP PASS**).
 - FUXA Docker-container actief, HMI-editor beschikbaar, Modbus TCP-device **PLC01-MOTOR** operationeel.
 - Via OpenPLC werd een gecontroleerde motorcyclus OFF→ON→OFF uitgevoerd. De twee FUXA-tags **Motor_Start** en **Motor_Running** volgden de waarden **0→1→0** met bijgewerkte timestamps: **AC02 PASS binnen deze twee tags**.
-- Een FUXA MainView-button is met de tag **Motor_Start** en actie **Toggle** gekoppeld. De Project Owner bevestigde dat starten en stoppen vanuit FUXA werkt en deelde sessiebeeldmateriaal: **AC03 PASS binnen functionele scope**, niet onafhankelijk op pakketniveau geverifieerd.
+- Een FUXA MainView-button is met de tag **Motor_Start** en actie **Toggle** gekoppeld. Sam bevestigde dat starten en stoppen vanuit FUXA werkt en deelde sessiebeeldmateriaal: **AC03 PASS binnen functionele scope**, niet onafhankelijk op pakketniveau geverifieerd.
 - Lokale PLC Monitoring liet motor OFF (FALSE/FALSE/25) en ON (TRUE/TRUE/45) zien; Alarm bleef FALSE. Een werkende alarm- of overtemperatuurtest is niet aangetoond.
 
 ### Statusmatrix
