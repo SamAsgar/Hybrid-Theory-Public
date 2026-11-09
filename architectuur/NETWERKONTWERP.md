@@ -1,18 +1,18 @@
 # Netwerkontwerp en beveiligingsgrenzen | Hybrid-Theory
 
-**Bijgewerkt:** 8 november 2026 (§1: OT-zone en FUXA/OpenPLC) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** HT-C-010 in de private bron.
+**Bijgewerkt:** 9 november 2026 (§1: OT-zone en FUXA/OpenPLC; §4: openstaande punten) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** HT-C-010 in de private bron.
 
 ## 1. Geobserveerde infrastructuur (afgebakend bewijs)
 
 | Onderdeel | Technologie | Status en bewijsgrens |
 |---|---|---|
 | LAB | VMware LAN Segment, pfSense/Kea DHCP | **IMPLEMENTED**; gerichte netwerk-/DHCP-/firewalltests PASS |
-| OT-zone (firewallzijde) | Eigen VMware LAN Segment, aparte pfSense-interface | **IMPLEMENTED** (8 nov.): eigen subnet uit het doelontwerp, geen gateway, geen regels (default deny). Nog geen systemen op het segment; isolatie **NIET GETEST**. [Log](../projectlogboeken/2026-11-08-m04-ot-firewallinterface.md) |
+| OT-zone (firewallzijde) | Eigen VMware LAN Segment, aparte pfSense-interface | **IMPLEMENTED** (8 nov.): eigen subnet uit het doelontwerp, zonder upstream-gateway. Volgens de Project Owner staat de virtuele PLC sinds 8–9 nov. in dit segment, met een beperkt beheerpad vanaf één aangewezen beheerbron (**gemeld**, bewijs niet onafhankelijk geverifieerd); de HMI staat er nog niet. Isolatie van de zone **NIET BEWEZEN**. [Log 8 nov.](../projectlogboeken/2026-11-08-m04-ot-firewallinterface.md) · [Log 9 nov.](../projectlogboeken/2026-11-09-m04-plc-migratie-governance-publiek.md) |
 | Beheer | VMware host-only, Cockpit/pfSense GUI | Beheer binnen eerdere tests bereikbaar; actuele NIC-/routingstatus deels OPEN |
 | Updates en WAN-simulatie | VMware NAT | Tijdelijk egresspad gebruikt; NAT is geen isolatiegarantie voor het thuisnetwerk |
 | Windows/Identity | Windows Server en Windows 11 | AD DS/forest, DNS/SRV, domain join, testlogin en GPO **PASS binnen scope** |
 | GNS3 | VPCS, switch, Wireshark | ARP/ICMP/capture **PASS** in een losstaande simulatie |
-| FUXA en OpenPLC | Ubuntu/Docker/HMI en PLC-runtime, tijdelijk op VMware NAT | Functionele baseline AC01–AC03 **PASS binnen scope** (6 nov.); nog **niet** in de OT-zone, OT-isolatie **NIET BEWEZEN** |
+| FUXA en OpenPLC | Ubuntu/Docker/HMI en PLC-runtime; de HMI tijdelijk op VMware NAT, de PLC volgens de Project Owner sinds 8–9 nov. in de OT-zone (**gemeld**) | Functionele baseline AC01–AC03 **PASS binnen scope** (6 nov., vóór de migratie; regressie **PENDING**); de HMI is **niet** in de OT-zone; OT-isolatie **NIET BEWEZEN** |
 | Wazuh | SIEM-manager/indexer/dashboard | Start en dashboardlogin **PASS**; agentingestie en detectie **OPEN** |
 | Recovery | M02 Phoenix Recovery | **PLANNED**; onafhankelijke restore niet aangetoond |
 | Azure | Arc/Entra/VNets | **PLANNED**; niet gedeployed |
@@ -44,7 +44,7 @@ De huidige cloudbaseline gebruikt twee voorgestelde subscriptions, elk met een e
 
 - **TWIJFEL:** hetzelfde LAB-adres is historisch voor twee verschillende VM's gedocumenteerd; gelijktijdig conflict niet aangetoond. De waarde blijft privé.
 - **TWIJFEL:** een adres in een zelfstandige GNS3-test kwam overeen met een adres in een ander LAB. Gedeelde netwerkscope of daadwerkelijke botsing is daarmee niet bewezen.
-- **OPEN:** actuele lease-/interfacegegevens, Wazuh-agentingestie, migratie van FUXA/OpenPLC naar de OT-zone en OT-segmentatietests, hersteltests en Azure-toegang.
+- **OPEN:** actuele lease-/interfacegegevens, Wazuh-agentingestie, migratie van de HMI naar de OT-zone, onafhankelijke verificatie van de gemelde PLC-migratie en OT-segmentatietests, hersteltests en Azure-toegang.
 - **DOEL / GEEN AUTO-MIGRATIE:** nieuwe zones, routes, firewallregels of cloudresources vereisen expliciete scope, autorisatie, kostencontrole en relevante positieve/negatieve tests.
 
 **Publicatie:** geen fysieke hostnamen, privérouteradressen, concrete IP-/MAC-adressen of private aliasvertalingen. Deze gesaneerde illustratie is geen audit- of compliancebewijs. Zie [Architecture](README.md) en [publicatiebeleid](../governance/PUBLICATIEBELEID.md).
