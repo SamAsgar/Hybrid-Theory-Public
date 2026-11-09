@@ -14,7 +14,7 @@
 
 **Onderzoeksvraag:** kan de hybride IT/OT-labomgeving aantoonbaar worden hersteld na hardwareverlies, ransomware, datacorruptie of verlies van de primaire beheeromgeving, zonder afhankelijk te zijn van de oorspronkelijke primaire host?
 
-Phoenix Recovery onderzoekt niet alleen de aanwezigheid van back-ups, maar ook de **onafhankelijkheid, integriteit, beschikbaarheid en herstelbaarheid** ervan. De Project Owner heeft **architectuur B** als ontwerpkeuze aangewezen: een bestaande MacBook wordt uitsluitend voor **lokale recovery** gereserveerd, terwijl de primaire Lenovo **rechtstreeks** een tweede, offsite back-up naar Backblaze B2 verstuurt.
+Phoenix Recovery onderzoekt niet alleen de aanwezigheid van back-ups, maar ook de **onafhankelijkheid, integriteit, beschikbaarheid en herstelbaarheid** ervan. Sam heeft **architectuur B** als ontwerpkeuze aangewezen: een bestaande MacBook wordt uitsluitend voor **lokale recovery** gereserveerd, terwijl de primaire Lenovo **rechtstreeks** een tweede, offsite back-up naar Backblaze B2 verstuurt.
 
 De herstelserver krijgt **geen noodzakelijke rol in de offsite back-upketen**. Afzonderlijke beheerdiensten zijn geen onderdeel van deze missie.
 
@@ -157,7 +157,7 @@ Per test vastleggen: **test-ID, datum, systeemscope, uitgangsconfiguratie, verwa
 | Onderdeel | Toepassing binnen M02 |
 |---|---|
 | **CAT · Corporate Governance & Compliance** | Risico-eigenaarschap, relevante ISO/IEC 27001- en NIST CSF 2.0-referenties, bewijsgrenzen |
-| **CAT · Accountability & Management** | Project Owner bepaalt scope, retentie, herstelprioriteit, restrisico en formeel akkoord |
+| **CAT · Accountability & Management** | Sam bepaalt scope, retentie, herstelprioriteit, restrisico en formeel akkoord |
 | **CAT · Technology & Operations** | Trust boundaries, toegangsrechten, versleuteling, beschikbaarheid en werkende herstelketen |
 | **ACE · Audit** | Reproduceerbare positieve en negatieve tests, bewijs en onafhankelijke review waar passend |
 | **ACE · Cost** | Onderscheid tussen **GESCHATTE** en **GEMETEN** kosten: opslag, objectversies, herstelverkeer, stroom en beheer |
@@ -180,7 +180,7 @@ CAT/ACE is hier een **onderzoeksmodel**, geen certificering of vervanging van er
 | Kenmerk | Stand per 4 november 2026 |
 |---|---|
 | **ADR** | M02-ADR-001 · Architectuur B |
-| **Project Owner** | Heeft de architectuurrichting gekozen; formele documentvaststelling staat open |
+| **Sam** | Heeft de architectuurrichting gekozen; formele documentvaststelling staat open |
 | **AI-ontwerpbeoordeling** | Design PASS volgens interne AI-self-assessment; geen onafhankelijke audit |
 | **Technische controles** | PENDING |
 | **Herstelzekerheid** | PENDING |

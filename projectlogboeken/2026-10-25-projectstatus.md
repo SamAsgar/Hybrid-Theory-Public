@@ -180,7 +180,7 @@
 ### 14. AI Work Policies: UITGEVOERD EN BIJGEWERKT
 
 - Bestand `governance/AI_WERKAFSPRAKEN.md` (aanvankelijk leeg) ingevuld met **12 onderdelen** over gerichte, risicogestuurde uitvoering.
-- Vastgelegd: **niet onnodig dubbelchecken**, maximaal drie uitvoerstappen per ronde, symptoomgestuurde troubleshooting, na PASS stoppen tenzij materieel risico, geen eindeloze AI-reviewrondes, geen ongevraagde herontwerpen en Project Owner als eindbeslisser.
+- Vastgelegd: **niet onnodig dubbelchecken**, maximaal drie uitvoerstappen per ronde, symptoomgestuurde troubleshooting, na PASS stoppen tenzij materieel risico, geen eindeloze AI-reviewrondes, geen ongevraagde herontwerpen en Sam als eindbeslisser.
 - Extra instructie van de eigenaar verwerkt: **niet té voorzichtig werken**, zodat onomkeerbare of daadwerkelijk risicovolle handelingen relevante controles behouden en eenvoudige taken niet in bureaucratie vastlopen.
 - Na inhoudelijke controle **twee onduidelijkheden gecorrigeerd**:
   - `READY FOR IMPLEMENTATION` is een **fase-aanduiding**, geen vierde formele reviewuitkomst.
@@ -190,7 +190,7 @@
 ### 15. pfSense op VMware: BESPROKEN EN AKKOORD VOOR VERVOLG, NOG NIET GEÏNSTALLEERD
 
 - Via de oorspronkelijke engineeringnotities is aanvankelijk een technisch ontwerp besproken voor een VMware NAT-WAN, geïsoleerd lab-LAN, veilige webGUI-toegang en restrictief firewallbeleid.
-- De Project Owner heeft daarna expliciet gevraagd om **minder overmatige voorzichtigheid** en ingestemd met **internet tijdens de pfSense-installatie**. Claude heeft het plan vereenvoudigd om overbodige voorbereidende rondes te vermijden.
+- Sam heeft daarna expliciet gevraagd om **minder overmatige voorzichtigheid** en ingestemd met **internet tijdens de pfSense-installatie**. Claude heeft het plan vereenvoudigd om overbodige voorbereidende rondes te vermijden.
 - **Laatst overeengekomen uitvoerrichting (voorstel van Claude, akkoord eigenaar):** pfSense-VM met **2 vCPU, 2 GB RAM, 20 GB disk** en **drie adapters**: VMware NAT voor WAN, host-only voor beheer en LAN/webGUI, geïsoleerd VMware LAN Segment als extra labinterface. Dit wijkt af van het oudere twee-interface-ontwerp; het documenteren van die afwijking betekent **niet** dat de wijziging reeds is uitgevoerd.
 - Het bestaande Ubuntu-lab krijgt **nog geen gateway naar pfSense**. Zodra firewallregels passend zijn ingericht, kunnen gecontroleerde bereikbaarheidstests plaatsvinden.
 - Claude verzorgt de praktische uitvoering met de eigenaar; ChatGPT is beschikbaar voor een **gerichte second opinion bij daadwerkelijk troubleshooting**. **Geen bevestigde pfSense-installatie, interfaceconfiguratie, firewalltest of snapshot** in de geraadpleegde verslagen.

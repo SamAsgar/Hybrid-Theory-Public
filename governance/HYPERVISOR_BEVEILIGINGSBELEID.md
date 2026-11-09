@@ -1,9 +1,9 @@
 # Hypervisor | Beveiligingsbeleid en controlecriteria
 
 **Beleids-ID:** HT-GOV-HV-001  
-**Versie:** 0.1 (opgesteld 29-10-2026) | **Documentstatus:** **APPROVED — Project Owner, 02-11-2026**  
+**Versie:** 0.1 (opgesteld 29-10-2026) | **Documentstatus:** **APPROVED — Sam, 02-11-2026**  
 **Classificatie:** PUBLIC  
-**Eigenaar:** Project Owner  
+**Eigenaar:** Sam  
 **Onderzoekskader:** [CAT/ACE v0.4](CAT_ACE_v0.4.md) (Audit, Cost & Efficiency; experimenteel, geen formeel auditverdict)  
 **Redactionele update:** 03-11-2026, alleen onderzoeksverwijzingen; bestaande HV-controls, beleidsbesluit en testuitslagen ongewijzigd.  
 **Scope:** Windows-virtualisatiehost, VMware Workstation Pro, VM-grenzen, beheer, logging, herstel en gecontroleerd bewijs.
@@ -57,7 +57,7 @@ De virtualisatielaag vormt een trust boundary onder meerdere gastbesturingssyste
 - **Prioriteit 3:** ontwerp centrale logging en alerts bij ontbrekende heartbeats na de essentiële VM-baseline. Kies pas een tool na resource- en kostencontrole.
 - **Prioriteit 4:** verifieer werkelijk onafhankelijke off-host back-ups en herstel zodra geschikte opslag beschikbaar is.
 
-Schakel VBS of Memory Integrity niet alleen voor nested virtualisatie uit. Iedere voorgestelde concessie aan hostbeveiliging vereist een expliciete risicoafweging, rollback en toestemming van de Project Owner.
+Schakel VBS of Memory Integrity niet alleen voor nested virtualisatie uit. Iedere voorgestelde concessie aan hostbeveiliging vereist een expliciete risicoafweging, rollback en toestemming van Sam.
 
 ## 5. Technische uitvoering en CAT/ACE v0.4 als onderzoekscontext
 
@@ -101,6 +101,6 @@ Gedetailleerde storingsscenario's en adversarial validatie horen in een afzonder
 - [Hardwarebaseline](HARDWARE_BASELINE.md): technische componentstatus.
 - [Statuslegenda](STATUSLEGENDA.md): definities van component-, werk-, document- en verdictstatus.
 
-**Documentstatus:** **APPROVED — Project Owner, 02-11-2026**. De technische HV-controles van 1 november werden aan de toenmalige conceptcriteria getoetst. Beleid goedgekeurd op 2 november; geen nieuwe live configuratie of extra test uitgevoerd.
+**Documentstatus:** **APPROVED — Sam, 02-11-2026**. De technische HV-controles van 1 november werden aan de toenmalige conceptcriteria getoetst. Beleid goedgekeurd op 2 november; geen nieuwe live configuratie of extra test uitgevoerd.
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

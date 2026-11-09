@@ -1,6 +1,6 @@
 # CAT/ACE v0.2 — Evidence-Driven Security Assurance & Dependency Research
 
-**Auteur en conceptontwikkeling:** Project Owner / @SamAsgar  
+**Auteur en conceptontwikkeling:** Sam / @SamAsgar  
 **Versie:** v0.2 | 2 november 2026  
 **Onderzoeksstatus:** **CONCEPT / NOT VALIDATED**  
 **Onderzoeksomgeving:** Hybrid-Theory  
@@ -9,7 +9,7 @@
 
 > **CAT/ACE v0.2 is een experimenteel, modulair assurance- en dependency-onderzoeksmodel dat governance, managementverantwoordelijkheid en technische systemen met elkaar verbindt.**
 >
-> Dit is een **eigen onderzoeksconcept van de Project Owner**. Bestaande frameworks zoals **COBIT, ISO/IEC 27001 en NIST CSF** behandelen governance en management al. **De drie lagen zijn op zichzelf geen nieuwe uitvinding.** De te onderzoeken meerwaarde ligt in een **reproduceerbare koppeling** van verantwoordelijkheden, technische controls, systeemafhankelijkheden, gecontroleerde foutinjectie, bewijsvoering en restrisicobesluiten.
+> Dit is een **eigen onderzoeksconcept van Sam**. Bestaande frameworks zoals **COBIT, ISO/IEC 27001 en NIST CSF** behandelen governance en management al. **De drie lagen zijn op zichzelf geen nieuwe uitvinding.** De te onderzoeken meerwaarde ligt in een **reproduceerbare koppeling** van verantwoordelijkheden, technische controls, systeemafhankelijkheden, gecontroleerde foutinjectie, bewijsvoering en restrisicobesluiten.
 >
 > De ontwikkeling is **evidence-driven**: resultaten kunnen de aannames ondersteunen, nuanceren **of weerleggen**. CAT/ACE is **niet bewezen beter** dan bestaande beoordelingsprocedures. De daadwerkelijke meerwaarde moet worden onderzocht met vooraf bepaalde criteria en onafhankelijke vergelijking.
 

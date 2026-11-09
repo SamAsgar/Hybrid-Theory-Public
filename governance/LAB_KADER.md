@@ -1,6 +1,6 @@
 # Labkader | Hybrid-Theory
 
-**Versie:** 1.1 | **Bijgewerkt:** 02-11-2026 | **Status:** **APPROVED — Project Owner, 02-11-2026**  
+**Versie:** 1.1 | **Bijgewerkt:** 02-11-2026 | **Status:** **APPROVED — Sam, 02-11-2026**  
 **Scope:** eigen VM's, eigen hardware en expliciet geautoriseerde cloudresources voor netwerk- en identity-engineering, automatisering, security en weerbaarheid.
 
 ## Toegestane scope
@@ -22,7 +22,7 @@ Stop bij verkeer buiten de toegestane scope, onbedoeld blootgestelde gegevens, v
 
 ## Governance en bewijs
 
-De Project Owner keurt scope en belangrijke besluiten goed. Ontwerp, installatie en beheer worden iteratief uitgevoerd; beveiliging en troubleshooting blijven daarbij doorlopende verantwoordelijkheden. Verificatie gebeurt risicogestuurd met **PASS / REWORK / EXCEPTION**, volgens de [AI-werkafspraken](AI_WERKAFSPRAKEN.md). Waar een lab om toetsing vraagt, worden **alle relevante en toepasselijke** governance-, security-, assessment- en wettelijke referenties geselecteerd, afhankelijk van de concrete scope. Dat kan onder meer **COBIT 2019, ISO/IEC 27001, NIST CSF 2.0, CIS Controls v8.1, NIST SP 800-53A** of een passende OT-/privacyreferentie zijn. De typen, toepasselijkheid en praktijkvoorbeelden staan in [CAT/ACE v0.4 — Audit, Cost & Efficiency](CAT_ACE_v0.4.md). **CAT** registreert eisen, verantwoordelijken en controls; **ACE** onderzoekt intern, extern of hybride de auditbevindingen, kosten en verantwoorde efficiëntiewinst, gevolgd door **Revalidation** na wijzigingen. Dit onderzoeksconcept is **niet gevalideerd** en introduceert geen verplichte volledige audit of extra preflightcontrole.
+Sam keurt scope en belangrijke besluiten goed. Ontwerp, installatie en beheer worden iteratief uitgevoerd; beveiliging en troubleshooting blijven daarbij doorlopende verantwoordelijkheden. Verificatie gebeurt risicogestuurd met **PASS / REWORK / EXCEPTION**, volgens de [AI-werkafspraken](AI_WERKAFSPRAKEN.md). Waar een lab om toetsing vraagt, worden **alle relevante en toepasselijke** governance-, security-, assessment- en wettelijke referenties geselecteerd, afhankelijk van de concrete scope. Dat kan onder meer **COBIT 2019, ISO/IEC 27001, NIST CSF 2.0, CIS Controls v8.1, NIST SP 800-53A** of een passende OT-/privacyreferentie zijn. De typen, toepasselijkheid en praktijkvoorbeelden staan in [CAT/ACE v0.4 — Audit, Cost & Efficiency](CAT_ACE_v0.4.md). **CAT** registreert eisen, verantwoordelijken en controls; **ACE** onderzoekt intern, extern of hybride de auditbevindingen, kosten en verantwoorde efficiëntiewinst, gevolgd door **Revalidation** na wijzigingen. Dit onderzoeksconcept is **niet gevalideerd** en introduceert geen verplichte volledige audit of extra preflightcontrole.
 
 Onderscheid **PLANNED / IMPLEMENTED / VERIFIED**. Screenshots zijn bewijs binnen hun testscope, geen onderbouwing voor ongeteste controls. Een AI-review vervangt geen geobserveerde resultaten.
 
@@ -32,7 +32,7 @@ Gedetailleerde AI-werkafspraken staan uitsluitend in [AI-werkafspraken](AI_WERKA
 
 Publiceer geen secrets, vertrouwelijke projectnamen, echte beheeridentificatoren, herkenbare privétopologie of ongeschoonde captures. Eerdere Git-commits of comments kunnen gegevens blijven bevatten, ook wanneer recente bestanden zijn opgeschoond. De werkwijze en verplichte publicatiecontrole zijn beschreven in het [Publicatiebeleid](PUBLICATIEBELEID.md).
 
-**Documentstatus:** **APPROVED — Project Owner, 02-11-2026**. Het beleid is door Sam goedgekeurd; dit verandert geen bestaande technische configuratie en bewijst geen naleving of afgeronde publicatiereview.
+**Documentstatus:** **APPROVED — Sam, 02-11-2026**. Het beleid is door Sam goedgekeurd; dit verandert geen bestaande technische configuratie en bewijst geen naleving of afgeronde publicatiereview.
 
 **Statusgebruik:** [STATUSLEGENDA](STATUSLEGENDA.md).
 
