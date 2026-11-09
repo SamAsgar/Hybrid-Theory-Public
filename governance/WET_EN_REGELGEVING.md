@@ -2,7 +2,7 @@
 
 **Documentstatus:** **DRAFT** (referentiedocument). Dit document beschrijft reeds genoemde kaders als ontwerplens. Het bewijst geen technische implementatie, compliance of certificering.
 **Versie:** 1.0 (27-10-2026)
-**Eigenaar:** Project Owner
+**Eigenaar:** Sam
 **Gerelateerd:** [LAB_KADER.md](LAB_KADER.md), [BESLUITENLOG.md](BESLUITENLOG.md), [statuslegenda](STATUSLEGENDA.md)
 
 **Actuele uitvoeringsafspraak HT-011 (1 november 2026):** aanbevelingen hieronder over MFA, updates, NTP, netwerkzones, monitoring en uitgebreide audit-/hersteltests zijn referenties of doeleisen voor de betreffende oefencasus of het relevante lab. Ze zijn niet automatisch verplichte preflight-checks voor elke nieuwe VM of de eerste AD-installatie. Vóór een missie gelden de minimale veiligheidsgrenzen en risicogestuurde triggers uit [AI-werkafspraken §1](AI_WERKAFSPRAKEN.md#1-doelgericht-proportioneel-en-veilig). Waar dit document strenger lijkt, geldt HT-011 voor de **labuitvoeringsvolgorde**; wettelijke verplichtingen voor werkelijk gereguleerde organisaties blijven onaangetast.
@@ -15,7 +15,7 @@ Uitgangspunten:
 
 - **Voor de nog niet geactiveerde controlmapping is ISO/IEC 27001:2022 Annex A als primaire control-sleutel voorgesteld.** Dit is een documentatiekeuze, niet de enige benchmark: de onderzoekskaders worden per toepasselijk scenario geselecteerd. Zie [CAT/ACE v0.4](CAT_ACE_v0.4.md), waarin **CAT-C** toepasselijke vereisten afbakent en **ACE-Audit** ze binnen scope toetst, ook bij interne of hybride beoordeling.
 - **Geen claim zonder bewijs.** Een component krijgt slechts VERIFIED binnen een passend geteste scope. Een control krijgt uitsluitend een gescopeerd PASS als vooraf vastgelegde acceptatiecriteria met bewijs zijn gehaald. Kennis van een kader is geen naleving ervan.
-- **De mapping in het controledossier blijft **PARKED**** tot besluit van de Project Owner. Dit document is de voorbereiding daarop.
+- **De mapping in het controledossier blijft **PARKED**** tot besluit van Sam. Dit document is de voorbereiding daarop.
 - **NIST CSF 2.0**, **CIS Controls v8.1** (met Assessment Specification) en **NIST SP 800-53A Rev. 5** zijn mogelijke **onderzoeks- en assessmentreferenties**, geen wetgeving en geen drie gelijkwaardige auditmethoden. De actieve controlmapping is **PARKED**; dit document levert geen onderbouwd besluit om NIST CSF of CIS daarvan categorisch uit te sluiten of op te nemen. Een toekomstige keuze vraagt expliciete goedkeuring en toepasselijkheidscontrole.
 - **Publicatie:** conform het [labkader](LAB_KADER.md) staan in dit document en de bijbehorende bewijslast geen IP-adressen, MAC-adressen, tenant- of subscription-ID's of credentials.
 
@@ -107,7 +107,7 @@ Kernverplichtingen:
 
 ### Relatie met Hybrid-Theory
 
-Het lab is geen entiteit onder de Cbw, maar de tien maatregelen van art. 21 vormen een bruikbare checklist voor elke fase. De rol van de Project Owner (eindverantwoordelijkheid, akkoord vóór uitvoering) spiegelt de bestuursverantwoordelijkheid. 
+Het lab is geen entiteit onder de Cbw, maar de tien maatregelen van art. 21 vormen een bruikbare checklist voor elke fase. De rol van Sam (eindverantwoordelijkheid, akkoord vóór uitvoering) spiegelt de bestuursverantwoordelijkheid. 
 
 ### Aandachtspunten netwerkarchitectuur
 
