@@ -2,7 +2,7 @@
 
 | Deelnemer | Rol |
 |---|---|
-| **Sam** | **Project Owner & Lead Architect (mens)**; eindverantwoordelijk voor ontwerp, scope, toestemming, bewijs en risicoacceptatie |
+| **Sam** | **Sam & Lead Architect (mens)**; eindverantwoordelijk voor ontwerp, scope, toestemming, bewijs en risicoacceptatie |
 | **ChatGPT** | **Engineering Orchestrator (AI)**; implementatiebegeleiding, samenhang, troubleshooting en testbare documentatie |
 | **Claude** | **Critical Security Auditor & Chaos Engineer (AI)**; gerichte tweede securitybeoordeling waar passend, afhankelijkheden en weerbaarheid; geen formeel onafhankelijke audit |
 | **Microsoft Copilot** | **Microsoft Specialist & Automation Engineer (AI)**; Windows Server, Active Directory, Entra, Azure, PowerShell |
@@ -10,7 +10,7 @@
 
 ## Technische overdracht
 
-Een taak krijgt een afgebakend doel, relevante configuratie of gesaneerde bewijsbron, aannames, eventuele openstaande risico's en een terugvalroute. Reviewer en uitvoerder worden waar relevant afzonderlijk vermeld. Sam beslist als Project Owner over acceptatie. Een AI-review is geen zelfstandig bewijs van technische werking.
+Een taak krijgt een afgebakend doel, relevante configuratie of gesaneerde bewijsbron, aannames, eventuele openstaande risico's en een terugvalroute. Reviewer en uitvoerder worden waar relevant afzonderlijk vermeld. Sam beslist over acceptatie. Een AI-review is geen zelfstandig bewijs van technische werking.
 
 ```text
 Taak / lab:
@@ -22,7 +22,7 @@ Afhankelijkheden en risico:
 Rollback / herstel:
 Engineeringverdict (scope verplicht): PASS | REWORK | EXCEPTION
 Ontbrekend bewijs: beschrijf concreet; werkstatus PENDING of PARKED
-Akkoord Sam (Project Owner):
+Akkoord Sam (Sam):
 ```
 
 ## Onderzoekscontext
