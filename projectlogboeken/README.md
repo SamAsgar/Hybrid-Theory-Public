@@ -18,6 +18,8 @@ De oorspronkelijke logs vormen **historische momentopnamen of later afgeleide ra
 | 7–8 november | [M04: OT-interface op de firewall](2026-11-08-m04-ot-firewallinterface.md) | OT-interface IMPLEMENTED met default deny; HMI/PLC nog niet verplaatst, isolatietests PENDING |
 | 8–9 november | [M04: PLC-migratie, troubleshooting en governance](2026-11-09-m04-plc-migratie-governance-publiek.md) | Gesanitiseerde voortgang: PLC-netwerkmigratie en gerichte tests, governance- en publicatieproces; HMI-migratie, AC04/AC07 PENDING |
 
+| 11 november | [M04: segmentatie en beheer gevalideerd](2026-11-11-m04-segmentatie-en-beheer-validatie.md) | Nieuwe tussenstand: HMI op OT, beheerverbindingen en gerichte LAB→OT-blokkade TESTED PASS; troubleshooting en vervolgcriteria; AC04/AC07 volledig PENDING |
+
 **Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam; op 08-11-2026 aangevuld door Claude.
