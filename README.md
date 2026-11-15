@@ -10,7 +10,7 @@
 
 [**Huidige architectuur · Diagram A**](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) · [**Doelarchitectuur · Diagram B**](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg) · [Architectuurdocumentatie](architectuur/README.md) · [Missies M01–M05](#5-foundational-labs) · [Bewijsvoering](bewijsvoering/README.md) · [Roadmap](projectlogboeken/ROADMAP.md)
 
-**Publieke bewijsstatus (15 november 2026):** de vijf missiemappen zijn gereserveerd. De private M04-collectie bevat **210 originele screenshots in 19 fasen**; in de [publieke M04-map](bewijsvoering/M04-Network-Citadel/) is de volledige, gesaneerde beeldcollectie **nog niet geplaatst**. Publicatie vereist per afbeelding sanering, technische broncontrole en afzonderlijke eigenaarreview. De private originelen zijn geen openbare evidence.
+**Publieke evidence-reset (16 november 2026):** de M01- en M04-bewijsmappen zijn op verzoek van de Project Owner leeggehaald. Bronmateriaal en technische onderzoeksresultaten blijven ongewijzigd in Private; nieuwe publieke bewijsvoering volgt pas na afzonderlijke controle.
 
 ### Wat ik heb gebouwd en getest
 
