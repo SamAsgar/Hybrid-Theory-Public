@@ -29,7 +29,7 @@ De beelden tonen **gesaneerde publicatieweergaven**. De ongecensureerde originel
 |---|---|---|
 | AC01 — PLC-motorsimulatie | Runtime en programma gerapporteerd als actief in de latere sessie; volledige reproduceerbare regressiereeks ontbreekt | **PENDING finale evidence** |
 | AC02 — Modbus-read | Verbinding en zichtbare tags; nog geen bevestigde live registertransitie | **PENDING** |
-| AC03 — Modbus-write | Historische deeltetst / functionele werking door Project Owner gemeld; `0→1→0`-readback ontbreekt | **PENDING** |
+| AC03 — Modbus-write | Historische deeltest / functionele werking door Project Owner gemeld; `0→1→0`-readback ontbreekt | **PENDING** |
 | AC04 — IT/OT-segmentatie | OT-zone technisch ingericht, maar egress/zonegrenzen nog niet integraal getest | **PENDING** |
 | AC05 — OT-detectie via Wazuh | Geen geverifieerde agenttelemetrie of alertdetectie | **PENDING** |
 | AC06 — 75 VPCS / drie subnetten | Ontwerp/voorbereiding, geen volledige uitvoering | **PLANNED** |
