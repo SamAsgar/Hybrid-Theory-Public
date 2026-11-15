@@ -3,7 +3,7 @@
 **Type:** ontwerpvoorstel / **PLANNED**, niet gedeployed.  
 **Onderzoekskader:** [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) — **Audit / Cost / Efficiency**, intern, extern of hybride; **NOT VALIDATED**. Voor Azure is Cost relevant om onverwachte verbruikskosten te voorkomen; dit doelontwerp is nog niet uitgerold.
 
-**Architectuurafstemming (5 november 2026):** de [gesaneerde netwerkarchitectuur](README.md) en het [netwerkontwerp](NETWERKONTWERP.md) zijn gebaseerd op private HT-C-010. De huidige baseline gebruikt **twee toekomstige subscriptions**, ieder met een eigen VNet (management en private-cloud). Exacte host-/routeradressen en operationele subnetten blijven privé; eerdere vier-subscriptiontekeningen zijn geen geautoriseerde vervanging. Geen deployment, kostenautorisatie of netwerkroute wordt uit dit diagram afgeleid.
+**Architectuurafstemming (5 november 2026, bijgewerkt 15 november):** de [gesaneerde netwerkarchitectuur](README.md) (diagram B) en het [netwerkontwerp](NETWERKONTWERP.md) zijn gebaseerd op private HT-C-010. De huidige baseline gebruikt **twee toekomstige subscriptions**, ieder met een eigen VNet (management en private-cloud). Exacte host-/routeradressen en operationele subnetten blijven privé; eerdere vier-subscriptiontekeningen zijn geen geautoriseerde vervanging. Geen deployment, kostenautorisatie of netwerkroute wordt uit dit diagram afgeleid.
 
 ## Doel
 
@@ -12,12 +12,12 @@ Een bestaande VMware/pfSense/Windows/Ubuntu-labomgeving gebruiken als on-premise
 | Onderdeel | Voorstel | Werkelijke status |
 |---|---|---|
 | On-premises virtualisatie | VMware met Windows Server, Windows 11, pfSense, Ubuntu en GNS3 | **IMPLEMENTED** voor basiscomponenten |
-| Azure Arc | **Domain Controller als eerste beoogde onboardingserver**, afhankelijk van geschiktheid en kosten | **PLANNED** |
+| Azure Arc | **Linux-server als eerste beoogde onboardingdoel** (free-first), afhankelijk van geschiktheid en kosten; de Domain Controller hoort niet bij de eerste proef en vraagt een afzonderlijke risicoafweging en eigenaarbesluit | **PLANNED** |
 | Azure VNet / NSG | Lege netwerken en regels voor cloudontwerp leren | **PLANNED** |
 | Azure identity | Microsoft Entra ID als toekomstig cloudidentiteitscomponent | **PLANNED** |
 | Azure VMs / VPN Gateway / Firewall / storage | Alleen na afzonderlijke kosten- en veiligheidsreview | **PLANNED**; niet geautoriseerd of geïmplementeerd in het €0-ontwerp |
 | Afzonderlijke Linux-back-uphost | Een onafhankelijke fysieke host voor herstelbaarheid | **PLANNED** |
-| IT/OT-gesegmenteerd netwerk | Toekomstige geïsoleerde simulatie | **PLANNED** |
+| IT/OT-gesegmenteerd netwerk | Afzonderlijke OT-zone achter pfSense, gescheiden van IT | OT-segment **IMPLEMENTED** (8–15 nov.); integrale isolatie (AC04/AC07) **PENDING**; afzonderlijke IT-zones **PLANNED** |
 
 ## IP-plan
 

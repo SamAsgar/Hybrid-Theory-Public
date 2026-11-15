@@ -15,11 +15,11 @@ ACE (**Audit, Cost & Efficiency**) toetst als **interne, externe of hybride beoo
 
 **Interpretatie:** een fictieve governancebeslissing is geen bewijs van echte organisatorische effectiviteit. Benchmarkvergelijkingen zijn onderzoeksinstrumenten, geen bewijs dat CAT/ACE een erkende norm is.
 
-## Actuele netwerktopologie (5 november 2026)
+## Actuele netwerktopologie (15 november 2026)
 
-De [gesaneerde Architectuur-visualisatie](README.md) vervangt afwijkende historische visuele varianten in de actuele portfolio-weergave. Het HT-C-010-ontwerp scheidt bestaande LAB/MGMT/NAT-waarnemingen van geplande IT-, Security-, OT-, GNS3- en Azure-zones. Echte host-/beheer-/routeradressen zijn niet gepubliceerd; open punten dragen **TWIJFEL / NOT VERIFIED**.
+De [gesaneerde Architecture](README.md) toont twee figuren: diagram A met de bestaande netwerken WAN-SIM, MGMT, LAB en OT (**IMPLEMENTED**) en diagram B met de HT-C-010-doelarchitectuur. Van de doelzones bestaat alleen OT als eigen segment; IT-, Security-, private-services- en GNS3-zones en Azure zijn **PLANNED**. Echte host-/beheer-/routeradressen zijn niet gepubliceerd en vervangen door officiële aliassen; open punten dragen **TWIJFEL / NOT VERIFIED**.
 
-FUXA en Wazuh hebben beperkte UI-/service-PASS, geen aangetoonde OT/PLC-integratie of end-to-end SIEM-detectie. M02 en Azure blijven **PLANNED**. CAT/ACE v0.4 blijft een onderzoeksconcept, geen behaalde certificering.
+FUXA01 en PLC01 staan in de OT-zone; de Modbus TCP/502-verbinding tussen beide is op 15 november getest, maar de volledige AC02/AC03-readback-evidence en de OT-isolatie (AC04/AC07) zijn **PENDING**. Wazuh heeft een beperkte UI-/service-PASS en geen aangetoonde end-to-end SIEM-detectie (0 agents). M02 en Azure blijven **PLANNED**. CAT/ACE v0.4 blijft een onderzoeksconcept, geen behaalde certificering.
 
 ## 2. Technische basis
 
@@ -32,7 +32,8 @@ De testomgeving is **geen productieomgeving** en heeft geen certificering.
 - **LAB-segment:** gecontroleerde VM-naar-VM-communicatie via de ingestelde firewall.
 - **Managementzone:** afzonderlijke beheertoegang; toegang en actuele adaptertoestand worden per test gespecificeerd.
 - **Tijdelijke updates en extern verkeer:** afzonderlijke route-/toestemmingsgrenzen; NAT garandeert niet vanzelf thuisnetwerkisolatie.
-- **Toekomstige GNS3-subnetten, IT/OT, Azure/Arc:** **PLANNED**; niet in de actuele testresultaten opnemen als reeds bewezen.
+- **OT-zone:** eigen segment achter een aparte pfSense-interface (**IMPLEMENTED**); verkeer binnen de zone loopt niet via de firewall. De grens naar andere zones is pas bewezen na de volledige AC04/AC07-tests.
+- **Toekomstige GNS3-subnetten, IT- en Security-zones, Azure/Arc:** **PLANNED**; niet in de actuele testresultaten opnemen als reeds bewezen.
 
 Technische bewijsvoering volgt de keten: `securitydoel → control → configuratie → test → observatie → risico → gerichte remediatie`. Hypothesen blijven **onbevestigd** totdat gerichte tests ze onderbouwen; de onderzoeksschaal staat in de [statuslegenda](../governance/STATUSLEGENDA.md).
 

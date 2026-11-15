@@ -1,0 +1,334 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1411" viewBox="0 0 1400 1411" role="img" aria-labelledby="t d">
+<title id="t">Hybrid-Theory — Diagram A: huidige geïmplementeerde architectuur (stand 15 november 2026)</title>
+<desc id="d">Architectuurillustratie met officiële aliassen in plaats van adressen. pfSense met vier interfaces (WAN, LAN/beheer, LAB, OT) verbindt de zones WAN-SIM, MGMT, LAB en OT op één VMware-host. FUXA01 praat via Modbus TCP/502 rechtstreeks met PLC01 binnen het OT-subnet. Het GNS3-testnet staat los. Geen testbewijs en geen live-meting.</desc>
+<defs>
+<marker id="ah-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3fb950"/></marker>
+<marker id="ah-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#58a6ff"/></marker>
+<marker id="ah-x" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8b949e"/></marker>
+</defs>
+<rect width="1400" height="1411" fill="#0d1117"/>
+<g id="kop">
+<text x="40" y="50" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="27" font-weight="700" fill="#e6edf3" text-anchor="start">Hybrid-Theory  |  Huidige geïmplementeerde architectuur</text>
+<text x="40" y="78" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="400" fill="#9da7b4" text-anchor="start">Diagram A · stand 15 november 2026 · publieke weergave met officiële aliassen in plaats van adressen · illustratie, geen testbewijs</text>
+<rect x="1217" y="32" width="153" height="20" rx="10.0" fill="#0d1117" stroke="#d29922" stroke-width="1"/>
+<text x="1293.5" y="46.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#d29922" text-anchor="middle">AC04 / AC07 PENDING</text>
+<rect x="1039" y="32" width="170" height="20" rx="10.0" fill="#0d1117" stroke="#d29922" stroke-width="1"/>
+<text x="1124.0" y="46.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#d29922" text-anchor="middle">M04-CORE IN PROGRESS</text>
+<path d="M30 96 L1370 96" fill="none" stroke="#30363d" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="extern">
+<text x="40" y="132" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400" fill="#9da7b4" text-anchor="start">Leeswijzer: een naam in blauw monospace is een officiële alias.</text>
+<text x="40" y="150" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400" fill="#9da7b4" text-anchor="start">De werkelijke waarden worden niet gepubliceerd.</text>
+<rect x="470" y="112" width="170" height="56" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<text x="555" y="145" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="middle">Internet</text>
+<rect x="700" y="112" width="650" height="56" rx="8" fill="#161b22" stroke="#30363d" stroke-width="1"/>
+<rect x="700" y="112" width="4" height="56" rx="2" fill="#8b949e"/>
+<text x="718" y="134" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="600" fill="#e6edf3" text-anchor="start">Thuisnetwerk · buiten labscope</text>
+<text x="718" y="155" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400" fill="#9da7b4" text-anchor="start">Thuisrouter</text>
+<text x="796" y="155" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#d29922" text-anchor="start">HOME_ROUTER_IP</text>
+<text x="920" y="155" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#d29922" text-anchor="start">· PENDING_CAPTURE · identiteit niet bevestigd</text>
+<path d="M640 140 L700 140" fill="none" stroke="#8b949e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="host">
+<rect x="30" y="184" width="1340" height="874" rx="12" fill="#0f141b" stroke="#30363d" stroke-width="1.5"/>
+<text x="50" y="212" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="start">Fysieke labhost · Windows 11 + VMware Workstation Pro</text>
+<text x="480" y="212" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#d29922" text-anchor="start">LENOVO_HOST_IP</text>
+<text x="604" y="212" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#d29922" text-anchor="start">· PENDING_CAPTURE</text>
+<path d="M1025 168 L1025 272" fill="none" stroke="#8b949e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<text x="1037" y="214" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">VMware NAT via de host</text>
+<text x="1037" y="230" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">NAT is geen isolatiegarantie</text>
+</g>
+<g id="pfsense">
+<rect x="50" y="236" width="340" height="688" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.5"/>
+<text x="66" y="259" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="start">pfSense CE 2.9.0</text>
+<text x="376" y="259" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12" font-weight="400" fill="#79c0ff" text-anchor="end">PFSENSE_HOSTNAME</text>
+<rect x="62" y="272" width="316" height="146" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<rect x="62" y="272" width="4" height="146" rx="2" fill="#8b949e"/>
+<text x="78" y="298" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">WAN</text>
+<text x="116.429" y="298" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· VMware NAT (DHCP)</text>
+<text x="78" y="326" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="114" y="326" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_WAN_IP</text>
+<text x="78" y="348" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="114" y="348" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_WAN_MAC</text>
+<text x="78" y="376" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#58a6ff" text-anchor="start">IMPLEMENTED · upstream/DHCP PASS (26 okt.)</text>
+<path d="M378 345.0 L470 345.0" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="62" y="432" width="316" height="146" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<rect x="62" y="432" width="4" height="146" rx="2" fill="#58a6ff"/>
+<text x="78" y="458" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">LAN / MGMT</text>
+<text x="170.67200000000003" y="458" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· host-only beheer</text>
+<text x="78" y="486" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="114" y="486" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_MGMT_IP</text>
+<text x="78" y="508" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="114" y="508" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_MGMT_MAC</text>
+<text x="78" y="536" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#58a6ff" text-anchor="start">IMPLEMENTED · webGUI-beheer PASS</text>
+<path d="M378 505.0 L470 505.0" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="62" y="592" width="316" height="146" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<rect x="62" y="592" width="4" height="146" rx="2" fill="#3fb950"/>
+<text x="78" y="618" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">LAB</text>
+<text x="116.429" y="618" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· geïsoleerd LAN Segment</text>
+<text x="78" y="646" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="114" y="646" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_LAB_GW_IP</text>
+<text x="78" y="668" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="114" y="668" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_LAB_GW_MAC</text>
+<text x="78" y="696" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#58a6ff" text-anchor="start">IMPLEMENTED · Kea DHCPv4 TESTED (1 nov.)</text>
+<path d="M378 665.0 L470 665.0" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="62" y="752" width="316" height="160" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<rect x="62" y="752" width="4" height="160" rx="2" fill="#d29922"/>
+<text x="78" y="778" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#e6edf3" text-anchor="start">OT</text>
+<text x="106.286" y="778" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· eigen LAN Segment</text>
+<text x="78" y="806" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="114" y="806" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_OT_IP</text>
+<text x="78" y="828" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="114" y="828" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_OT_MAC</text>
+<text x="78" y="856" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#58a6ff" text-anchor="start">IMPLEMENTED (8 nov.) · geen upstream-gateway</text>
+<text x="78" y="873" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">MGMT→OT geweigerd, behalve het beheerpad</text>
+<path d="M378 832.0 L470 832.0" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="zone-wan-sim">
+<rect x="470" y="272" width="880" height="146" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+<rect x="470" y="272" width="4" height="146" rx="2" fill="#8b949e"/>
+<text x="488" y="296" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">WAN-SIM en updates</text>
+<text x="650.5545" y="296" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· VMware NAT-netwerk</text>
+<rect x="1230" y="281" width="108" height="20" rx="10.0" fill="#0d1117" stroke="#58a6ff" stroke-width="1"/>
+<text x="1284.0" y="295.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#58a6ff" text-anchor="middle">IMPLEMENTED</text>
+<rect x="484" y="308" width="204" height="100" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="494" y="327" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">VMware NAT · DNS-peer</text>
+<text x="494" y="343" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">DNS-dienst van het NAT-netwerk</text>
+<text x="494" y="362" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="524" y="362" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_DNS_IP</text>
+<text x="494" y="379" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="524" y="379" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_DNS_MAC</text>
+<text x="494" y="399" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">CAPTURED (30 okt.)</text>
+<rect x="700" y="308" width="204" height="100" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="710" y="327" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">VMware NAT · peer 2</text>
+<text x="710" y="343" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">functie onbekend</text>
+<text x="710" y="362" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="740" y="362" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_PEER_02_IP</text>
+<text x="710" y="379" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="740" y="379" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_PEER_02_MAC</text>
+<text x="710" y="399" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">geen bewezen gateway</text>
+<rect x="916" y="308" width="204" height="100" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="926" y="327" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Ubuntu Server · update-NIC</text>
+<text x="926" y="343" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">tijdelijk, voor updates</text>
+<text x="926" y="362" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="956" y="362" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_IP</text>
+<text x="926" y="379" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="956" y="379" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#d29922" text-anchor="start">NET_02_MAC</text>
+<text x="926" y="399" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">actuele status NOT VERIFIED</text>
+<rect x="1132" y="308" width="204" height="100" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1142" y="327" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">GNS3-VM · NAT-adapter</text>
+<text x="1142" y="343" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">tweede adapter van de VM</text>
+<text x="1142" y="362" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="1172" y="362" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="400" fill="#9da7b4" text-anchor="start">geen alias geregistreerd</text>
+<text x="1142" y="399" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">actuele status NOT VERIFIED</text>
+</g>
+<g id="zone-mgmt">
+<rect x="470" y="432" width="880" height="146" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+<rect x="470" y="432" width="4" height="146" rx="2" fill="#58a6ff"/>
+<text x="488" y="456" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">MGMT</text>
+<text x="540.021" y="456" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· VMware host-only beheernetwerk</text>
+<rect x="1167" y="441" width="171" height="20" rx="10.0" fill="#0d1117" stroke="#3fb950" stroke-width="1"/>
+<text x="1252.5" y="455.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#3fb950" text-anchor="middle">beheer PASS binnen scope</text>
+<rect x="484" y="468" width="204" height="100" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="494" y="487" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Beheerbron</text>
+<text x="494" y="503" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">host-only adapter van de host</text>
+<text x="494" y="522" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="524" y="522" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">MGMT_CLIENT_IP</text>
+<text x="494" y="539" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="524" y="539" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">MGMT_CLIENT_MAC</text>
+<text x="494" y="559" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">identiteit: bronbinding PENDING</text>
+<rect x="700" y="468" width="204" height="100" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="710" y="487" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Ubuntu Server · beheer-NIC</text>
+<text x="710" y="503" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Cockpit-beheer (HTTPS)</text>
+<text x="710" y="522" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="740" y="522" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">MGMT_NET_IP</text>
+<text x="710" y="539" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="740" y="539" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#d29922" text-anchor="start">MGMT_NET_MAC</text>
+<text x="710" y="559" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">actuele status NOT VERIFIED</text>
+<rect x="916" y="468" width="204" height="100" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="926" y="487" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">GNS3-VM · beheer</text>
+<text x="926" y="503" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">console- en beheeradapter</text>
+<text x="926" y="522" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="956" y="522" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">GNS3_MGMT_IP</text>
+<text x="926" y="539" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="956" y="539" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">geen alias geregistreerd</text>
+<text x="926" y="559" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">CAPTURED (30 okt.)</text>
+<text x="1138" y="490" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="start">Beheerpad naar OT:</text>
+<text x="1138" y="508" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">alleen vanaf de beheerbron,</text>
+<text x="1138" y="524" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">via pfSense naar het webbeheer</text>
+<text x="1138" y="540" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">van PLC01 en FUXA01.</text>
+<text x="1138" y="558" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#3fb950" text-anchor="start">Zie stroom 2.</text>
+</g>
+<g id="zone-lab">
+<rect x="470" y="592" width="880" height="146" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+<rect x="470" y="592" width="4" height="146" rx="2" fill="#3fb950"/>
+<text x="488" y="616" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">LAB</text>
+<text x="529.51575" y="616" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· geïsoleerd VMware LAN Segment · Kea DHCP</text>
+<rect x="1049" y="601" width="289" height="20" rx="10.0" fill="#0d1117" stroke="#d29922" stroke-width="1"/>
+<text x="1193.5" y="615.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#d29922" text-anchor="middle">IMPLEMENTED · segmentatie NOT VERIFIED</text>
+<rect x="484" y="628" width="204" height="100" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="494" y="647" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Windows Server · DC01</text>
+<text x="494" y="663" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Server 2025 · AD DS / DNS</text>
+<text x="494" y="682" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="524" y="682" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">DC01_LAB_IP</text>
+<text x="494" y="699" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="524" y="699" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">geen alias geregistreerd</text>
+<text x="494" y="719" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#3fb950" text-anchor="start">AD/DNS TESTED (1 nov.)</text>
+<rect x="700" y="628" width="204" height="100" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="710" y="647" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Windows 11 · CLIENT01</text>
+<text x="710" y="663" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">domeinclient · Kea-lease</text>
+<text x="710" y="682" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="740" y="682" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">CLIENT01_DHCP_IP</text>
+<text x="710" y="699" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="740" y="699" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">geen alias geregistreerd</text>
+<text x="710" y="719" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#3fb950" text-anchor="start">gateway-ping VERIFIED</text>
+<rect x="916" y="628" width="204" height="100" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="926" y="647" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Ubuntu Server · LAB-NIC</text>
+<text x="926" y="663" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">LAB-interface</text>
+<text x="926" y="682" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="956" y="682" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">LAB_NET_IP</text>
+<text x="926" y="699" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="956" y="699" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#d29922" text-anchor="start">LAB_NET_MAC</text>
+<text x="926" y="719" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">TWIJFEL: mogelijk gelijk aan DC01</text>
+<rect x="1132" y="628" width="204" height="100" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1142" y="647" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Wazuh SIEM 4.14.9</text>
+<text x="1142" y="663" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">manager / indexer / dashboard</text>
+<text x="1142" y="682" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="1172" y="682" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#d29922" text-anchor="start">WAZUH_CURRENT_IP</text>
+<text x="1142" y="699" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="1172" y="699" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">geen alias geregistreerd</text>
+<text x="1142" y="719" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">IP PENDING_CAPTURE · 0 agents</text>
+</g>
+<g id="zone-ot">
+<rect x="470" y="752" width="880" height="160" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+<rect x="470" y="752" width="4" height="160" rx="2" fill="#d29922"/>
+<text x="488" y="776" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">OT</text>
+<text x="519.0105" y="776" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· eigen geïsoleerd VMware LAN Segment</text>
+<rect x="1087" y="761" width="251" height="20" rx="10.0" fill="#0d1117" stroke="#d29922" stroke-width="1"/>
+<text x="1212.5" y="775.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#d29922" text-anchor="middle">IMPLEMENTED · AC04/AC07 PENDING</text>
+<rect x="484" y="788" width="290" height="114" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="494" y="807" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">FUXA01</text>
+<text x="494" y="823" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">SCADA/HMI · FUXA in Docker</text>
+<text x="494" y="842" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="524" y="842" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">FUXA01_OT_IP</text>
+<text x="494" y="859" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="524" y="859" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">FUXA01_OT_MAC</text>
+<text x="494" y="879" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#3fb950" text-anchor="start">IMPLEMENTED · HMI na reboot TESTED (15 nov.)</text>
+<text x="494" y="893" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#3fb950" text-anchor="start">authenticatie/TLS nog open</text>
+<rect x="1046" y="788" width="290" height="114" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="1056" y="807" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">PLC01</text>
+<text x="1056" y="823" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">OpenPLC v3-runtime · Modbus-server</text>
+<text x="1056" y="842" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
+<text x="1086" y="842" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">PLC01_OT_IP</text>
+<text x="1056" y="859" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
+<text x="1086" y="859" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">PLC01_OT_MAC</text>
+<text x="1056" y="879" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#3fb950" text-anchor="start">runtime RUNNING na handmatige start (15 nov.)</text>
+<text x="1056" y="893" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#3fb950" text-anchor="start">autostart NOT VERIFIED</text>
+<path d="M782 847.0 L1036 847.0" fill="none" stroke="#3fb950" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-g)"/>
+<text x="910.0" y="835.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14" font-weight="700" fill="#3fb950" text-anchor="middle">Modbus TCP/502</text>
+<text x="910.0" y="867.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="middle">rechtstreeks binnen het OT-subnet,</text>
+<text x="910.0" y="882.0" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="middle">niet via pfSense · TESTED 15 nov.</text>
+</g>
+<g id="geen-koppeling">
+<rect x="50" y="940" width="340" height="102" rx="10" fill="#161b22" stroke="#8b949e" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="66" y="964" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="700" fill="#e6edf3" text-anchor="start">Niet gekoppeld aan pfSense</text>
+<text x="66" y="984" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Eigen netwerkscope: een gelijke adresstring als</text>
+<text x="66" y="1000" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">in het LAB is geen conflict zolang de netten</text>
+<text x="66" y="1016" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">gescheiden blijven. Koppelen vraagt eerst een</text>
+<text x="66" y="1032" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">goedgekeurd adresplan.</text>
+</g>
+<g id="zone-gns3-testnet">
+<rect x="470" y="940" width="880" height="102" rx="10" fill="#161b22" stroke="#8b949e" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="470" y="940" width="4" height="102" rx="2" fill="#a371f7"/>
+<text x="488" y="964" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">GNS3-testnet (losstaand)</text>
+<text x="677.19825" y="964" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">· VPCS – switch – VPCS in de GNS3-VM</text>
+<rect x="1141" y="949" width="197" height="20" rx="10.0" fill="#0d1117" stroke="#3fb950" stroke-width="1"/>
+<text x="1239.5" y="963.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#3fb950" text-anchor="middle">ARP/ICMP PASS binnen testnet</text>
+<rect x="484" y="976" width="300" height="56" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="494" y="998" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">PC1</text>
+<text x="532" y="998" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">GNS3_PC1_IP</text>
+<text x="532" y="1017" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">GNS3_PC1_MAC</text>
+<rect x="840.0" y="976" width="140" height="56" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="910.0" y="1009" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">Switch1</text>
+<rect x="1036" y="976" width="300" height="56" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+<text x="1046" y="998" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">PC2</text>
+<text x="1084" y="998" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">GNS3_PC2_IP</text>
+<text x="1084" y="1017" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">GNS3_PC2_MAC</text>
+<path d="M784 1004.0 L840.0 1004.0" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M980.0 1004.0 L1036 1004.0" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="stromen">
+<rect x="30" y="1078" width="930" height="313" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+<text x="48" y="1104" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">Verkeersstromen en teststatus</text>
+<text x="48" y="1124" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#9da7b4" text-anchor="start">#</text>
+<text x="78" y="1124" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#9da7b4" text-anchor="start">Stroom</text>
+<text x="386" y="1124" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#9da7b4" text-anchor="start">Pad</text>
+<text x="620" y="1124" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#9da7b4" text-anchor="start">Status binnen geteste scope</text>
+<path d="M44 1131 L946 1131" fill="none" stroke="#30363d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="48" y="1150" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">1</text>
+<text x="78" y="1150" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">FUXA01 → PLC01 · Modbus TCP/502</text>
+<text x="386" y="1150" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">rechtstreeks binnen OT</text>
+<text x="620" y="1150" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#3fb950" text-anchor="start">TESTED 15 nov. · AC02/AC03-readback PENDING</text>
+<text x="48" y="1175" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">2</text>
+<text x="78" y="1175" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">Beheerbron → PLC01 / FUXA01 · webbeheer</text>
+<text x="386" y="1175" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">MGMT → pfSense → OT, één bron</text>
+<text x="620" y="1175" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#3fb950" text-anchor="start">TESTED 11 en 15 nov. · auth/TLS open</text>
+<text x="48" y="1200" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">3</text>
+<text x="78" y="1200" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">LAB → OT</text>
+<text x="386" y="1200" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">via pfSense</text>
+<text x="620" y="1200" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#f85149" text-anchor="start">GEBLOKKEERD · één deny-deeltest PASS (11 nov.)</text>
+<text x="48" y="1225" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">4</text>
+<text x="78" y="1225" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">LAB → internet (IPv4)</text>
+<text x="386" y="1225" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">LAB → pfSense → WAN/NAT</text>
+<text x="620" y="1225" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#3fb950" text-anchor="start">PASS binnen scope (26 okt.)</text>
+<text x="48" y="1250" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">5</text>
+<text x="78" y="1250" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">LAB → thuisrouter (ICMP)</text>
+<text x="386" y="1250" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">LAB → pfSense</text>
+<text x="620" y="1250" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#f85149" text-anchor="start">GEBLOKKEERD · PASS (26 okt.)</text>
+<text x="48" y="1275" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">6</text>
+<text x="78" y="1275" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">OT → andere zones en internet</text>
+<text x="386" y="1275" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">via de pfSense-OT-interface</text>
+<text x="620" y="1275" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#d29922" text-anchor="start">NIET GETEST · AC04 PENDING</text>
+<text x="48" y="1300" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">7</text>
+<text x="78" y="1300" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">Agents → Wazuh</text>
+<text x="386" y="1300" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">nog niet ingericht</text>
+<text x="620" y="1300" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#d29922" text-anchor="start">NOT VERIFIED · 0 agents</text>
+<text x="48" y="1325" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">8</text>
+<text x="78" y="1325" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">GNS3-testnet ↔ overige netten</text>
+<text x="386" y="1325" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">geen koppeling</text>
+<text x="620" y="1325" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#8b949e" text-anchor="start">losstaand · ARP/ICMP PASS in testnet</text>
+<text x="48" y="1350" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">9</text>
+<text x="78" y="1350" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#e6edf3" text-anchor="start">Volledige allow/deny-matrix</text>
+<text x="386" y="1350" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">alle zones</text>
+<text x="620" y="1350" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#d29922" text-anchor="start">AC07 PENDING · M04-CORE IN PROGRESS</text>
+<text x="78" y="1377" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Poorten, regels en adressen van het beheerpad zijn bewust niet gepubliceerd.</text>
+</g>
+<g id="legenda">
+<rect x="980" y="1078" width="390" height="313" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
+<text x="998" y="1104" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">Legenda</text>
+<rect x="998" y="1118" width="100" height="20" rx="10.0" fill="#0d1117" stroke="#58a6ff" stroke-width="1"/>
+<text x="1048.0" y="1131.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#58a6ff" text-anchor="middle">IMPLEMENTED</text>
+<text x="1108" y="1132" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">gebouwd en ingericht</text>
+<rect x="998" y="1142" width="62" height="20" rx="10.0" fill="#0d1117" stroke="#3fb950" stroke-width="1"/>
+<text x="1029.0" y="1155.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#3fb950" text-anchor="middle">TESTED</text>
+<text x="1108" y="1156" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">getest binnen de genoemde scope</text>
+<rect x="998" y="1166" width="69" height="20" rx="10.0" fill="#0d1117" stroke="#d29922" stroke-width="1"/>
+<text x="1032.5" y="1179.5" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#d29922" text-anchor="middle">PENDING</text>
+<text x="1108" y="1180" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">nog niet aangetoond</text>
+<path d="M998 1200 L1042 1200" fill="none" stroke="#3fb950" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1108" y="1204" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">aangetoonde verbinding</text>
+<rect x="998" y="1214" width="44" height="18" rx="5" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1108" y="1228" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">bestaat; actuele status niet bevestigd</text>
+<rect x="998" y="1238" width="44" height="18" rx="5" fill="#161b22" stroke="#8b949e" stroke-width="1" stroke-dasharray="5 4"/>
+<text x="1108" y="1252" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">losstaand; geen koppeling aangetoond</text>
+<text x="998" y="1276" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">ALIAS</text>
+<text x="1108" y="1276" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">officiële alias; waarde niet gepubliceerd</text>
+<text x="998" y="1300" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#d29922" text-anchor="start">ALIAS</text>
+<text x="1108" y="1300" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">PENDING_CAPTURE: waarde niet bevestigd</text>
+<text x="998" y="1324" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#f85149" text-anchor="start">Rood</text>
+<text x="1108" y="1324" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#e6edf3" text-anchor="start">geblokkeerd in een gerichte deeltest</text>
+<path d="M994 1336 L1356 1336" fill="none" stroke="#30363d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="998" y="1354" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">PLANNED-onderdelen staan in diagram B. Geen testbewijs</text>
+<text x="998" y="1370" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">of live-meting; een deeltest is geen missieacceptatie.</text>
+</g>
+</svg>
