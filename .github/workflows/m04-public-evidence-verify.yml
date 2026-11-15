@@ -1,0 +1,22 @@
+name: M04 public evidence validation
+
+on:
+  pull_request:
+    paths:
+      - 'bewijsvoering/M04-Network-Citadel/**'
+      - '.github/scripts/m04_public_validate.py'
+      - '.github/workflows/m04-public-evidence-verify.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify evidence catalogue, SHA-256, links and identifier leakage
+        run: python3 .github/scripts/m04_public_validate.py
