@@ -5,7 +5,7 @@
 | Bewijsmap | Aanwezig | Publicatie-/testgrens |
 |---|---:|---|
 | [Windows 11 Client](<VMware/Windows%2011%20Client/>) | **8** | Gesaneerde installatie-, activatie- en netwerkbewijzen |
-| M01 · Lab 01 — Hypervisor Security & Virtualization Hardening | **0** | **Niet gepubliceerd** in deze repository; twee VM-settings-screenshots tonen nog lokale paden (pixelredactie OPEN) |
+| [M01 — Hypervisor Fortress](M01-Hypervisor-Fortress/) | **0 nieuwe PNG's; 4 publieke documenten** | Evidence-index (82 items), alias-/redactiestatus en GAP-analyse gepubliceerd. Sanitized screenshot-upload **PENDING**; 7 WITHHELD, geen extra PASS |
 | [pfSense](VMware/pfSense/) | **6** | Dashboard met grote afbeelding ontbreekt nog; firewallbeelden zijn geen volledige isolatietest |
 | [Windows Server 2025](<VMware/Windows%20Server%202025/>) | **5** | Oud eerste Server Manager-beeld heeft een automatisch hostlabel |
 | [Ubuntu / Cockpit](VMware/Linux/) | **4** | Drie grote PNG's ontbreken nog; volledige beeldcontrole OPEN |
