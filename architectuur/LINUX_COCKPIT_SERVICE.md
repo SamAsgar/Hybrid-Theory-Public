@@ -6,6 +6,16 @@
 
 Ubuntu levert Linux-systeembeheer, systemd-services, shellbeheer en netwerkdiagnostiek. Cockpit is een lokale webbeheerinterface om het beheerwerk via het gescheiden lab uit te voeren.
 
+## Interfaces en officiële aliassen
+
+| Interface | Netwerk | IP-alias | IPv6-alias | MAC-alias |
+|---|---|---|---|---|
+| LAB-interface | LAB | `LAB_NET_IP` | `LAB_NET_IPV6_LL` | `LAB_NET_MAC` (PENDING_CAPTURE) |
+| Beheerinterface (Cockpit) | MGMT, host-only | `MGMT_NET_IP` | `MGMT_NET_IPV6_LL` | `MGMT_NET_MAC` (PENDING_CAPTURE) |
+| Tijdelijke update-interface | WAN-SIM (VMware NAT) | `NET_02_IP` | `NET_02_IPV6_LL` | `NET_02_MAC` (PENDING_CAPTURE) |
+
+De rollen van deze interfaces zijn vastgelegd op 25–30 oktober. Of de beheer- en update-interface na de pfSense-test van 26 oktober weer in hun normale toestand staan, is **NOT VERIFIED**. `LAB_NET_IP` heeft historisch dezelfde waarde als `DC01_LAB_IP` (**TWIJFEL**, gelijktijdig gebruik niet aangetoond). Werkelijke adressen worden niet gepubliceerd.
+
 ## Beheercontroles
 
 1. Controleer service en luisterpoort vanuit een toegestane beheerscope.
