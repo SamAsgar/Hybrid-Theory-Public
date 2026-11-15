@@ -1,1 +1,4 @@
-# Geen goedgekeurde publieke screenshot-binaries toegevoegd in deze documentaire fase.
+# SHA-256 over gesaneerde publieke conceptafgeleiden; geen hashes van private originelen.
+4279d1deada922be19bf4c594a83a66f21aae9ba653252870f08932b5d1ec472  01_Pre_migration_baseline/legacy-gesaneerd/M04-EV-001-gesaneerd.png
+959e36493d72b0bd17367e2c05747af26122d94723e00b62da89a91ec01aa753  01_Pre_migration_baseline/legacy-gesaneerd/M04-EV-004-gesaneerd.png
+d16aaa3619ee01b39e993cbd34ba32600d69ec5e60b2bc68ff7a3843e15c7edf  01_Pre_migration_baseline/legacy-gesaneerd/M04-EV-005-gesaneerd.png
