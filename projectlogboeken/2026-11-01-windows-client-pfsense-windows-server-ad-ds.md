@@ -120,10 +120,10 @@ De structuur onder [`bewijsvoering/`](../bewijsvoering/) is verder ingericht met
 | Onderdeel | Op GitHub gecontroleerde bestanden | Betekenis |
 |---|---|---|
 | Lab-1 (niet gepubliceerd in deze repository) | README + **11** screenshots | HV-01, HV-02 en HV-04; controle- en uitzonderingsbewijs |
-| [pfSense](../bewijsvoering/pfSense/) | README + **7** screenshots | Dashboard, ARP, aliassen en LAB/LAN/WAN-regels; historische configuratieopnamen |
+| [pfSense](../bewijsvoering/VMware/pfSense/) | README + **7** screenshots | Dashboard, ARP, aliassen en LAB/LAN/WAN-regels; historische configuratieopnamen |
 | [VMware](../bewijsvoering/VMware/) | README + **5** screenshots | VM-infrastructuurinventarisatie en configuratieoverzicht |
-| [Linux](../bewijsvoering/Linux/) | README + **7** screenshots | Ubuntu/Cockpit en Linux-omgeving |
-| [Windows Server 2025](<../bewijsvoering/Windows Server 2025/>) | README + **5** screenshots | Server Manager, netwerk/DNS-basis en AD DS-rolinstallatie |
+| [Linux](../bewijsvoering/VMware/Linux/) | README + **7** screenshots | Ubuntu/Cockpit en Linux-omgeving |
+| [Windows Server 2025](<../bewijsvoering/VMware/Windows Server 2025/>) | README + **5** screenshots | Server Manager, netwerk/DNS-basis en AD DS-rolinstallatie |
 
 **Bewijsgrenzen:** de Windows Server-opnamen tonen een geslaagde **AD DS-rolinstallatie**, niet een geverifieerde forest-/DC-promotie. Het eerder geconstateerde mislukte ICMP-verkeer naar de labgateway blijft een troubleshootingwaarneming; geen later succes of oplossing aan deze bewijsset ontlenen. De pfSense-opnamen tonen regelconfiguratie en niet een complete end-to-end- of IPv6-beveiligingstest. De Linux- en VMware-overzichten bewijzen evenmin volledige hardening.
 
@@ -152,6 +152,6 @@ Voor operationele uitvoering blijven de geldende eigenaarafspraken leidend, met 
 
 **Verificatieregel:** `PLANNED / IMPLEMENTED / VERIFIED` betreft componentstatus; `PASS / REWORK / EXCEPTION` betreft een geteste uitspraak binnen een vastgelegde scope. Een GitHub-commit of screenshot is niet op zichzelf een technische PASS.
 
-**Bronnen voor deze aanvulling:** Lab 01 README (niet gepubliceerd) · [pfSense README](../bewijsvoering/pfSense/README.md) · [Windows Server 2025 README](<../bewijsvoering/Windows Server 2025/README.md>) · [Rollen en overdracht](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md).
+**Bronnen voor deze aanvulling:** Lab 01 README (niet gepubliceerd) · [pfSense README](../bewijsvoering/VMware/pfSense/README.md) · [Windows Server 2025 README](<../bewijsvoering/VMware/Windows Server 2025/README.md>) · [Rollen en overdracht](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md).
 
 **Einde aanvulling:** status op basis van op 1 november beschikbare logs, screenshots en repositorycontrole; geen nieuwe live-VM-test door deze logboekupdate.

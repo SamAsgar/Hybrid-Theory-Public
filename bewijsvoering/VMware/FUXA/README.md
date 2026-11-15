@@ -4,6 +4,6 @@
 
 ## VMware-overzicht
 
-![Gesanitized FUXA VMware VM-inventaris](../VMware/08-FUXA-VMware-Inventory-Sanitized.png)
+![Gesanitized FUXA VMware VM-inventaris](../08-FUXA-VMware-Inventory-Sanitized.png)
 
-**Vastgelegd:** VM uitgeschakeld, 2 GB geheugen, 2 processors, 20 GB SCSI, Custom (VMnet8). Host-/VM-identificatoren en lokaal ISO-pad gesanitized. Geen ongeanonimiseerde screenshot gepubliceerd. Zie de [VMware-bewijsindex](../VMware/README.md).
+**Vastgelegd:** VM uitgeschakeld, 2 GB geheugen, 2 processors, 20 GB SCSI, Custom (VMnet8). Host-/VM-identificatoren en lokaal ISO-pad gesanitized. Geen ongeanonimiseerde screenshot gepubliceerd. Zie de [VMware-bewijsindex](../README.md).

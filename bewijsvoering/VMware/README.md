@@ -2,6 +2,20 @@
 
 **Status:** historische inventaris van de aanwezige VM's en hun virtuele resources. Deze beelden tonen geen volledige securitybaseline; lokale mediapaden zijn in enkele oude screenshots gedeeltelijk zichtbaar. **PUBLIC; pixel- en identificatorreview OPEN.**
 
+## Bewijs per VM
+
+De bewijsgalerijen per VM staan als submap in deze map:
+
+| VM / onderdeel | Galerij |
+|---|---|
+| pfSense | [pfSense](pfSense/) |
+| Ubuntu Server & Cockpit | [Linux](Linux/) |
+| GNS3 & Wireshark | [GNS3](GNS3/) |
+| Windows Server 2025 | [Windows Server 2025](<Windows Server 2025/>) |
+| Windows 11 Client | [Windows 11 Client](<Windows 11 Client/>) |
+| FUXA / OT-SCADA | [FUXA](FUXA/) |
+| OpenPLC Runtime | [OpenPLC](OpenPLC/) |
+
 ## 1. Ubuntu Server
 
 Ubuntu-VM, resourceprofiel en meerdere virtuele netwerkadapters.

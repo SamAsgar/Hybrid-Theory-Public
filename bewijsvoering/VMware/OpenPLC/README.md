@@ -63,4 +63,4 @@ Op Ubuntu Server 24.04.5 LTS is een vanaf de beheercomputer bereikbare OpenPLC R
 
 Browser-adresbalken, lokale IP-adressen, hostname- en accountidentificatoren zijn afgesneden of onomkeerbaar afgedekt. De screenshots zijn waar nodig beperkt tot de bewijsrelevante inhoud en als monochrome PNG geëxporteerd om omvang en ongewenste UI-context te verminderen. **Geen synthetische meetwaarden of extra testresultaten toegevoegd.** Originele onbewerkte beelden zijn niet in de repositories opgenomen.
 
-**Statusmodel:** CAPTURED = beeld aanwezig · IMPLEMENTED = component geïnstalleerd · PASS = uitsluitend de geteste scope · PENDING = niet bewezen. Zie [bewijsindex](../README.md).
+**Statusmodel:** CAPTURED = beeld aanwezig · IMPLEMENTED = component geïnstalleerd · PASS = uitsluitend de geteste scope · PENDING = niet bewezen. Zie [bewijsindex](../../README.md).

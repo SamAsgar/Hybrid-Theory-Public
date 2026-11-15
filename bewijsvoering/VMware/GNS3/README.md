@@ -22,4 +22,4 @@ De reeds gesaneerde capture maakt de geobserveerde communicatie inzichtelijk.
 
 **Let op:** screenshots bewijzen geen volledige netwerkisolatie, firewallwerking of een productiegeschikte securityarchitectuur. Deze beelden zijn al publiek zichtbaar, terwijl volledige privacy-/pixelreview nog niet is afgerond. Dat is geen publicatie-PASS.
 
-**Statusgebruik:** [statuslegenda](../../governance/STATUSLEGENDA.md).
+**Statusgebruik:** [statuslegenda](../../../governance/STATUSLEGENDA.md).

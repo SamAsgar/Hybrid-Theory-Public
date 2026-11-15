@@ -4,15 +4,15 @@
 
 | Bewijsmap | Aanwezig | Publicatie-/testgrens |
 |---|---:|---|
-| [Windows 11 Client](<Windows%2011%20Client/>) | **8** | Gesaneerde installatie-, activatie- en netwerkbewijzen |
+| [Windows 11 Client](<VMware/Windows%2011%20Client/>) | **8** | Gesaneerde installatie-, activatie- en netwerkbewijzen |
 | M01 · Lab 01 — Hypervisor Security & Virtualization Hardening | **0** | **Niet gepubliceerd** in deze repository; twee VM-settings-screenshots tonen nog lokale paden (pixelredactie OPEN) |
-| [pfSense](pfSense/) | **6** | Dashboard met grote afbeelding ontbreekt nog; firewallbeelden zijn geen volledige isolatietest |
-| [Windows Server 2025](<Windows%20Server%202025/>) | **5** | Oud eerste Server Manager-beeld heeft een automatisch hostlabel |
-| [Ubuntu / Cockpit](Linux/) | **4** | Drie grote PNG's ontbreken nog; volledige beeldcontrole OPEN |
-| [GNS3 / Wireshark](GNS3/) | **3** | Basistopologie en ARP/ICMP; aanvullende review voor publicatie |
+| [pfSense](VMware/pfSense/) | **6** | Dashboard met grote afbeelding ontbreekt nog; firewallbeelden zijn geen volledige isolatietest |
+| [Windows Server 2025](<VMware/Windows%20Server%202025/>) | **5** | Oud eerste Server Manager-beeld heeft een automatisch hostlabel |
+| [Ubuntu / Cockpit](VMware/Linux/) | **4** | Drie grote PNG's ontbreken nog; volledige beeldcontrole OPEN |
+| [GNS3 / Wireshark](VMware/GNS3/) | **3** | Basistopologie en ARP/ICMP; aanvullende review voor publicatie |
 | [VMware](VMware/) | **8** | Sommige beelden tonen delen van lokale installatiepaden; privacyreview OPEN |
-| [FUXA](FUXA/) | **0** (verwijst naar VMware-opname 08) | Alleen hardware-inventaris; geen functioneel FUXA/PLC-bewijs |
-| [OpenPLC Runtime](OpenPLC/) | **8** | Web-UI bereikbaar, PLC Stopped; geen Modbus/FUXA/OT-isolatie-PASS |
+| [FUXA](VMware/FUXA/) | **0** (verwijst naar VMware-opname 08) | Alleen hardware-inventaris; geen functioneel FUXA/PLC-bewijs |
+| [OpenPLC Runtime](VMware/OpenPLC/) | **8** | Web-UI bereikbaar, PLC Stopped; geen Modbus/FUXA/OT-isolatie-PASS |
 | **Totaal (op basis van eerdere telling)** | **42 PNG's** | **PUBLIC; reviewgates voor oudere beelden OPEN** |
 
 De eerder aanwezige architectuur-WebP's zijn verwijderd. De actuele [architectuurdocumentatie](../architectuur/README.md) is tekstueel.

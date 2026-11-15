@@ -1,6 +1,6 @@
 # Windows Server 2025 | Installatie en AD DS
 
-De screenshots leggen de eerste Windows Server-installatie-, netwerk- en AD DS-roleinstallatiestappen vast. De latere forest/DC-promotie, DNS/SRV, domain join en één GPO zijn afzonderlijk beschreven in het [AD-baselinerapport](../../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md).
+De screenshots leggen de eerste Windows Server-installatie-, netwerk- en AD DS-roleinstallatiestappen vast. De latere forest/DC-promotie, DNS/SRV, domain join en één GPO zijn afzonderlijk beschreven in het [AD-baselinerapport](../../../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md).
 
 ## 1. Eerste Server Manager-overzicht
 
@@ -36,4 +36,4 @@ Succesvolle roleinstallatie. Dit is niet gelijk aan latere DC-promotie; die is a
 
 **Bewijsgrens:** momentopnamen van één labserver; geen automatische claim van restore, domeinredundantie of volledige hardening. Het eerste beeld heeft nog een publicatieblokkerende privacyreview.
 
-**Statusgebruik:** [statuslegenda](../../governance/STATUSLEGENDA.md).
+**Statusgebruik:** [statuslegenda](../../../governance/STATUSLEGENDA.md).
