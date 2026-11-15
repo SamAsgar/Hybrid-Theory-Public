@@ -1,5 +1,10 @@
 # Technische bewijsvoering | Hybrid-Theory
 
+## M04 Network Citadel — publieke evidence-selectie (15 november 2026)
+
+De nieuwe [M04-bewijsmap](M04-Network-Citadel/README.md) bevat **één pixelmatig gesaneerde transcriptweergave (PNG)** van een managementpoorttest, **twee gesaneerde afgeleide SVG-illustraties** en een [publiek evidence-register](M04-Network-Citadel/EVIDENCE-REGISTER-PUBLIC.md) met bron- en testbeperkingen. De 210 originele screenshots in 19 fasen blijven **uitsluitend in Private**. Deze nieuwe selectie valt buiten de oudere, hierboven vermelde PNG-inventaris van 5 november. **AC02/AC03, AC04/AC07 en integrale M04-acceptatie blijven PENDING.** Publicatie is nog **DRAFT / PENDING OWNER REVIEW**.
+
+
 **GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Inventarisatie vóór OpenPLC: 33 bewijs-PNG's.** Op 5 november zijn 8 gesaneerde OpenPLC-opnamen en 1 gesaneerde VMware-OpenPLC-inventaris toegevoegd; integrale herinventarisatie van oudere bewijzen blijft OPEN. De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
 
 | Bewijsmap | Aanwezig | Publicatie-/testgrens |
