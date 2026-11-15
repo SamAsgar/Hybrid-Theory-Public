@@ -1,5 +1,23 @@
 # Technische bewijsvoering | Hybrid-Theory
 
+## Missiegebonden bewijsvoering (M01–M05)
+
+De vijf missies hebben elk een eigen **lege publicatiemap**, uitsluitend met een technisch `.gitkeep`-bestand zodat GitHub de map toont. Dit zijn *gereserveerde locaties*, geen nieuwe testbewijzen of acceptaties.
+
+| Missie | Bewijslocatie | Bedoelde inhoud | Publicatiestatus |
+|---|---|---|---|
+| **M01 — Hypervisor Fortress** | [M01-Hypervisor-Fortress](M01-Hypervisor-Fortress/) | Hypervisor- en hosthardening, VM-isolatie, configuratiechecks, verificaties | Leeg |
+| **M02 — Phoenix Recovery** | [M02-Phoenix-Recovery](M02-Phoenix-Recovery/) | Back-up, restore, integriteit, hersteltests, RTO/RPO | Leeg |
+| **M03 — Identity Dominion** | [M03-Identity-Dominion](M03-Identity-Dominion/) | AD DS, DNS, GPO, identity, toegangscontrole en testresultaten | Leeg |
+| **M04 — Network Citadel** | [M04-Network-Citadel](M04-Network-Citadel/) | IT/OT-segmentatie, pfSense-regels, allow/deny-, PLC/FUXA- en Modbus-tests | Leeg |
+| **M05 — Compliance Sentinel** | [M05-Compliance-Sentinel](M05-Compliance-Sentinel/) | Controlmapping, assurance, afwijkingen, risicobesluiten en aantoonbare toetsing | Leeg |
+
+**Waar bewijsvoering thuishoort:** vermeld bij een missie, technische component of test in de publieke documentatie een verwijzing naar de *bijbehorende missiemap* zodra geschikt bewijs daadwerkelijk is gepubliceerd. Een herbruikbare basisinventaris blijft onder [VMware](VMware/), met een contextlink vanuit de relevante missie in plaats van onnodige kopieën. Onderscheid `CAPTURED`, `TESTED`, `VERIFIED` en `PENDING` volgens de [statuslegenda](../governance/STATUSLEGENDA.md).
+
+**Publicatiegrens:** originele screenshots, netwerkgegevens en privé-SSOT blijven in Private. Publiceer uitsluitend gesaneerde/alias-afgeleiden na privacy- en technisch-inhoudelijke controle. Lege mappen vormen **geen** bewijs en veranderen geen controlverdict.
+
+## Historische componentbewijzen (VMware)
+
 **GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Inventarisatie vóór OpenPLC: 33 bewijs-PNG's.** Op 5 november zijn 8 gesaneerde OpenPLC-opnamen en 1 gesaneerde VMware-OpenPLC-inventaris toegevoegd; integrale herinventarisatie van oudere bewijzen blijft OPEN. De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
 
 | Bewijsmap | Aanwezig | Publicatie-/testgrens |
