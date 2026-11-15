@@ -1,12 +1,12 @@
 # Engineeringroadmap | Hybrid-Theory
 
-**Werkstatus per 02-11-2026, M04 bijgewerkt op 09-11-2026.** Fasen 0–7 zijn technische werkpakketten; **Lab 01 t/m Lab 05** zijn de beoordelings- en uitvoeringsdomeinen. Zij zijn niet één-op-één gelijk en hoeven niet numeriek te worden uitgevoerd. Zie [statuslegenda](../governance/STATUSLEGENDA.md).
+**Werkstatus per 02-11-2026, M04 bijgewerkt op 15-11-2026.** Fasen 0–7 zijn technische werkpakketten; **Lab 01 t/m Lab 05** zijn de beoordelings- en uitvoeringsdomeinen. Zij zijn niet één-op-één gelijk en hoeven niet numeriek te worden uitgevoerd. Zie [statuslegenda](../governance/STATUSLEGENDA.md).
 
 | Fase | Technisch werkpakket | Aangetoonde status | Nog uit te voeren |
 |---|---|---|---|
 | **0** | Documentatie en portfolio-export | GitHub-zichtbaarheid **PUBLIC** (gecontroleerd 05-11-2026), publicatiegates **OPEN** | Secrets/history-scan, pixelredactie, ontbrekende bestanden, eigenaar-PASS voor gates |
 | **1** | Ubuntu en Cockpit | **IMPLEMENTED**, gerichte beheerproeven **PASS** | Verder service- en herstelontwerp |
-| **2** | pfSense en LAB-beveiliging | **IMPLEMENTED**; gerichte DHCP-/ICMP-/firewallproeven **PASS**. Aparte OT-interface met default deny **IMPLEMENTED** (8 nov.) | Volledige isolatie en bredere protocollen niet aangetoond; OT-zone nog zonder systemen en zonder tests; tijdelijke egressregel beoordelen |
+| **2** | pfSense en LAB-beveiliging | **IMPLEMENTED**; gerichte DHCP-/ICMP-/firewallproeven **PASS**, afzonderlijke OT-interface sinds 8 nov., PLC en HMI in die virtuele OT-zone bevestigd op 15 nov. | Integrale AC04/AC07-zone-/protocol- en egressvalidatie, beoordeling tijdelijke uitzonderingen |
 | **3** | Windows Server 2025, AD/DNS, Windows 11 en GPO | **VERIFIED** voor gerichte AD/client-basistests op 1 november | Hardening, tijdbron, herstel, aanvullende negatieve tests |
 | **4** | GNS3 en Wireshark | Kleine VPCS-/ARP-/ICMP-topologie **PASS** | Uitbreiding, tijdsynchronisatie, GNS3-dataplane-isolatie |
 | **5** | Tweede fysieke Linux-host | **PLANNED** | Hardwareinstallatie, beheer, backup-/herstelontwerp |
@@ -20,7 +20,7 @@
 | **M01** | **Lab 01 — Hypervisor Security & Virtualization Hardening** | **IN PROGRESS**; gerichte controlerondes PASS met één EXCEPTION; geen integrale acceptatie | [M01-deelreview](2026-11-01-hypervisor-fortress-deelreview.md) |
 | **M02** | **Lab 02 — Backup, Recovery & Disaster Resilience** | **PENDING**; geen onafhankelijke off-host restore | [AD-herstelgrens](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M03** | **Lab 03 — Hybrid Identity & Access Management** | **IN PROGRESS**; AD-basis gescopeerd PASS; Entra/IAM-uitbreiding niet aangetoond | [AD/DNS/domain join/GPO](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04** | **Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**; beperkte pfSense- en GNS3-tests PASS; functionele OT-baseline AC01–AC03 PASS binnen scope (6 nov.); OT-interface op de firewall IMPLEMENTED (8 nov.); migratie van de PLC naar het OT-segment gemeld (9 nov., bewijs niet onafhankelijk geverifieerd); regressie AC01–AC03 na de migratie, HMI-migratie, AC04 en AC07 **PENDING**; **M04-CORE IN PROGRESS** | [pfSense](2026-10-26-projectstatus.md), [GNS3](2026-10-28-gns3-kvm-diagnose-parkeerregister.md), [OT-baseline](2026-11-06-m04-network-citadel-ot-baseline.md), [OT-interface](2026-11-08-m04-ot-firewallinterface.md), [PLC-migratie](2026-11-09-m04-plc-migratie-governance-publiek.md) |
+| **M04** | **Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**; historische motorsimulatie-/Modbus AC01–AC03 deeltests op eerdere topologie (6 nov.) **PASS**; virtuele PLC en HMI inmiddels op afzonderlijk OT-segment **IMPLEMENTED**; 15 nov. PLC-runtime en TCP 502-listener, HMI→PLC TCP-handshake en HMI-connection **TESTED**, twee tagwaarden met PLC-monitoring vergeleken. **AC02/AC03 formele end-to-end readback-evidence, AC04 en AC07 integraal PENDING**; geen missieacceptatie | [M04-basis](2026-11-06-m04-network-citadel-ot-baseline.md), [M04 11 nov.](2026-11-11-m04-segmentatie-en-beheer-validatie.md), [M04 15 nov.](2026-11-15-m04-ot-modbus-applicatievalidatie.md) |
 | **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | **PENDING**; geen afgeronde assurance-acceptatie | [CAT/ACE v0.4: Audit, Cost & Efficiency](../governance/CAT_ACE_v0.4.md) (intern/extern/hybride; concept, geen lab-PASS) |
 
 ## Koppeltabel Fase ↔ Lab
