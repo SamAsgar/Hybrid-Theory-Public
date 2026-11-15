@@ -11,6 +11,7 @@
 - [Downloadbaar evidence-register (CSV)](M04-EVIDENCE.csv)
 - [GAP-analyse en testbeperkingen](M04-GAPS.md)
 - [Status van elke afbeelding](M04-PUBLICATIESTATUS.md)
+- [3 aanvullende gesaneerde historische beelden (30 oktober)](M04-LEGACY-BEELDEN.md) (eigenaarsreview in Draft PR).
 - 19 genummerde submappen voor thematische navigatie, ook voor FAIL, ERROR en troubleshooting.
 
 ## Architectuur (schematisch, niet als technische bewijsopname)

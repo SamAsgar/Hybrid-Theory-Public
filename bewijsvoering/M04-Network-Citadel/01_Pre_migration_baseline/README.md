@@ -4,6 +4,8 @@
 
 Deze themamap bevat 14 bronrecords uit een private 270-records selectie. Originelen blijven privé. De afbeeldingstatus is geen technisch acceptatieoordeel.
 
+[Drie afzonderlijk gesaneerde historische pfSense-beelden (30 oktober, buiten de 270-recordselectie)](../M04-LEGACY-BEELDEN.md).
+
 | Evidence-ID | Datum/tijd | Klasse | Control | Technische betekenis | Publieke afbeelding |
 |---|---|---|---|---|---|
 | `M04-ZIP-001` | 31-10-2026 21:52:44 | **CONFIG** | AC04 (voorgeschiedenis LAB) | Client01-VM: netwerkadapter op NAT (voor de verplaatsing naar het LAB-segment). | Nog niet gepubliceerd (review vereist) |
