@@ -56,4 +56,4 @@ De screenshots bewijzen niet dat alle securitypolicies of alle segmentatiegrenze
 
 **Publicatie:** gesaneerde labweergaven. Bewijsscope en openstaande controles worden niet opgewaardeerd door de afbeelding zelf.
 
-**Repositoryzichtbaarheid:** PUBLIC; de resterende repositorybrede publicatiegates zijn niet afgerond. Zie [statuslegenda](../../governance/STATUSLEGENDA.md).
+**Repositoryzichtbaarheid:** PUBLIC; de resterende repositorybrede publicatiegates zijn niet afgerond. Zie [statuslegenda](../../../governance/STATUSLEGENDA.md).
