@@ -2,7 +2,7 @@
 
 ## Missiegebonden bewijsvoering (M01–M05)
 
-De vijf missies hebben elk een eigen **lege publicatiemap**, uitsluitend met een technisch `.gitkeep`-bestand zodat GitHub de map toont. Dit zijn *gereserveerde locaties*, geen nieuwe testbewijzen of acceptaties.
+De vijf missies hebben elk een eigen publicatiemap. **M01 en M04 bevatten gepubliceerde, gesaneerde bewijsstukken; M02, M03 en M05 zijn gereserveerde lege locaties** met een technisch `.gitkeep`-bestand zodat GitHub de map toont. De aanwezigheid van een map of beeld is op zichzelf geen testacceptatie.
 
 | Missie | Bewijslocatie | Bedoelde inhoud | Publicatiestatus |
 |---|---|---|---|
