@@ -9,7 +9,7 @@ De vijf missies hebben elk een eigen **lege publicatiemap**, uitsluitend met een
 | **M01 — Hypervisor Fortress** | [M01-Hypervisor-Fortress](M01-Hypervisor-Fortress/) | Hypervisor- en hosthardening, VM-isolatie, configuratiechecks, verificaties | Leeg |
 | **M02 — Phoenix Recovery** | [M02-Phoenix-Recovery](M02-Phoenix-Recovery/) | Back-up, restore, integriteit, hersteltests, RTO/RPO | Leeg |
 | **M03 — Identity Dominion** | [M03-Identity-Dominion](M03-Identity-Dominion/) | AD DS, DNS, GPO, identity, toegangscontrole en testresultaten | Leeg |
-| **M04 — Network Citadel** | [M04-Network-Citadel](M04-Network-Citadel/) | IT/OT-segmentatie, pfSense-regels, allow/deny-, PLC/FUXA- en Modbus-tests | 210 gesaneerde screenshots in 19 fasen ([saneringsrapport](M04-Network-Citadel/M04-SANITIZATION-REPORT.md)); AC04/AC07 PENDING |
+| **M04 — Network Citadel** | [M04-Network-Citadel](M04-Network-Citadel/) | IT/OT-segmentatie, pfSense-regels, allow/deny-, PLC/FUXA- en Modbus-tests | Leeg |
 | **M05 — Compliance Sentinel** | [M05-Compliance-Sentinel](M05-Compliance-Sentinel/) | Controlmapping, assurance, afwijkingen, risicobesluiten en aantoonbare toetsing | Leeg |
 
 **Waar bewijsvoering thuishoort:** vermeld bij een missie, technische component of test in de publieke documentatie een verwijzing naar de *bijbehorende missiemap* zodra geschikt bewijs daadwerkelijk is gepubliceerd. Een herbruikbare basisinventaris blijft onder [VMware](VMware/), met een contextlink vanuit de relevante missie in plaats van onnodige kopieën. Onderscheid `CAPTURED`, `TESTED`, `VERIFIED` en `PENDING` volgens de [statuslegenda](../governance/STATUSLEGENDA.md).
