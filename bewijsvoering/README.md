@@ -6,7 +6,7 @@ De vijf missies hebben elk een eigen **lege publicatiemap**, uitsluitend met een
 
 | Missie | Bewijslocatie | Bedoelde inhoud | Publicatiestatus |
 |---|---|---|---|
-| **M01 — Hypervisor Fortress** | [M01-Hypervisor-Fortress](M01-Hypervisor-Fortress/) | Hypervisor- en hosthardening, VM-isolatie, configuratiechecks, verificaties | Leeg |
+| **M01 — Hypervisor Fortress** | [M01-Hypervisor-Fortress](M01-Hypervisor-Fortress/) | Hypervisor- en hosthardening, VM-isolatie, configuratiechecks, verificaties | 82 gesaneerde screenshots ([saneringsrapport](M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md)); geen volledige M01-PASS |
 | **M02 — Phoenix Recovery** | [M02-Phoenix-Recovery](M02-Phoenix-Recovery/) | Back-up, restore, integriteit, hersteltests, RTO/RPO | Leeg |
 | **M03 — Identity Dominion** | [M03-Identity-Dominion](M03-Identity-Dominion/) | AD DS, DNS, GPO, identity, toegangscontrole en testresultaten | Leeg |
 | **M04 — Network Citadel** | [M04-Network-Citadel](M04-Network-Citadel/) | IT/OT-segmentatie, pfSense-regels, allow/deny-, PLC/FUXA- en Modbus-tests | 210 gesaneerde screenshots in 19 fasen ([saneringsrapport](M04-Network-Citadel/M04-SANITIZATION-REPORT.md)); AC04/AC07 PENDING |
