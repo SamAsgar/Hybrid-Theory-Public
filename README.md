@@ -24,9 +24,6 @@ Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B 
 
 **Actuele missie-issues | GitHub Created on → Newest:** [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/41) → [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/40) → [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/39) → [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/38) → [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/37). De eerdere issues zijn als gesloten archief bewaard.
 
-**Missies op volgorde (M01 → M05):** [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/28) → [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/31) → [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/32) → [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/30) → [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/33).
-
-*GitHub sorteert het Issues-overzicht op datum/interactie, niet op missie-ID. Deze index biedt de canonieke M01–M05-volgorde.*
 
 | Missie | Status en beknopte scope |
 |---|---|
