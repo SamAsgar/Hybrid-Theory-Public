@@ -22,12 +22,16 @@ Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B 
 
 ### Missies en aantoonbare voortgang
 
+**Missies op volgorde (M01 → M05):** [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/28) → [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/31) → [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/32) → [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/30) → [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/33).
+
+*GitHub sorteert het Issues-overzicht op datum/interactie, niet op missie-ID. Deze index biedt de canonieke M01–M05-volgorde.*
+
 | Missie | Status en beknopte scope |
 |---|---|
 | **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Geen volledige M01-PASS. [Missiedocumentatie](bewijsvoering/M01-Hypervisor-Fortress/README.md) |
 | **M02 — Phoenix Recovery** | **PENDING**; herstelarchitectuur is beschreven, maar onafhankelijke off-host restore is niet aangetoond. [Ontwerp en status](governance/M02-Phoenix-Recovery/README.md) |
 | **M03 — Identity Dominion** | **IN PROGRESS**; AD/DNS, domain join, testlogin en één GPO zijn **PASS binnen scope**; Entra is **PLANNED**. [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**; PLC en HMI zijn **IMPLEMENTED** op OT en specifieke verbindingen/taguitlezing zijn **TESTED**. Formele AC02/AC03-readback en integrale AC04/AC07 blijven **PENDING**. Geen volledige M04-PASS. [Missiedocumentatie](bewijsvoering/M04-Network-Citadel/README.md) |
+| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**; post-migratie PLC/HMI-start/stop **0→1→0 functioneel TESTED / scoped PASS**. Gerichte LAB/OT/egress-deny-tests zijn met firewalllogs gecorreleerd; geautoriseerde beheerpoorten zijn positief getest (**scoped PASS**). Integrale AC04/AC07-matrix, onafhankelijke evidence-review en eigenaaracceptatie blijven **PENDING**. Geen volledige M04-PASS. [Missiedocumentatie](bewijsvoering/M04-Network-Citadel/README.md) |
 | **M05 — Compliance Sentinel** | **PENDING**; geen afgeronde assurance-acceptatie. [Regelgevings- en assurancekaders](governance/WET_EN_REGELGEVING.md) |
 
 ### Bewijsvoering
