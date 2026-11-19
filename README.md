@@ -1,133 +1,59 @@
 # Hybrid-Theory
-### Secure Hybrid Enterprise Network
 
-**Experimental Research on Cybersecurity, Systemic Risk and Cross-Layer Dependencies**  
-**Research status:** Exploratory | Methodology under development
+## Cybersecurity engineering voor hybride IT/OT-omgevingen
 
-> **English summary:** Hybrid-Theory is a hands-on hybrid enterprise cybersecurity lab exploring systemic risk and cross-layer dependencies. VMware, pfSense, Windows, Linux, GNS3, OpenPLC and FUXA are deployed. Both virtual PLC and HMI have migrated to a dedicated OT segment. As of 15 November, the PLC runtime, Modbus TCP listener, HMI-to-PLC TCP handshake and HMI device connection have been tested, with initial tag-read observations. Earlier scoped management allow and LAB-to-OT deny checks remain documented; complete functional start/stop readback evidence, wider segmentation validation (AC04/AC07), hardening and evidence review remain pending. The methodology is experimental and M04 is not complete.
+Hybrid-Theory is een hands-on cybersecurity-engineeringlab en experimenteel onderzoeksproject. Het onderzoekt hoe architectuur, netwerkgrenzen, identiteit en onderlinge afhankelijkheden invloed hebben op beveiliging en systeemrisico. De nadruk ligt op aantoonbare, afgebakende tests en transparante documentatie; het project claimt geen certificering of volledige missieacceptatie.
 
-### Direct naar de belangrijkste onderdelen
+### In 60 seconden
 
-[**Huidige architectuur · Diagram A**](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) · [**Doelarchitectuur · Diagram B**](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg) · [Architectuurdocumentatie](architectuur/README.md) · [Missies M01–M05](#5-foundational-labs) · [Bewijsvoering](bewijsvoering/README.md) · [Roadmap](projectlogboeken/ROADMAP.md)
+- **Domein:** hybride IT/OT-beveiliging, netwerksegmentatie, virtualisatie, identity & access management en security engineering.
+- **Huidige basis:** VMware Workstation met pfSense en afzonderlijke WAN-SIM-, MGMT-, LAB- en OT-netwerken; Windows Server/AD DS, Windows 11, Ubuntu, GNS3/Wireshark, OpenPLC, FUXA en Wazuh.
+- **Ontwerp:** PLC en HMI zijn ingericht op het OT-netwerk. Het doelontwerp met aanvullende zones, Azure en onafhankelijke recovery is ontwerp/planning, geen gerealiseerde omgeving.
+- **Werkwijze:** baseline, gescopeerde test, resultaat en bewijsgrens worden apart vastgelegd. Een configuratie of screenshot is niet op zichzelf bewijs van werking of missievoltooiing.
+- **Resultaten:** AD/DNS, domain join en één GPO zijn binnen scope getest; GNS3 ARP/ICMP-tests zijn gedocumenteerd. Wazuh-dashboardtoegang is getest, maar agentdetectie is niet aangetoond.
 
-**Publieke evidence-reset (16 november 2026):** op die datum zijn de missiemappen M01 t/m M05 als genummerde publicatiecontainers gereserveerd; M01 en M04 zijn daarbij opnieuw aangemaakt zonder oud materiaal. Dit beschrijft de reset op die datum. Sindsdien is gesaneerde bewijsvoering voor M01 en M04 in deze publieke repository gepubliceerd; de private bronbestanden en onderzoeksresultaten bleven ongewijzigd. [Bewijsvoering per missie](bewijsvoering/README.md) geeft de actuele indeling.
+### Architectuur
 
-### Wat ik heb gebouwd en getest
+![Diagram A — huidige architectuur](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg)
 
-**Stand van zaken: 15 november 2026.** Hieronder staat wat daadwerkelijk is ingericht en op beperkte punten getest. **PASS geldt uitsluitend binnen de genoemde scope**; niet alle primaire evidence is gepubliceerd of onafhankelijk beoordeeld. De [statuslegenda](governance/STATUSLEGENDA.md) maakt onderscheid tussen implementatie, verificatie en openstaand werk.
+[Huidige architectuur · Diagram A](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) · [Doelarchitectuur · Diagram B](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg) · [Architectuur- en netwerkontwerp](architectuur/README.md)
 
-| Component | Gebouwd en getest | Nog open |
-|---|---|---|
-| **VMware Workstation** | Meerdere VM's ingericht. Hypervisor- en guest-isolation-deelcontroles **PASS**, met één bewuste **EXCEPTION** voor Windows-host/guest-integratie. [Review](projectlogboeken/2026-11-01-hypervisor-fortress-deelreview.md) | Integrale hardening, tijdsynchronisatie, restore |
-| **pfSense + Kea DHCP** | Virtueel LAB-segment, DHCP en gateway, plus afzonderlijke OT-interface **IMPLEMENTED**. PLC en HMI zijn inmiddels naar het OT-segment verplaatst (**IMPLEMENTED**, volgens de gedateerde private uitvoeringsdocumentatie). De 210 gesaneerde M04-screenshots zijn gepubliceerd; eigenaar-review blijft **PENDING**. Op 11 november is één **LAB→OT deny**-deeltest met expliciete firewall-blocklogs **TESTED PASS**; twee begrensde beheer-TCP-tests eveneens **TESTED PASS**. [OT-interface](projectlogboeken/2026-11-08-m04-ot-firewallinterface.md) · [Voortgang 11 nov.](projectlogboeken/2026-11-11-m04-segmentatie-en-beheer-validatie.md) | Volledige AC04/AC07-matrix, negatieve/positieve zonecontroles, tijdelijke uitzonderingen beoordelen en publieke bewijsset reviewen |
-| **Windows Server 2025 / AD DS / DNS / Windows 11** | Forest/DC-promotie, DNS/SRV, domain join, testlogin en één GPO **PASS**. [AD-rapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | Hardening, redundantie, onafhankelijk herstel |
-| **Ubuntu Server + Cockpit** | Linuxserver en beheerinterface ingericht; basisbeheer bereikt. [Linux-bewijs](bewijsvoering/VMware/Linux/README.md) | Aanvullende services en hardening |
-| **GNS3 + Wireshark** | VPCS–switch–VPCS, bidirectionele ICMP, ARP en packetcapture **PASS** in LAB01. [Bewijs](bewijsvoering/VMware/GNS3/README.md) | Grotere netwerken en gedetailleerde isolatie |
-| **FUXA (SCADA/HMI)** | Docker/HMI en historische Modbus-basistests **AC02/AC03 PASS** op de eerdere topologie. HMI is inmiddels naar het afzonderlijke OT-segment verplaatst (**IMPLEMENTED**). Na VM-reboot draait de HMI, webbeheer is bereikbaar, en de verbinding naar de PLC via Modbus TCP rapporteert groen; twee actuele Bool-tagwaarden zijn naast de PLC-monitoring gecontroleerd (**gerichte deeltests, 15 nov.**). [M04 15 nov.](projectlogboeken/2026-11-15-m04-ot-modbus-applicatievalidatie.md) | Volledige aantoonbare start-stop-readback (AC02/AC03), authenticatie/TLS, gesaneerde publieke evidence en resterende zonevalidatie |
-| **Wazuh 4.14.9 (SIEM)** | OVA geïmporteerd, CPU/VMware-opstartprobleem verholpen, DHCP/gateway gecontroleerd, manager/indexer/dashboard-services actief en dashboardlogin bereikbaar (**beperkte functie-PASS**, 3–4 nov.). GPT-header gerepareerd en rootpartitie uitgebreid. [Publieke hardware-inventaris](bewijsvoering/VMware/README.md). | **0 agents**: geen bewezen end-to-end detectie; definitieve XFS-groei, indexer write-health, negatieve toegangsproef en restore nog open. Functioneel bewijs is nog niet publiek gepubliceerd. |
+Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B is een doelontwerp. Beide zijn architectuurillustraties, geen zelfstandig testbewijs. Zie ook de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md).
 
-**M04-update 15 november (gescopeerde applicatietests):** na de OT-migratie zijn onderlinge netwerkbereikbaarheid, de PLC-runtime, een actieve Modbus TCP 502-listener en een geslaagde TCP-handshake vanuit de HMI geobserveerd. Een historische HMI-deviceverwijzing naar de eerdere netwerkopstelling is gecorrigeerd; de Modbus-connectie wordt nu groen weergegeven. Twee motorsignalen zijn met actuele timestamps naast de PLC-monitoring gecontroleerd. De bestaande motorbediening werkt volgens de Project Owner, maar een volledige gedocumenteerde `0→1→0`-command/readbackreeks voor formele AC02/AC03-regressie is nog **PENDING**. **AC04/AC07 integraal PENDING; M04-CORE IN PROGRESS.** Originele sessiescreenshots zijn niet publiek geïmporteerd. [Gesanitiseerd M04-log van 15 november](projectlogboeken/2026-11-15-m04-ot-modbus-applicatievalidatie.md).
+### Missies en aantoonbare voortgang
 
-**M04-update 11 november (gescopeerde tests):** PLC en HMI zijn naar het OT-segment verplaatst (**IMPLEMENTED** volgens de begeleide labsessie). Sam heeft een DHCP-diagnose gecorrigeerd nadat bleek dat de firewall-VM niet aanstond, bronnetwerken bij Windows-tests gecontroleerd en een foutieve bronvoorwaarde van de HMI-beheerportforward hersteld. Vanaf het beheerpad zijn zowel PLC als HMI via hun toegestane TCP-poorten bereikbaar (**TESTED PASS**). Een onbevoegde LAB→OT-verbindingspoging is expliciet door pfSense geblokkeerd (**gerichte negatieve AC07-deeltest TESTED PASS**). **Nog open:** HMI-persistentie na reboot, HTTP/authenticatie via beheer, functionele PLC/HMI-regressie, verdere zone-/poorttests, evidence-import en finale acceptatie. **M04-CORE IN PROGRESS; AC04/AC07 integraal PENDING.** [M04-voortgang en troubleshooting](projectlogboeken/2026-11-11-m04-segmentatie-en-beheer-validatie.md).
-
-**M04-update 9 november (gemeld, bewijs niet onafhankelijk geverifieerd):** Sam meldt dat de virtuele PLC van het tijdelijke NAT-netwerk naar het OT-segment achter de firewall is verplaatst, met vaste adressering en een beperkt beheerpad vanaf één aangewezen beheerbron. Gemeld zijn onder meer behoud van de netwerkconfiguratie na een herstart en bereikbaarheid van de PLC-webinterface via dat beheerpad. De primaire bewijsvoering is nog niet in een repository geïmporteerd: **geen VERIFIED en geen segmentatie-PASS**. **PENDING:** HMI-migratie, OpenPLC-runtime-regressie, FUXA↔PLC-communicatie na de migratie, regressie AC01–AC03, **AC04** en **AC07**; **M04-CORE blijft IN PROGRESS**. [PLC-migratielog](projectlogboeken/2026-11-09-m04-plc-migratie-governance-publiek.md).
-
-**M04-update 8 november:** de firewall heeft een eigen **OT-interface** gekregen op een afzonderlijk virtueel segment, met een adres uit het goedgekeurde zoneontwerp en zonder firewallregels, zodat verkeer vanuit OT standaard wordt geweigerd. De bestaande interfaces bleven ongewijzigd. HMI en PLC stonden toen nog op het tijdelijke NAT-netwerk (stand van 8 november; zie de update van 9 november); er was **nog geen isolatietest** uitgevoerd en **geen segmentatie-PASS** geclaimd. [OT-interfacelog](projectlogboeken/2026-11-08-m04-ot-firewallinterface.md).
-
-**M04-update 6 november:** OpenPLC-motorlogica (**AC01 PASS**), dynamische uitlezing van twee Modbus-coils in FUXA (**AC02 PASS**) en FUXA-motorbediening (**AC03 PASS op basis van eigenaarbevestiging en gedeelde sessiebeelden**) zijn binnen de functionele testscope behaald. [Publiek M04-log](projectlogboeken/2026-11-06-m04-network-citadel-ot-baseline.md). **PENDING / PLANNED:** afgedwongen pfSense-OT-zone, negatieve securitytests, Suricata, Wazuh-agentdetectie, Azure/Entra/Arc en onafhankelijke off-host restore. De VM's worden binnen het RAM-budget niet noodzakelijk tegelijk gedraaid.
-
-**Onderzoeksupdate · 4 november 2026:** Architectuur B gekozen voor **M02 Phoenix Recovery**, met gescheiden lokale en offsite back-uproutes. Daarnaast zijn private-cloudopties, Azure Arc, ransomwaredreigingen en gecombineerde IT/OT-storingsscenario's onderzocht onder **CAT/ACE v0.4**. **Geen technische acties of hersteltests uitgevoerd op 4 november; M02 blijft PENDING.** [Lees het nieuwe onderzoekslogboek](projectlogboeken/2026-11-04-onderzoeksdag-phoenix-recovery-private-cloud.md).
-
-## 1. Introduction and research motive
-
-Hybrid-Theory is een technisch onderzoeksproject waarin een hybride bedrijfsnetwerk wordt opgebouwd met VMware, pfSense, Windows Server, Windows 11, Ubuntu en GNS3, aangevuld met FUXA en Wazuh. Azure en volledige IT/OT-integratie blijven gepland. Naast het bouwen en beveiligen van deze infrastructuur wil ik onderzoeken hoe risico's ontstaan en zich via onderlinge afhankelijkheden kunnen verspreiden.
-
-Dit sluit conceptueel aan bij [mijn Northumbria-masterscriptie (2021) over systemic risk en spillover-effecten](onderzoek/academische-referenties/scriptie-2021.md). Daarin onderzocht ik welke Europese landen en economische sectoren financiële schokken verspreiden (*transmitters*) en welke erdoor worden geraakt (*receivers*). In hybride infrastructuren kunnen verstoringen eveneens via afhankelijkheden doorwerken, maar de mechanismen verschillen en de cybersecuritytoepassing moet onafhankelijk worden getoetst.
-
-De motivatie bestaat uit drie doelstellingen. Ten eerste wil ik cruciale afhankelijkheden tussen IT, OT, cloud, bedrijfsbeheer en governance herkennen. Ten tweede wil ik onderzoeken hoe veranderingen binnen deze onderdelen vroegtijdig kunnen worden vastgesteld en welke gevolgen ze hebben voor de rest van de organisatie. Ten derde wil ik verder kijken dan uitsluitend wet- en regelgeving. Compliance is belangrijk, maar naleving alleen voorkomt niet automatisch complexe cyberdreigingen, verborgen zwakheden of keteneffecten.
-
-Daarom richt het onderzoek zich ook op single points of failure, verborgen afhankelijkheden, cascading failures en onderliggende oorzaken. De [academische referenties, MSc-bewijsstukken en onderzoeksachtergrond](onderzoek/academische-referenties/README.md) zijn apart gedocumenteerd.
-
-## 2. Research objectives
-
-De centrale onderzoeksvraag is:
-
-**In hoeverre kan een geïntegreerde beoordeling van governance, management en technische infrastructuur bijdragen aan het herkennen van beveiligingszwakheden, kritieke afhankelijkheden en systeemrisico's?**
-
-### 2.1 Eigen onderzoeksconcept en wetenschappelijk uitgangspunt
-
-**CAT/ACE v0.4 is een experimenteel model dat governance, management en techniek koppelt aan interne, externe of hybride Audit, Cost & Efficiency-beoordelingen.** Dit onderzoeksconcept is door mijzelf bedacht en wordt binnen Hybrid-Theory verder ontwikkeld en getoetst.
-
-Bestaande frameworks zoals **COBIT, ISO/IEC 27001 en NIST CSF** behandelen al governance en management. **De drie lagen zijn op zichzelf geen nieuwe uitvinding.** De te onderzoeken meerwaarde ligt in een reproduceerbare koppeling van verantwoordelijkheden, technische controls, afhankelijkheden, gecontroleerde foutinjectie, bewijsvoering en restrisicobesluiten.
-
-De ontwikkeling is *evidence-driven*: de resultaten kunnen de aannames ondersteunen, nuanceren of weerleggen. **CAT/ACE is niet bewezen beter** dan bestaande beoordelingsprocedures.
-
-De drie samenhangende lagen zijn **Corporate Governance & Compliance**, **Accountability & Management** en **Technology & Operations**. ACE toetst controls en compliancebewijs, vergelijkt kosten en veilige optimalisatie, en valideert wijzigingen opnieuw. Zie de [uitgebreide onderzoeksdocumentatie over frameworks en gap-analyses](governance/CAT_ACE_v0.4.md) en de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) voor de uitwerking.
-
-### 2.2 Cross-layer dependencies
-
-Het onderzoeksmodel bekijkt relaties tussen governance, management en technologie **in beide richtingen**. Een technische storing kan gevolgen hebben voor bedrijfsprocessen, terwijl een beleids- of managementwijziging invloed kan hebben op technische maatregelen. Deze afhankelijkheden, eventuele cascading failures en veronderstelde oorzaken moeten aan de hand van tests en bewijs worden getoetst.
-
-### 2.3 Virtual enterprise
-
-Binnen de gesimuleerde organisatie worden verantwoordelijkheden van directie, business process owner, CISO, IT-manager en system administrator onderzocht. Dit helpt om technische bevindingen te koppelen aan eigenaarschap en risicoacceptatie. Fictieve besluiten vormen geen bewijs van werkelijke managementeffectiviteit. De **organisatorische rollen** in deze simulatie zijn iets anders dan de **AI-samenwerkingsrollen** in sectie 8.
-
-## 3. Research methodology
-
-Het onderzoek wordt uitgevoerd binnen Hybrid-Theory. Per geselecteerd scenario worden een baseline, verwachtingen en testprocedures vastgelegd. Vervolgens worden gecontroleerde verstoringen uitgevoerd om afhankelijkheden, netwerkgedrag en herstel te onderzoeken.
-
-Configuraties, logs en testresultaten vormen de technische bewijsvoering. Organisatorische simulaties en onbevestigde aannames worden afzonderlijk benoemd, zodat duidelijk blijft welke bevindingen daadwerkelijk zijn aangetoond.
-
-## 4. Hybrid network architecture
-
-De [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md) beschrijven de bestaande en beoogde samenhang tussen VMware, pfSense, Windows, Ubuntu en GNS3. FUXA (HMI) en Wazuh (SIEM) zijn in de architectuur opgenomen. **PLC en HMI zijn inmiddels naar een geïsoleerd OT-segment gemigreerd**, maar volledige segmentatievalidatie en functionele regressie ontbreken nog. Azure, aanvullende hybride integraties en delen van de detectiearchitectuur blijven onderdeel van het doelmodel; niet alle verbindingen en diensten zijn geïmplementeerd of getest.
-
-De [publieke architectuur](architectuur/README.md) bevat twee actuele, gesaneerde SVG-visualisaties (stand **15 november 2026**): [Diagram A — huidige infrastructuur](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) met WAN-SIM, MGMT, LAB en OT, en [Diagram B — HT-C-010-doelontwerp](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg). De aanvullende doelzones, **twee geplande Azure-subscriptions**, Suricata en de fysieke M02-recoveryomgeving zijn niet als gerealiseerd gepresenteerd. PLC en HMI zijn in OT ingericht; de eerdere begrensde beheer- en LAB→OT-deny-tests hebben een beperkte scope. End-to-end OT-regressie, volledige AC04/AC07 en aanvullende evidence-review staan open. De diagrammen zijn architectuurillustraties, **geen zelfstandig testbewijs**.
-
-**GNS3: basisomgeving IMPLEMENTED en beperkte VPCS/ARP/ICMP-tests PASS.** De uitbreiding met drie groepen van 25 virtuele clients, aanvullende subnetten en uitgebreidere isolatietests is nog gepland. Zie [GNS3-bewijsvoering](bewijsvoering/VMware/GNS3/README.md).
-
-**Windows/AD: basis VERIFIED binnen de geteste scope.** Forest/DC, DNS, domain join, testlogin en één GPO zijn aangetoond; uitgebreide identity-hardening, domeinredundantie en een onafhankelijke restore niet. Zie het [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md).
-
-**FUXA en Wazuh: basisomgevingen IMPLEMENTED, beperkte functietests PASS.** FUXA/Modbus AC02–AC03 is historisch op de vorige topologie getest; op 15 november zijn op OT de TCP-connectie en een taguitleesdeelcontrole getest, maar de formele end-to-end start-stopreadback-evidence blijft open. FUXA op OT heeft een lokale HTTP-test en een begrensde management-TCP-test doorstaan. Temperatuur-/alarmtags en HMI-hardening zijn niet aangetoond. Wazuh is toegankelijk als SIEM-dashboard, zonder gevalideerde agentdetectie. Voor beide blijven verdere integratie en publieke end-to-end bewijsvoering open.
-
-## 5. Foundational labs
-
-De vijf canonieke labs. **M01–M05 zijn IDs**, geen automatische completion-verdicts. Zie [statuslegenda](governance/STATUSLEGENDA.md) en [roadmap](projectlogboeken/ROADMAP.md).
-
-| ID en labnaam | Werkstatus en bewijs |
+| Missie | Status en beknopte scope |
 |---|---|
-| **M01 · Lab 01 — Hypervisor Security & Virtualization Hardening** | **IN PROGRESS**; gerichte HV-01–HV-04-controles **PASS met één EXCEPTION**. [M01-review](projectlogboeken/2026-11-01-hypervisor-fortress-deelreview.md) · [Bewijsvoering M01](bewijsvoering/M01-Hypervisor-Fortress/) (82 gesaneerde screenshots; geen volledige M01-PASS) |
-| **M02 · Lab 02 — Backup, Recovery & Disaster Resilience** | **PENDING**; geen off-host restore aangetoond. [AD-/herstelrapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) · [Bewijsvoering M02](bewijsvoering/M02-Phoenix-Recovery/) (publieke map gereserveerd; nog geen missiebeelden) |
-| **M03 · Lab 03 — Hybrid Identity & Access Management** | **IN PROGRESS**; AD/DNS/domain join/GPO **PASS binnen scope**; Entra **PLANNED**. [AD-rapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) · [Bewijsvoering M03](bewijsvoering/M03-Identity-Dominion/) (publieke map gereserveerd; nog geen missiebeelden) |
-| **M04 · Lab 04 — Network Citadel** | **ACTIVE / HIGH PRIORITY; M04-CORE IN PROGRESS.** PLC en HMI **IMPLEMENTED** op OT. TCP 502-listener, onderlinge handshake en HMI-deviceverbinding **TESTED**; twee Bool-tagwaarden getoond. Eerdere begrensde beheer- en LAB→OT-deny-tests behouden hun scope. **AC02/AC03 formele eindbewijsreeks en AC04/AC07 integraal PENDING**; geen volledige missie-PASS. [M04 11 nov.](projectlogboeken/2026-11-11-m04-segmentatie-en-beheer-validatie.md) · [M04 15 nov.](projectlogboeken/2026-11-15-m04-ot-modbus-applicatievalidatie.md) · [Publieke bewijsmap](bewijsvoering/M04-Network-Citadel/) (210 gesaneerde screenshots in 19 fasen) · [M04 evidence-index](bewijsvoering/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) |
-| **M05 · Lab 05 — Regulatory Assessment & Security Assurance** | **PENDING**; geen afgeronde assurance-acceptatie. [Regulatory frameworks](governance/WET_EN_REGELGEVING.md) · [Bewijsvoering M05](bewijsvoering/M05-Compliance-Sentinel/) (publieke map gereserveerd; nog geen missiebeelden) |
+| **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Geen volledige M01-PASS. [Missiedocumentatie](bewijsvoering/M01-Hypervisor-Fortress/README.md) |
+| **M02 — Phoenix Recovery** | **PENDING**; herstelarchitectuur is beschreven, maar onafhankelijke off-host restore is niet aangetoond. [Ontwerp en status](governance/M02-Phoenix-Recovery/README.md) |
+| **M03 — Identity Dominion** | **IN PROGRESS**; AD/DNS, domain join, testlogin en één GPO zijn **PASS binnen scope**; Entra is **PLANNED**. [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
+| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**; PLC en HMI zijn **IMPLEMENTED** op OT en specifieke verbindingen/taguitlezing zijn **TESTED**. Formele AC02/AC03-readback en integrale AC04/AC07 blijven **PENDING**. Geen volledige M04-PASS. [Missiedocumentatie](bewijsvoering/M04-Network-Citadel/README.md) |
+| **M05 — Compliance Sentinel** | **PENDING**; geen afgeronde assurance-acceptatie. [Regelgevings- en assurancekaders](governance/WET_EN_REGELGEVING.md) |
 
-**Publieke evidence-indeling:** [M01](bewijsvoering/M01-Hypervisor-Fortress/) bevat 82 gesaneerde screenshots; [M02](bewijsvoering/M02-Phoenix-Recovery/), [M03](bewijsvoering/M03-Identity-Dominion/) en [M05](bewijsvoering/M05-Compliance-Sentinel/) zijn lege publicatiecontainers (alleen `.gitkeep`); [M04](bewijsvoering/M04-Network-Citadel/) bevat 210 gesaneerde screenshots in 19 fasen. Geen van deze mappen of beelden bewijst op zichzelf dat een missie is afgerond. Eerder gepubliceerde gesaneerde beelden staan afzonderlijk onder [VMware](bewijsvoering/VMware/); hun publicatiereview blijft beperkt tot de vastgelegde scope.
+### Bewijsvoering
 
-## 6. Comparative evaluation
+| Missie | Gepubliceerde bewijsset | Detail |
+|---|---|---|
+| **M01** | 82 gesaneerde screenshots | [Bewijsindex](bewijsvoering/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](bewijsvoering/M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) |
+| **M04** | 210 gesaneerde screenshots in 19 fasen | [Bewijsindex](bewijsvoering/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](bewijsvoering/M04-Network-Citadel/M04-GALERIJ.md) · [Saneringsrapport](bewijsvoering/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
 
-**Benchmarkreferentiekader: alle relevante regulatory frameworks, wettelijke vereisten, normen, controlframeworks en bestaande beoordelingsprocedures**, voor zover deze van toepassing zijn op de onderzochte organisatie, technische scope en scenario's. Dit is dus **niet beperkt tot drie frameworks**. Mogelijke referenties zijn onder meer **ISO/IEC 27001, COBIT 2019, NIST CSF 2.0, CIS Controls v8.1 en NIST SP 800-53A**, aangevuld met bijvoorbeeld **AVG/GDPR, NIS2 of DORA** wanneer de fictieve organisatie en het scenario binnen hun toepassingsgebied vallen.
+De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen volledige missieafronding. Aanvullende [componentbewijsvoering](bewijsvoering/VMware/) en de [bewijsvoering per missie](bewijsvoering/README.md) zijn beschikbaar.
 
-De vergelijkingen beoordelen onder meer kwetsbaarheden, afhankelijkheden, oorzaken, reproduceerbaarheid, bewijskwaliteit, kosten, efficiëntie en beoordelingsinspanning. Niet elk framework is een wettelijke verplichting of een rechtstreeks vergelijkbare auditmethodiek. Daarom worden **toepasselijkheid en type referentiekader per experiment onderbouwd**. Het gebruik van deze kaders impliceert geen certificering of bewezen compliance. De [vergelijkingsmethoden, typen gap-analyses en toepasselijkheidsregels](governance/CAT_ACE_v0.4.md) zijn afzonderlijk uitgewerkt. [Wet- en regelgevingskaders](governance/WET_EN_REGELGEVING.md) bespreken ook **ISAE 3402, ISAE 3000 en SOC 2** als bestaande assurance- en attestatieperspectieven.
+### Status lezen
 
-## 7. Future research and limitations
+De termen volgen de [statuslegenda](governance/STATUSLEGENDA.md):
 
-Het langetermijndoel is om circa 30 relevante technische labs uit te voeren als basis voor verdere methodiekontwikkeling en mogelijk toekomstig academisch onderzoek. De praktische labuitvoering behoudt daarbij prioriteit.
+- **IMPLEMENTED:** component of instelling is ingericht; werking volgt daar niet automatisch uit.
+- **TESTED:** een specifieke test is uitgevoerd binnen de gedocumenteerde scope; dit zegt op zichzelf niet dat de criteria zijn gehaald.
+- **VERIFIED:** een specifieke componentfunctie is met bewijs en binnen een vastgelegde scope gecontroleerd.
+- **PASS:** acceptatiecriteria zijn gehaald binnen de expliciete testscope.
+- **EXCEPTION:** bewust geaccepteerd restrisico; geen automatische PASS.
+- **PENDING:** uitvoering, besluit of meting staat nog open.
 
-Openstaande concrete vervolgtests zijn onder meer **PLC-runtime-autostart, HMI-authenticatie/TLS, de complete PLC/HMI-start-stopreadback-evidence na migratie, de resterende positieve en negatieve netwerkzone-/protocoltests (AC04/AC07), controle van tijdelijke uitzonderingen en import/review van herleidbare evidence**. Daarnaast blijven Suricata, Wazuh-agentdetectie en onafhankelijk herstel voor hun relevante werkpakketten open. De volgorde hangt mede af van het beschikbare RAM- en opslagbudget.
+### Technische aanpak en documentatie
 
-Een belangrijke beperking is dat het onderzoek plaatsvindt binnen een gecontroleerde en deels gesimuleerde bedrijfsomgeving. Technische resultaten kunnen worden getest, maar echte organisatorische besluitvorming wordt daarmee niet bewezen. De onderzoeksaanpak wordt daarom aan de hand van zowel positieve als negatieve resultaten verder beoordeeld.
+Het portfolio legt ontwerpkeuzes, trust boundaries, testmethodologie, resultaten en openstaande verificaties vast. De bredere onderzoeksvraag verkent systeemrisico en cross-layer dependencies; CAT/ACE is een experimenteel concept en **niet gevalideerd**.
 
-## 8. AI collaboration
+[Roadmap](projectlogboeken/ROADMAP.md) · [Projectlogboeken](projectlogboeken/README.md) · [Governance](governance/README.md) · [CAT/ACE-onderzoeksdocumentatie](governance/CAT_ACE_v0.4.md) · [Academische achtergrond](onderzoek/academische-referenties/README.md) · [AI-samenwerking](ai-samenwerking/README.md)
 
-**Sam is eigenaar en Lead Architect (mens)** en beslist over ontwerp, scope en risicoacceptatie. De ondersteunende rollen zijn **ChatGPT — Engineering Orchestrator (AI)**, **Claude — Critical Security Auditor & Chaos Engineer (AI)**, **Microsoft Copilot — Microsoft Specialist & Automation Engineer (AI)** en **GitHub Copilot — Coding & Automation Assistant (AI)**. Een gerichte AI-review is geen formele onafhankelijke audit. Zie [rollen en overdracht](ai-samenwerking/ROLLEN_EN_OVERDRACHT.md), [AI-werkafspraken](governance/AI_WERKAFSPRAKEN.md) en [besluiten](governance/BESLUITENLOG.md). De technische uitvoering volgt **Risk-Based Validation**, met gescopeerd bewijs en eigenaarbesluiten.
-
-## Projectdocumentatie
-
-[Academische referenties](onderzoek/academische-referenties/README.md) · [AI-samenwerking](ai-samenwerking/README.md) · [Architectuur en ontwerpdocumentatie](architectuur/README.md) · [Netwerkontwerp](architectuur/NETWERKONTWERP.md) · [Projectlogboeken](projectlogboeken/README.md) · [Technische bewijsvoering](bewijsvoering/README.md) · [M04-bewijsmap](bewijsvoering/M04-Network-Citadel/) · [Governance-documentatie](governance/README.md)
-
-## Publicatiestatus
-
-GitHub-repository: **PUBLIC**. Deze repository bevat onderzoeksdocumentatie, gesaneerde architectuurillustraties en publieke technische bewijsvoering. M01 bevat 82 en M04 bevat 210 gesaneerde screenshots (in 19 fasen); de private originelen zijn niet gepubliceerd. Eigenaar-review van de gepubliceerde M04-set blijft **PENDING**. Niet alle private screenshots zijn gepubliceerd of onafhankelijk geverifieerd. Het bestaan van een openbaar bestand is geen algemene security- of acceptatie-PASS.
-
-**Redactie:** Opgesteld met ChatGPT op basis van gedateerde projectbronnen en eigenaarbesluiten; navigatie, diagramverwijzingen en actuele bewijspublicatiestatus bijgewerkt op 17-11-2026. Historische sessieupdates blijven gedateerd en ongewijzigd.
+**Publicatiegrens:** de repository bevat gesaneerde architectuurillustraties en bewijsafgeleiden; private bronbestanden zijn niet opgenomen. Gepubliceerde bestanden en afzonderlijke tests zijn geen algemene security- of acceptatie-PASS.

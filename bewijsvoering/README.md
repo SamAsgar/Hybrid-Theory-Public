@@ -1,53 +1,43 @@
 # Technische bewijsvoering | Hybrid-Theory
 
-## Missiegebonden bewijsvoering (M01–M05)
+Deze index leidt naar missiegebonden bewijs, componentinventarissen en de statusgrenzen. Bewijsbestanden tonen uitsluitend de daarin beschreven observaties; ze bewijzen op zichzelf geen missieafronding.
 
-De vijf missies hebben elk een eigen publicatiemap. **M01 en M04 bevatten gepubliceerde, gesaneerde bewijsstukken; M02, M03 en M05 zijn gereserveerde lege locaties** met een technisch `.gitkeep`-bestand zodat GitHub de map toont. De aanwezigheid van een map of beeld is op zichzelf geen testacceptatie.
+## Missie-index
 
-| Missie | Bewijslocatie | Bedoelde inhoud | Publicatiestatus |
-|---|---|---|---|
-| **M01 — Hypervisor Fortress** | [M01-Hypervisor-Fortress](M01-Hypervisor-Fortress/) | Hypervisor- en hosthardening, VM-isolatie, configuratiechecks, verificaties | 82 gesaneerde screenshots ([saneringsrapport](M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md)); geen volledige M01-PASS |
-| **M02 — Phoenix Recovery** | [M02-Phoenix-Recovery](M02-Phoenix-Recovery/) | Back-up, restore, integriteit, hersteltests, RTO/RPO | Leeg |
-| **M03 — Identity Dominion** | [M03-Identity-Dominion](M03-Identity-Dominion/) | AD DS, DNS, GPO, identity, toegangscontrole en testresultaten | Leeg |
-| **M04 — Network Citadel** | [M04-Network-Citadel](M04-Network-Citadel/) | IT/OT-segmentatie, pfSense-regels, allow/deny-, PLC/FUXA- en Modbus-tests | 210 gesaneerde screenshots in 19 fasen ([saneringsrapport](M04-Network-Citadel/M04-SANITIZATION-REPORT.md)); AC04/AC07 PENDING |
-| **M05 — Compliance Sentinel** | [M05-Compliance-Sentinel](M05-Compliance-Sentinel/) | Controlmapping, assurance, afwijkingen, risicobesluiten en aantoonbare toetsing | Leeg |
+| Missie | Bewijs en navigatie | Huidige status |
+|---|---|---|
+| **M01 — Hypervisor Fortress** | **82 gesaneerde screenshots.** [Missie-overzicht](M01-Hypervisor-Fortress/README.md) · [Bewijsindex](M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) | **IN PROGRESS**; geen volledige M01-PASS. |
+| **M02 — Phoenix Recovery** | [Bewijslocatie](M02-Phoenix-Recovery/) · [Herstelarchitectuur en status](../governance/M02-Phoenix-Recovery/README.md) | **PENDING**; onafhankelijke off-host restore niet aangetoond. |
+| **M03 — Identity Dominion** | [Bewijslocatie](M03-Identity-Dominion/) · [AD/DNS-baselinerapport](../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | **IN PROGRESS**; bestaande AD/DNS-tests gelden alleen binnen hun beschreven scope. |
+| **M04 — Network Citadel** | **210 gesaneerde screenshots in 19 fasen.** [Missie-overzicht](M04-Network-Citadel/README.md) · [Bewijsindex](M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](M04-Network-Citadel/M04-GALERIJ.md) · [Gaps](M04-Network-Citadel/M04-GAPS.md) · [Saneringsrapport](M04-Network-Citadel/M04-SANITIZATION-REPORT.md) | **M04-CORE IN PROGRESS**; AC04/AC07 integraal **PENDING**. |
+| **M05 — Compliance Sentinel** | [Bewijslocatie](M05-Compliance-Sentinel/) · [Regelgevings- en assurancekaders](../governance/WET_EN_REGELGEVING.md) | **PENDING**; geen afgeronde assurance-acceptatie. |
 
-**Waar bewijsvoering thuishoort:** vermeld bij een missie, technische component of test in de publieke documentatie een verwijzing naar de *bijbehorende missiemap* zodra geschikt bewijs daadwerkelijk is gepubliceerd. Een herbruikbare basisinventaris blijft onder [VMware](VMware/), met een contextlink vanuit de relevante missie in plaats van onnodige kopieën. Onderscheid `CAPTURED`, `TESTED`, `VERIFIED` en `PENDING` volgens de [statuslegenda](../governance/STATUSLEGENDA.md).
+M02, M03 en M05 hebben momenteel geen missiegebonden screenshotsets in hun publicatiemappen. Een lege map of een componentbewijs elders in de repository verandert de missiestatus niet.
 
-**Publicatiegrens:** originele screenshots, netwerkgegevens en privé-SSOT blijven in Private. Publiceer uitsluitend gesaneerde/alias-afgeleiden na privacy- en technisch-inhoudelijke controle. Lege mappen vormen **geen** bewijs en veranderen geen controlverdict.
+## Componentdocumentatie
 
-## Historische componentbewijzen (VMware)
+Herbruikbare VMware- en platforminventarissen staan apart van de missie-indexen:
 
-**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Inventarisatie vóór OpenPLC: 33 bewijs-PNG's.** Op 5 november zijn 8 gesaneerde OpenPLC-opnamen en 1 gesaneerde VMware-OpenPLC-inventaris toegevoegd; integrale herinventarisatie van oudere bewijzen blijft OPEN. De galerijen tonen de aanwezige bestanden. Sommige beelden bevatten nog herkenbare lokale paden of hostlabels: pixelredactie en volledige publicatiereview staan **OPEN**. Vier grote bewijs-PNG's ontbreken nog in deze repository.
+- [VMware-bewijsindex en inventaris](VMware/README.md)
+- [Windows 11 Client](<VMware/Windows%2011%20Client/>)
+- [Windows Server 2025](<VMware/Windows%20Server%202025/>)
+- [pfSense](VMware/pfSense/)
+- [Ubuntu / Cockpit](VMware/Linux/)
+- [GNS3 / Wireshark](VMware/GNS3/)
+- [FUXA](VMware/FUXA/)
+- [OpenPLC Runtime](VMware/OpenPLC/)
 
-| Bewijsmap | Aanwezig | Publicatie-/testgrens |
-|---|---:|---|
-| [Windows 11 Client](<VMware/Windows%2011%20Client/>) | **8** | Gesaneerde installatie-, activatie- en netwerkbewijzen |
-| [pfSense](VMware/pfSense/) | **6** | Dashboard met grote afbeelding ontbreekt nog; firewallbeelden zijn geen volledige isolatietest |
-| [Windows Server 2025](<VMware/Windows%20Server%202025/>) | **5** | Oud eerste Server Manager-beeld heeft een automatisch hostlabel |
-| [Ubuntu / Cockpit](VMware/Linux/) | **4** | Drie grote PNG's ontbreken nog; volledige beeldcontrole OPEN |
-| [GNS3 / Wireshark](VMware/GNS3/) | **3** | Basistopologie en ARP/ICMP; aanvullende review voor publicatie |
-| [VMware](VMware/) | **8** | Sommige beelden tonen delen van lokale installatiepaden; privacyreview OPEN |
-| [FUXA](VMware/FUXA/) | **0** (verwijst naar VMware-opname 08) | Alleen hardware-inventaris; geen functioneel FUXA/PLC-bewijs |
-| [OpenPLC Runtime](VMware/OpenPLC/) | **8** | Web-UI bereikbaar, PLC Stopped; geen Modbus/FUXA/OT-isolatie-PASS |
-| **Totaal (op basis van eerdere telling)** | **42 PNG's** | **PUBLIC; reviewgates voor oudere beelden OPEN** |
+Oudere componentbeelden hebben eigen bewijsgrenzen en mogelijk nog openstaande privacy-/publicatiereview; raadpleeg de bijbehorende documentatie. Zie ook het [AD-baselinerapport](../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md).
 
-De eerder aanwezige architectuur-WebP's zijn verwijderd. De actuele [architectuurdocumentatie](../architectuur/README.md) is tekstueel.
+## Status en bewijsgrenzen
 
-## Evidence en status
+De [statuslegenda](../governance/STATUSLEGENDA.md) is leidend:
 
-- **Componentstatus:** `PLANNED / IMPLEMENTED / VERIFIED`.
-- **Test- of reviewresultaat:** `PASS / REWORK / EXCEPTION` binnen de vastgelegde scope.
-- **Lab 01 (M01): IN PROGRESS.** Deelcontrols PASS met één EXCEPTION, maar geen integrale labacceptatie.
-- **Lab 02 (M02): PENDING.** Onafhankelijke off-host restore niet aangetoond.
-- **AD/DNS/domain join/GPO:** zie het afzonderlijke [gesaneerde AD-baselinerapport](../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md).
+- **IMPLEMENTED:** component of instelling ingericht; geen automatisch bewijs van werking.
+- **TESTED:** een specifieke test is uitgevoerd binnen de gerapporteerde scope.
+- **VERIFIED:** een componentfunctie is met bewijs binnen een vastgelegde scope gecontroleerd.
+- **PASS:** acceptatiecriteria gehaald binnen de expliciete testscope.
+- **EXCEPTION:** bewust geaccepteerd restrisico, geen automatische PASS.
+- **PENDING:** uitvoering, besluit of meting staat nog open.
 
-**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). **Beeldredactie, secretscan en geschiedenisreview staan nog OPEN.** Screenshots zijn geen publicatie-PASS. Zie [goedgekeurd publicatiebeleid](../governance/PUBLICATIEBELEID.md) en [statuslegenda](../governance/STATUSLEGENDA.md).
-
-## Aanvulling 4 november 2026 — FUXA VM-inventaris
-
-Nieuwe **gesanitized VMware-hardwareopname** toegevoegd onder [VMware](VMware/08-FUXA-VMware-Inventory-Sanitized.png) en beschreven in de [VMware-bewijsindex](VMware/README.md). **2 GB RAM, 2 processors, 20 GB SCSI, Custom (VMnet8)**; VM uitgeschakeld. Naamgeving en lokaal ISO-pad geredigeerd. **CAPTURED, geen isolatie- of functionele FUXA-PASS.** De eerder vermelde aantallen dateren uit een oude inventaris en zijn niet opnieuw integraal geteld.
-
-## Aanvulling 5 november 2026 — VMware-baseline OpenPLC
-
-[Gesaneerde OpenPLC-VMware-inventaris](VMware/09-OpenPLC-VMware-Inventory-Sanitized.png) met technische toelichting in de [VMware-bewijsindex](VMware/README.md). Vastgelegd: **2 GB RAM / 2 processors / 20 GB SCSI / NAT**, VM uitgeschakeld; ISO-pad afgeschermd. **CAPTURED**, geen bewijs van PLC-runtime, OT-integratie, netwerkisolatie of hardening.
+Een configuratiebeeld kan inrichting aantonen, maar geen end-to-end werking. Lees per bewijsindex ook de beperkingen, gaps en saneringsrapporten. Originele screenshots en de koppeling tussen netwerkaliassen en werkelijke waarden blijven buiten deze publieke repository.
