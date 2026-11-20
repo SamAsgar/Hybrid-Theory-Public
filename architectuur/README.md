@@ -1,6 +1,6 @@
 # Architectuur | Hybrid-Theory
 
-**Bijgewerkt:** 15 november 2026 · **Bron:** private architectuur, stand 15 november 2026 · **Weergave:** gesaneerd, met officiële aliassen.
+**Bijgewerkt:** 20 november 2026 (testdelta 19 nov.) · **Bron:** private architectuur en gedateerde tests t/m 19 november 2026 · **Weergave:** gesaneerd, met officiële aliassen.
 
 Deze map beschrijft de netwerkarchitectuur van het Hybrid-Theory-lab in twee lagen: wat er nu staat (diagram A) en waar het ontwerp naartoe gaat (diagram B). Adressen zijn vervangen door **vaste, officiële aliassen** zoals `PLC01_OT_IP`. Dezelfde alias verwijst overal naar hetzelfde adres; de werkelijke waarden en de vertaaltabel blijven privé.
 
@@ -52,6 +52,17 @@ De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONT
 - `PLC01_TEMP_NAT_IP` en `FUXA_TEMP_NAT_IP` zijn **historische** adressen van vóór de OT-migratie en geen actuele endpoints.
 - **TESTED** betekent: getest binnen de genoemde scope en vastgelegd in een gedateerd log. De primaire evidence is niet gepubliceerd.
 
+### 1.2 Getoetste delta 19 november 2026 (na diagram A)
+
+Diagram A blijft een ontwerpweergave van **15 november**. De topologie is niet opnieuw getekend, omdat de gedocumenteerde delta het toetsresultaat van bestaande zones betreft, niet de aanleg van een nieuwe zone.
+
+- **FUXA ↔ OpenPLC:** na een mislukte eerste reboot is automatisch starten in RUN-modus ingesteld. De tweede gecontroleerde PLC01-herstart bracht de runtime, motorsimulatie en Modbus-dienst terug; FUXA herverbond zelfstandig. Een gecontroleerde HMI START→STOP-cyclus en PLC-monitoring ondersteunden **AC01–AC03 TESTED / scoped PASS**; formele bewijsreview blijft open.
+- **LAB→OT / OT→LAB / OT→internet:** gerichte negatieve TCP-, ICMP- en HTTPS-proeven en bijbehorende pfSense BLOCK-logs ondersteunen beperkte deny-resultaten. Managementtoegang naar twee toegestane diensten werd positief getest. **AC04 en AC07 integraal PENDING**.
+- **Firewallhygiëne:** tijdelijke brede LAB-egressregel uitgeschakeld; geen Floating Rules aangetroffen. Brede standaard-LAN-regels, beheerauthenticatie/TLS en potentiële alternatieve IPv6-paden blijven reviewpunten.
+- **Herstel:** een terugrolsnapshot en configuratieback-up zijn geen geslaagde restoreproef.
+
+[Publieke fase-20-bewijsvoering](../bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md) · [M04-missie](../bewijsvoering/M04-Network-Citadel/README.md)
+
 ## 2. Diagram B — doelarchitectuur HT-C-010
 
 ![Hybrid-Theory — diagram B: doelarchitectuur HT-C-010 met zes zones, twee Azure-subscriptions en M02 Phoenix Recovery; ontwerp, niet geïmplementeerd](diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg)
@@ -82,7 +93,7 @@ De doelverbindingen staan in [Netwerkontwerp §2](NETWERKONTWERP.md#2-ht-c-010-d
 
 ## 4. Netwerkgrenzen en onzekerheid
 
-De bestaande netwerken WAN-SIM, MGMT, LAB en OT worden uitdrukkelijk **gescheiden** van de geplande IT-, Security-, private-services- en GNS3-zones. De OT-zone is gebouwd, maar haar isolatie is **niet bewezen** zolang AC04 en AC07 openstaan. Een geslaagde verbinding binnen OT is geen bewijs van afscherming naar andere zones.
+De bestaande netwerken WAN-SIM, MGMT, LAB en OT worden uitdrukkelijk **gescheiden** van de geplande IT-, Security-, private-services- en GNS3-zones. De OT-zone is gebouwd en voor specifieke stromen zijn deny-/allow-deeltests onderbouwd; **integrale isolatie is niet aangetoond** zolang AC04 en AC07 openstaan. Een geslaagde verbinding binnen OT is geen bewijs van afscherming naar andere zones.
 
 [Netwerkontwerp](NETWERKONTWERP.md) beschrijft de huidige stromen, de doelverbindingen en de openstaande verificaties. De figuren bevatten geen werkelijke adressen, geen firewall- of NAT-configuratie en geen beheerdetails.
 

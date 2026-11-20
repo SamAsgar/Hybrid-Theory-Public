@@ -110,3 +110,7 @@ Er is **geen** M04-screenshot volledig uitgesloten. Na maskering bleef van elk b
 - **Aliassen** onthullen de netwerkrol van een adres, niet de waarde. De echte koppeling staat alleen in het private aliasregister.
 - **Interpretatie.** De publicatie verandert niets aan de bewijsstatus: AC02/AC03-regressie, AC04 en AC07 blijven **PENDING**; `M04-CORE = IN PROGRESS`.
 - **Publicatiegate.** Deze migratie staat op een aparte branch met een pull request. **Niet automatisch mergen**: eigenaar-review en een eigen visuele steekproef vóór merge worden aanbevolen.
+
+## 6. Aanvulling 20 november 2026 — fase 20
+
+Voor de set van 19 november zijn **55 aanvullende publieke PNG-afgeleiden** gemaakt (totaal 265 in 20 fasen). De originelen blijven in Private. Zie de [aparte saneringsverantwoording](M04-PHASE20-SANITIZATION-REPORT.md). Bij **17 terminalbeelden is de uitvoer volledig afgedekt**: dit beperkt de publieke bewijswaarde. De eerdere saneringsanalyse van 210 beelden blijft uitsluitend op die oorspronkelijke set van toepassing; de nieuwe 55 hebben een afzonderlijke methode en een eigen publicatiegate. Integrale AC04/AC07-acceptatie blijft PENDING.

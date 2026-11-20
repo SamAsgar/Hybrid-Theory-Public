@@ -46,3 +46,7 @@ Technische bewijsvoering volgt de keten: `securitydoel → control → configura
 **Lab 02 (M02) en Azure:** onafhankelijk off-host herstel en clouddeployment zijn nog niet aangetoond (**PENDING/PLANNED** naar onderwerp).
 
 **Operationele werkwijze:** pragmatische, risicogestuurde controles vóór de benodigde werkzaamheden; uitgebreide hardening binnen de relevante lab. [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) is een afzonderlijk experimenteel audit-, kosten-, efficiency- en dependency-onderzoeksconcept, **geen** gevalideerde vervanger van bestaande beoordelingsprocedures.
+
+## 5. M04-architectuurdelta — 19 november 2026
+
+De vier geïmplementeerde pfSense-zones WAN-SIM, MGMT, LAB en OT zijn ongewijzigd ten opzichte van diagram A (15 november). De bronadministratie in de private repository documenteert de volgende **gescopeerde** tests: PLC-autostart na correctie, FUXA-herverbinding en HMI START→STOP met PLC-monitoring (**AC01–AC03 TESTED / scoped PASS**); specifieke LAB→OT- en OT→LAB-/internet-blokkades met pfSense-logs (**AC04/AC07 deeltests PASS**); en beperkte positieve beheerbereikbaarheid. Integrale AC04/AC07-matrix, onafhankelijke bewijsreview, brede LAN-regels, IPv6 en hersteltest blijven **OPEN/PENDING**. Dit is een update van de bewijsstatus, **geen nieuwe netwerkarchitectuur**. [Fase-20-bewijs](../bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md).
