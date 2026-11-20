@@ -17,11 +17,26 @@
 
 | ID | Labnaam | Werkstatus en begrenzing | Relevante rapportage |
 |---|---|---|---|
-| **M01** | **Lab 01 — Hypervisor Security & Virtualization Hardening** | **IN PROGRESS**; gerichte controlerondes PASS met één EXCEPTION; geen integrale acceptatie | [M01-deelreview](2026-11-01-hypervisor-fortress-deelreview.md) |
+| **M01** | **Lab 01 — Hypervisor Security & Virtualization Hardening** | **IN PROGRESS**; gerichte controlerondes PASS met één EXCEPTION; Milestone 01 niet behaald | [M01-deelreview](2026-11-01-hypervisor-fortress-deelreview.md) |
 | **M02** | **Lab 02 — Backup, Recovery & Disaster Resilience** | **PENDING**; geen onafhankelijke off-host restore | [AD-herstelgrens](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M03** | **Lab 03 — Hybrid Identity & Access Management** | **IN PROGRESS**; AD-basis gescopeerd PASS; Entra/IAM-uitbreiding niet aangetoond | [AD/DNS/domain join/GPO](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M04** | **Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**. AC01–AC03-regressie na PLC-herstart **TESTED / PASS** binnen de geteste scope. AC04/AC07 gerichte netwerkdeeltests **PASS**. De integrale matrix en formele bewijsreview blijven **PENDING**. | [M04-basis](2026-11-06-m04-network-citadel-ot-baseline.md), [M04 11 nov.](2026-11-11-m04-segmentatie-en-beheer-validatie.md), [M04 15 nov.](2026-11-15-m04-ot-modbus-applicatievalidatie.md), [M04 19 nov.](2026-11-19-m04-openplc-autostart-en-ot-regressie.md) |
-| **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | **PENDING**; geen afgeronde assurance-acceptatie | [CAT/ACE v0.4: Audit, Cost & Efficiency](../governance/CAT_ACE_v0.4.md) (intern/extern/hybride; concept, geen lab-PASS) |
+| **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | Structuur en zeven onderzoekshoofdstukken **APPROVED** (20 nov.); technische uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED**; eerste casus M05-MINI-01 **PLANNED** | [M05-documentatie](../bewijsvoering/M05-Compliance-Sentinel/README.md) · [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) (concept, geen lab-PASS) |
+
+## Permanente Main Missions, milestones en mini-oefeningen
+
+Sinds 20 november 2026 (besluit van Sam) zijn **M01–M05 permanente Main Missions**: ze krijgen geen definitieve afsluitstatus. Voortgang wordt gemeten via **milestones** met expliciete scope, vooraf vastgestelde acceptatiecriteria, bewijs, beoordeling en acceptatie door Sam. De bestaande fasen en labnamen behouden hun betekenis.
+
+| Categorie | Identificatie | Levenscyclus | Afsluiting |
+|---|---|---|---|
+| **Roadmapfase** | 0–7 | Technisch werkpakket | Afgerond bij bewijs voor de faseacceptatie |
+| **Foundation Lab** | Lab 01–05 | Naam van het onderzoeksdomein, gekoppeld aan M01–M05 | Volgt de missie |
+| **Permanente Main Mission** | M01–M05 | Continu ontwikkelen, revalideren en verbeteren | **Nooit** definitief afgesloten |
+| **Milestone** | `Mnn-MSnn` (bijv. M05-MS01) | Afgebakend doel met vooraf vastgestelde exitcriteria | **ACHIEVED** alleen na acceptatie door Sam |
+| **Mini-oefening** | `Mnn-MINI-nn` (bijv. M05-MINI-01) | Klein werkpakket binnen een missie | Scoped verdict; sluit geen milestone of missie af |
+| **Afgebakende zelfstandige missie** | Nog niet vastgesteld | Latere categorie ná M01–M05, met eigen begin- en eindcriteria | Eigen eindacceptatie |
+
+**Stand 20 november 2026:** geen van M01–M05 heeft **Milestone 01** bereikt. Bestaande technische PASS-resultaten blijven scoped technische bevindingen; ze zijn geen milestone-afronding. Formuleringen als "geen integrale acceptatie" of "geen volledige missie-PASS" in gedateerde logs lezen als "geen milestone-acceptatie" ([Statuslegenda §3a](../governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026)).
 
 ## Koppeltabel Fase ↔ Lab
 

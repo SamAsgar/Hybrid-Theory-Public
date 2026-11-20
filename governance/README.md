@@ -13,6 +13,7 @@ Beleidsdocumenten beschrijven verantwoordelijkheden en eisen. **Goedkeuring van 
 - [CAT/ACE v0.2 — historisch onderzoeksarchief (niet de actuele werkwijze)](CAT_ACE_v0.2.md)
 - [**M02 Phoenix Recovery — herstelarchitectuur v0.5.1 (ontwerp, niet technisch gevalideerd)**](M02-Phoenix-Recovery/README.md)
 - [Wet- en regelgeving en assurancekaders](WET_EN_REGELGEVING.md)
+- [**M05 Compliance Sentinel — onderzoeks- en assessmentdomein met Framework Register**](../bewijsvoering/M05-Compliance-Sentinel/README.md) (methodiek en planning; geen uitgevoerd assessment of complianceverklaring)
 
 **GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). De publicatiereview staat nog **OPEN**: oude Git-geschiedenis, secrets/identifiers, binaire pixelredactie en ontbrekende bestanden zijn niet volledig gecontroleerd. Dit is **geen EXCEPTION en geen publicatie-PASS**.
 

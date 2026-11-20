@@ -2,14 +2,14 @@
 
 ## Cybersecurity engineering voor hybride IT/OT-omgevingen
 
-Hybrid-Theory is een hands-on cybersecurity-engineeringlab en experimenteel onderzoeksproject. Het onderzoekt hoe architectuur, netwerkgrenzen, identiteit en onderlinge afhankelijkheden invloed hebben op beveiliging en systeemrisico. De nadruk ligt op aantoonbare, afgebakende tests en transparante documentatie; het project claimt geen certificering of volledige missieacceptatie.
+Hybrid-Theory is een hands-on cybersecurity-engineeringlab en experimenteel onderzoeksproject. Het onderzoekt hoe architectuur, netwerkgrenzen, identiteit en onderlinge afhankelijkheden invloed hebben op beveiliging en systeemrisico. De nadruk ligt op aantoonbare, afgebakende tests en transparante documentatie; het project claimt geen certificering of milestone-acceptatie.
 
 ### In 60 seconden
 
 - **Domein:** hybride IT/OT-beveiliging, netwerksegmentatie, virtualisatie, identity & access management en security engineering.
 - **Huidige basis:** VMware Workstation met pfSense en afzonderlijke WAN-SIM-, MGMT-, LAB- en OT-netwerken; Windows Server/AD DS, Windows 11, Ubuntu, GNS3/Wireshark, OpenPLC, FUXA en Wazuh.
 - **Ontwerp:** PLC en HMI zijn ingericht op het OT-netwerk. Het doelontwerp met aanvullende zones, Azure en onafhankelijke recovery is ontwerp/planning, geen gerealiseerde omgeving.
-- **Werkwijze:** baseline, gescopeerde test, resultaat en bewijsgrens worden apart vastgelegd. Een configuratie of screenshot is niet op zichzelf bewijs van werking of missievoltooiing.
+- **Werkwijze:** baseline, gescopeerde test, resultaat en bewijsgrens worden apart vastgelegd. Een configuratie of screenshot is niet op zichzelf bewijs van werking of van een behaalde milestone.
 - **Resultaten:** AD/DNS, domain join en één GPO zijn binnen scope getest; GNS3 ARP/ICMP-tests zijn gedocumenteerd. Wazuh-dashboardtoegang is getest, maar agentdetectie is niet aangetoond.
 
 ### Architectuur
@@ -24,14 +24,16 @@ Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B 
 
 **Actuele missie-issues | M05 bovenaan bij GitHub Created on → Newest:** [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/42) → [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/43) → [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) → [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) → [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46). De oorspronkelijke logboeken en eerdere index-issues blijven als gesloten archief beschikbaar.
 
+**Missionmodel (20 november 2026):** M01–M05 zijn **permanente Main Missions** zonder definitieve afsluitstatus. Voortgang loopt via **milestones** met vooraf vastgestelde criteria en acceptatie door Sam, en via kleinere **mini-oefeningen**. **Geen missie heeft Milestone 01 bereikt.** Technische PASS-resultaten hieronder zijn scoped bevindingen, geen milestone-afronding. Zie de [roadmap](projectlogboeken/ROADMAP.md#permanente-main-missions-milestones-en-mini-oefeningen) en de [statuslegenda](governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026).
+
 
 | Missie | Status en beknopte scope |
 |---|---|
-| **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Geen volledige M01-PASS. [Missiedocumentatie](bewijsvoering/M01-Hypervisor-Fortress/README.md) |
+| **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Milestone 01 niet behaald. [Missiedocumentatie](bewijsvoering/M01-Hypervisor-Fortress/README.md) |
 | **M02 — Phoenix Recovery** | **PENDING**; herstelarchitectuur is beschreven, maar onafhankelijke off-host restore is niet aangetoond. [Ontwerp en status](governance/M02-Phoenix-Recovery/README.md) |
 | **M03 — Identity Dominion** | **IN PROGRESS**; AD/DNS, domain join, testlogin en één GPO zijn **PASS binnen scope**; Entra is **PLANNED**. [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**; post-migratie PLC/HMI-start/stop **0→1→0 functioneel TESTED / scoped PASS**. Gerichte LAB/OT/egress-deny-tests zijn met firewalllogs gecorreleerd; geautoriseerde beheerpoorten zijn positief getest (**scoped PASS**). Integrale AC04/AC07-matrix, onafhankelijke evidence-review en eigenaaracceptatie blijven **PENDING**. Geen volledige M04-PASS. [Missiedocumentatie](bewijsvoering/M04-Network-Citadel/README.md) |
-| **M05 — Compliance Sentinel** | **PENDING**; geen afgeronde assurance-acceptatie. [Regelgevings- en assurancekaders](governance/WET_EN_REGELGEVING.md) |
+| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**; post-migratie PLC/HMI-start/stop **0→1→0 functioneel TESTED / scoped PASS**. Gerichte LAB/OT/egress-deny-tests zijn met firewalllogs gecorreleerd; geautoriseerde beheerpoorten zijn positief getest (**scoped PASS**). Integrale AC04/AC07-matrix, onafhankelijke evidence-review en eigenaaracceptatie blijven **PENDING**. Milestone 01 niet behaald. [Missiedocumentatie](bewijsvoering/M04-Network-Citadel/README.md) |
+| **M05 — Compliance Sentinel** | Structuur met zeven onderzoekshoofdstukken en Framework Register **APPROVED**; technische uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED**; eerste casus M05-MINI-01 (ISO/IEC 27001 A.8.22 op de M04-segmentatie) **PLANNED**. Geen compliance- of assuranceverklaring. [M05-documentatie](bewijsvoering/M05-Compliance-Sentinel/README.md) |
 
 ### Bewijsvoering
 
@@ -40,7 +42,7 @@ Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B 
 | **M01** | 82 gesaneerde screenshots | [Bewijsindex](bewijsvoering/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](bewijsvoering/M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) |
 | **M04** | 265 gesaneerde screenshots in 20 fasen | [Bewijsindex](bewijsvoering/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](bewijsvoering/M04-Network-Citadel/M04-GALERIJ.md) · [Fase 20 (19 nov.)](bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md) · [Saneringsrapport](bewijsvoering/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
 
-De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen volledige missieafronding. Aanvullende [componentbewijsvoering](bewijsvoering/VMware/) en de [bewijsvoering per missie](bewijsvoering/README.md) zijn beschikbaar.
+De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen behaalde milestone. Aanvullende [componentbewijsvoering](bewijsvoering/VMware/) en de [bewijsvoering per missie](bewijsvoering/README.md) zijn beschikbaar.
 
 ### Status lezen
 
