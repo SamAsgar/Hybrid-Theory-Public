@@ -29,3 +29,13 @@ Zie [`M04-Bewijsvoering/19_FUXA_followup/ADDENDUM-2026-11-15.md`](M04-Bewijsvoer
 ## Publicatie-integriteit — 20 november 2026
 
 Bij een pad- en bestandscontrole van de publieke evidence-set zijn **264 PNG-bestanden** aangetroffen tegenover **265 geregistreerde bewijsitems**. Het bewijsitem **M04-EV-113**, `Screenshot 2026-11-08 180632.png` (fase 10), staat in het register en SHA-256-manifest maar ontbreekt als publiek PNG-bestand. Dit was al vóór de mapreorganisatie het geval. De hash-/CSV-vermelding blijft als traceerbare registratie staan; de ontbrekende afbeelding telt niet als gepubliceerd bewijs. Aanvulling vereist afzonderlijke sanering en review; geen technische PASS afleiden uit deze registratie.
+
+## C2-netwerkvalidatie — 20 november 2026
+
+- **AC04/AC07 PENDING:** directe beheerproeven F13–F15, alternatieve paden, brede LAN IPv6-allow en veilige WAN-proef F24. Volledige log-/capturecorrelatie en eigenaaracceptatie staan open.
+- **OT-afhankelijkheden:** DNS/NTP-ontwerp en geautoriseerde beheerroute wachten op een besluit. Endpointrol en authenticatie/TLS vragen verificatie.
+- **Herstel en functionele regressie:** preflightcontrole, herstel-smoketest en onafhankelijke AC01–AC03-bewijsreview staan open.
+- **EXT:** AC05 **PENDING** voor Wazuh OT-telemetrie. AC06 en AC08 **PLANNED**, met eigenaarbesluit over VPCS-aantal/scope en nog te bewijzen sensor- en alertketen.
+- **Bestaande fase-20-beelden:** finale privacy- en leesbaarheidsreview staat open.
+
+[C2-projectlog](../../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md).

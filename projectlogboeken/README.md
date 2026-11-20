@@ -19,6 +19,7 @@ De oorspronkelijke logs vormen **historische momentopnamen of later afgeleide ra
 | 8–9 november | [M04: PLC-migratie, troubleshooting en governance](2026-11-09-m04-plc-migratie-governance-publiek.md) | Gesanitiseerde voortgang: PLC-netwerkmigratie en gerichte tests, governance- en publicatieproces; HMI-migratie, AC04/AC07 PENDING |
 | 11 november | [M04: segmentatie en beheer gevalideerd](2026-11-11-m04-segmentatie-en-beheer-validatie.md) | Nieuwe tussenstand: HMI op OT, beheerverbindingen en gerichte LAB→OT-blokkade TESTED PASS; troubleshooting en vervolgcriteria; AC04/AC07 volledig PENDING |
 | 19 november | [M04: OpenPLC-autostart en OT-regressie](2026-11-19-m04-openplc-autostart-en-ot-regressie.md) | Gesaneerde labupdate over PLC-herstart en functionele regressie. AC04/AC07 integraal PENDING. |
+| 20 november | [M04: CORE C2-netwerkvalidatie](2026-11-20-m04-core-c2-netwerkvalidatie.md) | Gerichte LAB- en OT-blokkades, routecontrole en open acceptatiegates |
 
 **Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
 

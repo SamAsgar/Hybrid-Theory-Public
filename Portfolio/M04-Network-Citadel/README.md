@@ -63,4 +63,8 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 
 De [nieuwe fase-20-galerij](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) bevat 55 met SSOT-aliassen gesaneerde beelden van PLC/HMI-regressie, firewalllogs en gerichte LAB→OT-, OT→LAB- en egress-tests. Dit zijn afgebakende deelresultaten: integrale AC04/AC07 blijft **PENDING** en handmatige privacy-/bewijsreview is nog vereist.
 
+## 8. CORE C2 — 20 november 2026
+
+[Gesaneerd sessielog](../../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Open verificatiepunten](M04-GAPS.md#c2-netwerkvalidatie--20-november-2026). De C2-log registreert aanvullende gescopeerde netwerkresultaten. De fase-20-galerij is de afzonderlijke beeldset van 19 november. M04-CORE is **IN PROGRESS**.
+
 De [fase-21-reeks](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md) bevat de chronologisch geordende CORE C2-opnamen van 20 november 2026, met een eigen manifest en saneringsrapport.
