@@ -35,7 +35,7 @@ Tussen "er staat een firewallregel" en "het risico is aantoonbaar beheerst en de
 
 > Hoe maken we de stap van een technische observatie naar een controleerbare uitspraak over risico, verantwoordelijkheid, werking en eventuele resterende afwijkingen, zonder compliance te verwarren met bewezen veiligheid?
 
-Controlgerichte assessments beoordelen maatregelen vaak één voor één. M05 onderzoekt daarnaast wat er gebeurt als meerdere controls van dezelfde component afhangen ([05.7 Systemic Risk](05.7_Systemic_Risk/README.md)). De [academische achtergrond](../../onderzoek/academische-referenties/README.md) over systemisch risico en spillover is daarbij een **inspiratiebron, geen gevalideerde methode**.
+Controlgerichte assessments beoordelen maatregelen vaak één voor één. M05 onderzoekt daarnaast wat er gebeurt als meerdere controls van dezelfde component afhangen ([05.7 Systemic Risk](Methodiek/05.7_Systemic_Risk/README.md)). De [academische achtergrond](../../onderzoek/academische-referenties/README.md) over systemisch risico en spillover is daarbij een **inspiratiebron, geen gevalideerde methode**.
 
 ## 3. Permanente mission lifecycle
 
@@ -65,15 +65,32 @@ De zeven hoofdstukken zijn de **permanente onderzoekscategorieën** van M05 en v
 
 | # | Hoofdstuk | Kernvraag |
 |---|---|---|
-| 05.1 | [Scope & Applicability](05.1_Scope_and_Applicability/README.md) | Welke eisen en kaders zijn voor deze casus van toepassing, voor wie, en waarom? |
-| 05.2 | [Risk-to-Control Traceability](05.2_Risk_to_Control_Traceability/README.md) | Is de keten asset → dreiging → risico → eigenaar → control → bewijs → besluit herleidbaar? |
-| 05.3 | [Control Effectiveness](05.3_Control_Effectiveness/README.md) | Is de control goed ontworpen, aantoonbaar geïmplementeerd én werkend? |
-| 05.4 | [Gaps & Exceptions](05.4_Gaps_and_Exceptions/README.md) | Welke afwijkingen, uitzonderingen en restrisico's bestaan er, en wie draagt ze? |
-| 05.5 | [Assurance & Independence](05.5_Assurance_and_Independence/README.md) | Wat mag een interne, externe, hybride of AI-ondersteunde review wél en níét claimen? |
-| 05.6 | [Cost & Efficiency](05.6_Cost_and_Efficiency/README.md) | Wat kost beheersing en beoordeling, en bestaat er een even veilig, goedkoper alternatief? |
-| 05.7 | [Systemic Risk](05.7_Systemic_Risk/README.md) | Welke gedeelde afhankelijkheden laten één falende component meerdere controls tegelijk raken? |
+| 05.1 | [Scope & Applicability](Methodiek/05.1_Scope_and_Applicability/README.md) | Welke eisen en kaders zijn voor deze casus van toepassing, voor wie, en waarom? |
+| 05.2 | [Risk-to-Control Traceability](Methodiek/05.2_Risk_to_Control_Traceability/README.md) | Is de keten asset → dreiging → risico → eigenaar → control → bewijs → besluit herleidbaar? |
+| 05.3 | [Control Effectiveness](Methodiek/05.3_Control_Effectiveness/README.md) | Is de control goed ontworpen, aantoonbaar geïmplementeerd én werkend? |
+| 05.4 | [Gaps & Exceptions](Methodiek/05.4_Gaps_and_Exceptions/README.md) | Welke afwijkingen, uitzonderingen en restrisico's bestaan er, en wie draagt ze? |
+| 05.5 | [Assurance & Independence](Methodiek/05.5_Assurance_and_Independence/README.md) | Wat mag een interne, externe, hybride of AI-ondersteunde review wél en níét claimen? |
+| 05.6 | [Cost & Efficiency](Methodiek/05.6_Cost_and_Efficiency/README.md) | Wat kost beheersing en beoordeling, en bestaat er een even veilig, goedkoper alternatief? |
+| 05.7 | [Systemic Risk](Methodiek/05.7_Systemic_Risk/README.md) | Welke gedeelde afhankelijkheden laten één falende component meerdere controls tegelijk raken? |
 
-**Navigatie:** [05.1](05.1_Scope_and_Applicability/README.md) · [05.2](05.2_Risk_to_Control_Traceability/README.md) · [05.3](05.3_Control_Effectiveness/README.md) · [05.4](05.4_Gaps_and_Exceptions/README.md) · [05.5](05.5_Assurance_and_Independence/README.md) · [05.6](05.6_Cost_and_Efficiency/README.md) · [05.7](05.7_Systemic_Risk/README.md) · [CAT/ACE v0.4](../../governance/CAT_ACE_v0.4.md) · [Wet- en regelgevingskaders](../../governance/WET_EN_REGELGEVING.md) · [Statuslegenda](../../governance/STATUSLEGENDA.md) · [M04-dossier (eerste casus)](../M04-Network-Citadel/README.md) · [Roadmap](../../projectlogboeken/ROADMAP.md)
+**Navigatie:** [05.1](Methodiek/05.1_Scope_and_Applicability/README.md) · [05.2](Methodiek/05.2_Risk_to_Control_Traceability/README.md) · [05.3](Methodiek/05.3_Control_Effectiveness/README.md) · [05.4](Methodiek/05.4_Gaps_and_Exceptions/README.md) · [05.5](Methodiek/05.5_Assurance_and_Independence/README.md) · [05.6](Methodiek/05.6_Cost_and_Efficiency/README.md) · [05.7](Methodiek/05.7_Systemic_Risk/README.md) · [CAT/ACE v0.4](../../governance/CAT_ACE_v0.4.md) · [Wet- en regelgevingskaders](../../governance/WET_EN_REGELGEVING.md) · [Statuslegenda](../../governance/STATUSLEGENDA.md) · [M04-dossier (eerste casus)](../M04-Network-Citadel/README.md) · [Roadmap](../../projectlogboeken/ROADMAP.md)
+
+### Mapstructuur
+
+```text
+M05-Compliance-Sentinel/
+├── README.md                  ← dit overzicht (missie, Framework Register, MS01)
+├── Methodiek/                 ← de zeven hoofdstukken 05.1–05.7: één canonieke methodiek
+├── M01-Hypervisor-Fortress/   ← M05-assessments over M01
+├── M02-Phoenix-Recovery/      ← M05-assessments over M02
+├── M03-Identity-Dominion/     ← M05-assessments over M03
+├── M04-Network-Citadel/       ← M05-assessments over M04 (o.a. MINI-01)
+└── M05-Compliance-Sentinel/   ← M05-assessments over de eigen werkwijze
+```
+
+De **methodiek** staat één keer in `Methodiek/`. Een missiedossier bevat uitsluitend assessments over die missie, gestructureerd volgens dezelfde zeven onderdelen, en **verwijst** naar de methodiek en naar het bewijs van de missie zelf; het kopieert die niet. Technische verdicts blijven bij de missie. Een submap per assessment (bijv. `MINI-01/`) ontstaat pas wanneer het assessment daadwerkelijk start.
+
+**Missiedossiers:** [M01](M01-Hypervisor-Fortress/README.md) · [M02](M02-Phoenix-Recovery/README.md) · [M03](M03-Identity-Dominion/README.md) · [M04](M04-Network-Citadel/README.md) · [M05](M05-Compliance-Sentinel/README.md)
 
 ## 6. Framework Register
 
@@ -108,8 +125,8 @@ Dit is het **enige** M05-overzicht van referentiekaders. Het legt per kader vast
 
 [CAT/ACE v0.4](../../governance/CAT_ACE_v0.4.md) blijft de **actuele experimentele methodiekbaseline** (`CONCEPT / NOT VALIDATED`). In M05 wordt het gebruikt als onderzoekslens, niet als auditnorm:
 
-- **CAT-C / CAT-A / CAT-T** ordenen eisen, eigenaarschap en techniek → vooral [05.1](05.1_Scope_and_Applicability/README.md) en [05.2](05.2_Risk_to_Control_Traceability/README.md).
-- **ACE-Audit** → [05.3](05.3_Control_Effectiveness/README.md), [05.4](05.4_Gaps_and_Exceptions/README.md) en [05.5](05.5_Assurance_and_Independence/README.md); **ACE-Cost / ACE-Efficiency** → [05.6](05.6_Cost_and_Efficiency/README.md); de dependency-analyse (§8 van CAT/ACE) → [05.7](05.7_Systemic_Risk/README.md).
+- **CAT-C / CAT-A / CAT-T** ordenen eisen, eigenaarschap en techniek → vooral [05.1](Methodiek/05.1_Scope_and_Applicability/README.md) en [05.2](Methodiek/05.2_Risk_to_Control_Traceability/README.md).
+- **ACE-Audit** → [05.3](Methodiek/05.3_Control_Effectiveness/README.md), [05.4](Methodiek/05.4_Gaps_and_Exceptions/README.md) en [05.5](Methodiek/05.5_Assurance_and_Independence/README.md); **ACE-Cost / ACE-Efficiency** → [05.6](Methodiek/05.6_Cost_and_Efficiency/README.md); de dependency-analyse (§8 van CAT/ACE) → [05.7](Methodiek/05.7_Systemic_Risk/README.md).
 - M05 kan CAT/ACE **bevestigen, nuanceren of weerleggen**. Negatieve uitkomsten worden bewaard.
 
 ## 8. Praktische onderzoekscyclus
@@ -143,7 +160,7 @@ Per casus, proportioneel en zonder verplichte volledige audit:
 
 - Er is nog **geen** M05-casus uitgevoerd. Deze map bevat structuur, methodiek en planning, geen M05-bevindingen.
 - De organisatielaag (directie, risico-eigenaar, CISO) is grotendeels **SIMULATED**; een gesimuleerd acceptatiebesluit is geen werkelijke bevoegdheid.
-- Eén persoon ontwerpt, bouwt en beoordeelt, met AI-ondersteuning: **geen formele onafhankelijkheid** ([05.5](05.5_Assurance_and_Independence/README.md)).
+- Eén persoon ontwerpt, bouwt en beoordeelt, met AI-ondersteuning: **geen formele onafhankelijkheid** ([05.5](Methodiek/05.5_Assurance_and_Independence/README.md)).
 - Normteksten van ISO/IEC zijn auteursrechtelijk beschermd; M05 noemt controltitels en ID's, niet de volledige normtekst.
 - Kleine steekproef, één lab, risico op overfitting aan een bekende omgeving ([CAT/ACE §13](../../governance/CAT_ACE_v0.4.md#13-evidence-veiligheid-validiteit-en-beperkingen)).
 - Het M04-bronbewijs is zelf nog in review (AC04/AC07 integraal **PENDING**); M05 erft die beperking.
@@ -179,31 +196,7 @@ Latere milestones (MS02+) zijn niet gedefinieerd. Mogelijke casussen (identity, 
 
 ## 13. M05-MINI-01 — ISO 27001 Risk-to-Control Assessment (EERSTE GEPLANDE CASUS)
 
-**Status:** **PLANNED / niet gestart.** Een afzonderlijk uitvoeringsdossier wordt pas aangemaakt wanneer de oefening daadwerkelijk start.
-
-| Element | Invulling |
-|---|---|
-| **Casus** | De bestaande IT/OT-segmentatie uit M04 Network Citadel |
-| **Onderzoeksobject** | De firewall (pfSense), de IT/LAB-netwerkgrens, de OT-zone met de PLC en het bestaande, gesaneerde M04-bewijs |
-| **Primaire control** | ISO/IEC 27001:2022 Annex A **A.8.22 — Segregation of networks** (A.8.20/8.21 alleen waar werkelijk relevant) |
-| **Onderzoeksvragen** | Welke risico's behandelt segmentatie? Wat is het controlontwerp? Wat is geïmplementeerd? Welke werking is aantoonbaar getest? Wat is nog niet bewezen? Wie accepteert restrisico's? Welke afhankelijkheden kunnen tot grotere verstoringen leiden? Wat betekent dit voor kosten, efficiëntie en assurance? |
-| **Uitvoeringsgrens** | Steunt uitsluitend op **bestaand** bewijs; gebruikt **geen** veronderstelde nieuwe testresultaten; **geen** live configuratiewijziging. M04 blijft **IN PROGRESS** en de integrale AC04/AC07-acceptatie is **niet** behaald. Ontbrekende tests worden niet in MINI-01 uitgevoerd maar blijven bij M04. |
-| **Verdictlabel** | Scoped onderzoeksbeoordeling (PASS / REWORK / EXCEPTION / N/A / NOT VERIFIED), uitgevoerd als **INTERNAL / AI-ONDERSTEUND (SELF-ASSESSMENT)** — niet onafhankelijk |
-| **Reviewpunten verwerkt** | Eén regel per hoofdstuk 05.1–05.7 en een scheiding tussen OBSERVED en AI-INTERPRETED bewijs |
-
-### Traceabilitymatrix MINI-01 × zeven hoofdstukken
-
-Eén matrix verbindt de casus met alle zeven hoofdstukken. De kolom "Wat publiek bewijs nu toont" vat **bestaande, scoped** M04-uitkomsten samen; het is **geen** nieuwe beoordeling en geen M05-verdict.
-
-| Hfd. | MINI-01-vraag | Publieke bron | Wat publiek bewijs nu toont | Wat (nog) niet bewezen is | Geplande MINI-01-output |
-|---|---|---|---|---|---|
-| **05.1** | Welke eisen gelden voor de IT/LAB↔OT-grens en waarom A.8.22? | [Netwerkontwerp](../../architectuur/NETWERKONTWERP.md), [Wet- en regelgevingskaders](../../governance/WET_EN_REGELGEVING.md) | Een zonemodel met de OT-zone achter de firewall is ontworpen (**DOCUMENTED**) | Een formeel goedgekeurde allow/deny-policy per zone als ontwerpdocument | Scope-statement, kaderselectie met N/A, mini-SoA (alleen casus) |
-| **05.2** | Welk risico behandelt segmentatie, wie is eigenaar, welke behandeling? | [M04-GAPS](../M04-Network-Citadel/M04-GAPS.md), [Issue #45](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | Open punten en risicoreviews zijn op hoofdlijnen gedocumenteerd | Expliciete (gesimuleerde) risico-eigenaar en behandelbesluit | Eén risicorecord met kans/impact-aannames en behandelvoorstel |
-| **05.3** | Ontwerp, implementatie, werking van de segmentatie? | [M04 fase 20](../M04-Network-Citadel/20_OT_segmentation_and_regression/README.md), [M04-GAPS §19 nov.](../M04-Network-Citadel/M04-GAPS.md#aanvulling-19-november--gerichte-deeltests) | Gerichte LAB→PLC- en LAB→HMI-flows werden geweigerd, met firewall-BLOCK-events (**scoped**, evidence-review PENDING) | Integrale AC04/AC07-acceptatie (zie de publieke [M04-GAPS](../M04-Network-Citadel/M04-GAPS.md)) | Apart oordeel ontwerp/implementatie/werking + bewijskwaliteit per bron |
-| **05.4** | Welke gaps, uitzonderingen en restrisico's zijn er? | [M04-GAPS](../M04-Network-Citadel/M04-GAPS.md) | Gaps zijn geregistreerd; een integrale acceptatie ontbreekt | Ownerbesluit per gap: corrigeren, tijdelijk accepteren (EXCEPTION) of verder onderzoeken | Gap-/uitzonderingsregister voor de casus met hertestvoorwaarde |
-| **05.5** | Wat mag over deze control worden geclaimd, en door wie? | [AI-werkafspraken](../../governance/AI_WERKAFSPRAKEN.md), [Statuslegenda §7](../../governance/STATUSLEGENDA.md#7-bewijsdiscipline) | M04-tests zijn deels met AI-begeleiding ontworpen en geduid | Onafhankelijke review; welk bewijs door Sam zelf is waargenomen | Assurance-statement met onafhankelijkheids- en AI-grenzen |
-| **05.6** | Wat kost deze beheersing en de beoordeling ervan? | — (alleen interne planningsramingen) | Er bestaan alleen geschatte planningsuren (**ESTIMATED**) | Gemeten beoordelingsinspanning (MEASURED) | Tijdregistratie MINI-01 + ACE-kosten/efficiëntieregel |
-| **05.7** | Welke afhankelijkheden maken dat één fout meerdere controls raakt? | [05.7 Systemic Risk](05.7_Systemic_Risk/README.md) (methodiek) | Geen publieke dependency-analyse; de methodiek en een fictief voorbeeld zijn beschreven | Elke afhankelijkheid van de casus (de analyse blijft intern) | Interne dependencyregel(s) met bewijsniveau; publiek alleen een gesaneerde samenvatting na review |
+**Status:** **PLANNED / niet gestart.** De casus gaat over de IT/OT-segmentatie van M04 en staat daarom in het [M04-assessmentdossier](M04-Network-Citadel/README.md#m05-mini-01--iso-27001-risk-to-control-assessment-eerste-geplande-casus), inclusief de traceabilitymatrix over 05.1–05.7.
 
 ## 14. Beperkingen van het publieke bewijs
 

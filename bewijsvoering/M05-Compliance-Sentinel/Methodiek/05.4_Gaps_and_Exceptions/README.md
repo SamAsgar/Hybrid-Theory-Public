@@ -1,6 +1,6 @@
 # 05.4 — Gaps & Exceptions | M05 Compliance Sentinel
 
-**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../README.md)
+**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../../README.md)
 
 ## Doel
 
@@ -10,7 +10,7 @@ Afwijkingen **transparant en beslisbaar** maken. Welk verschil bestaat er tussen
 
 | Begrip | Betekenis in M05 |
 |---|---|
-| **Gap identification** | Een aantoonbaar verschil vaststellen tussen een gekozen eis en de aangetoonde situatie, met type ([CAT/ACE §7](../../../governance/CAT_ACE_v0.4.md#7-typen-gap-analyses-welke-vraag-wordt-onderzocht)) en ernst |
+| **Gap identification** | Een aantoonbaar verschil vaststellen tussen een gekozen eis en de aangetoonde situatie, met type ([CAT/ACE §7](../../../../governance/CAT_ACE_v0.4.md#7-typen-gap-analyses-welke-vraag-wordt-onderzocht)) en ernst |
 | **Nonconformity** | De eis is aantoonbaar **niet** gehaald |
 | **Evidence gap** | Er is onvoldoende bewijs om te beoordelen of de eis is gehaald (**NOT VERIFIED**); geen aanname van een defect |
 | **Exception** | Een bewust, door Sam vastgelegd besluit om een afwijking tijdelijk toe te staan, met reden, voorwaarden en vervaldatum (**EXCEPTION**, geen PASS) |
@@ -44,8 +44,8 @@ ISO/IEC 27001:2022 hoofdstuk 10.2 (nonconformity and corrective action) en 6.1.3
 
 Voorbeelden die het onderscheid illustreren, uitsluitend op basis van publiek gedocumenteerde situaties:
 
-- **Vastgelegde EXCEPTION:** in M01 is één host-guest-integratie op geselecteerde Windows-VM's bewust als EXCEPTION geaccepteerd ([M01-dossier](../../M01-Hypervisor-Fortress/README.md)). Dit is een voorbeeld van een uitzondering met eigenaar en scope, en uitdrukkelijk geen PASS.
-- **Evidence gap versus nonconformity:** de integrale AC04/AC07-matrix van M04 is **PENDING** ([M04-GAPS](../../M04-Network-Citadel/M04-GAPS.md)). Zolang tests ontbreken, is dat een evidence gap (NOT VERIFIED), geen bewezen tekortkoming.
+- **Vastgelegde EXCEPTION:** in M01 is één host-guest-integratie op geselecteerde Windows-VM's bewust als EXCEPTION geaccepteerd ([M01-dossier](../../../M01-Hypervisor-Fortress/README.md)). Dit is een voorbeeld van een uitzondering met eigenaar en scope, en uitdrukkelijk geen PASS.
+- **Evidence gap versus nonconformity:** de integrale AC04/AC07-matrix van M04 is **PENDING** ([M04-GAPS](../../../M04-Network-Citadel/M04-GAPS.md)). Zolang tests ontbreken, is dat een evidence gap (NOT VERIFIED), geen bewezen tekortkoming.
 - **Open risicoreview:** waar publieke M04-documentatie een regel of configuratie als "open risk review" markeert, is dat een kandidaat voor een expliciet ownerbesluit: corrigeren, tijdelijk accepteren of verder onderzoeken.
 
 Actuele, nog niet opgeloste technische zwaktes en de interne risicoregistratie worden niet gepubliceerd.
@@ -64,7 +64,7 @@ Actuele, nog niet opgeloste technische zwaktes en de interne risicoregistratie w
 
 ## Beperkingen
 
-- **EXCEPTION is geen PASS** ([Statuslegenda §2](../../../governance/STATUSLEGENDA.md#2-engineeringverdict-altijd-met-scope)).
+- **EXCEPTION is geen PASS** ([Statuslegenda §2](../../../../governance/STATUSLEGENDA.md#2-engineeringverdict-altijd-met-scope)).
 - M05 sluit geen M01–M04-risico's; het doet voorstellen aan de eigenaar.
 - Restrisico-acceptatie in het lab is een labbesluit, geen juridische acceptatie namens een organisatie.
 - De publieke versie toont alleen gesaneerde voorbeelden; de volledige interne registratie is niet publiek.
