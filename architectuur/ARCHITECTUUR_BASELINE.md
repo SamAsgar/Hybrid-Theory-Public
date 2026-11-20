@@ -15,11 +15,11 @@ ACE (**Audit, Cost & Efficiency**) toetst als **interne, externe of hybride beoo
 
 **Interpretatie:** een fictieve governancebeslissing is geen bewijs van echte organisatorische effectiviteit. Benchmarkvergelijkingen zijn onderzoeksinstrumenten, geen bewijs dat CAT/ACE een erkende norm is.
 
-## Actuele netwerktopologie (15 november 2026)
+## Actuele netwerktopologie (20 november 2026)
 
 De [gesaneerde Architecture](README.md) toont twee figuren: diagram A met de bestaande netwerken WAN-SIM, MGMT, LAB en OT (**IMPLEMENTED**) en diagram B met de HT-C-010-doelarchitectuur. Van de doelzones bestaat alleen OT als eigen segment; IT-, Security-, private-services- en GNS3-zones en Azure zijn **PLANNED**. Echte host-/beheer-/routeradressen zijn niet gepubliceerd en vervangen door officiële aliassen; open punten dragen **TWIJFEL / NOT VERIFIED**.
 
-FUXA01 en PLC01 staan in de OT-zone; de Modbus TCP/502-verbinding tussen beide is op 15 november getest, maar de volledige AC02/AC03-readback-evidence en de OT-isolatie (AC04/AC07) zijn **PENDING**. Wazuh heeft een beperkte UI-/service-PASS en geen aangetoonde end-to-end SIEM-detectie (0 agents). M02 en Azure blijven **PLANNED**. CAT/ACE v0.4 blijft een onderzoeksconcept, geen behaalde certificering.
+FUXA01 en PLC01 staan in de OT-zone; de Modbus TCP/502-verbinding tussen beide is op 15 november getest en op 19 november is de START→STOP-reeks met PLC-readback **TESTED / scoped PASS**. Formele evidence-review van AC01–AC03 en de OT-isolatie (AC04/AC07) zijn **PENDING**. Diagram A (stand 20 november) toont de gescopeerde CORE C2-resultaten per verkeersstroom. Wazuh heeft een beperkte UI-/service-PASS en geen aangetoonde end-to-end SIEM-detectie (0 agents). M02 en Azure blijven **PLANNED**. CAT/ACE v0.4 blijft een onderzoeksconcept, geen behaalde certificering.
 
 ## 2. Technische basis
 
@@ -49,6 +49,6 @@ Technische bewijsvoering volgt de keten: `securitydoel → control → configura
 
 ## 5. M04-statusharmonisatie — 20 november 2026
 
-De technische architectuurbaseline blijft een VMware/pfSense-omgeving met WAN-SIM, MGMT, LAB en een afzonderlijke OT-zone. De diagrammen zijn van 15 november; dit is een **statusdelta, geen herontwerp**. Op 19 november zijn de OpenPLC-autostartcorrectie en HMI START→STOP-readback binnen scope getest. Gerichte LAB→OT- en OT→andere-zone/extern-blokkeringen zijn met pfSense-logs gecorreleerd; de volledige AC04/AC07-matrix en formele eigenaaracceptatie blijven **PENDING**. De gerichte uitvoering van 20 november verandert deze acceptatiegrenzen niet.
+De technische architectuurbaseline blijft een VMware/pfSense-omgeving met WAN-SIM, MGMT, LAB en een afzonderlijke OT-zone. Diagram A is op 20 november geactualiseerd; diagram B kreeg alleen gedateerde statusnotities. Dit is een **statusdelta, geen herontwerp**. Op 19 november zijn de OpenPLC-autostartcorrectie en HMI START→STOP-readback binnen scope getest. Gerichte LAB→OT- en OT→andere-zone/extern-blokkeringen zijn met pfSense-logs gecorreleerd; de volledige AC04/AC07-matrix en formele eigenaaracceptatie blijven **PENDING**. De gerichte uitvoering van 20 november verandert deze acceptatiegrenzen niet.
 
 [Actuele afgebakende testobservaties](NETWERKONTWERP.md#5-m04-harmonisatie-1920-november-2026) · [Gesaneerde fase-20-evidence](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md).

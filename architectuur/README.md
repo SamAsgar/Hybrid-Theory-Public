@@ -1,24 +1,27 @@
 # Architectuur | Hybrid-Theory
 
-**Bijgewerkt:** 20 november 2026 · **Bron:** private architectuur (diagrammen 15 november; testdelta 19–20 november) · **Weergave:** gesaneerd, met officiële aliassen.
+**Bijgewerkt:** 20 november 2026 · **Bron:** private architectuur en M04-testmatrix (stand 20 november; ontwerp diagram B: 5 november) · **Weergave:** gesaneerd, met officiële aliassen.
 
 Deze map beschrijft de netwerkarchitectuur van het Hybrid-Theory-lab in twee lagen: wat er nu staat (diagram A) en waar het ontwerp naartoe gaat (diagram B). Adressen zijn vervangen door **vaste, officiële aliassen** zoals `PLC01_OT_IP`. Dezelfde alias verwijst overal naar hetzelfde adres; de werkelijke waarden en de vertaaltabel blijven privé.
 
-## 1. Diagram A — huidige geïmplementeerde architectuur (15 november 2026)
+## 1. Diagram A — huidige geïmplementeerde architectuur (20 november 2026)
 
-![Hybrid-Theory — diagram A: huidige geïmplementeerde architectuur met officiële aliassen, stand 15 november 2026](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg)
+![Hybrid-Theory — diagram A: huidige geïmplementeerde architectuur met officiële aliassen, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg)
 
-*Figuur 1. **Architectuurillustratie**, geen testbewijs en geen live-meting. De figuur bevat geen werkelijke adressen.*
+*Figuur 1. **Architectuurillustratie**, geen testbewijs en geen live-meting. De figuur bevat geen werkelijke adressen.* [Bewerkbare SVG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.png)
 
 **Wat de figuur laat zien:**
 
 - **Eén VMware-host, vier netwerken achter pfSense:** WAN-SIM (VMware NAT), MGMT (host-only beheer), LAB en OT. Alle vier zijn **IMPLEMENTED**.
 - **FUXA01 praat rechtstreeks met PLC01** via Modbus TCP/502. Beide staan in hetzelfde OT-subnet, dus dit verkeer loopt niet via de pfSense-router en zegt niets over de grens naar andere zones.
-- **Via pfSense lopen:** het afgebakende beheerpad van de beheerbron naar het webbeheer van PLC01 en FUXA01, LAB-verkeer naar buiten en de geblokkeerde LAB→OT-poging.
+- **Fysieke grens:** de labhost staat in het thuisnetwerk, dat buiten de labscope valt. WAN-SIM gaat via VMware NAT en de fysieke uplink naar buiten; NAT is geen isolatiegarantie.
+- **Beheerpad:** de aangewezen beheerbron bereikt via het host-only segment `PFSENSE_MGMT_IP`. Twee bronbeperkte LAN-forwards geven alleen toegang tot de OpenPLC-webdienst (TCP/8080) en de FUXA-webdienst (TCP/1881); dat is geen vrije toegang tot OT. Een directe route van de beheerhost naar `PLC01_OT_IP` koos de fysieke uplink; een geautoriseerd direct pad (F13–F15) is een ontwerpbesluit en **PENDING / DESIGN-CONFIRM**.
+- **Zonegrens OT (gescopeerd, 20 november):** LAB→PLC01 (F09–F12) en OT→beheer, firewall en externe HTTP (F16–F19) zijn met gelogde blokkades **TESTED / scoped PASS**. DNS/NTP vanuit OT is geblokkeerd waargenomen, maar het ontwerp voor toegestane bronnen is **DESIGN-CONFIRM** (F20/F21). IPv6 is **NO-ROUTE-VERIFIED** binnen de geïnspecteerde topologie (F22/F23), geen IPv6-firewall-PASS. WAN→OT is **CONFIG REVIEWED / SAFE LIVE TEST PENDING** (F24).
+- **Gepland, niet operationeel:** Wazuh OT-telemetrie (AC05 **PENDING**), Suricata IDS (AC08 **PLANNED**) en GNS3-schaaluitwerking (AC06 **PLANNED**).
 - **Het GNS3-testnet staat los** van pfSense en het thuisnetwerk.
-- **M04-CORE is IN PROGRESS:** AC04 (integrale segmentatie) en AC07 (volledige allow/deny-matrix) zijn **PENDING**.
+- **M04-CORE is IN PROGRESS:** AC01–AC03 historisch **scoped PASS**; AC04 (integrale segmentatie), AC05 en AC07 (volledige allow/deny-matrix) **PENDING**; AC06 en AC08 **PLANNED**.
 
-De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONTWERP.md#11-huidige-verkeersstromen-stand-15-november-2026).
+De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONTWERP.md#11-huidige-verkeersstromen-stand-20-november-2026).
 
 ### 1.1 Componenten, zones en officiële aliassen
 
@@ -27,11 +30,11 @@ De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONT
 | pfSense WAN | WAN-SIM (VMware NAT) | `PFSENSE_WAN_IP` | `PFSENSE_WAN_MAC` | **IMPLEMENTED** |
 | pfSense LAN / MGMT | MGMT (host-only) | `PFSENSE_MGMT_IP` | `PFSENSE_MGMT_MAC` | **IMPLEMENTED**; webbeheer PASS binnen scope |
 | pfSense LAB | LAB | `PFSENSE_LAB_GW_IP` | `PFSENSE_LAB_GW_MAC` | **IMPLEMENTED**; Kea DHCPv4 TESTED (1 nov.) |
-| pfSense OT | OT | `PFSENSE_OT_IP` | `PFSENSE_OT_MAC` | **IMPLEMENTED** (8 nov.); geen upstream-gateway |
-| PLC01 (OpenPLC) | OT | `PLC01_OT_IP` | `PLC01_OT_MAC` | **IMPLEMENTED**; runtime en Modbus TCP/502 TESTED (15 nov.) |
-| FUXA01 (SCADA/HMI) | OT | `FUXA01_OT_IP` | `FUXA01_OT_MAC` | **IMPLEMENTED**; HMI en Modbus-verbinding TESTED (15 nov.) |
+| pfSense OT | OT | `PFSENSE_OT_IP` | `PFSENSE_OT_MAC` | **IMPLEMENTED** (8 nov.); geen upstream-gateway; gelogde OT-ingressblokkades F16–F19 scoped PASS (20 nov.) |
+| PLC01 (OpenPLC) | OT | `PLC01_OT_IP` | `PLC01_OT_MAC` | **IMPLEMENTED**; runtime en Modbus TCP/502 TESTED (15 nov.); RUN-autostart na correctie TESTED / scoped PASS (19 nov.) |
+| FUXA01 (SCADA/HMI) | OT | `FUXA01_OT_IP` | `FUXA01_OT_MAC` | **IMPLEMENTED**; HMI en Modbus-verbinding TESTED (15 nov.); START→STOP met PLC-readback TESTED / scoped PASS (19 nov.) |
 | Windows Server 2025 (DC01) | LAB | `DC01_LAB_IP` | geen alias | AD DS/DNS TESTED (1 nov.); adres **TWIJFEL** |
-| Windows 11 (CLIENT01) | LAB | `CLIENT01_DHCP_IP` | geen alias | DHCP-lease; domeinclient TESTED (1 nov.) |
+| Windows 11 (CLIENT01) | LAB | `CLIENT01_DHCP_IP` | geen alias | DHCP-lease; domeinclient TESTED (1 nov.); LAB-testbron F09–F12 (20 nov.), leasebinding open |
 | Ubuntu Server, LAB-interface | LAB | `LAB_NET_IP` (IPv6: `LAB_NET_IPV6_LL`) | `LAB_NET_MAC` (PENDING_CAPTURE) | adres **TWIJFEL** |
 | Ubuntu Server, beheerinterface | MGMT | `MGMT_NET_IP` (IPv6: `MGMT_NET_IPV6_LL`) | `MGMT_NET_MAC` (PENDING_CAPTURE) | Cockpit PASS (25 okt.); actuele status **NOT VERIFIED** |
 | Ubuntu Server, update-interface | WAN-SIM | `NET_02_IP` (IPv6: `NET_02_IPV6_LL`) | `NET_02_MAC` (PENDING_CAPTURE) | tijdelijk; actuele status **NOT VERIFIED** |
@@ -54,9 +57,11 @@ De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONT
 
 ## 2. Diagram B — doelarchitectuur HT-C-010
 
-![Hybrid-Theory — diagram B: doelarchitectuur HT-C-010 met zes zones, twee Azure-subscriptions en M02 Phoenix Recovery; ontwerp, niet geïmplementeerd](diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg)
+![Hybrid-Theory — diagram B: doelarchitectuur HT-C-010 met zes zones, twee Azure-subscriptions en M02 Phoenix Recovery; ontwerp, niet geïmplementeerd](diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-20.svg)
 
 *Figuur 2. **Ontwerpillustratie** van de op 5 november 2026 door Sam gevalideerde doelarchitectuur (HT-C-010). Dit is een ontwerpbesluit, geen implementatie en geen test.*
+
+**Beoordeling 20 november:** de CORE C2-resultaten veranderen het onderscheid tussen AS-IS en TO-BE niet. Er zijn geen nieuwe zones, routes of Azure-resources geïmplementeerd. Alleen drie statusnotities in de figuur zijn geactualiseerd (peildatum, de FUXA01→PLC01-deeltest van 19 november en de gerichte LAB→OT-denies); het ontwerp zelf is ongewijzigd.
 
 - **Bestaande netwerken (diagram A):** WAN-SIM, MGMT, LAB en OT zijn **IMPLEMENTED**.
 - **HT-C-010-doelzones:** van de zes doelzones bestaat alleen OT al als eigen segment. IT-servers, IT-clients, Security, private services en GNS3 zijn als afzonderlijke zones **PLANNED**; hun systemen staan nu in het LAB of in het losstaande GNS3-testnet.
@@ -92,11 +97,13 @@ In de private M04-engineeringlogs is een eerste mislukte PLC-autostart vastgeleg
 
 **Openstaande architectuurrisico's:** brede LAN IPv4-/IPv6-allowregels, NAT-/beheeruitzonderingen, IPv6 en alternatieve routes, UDP-egress, verificatie van configuratieback-up en herstelbaarheid. De verkorte testwerkwijze van 20 november verandert de acceptatie-eisen **niet**. [Fase-20-evidence](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [Netwerkontwerp](NETWERKONTWERP.md).
 
-De huidige diagrammen zijn illustraties met peildatum 15 november en **geen live-testmeting** van de nieuwe regressietests.
+Diagram A heeft peildatum 20 november en verwerkt de CORE C2-deeltests als gescopeerde status. De figuur is **geen live-testmeting** en geen primaire evidence.
 
-## 5. Historische figuur
+## 5. Historische figuren
 
-De [publieke figuur van 5 november 2026](diagrammen/HT-NETWERKARCHITECTUUR-PUBLIC-2026-11-05.svg) blijft als historische weergave bewaard. Ze dateert van vóór de OT-migratie, toont OpenPLC nog als gepland en gebruikt aliasnamen die niet de officiële zijn. Gebruik voor de actuele situatie diagram A en B.
+De [publieke figuur van 5 november 2026](diagrammen/HT-NETWERKARCHITECTUUR-PUBLIC-2026-11-05.svg) blijft als historische weergave bewaard. Ze dateert van vóór de OT-migratie, toont OpenPLC nog als gepland en gebruikt aliasnamen die niet de officiële zijn.
+
+De versies van 15 november, [diagram A](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) en [diagram B](diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg), blijven ongewijzigd bewaard als gedateerde weergave van die stand. Gebruik voor de actuele situatie diagram A en B van 20 november.
 
 ## 6. Documentatie en governance
 
@@ -111,4 +118,4 @@ De [publieke figuur van 5 november 2026](diagrammen/HT-NETWERKARCHITECTUUR-PUBLI
 
 ## M04-netwerkdelta — 20 november
 
-[AS-IS netwerkpaden](NETWERKONTWERP.md#m04-as-is--netwerkpaden-beoordeeld-op-20-november) · [pfSense-review](PFSENSE_PLAN.md#m04--configuratiereview-en-deeltests-op-20-november) · [Gescopeerde C2-testronde](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md). De netwerkdelta geeft de getoonde beheer-, LAB-, OT-, IPv6- en WAN-scope weer. De figuren blijven gedateerde topologieoverzichten.
+[AS-IS netwerkpaden](NETWERKONTWERP.md#m04-as-is--netwerkpaden-beoordeeld-op-20-november) · [pfSense-review](PFSENSE_PLAN.md#m04--configuratiereview-en-deeltests-op-20-november) · [Gescopeerde C2-testronde](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md). De netwerkdelta geeft de getoonde beheer-, LAB-, OT-, IPv6- en WAN-scope weer en is verwerkt in [diagram A van 20 november](#1-diagram-a--huidige-geïmplementeerde-architectuur-20-november-2026).

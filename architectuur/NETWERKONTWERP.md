@@ -1,6 +1,6 @@
 # Netwerkontwerp en beveiligingsgrenzen | Hybrid-Theory
 
-**Bijgewerkt:** 20 november 2026 (19-november-regressie en ontwerp-/testgates van 20 november; diagrammen blijven gedateerd 15 november) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** private architectuur en HT-C-010.
+**Bijgewerkt:** 20 november 2026 (19-november-regressie, CORE C2-deeltests en ontwerp-/testgates van 20 november; diagram A en de statusnotities van diagram B gedateerd 20 november) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** private architectuur en HT-C-010.
 
 Dit document heeft twee lagen die niet door elkaar mogen lopen: de **geobserveerde situatie** (§1) en de **doelarchitectuur HT-C-010** (§2–§3). Adressen staan als officiële alias; de [componenttabel met alle aliassen](README.md#11-componenten-zones-en-officiële-aliassen) staat in Architecture.
 
@@ -21,21 +21,25 @@ Dit document heeft twee lagen die niet door elkaar mogen lopen: de **geobserveer
 
 Deze gegevens komen uit gedateerde sessielogs en zijn **geen nieuwe live-meting**. pfSense heeft vier interfaces: WAN, LAN/MGMT, LAB en OT. Werkelijke adressen en de aliasvertaling worden niet gepubliceerd.
 
-### 1.1 Huidige verkeersstromen (basis 15 november, testdelta 19 november 2026)
+### 1.1 Huidige verkeersstromen (stand 20 november 2026)
 
-![Diagram A: huidige geïmplementeerde architectuur met officiële aliassen](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg)
+![Diagram A: huidige geïmplementeerde architectuur met officiële aliassen, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg)
 
 *Figuur A. Architectuurillustratie, **geen testbewijs**.*
 
 | # | Stroom | Pad | Status binnen de geteste scope |
 |---|---|---|---|
 | 1 | FUXA01 (`FUXA01_OT_IP`) → PLC01 (`PLC01_OT_IP`), Modbus TCP/502 | **Rechtstreeks binnen het OT-subnet**; niet via de pfSense-router | TCP-handshake (15 nov.) en na PLC01-reboot FUXA-herverbinding en HMI START→STOP met PLC-readback (19 nov.) **TESTED / scoped PASS**; formele evidence-review **PENDING** |
-| 2 | Beheerbron (`MGMT_CLIENT_IP`) → webbeheer van PLC01 en FUXA01 | MGMT → pfSense → OT; alleen vanaf de aangewezen beheerbron | **TESTED** (11 en 15 nov.); authenticatie/TLS open |
-| 3 | LAB → OT | Via pfSense | **Geblokkeerd binnen geteste scope**: gerichte TCP/502- en TCP/1881-denyflows vanuit LAB met pfSense-BLOCK-logs (19 nov.); niet de gehele AC04/AC07-matrix |
+| 2 | Beheerbron (`MGMT_CLIENT_IP`) → webbeheer van PLC01 (TCP/8080) en FUXA01 (TCP/1881) | MGMT → `PFSENSE_MGMT_IP` → bronbeperkte LAN-forward → OT; alleen vanaf de aangewezen beheerbron | **TESTED** (11 en 15 nov.; TCP/8080 herbevestigd 20 nov.); authenticatie/TLS open |
+| 2a | Beheerbron → PLC01 direct, TCP/502, 22 en 44818 (F13–F15) | Directe route koos de fysieke uplink; geen geautoriseerd direct pad vastgesteld | **PENDING / DESIGN-CONFIRM** |
+| 3 | LAB → OT | Via pfSense | **Geblokkeerd binnen geteste scope**: gerichte TCP/502- en TCP/1881-denyflows (19 nov.) en LAB→PLC01 TCP/8080, 22, 44818 en ICMP (F09–F12, 20 nov.) met pfSense-BLOCK-logs, **TESTED / scoped PASS**; niet de gehele AC04/AC07-matrix |
 | 4 | LAB → publiek IPv4 | LAB → pfSense → WAN (VMware NAT) | **PASS** binnen scope (26 okt.) |
 | 5 | LAB → thuisrouter (ICMP) | LAB → pfSense | **Geblokkeerd**: **PASS** (26 okt.), alleen voor de geteste bestemming en dit protocol |
-| 6 | OT → andere zones en internet | Via de pfSense-OT-interface | Gerichte OT→LAB ICMP en OT→extern ICMP/TCP 443-verzoeken zijn volgens de sessie met pfSense-BLOCK-events gecorreleerd (**TESTED / scoped PASS**); alternatieve paden/protocollen en integrale AC04 **PENDING** |
-| 7 | Agents → Wazuh | Nog niet ingericht | **NOT VERIFIED**; 0 agents |
+| 6 | OT → andere zones en internet | Via de pfSense-OT-interface | Gerichte OT→LAB ICMP en OT→extern ICMP/TCP 443 (19 nov.) en OT→beheerhost, pfSense-beheer, pfSense-SSH en externe HTTP (F16–F19, 20 nov.) zijn met pfSense-BLOCK-events gecorreleerd (**TESTED / scoped PASS**); alternatieve paden/protocollen en integrale AC04 **PENDING** |
+| 6a | OT → externe DNS (UDP/53) en NTP (UDP/123) (F20/F21) | Via de pfSense-OT-interface | Geblokkeerd waargenomen; goedgekeurde resolver en tijdbron **DESIGN-CONFIRM** |
+| 6b | IPv6 LAB/beheer → OT (F22/F23) | Alleen link-local op de onderzochte LAB-/OT-hosts, geen IPv6-default-route | **NO-ROUTE-VERIFIED** binnen de geïnspecteerde topologie; geen IPv6-firewall-PASS; brede LAN IPv6-allow onder review |
+| 6c | WAN → OT (F24) | WAN-SIM → pfSense WAN | Geen gebruikers-PASS en geen WAN-forwards in de bekeken configuratie: **CONFIG REVIEWED / SAFE LIVE TEST PENDING** |
+| 7 | Agents en OT-telemetrie → Wazuh | Nog niet ingericht | **NOT VERIFIED**; 0 agents; AC05 **PENDING** |
 | 8 | GNS3-testnet ↔ overige netten | Geen koppeling | Losstaand; ARP/ICMP **PASS** binnen het testnet |
 
 Stroom 1 is **geen firewallregel**: verkeer tussen twee hosts in hetzelfde subnet passeert de firewall niet en zegt dus niets over de zonegrens. Het beheerpad gebruikt de aangewezen bron en de expliciet toegestane webservices. Zie de C2-update voor de actuele scope. **M04-CORE blijft IN PROGRESS.**
@@ -77,7 +81,7 @@ De op 19 november gedocumenteerde reboottest van PLC01 begon met **FAIL** (runti
 
 De nieuwe [M04-fase-20-galerij](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) koppelt de deeltests aan gesaneerde screenshots. Specifieke LAB→OT, OT→LAB en OT→extern-negatieve flows zijn met BLOCK-logs verbonden. **Geen volledige AC04/AC07-acceptatie**: de resterende matrix vergt onder meer IPv6, UDP, beheer/NAT-scope, WAN→OT, alternatieve routes en tijd-/regel-/pcapcorrelatie.
 
-De private M04-testaanpak is op 20 november gerichter gemaakt om dubbele tests te vermijden, niet om controls over te slaan. pfSense-regelwijzigingen blijven onder autorisatie en herstelgates vallen; de getoonde back-upopties zijn **geen bewijs van een geslaagde config.xml-restore**. Diagram A/B zijn ontwerpillustraties met peildatum 15 november; er zijn geen nieuwe aparte zones of Azure-resources geïmplementeerd.
+De private M04-testaanpak is op 20 november gerichter gemaakt om dubbele tests te vermijden, niet om controls over te slaan. pfSense-regelwijzigingen blijven onder autorisatie en herstelgates vallen; de getoonde back-upopties zijn **geen bewijs van een geslaagde config.xml-restore**. Diagram A (stand 20 november) en diagram B (ontwerp 5 november, statusnotities 20 november) zijn illustraties; er zijn geen nieuwe aparte zones of Azure-resources geïmplementeerd. De versies van 15 november blijven als historische weergave bewaard.
 
 ## M04 AS-IS | Netwerkpaden beoordeeld op 20 november
 
