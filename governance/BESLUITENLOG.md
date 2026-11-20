@@ -17,6 +17,19 @@
 | HT-011 | 01-11-2026 | Flexible Security / Mission-Based Hardening | Operationele afspraak: risicogestuurd bouwen, bestaande geldige tests hergebruiken |
 | HT-012 | 03-11-2026 | CAT/ACE v0.4 — onderzoeksdocumentatie | Actuele gepubliceerde onderzoeksvariant: **Audit / Cost / Efficiency**, inzetbaar intern, extern of hybride. Controlbewijs, kosteneffecten, veilige optimalisatie en Revalidation. **CONCEPT / NOT VALIDATED**; geen automatische uitvoering of attestatie |
 
+## Openstaand publicatie-item | 20-11-2026 | Permanent missionmodel en M05-structuur
+
+**Besluit van Sam (20-11-2026), hier gesaneerd weergegeven:**
+
+1. M01–M05 zijn **permanente Main Missions** zonder definitieve afsluitstatus; ontwikkeling en verbetering zijn continu.
+2. Voortgang loopt via **milestones** met expliciete scope, vooraf vastgestelde acceptatiecriteria, bewijs, beoordeling en acceptatie door Sam. **Geen missie heeft Milestone 01 bereikt.** Technische PASS-resultaten blijven scoped bevindingen.
+3. **Mini-oefeningen** sluiten geen milestone of missie af. **Afgebakende zelfstandige missies** vormen later een aparte categorie, met nog vast te stellen identificatie.
+4. **M05 Compliance Sentinel** krijgt zeven onderzoekshoofdstukken (05.1–05.7) en één Framework Register ([M05-documentatie](../bewijsvoering/M05-Compliance-Sentinel/README.md)). ISO/IEC 27001:2022 Annex A is het primaire startkader voor M05-MINI-01; CAT/ACE v0.4 blijft experimenteel (**CONCEPT / NOT VALIDATED**).
+
+**Status:** M05-uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED** (exitcriteria **DRAFT**); M05-MINI-01 **PLANNED**; compliance- of assuranceverklaring **NOT ESTABLISHED**. Dit besluit autoriseert geen technische tests, configuratiewijzigingen of milestone-acceptatie.
+
+**Publiek besluit-ID: PENDING.** De publieke en interne besluitreeksen lopen uiteen. Een automatisch volgend nummer zou betekenisverwarring met de interne reeks veroorzaken. Daarom krijgt dit item pas een ID na een besluit van Sam over het publieke nummerschema. Bestaande publieke besluiten zijn niet gewijzigd.
+
 ## Latere technische observaties
 
 - Windows 11 OS, Lab-netwerk en VMware Tools zijn gerealiseerd.

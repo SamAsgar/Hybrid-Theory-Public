@@ -2,6 +2,7 @@
 
 **Documentstatus:** **APPROVED — Sam, 02-11-2026**  
 **Redactionele onderzoeksupdate:** 03-11-2026, CAT/ACE v0.4-duiding; oorspronkelijke engineeringverdicts niet gewijzigd.  
+**Aanvulling:** 20-11-2026, §3a missie-, milestone- en mini-oefeningstatus (ter review in een publieke draft-PR); bestaande definities ongewijzigd.  
 **Toepassing:** actuele README's, beleidsdocumenten, roadmap, labrapporten en duiding van historische logs. Een status mag alleen worden toegekend voor zover de vermelde scope en het bestaande bewijs dat ondersteunen.
 
 ## 1. Componentstatus
@@ -29,6 +30,21 @@
 | **IN PROGRESS** | Werk is gestart; niet alle beoogde acceptatiecriteria zijn afgerond. |
 | **PENDING** | Werk, besluit of meting moet nog worden uitgevoerd. |
 | **PARKED** | Bewust uitgesteld met een aanleiding of voorwaarde voor heropening. |
+
+### 3a. Missie-, milestone- en mini-oefeningstatus (20-11-2026)
+
+Toegevoegd na het besluit van Sam van 20-11-2026 over het permanente missionmodel ([publiek besluitenoverzicht](BESLUITENLOG.md#openstaand-publicatie-item--20-11-2026--permanent-missionmodel-en-m05-structuur)). Deze sectie voegt geen nieuwe engineeringverdicts toe; ze maakt duidelijk welke status bij welk niveau hoort.
+
+| Niveau | Toegestane status | Afsluiting |
+|---|---|---|
+| **Main Mission** (M01–M05) | Missietype **PERMANENT**; werkstatus volgens §3 (**IN PROGRESS / PENDING / PARKED**) | **Nooit.** Geen `COMPLETE`, `MISSION COMPLETE` of missie-PASS |
+| **Milestone** (bijv. M05-MS01) | **NOT ACHIEVED** (standaard) of **ACHIEVED**; de exitcriteria hebben een documentstatus (§4: DRAFT → PENDING OWNER APPROVAL → APPROVED; een voorstel is DRAFT) | **ACHIEVED** uitsluitend na expliciete acceptatie door Sam op vooraf vastgestelde exitcriteria |
+| **Mini-oefening** (bijv. M05-MINI-01) | Werkstatus volgens §3, plus **PLANNED** vóór de start; de uitkomst is een scoped verdict (§2 of §5) | Sluit alleen de oefening zelf af; geen milestone- of missieafsluiting |
+| **Afgebakende zelfstandige missie** | Nog niet gedefinieerd (latere categorie na M01–M05) | Eigen begin- en eindcriteria, na afzonderlijk besluit |
+
+Een milestone vraagt een expliciete scope, vooraf vastgestelde acceptatiecriteria, bewijs, een beoordeling en acceptatie door Sam.
+
+**Vijf dimensies niet vermengen:** (1) **missiestatus** (permanent + werkstatus), (2) **milestonevoortgang** (NOT ACHIEVED/ACHIEVED), (3) **technisch testverdict** (PASS/REWORK/EXCEPTION, altijd met scope), (4) **documentstatus** (§4) en (5) **owneracceptatie** (expliciet, gedateerd besluit van Sam). Een geslaagde deeltest is geen milestone-acceptatie; een APPROVED document is geen geslaagde test of geverifieerde control; een ACHIEVED milestone is geen missieafsluiting. Uitspraken die (nog) niet zijn aangetoond, heten **NOT ESTABLISHED** ([CAT/ACE §14](CAT_ACE_v0.4.md#14-roadmap-en-open-onderzoekspunten)); dat is geen verdict. Oudere formuleringen zoals "missieacceptatie" of "volledige missie-PASS" in gedateerde logs en issues blijven staan en worden gelezen als "milestone-acceptatie".
 
 ## 4. Documentstatus
 
