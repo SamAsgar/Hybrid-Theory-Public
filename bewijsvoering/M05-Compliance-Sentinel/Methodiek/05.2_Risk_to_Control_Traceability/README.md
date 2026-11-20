@@ -1,6 +1,6 @@
 # 05.2 — Risk-to-Control Traceability | M05 Compliance Sentinel
 
-**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../README.md)
+**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../../README.md)
 
 ## Doel
 
@@ -10,7 +10,7 @@ Een **herleidbare keten** maken van technische observatie naar managementbesluit
 Asset → Threat → Risk → Owner → Control → Evidence → Verdict → Decision
 ```
 
-Zonder die keten is een control een losse maatregel en een risicoacceptatie een losse uitspraak. De keten is **bidirectioneel**: van eis naar bewijs, en van een technische afwijking terug naar het getroffen proces, de eigenaar en de eis ([CAT/ACE §9](../../../governance/CAT_ACE_v0.4.md#9-traceability--en-assuranceketen)).
+Zonder die keten is een control een losse maatregel en een risicoacceptatie een losse uitspraak. De keten is **bidirectioneel**: van eis naar bewijs, en van een technische afwijking terug naar het getroffen proces, de eigenaar en de eis ([CAT/ACE §9](../../../../governance/CAT_ACE_v0.4.md#9-traceability--en-assuranceketen)).
 
 ## Onderzoeksvragen
 
@@ -44,11 +44,11 @@ ISO/IEC 27005:2022 (risicoproces), ISO/IEC 27001:2022 hoofdstuk 6.1.2–6.1.3 en
 | **Risk** | Ongewenste procesbesturing of verstoring; kans en impact met expliciete aannames | SIMULATED (fictieve bedrijfsimpact) |
 | **Owner** | Fictieve OT-proceseigenaar als risico-eigenaar; firewallbeheerder als control-eigenaar | SIMULATED |
 | **Control** | ISO/IEC 27001:2022 A.8.22 — segmentatie met default deny tussen zones | DOCUMENTED (ontwerp) |
-| **Evidence** | Gerichte negatieve tests met firewalllogs ([M04 fase 20](../../M04-Network-Citadel/20_OT_segmentation_and_regression/README.md)) | OBSERVED (scoped; review PENDING) |
+| **Evidence** | Gerichte negatieve tests met firewalllogs ([M04 fase 20](../../../M04-Network-Citadel/20_OT_segmentation_and_regression/README.md)) | OBSERVED (scoped; review PENDING) |
 | **Verdict** | Scoped onderzoeksbeoordeling; in dit voorbeeld zou de integrale werking **NOT VERIFIED** blijven | — |
 | **Decision** | Besluit van Sam: verder testen, corrigeren of tijdelijk accepteren | Nog niet genomen |
 
-Werkelijke assetinventarissen en interne risicoregisters worden niet gepubliceerd; publiek staan alleen de [M04-GAPS](../../M04-Network-Citadel/M04-GAPS.md) op hoofdlijnen.
+Werkelijke assetinventarissen en interne risicoregisters worden niet gepubliceerd; publiek staan alleen de [M04-GAPS](../../../M04-Network-Citadel/M04-GAPS.md) op hoofdlijnen.
 
 ## Verwachte evidence en deliverables
 

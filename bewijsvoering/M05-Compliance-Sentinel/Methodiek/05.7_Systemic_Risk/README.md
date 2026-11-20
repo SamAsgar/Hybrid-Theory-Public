@@ -1,6 +1,6 @@
 # 05.7 — Systemic Risk | M05 Compliance Sentinel
 
-**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../README.md)
+**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../../README.md)
 
 > Dit hoofdstuk is de kern van het Hybrid-Theory-onderzoeksmotief. Het beschrijft methodiek en een **fictief** voorbeeld; het bevat geen overzicht van de werkelijke infrastructuur. Er is in M05 nog **geen** dependency- of fault-injectiontest uitgevoerd; **geen enkel cascade-effect is bewezen**.
 
@@ -14,7 +14,7 @@ Control-assessments (een SoA, een controlcatalogus, een steekproefaudit) beoorde
 
 ## Begrippen
 
-De failure modes komen uit [CAT/ACE v0.4 §8](../../../governance/CAT_ACE_v0.4.md#8-dependency-analyse-relaties-kwetsbaarheid-en-causale-voorzichtigheid) en worden hier toegepast:
+De failure modes komen uit [CAT/ACE v0.4 §8](../../../../governance/CAT_ACE_v0.4.md#8-dependency-analyse-relaties-kwetsbaarheid-en-causale-voorzichtigheid) en worden hier toegepast:
 
 | Begrip | Kernvraag in M05 |
 |---|---|
@@ -61,11 +61,11 @@ De **afhankelijkheid** en het **mogelijke gevolg** krijgen elk een eigen label. 
 
 1. Leg de werkende baseline vast.
 2. Formuleer **vooraf** welk effect een gecontroleerde, omkeerbare verstoring volgens de graaf zou moeten hebben, plus een tegenhypothese.
-3. Voer de verstoring uitsluitend uit na expliciet besluit van Sam, met rollback en binnen eigen systemen ([Labkader](../../../governance/LAB_KADER.md)).
+3. Voer de verstoring uitsluitend uit na expliciet besluit van Sam, met rollback en binnen eigen systemen ([Labkader](../../../../governance/LAB_KADER.md)).
 4. Vergelijk de waarneming (ground truth) met de voorspelling en met wat een reguliere controlbeoordeling had gevonden.
 5. Herstel en valideer. De uitkomst is bevestigd, gedeeltelijk bevestigd, weerlegd of onvoldoende bewijs.
 
-[CAT/ACE §12](../../../governance/CAT_ACE_v0.4.md#12-illustratief-scenario-addns-als-gedeelde-afhankelijkheid) beschrijft zo'n scenario voor AD/DNS. Dat scenario is uitdrukkelijk **niet uitgevoerd**.
+[CAT/ACE §12](../../../../governance/CAT_ACE_v0.4.md#12-illustratief-scenario-addns-als-gedeelde-afhankelijkheid) beschrijft zo'n scenario voor AD/DNS. Dat scenario is uitdrukkelijk **niet uitgevoerd**.
 
 ### Concentratiebeschouwing
 
@@ -99,7 +99,7 @@ De les uit het voorbeeld is methodisch: drie losse PASS-oordelen kunnen samen ee
 
 ## Relatie met de academische onderzoeksachtergrond
 
-De [masterscriptie (2021)](../../../onderzoek/academische-referenties/scriptie-2021.md) onderzocht volatiliteitsspreiding tussen Europese sectoren en landen met DCC-GARCH en connectedness-analyse, met onderscheid tussen **transmitters** en **receivers** van schokken. M05 gebruikt dat als **conceptuele analogie**:
+De [masterscriptie (2021)](../../../../onderzoek/academische-referenties/scriptie-2021.md) onderzocht volatiliteitsspreiding tussen Europese sectoren en landen met DCC-GARCH en connectedness-analyse, met onderscheid tussen **transmitters** en **receivers** van schokken. M05 gebruikt dat als **conceptuele analogie**:
 
 | Scriptie | M05 / Hybrid-Theory |
 |---|---|
@@ -107,12 +107,12 @@ De [masterscriptie (2021)](../../../onderzoek/academische-referenties/scriptie-2
 | Toenemende connectedness in een crisis | Toename van gedeelde afhankelijkheden bij een storing of wijziging |
 | Spillover tussen sectoren | Spillover tussen IT, OT, governance en assurance |
 
-**Grens:** DCC-GARCH is toegepast op financiële tijdreeksen en is **niet gevalideerd voor cyberrisico's**. In het lab bestaan geen vergelijkbare tijdreeksen. De analogie levert onderzoeksvragen op, geen methode, model of bewijs. Er wordt geen academische of methodologische meerwaarde geclaimd ([academische referenties](../../../onderzoek/academische-referenties/README.md#relevantie-voor-hybrid-theory)).
+**Grens:** DCC-GARCH is toegepast op financiële tijdreeksen en is **niet gevalideerd voor cyberrisico's**. In het lab bestaan geen vergelijkbare tijdreeksen. De analogie levert onderzoeksvragen op, geen methode, model of bewijs. Er wordt geen academische of methodologische meerwaarde geclaimd ([academische referenties](../../../../onderzoek/academische-referenties/README.md#relevantie-voor-hybrid-theory)).
 
 ## Grenzen van traditionele controlgerichte beoordelingen (onderzoekshypothesen)
 
 1. **Controlisolatie:** een SoA toont welke controls gekozen zijn, niet welke controls dezelfde component delen.
-2. **Point-in-time:** een audit beoordeelt een moment; drift tussen beoordelingen valt buiten beeld ([CAT/ACE §7, gap 15](../../../governance/CAT_ACE_v0.4.md#7-typen-gap-analyses-welke-vraag-wordt-onderzocht)).
+2. **Point-in-time:** een audit beoordeelt een moment; drift tussen beoordelingen valt buiten beeld ([CAT/ACE §7, gap 15](../../../../governance/CAT_ACE_v0.4.md#7-typen-gap-analyses-welke-vraag-wordt-onderzocht)).
 3. **Steekproef:** zeldzame cascades komen in een steekproef zelden voor.
 4. **Grensverlies:** IT-, OT- en cloudcontrols worden vaak door verschillende teams en kaders beoordeeld; afhankelijkheden over die grens heen hebben geen eigenaar.
 5. **Assurance op assurance:** beoordelingen die op dezelfde beoordelaar of hetzelfde hulpmiddel steunen, delen dezelfde blinde vlek.

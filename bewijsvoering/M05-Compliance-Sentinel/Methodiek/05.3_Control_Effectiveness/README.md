@@ -1,6 +1,6 @@
 # 05.3 — Control Effectiveness | M05 Compliance Sentinel
 
-**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../README.md)
+**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../../README.md)
 
 ## Doel
 
@@ -42,9 +42,9 @@ ISO/IEC 27002:2022 (implementatierichtlijn per control), NIST SP 800-53A Rev. 5 
 
 | Dimensie | Publieke bron | Publiek gedocumenteerde stand (scoped, geen M05-oordeel) |
 |---|---|---|
-| Ontwerp | [Netwerkontwerp](../../../architectuur/NETWERKONTWERP.md) | Zones achter de firewall met default deny als **ontwerp** (DOCUMENTED) |
-| Implementatie | [M04-dossier](../../M04-Network-Citadel/README.md) en [galerij](../../M04-Network-Citadel/M04-GALERIJ.md) | OT-interface en regels zijn in gesaneerde beelden zichtbaar (DOCUMENTED) |
-| Werking | [M04 fase 20](../../M04-Network-Citadel/20_OT_segmentation_and_regression/README.md), [M04-GAPS](../../M04-Network-Citadel/M04-GAPS.md#aanvulling-19-november--gerichte-deeltests) | Gerichte deny-flows met BLOCK-events (OBSERVED, scoped); integrale AC04/AC07-matrix **PENDING** |
+| Ontwerp | [Netwerkontwerp](../../../../architectuur/NETWERKONTWERP.md) | Zones achter de firewall met default deny als **ontwerp** (DOCUMENTED) |
+| Implementatie | [M04-dossier](../../../M04-Network-Citadel/README.md) en [galerij](../../../M04-Network-Citadel/M04-GALERIJ.md) | OT-interface en regels zijn in gesaneerde beelden zichtbaar (DOCUMENTED) |
+| Werking | [M04 fase 20](../../../M04-Network-Citadel/20_OT_segmentation_and_regression/README.md), [M04-GAPS](../../../M04-Network-Citadel/M04-GAPS.md#aanvulling-19-november--gerichte-deeltests) | Gerichte deny-flows met BLOCK-events (OBSERVED, scoped); integrale AC04/AC07-matrix **PENDING** |
 
 Het publieke bewijs ondersteunt dus hooguit een **scoped** oordeel over specifieke stromen, geen integrale werking van A.8.22. Dit voorbeeld illustreert de beoordelingsvorm; het is niet het MINI-01-resultaat.
 
@@ -63,7 +63,7 @@ Het publieke bewijs ondersteunt dus hooguit een **scoped** oordeel over specifie
 
 ## Beperkingen
 
-- Een regelscreenshot is geen werkingsbewijs; een timeout is geen bewezen blokkade zonder logcorrelatie ([Statuslegenda §7](../../../governance/STATUSLEGENDA.md#7-bewijsdiscipline)).
+- Een regelscreenshot is geen werkingsbewijs; een timeout is geen bewezen blokkade zonder logcorrelatie ([Statuslegenda §7](../../../../governance/STATUSLEGENDA.md#7-bewijsdiscipline)).
 - Verkeer dat niet via de control loopt, kan de control niet bewijzen.
 - FAILs en mislukte tests blijven als historisch bewijs staan.
 - Publiek gesaneerde beelden kunnen details missen die voor een volledige beoordeling nodig zijn.

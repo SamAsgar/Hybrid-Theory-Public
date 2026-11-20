@@ -1,6 +1,6 @@
 # 05.1 — Scope & Applicability | M05 Compliance Sentinel
 
-**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../README.md)
+**Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../../README.md)
 
 ## Doel
 
@@ -19,8 +19,8 @@ Vaststellen **wat** er in een casus wordt beoordeeld, **waartegen** en **waarom*
 
 - **Scope-statement** opstellen: object, trust boundary, periode, uitsluitingen.
 - **Stakeholder- en belangenoverzicht**, in het lab grotendeels **SIMULATED**.
-- **Kaderselectie** uit het [Framework Register](../README.md#6-framework-register), met versie, control-ID en N/A-motivatie volgens [CAT/ACE §4](../../../governance/CAT_ACE_v0.4.md#4-taxonomie-van-referentiekaders-niet-alles-is-een-regulatory-framework).
-- **Soort eis classificeren** volgens onderstaande tabel; de juridische uitwerking blijft in [Wet- en regelgevingskaders](../../../governance/WET_EN_REGELGEVING.md).
+- **Kaderselectie** uit het [Framework Register](../../README.md#6-framework-register), met versie, control-ID en N/A-motivatie volgens [CAT/ACE §4](../../../../governance/CAT_ACE_v0.4.md#4-taxonomie-van-referentiekaders-niet-alles-is-een-regulatory-framework).
+- **Soort eis classificeren** volgens onderstaande tabel; de juridische uitwerking blijft in [Wet- en regelgevingskaders](../../../../governance/WET_EN_REGELGEVING.md).
 - **Casusgebonden mini-SoA**: alleen de geselecteerde controls voor deze casus, met reden voor opname of uitsluiting. Geen volledige Statement of Applicability.
 
 | Soort eis | Voorbeeld | Bindend voor Hybrid-Theory? |
