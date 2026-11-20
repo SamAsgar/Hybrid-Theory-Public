@@ -23,9 +23,9 @@ Deze gegevens komen uit gedateerde sessielogs en zijn **geen nieuwe live-meting*
 
 ### 1.1 Huidige verkeersstromen (stand 20 november 2026)
 
-![Diagram A: huidige geïmplementeerde architectuur met officiële aliassen, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg)
+![Diagram A2: beheerpaden en OT-zonegrens per verkeersstroom, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg)
 
-*Figuur A. Architectuurillustratie, **geen testbewijs**.*
+*Figuur A2. Architectuurillustratie, **geen testbewijs**. Topologie: [diagram A1](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · statustabel en legenda: [diagram A3](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg).*
 
 | # | Stroom | Pad | Status binnen de geteste scope |
 |---|---|---|---|

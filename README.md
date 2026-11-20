@@ -14,9 +14,9 @@ Hybrid-Theory is een hands-on cybersecurity-engineeringlab en experimenteel onde
 
 ### Architectuur
 
-![Diagram A — huidige architectuur, stand 20 november 2026](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg)
+![Diagram A1 — topologie en zones, stand 20 november 2026](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg)
 
-[Huidige architectuur · Diagram A (20 nov.)](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg) · [Diagram A als PNG](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.png) · [Doelarchitectuur · Diagram B](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-20.svg) · [Architectuur- en netwerkontwerp](architectuur/README.md)
+[Diagram A1 · topologie en zones](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [Diagram A2 · beheerpaden en OT-zonegrens](architectuur/diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg) · [Diagram A3 · teststatus en acceptatie](architectuur/diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg) · [Doelarchitectuur · Diagram B](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-20.svg) · [Architectuur- en netwerkontwerp](architectuur/README.md)
 
 Diagram A toont de huidige netwerken, geïmplementeerde onderdelen en de gescopeerde M04-teststatus per 20 november; Diagram B is een doelontwerp en geen implementatie. Beide zijn architectuurillustraties, geen zelfstandig testbewijs. Zie ook de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md).
 
