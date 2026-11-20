@@ -29,7 +29,7 @@ Werkelijke adressen worden niet gepubliceerd. Het actuele overzicht staat in [Ar
 | LAB-gateway | Gerichte ICMP-proeven met respons |
 | Firewallregelvolgorde | Eén negatieve ICMP-test buiten de LAB-scope op 26 oktober als geblokkeerd gerapporteerd; latere uitzonderingen/regelvolgorde afzonderlijk op 1 november gecontroleerd |
 | OT-zone: LAB→OT | Eén onbevoegde verbindingspoging vanuit het LAB is op 11 november aantoonbaar geblokkeerd, met firewalllog (**gerichte deeltest PASS**) |
-| OT-zone: beheerpad | Webbeheer van PLC01 en FUXA01 bereikbaar vanaf de aangewezen beheerbron (**TESTED**, 11 en 15 november) |
+| OT-zone: beheerpad | Webbeheer van PLC01 en FUXA01 bereikbaar vanaf de aangewezen beheerbron (**TESTED**, 11 en 15 november; TCP/8080 via de LAN-forward herbevestigd op 20 november) |
 | Compleet isolatiemodel | **PENDING** voor aanvullende scope: niet alle netwerken, protocollen of toestanden getest; AC04 en AC07 open |
 
 ## Laatst gedocumenteerde uitzondering (1 november 2026)
@@ -58,4 +58,4 @@ Voordat pfSense-regels opnieuw worden aangepast: controleer de configuratie-expo
 
 De twee bronbeperkte beheerforwards staan op LAN. Een gerichte IPv4-block van LAN naar OT volgt op de beheeruitzonderingen en gaat vóór de brede LAN IPv4-allow. De brede LAN IPv6-allow blijft een open beoordelingspunt. Zowel de directe Windows-route naar PLC01 als de getoonde beheerforward verklaren waarom een time-out naar het firewalladres de drie directe PLC-proeven openlaat.
 
-Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Veilige live WAN-test, herstelbewijs en volledige AC04/AC07-acceptatie staan open. [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md).
+Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Veilige live WAN-test, herstelbewijs en volledige AC04/AC07-acceptatie staan open. [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Diagram A, stand 20 november](README.md#1-diagram-a--huidige-geïmplementeerde-architectuur-20-november-2026).

@@ -14,11 +14,11 @@ Hybrid-Theory is een hands-on cybersecurity-engineeringlab en experimenteel onde
 
 ### Architectuur
 
-![Diagram A — huidige architectuur](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg)
+![Diagram A — huidige architectuur, stand 20 november 2026](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg)
 
-[Huidige architectuur · Diagram A](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) · [Doelarchitectuur · Diagram B](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg) · [Architectuur- en netwerkontwerp](architectuur/README.md)
+[Huidige architectuur · Diagram A (20 nov.)](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg) · [Diagram A als PNG](architectuur/diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.png) · [Doelarchitectuur · Diagram B](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-20.svg) · [Architectuur- en netwerkontwerp](architectuur/README.md)
 
-Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B is een doelontwerp. Beide zijn architectuurillustraties, geen zelfstandig testbewijs. Zie ook de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md).
+Diagram A toont de huidige netwerken, geïmplementeerde onderdelen en de gescopeerde M04-teststatus per 20 november; Diagram B is een doelontwerp en geen implementatie. Beide zijn architectuurillustraties, geen zelfstandig testbewijs. Zie ook de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md).
 
 ### Missies en aantoonbare voortgang
 
@@ -32,7 +32,7 @@ Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B 
 | **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Milestone 01 niet behaald. [Missiedocumentatie](Portfolio/M01-Hypervisor-Fortress/README.md) |
 | **M02 — Phoenix Recovery** | **PENDING**; herstelarchitectuur is beschreven, maar onafhankelijke off-host restore is niet aangetoond. [Ontwerp en status](governance/M02-Phoenix-Recovery/README.md) |
 | **M03 — Identity Dominion** | **IN PROGRESS**; AD/DNS, domain join, testlogin en één GPO zijn **PASS binnen scope**; Entra is **PLANNED**. [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**. Historische PLC/HMI-regressie AC01–AC03 **scoped PASS**. Aanvullende LAB- en OT-blokkades onderbouwd met firewalllogs. Integrale AC04/AC07, bewijsreview en eigenaaracceptatie **PENDING**. Milestone 01 niet behaald. [Missiedocumentatie](Portfolio/M04-Network-Citadel/README.md) · [C2-testdelta](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) |
+| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**. Historische PLC/HMI-regressie AC01–AC03 **scoped PASS**. Aanvullende LAB- en OT-blokkades onderbouwd met firewalllogs. Integrale AC04/AC07, bewijsreview en eigenaaracceptatie **PENDING**. Milestone 01 niet behaald. AC05 **PENDING**, AC06/AC08 **PLANNED**. [Missiedocumentatie](Portfolio/M04-Network-Citadel/README.md) · [C2-testdelta](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Architectuur (diagram A)](architectuur/README.md) |
 | **M05 — Compliance Sentinel** | Structuur met zeven onderzoekshoofdstukken en Framework Register **APPROVED**; technische uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED**; eerste casus M05-MINI-01 (ISO/IEC 27001 A.8.22 op de M04-segmentatie) **PLANNED**. Geen compliance- of assuranceverklaring. [M05-documentatie](Portfolio/M05-Compliance-Sentinel/README.md) |
 
 ### Portfolio
