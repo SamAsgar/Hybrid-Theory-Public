@@ -1,7 +1,7 @@
 # M04 Network Citadel | Evidence-index
 
 **Periode:** 30 oktober t/m 19 november 2026  
-**Inhoud:** 265 gesaneerde PNG-afgeleiden van de originele screenshots · 20 fasen  
+**Inhoud:** 265 bewijsregistraties; 264 aanwezige gesaneerde PNG-afgeleiden · 20 fasen  
 **Status:** vastgelegd bewijs, niet gelijk aan voltooiing van alle acceptatiecriteria.  
 **Repository:** PUBLIC. Alleen gesaneerde afgeleiden; de originelen blijven uitsluitend privé. Zie [saneringsrapport](M04-SANITIZATION-REPORT.md).
 

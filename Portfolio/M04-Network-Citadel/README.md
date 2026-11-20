@@ -4,7 +4,7 @@
 **Missie:** M04 Network Citadel  
 **Periode van de evidence:** 30 oktober t/m 19 november 2026  
 **Status:** uitvoering en verificatie deels open (`M04-CORE = IN PROGRESS`)  
-**Evidence:** **265 gesaneerde PNG-afgeleiden** in 20 technische fasen  
+**Evidence:** **264 aanwezige gesaneerde PNG-afgeleiden** in 20 technische fasen; 265 geregistreerd, één ontbreekt  
 **Classificatie:** PUBLIC · gesaneerde afgeleiden · de originelen blijven uitsluitend privé
 
 > Dit is een gecontroleerde, gesaneerde migratie van de private M04-bewijsset. Elk beeld is onomkeerbaar pixelgemaskeerd: IP-, MAC- en IPv6-adressen, hostnames, gebruikersnamen, lokale paden, sessiecookies, VM- en segmentnamen en apparaat-ID's zijn verwijderd. Waar een officiële alias bestaat, staat die in de maskering, zoals `PFSENSE_MGMT_IP` of `PLC01_OT_IP`. Overige waarden zijn als `REDACTED_*` gemarkeerd. Zie het [saneringsrapport](M04-SANITIZATION-REPORT.md).

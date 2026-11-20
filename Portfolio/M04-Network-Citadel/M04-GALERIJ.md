@@ -1,6 +1,6 @@
 # M04 | Evidence-galerij per fase
 
-Deze galerij is bewust in **20 pagina's** verdeeld. GitHub moet niet alle 265 grote PNG's tegelijk renderen. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
+Deze galerij is bewust in **20 pagina's** verdeeld. GitHub hoeft niet alle 264 aanwezige PNG's tegelijk te renderen. De index registreert 265 bewijsitems; één PNG (M04-EV-113) is niet gepubliceerd. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
 
 - **23× Baseline vóór de OT-migratie:** [Bekijk galerij](M04-Bewijsvoering/01_Pre_migration_baseline/README.md)
 - **3× VM-netwerkconfiguratie:** [Bekijk galerij](M04-Bewijsvoering/02_VM_Network_setup/README.md)
