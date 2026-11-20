@@ -1,8 +1,8 @@
 # M01 | Saneringsrapport en publicatieverantwoording
 
 **Datum migratie:** 17 november 2026  
-**Bron:** private repository, map `bewijsvoering/M01-Hypervisor-Fortress` (alleen gelezen, niets gewijzigd)  
-**Doel:** `bewijsvoering/M01-Hypervisor-Fortress/` in deze publieke repository  
+**Bron:** private repository, map `Portfolio/M01-Hypervisor-Fortress` (alleen gelezen, niets gewijzigd)  
+**Doel:** `Portfolio/M01-Hypervisor-Fortress/` in deze publieke repository  
 **Principe:** maximale technische transparantie, geen gevoelige blootstelling. Bij twijfel is gemaskeerd.
 
 ## 1. Werkwijze
@@ -32,7 +32,7 @@
 
 | Bestand | Behandeling |
 |---|---|
-| `screenshots/` (82 PNG) | Gesaneerde afgeleiden; 58 beelden met automatische en/of handmatige maskers, in totaal 2971 maskervakken |
+| `M01-Bewijsvoering/` (82 PNG) | Gesaneerde afgeleiden; 58 beelden met automatische en/of handmatige maskers, in totaal 2971 maskervakken |
 | `EVIDENCE-INDEX.md` | Gesaneerd: VM-namen naar logische namen, paden geredigeerd, statuskop en leeswijzer aangepast aan publicatie |
 | `GAP-ANALYSE.md` | Gesaneerd overgezet; inhoudelijke bevindingen ongewijzigd |
 | `MANIFEST_SHA256.txt` | Nieuw: alleen hashes van de publieke afgeleiden |
@@ -69,7 +69,7 @@
 | 82 private originele PNG's | Alleen gesaneerde afgeleiden gepubliceerd |
 | Bron-`README.md` | Vervangen door een publieke versie; de private versie beschrijft private branches, importprocedures en waarschuwingen over ruwe inhoud |
 | `IMPORT-VERIFICATION-2026-11-15.md` | Niet overgenomen: private importprocedure (private PR's, ZIP-herkomst, Git-blobcontroles op de originelen) zonder publieke bewijswaarde |
-| `screenshots/README.md` | Niet overgenomen; de map wordt beschreven in de publieke README |
+| `M01-Bewijsvoering/README.md` | Niet overgenomen; de map wordt beschreven in de publieke README |
 | Private originele SHA-256-waarden | Vervangen; zouden de private bron herleidbaar maken |
 
 Er is **geen** M01-screenshot volledig uitgesloten.

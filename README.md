@@ -29,20 +29,20 @@ Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B 
 
 | Missie | Status en beknopte scope |
 |---|---|
-| **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Milestone 01 niet behaald. [Missiedocumentatie](bewijsvoering/M01-Hypervisor-Fortress/README.md) |
+| **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Milestone 01 niet behaald. [Missiedocumentatie](Portfolio/M01-Hypervisor-Fortress/README.md) |
 | **M02 — Phoenix Recovery** | **PENDING**; herstelarchitectuur is beschreven, maar onafhankelijke off-host restore is niet aangetoond. [Ontwerp en status](governance/M02-Phoenix-Recovery/README.md) |
 | **M03 — Identity Dominion** | **IN PROGRESS**; AD/DNS, domain join, testlogin en één GPO zijn **PASS binnen scope**; Entra is **PLANNED**. [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**; post-migratie PLC/HMI-start/stop **0→1→0 functioneel TESTED / scoped PASS**. Gerichte LAB/OT/egress-deny-tests zijn met firewalllogs gecorreleerd; geautoriseerde beheerpoorten zijn positief getest (**scoped PASS**). Integrale AC04/AC07-matrix, onafhankelijke evidence-review en eigenaaracceptatie blijven **PENDING**. Milestone 01 niet behaald. [Missiedocumentatie](bewijsvoering/M04-Network-Citadel/README.md) |
-| **M05 — Compliance Sentinel** | Structuur met zeven onderzoekshoofdstukken en Framework Register **APPROVED**; technische uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED**; eerste casus M05-MINI-01 (ISO/IEC 27001 A.8.22 op de M04-segmentatie) **PLANNED**. Geen compliance- of assuranceverklaring. [M05-documentatie](bewijsvoering/M05-Compliance-Sentinel/README.md) |
+| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**; post-migratie PLC/HMI-start/stop **0→1→0 functioneel TESTED / scoped PASS**. Gerichte LAB/OT/egress-deny-tests zijn met firewalllogs gecorreleerd; geautoriseerde beheerpoorten zijn positief getest (**scoped PASS**). Integrale AC04/AC07-matrix, onafhankelijke evidence-review en eigenaaracceptatie blijven **PENDING**. Milestone 01 niet behaald. [Missiedocumentatie](Portfolio/M04-Network-Citadel/README.md) |
+| **M05 — Compliance Sentinel** | Structuur met zeven onderzoekshoofdstukken en Framework Register **APPROVED**; technische uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED**; eerste casus M05-MINI-01 (ISO/IEC 27001 A.8.22 op de M04-segmentatie) **PLANNED**. Geen compliance- of assuranceverklaring. [M05-documentatie](Portfolio/M05-Compliance-Sentinel/README.md) |
 
-### Bewijsvoering
+### Portfolio
 
 | Missie | Gepubliceerde bewijsset | Detail |
 |---|---|---|
-| **M01** | 82 gesaneerde screenshots | [Bewijsindex](bewijsvoering/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](bewijsvoering/M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) |
-| **M04** | 265 gesaneerde screenshots in 20 fasen | [Bewijsindex](bewijsvoering/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](bewijsvoering/M04-Network-Citadel/M04-GALERIJ.md) · [Fase 20 (19 nov.)](bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md) · [Saneringsrapport](bewijsvoering/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
+| **M01** | 82 gesaneerde screenshots | [Bewijsindex](Portfolio/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](Portfolio/M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) |
+| **M04** | 265 gesaneerde screenshots in 20 fasen | [Bewijsindex](Portfolio/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) · [Fase 20 (19 nov.)](Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [Saneringsrapport](Portfolio/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
 
-De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen behaalde milestone. Aanvullende [componentbewijsvoering](bewijsvoering/VMware/) en de [bewijsvoering per missie](bewijsvoering/README.md) zijn beschikbaar.
+De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen behaalde milestone. Aanvullende [componentbewijsvoering](Portfolio/VMware/) en de [bewijsvoering per missie](Portfolio/README.md) zijn beschikbaar.
 
 ### Status lezen
 

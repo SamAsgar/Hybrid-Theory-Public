@@ -13,6 +13,8 @@
 
 De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en verifiëren. Dat omvat VMware VMnet, pfSense, OpenPLC/PLC01, FUXA, Modbus TCP, het beheerpad vanaf de host, firewallregels, NAT/port-forwarding, diagnostiek, logging en regressietests.
 
+**Fasen 01–20:** [M04-Bewijsvoering](M04-Bewijsvoering/README.md).
+
 ## 2. Navigatie
 
 - [Alle 210 screenshots met beschrijving en bewijsgrens](M04-EVIDENCE-INDEX.md)
@@ -21,8 +23,8 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 - [Saneringsrapport en publicatieverantwoording](M04-SANITIZATION-REPORT.md)
 - [SHA-256-manifest van de gepubliceerde afgeleiden](M04-SHA256SUMS.txt)
 - [Evidence-register (CSV)](M04-EVIDENCE.csv)
-- [15 november: FUXA-vervolgonderzoek](19_FUXA_followup/ADDENDUM-2026-11-15.md)
-- [19 november: OT-segmentatie, pfSense en PLC/HMI-regressie](20_OT_segmentation_and_regression/README.md) · [aanvullend saneringsrapport](20_OT_segmentation_and_regression/M04-PHASE20-SANITIZATION-REPORT.md)
+- [15 november: FUXA-vervolgonderzoek](M04-Bewijsvoering/19_FUXA_followup/ADDENDUM-2026-11-15.md)
+- [19 november: OT-segmentatie, pfSense en PLC/HMI-regressie](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [aanvullend saneringsrapport](M04-Bewijsvoering/20_OT_segmentation_and_regression/M04-PHASE20-SANITIZATION-REPORT.md)
 
 ## 3. Technische keten
 
@@ -59,4 +61,4 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 
 ## 7. Evidence-aanvulling 19 november 2026
 
-De [nieuwe fase-20-galerij](20_OT_segmentation_and_regression/README.md) bevat 55 met SSOT-aliassen gesaneerde beelden van PLC/HMI-regressie, firewalllogs en gerichte LAB→OT-, OT→LAB- en egress-tests. Dit zijn afgebakende deelresultaten: integrale AC04/AC07 blijft **PENDING** en handmatige privacy-/bewijsreview is nog vereist.
+De [nieuwe fase-20-galerij](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) bevat 55 met SSOT-aliassen gesaneerde beelden van PLC/HMI-regressie, firewalllogs en gerichte LAB→OT-, OT→LAB- en egress-tests. Dit zijn afgebakende deelresultaten: integrale AC04/AC07 blijft **PENDING** en handmatige privacy-/bewijsreview is nog vereist.

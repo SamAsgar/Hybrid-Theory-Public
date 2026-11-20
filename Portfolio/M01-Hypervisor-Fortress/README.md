@@ -17,7 +17,7 @@
 | [GAP-ANALYSE.md](GAP-ANALYSE.md) | Voorlopige assessment per control en de nog ontbrekende M01-controles |
 | [MANIFEST_SHA256.txt](MANIFEST_SHA256.txt) | SHA-256 van alle 82 **gepubliceerde afgeleiden** |
 | [M01-SANITIZATION-REPORT.md](M01-SANITIZATION-REPORT.md) | Werkwijze, maskeringen, uitsluitingen en restrisico's |
-| [screenshots/](screenshots/) | De 82 gesaneerde PNG's (oorspronkelijke bestandsnamen = opnamedatum en -tijd) |
+| [M01-Bewijsvoering/](M01-Bewijsvoering/) | De 82 gesaneerde PNG's (oorspronkelijke bestandsnamen = opnamedatum en -tijd) |
 
 ## Methode en kwaliteitsgrenzen
 
@@ -39,7 +39,7 @@
 
 ## Integriteit
 
-De gepubliceerde PNG's zijn afgeleiden, geen originelen. De hashes in [MANIFEST_SHA256.txt](MANIFEST_SHA256.txt) horen bij deze publieke bestanden. Hashes van de private originelen worden bewust niet gepubliceerd. Controle vanuit `bewijsvoering/`:
+De gepubliceerde PNG's zijn afgeleiden, geen originelen. De hashes in [MANIFEST_SHA256.txt](MANIFEST_SHA256.txt) horen bij deze publieke bestanden. Hashes van de private originelen worden bewust niet gepubliceerd. Controle vanuit `Portfolio/`:
 
 ```bash
 sha256sum -c M01-Hypervisor-Fortress/MANIFEST_SHA256.txt

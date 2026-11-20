@@ -1,4 +1,4 @@
-# Technische bewijsvoering | Hybrid-Theory
+# Portfolio | Technische bewijsvoering | Hybrid-Theory
 
 Deze index leidt naar missiegebonden bewijs, componentinventarissen en de statusgrenzen. Bewijsbestanden tonen uitsluitend de daarin beschreven observaties; ze bewijzen op zichzelf geen behaalde milestone. M01–M05 zijn permanente Main Missions; geen missie heeft Milestone 01 bereikt ([statuslegenda §3a](../governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026)).
 
