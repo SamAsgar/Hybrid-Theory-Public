@@ -3,7 +3,7 @@
 **Aantal beelden:** 12  
 **Classificatie:** PUBLIC · Gesaneerde afgeleide (onomkeerbare pixelmaskering) · geen origineel
 
-[Terug naar M04-hoofdindex](../M04-EVIDENCE-INDEX.md)
+[Terug naar M04-hoofdindex](../../M04-EVIDENCE-INDEX.md)
 
 ---
 

@@ -3,7 +3,7 @@
 **55 gesaneerde screenshots** · PRIVATE originelen niet opgenomen · **M04-CORE: IN PROGRESS**  
 **Status:** AC01–AC03 functionele deeltests binnen gerapporteerde scope; integrale AC04/AC07-matrix **PENDING**.
 
-[Terug naar M04](../README.md) · [Galerij per fase](../M04-GALERIJ.md) · [Saneringsrapport](M04-PHASE20-SANITIZATION-REPORT.md)
+[Terug naar M04](../../README.md) · [Galerij per fase](../../M04-GALERIJ.md) · [Saneringsrapport](M04-PHASE20-SANITIZATION-REPORT.md)
 
 ## Saneringsmethode en bewijsgrenzen
 
