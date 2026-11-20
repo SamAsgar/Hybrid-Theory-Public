@@ -44,7 +44,7 @@ ISO/IEC 27002:2022 (implementatierichtlijn per control), NIST SP 800-53A Rev. 5 
 |---|---|---|
 | Ontwerp | [Netwerkontwerp](../../../../architectuur/NETWERKONTWERP.md) | Zones achter de firewall met default deny als **ontwerp** (DOCUMENTED) |
 | Implementatie | [M04-dossier](../../../M04-Network-Citadel/README.md) en [galerij](../../../M04-Network-Citadel/M04-GALERIJ.md) | OT-interface en regels zijn in gesaneerde beelden zichtbaar (DOCUMENTED) |
-| Werking | [M04 fase 20](../../../M04-Network-Citadel/20_OT_segmentation_and_regression/README.md), [M04-GAPS](../../../M04-Network-Citadel/M04-GAPS.md#aanvulling-19-november--gerichte-deeltests) | Gerichte deny-flows met BLOCK-events (OBSERVED, scoped); integrale AC04/AC07-matrix **PENDING** |
+| Werking | [M04 fase 20](../../../M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md), [M04-GAPS](../../../M04-Network-Citadel/M04-GAPS.md#aanvulling-19-november--gerichte-deeltests) | Gerichte deny-flows met BLOCK-events (OBSERVED, scoped); integrale AC04/AC07-matrix **PENDING** |
 
 Het publieke bewijs ondersteunt dus hooguit een **scoped** oordeel over specifieke stromen, geen integrale werking van A.8.22. Dit voorbeeld illustreert de beoordelingsvorm; het is niet het MINI-01-resultaat.
 

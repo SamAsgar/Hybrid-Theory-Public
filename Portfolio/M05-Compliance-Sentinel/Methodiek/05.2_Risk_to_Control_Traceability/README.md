@@ -44,7 +44,7 @@ ISO/IEC 27005:2022 (risicoproces), ISO/IEC 27001:2022 hoofdstuk 6.1.2–6.1.3 en
 | **Risk** | Ongewenste procesbesturing of verstoring; kans en impact met expliciete aannames | SIMULATED (fictieve bedrijfsimpact) |
 | **Owner** | Fictieve OT-proceseigenaar als risico-eigenaar; firewallbeheerder als control-eigenaar | SIMULATED |
 | **Control** | ISO/IEC 27001:2022 A.8.22 — segmentatie met default deny tussen zones | DOCUMENTED (ontwerp) |
-| **Evidence** | Gerichte negatieve tests met firewalllogs ([M04 fase 20](../../../M04-Network-Citadel/20_OT_segmentation_and_regression/README.md)) | OBSERVED (scoped; review PENDING) |
+| **Evidence** | Gerichte negatieve tests met firewalllogs ([M04 fase 20](../../../M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md)) | OBSERVED (scoped; review PENDING) |
 | **Verdict** | Scoped onderzoeksbeoordeling; in dit voorbeeld zou de integrale werking **NOT VERIFIED** blijven | — |
 | **Decision** | Besluit van Sam: verder testen, corrigeren of tijdelijk accepteren | Nog niet genomen |
 
