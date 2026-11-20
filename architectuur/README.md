@@ -6,9 +6,25 @@ Deze map beschrijft de netwerkarchitectuur van het Hybrid-Theory-lab in twee lag
 
 ## 1. Diagram A — huidige geïmplementeerde architectuur (20 november 2026)
 
-![Hybrid-Theory — diagram A: huidige geïmplementeerde architectuur met officiële aliassen, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg)
+Diagram A bestaat uit drie delen, zodat de tekst op schermbreedte leesbaar blijft. Alle drie zijn **architectuurillustraties**, geen testbewijs en geen live-meting, en bevatten geen werkelijke adressen.
 
-*Figuur 1. **Architectuurillustratie**, geen testbewijs en geen live-meting. De figuur bevat geen werkelijke adressen.* [Bewerkbare SVG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.png)
+**A1 · Topologie en zones:** thuisnetwerk, labhost, pfSense-interfaces en de componenten per zone.
+
+![Hybrid-Theory — diagram A1: topologie en zones met officiële aliassen, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg)
+
+*Figuur 1a.* [SVG](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.png)
+
+**A2 · Beheerpaden en OT-zonegrens:** per verkeersstroom de bron, het controlepunt op pfSense, het doel en de teststatus van 20 november.
+
+![Hybrid-Theory — diagram A2: beheerpaden en OT-zonegrens per verkeersstroom, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg)
+
+*Figuur 1b.* [SVG](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.png)
+
+**A3 · Teststatus, acceptatie en legenda:** tabel F09–F24, missie- en acceptatiestatus en legenda.
+
+![Hybrid-Theory — diagram A3: teststatus, acceptatie en legenda, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg)
+
+*Figuur 1c.* [SVG](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.png) · Dezelfde inhoud in één groot overzicht: [SVG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg) · [PNG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.png)
 
 **Wat de figuur laat zien:**
 
