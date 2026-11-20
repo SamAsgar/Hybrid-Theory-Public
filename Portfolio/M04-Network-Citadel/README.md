@@ -4,7 +4,7 @@
 **Missie:** M04 Network Citadel  
 **Periode van de evidence:** 30 oktober t/m 19 november 2026  
 **Status:** uitvoering en verificatie deels open (`M04-CORE = IN PROGRESS`)  
-**Evidence:** **264 aanwezige gesaneerde PNG-afgeleiden** in 20 technische fasen; 265 geregistreerd, één ontbreekt  
+**Evidence:** **264 aanwezige gesaneerde PNG-afgeleiden** in fasen 01–20; 265 geregistreerd, één ontbreekt. Fase 21 voegt **52 gesaneerde weergaven** toe.  
 **Classificatie:** PUBLIC · gesaneerde afgeleiden · de originelen blijven uitsluitend privé
 
 > Dit is een gecontroleerde, gesaneerde migratie van de private M04-bewijsset. Elk beeld is onomkeerbaar pixelgemaskeerd: IP-, MAC- en IPv6-adressen, hostnames, gebruikersnamen, lokale paden, sessiecookies, VM- en segmentnamen en apparaat-ID's zijn verwijderd. Waar een officiële alias bestaat, staat die in de maskering, zoals `PFSENSE_MGMT_IP` of `PLC01_OT_IP`. Overige waarden zijn als `REDACTED_*` gemarkeerd. Zie het [saneringsrapport](M04-SANITIZATION-REPORT.md).
@@ -62,3 +62,5 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 ## 7. Evidence-aanvulling 19 november 2026
 
 De [nieuwe fase-20-galerij](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) bevat 55 met SSOT-aliassen gesaneerde beelden van PLC/HMI-regressie, firewalllogs en gerichte LAB→OT-, OT→LAB- en egress-tests. Dit zijn afgebakende deelresultaten: integrale AC04/AC07 blijft **PENDING** en handmatige privacy-/bewijsreview is nog vereist.
+
+De [fase-21-reeks](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md) bevat de chronologisch geordende CORE C2-opnamen van 20 november 2026, met een eigen manifest en saneringsrapport.

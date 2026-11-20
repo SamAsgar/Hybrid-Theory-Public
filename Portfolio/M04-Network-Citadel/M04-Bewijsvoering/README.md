@@ -1,6 +1,6 @@
 # M04-Bewijsvoering | Network Citadel
 
-Deze map bevat de **20 fasen (01–20)** met gesaneerd publiek bewijsmateriaal van M04. De PNG-bestanden zijn niet aangepast door deze reorganisatie. Private originelen worden hier niet gepubliceerd.
+Deze map bevat de **21 fasen (01–21)** met gesaneerd publiek bewijsmateriaal van M04. De PNG-bestanden zijn niet aangepast door deze reorganisatie. Private originelen worden hier niet gepubliceerd.
 
 [Terug naar M04](../README.md) · [Bewijsindex](../M04-EVIDENCE-INDEX.md) · [Galerij](../M04-GALERIJ.md) · [Saneringsrapport](../M04-SANITIZATION-REPORT.md)
 
@@ -24,5 +24,6 @@ Deze map bevat de **20 fasen (01–20)** met gesaneerd publiek bewijsmateriaal v
 - [18_Forward_and_regression](18_Forward_and_regression/README.md)
 - [19_FUXA_followup](19_FUXA_followup/README.md)
 - [20_OT_segmentation_and_regression](20_OT_segmentation_and_regression/README.md)
+- [21_CORE_C2_firewall_and_isolation](21_CORE_C2_firewall_and_isolation/README.md)
 
 **Bewijsgrens:** screenshots en losse deeltests betekenen geen integrale missieacceptatie.
