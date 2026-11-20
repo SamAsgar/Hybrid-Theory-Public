@@ -53,3 +53,9 @@ Voor één Windows 11-testclient is tijdelijk een brede **IPv4 ALLOW Any-egressr
 Volgens de private M04-werkwijze van 20 november blijven de gerichte LAB→OT, OT→LAB en OT→externe-bestemming-denies van 19 november gescopeerde testresultaten en hoeven ze alleen opnieuw bij gewijzigde regels of onvoldoende bewijs. Voor aanvullende tests staan onder meer MGMT→ongeautoriseerde services, brede LAN IPv4-/IPv6-allowregels, OT→MGMT, UDP-egress, WAN→OT en effectieve Windows-bronroute open.
 
 Voordat pfSense-regels opnieuw worden aangepast: controleer de configuratie-export (`config.xml`), integriteit en een herstelroute. Een downloadscherm of snapshot toont nog geen geslaagde restore. Volledige AC04/AC07-matrix, log-/pcapcorrelatie en eigenaaracceptatie blijven **PENDING**. [Fase-20-galerij](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md).
+
+## M04 | Configuratiereview en deeltests op 20 november
+
+De twee bronbeperkte beheerforwards staan op LAN. Een gerichte IPv4-block van LAN naar OT volgt op de beheeruitzonderingen en gaat vóór de brede LAN IPv4-allow. De brede LAN IPv6-allow blijft een open beoordelingspunt. Zowel de directe Windows-route naar PLC01 als de getoonde beheerforward verklaren waarom een time-out naar het firewalladres de drie directe PLC-proeven openlaat.
+
+Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Veilige live WAN-test, herstelbewijs en volledige AC04/AC07-acceptatie staan open. [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md).

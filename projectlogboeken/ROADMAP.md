@@ -1,6 +1,6 @@
 # Engineeringroadmap | Hybrid-Theory
 
-**Werkstatus per 02-11-2026, M04 bijgewerkt op 15-11-2026.** Fasen 0–7 zijn technische werkpakketten; **Lab 01 t/m Lab 05** zijn de beoordelings- en uitvoeringsdomeinen. Zij zijn niet één-op-één gelijk en hoeven niet numeriek te worden uitgevoerd. Zie [statuslegenda](../governance/STATUSLEGENDA.md).
+**Werkstatus per 02-11-2026, M04 bijgewerkt op 20-11-2026.** Fasen 0–7 zijn technische werkpakketten; **Lab 01 t/m Lab 05** zijn de beoordelings- en uitvoeringsdomeinen. Zij zijn niet één-op-één gelijk en hoeven niet numeriek te worden uitgevoerd. Zie [statuslegenda](../governance/STATUSLEGENDA.md).
 
 | Fase | Technisch werkpakket | Aangetoonde status | Nog uit te voeren |
 |---|---|---|---|
@@ -20,7 +20,7 @@
 | **M01** | **Lab 01 — Hypervisor Security & Virtualization Hardening** | **IN PROGRESS**; gerichte controlerondes PASS met één EXCEPTION; Milestone 01 niet behaald | [M01-deelreview](2026-11-01-hypervisor-fortress-deelreview.md) |
 | **M02** | **Lab 02 — Backup, Recovery & Disaster Resilience** | **PENDING**; geen onafhankelijke off-host restore | [AD-herstelgrens](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M03** | **Lab 03 — Hybrid Identity & Access Management** | **IN PROGRESS**; AD-basis gescopeerd PASS; Entra/IAM-uitbreiding niet aangetoond | [AD/DNS/domain join/GPO](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04** | **Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**. AC01–AC03-regressie na PLC-herstart **TESTED / PASS** binnen de geteste scope. AC04/AC07 gerichte netwerkdeeltests **PASS**. De integrale matrix en formele bewijsreview blijven **PENDING**. | [M04-basis](2026-11-06-m04-network-citadel-ot-baseline.md), [M04 11 nov.](2026-11-11-m04-segmentatie-en-beheer-validatie.md), [M04 15 nov.](2026-11-15-m04-ot-modbus-applicatievalidatie.md), [M04 19 nov.](2026-11-19-m04-openplc-autostart-en-ot-regressie.md) |
+| **M04** | **Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**. AC01–AC03-regressie na PLC-herstart **TESTED / PASS** binnen de geteste scope. AC04/AC07 gerichte netwerkdeeltests **PASS**. De integrale matrix en formele bewijsreview blijven **PENDING**. | [M04-basis](2026-11-06-m04-network-citadel-ot-baseline.md), [M04 11 nov.](2026-11-11-m04-segmentatie-en-beheer-validatie.md), [M04 15 nov.](2026-11-15-m04-ot-modbus-applicatievalidatie.md), [M04 19 nov.](2026-11-19-m04-openplc-autostart-en-ot-regressie.md), [M04 C2 20 nov.](2026-11-20-m04-core-c2-netwerkvalidatie.md) |
 | **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | Structuur en zeven onderzoekshoofdstukken **APPROVED** (20 nov.); technische uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED**; eerste casus M05-MINI-01 **PLANNED** | [M05-documentatie](../Portfolio/M05-Compliance-Sentinel/README.md) · [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) (concept, geen lab-PASS) |
 
 ## Permanente Main Missions, milestones en mini-oefeningen
@@ -62,3 +62,7 @@ Dit zijn **inhoudelijke raakvlakken**, geen afrondingscriteria en geen bewijs da
 **GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026); **publieke zichtbaarheid is geen publicatievrijgave.** Beeldredactie, volledige secretscan en Git-geschiedenis zijn niet volledig geverifieerd. Zie het [goedgekeurde publicatiebeleid](../governance/PUBLICATIEBELEID.md).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam; M04-regels op 08-11-2026 en 09-11-2026 bijgewerkt door Claude.
+
+## M04 CORE C2 — 20 november 2026
+
+[Projectlog](2026-11-20-m04-core-c2-netwerkvalidatie.md): gerichte extra LAB- en OT-denies bevestigd. De directe beheerroute, IPv6-beleidsreview, veilige WAN-test, DNS/NTP-ontwerp, herstelbewijs en formele acceptatie staan open. **AC04/AC07 integraal PENDING**. **AC05 PENDING**, **AC06/AC08 PLANNED**. De eigenaar bepaalt AC06-scope en cliëntaantal.

@@ -38,7 +38,7 @@ Deze gegevens komen uit gedateerde sessielogs en zijn **geen nieuwe live-meting*
 | 7 | Agents → Wazuh | Nog niet ingericht | **NOT VERIFIED**; 0 agents |
 | 8 | GNS3-testnet ↔ overige netten | Geen koppeling | Losstaand; ARP/ICMP **PASS** binnen het testnet |
 
-Stroom 1 is **geen firewallregel**: verkeer tussen twee hosts in hetzelfde subnet passeert de firewall niet en zegt dus niets over de zonegrens. Poorten, regels en adressen van het beheerpad zijn bewust niet gepubliceerd. **M04-CORE blijft IN PROGRESS.**
+Stroom 1 is **geen firewallregel**: verkeer tussen twee hosts in hetzelfde subnet passeert de firewall niet en zegt dus niets over de zonegrens. Het beheerpad gebruikt de aangewezen bron en de expliciet toegestane webservices. Zie de C2-update voor de actuele scope. **M04-CORE blijft IN PROGRESS.**
 
 ## 2. HT-C-010: doelarchitectuur en toekomstige netwerkgrenzen
 
@@ -78,3 +78,11 @@ De op 19 november gedocumenteerde reboottest van PLC01 begon met **FAIL** (runti
 De nieuwe [M04-fase-20-galerij](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) koppelt de deeltests aan gesaneerde screenshots. Specifieke LAB→OT, OT→LAB en OT→extern-negatieve flows zijn met BLOCK-logs verbonden. **Geen volledige AC04/AC07-acceptatie**: de resterende matrix vergt onder meer IPv6, UDP, beheer/NAT-scope, WAN→OT, alternatieve routes en tijd-/regel-/pcapcorrelatie.
 
 De private M04-testaanpak is op 20 november gerichter gemaakt om dubbele tests te vermijden, niet om controls over te slaan. pfSense-regelwijzigingen blijven onder autorisatie en herstelgates vallen; de getoonde back-upopties zijn **geen bewijs van een geslaagde config.xml-restore**. Diagram A/B zijn ontwerpillustraties met peildatum 15 november; er zijn geen nieuwe aparte zones of Azure-resources geïmplementeerd.
+
+## M04 AS-IS | Netwerkpaden beoordeeld op 20 november
+
+LAB en OT blijven afzonderlijke VMware LAN Segments. De aangewezen beheerbron `MGMT_CLIENT_IP` bereikt via het host-only segment het firewallbeheer op `PFSENSE_MGMT_IP`. De firewall beperkt de beheertoegang tot de webservices OpenPLC TCP/8080 en FUXA TCP/1881 vanaf de aangewezen bron. TCP/8080 via de beheerforward is in deze sessie opnieuw aangetoond. De directe route van de beheerhost naar de PLC koos de fysieke uplink. Het directe beheerpad en de drie negatieve PLC-proeven blijven open.
+
+De C2-sessie bevestigde gerichte LAB→PLC- en OT→beheer/firewall/extern-blokkades. Het IPv6-resultaat beschrijft de routes en L2-scope van de bekeken opstelling. Een brede LAN IPv6-allow blijft onder review. Voor de WAN-zijde is de configuratie bekeken en staat de veilige live proef open. Wazuh OT-telemetrie, GNS3-schaaluitwerking en Suricata-alertcorrelatie horen bij EXT.
+
+[C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [pfSense-controles](PFSENSE_PLAN.md#m04--configuratiereview-en-deeltests-op-20-november).
