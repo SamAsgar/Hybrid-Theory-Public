@@ -1,6 +1,6 @@
 # Architectuur | Hybrid-Theory
 
-**Bijgewerkt:** 15 november 2026 · **Bron:** private architectuur, stand 15 november 2026 · **Weergave:** gesaneerd, met officiële aliassen.
+**Bijgewerkt:** 20 november 2026 · **Bron:** private architectuur (diagrammen 15 november; testdelta 19–20 november) · **Weergave:** gesaneerd, met officiële aliassen.
 
 Deze map beschrijft de netwerkarchitectuur van het Hybrid-Theory-lab in twee lagen: wat er nu staat (diagram A) en waar het ontwerp naartoe gaat (diagram B). Adressen zijn vervangen door **vaste, officiële aliassen** zoals `PLC01_OT_IP`. Dezelfde alias verwijst overal naar hetzelfde adres; de werkelijke waarden en de vertaaltabel blijven privé.
 
@@ -74,7 +74,7 @@ De doelverbindingen staan in [Netwerkontwerp §2](NETWERKONTWERP.md#2-ht-c-010-d
 | Ubuntu en Cockpit | Linuxbeheer en beperkte beheertoegang getest | Actuele interfacestatus, private services, optionele Azure Arc-agent |
 | Wazuh SIEM | Manager/indexer/dashboard gestart, dashboardlogin bereikt | Agentingestie (nu 0 agents), detectie en een eigen Security-zone |
 | GNS3 en Wireshark | Gescheiden VPCS-switch-test met ARP/ICMP | Uitgebreid netwerk, isolatie en routevalidatie |
-| FUXA01 en PLC01 (OT) | Beide in het OT-segment; OpenPLC-runtime draait na handmatig starten; Modbus TCP/502 en de FUXA-verbinding getest (15 nov.) | Volledige AC02/AC03-readback-evidence, autostart van de runtime, authenticatie/TLS en OT-isolatie |
+| FUXA01 en PLC01 (OT) | Beide in OT; na correctie start OpenPLC bij een tweede PLC01-reboot automatisch in RUN-modus; FUXA herverbindt en een START→STOP-cyclus met PLC-readback is op 19 november **TESTED / scoped PASS** | Formele eigenaarreview AC01–AC03, authenticatie/TLS, integrale OT-segmentatie (AC04/AC07) en hersteltest |
 | Phoenix Recovery M02 | Architectuur B ontworpen | Onafhankelijke recoveryhost, offsite en restoretest |
 | Azure / Entra / Arc | Architectuurvoorstel | Twee afzonderlijke subscriptions/VNets, kostenreview en deployment |
 
@@ -85,6 +85,14 @@ De doelverbindingen staan in [Netwerkontwerp §2](NETWERKONTWERP.md#2-ht-c-010-d
 De bestaande netwerken WAN-SIM, MGMT, LAB en OT worden uitdrukkelijk **gescheiden** van de geplande IT-, Security-, private-services- en GNS3-zones. De OT-zone is gebouwd, maar haar isolatie is **niet bewezen** zolang AC04 en AC07 openstaan. Een geslaagde verbinding binnen OT is geen bewijs van afscherming naar andere zones.
 
 [Netwerkontwerp](NETWERKONTWERP.md) beschrijft de huidige stromen, de doelverbindingen en de openstaande verificaties. De figuren bevatten geen werkelijke adressen, geen firewall- of NAT-configuratie en geen beheerdetails.
+
+## 4.1. Regressie- en firewallobservaties (19–20 november 2026)
+
+In de private M04-engineeringlogs is een eerste mislukte PLC-autostart vastgelegd, gevolgd door een instellingcorrectie en een geslaagde tweede reboot. FUXA herstelde de Modbus-verbinding en de HMI START→STOP-reeks bereikte de verwachte PLC-statussen (**TESTED / scoped PASS**, formele bewijsreview open). Gerichte LAB→OT-, OT→LAB- en OT→externe-bestemming-blokkeringen zijn met firewalllogs gecorreleerd; beperkt beheer-TCP-bereik is positief getest. Dit zijn geen bewijzen voor alle denkbare paden.
+
+**Openstaande architectuurrisico's:** brede LAN IPv4-/IPv6-allowregels, NAT-/beheeruitzonderingen, IPv6 en alternatieve routes, UDP-egress, verificatie van configuratieback-up en herstelbaarheid. De verkorte testwerkwijze van 20 november verandert de acceptatie-eisen **niet**. [Fase-20-evidence](../bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md) · [Netwerkontwerp](NETWERKONTWERP.md).
+
+De huidige diagrammen zijn illustraties met peildatum 15 november en **geen live-testmeting** van de nieuwe regressietests.
 
 ## 5. Historische figuur
 

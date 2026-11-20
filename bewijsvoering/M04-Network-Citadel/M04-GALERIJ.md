@@ -1,6 +1,6 @@
 # M04 | Evidence-galerij per fase
 
-Deze galerij is bewust in **19 pagina's** verdeeld. GitHub moet niet alle 210 grote PNG's tegelijk renderen. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
+Deze galerij is bewust in **20 pagina's** verdeeld. GitHub moet niet alle 265 grote PNG's tegelijk renderen. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
 
 - **23× Baseline vóór de OT-migratie:** [Bekijk galerij](01_Pre_migration_baseline/README.md)
 - **3× VM-netwerkconfiguratie:** [Bekijk galerij](02_VM_Network_setup/README.md)
@@ -21,5 +21,7 @@ Deze galerij is bewust in **19 pagina's** verdeeld. GitHub moet niet alle 210 gr
 - **8× Netwerkdiagnostiek:** [Bekijk galerij](17_Network_diagnostics/README.md)
 - **27× Portforward en regressietests:** [Bekijk galerij](18_Forward_and_regression/README.md)
 - **7× FUXA-vervolgcontrole 15 november:** [Bekijk galerij](19_FUXA_followup/README.md)
+
+- **55× OT-segmentatie en regressietests (19 november):** [Bekijk galerij](20_OT_segmentation_and_regression/README.md)
 
 [Terug naar hoofdindex](M04-EVIDENCE-INDEX.md)

@@ -2,9 +2,9 @@
 
 **Project:** Hybrid-Theory (publieke repository)  
 **Missie:** M04 Network Citadel  
-**Periode van de evidence:** 30 oktober t/m 15 november 2026  
+**Periode van de evidence:** 30 oktober t/m 19 november 2026  
 **Status:** uitvoering en verificatie deels open (`M04-CORE = IN PROGRESS`)  
-**Evidence:** **210 gesaneerde PNG-afgeleiden** in 19 technische fasen  
+**Evidence:** **265 gesaneerde PNG-afgeleiden** in 20 technische fasen  
 **Classificatie:** PUBLIC · gesaneerde afgeleiden · de originelen blijven uitsluitend privé
 
 > Dit is een gecontroleerde, gesaneerde migratie van de private M04-bewijsset. Elk beeld is onomkeerbaar pixelgemaskeerd: IP-, MAC- en IPv6-adressen, hostnames, gebruikersnamen, lokale paden, sessiecookies, VM- en segmentnamen en apparaat-ID's zijn verwijderd. Waar een officiële alias bestaat, staat die in de maskering, zoals `PFSENSE_MGMT_IP` of `PLC01_OT_IP`. Overige waarden zijn als `REDACTED_*` gemarkeerd. Zie het [saneringsrapport](M04-SANITIZATION-REPORT.md).
@@ -22,6 +22,7 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 - [SHA-256-manifest van de gepubliceerde afgeleiden](M04-SHA256SUMS.txt)
 - [Evidence-register (CSV)](M04-EVIDENCE.csv)
 - [15 november: FUXA-vervolgonderzoek](19_FUXA_followup/ADDENDUM-2026-11-15.md)
+- [19 november: OT-segmentatie, pfSense en PLC/HMI-regressie](20_OT_segmentation_and_regression/README.md) · [aanvullend saneringsrapport](20_OT_segmentation_and_regression/M04-PHASE20-SANITIZATION-REPORT.md)
 
 ## 3. Technische keten
 
@@ -53,5 +54,9 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 
 - De gepubliceerde PNG's zijn **afgeleiden**, geen originelen. Ze zijn uitsluitend gemaakt door pixels te maskeren en opnieuw op te slaan als RGB-PNG zonder metadata (geen EXIF- of tekst-chunks).
 - De SHA-256-waarden in de index, de fase-README's, de CSV en het [manifest](M04-SHA256SUMS.txt) horen bij deze **publieke afgeleiden**. Hashes van de private originelen worden bewust niet gepubliceerd.
-- De oorspronkelijke bestandsnamen (datum en tijd van de opname) en de indeling in 19 fasen zijn behouden. Daardoor blijft de chronologische samenhang met de private bron traceerbaar zonder die bron bloot te geven.
+- De oorspronkelijke bestandsnamen (datum en tijd van de opname) en de indeling in 20 fasen zijn behouden. Daardoor blijft de chronologische samenhang met de private bron traceerbaar zonder die bron bloot te geven.
 - Maskeringen bevatten alleen aliassen of `REDACTED_*`-labels. De koppeling tussen echte waarden en aliassen blijft privé, zoals het [publicatiebeleid](../../governance/PUBLICATIEBELEID.md) voorschrijft.
+
+## 7. Evidence-aanvulling 19 november 2026
+
+De [nieuwe fase-20-galerij](20_OT_segmentation_and_regression/README.md) bevat 55 met SSOT-aliassen gesaneerde beelden van PLC/HMI-regressie, firewalllogs en gerichte LAB→OT-, OT→LAB- en egress-tests. Dit zijn afgebakende deelresultaten: integrale AC04/AC07 blijft **PENDING** en handmatige privacy-/bewijsreview is nog vereist.
