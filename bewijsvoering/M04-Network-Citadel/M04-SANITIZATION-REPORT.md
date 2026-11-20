@@ -110,3 +110,7 @@ Er is **geen** M04-screenshot volledig uitgesloten. Na maskering bleef van elk b
 - **Aliassen** onthullen de netwerkrol van een adres, niet de waarde. De echte koppeling staat alleen in het private aliasregister.
 - **Interpretatie.** De publicatie verandert niets aan de bewijsstatus: AC02/AC03-regressie, AC04 en AC07 blijven **PENDING**; `M04-CORE = IN PROGRESS`.
 - **Publicatiegate.** Deze migratie staat op een aparte branch met een pull request. **Niet automatisch mergen**: eigenaar-review en een eigen visuele steekproef vóór merge worden aanbevolen.
+
+## 6. Aanvulling fase 20 (20 november 2026)
+
+55 nieuwe gesaneerde PNG-afgeleiden uit de sessie van 19 november zijn toegevoegd, bovenop de oorspronkelijke 210. Adresvelden en identificatoren zijn selectief en onomkeerbaar vervangen door gevalideerde SSOT-aliassen of `REDACTED_*`, in plaats van volledige terminalvensters af te dekken. De 55 nieuwe publieke SHA-256-waarden staan in het fase-20-manifest. Dit is **geen** volledige privacy- of AC04/AC07-acceptatie. [Zie de aanvullende saneringsverantwoording](20_OT_segmentation_and_regression/M04-PHASE20-SANITIZATION-REPORT.md).

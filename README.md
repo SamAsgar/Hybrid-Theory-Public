@@ -38,7 +38,7 @@ Diagram A toont de huidige netwerken en geïmplementeerde onderdelen; Diagram B 
 | Missie | Gepubliceerde bewijsset | Detail |
 |---|---|---|
 | **M01** | 82 gesaneerde screenshots | [Bewijsindex](bewijsvoering/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](bewijsvoering/M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) |
-| **M04** | 210 gesaneerde screenshots in 19 fasen | [Bewijsindex](bewijsvoering/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](bewijsvoering/M04-Network-Citadel/M04-GALERIJ.md) · [Saneringsrapport](bewijsvoering/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
+| **M04** | 265 gesaneerde screenshots in 20 fasen | [Bewijsindex](bewijsvoering/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](bewijsvoering/M04-Network-Citadel/M04-GALERIJ.md) · [Fase 20 (19 nov.)](bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md) · [Saneringsrapport](bewijsvoering/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
 
 De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen volledige missieafronding. Aanvullende [componentbewijsvoering](bewijsvoering/VMware/) en de [bewijsvoering per missie](bewijsvoering/README.md) zijn beschikbaar.
 

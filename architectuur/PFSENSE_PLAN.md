@@ -47,3 +47,9 @@ Voor één Windows 11-testclient is tijdelijk een brede **IPv4 ALLOW Any-egressr
 **Bewijsgrens:** een bestaande regel of screenshot is configuratiebewijs, niet automatisch een bewezen end-to-end blokkade.
 
 **Statusgebruik:** [statuslegenda](../governance/STATUSLEGENDA.md).
+
+## M04 — controle- en herstelgates (20 november 2026)
+
+Volgens de private M04-werkwijze van 20 november blijven de gerichte LAB→OT, OT→LAB en OT→externe-bestemming-denies van 19 november gescopeerde testresultaten en hoeven ze alleen opnieuw bij gewijzigde regels of onvoldoende bewijs. Voor aanvullende tests staan onder meer MGMT→ongeautoriseerde services, brede LAN IPv4-/IPv6-allowregels, OT→MGMT, UDP-egress, WAN→OT en effectieve Windows-bronroute open.
+
+Voordat pfSense-regels opnieuw worden aangepast: controleer de configuratie-export (`config.xml`), integriteit en een herstelroute. Een downloadscherm of snapshot toont nog geen geslaagde restore. Volledige AC04/AC07-matrix, log-/pcapcorrelatie en eigenaaracceptatie blijven **PENDING**. [Fase-20-galerij](../bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md).

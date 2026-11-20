@@ -46,3 +46,9 @@ Technische bewijsvoering volgt de keten: `securitydoel → control → configura
 **Lab 02 (M02) en Azure:** onafhankelijk off-host herstel en clouddeployment zijn nog niet aangetoond (**PENDING/PLANNED** naar onderwerp).
 
 **Operationele werkwijze:** pragmatische, risicogestuurde controles vóór de benodigde werkzaamheden; uitgebreide hardening binnen de relevante lab. [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) is een afzonderlijk experimenteel audit-, kosten-, efficiency- en dependency-onderzoeksconcept, **geen** gevalideerde vervanger van bestaande beoordelingsprocedures.
+
+## 5. M04-statusharmonisatie — 20 november 2026
+
+De technische architectuurbaseline blijft een VMware/pfSense-omgeving met WAN-SIM, MGMT, LAB en een afzonderlijke OT-zone. De diagrammen zijn van 15 november; dit is een **statusdelta, geen herontwerp**. Op 19 november zijn de OpenPLC-autostartcorrectie en HMI START→STOP-readback binnen scope getest. Gerichte LAB→OT- en OT→andere-zone/extern-blokkeringen zijn met pfSense-logs gecorreleerd; de volledige AC04/AC07-matrix en formele eigenaaracceptatie blijven **PENDING**. De gerichte uitvoering van 20 november verandert deze acceptatiegrenzen niet.
+
+[Actuele afgebakende testobservaties](NETWERKONTWERP.md#5-m04-harmonisatie-1920-november-2026) · [Gesaneerde fase-20-evidence](../bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md).
