@@ -25,7 +25,7 @@ Vaststellen **wat** er in een casus wordt beoordeeld, **waartegen** en **waarom*
 
 | Soort eis | Voorbeeld | Bindend voor Hybrid-Theory? |
 |---|---|---|
-| **Wettelijk** | NIS2/Cyberbeveiligingswet, DORA, AVG | **Nee.** Het lab valt er niet onder; alleen bruikbaar als fictieve sectorcontext, expliciet als SIMULATED gemarkeerd |
+| **Wettelijk** | NIS2/Cyberbeveiligingswet, DORA, AVG | **Niet vastgesteld.** Toepasselijkheid is binnen de huidige onderzoeksscope niet vastgesteld; dit vereist een afzonderlijke beoordeling afhankelijk van activiteiten, rechtspositie en gegevensverwerking. In M05-casussen alleen bruikbaar als fictieve sectorcontext, expliciet als SIMULATED gemarkeerd |
 | **Contractueel** | Leveranciers- of klantafspraken, licentievoorwaarden | Alleen voor werkelijk aangegane voorwaarden (bijv. evaluatielicenties); geen fictieve contracten als bewijs |
 | **Vrijwillige norm** | ISO/IEC 27001:2022, IEC 62443 | **Nee**, tenzij een organisatie zich eraan verbindt; in het lab een ontwerp- en toetslens |
 | **Onderzoeksreferentie** | NIST CSF 2.0, CIS Controls, NIST SP 800-53A, COBIT, CAT/ACE | Nooit bindend; per casus geselecteerd voor een concrete onderzoeksfunctie |
