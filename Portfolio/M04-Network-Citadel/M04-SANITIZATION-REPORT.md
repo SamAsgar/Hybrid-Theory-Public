@@ -1,8 +1,8 @@
 # M04 | Saneringsrapport en publicatieverantwoording
 
 **Datum migratie:** 17 november 2026  
-**Bron:** private repository, map `bewijsvoering/Lab-4 | Network Citadel` (alleen gelezen, niets gewijzigd)  
-**Doel:** `bewijsvoering/M04-Network-Citadel/` in deze publieke repository  
+**Bron:** private repository, map `Portfolio/Lab-4 | Network Citadel` (alleen gelezen, niets gewijzigd)  
+**Doel:** `Portfolio/M04-Network-Citadel/` in deze publieke repository  
 **Principe:** maximale technische transparantie, geen gevoelige blootstelling. Bij twijfel is gemaskeerd.
 
 ## 1. Werkwijze
@@ -40,7 +40,7 @@
 | `19_FUXA_followup` | 7 | 58 | 2 |
 | **Totaal** | **210** | **13407** | **58** |
 
-Daarnaast overgezet en gesaneerd: `M04-EVIDENCE-INDEX.md`, `M04-GALERIJ.md`, `M04-GAPS.md`, `M04-EVIDENCE.csv`, 19 fase-README's en `19_FUXA_followup/ADDENDUM-2026-11-15.md`. Nieuw opgesteld: `README.md`, `M04-SHA256SUMS.txt` (alleen publieke afgeleiden) en dit rapport.
+Daarnaast overgezet en gesaneerd: `M04-EVIDENCE-INDEX.md`, `M04-GALERIJ.md`, `M04-GAPS.md`, `M04-EVIDENCE.csv`, 19 fase-README's en `M04-Bewijsvoering/19_FUXA_followup/ADDENDUM-2026-11-15.md`. Nieuw opgesteld: `README.md`, `M04-SHA256SUMS.txt` (alleen publieke afgeleiden) en dit rapport.
 
 ## 3. Toegepaste maskeringen per categorie
 
@@ -113,4 +113,4 @@ Er is **geen** M04-screenshot volledig uitgesloten. Na maskering bleef van elk b
 
 ## 6. Aanvulling fase 20 (20 november 2026)
 
-55 nieuwe gesaneerde PNG-afgeleiden uit de sessie van 19 november zijn toegevoegd, bovenop de oorspronkelijke 210. Adresvelden en identificatoren zijn selectief en onomkeerbaar vervangen door gevalideerde SSOT-aliassen of `REDACTED_*`, in plaats van volledige terminalvensters af te dekken. De 55 nieuwe publieke SHA-256-waarden staan in het fase-20-manifest. Dit is **geen** volledige privacy- of AC04/AC07-acceptatie. [Zie de aanvullende saneringsverantwoording](20_OT_segmentation_and_regression/M04-PHASE20-SANITIZATION-REPORT.md).
+55 nieuwe gesaneerde PNG-afgeleiden uit de sessie van 19 november zijn toegevoegd, bovenop de oorspronkelijke 210. Adresvelden en identificatoren zijn selectief en onomkeerbaar vervangen door gevalideerde SSOT-aliassen of `REDACTED_*`, in plaats van volledige terminalvensters af te dekken. De 55 nieuwe publieke SHA-256-waarden staan in het fase-20-manifest. Dit is **geen** volledige privacy- of AC04/AC07-acceptatie. [Zie de aanvullende saneringsverantwoording](M04-Bewijsvoering/20_OT_segmentation_and_regression/M04-PHASE20-SANITIZATION-REPORT.md).

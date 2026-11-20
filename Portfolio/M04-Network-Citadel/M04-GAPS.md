@@ -18,10 +18,10 @@
 
 De nieuwe screenshots M04-EV-206 t/m M04-EV-210 tonen een groene FUXA-connector, de interne verbindingsstatuswaarde `5` en booleaanse motortags met waarde `0`. Dit is **geen** zelfstandige verificatie van live Modbus-registeruitlezing. AC02-regressie na OT-migratie blijft **PENDING** totdat een gecontroleerde start/stop-overgang en PLC/FUXA-correlatie is bewezen.
 
-Zie [`19_FUXA_followup/ADDENDUM-2026-11-15.md`](19_FUXA_followup/ADDENDUM-2026-11-15.md) voor bewijslimieten per screenshot.
+Zie [`M04-Bewijsvoering/19_FUXA_followup/ADDENDUM-2026-11-15.md`](M04-Bewijsvoering/19_FUXA_followup/ADDENDUM-2026-11-15.md) voor bewijslimieten per screenshot.
 
 ## Aanvulling 19 november — gerichte deeltests
 
-- [Fase 20](20_OT_segmentation_and_regression/README.md) toont onder meer LAB→PLC01 TCP/502 en LAB→FUXA01 TCP/1881 BLOCK-events en positieve/negatieve afgebakende regressietests.
+- [Fase 20](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) toont onder meer LAB→PLC01 TCP/502 en LAB→FUXA01 TCP/1881 BLOCK-events en positieve/negatieve afgebakende regressietests.
 - OpenPLC-autostart: eerste reboot FAIL; na correctie tweede reboot met functionele HMI START→STOP-keten **TESTED / scoped PASS** op basis van de sessierapportage. Onafhankelijke owner review blijft open.
 - **Integrale AC04/AC07 PENDING**, inclusief alternatieve routes, IPv6, beheer/NAT, UDP en sluitende log-/capturecorrelatie.
