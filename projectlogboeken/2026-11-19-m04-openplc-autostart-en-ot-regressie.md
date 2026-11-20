@@ -19,4 +19,4 @@ Vooraf werd een rollbackcheckpoint vastgelegd. De herstelproef blijft **PENDING*
 - **Formele acceptatie** blijft **PENDING**. De beschrijving is gebaseerd op de aangeleverde labresultaten. Koppeling van primair testbewijs, onafhankelijke beoordeling en expliciete eigenaaracceptatie staan nog open.
 - **M04-EXT** behoudt AC05 Wazuh **PENDING** en AC06 GNS3 en AC08 Suricata **PLANNED**.
 
-Zie de [GAP-analyse van het eerdere bewijsmateriaal](../bewijsvoering/M04-Network-Citadel/M04-GAPS.md).
+Zie de [GAP-analyse van het eerdere bewijsmateriaal](../Portfolio/M04-Network-Citadel/M04-GAPS.md).

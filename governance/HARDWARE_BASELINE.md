@@ -30,4 +30,4 @@ Zie [actuele engineeringroadmap](../projectlogboeken/ROADMAP.md), [AD-basisrappo
 
 ## Aanvulling 4 november 2026 | FUXA-hardwarebewijs
 
-De FUXA OT/HMI-VM is in VMware vastgelegd met **2 GB RAM, 2 processors, 20 GB SCSI-schijf** en netwerkadapter **Custom (VMnet8)**. De VM was uitgeschakeld; een lokaal ISO-pad is gesaneerd. [Screenshot](../bewijsvoering/VMware/08-FUXA-VMware-Inventory-Sanitized.png). **CAPTURED** voor de hardwarewaarden, niet voor IT/OT-isolatie of runtime-functionaliteit.
+De FUXA OT/HMI-VM is in VMware vastgelegd met **2 GB RAM, 2 processors, 20 GB SCSI-schijf** en netwerkadapter **Custom (VMnet8)**. De VM was uitgeschakeld; een lokaal ISO-pad is gesaneerd. [Screenshot](../Portfolio/VMware/08-FUXA-VMware-Inventory-Sanitized.png). **CAPTURED** voor de hardwarewaarden, niet voor IT/OT-isolatie of runtime-functionaliteit.

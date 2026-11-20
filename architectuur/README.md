@@ -90,7 +90,7 @@ De bestaande netwerken WAN-SIM, MGMT, LAB en OT worden uitdrukkelijk **gescheide
 
 In de private M04-engineeringlogs is een eerste mislukte PLC-autostart vastgelegd, gevolgd door een instellingcorrectie en een geslaagde tweede reboot. FUXA herstelde de Modbus-verbinding en de HMI START→STOP-reeks bereikte de verwachte PLC-statussen (**TESTED / scoped PASS**, formele bewijsreview open). Gerichte LAB→OT-, OT→LAB- en OT→externe-bestemming-blokkeringen zijn met firewalllogs gecorreleerd; beperkt beheer-TCP-bereik is positief getest. Dit zijn geen bewijzen voor alle denkbare paden.
 
-**Openstaande architectuurrisico's:** brede LAN IPv4-/IPv6-allowregels, NAT-/beheeruitzonderingen, IPv6 en alternatieve routes, UDP-egress, verificatie van configuratieback-up en herstelbaarheid. De verkorte testwerkwijze van 20 november verandert de acceptatie-eisen **niet**. [Fase-20-evidence](../bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md) · [Netwerkontwerp](NETWERKONTWERP.md).
+**Openstaande architectuurrisico's:** brede LAN IPv4-/IPv6-allowregels, NAT-/beheeruitzonderingen, IPv6 en alternatieve routes, UDP-egress, verificatie van configuratieback-up en herstelbaarheid. De verkorte testwerkwijze van 20 november verandert de acceptatie-eisen **niet**. [Fase-20-evidence](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [Netwerkontwerp](NETWERKONTWERP.md).
 
 De huidige diagrammen zijn illustraties met peildatum 15 november en **geen live-testmeting** van de nieuwe regressietests.
 
