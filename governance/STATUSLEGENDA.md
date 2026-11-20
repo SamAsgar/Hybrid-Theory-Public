@@ -33,7 +33,7 @@
 
 ### 3a. Missie-, milestone- en mini-oefeningstatus (20-11-2026)
 
-Toegevoegd na het besluit van Sam van 20-11-2026 over het permanente missionmodel ([publiek besluitenoverzicht](BESLUITENLOG.md#openstaand-publicatie-item--20-11-2026--permanent-missionmodel-en-m05-structuur)). Deze sectie voegt geen nieuwe engineeringverdicts toe; ze maakt duidelijk welke status bij welk niveau hoort.
+Toegevoegd na het besluit van Sam van 20-11-2026 over het permanente missionmodel ([PUB-DEC-001](BESLUITENLOG.md#pub-dec-001--20-11-2026--permanent-missionmodel-en-m05-structuur)). Deze sectie voegt geen nieuwe engineeringverdicts toe; ze maakt duidelijk welke status bij welk niveau hoort.
 
 | Niveau | Toegestane status | Afsluiting |
 |---|---|---|

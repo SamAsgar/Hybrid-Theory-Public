@@ -2,7 +2,7 @@
 
 **Hoofdstukstatus:** structuur **APPROVED**; inhoudelijk werk **PENDING** · [Terug naar M05](../README.md)
 
-> Dit hoofdstuk is de kern van het Hybrid-Theory-onderzoeksmotief. Elke voorbeeldafhankelijkheid hieronder heeft een herkomstlabel. Er is in M05 nog **geen** dependency- of fault-injectiontest uitgevoerd; **geen enkel cascade-effect is bewezen**.
+> Dit hoofdstuk is de kern van het Hybrid-Theory-onderzoeksmotief. Het beschrijft methodiek en een **fictief** voorbeeld; het bevat geen overzicht van de werkelijke infrastructuur. Er is in M05 nog **geen** dependency- of fault-injectiontest uitgevoerd; **geen enkel cascade-effect is bewezen**.
 
 ## Doel
 
@@ -51,8 +51,8 @@ De **afhankelijkheid** en het **mogelijke gevolg** krijgen elk een eigen label. 
 
 | Label | Betekenis en scope |
 |---|---|
-| **OBSERVED** | Feitelijk opgetreden in een gedateerde test of gebeurtenis, alleen binnen die scope. Staat erbij als de bron niet publiek is. |
-| **DOCUMENTED** | Vastgelegd in publieke configuratie- of architectuurdocumentatie. Zegt niets over gedrag bij falen. |
+| **OBSERVED** | Feitelijk opgetreden in een gedateerde, herleidbare test of gebeurtenis, alleen binnen die scope. |
+| **DOCUMENTED** | Vastgelegd in configuratie- of architectuurdocumentatie. Zegt niets over gedrag bij falen. |
 | **HYPOTHESIS** | Plausibele relatie of plausibel gevolg, nooit gericht getest. |
 | **SIMULATED** | Fictieve organisatie- of bedrijfscontext, bijvoorbeeld een gesimuleerde proceseigenaar of bedrijfsimpact. |
 | **NOT VERIFIED** | Er is onvoldoende bewijs om de uitspraak te beoordelen; geen aanname van een defect. |
@@ -71,34 +71,31 @@ De **afhankelijkheid** en het **mogelijke gevolg** krijgen elk een eigen label. 
 
 Per node tellen hoeveel controls of claims ervan afhangen. Dit is een onderzoeksidee, **geen gevalideerde metriek**.
 
-## Methodologisch voorbeeld (gesaneerd)
+## Methodologisch voorbeeld (abstract, fictief)
 
-Het voorbeeld laat de redenering zien op basis van **publiek gedocumenteerde** kenmerken van het lab. Het is geen volledige inventaris en noemt geen adressen, beheerroutes of open technische zwaktes.
+Het voorbeeld hieronder beschrijft een **fictieve organisatie** ("Organisatie X"). Het illustreert alleen de redenering en is **geen** beschrijving van de Hybrid-Theory-infrastructuur, van de actuele toestand ervan of van uitgevoerde tests. Alle elementen zijn **SIMULATED**. De labels geven aan welke bewijsklasse een vergelijkbare uitspraak in een echte casus zou vragen.
 
-| # | Node | Afhankelijkheid | Label | Mogelijk gevolg bij falen | Label |
-|---|---|---|---|---|---|
-| E1 | **Firewall-VM** | Handhaaft de zonegrenzen en levert DHCP aan de LAB-zone ([pfSense-plan](../../../architectuur/PFSENSE_PLAN.md)) | DOCUMENTED | Gelijktijdige impact op LAB-diensten, de segmentatieclaim en de firewalllogs die als bewijs dienen. Of de firewall daarbij open of dicht faalt, is onbekend. | HYPOTHESIS; gedrag bij falen NOT VERIFIED |
-| | | Tijdens een eerdere labsessie (4 nov.) kreeg een LAB-VM geen DHCP-lease zolang de firewall-VM uit stond; na het starten wel | OBSERVED (bronlog niet publiek; extern niet onafhankelijk verifieerbaar) | | |
-| E2 | **Virtualisatiehost** | Eén Windows-host met VMware Workstation draagt de lab-VM's; een tweede host is gepland ([Hardware Baseline](../../../governance/HARDWARE_BASELINE.md)) | DOCUMENTED | Een hostfout raakt alle zones en controls tegelijk (common cause) | HYPOTHESIS |
-| E3 | **Identiteitsdienst** | Eén domain controller levert AD DS en DNS; domain join en login werkten binnen de geteste scope ([AD-baseline](../../../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md)) | OBSERVED (scoped) | Een DNS-storing die zich voordoet als authenticatie- of GPO-probleem | HYPOTHESIS; NOT VERIFIED |
-| E4 | **Tijdbron** | Een afzonderlijke externe tijdbron is nog niet ingericht (open punt in de AD-baseline) | DOCUMENTED | Onbetrouwbare correlatie van client-, firewall- en capturebewijs, waardoor meerdere controls tegelijk slechter aantoonbaar worden (A.8.15–8.17) | HYPOTHESIS |
-| E5 | **Herstelvoorziening** | Een snapshot bestaat, maar herstel is niet getest; een onafhankelijke restore is niet aangetoond ([besluitenoverzicht](../../../governance/BESLUITENLOG.md), [M02](../../../governance/M02-Phoenix-Recovery/README.md)) | DOCUMENTED | Recovery coupling: herstel leunt op dezelfde host die kan falen (E2) | HYPOTHESIS |
-| E6 | **Monitoringlaag** | Dashboardtoegang is getest; agentdetectie is niet aangetoond ([README](../../../README.md)) | DOCUMENTED | Een falende control wordt niet automatisch gesignaleerd, waardoor de impact van E1–E5 later zichtbaar wordt | HYPOTHESIS |
-| E7 | **Bedrijfsfunctie en risico-eigenaar** | Een fictieve OT-proceseigenaar draagt het risico van procesverstoring | SIMULATED | Een technische storing wordt een bedrijfs- en governancevraag (spillover naar besluitvorming) | SIMULATED |
-| E8 | **Beoordelaar + AI-ondersteuning** | Eén persoon voert uit en beoordeelt, met AI-begeleiding ([AI-samenwerking](../../../ai-samenwerking/README.md)) | DOCUMENTED | Een gedeelde blinde vlek in meerdere beoordelingen tegelijk ([05.5](../05.5_Assurance_and_Independence/README.md)) | HYPOTHESIS |
+**Casus Organisatie X (SIMULATED):** een productieafdeling met een OT-zone die door een zonegrens van het kantoornetwerk is gescheiden. Drie controls worden afzonderlijk beoordeeld en krijgen elk een scoped PASS: netwerksegmentatie, logging van grensverkeer en een back-upprocedure.
 
-**Voorbeeld van een cascadehypothese (HYPOTHESIS, niet getest):**
+| Stap | Redenering in het voorbeeld | Label dat een echte casus zou vragen |
+|---|---|---|
+| 1. Controls apart | Segmentatie, logging en back-up zijn elk getoetst en scoped PASS | **OBSERVED** — alleen als de tests gedateerd en herleidbaar zijn uitgevoerd |
+| 2. Gedeelde node zoeken | Het ontwerp toont dat alle drie controls op hetzelfde grensapparaat steunen: het handhaaft de zonegrens, schrijft de grenslogs en is het pad naar de back-updoelen | **DOCUMENTED** — een ontwerp of configuratie zegt nog niets over gedrag bij falen |
+| 3. Gevolg voorspellen | Valt het grensapparaat uit of wordt het verkeerd geconfigureerd, dan kunnen drie controls tegelijk ongeldig worden (common-cause failure) | **HYPOTHESIS** — tot een goedgekeurde, omkeerbare test het bevestigt of weerlegt |
+| 4. Faalrichting | Faalt het apparaat open (verkeer toegestaan) of dicht (alles geblokkeerd)? | **NOT VERIFIED** — zonder test onbekend; niet invullen op basis van aannames |
+| 5. Spillover naar governance | Een fictieve proceseigenaar moet over productieverlies beslissen, terwijl de bewijsbron (logs) zelf geraakt is | **SIMULATED** — een gesimuleerd besluit is geen werkelijke bevoegdheid |
+| 6. Vergelijking | Een control-voor-controlbeoordeling gaf drie losse PASS-oordelen; de graaf toont één concentratiepunt | Onderzoeksuitkomst: alleen als meerwaarde vastgesteld wanneer de voorspelling ook getest is |
+
+**Cascadehypothese in graafvorm (SIMULATED / HYPOTHESIS):**
 
 ```text
-E2 host faalt ──requires──▶ E1 firewall-VM niet beschikbaar
-   E1 ──routes/serves──▶ LAB-diensten (DHCP) en zonegrens
-   E1 ──protects──▶ A.8.22-claim (segmentatie)
-   E1 ──logs──▶ bewijs voor A.8.22 en A.8.15
-   E6 ──monitors──▶ (geen automatische signalering)
-   E5 ──recovers──▶ leunt op E2  → recovery coupling
+Grensapparaat ──protects──▶ Control A: segmentatie
+Grensapparaat ──logs──────▶ Control B: logging (bewijsbron voor A)
+Grensapparaat ──routes────▶ Control C: back-uppad
+Control C ──recovers──────▶ Grensapparaat   → recovery coupling
 ```
 
-Alleen de DHCP-afhankelijkheid in E1 en de scoped identiteitsafhankelijkheid in E3 zijn ooit feitelijk waargenomen. De keten hierboven is een **voorspelling** die pas na een goedgekeurde, omkeerbare test iets mag bewijzen. Er is geen incident van deze aard opgetreden.
+De les uit het voorbeeld is methodisch: drie losse PASS-oordelen kunnen samen een concentratierisico verbergen. Of dat in een echte omgeving zo is, blijkt alleen uit een eigen, gelabelde en waar nodig geteste analyse. De interne M05-analyse van Hybrid-Theory zelf wordt **niet** gepubliceerd.
 
 ## Relatie met de academische onderzoeksachtergrond
 
@@ -144,7 +141,7 @@ CAT/ACE v0.4 §8–§12 (dependency-analyse; experimenteel), ISO/IEC 27005:2022,
 - Correlatie en plausibiliteit zijn **geen** causaliteit.
 - Geen fault-injection zonder ownerbesluit, rollback en veiligheidsgrenzen; geen OT-safetyrisico.
 - Onbekende edges worden niet als ontbrekend gerekend (geen vals-negatieven construeren).
-- De publieke versie toont een gesaneerd voorbeeld. De volledige interne dependency-inventaris is niet publiek, en uitspraken die daarop steunen zijn extern niet onafhankelijk verifieerbaar.
+- De publieke versie bevat alleen methodiek en een fictief voorbeeld. Een eventuele dependency-analyse van de werkelijke omgeving blijft intern en wordt niet gepubliceerd.
 
 ## Relaties met andere hoofdstukken
 
@@ -152,4 +149,4 @@ Verbreedt [05.2](../05.2_Risk_to_Control_Traceability/README.md) van lineaire ke
 
 ## Huidige onderzoeksstatus
 
-**PENDING.** De voorbeeldafhankelijkheden zijn gedocumenteerde kenmerken, twee scoped waarnemingen en verder hypothesen. In M05 is geen dependency-test uitgevoerd.
+**PENDING.** Methodiek beschreven; het voorbeeld is fictief (SIMULATED). In M05 is geen dependency-analyse of -test uitgevoerd.

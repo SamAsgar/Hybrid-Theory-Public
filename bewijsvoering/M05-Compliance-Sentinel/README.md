@@ -2,7 +2,7 @@
 
 **Repository:** Hybrid-Theory-Public · **Publicatievorm:** gesaneerde onderzoeks- en methodiekdocumentatie  
 **Missietype:** **Permanente Main Mission** (geen definitieve afsluitstatus)  
-**Peildatum:** 20 november 2026 · **Besluit:** missionmodel en M05-structuur goedgekeurd door Sam op 20-11-2026 (zie [publiek besluitenoverzicht](../../governance/BESLUITENLOG.md#openstaand-publicatie-item--20-11-2026--permanent-missionmodel-en-m05-structuur))
+**Peildatum:** 20 november 2026 · **Besluit:** missionmodel en M05-structuur goedgekeurd door Sam op 20-11-2026 (besluit [PUB-DEC-001](../../governance/BESLUITENLOG.md#pub-dec-001--20-11-2026--permanent-missionmodel-en-m05-structuur))
 
 | Statusdimensie | Stand 20-11-2026 |
 |---|---|
@@ -203,7 +203,7 @@ Eén matrix verbindt de casus met alle zeven hoofdstukken. De kolom "Wat publiek
 | **05.4** | Welke gaps, uitzonderingen en restrisico's zijn er? | [M04-GAPS](../M04-Network-Citadel/M04-GAPS.md) | Gaps zijn geregistreerd; een integrale acceptatie ontbreekt | Ownerbesluit per gap: corrigeren, tijdelijk accepteren (EXCEPTION) of verder onderzoeken | Gap-/uitzonderingsregister voor de casus met hertestvoorwaarde |
 | **05.5** | Wat mag over deze control worden geclaimd, en door wie? | [AI-werkafspraken](../../governance/AI_WERKAFSPRAKEN.md), [Statuslegenda §7](../../governance/STATUSLEGENDA.md#7-bewijsdiscipline) | M04-tests zijn deels met AI-begeleiding ontworpen en geduid | Onafhankelijke review; welk bewijs door Sam zelf is waargenomen | Assurance-statement met onafhankelijkheids- en AI-grenzen |
 | **05.6** | Wat kost deze beheersing en de beoordeling ervan? | — (alleen interne planningsramingen) | Er bestaan alleen geschatte planningsuren (**ESTIMATED**) | Gemeten beoordelingsinspanning (MEASURED) | Tijdregistratie MINI-01 + ACE-kosten/efficiëntieregel |
-| **05.7** | Welke afhankelijkheden maken dat één fout meerdere controls raakt? | [05.7 Systemic Risk](05.7_Systemic_Risk/README.md), [pfSense-plan](../../architectuur/PFSENSE_PLAN.md) | De firewall levert ook LAB-diensten zoals DHCP (**DOCUMENTED**) | Of één firewallstoring tegelijk segmentatie-, beheer- en bewijsclaims raakt (**HYPOTHESIS**) | Dependencyregel(s) met bewijsniveau en eventueel een ownerbesluit voor een gecontroleerde test |
+| **05.7** | Welke afhankelijkheden maken dat één fout meerdere controls raakt? | [05.7 Systemic Risk](05.7_Systemic_Risk/README.md) (methodiek) | Geen publieke dependency-analyse; de methodiek en een fictief voorbeeld zijn beschreven | Elke afhankelijkheid van de casus (de analyse blijft intern) | Interne dependencyregel(s) met bewijsniveau; publiek alleen een gesaneerde samenvatting na review |
 
 ## 14. Beperkingen van het publieke bewijs
 

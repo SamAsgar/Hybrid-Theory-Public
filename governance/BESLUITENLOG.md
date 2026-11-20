@@ -17,7 +17,7 @@
 | HT-011 | 01-11-2026 | Flexible Security / Mission-Based Hardening | Operationele afspraak: risicogestuurd bouwen, bestaande geldige tests hergebruiken |
 | HT-012 | 03-11-2026 | CAT/ACE v0.4 — onderzoeksdocumentatie | Actuele gepubliceerde onderzoeksvariant: **Audit / Cost / Efficiency**, inzetbaar intern, extern of hybride. Controlbewijs, kosteneffecten, veilige optimalisatie en Revalidation. **CONCEPT / NOT VALIDATED**; geen automatische uitvoering of attestatie |
 
-## Openstaand publicatie-item | 20-11-2026 | Permanent missionmodel en M05-structuur
+## PUB-DEC-001 | 20-11-2026 | Permanent missionmodel en M05-structuur
 
 **Besluit van Sam (20-11-2026), hier gesaneerd weergegeven:**
 
@@ -28,7 +28,7 @@
 
 **Status:** M05-uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED** (exitcriteria **DRAFT**); M05-MINI-01 **PLANNED**; compliance- of assuranceverklaring **NOT ESTABLISHED**. Dit besluit autoriseert geen technische tests, configuratiewijzigingen of milestone-acceptatie.
 
-**Publiek besluit-ID: PENDING.** De publieke en interne besluitreeksen lopen uiteen. Een automatisch volgend nummer zou betekenisverwarring met de interne reeks veroorzaken. Daarom krijgt dit item pas een ID na een besluit van Sam over het publieke nummerschema. Bestaande publieke besluiten zijn niet gewijzigd.
+**Publieke besluitreeks (besluit van Sam, 20-11-2026):** nieuwe publieke besluiten krijgen een eigen reeks `PUB-DEC-001`, `PUB-DEC-002`, enzovoort. De historische besluiten HT-001 t/m HT-012 hierboven blijven ongewijzigd en worden niet hernummerd of hergebruikt. De HT-reeks wordt voor nieuwe publieke besluiten niet voortgezet.
 
 ## Latere technische observaties
 
