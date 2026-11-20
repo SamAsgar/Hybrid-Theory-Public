@@ -36,10 +36,19 @@ Werkelijke adressen worden niet gepubliceerd. Het actuele overzicht staat in [Ar
 
 Voor één Windows 11-testclient is tijdelijk een brede **IPv4 ALLOW Any-egressregel** gebruikt voor internettoegang en evaluatie-activatie; de bestaande RFC1918-blokkering stond daarboven. De gerichte DNS/HTTPS-/browsertest was succesvol. **Dit is geen productiebeleid, algemene egress-PASS of bewijs van de huidige live-regelstatus.** Zie [sessielog](../projectlogboeken/2026-11-01-windows-client-pfsense-windows-server-ad-ds.md).
 
+## M04-update 19 november 2026 — scoped firewalltests
+
+- Gecorreleerde pfSense BLOCK-logs ondersteunen specifieke ongeautoriseerde LAB→PLC01 (TCP/502), LAB→FUXA01 (TCP/1881), OT→LAB (ICMP) en OT→internet (ICMP/HTTPS) deny-flows. **TESTED / scoped PASS**, niet een volledige matrix.
+- Positieve beheerbereikbaarheid van twee toegestane diensten vanaf de aangewezen beheerbron is beperkt getest.
+- Een tijdelijke brede LAB-egressregel is uitgeschakeld; geen Floating Rules zichtbaar. Brede LAN IPv4-/IPv6-allowregels blijven **OPEN RISK REVIEW**.
+- Er is een config-back-up gedownload volgens het log, maar **geen geslaagde restore** aangetoond. AC04 en AC07 blijven integraal **PENDING**.
+
+[Publieke fase-20-bewijsvoering](../bewijsvoering/M04-Network-Citadel/20_OT_segmentation_and_regression/README.md).
+
 ## Nog open
 
 - Breed negatief verkeer, alle private ranges en IPv6.
-- OT-zone: volledige positieve en negatieve testmatrix (AC04/AC07), egress vanuit OT en beoordeling van tijdelijke regels.
+- OT-zone: volledige positieve/negatieve testmatrix (AC04/AC07), aanvullende protocollen en IPv6, en beoordeling van resterende brede LAN-regels.
 - DNS-/tijdbronontwerp en security-hardening van tijdelijke permissieve regels.
 - Geslaagde configuratiehersteltest/off-host disaster recovery.
 - Koppeling van de bestaande losse GNS3-tests aan pfSense na conflictvrij IP-plan.
