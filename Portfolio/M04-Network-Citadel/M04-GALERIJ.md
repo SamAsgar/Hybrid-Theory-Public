@@ -1,6 +1,6 @@
 # M04 | Evidence-galerij per fase
 
-Deze galerij is bewust in **20 pagina's** verdeeld. GitHub hoeft niet alle 264 aanwezige PNG's tegelijk te renderen. De index registreert 265 bewijsitems; één PNG (M04-EV-113) is niet gepubliceerd. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
+Deze galerij is bewust in **21 pagina's** verdeeld. GitHub hoeft niet alle 316 aanwezige PNG's tegelijk te renderen. De [hoofdindex](M04-EVIDENCE-INDEX.md) registreert 265 bewijsitems tot en met 19 november; één PNG (M04-EV-113) is niet gepubliceerd. De 52 items van fase 21 (20 november) staan in het [fasemanifest](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/M04-EVIDENCE-PHASE21.csv) en zijn nog niet in de hoofdindex opgenomen. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
 
 - **23× Baseline vóór de OT-migratie:** [Bekijk galerij](M04-Bewijsvoering/01_Pre_migration_baseline/README.md)
 - **3× VM-netwerkconfiguratie:** [Bekijk galerij](M04-Bewijsvoering/02_VM_Network_setup/README.md)
@@ -21,7 +21,7 @@ Deze galerij is bewust in **20 pagina's** verdeeld. GitHub hoeft niet alle 264 a
 - **8× Netwerkdiagnostiek:** [Bekijk galerij](M04-Bewijsvoering/17_Network_diagnostics/README.md)
 - **27× Portforward en regressietests:** [Bekijk galerij](M04-Bewijsvoering/18_Forward_and_regression/README.md)
 - **7× FUXA-vervolgcontrole 15 november:** [Bekijk galerij](M04-Bewijsvoering/19_FUXA_followup/README.md)
-
 - **55× OT-segmentatie en regressietests (19 november):** [Bekijk galerij](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md)
+- **52× CORE C2 firewall- en isolatietests (20 november):** [Bekijk galerij](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md)
 
 [Terug naar hoofdindex](M04-EVIDENCE-INDEX.md)
