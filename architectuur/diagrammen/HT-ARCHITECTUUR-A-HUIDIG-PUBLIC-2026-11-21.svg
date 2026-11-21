@@ -34,7 +34,7 @@
 </g>
 <g id="host">
 <rect x="46" y="252" width="1508" height="1206" rx="12" fill="#0f141b" stroke="#30363d" stroke-width="1.5"/>
-<text x="66" y="280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="start">Fysieke labhost (Lenovo) · Windows 11 + VMware Workstation Pro</text>
+<text x="66" y="280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e6edf3" text-anchor="start">Fysieke labhost · Windows 11 + VMware Workstation Pro</text>
 <text x="560" y="280" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#d29922" text-anchor="start">LENOVO_HOST_IP</text>
 <text x="672" y="280" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#d29922" text-anchor="start">· PENDING_CAPTURE</text>
 <text x="66" y="302" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">Fysieke uplink naar de thuisrouter. VMware NAT (WAN-SIM) gaat via deze host naar buiten; NAT is geen isolatiegarantie.</text>
@@ -55,7 +55,7 @@
 <text x="118" y="422" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_WAN_MAC</text>
 <text x="82" y="448" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#58a6ff" text-anchor="start">IMPLEMENTED · upstream/DHCP PASS (26 okt.)</text>
 <text x="82" y="465" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Geen gebruikers-PASS, geen WAN-forwards</text>
-<text x="82" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#d29922" text-anchor="start">F24: CONFIG REVIEWED · live test PENDING</text>
+<text x="82" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#f85149" text-anchor="start">F24: scoped PASS · TCP/502 en TCP/8080</text>
 <path d="M416 427.0 L500 427.0" fill="none" stroke="#3fb950" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="66" y="518" width="350" height="244" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 <rect x="66" y="518" width="4" height="244" rx="2" fill="#58a6ff"/>
@@ -132,12 +132,12 @@
 <text x="779" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">geen bewezen gateway</text>
 <rect x="1024" y="390" width="243" height="102" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
 <text x="1034" y="409" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Ubuntu-beheer-VM · WAN-SIM-NIC</text>
-<text x="1034" y="425" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">na C3 actief · F24-testbron</text>
+<text x="1034" y="425" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">tijdelijke F24-testbron</text>
 <text x="1034" y="444" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
 <text x="1066" y="444" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_IP</text>
 <text x="1034" y="461" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
 <text x="1066" y="461" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_MAC</text>
-<text x="1034" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">bereikt pfSense WAN · F24 PENDING</text>
+<text x="1034" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#f85149" text-anchor="start">via pfSense WAN · F24 scoped PASS</text>
 <rect x="1279" y="390" width="243" height="102" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
 <text x="1289" y="409" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">GNS3-VM · NAT-adapter</text>
 <text x="1289" y="425" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">tweede adapter van de VM</text>
@@ -186,7 +186,7 @@
 <text x="524" y="690" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Directe route (21 nov.)</text>
 <text x="694" y="690" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Besluit: geen permanente route van de labhost naar OT; beheer alleen via de bronbeperkte LAN-forwards.</text>
 <text x="524" y="710" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Directe probes Ubuntu-beheer-VM (MGMT_NET_IP) → PLC01_OT_IP op TCP/502, 22, 44818: geblokkeerd op pfSense LAN (scoped PASS).</text>
-<text x="524" y="728" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#d29922" text-anchor="start">F13–F15 formeel PENDING: afwijkende testbron goedkeuren, primaire log-/pcapcorrelatie en terugdraaien testroute open.</text>
+<text x="524" y="728" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#d29922" text-anchor="start">F13–F15 formeel PENDING: afwijkende testbron goedkeuren, tijddekking per poort beoordelen. Testroute verwijderd.</text>
 </g>
 <g id="zone-lab">
 <rect x="500" y="778" width="1038" height="150" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1.2"/>
@@ -259,7 +259,7 @@
 <text x="1019.0" y="1076" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="middle">zegt niets over de zonegrens</text>
 <rect x="514" y="1122" width="1010" height="60" rx="7" fill="#0d1117" stroke="#f85149" stroke-width="1"/>
 <text x="524" y="1142" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Zonegrens OT (gescopeerd getest, 20–21 nov.)</text>
-<text x="524" y="1162" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">In: LAB → OT geblokkeerd (F09–F12) · beheer-VM → OT geblokkeerd (F13–F15) · alleen beheer-webforwards toegestaan · WAN → OT: geen forwards (F24 live test PENDING)</text>
+<text x="524" y="1162" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">In: LAB → OT geblokkeerd (F09–F12) · beheer-VM → OT geblokkeerd (F13–F15) · alleen beheer-webforwards toegestaan · WAN → OT: geen forwards (F24 scoped PASS · 502/8080)</text>
 <text x="524" y="1177" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Uit: OT → beheer / pfSense / HTTP geblokkeerd (F16–F19) · DNS/NTP geblokkeerd, ontwerp open (F20–F21) · IPv6 alleen link-local (F22–F23)</text>
 </g>
 <g id="zone-gns3">
@@ -366,7 +366,7 @@
 <text x="130" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="start">WAN → OT · TCP/502, 8080</text>
 <text x="520" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">beheer-VM (WAN-SIM) → pfSense WAN</text>
 <path d="M900 1790 L952 1790" fill="none" stroke="#d29922" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#ah-a)"/>
-<text x="980" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#d29922" text-anchor="start">CONFIG REVIEWED / SAFE LIVE TEST PENDING</text>
+<text x="980" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#f85149" text-anchor="start">scoped PASS · TCP/502 en TCP/8080</text>
 <text x="48" y="1818" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">—</text>
 <text x="130" y="1818" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="start">LAB → internet (IPv4) · LAB → thuisrouter (ICMP)</text>
 <text x="520" y="1818" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">LAB → pfSense → WAN / thuisnet</text>

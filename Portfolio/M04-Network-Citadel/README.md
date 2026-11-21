@@ -28,12 +28,12 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 
 ## 3. Technische keten
 
-1. **Baseline:** oorspronkelijke LAB/VMnet8-tests, interface-overzichten en voorlopige verbindingen.
+1. **Baseline:** oorspronkelijke LAB- en NAT-tests, interface-overzichten en voorlopige verbindingen.
 2. **Inrichting:** VMware-adapters, PLC01/OpenPLC, FUXA/Modbus, de OT-interface op pfSense en firewallregels.
 3. **Migratie:** snapshots, aanpassing van het OT-netwerk, routes en NAT/port-forwarding.
 4. **Verificatie:** werkende en niet-werkende netwerkpaden, pfSense-logs, PowerShell-connectiviteitstests en FUXA-tags.
 
-**Belangrijk:** een screenshot van een configuratie bewijst niet dat verkeer werkelijk werd toegestaan of geblokkeerd. Een historische PASS op VMnet8 bewijst geen werkende situatie na de OT-migratie.
+**Belangrijk:** een screenshot van een configuratie bewijst niet dat verkeer werkelijk werd toegestaan of geblokkeerd. Een historische PASS op het NAT-netwerk bewijst geen werkende situatie na de OT-migratie.
 
 ## 4. Resultaten en bewijsgrenzen
 
@@ -49,7 +49,7 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 ## 5. Concrete troubleshootingvoorbeelden
 
 - `Screenshot 2026-11-11 181110.png`: `TcpTestSucceeded=False` voor `PLC01_OT_IP:1881`. Dit blijft een mislukte bereikbaarheidstest, geen PASS.
-- `Screenshot 2026-11-11 185224.png`: geslaagde verbinding naar `PFSENSE_MGMT_IP` via VMnet1 op poorten `1881` en `8080`. Deze test alleen bewijst geen PLC01-route en geen OT-port-forward.
+- `Screenshot 2026-11-11 185224.png`: geslaagde verbinding naar `PFSENSE_MGMT_IP` via het Host-only-netwerk op poorten `1881` en `8080`. Deze test alleen bewijst geen PLC01-route en geen OT-port-forward.
 - `M04-EV-206` t/m `M04-EV-210`: de FUXA-connector toont configuratie, statuscode en motortags, maar nog geen reproduceerbare `0→1→0`-overgang van PLC-waarden.
 
 ## 6. Integriteit en herkomst
@@ -72,6 +72,8 @@ De [fase-21-reeks](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md
 
 ## M04-CORE C3 | 21 november 2026 — gesaneerde testdelta
 
-Drie pogingen vanaf een afzonderlijke virtuele beheerbron naar de PLC (TCP/502, TCP/22, TCP/44818) zijn volgens de sessierapportage door pfSense geblokkeerd: **TESTED / scoped PASS binnen die bron en poorten**. De oorspronkelijke F13–F15-bron verschilt; formele bronacceptatie, aanvullende capture- en rollbackreview en integrale AC04/AC07-acceptatie blijven **PENDING**. De historische galeries en afbeeldingen zijn niet herzien of gepresenteerd als nieuw testbewijs.
+**F13–F15 · scoped PASS vanaf de geteste beheer-VM.** De LAN-regel blokkeerde TCP/502, TCP/22 en TCP/44818. De OT-eindtellers voor TCP/22 en TCP/44818 zijn nul. Voor TCP/502 is het LAN-bloklog beschikbaar. Beide tijdelijke hostroutes zijn verwijderd en Cockpit is weer bereikbaar via Host-only.
+
+**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. **M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.** [Gesaneerd daglog](../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
 
 [Managementtestlog 21 november](../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [Open gaps](M04-GAPS.md) · [M04 Issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).

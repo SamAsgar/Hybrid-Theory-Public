@@ -59,3 +59,7 @@ Voordat pfSense-regels opnieuw worden aangepast: controleer de configuratie-expo
 De twee bronbeperkte beheerforwards staan op LAN. Een gerichte IPv4-block van LAN naar OT volgt op de beheeruitzonderingen en gaat vóór de brede LAN IPv4-allow. De brede LAN IPv6-allow blijft een open beoordelingspunt. Zowel de directe Windows-route naar PLC01 als de getoonde beheerforward verklaren waarom een time-out naar het firewalladres de drie directe PLC-proeven openlaat.
 
 Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Veilige live WAN-test, herstelbewijs en volledige AC04/AC07-acceptatie staan open. [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Diagram A, stand 20 november](README.md#1-diagram-a--huidige-geïmplementeerde-architectuur-20-november-2026).
+
+## Stand na de WAN-eindmeting · 21 november
+
+**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. De twee bestaande bronbeperkte webforwards vormen het beheerpad. F13–F15 zijn alleen voor de virtuele LAN-bron aangetoond. De brede IPv6-allow en alternatieve paden vragen nog review. [Sessieresultaten](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)

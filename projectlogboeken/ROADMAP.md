@@ -70,4 +70,4 @@ Dit zijn **inhoudelijke raakvlakken**, geen afrondingscriteria en geen bewijs da
 
 ## M04-CORE update 21 november 2026
 
-De [beheerzonetest](2026-11-21-m04-core-management-segmentatie.md) meldt drie gerichte, door pfSense gelogde blokkades vanaf een virtuele managementbron naar OT (TCP/502, TCP/22 en TCP/44818). **TESTED / scoped PASS** voor de feitelijke bron, maar F13–F15 formeel nog **PENDING** wegens testbronverschil en bewijsreview. **AC04/AC07 PENDING, CORE IN PROGRESS**. Resterend: capture-/rollbackbewijs, WAN→OT, IPv6, DNS/NTP, herstel en formele acceptatie. Geen permanente directe host→OT-route. EXT (Wazuh, GNS3, Suricata) en industriële DMZ volgen later.
+**M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.** F24 is aangetoond voor TCP/502 en TCP/8080. F13–F15 wachten op formele bronacceptatie en review per poort. Beide tijdelijke routes zijn verwijderd. De adaptereindstand, DNS/NTP, IPv6 en alternatieve paden, AC01–AC03-review en herstelvalidatie staan open. EXT en de industriële DMZ volgen later. [Uitvoering en resterende stappen](2026-11-21-m04-core-management-segmentatie.md)
