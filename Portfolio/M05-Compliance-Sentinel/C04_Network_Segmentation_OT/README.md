@@ -1,3 +1,32 @@
+# C04 · OT-netwerksegmentatie
+
+Welke uitspraak over de gekozen OT-grens dragen het ontwerp, de testbron en de waarnemingen?
+
+Leg bij elke technische uitslag de bronmissie, datum, testbron, toegestane richting en bewijsgrens vast. Richt een aanvullende technische proef aan de eigenaar van M04.
+
+**Mini-oefeningen**
+
+- [M05-MINI-01 · A.8.22 Risk-to-Control](../README.md#idx-m05-mini-01)
+- [M05-MINI-09 · Zones and Conduits](../README.md#idx-m05-mini-09)
+
+**Werkwijze en bronnen**
+
+Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../Methodiek/). Leg per vraag het bewijs, het ontbrekende bewijs of de reden voor N/A vast.
+
+ISO/IEC 27001:2022 Annex A.8.22 voor de eerste casus. IEC 62443-3-2:2020 kan een afgebakende zones-en-conduitsvraag helpen beantwoorden. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
+
+[M04-dossier](../../M04-Network-Citadel/README.md) · [M04-bewijsgrenzen](../../M04-Network-Citadel/M04-GAPS.md) · [Gesaneerde M04-testmatrix](../../M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) · [Netwerkontwerp](../../../architectuur/NETWERKONTWERP.md).
+
+## Technische bronstand van 21 november 2026
+
+M04 rapporteert een geslaagde, afgebakende blokkade aan de geteste netwerkgrens. M04-CORE is **IN PROGRESS**. De integrale acceptatie van AC04/AC07 is **PENDING**. M05 gebruikt de gepubliceerde bewijsgrens als vertrekpunt voor de eerste casus. [M04-bronstand](../../M04-Network-Citadel/M04-GAPS.md).
+
+De technische missie beheert het bewijs en de testuitslagen. M05 documenteert bron, datum, reikwijdte en begrenzing van de interpretatie.
+
+> **Historische bronpassage** · peilcommit `98bd282`, oorspronkelijk pad `Portfolio/M05-Compliance-Sentinel/M04-Network-Citadel/README.md`. [Permalink](https://github.com/SamAsgar/Hybrid-Theory-Public/blob/98bd28252b2adde6a2c129b1d9d3d12641e4fa2d/Portfolio/M05-Compliance-Sentinel/M04-Network-Citadel/README.md). De onderstaande passage bewaart de toenmalige status. De [mini-index](../README.md#mini-exercise-index) bevat de actuele werkstatus.
+
+<!-- BEGIN HISTORISCHE BRON -->
+
 # M04 — Network Citadel | M05-assessmentdossier
 
 **Status:** **PLANNED** — eerste assessment M05-MINI-01 gepland, niet gestart · [Terug naar M05](../README.md)
@@ -16,6 +45,7 @@ Dit dossier bevat uitsluitend M05-assessments over controls, risico's en bewijs 
 
 Een submap per assessment wordt pas aangemaakt wanneer het assessment daadwerkelijk start. Uitkomsten zijn scoped onderzoeksbeoordelingen (INTERNAL / AI-ondersteund) en geen milestone-acceptatie.
 
+<a id="m05-mini-01"></a>
 ## M05-MINI-01 — ISO 27001 Risk-to-Control Assessment (EERSTE GEPLANDE CASUS)
 
 **Status:** **PLANNED / niet gestart.** Een afzonderlijk uitvoeringsdossier wordt pas aangemaakt wanneer de oefening daadwerkelijk start.
@@ -43,3 +73,5 @@ Eén matrix verbindt de casus met alle zeven hoofdstukken. De kolom "Wat publiek
 | **05.5** | Wat mag over deze control worden geclaimd, en door wie? | [AI-werkafspraken](../../../governance/AI_WERKAFSPRAKEN.md), [Statuslegenda §7](../../../governance/STATUSLEGENDA.md#7-bewijsdiscipline) | M04-tests zijn deels met AI-begeleiding ontworpen en geduid | Onafhankelijke review; welk bewijs door Sam zelf is waargenomen | Assurance-statement met onafhankelijkheids- en AI-grenzen |
 | **05.6** | Wat kost deze beheersing en de beoordeling ervan? | — (alleen interne planningsramingen) | Er bestaan alleen geschatte planningsuren (**ESTIMATED**) | Gemeten beoordelingsinspanning (MEASURED) | Tijdregistratie MINI-01 + ACE-kosten/efficiëntieregel |
 | **05.7** | Welke afhankelijkheden maken dat één fout meerdere controls raakt? | [05.7 Systemic Risk](../Methodiek/05.7_Systemic_Risk/README.md) (methodiek) | Geen publieke dependency-analyse; de methodiek en een fictief voorbeeld zijn beschreven | Elke afhankelijkheid van de casus (de analyse blijft intern) | Interne dependencyregel(s) met bewijsniveau; publiek alleen een gesaneerde samenvatting na review |
+
+<!-- EINDE HISTORISCHE BRON -->

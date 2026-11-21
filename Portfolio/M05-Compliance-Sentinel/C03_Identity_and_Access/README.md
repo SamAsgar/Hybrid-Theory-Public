@@ -1,3 +1,27 @@
+# C03 · Identiteit en toegang
+
+Welke toegang is toegekend, welke toegang is nodig en wie heeft het verschil beoordeeld?
+
+Kies één identiteit, systeem en peildatum. Verbind het recht, de zakelijke noodzaak, de reviewer en het besluit. De oefening betreft AD. Entra valt buiten de scope tot implementatie.
+
+**Mini-oefeningen**
+
+- [M05-MINI-14 · AD Access Review](../README.md#idx-m05-mini-14)
+
+**Werkwijze en bronnen**
+
+Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../Methodiek/). Leg per vraag het bewijs, het ontbrekende bewijs of de reden voor N/A vast.
+
+ISO/IEC 27001 Annex A en een passende Microsoft-baseline voor het gekozen product. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
+
+[AD-baselinelog](../../../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) · [Hardwarebaseline](../../../governance/HARDWARE_BASELINE.md) · [Architectuuroverzicht](../../../architectuur/README.md).
+
+De technische missie beheert het bewijs en de testuitslagen. M05 documenteert bron, datum, reikwijdte en begrenzing van de interpretatie.
+
+> **Historische bronpassage** · peilcommit `98bd282`, oorspronkelijk pad `Portfolio/M05-Compliance-Sentinel/M03-Identity-Dominion/README.md`. [Permalink](https://github.com/SamAsgar/Hybrid-Theory-Public/blob/98bd28252b2adde6a2c129b1d9d3d12641e4fa2d/Portfolio/M05-Compliance-Sentinel/M03-Identity-Dominion/README.md). De onderstaande passage bewaart de toenmalige status. De [mini-index](../README.md#mini-exercise-index) bevat de actuele werkstatus.
+
+<!-- BEGIN HISTORISCHE BRON -->
+
 # M03 — Identity Dominion | M05-assessmentdossier
 
 **Status:** **PENDING** — nog geen M05-assessment voor deze missie · [Terug naar M05](../README.md)
@@ -15,3 +39,5 @@ Dit dossier bevat uitsluitend M05-assessments over controls, risico's en bewijs 
 | 05.7 | [Systemic Risk](../Methodiek/05.7_Systemic_Risk/README.md) | Nog geen assessment | **PENDING** |
 
 Een submap per assessment wordt pas aangemaakt wanneer het assessment daadwerkelijk start. Uitkomsten zijn scoped onderzoeksbeoordelingen (INTERNAL / AI-ondersteund) en geen milestone-acceptatie.
+
+<!-- EINDE HISTORISCHE BRON -->
