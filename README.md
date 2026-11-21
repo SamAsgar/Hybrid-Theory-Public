@@ -14,6 +14,12 @@ Hybrid-Theory is een hands-on cybersecurity-engineeringlab en experimenteel onde
 
 ### Architectuur
 
+**In één oogopslag:**
+
+![Hybrid-Theory — eenvoudige netwerktopologie: labhost, pfSense, zones MGMT, LAB en OT en het losstaande GNS3-testnet, stand 20 november 2026](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)
+
+**Gedetailleerd (aliassen en zones):**
+
 ![Diagram A1 — topologie en zones, stand 20 november 2026](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg)
 
 [Diagram A1 · topologie en zones](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [Diagram A2 · beheerpaden en OT-zonegrens](architectuur/diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg) · [Diagram A3 · teststatus en acceptatie](architectuur/diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg) · [Doelarchitectuur · Diagram B](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-20.svg) · [Architectuur- en netwerkontwerp](architectuur/README.md)
