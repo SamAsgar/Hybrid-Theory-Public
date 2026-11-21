@@ -1,6 +1,6 @@
 # M04 | Evidence-galerij per fase
 
-Deze galerij is bewust in **21 pagina's** verdeeld. GitHub hoeft niet alle 316 aanwezige PNG's tegelijk te renderen. De [hoofdindex](M04-EVIDENCE-INDEX.md) bevat 317 registraties. Voor M04-EV-113 ontbreekt de publieke PNG. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
+Deze galerij is bewust in **22 pagina's** verdeeld. GitHub hoeft niet alle 354 aanwezige PNG's tegelijk te renderen. De [hoofdindex](M04-EVIDENCE-INDEX.md) bevat 355 beeldregistraties. Voor M04-EV-113 ontbreekt de publieke PNG. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
 
 - **23× Baseline vóór de OT-migratie:** [Bekijk galerij](M04-Bewijsvoering/01_Pre_migration_baseline/README.md)
 - **3× VM-netwerkconfiguratie:** [Bekijk galerij](M04-Bewijsvoering/02_VM_Network_setup/README.md)
@@ -23,5 +23,7 @@ Deze galerij is bewust in **21 pagina's** verdeeld. GitHub hoeft niet alle 316 a
 - **7× FUXA-vervolgcontrole 15 november:** [Bekijk galerij](M04-Bewijsvoering/19_FUXA_followup/README.md)
 - **55× OT-segmentatie en regressietests (19 november):** [Bekijk galerij](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md)
 - **52× CORE C2 firewall- en isolatietests (20 november):** [Bekijk galerij](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md)
+
+- **38× LAN- en WAN-proeven (21 november)** · [Bekijk galerij en OT-pcap](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/README.md)
 
 [Terug naar hoofdindex](M04-EVIDENCE-INDEX.md)

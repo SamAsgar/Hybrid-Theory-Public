@@ -1,0 +1,107 @@
+M04-CORE | Bewijsselectie 21 november 2026
+Hybrid-Theory-Public | Gesaneerde screenshots
+
+Scope
+Routeonderzoek en controle van de directe LAN→OT-blokkade vanaf de beheer-VM
+naar PLC01. De bundel bevat 13 genummerde PNG-bestanden. Gekleurde vlakken
+markeren velden of regels waarin gevoelige waarden zijn vervangen.
+Enkele beelden zijn bijgesneden tot het relevante testvenster. Tijden zijn lokaal (CET) en komen uit de
+getoonde terminal of firewalllogs.
+
+Uitkomst
+De firewalllogs bevestigen de blokkade vanaf de beheer-VM op TCP/502,
+TCP/22 en TCP/44818. De uitkomst is een scoped PASS voor deze bron en
+dit testpad. De oorspronkelijke F13–F15-matrix gebruikt de beheerhost als
+MGMT_CLIENT. Formele acceptatie van de beheer-VM als testbron staat open.
+AC04 en AC07 blijven integraal open.
+
+Ontbrekend bewijs
+De eindteller van de gefilterde OT-capture en bewijs van verwijdering
+van de tijdelijke /32-route zijn niet beschikbaar in deze selectie.
+TCP/502 valt buiten het filter van de getoonde OT-capture.
+
+Selectie
+De bundel bevat beelden met route-, adapter-, firewall- of testinformatie.
+Dubbele weergaven, schermafbeeldingen van instructies, mislukte
+capture-invoer en video zijn weggelaten.
+
+Beschrijving per screenshot
+
+01-beheerhost-route-naar-plc01.png
+Op de beheerhost laat Find-NetRoute voor PLC01 (PLC01_OT_IP) de Wi-Fi-
+standaardroute zien, met bron REDACTED_WIFI_IP en gateway HOME_ROUTER_IP. Dit
+verklaart waarom een directe probe vanaf de beheerhost op dat moment niet via het
+bedoelde pfSense-beheerpad zou lopen. Dit is een routecontrole.
+
+02-beheerhost-route-naar-pfsense.png
+Op de beheerhost laat Find-NetRoute voor pfSense LAN (PFSENSE_MGMT_IP) VMware VMnet1
+zien, met bron MGMT_CLIENT_IP in REDACTED_MGMT_SUBNET (/24). Het toont de gekozen
+interface voor het beheeradres. De routecontrole bevat geen end-to-end
+bevestiging van een portforward.
+
+03-pfsense-lan-regels.png
+De LAN-regellijst toont brongebonden IPv4-beheeruitzonderingen voor FUXA01
+op TCP/1881 en PLC01 op TCP/8080, boven M04 LAN -> OT default deny voor
+REDACTED_OT_SUBNET (/24). De algemene LAN-allow voor IPv6 is zichtbaar en staat ter
+beoordeling. Dit beeld toont de relevante uitsnede van de configuratie. De werking van de
+blokregel blijkt uit screenshots 10 en 13.
+
+04-plc01-adres-en-lokale-route.png
+De console van PLC01 toont een routequery naar het eigen adres
+PLC01_OT_IP. De uitvoer bevat dev lo en cache <local>. Dit
+bevestigt waarom PLC01 zelf als bron geen LAN→OT-proef oplevert.
+
+05-beheer-vm-host-only-adapter.png
+De VMware-instellingen tonen dat Network Adapter 3 van de beheer-VM op
+Host-only staat. Connected en Connect at power on zijn op dit beeld
+uitgevinkt. Dit is een momentopname voorafgaand aan de latere routecontrole
+via ens38.
+
+06-beheer-vm-nat-adapter.png
+Network Adapter 2 staat in VMware op NAT. Connected en Connect at power on
+zijn op dit beeld uitgevinkt. Het screenshot legt de status van deze adapter
+op het opnamemoment vast.
+
+07-beheer-vm-lan-segment.png
+De eerste VMware-netwerkadapter staat op het LAN-segment REDACTED_LAN_SEGMENT.
+Connected en Connect at power on zijn aangevinkt.
+
+08-beheer-vm-tijdelijke-testroute.png
+de beheer-VM ziet ens33 (LAB_NET_IP/24) en ens38 (MGMT_NET_IP/24). PLC01
+heeft aanvankelijk geen route. De ping via ens38 naar pfSense LAN slaagt.
+Daarna wordt een tijdelijke hostroute voor PLC01_OT_IP/32 toegevoegd via
+PFSENSE_MGMT_IP en controleert ip route get de gekozen interface en bron.
+
+09-beheer-vm-probe-tcp-502.png
+de beheer-VM voert om 17:04:34 CET een TCP/502-probe uit vanaf MGMT_NET_IP
+naar PLC01. De client meldt een timeout. Dezelfde terminal toont de
+tijdelijke /32-route en de eerdere controles waarop IPv4- en IPv6-forwarding
+op de beheer-VM uit staan. Screenshot 10 koppelt de timeout aan de pfSense-
+blokregel.
+
+10-pfsense-bloklog-tcp-502.png
+pfSense registreert op LAN drie geblokkeerde TCP SYN-pakketten van
+MGMT_NET_IP:SRC_A naar PLC01_OT_IP:502, van 17:04:34 tot 17:04:36 CET.
+Alle regels matchen M04 LAN -> OT default deny (trackeralias RULE_A). Dit is
+het afzonderlijke firewallbewijs voor TCP/502.
+
+11-pfsense-ot-capture-start.png
+De pfSense-shell toont de start van een gefilterde capture op OT-interface
+em3 voor de beheer-VM→PLC01 op TCP/22 en TCP/44818. De teller van 1772 pakketten
+erboven hoort bij een eerder gestopte capture met zichtbaar
+FUXA01→PLC01-verkeer op TCP/502. De eindteller van de nieuwe capture
+ontbreekt.
+
+12-beheer-vm-probes-tcp-22-en-44818.png
+De Cockpit-terminal draait op LAB-LINUX-01 (testrol beheer-VM). De routequery
+bevestigt PFSENSE_MGMT_IP als next hop, ens38 als interface en MGMT_NET_IP
+als bron. Beide TCP-probes lopen in een timeout.
+De getoonde clienttijd direct vóór de opdracht is 17:43:35 CET voor TCP/22
+en 17:43:38 CET voor TCP/44818.
+
+13-pfsense-bloklog-alle-drie-poorten.png
+De gecombineerde logweergave toont negen geblokkeerde SYN-pakketten op LAN
+onder trackeralias RULE_A. Per bestemming zijn dit drie regels: TCP/502 om
+17:04:34–17:04:36 (bronpoort SRC_A), TCP/22 om 17:43:35–17:43:37 (SRC_B), en
+TCP/44818 om 17:43:42–17:43:44 (SRC_C). De herhaalde bronpoort per
+bestemming past bij hertransmissies van dezelfde verbindingspoging.

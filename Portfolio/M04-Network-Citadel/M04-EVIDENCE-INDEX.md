@@ -1,7 +1,7 @@
 # M04 Network Citadel | Evidence-index
 
-**Periode:** 30 oktober t/m 20 november 2026  
-**Inhoud:** 317 bewijsregistraties · 316 aanwezige gesaneerde PNG-afgeleiden · 21 fasen  
+**Periode:** 30 oktober t/m 21 november 2026  
+**Inhoud:** 355 beeldregistraties · 354 aanwezige gesaneerde PNG-afgeleiden · 22 fasen · één aanvullende OT-pcap  
 **Status:** vastgelegd bewijs, niet gelijk aan voltooiing van alle acceptatiecriteria.  
 **Repository:** PUBLIC. Alleen gesaneerde afgeleiden; de originelen blijven uitsluitend privé. Zie [saneringsrapport](M04-SANITIZATION-REPORT.md).
 
@@ -32,6 +32,7 @@ De datum is ontleend aan de bestandsnaam. De aanduidingen `CONFIG`, `TROUBLESHOO
 | FUXA-vervolgcontrole 15 november | 7 | [Bekijk beelden](M04-Bewijsvoering/19_FUXA_followup/README.md) |
 | OT-segmentatie en regressietests 19 november | 55 | [Bekijk beelden](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) |
 | CORE C2 firewall- en isolatietests, 20 november | 52 | [Bekijk beelden](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md) |
+| CORE C3 LAN- en WAN-proeven, 21 november | 38 | [Bekijk beelden](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/README.md) |
 
 ## Individueel evidence-register
 
@@ -360,6 +361,51 @@ De datum is ontleend aan de bestandsnaam. De aanduidingen `CONFIG`, `TROUBLESHOO
 | M04-20261120-050 | CONFIG | [50-232340-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/50-232340-M04-C2.png) | pfSense IPv4- en IPv6-routetabellen. |
 | M04-20261120-051 | CONFIG | [51-232554-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/51-232554-M04-C2.png) | pfSense IP-aliasoverzicht met de RFC1918-netwerkgroep. |
 | M04-20261120-052 | CONFIG | [52-232729-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/52-232729-M04-C2.png) | pfSense-editor voor de IPv4-regel M04 LAN → OT default deny. |
+
+### Fase 22 · 21 november
+
+| ID | Type | Beeld | Onderwerp |
+|---|---|---|---|
+| M04-20261121-001 | TEST | [Deel 1 · 01](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/01-beheerhost-route-naar-plc01.png) | beheerhost route naar plc01 |
+| M04-20261121-002 | TEST | [Deel 1 · 02](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/02-beheerhost-route-naar-pfsense.png) | beheerhost route naar pfsense |
+| M04-20261121-003 | CONFIG | [Deel 1 · 03](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/03-pfsense-lan-regels.png) | pfsense lan regels |
+| M04-20261121-004 | TEST | [Deel 1 · 04](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/04-plc01-adres-en-lokale-route.png) | plc01 adres en lokale route |
+| M04-20261121-005 | CONFIG | [Deel 1 · 05](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/05-beheer-vm-host-only-adapter.png) | beheer vm host only adapter |
+| M04-20261121-006 | CONFIG | [Deel 1 · 06](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/06-beheer-vm-nat-adapter.png) | beheer vm nat adapter |
+| M04-20261121-007 | CONFIG | [Deel 1 · 07](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/07-beheer-vm-lan-segment.png) | beheer vm lan segment |
+| M04-20261121-008 | TEST | [Deel 1 · 08](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/08-beheer-vm-tijdelijke-testroute.png) | beheer vm tijdelijke testroute |
+| M04-20261121-009 | TEST | [Deel 1 · 09](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/09-beheer-vm-probe-tcp-502.png) | beheer vm probe tcp 502 |
+| M04-20261121-010 | LOG | [Deel 1 · 10](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/10-pfsense-bloklog-tcp-502.png) | pfsense bloklog tcp 502 |
+| M04-20261121-011 | TEST | [Deel 1 · 11](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/11-pfsense-ot-capture-start.png) | pfsense ot capture start |
+| M04-20261121-012 | TEST | [Deel 1 · 12](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/12-beheer-vm-probes-tcp-22-en-44818.png) | beheer vm probes tcp 22 en 44818 |
+| M04-20261121-013 | LOG | [Deel 1 · 13](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/01-LAN/13-pfsense-bloklog-alle-drie-poorten.png) | pfsense bloklog alle drie poorten |
+| M04-20261121-014 | TEST | [Deel 2 · 01](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/01-lan-ot-capture-eindtellers.png) | lan ot capture eindtellers |
+| M04-20261121-015 | TEST | [Deel 2 · 02](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/02-lan-rollback-routecontrole.png) | lan rollback routecontrole |
+| M04-20261121-016 | CONFIG | [Deel 2 · 03](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/03-pfsense-interfaceoverzicht.png) | pfsense interfaceoverzicht |
+| M04-20261121-017 | CONFIG | [Deel 2 · 04](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/04-beheer-vm-vmware-lan-uitgangsstand.png) | beheer vm vmware lan uitgangsstand |
+| M04-20261121-018 | CONFIG | [Deel 2 · 05](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/05-beheer-vm-vmware-nat-uitgangsstand.png) | beheer vm vmware nat uitgangsstand |
+| M04-20261121-019 | CONFIG | [Deel 2 · 06](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/06-beheer-vm-vmware-host-only-uitgangsstand.png) | beheer vm vmware host only uitgangsstand |
+| M04-20261121-020 | TEST | [Deel 2 · 07](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/07-f24-wan-bron-en-next-hop.png) | f24 wan bron en next hop |
+| M04-20261121-021 | TEST | [Deel 2 · 08](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/08-f24-tijdelijke-wan-hostroute.png) | f24 tijdelijke wan hostroute |
+| M04-20261121-022 | CONFIG | [Deel 2 · 09](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/09-f24-ot-filterconfiguratie.png) | f24 ot filterconfiguratie |
+| M04-20261121-023 | TEST | [Deel 2 · 10](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/10-f24-client-eerste-wan-ronde.png) | f24 client eerste wan ronde |
+| M04-20261121-024 | TEST | [Deel 2 · 11](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/11-f24-wan-ingress-eerste-ronde.png) | f24 wan ingress eerste ronde |
+| M04-20261121-025 | TEST | [Deel 2 · 12](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/12-f24-ot-capture-eerste-poging-actief.png) | f24 ot capture eerste poging actief |
+| M04-20261121-026 | TEST | [Deel 2 · 13](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/13-f24-client-wan-herhaling.png) | f24 client wan herhaling |
+| M04-20261121-027 | TEST | [Deel 2 · 14](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/14-f24-wan-ingress-herhaling.png) | f24 wan ingress herhaling |
+| M04-20261121-028 | TEST | [Deel 2 · 15](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/15-f24-ot-capture-eerste-poging-gestopt.png) | f24 ot capture eerste poging gestopt |
+| M04-20261121-029 | LOG | [Deel 2 · 16](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/16-f24-wan-bloklogs-eerste-twee-rondes.png) | f24 wan bloklogs eerste twee rondes |
+| M04-20261121-030 | TEST | [Deel 2 · 17](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/17-f24-client-eindmeting.png) | f24 client eindmeting |
+| M04-20261121-031 | TEST | [Deel 2 · 18](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/18-f24-wan-capture-eindmeting-actief.png) | f24 wan capture eindmeting actief |
+| M04-20261121-032 | TEST | [Deel 2 · 19](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/19-f24-ot-capture-na-probes-actief.png) | f24 ot capture na probes actief |
+| M04-20261121-033 | TEST | [Deel 2 · 20](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/20-f24-ot-capture-eindmeting-gestopt.png) | f24 ot capture eindmeting gestopt |
+| M04-20261121-034 | TEST | [Deel 2 · 21](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/21-f24-wan-capture-eindmeting-zes-syn.png) | f24 wan capture eindmeting zes syn |
+| M04-20261121-035 | LOG | [Deel 2 · 22](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/22-f24-bloklog-eindmeting-tcp-502.png) | f24 bloklog eindmeting tcp 502 |
+| M04-20261121-036 | LOG | [Deel 2 · 23](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/23-f24-bloklog-eindmeting-tcp-8080.png) | f24 bloklog eindmeting tcp 8080 |
+| M04-20261121-037 | TEST | [Deel 2 · 24](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/24-f24-rollback-wan-hostroute.png) | f24 rollback wan hostroute |
+| M04-20261121-038 | TEST | [Deel 2 · 25](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/25-f24-cockpit-beheerpad-hersteld.png) | f24 cockpit beheerpad hersteld |
+
+[Aanvullende OT-pcap](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/02-LAN-WAN/F24-OT-EINDMETING.pcap)
 
 ## Acceptatie en audittrail
 
