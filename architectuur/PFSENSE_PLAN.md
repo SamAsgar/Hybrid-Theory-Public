@@ -58,7 +58,7 @@ Voordat pfSense-regels opnieuw worden aangepast: controleer de configuratie-expo
 
 De twee bronbeperkte beheerforwards staan op LAN. Een gerichte IPv4-block van LAN naar OT volgt op de beheeruitzonderingen en gaat vóór de brede LAN IPv4-allow. De brede LAN IPv6-allow blijft een open beoordelingspunt. Zowel de directe Windows-route naar PLC01 als de getoonde beheerforward verklaren waarom een time-out naar het firewalladres de drie directe PLC-proeven openlaat.
 
-Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Veilige live WAN-test, herstelbewijs en volledige AC04/AC07-acceptatie staan open. [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Diagram A, stand 20 november](README.md#1-diagram-a--huidige-geïmplementeerde-architectuur-20-november-2026).
+Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Aan het einde van C2 stond de live WAN-proef nog open. F24 heeft sinds 21 november een scoped PASS voor twee TCP-stromen. Herstelbewijs en integrale acceptatie van AC04/AC07 staan open. [Publieke testmatrix](../Portfolio/M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv). [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Diagram A, stand 20 november](README.md#1-diagram-a--huidige-geïmplementeerde-architectuur-20-november-2026).
 
 ## Stand na de WAN-eindmeting · 21 november
 

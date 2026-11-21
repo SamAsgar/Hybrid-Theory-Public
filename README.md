@@ -32,7 +32,7 @@ De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identit
 | [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/42) | Een deel van de controles op host en hypervisor is uitgevoerd. Voor klembord en slepen tussen host en gast geldt een uitzondering op geselecteerde Windows-VM’s. |
 | [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/43) | Het herstelontwerp ligt er. Een restore op een afzonderlijke host moet nog worden aangetoond. |
 | [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) | Centraal gebruikersbeheer met Active Directory, naamomzetting (DNS), aanmelden op het domein en één groepsbeleid zijn getest. De uitbreiding met Entra ID is gepland. |
-| [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | PLC/HMI-functionaliteit en gerichte firewallblokkeringen zijn getest; F13–F15 hebben scoped PASS vanaf de beheer-VM en F24 voor WAN→OT op TCP/502 en TCP/8080. Bronacceptatie, bewijsreview en integrale AC04/AC07 blijven open. |
+| [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | PLC/HMI-functionaliteit en gerichte firewallblokkeringen zijn getest; F13–F15 hebben scoped PASS vanaf de beheer-VM en F24 voor WAN→OT op TCP/502 en TCP/8080. Bronacceptatie, bewijsreview en integrale AC04/AC07 blijven open. [Publieke testmatrix](Portfolio/M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) |
 | [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) | De onderzoeksopzet is goedgekeurd. De eerste casus is gepland: beoordelen hoe de scheiding tussen de netwerken aansluit op ISO/IEC 27001 A.8.22. |
 
 ## Bewijs en logboeken

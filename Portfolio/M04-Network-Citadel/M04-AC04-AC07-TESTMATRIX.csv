@@ -1,0 +1,26 @@
+test_id,acceptatie,bronzone,doelzone,protocol,poort_of_type,verwacht_resultaat,actuele_status,waargenomen_uitkomst,bewijsgrens_of_vervolg
+M04-F01,AC04/07,LAB,OT · PLC,TCP,502,DENY,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,Blokkade gerapporteerd.,"Controleer de samenhang tussen clienttest, firewalllog en OT-meting."
+M04-F02,AC04/07,LAB,OT · HMI,TCP,1881,DENY,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,Blokkade gerapporteerd.,"Controleer de samenhang tussen clienttest, firewalllog en OT-meting."
+M04-F03,AC04/07,OT · PLC,LAB,ICMP,echo,DENY,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,Blokkade gerapporteerd.,Controleer welke regel de geteste stroom blokkeerde.
+M04-F04,AC04/07,OT · HMI,LAB,ICMP,echo,DENY,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,Blokkade gerapporteerd.,Uitkomst geldt voor de geteste ICMP-stroom.
+M04-F05,AC04/07,OT · PLC,Externe testbestemming,TCP,443,DENY,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,Blokkade gerapporteerd.,Controleer de testbron en de samenhang van de bewijsstukken.
+M04-F06,AC04/07,OT · PLC,Externe testbestemming,ICMP,echo,DENY,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,Blokkade gerapporteerd.,Uitkomst geldt voor de geteste ICMP-stroom.
+M04-F07,AC07,Beheerzone,OT · PLC-webbeheer,TCP,8080,ALLOW,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,TCP-bereikbaarheid via beheerforward gerapporteerd en op 20 november opnieuw getest.,Authenticatie en TLS zijn afzonderlijke verificaties.
+M04-F08,AC07,Beheerzone,OT · HMI-webbeheer,TCP,1881,ALLOW,EXISTING-TESTED / EVIDENCE-REVIEW-PENDING,TCP-bereikbaarheid via beheerforward gerapporteerd.,Authenticatie en TLS zijn afzonderlijke verificaties.
+M04-F09,AC04/07,LAB,OT · PLC,TCP,8080,DENY,TESTED / SCOPED PASS,Firewall logde de blokkade.,Binding van de testbron en OT-capture vragen review.
+M04-F10,AC04/07,LAB,OT · PLC,TCP,22,DENY,TESTED / SCOPED PASS,Firewall logde de blokkade.,Binding van de testbron en OT-capture vragen review.
+M04-F11,AC04/07,LAB,OT · PLC,TCP,44818,DENY,TESTED / SCOPED PASS,Firewall logde de blokkade.,Een actieve listener aan de doelzijde is niet aangetoond.
+M04-F12,AC04/07,LAB,OT · PLC,ICMP,echo,DENY,TESTED / SCOPED PASS,Firewall logde de ICMP-blokkade.,Binding van de testbron vraagt review.
+M04-F13,AC04/07,Beheerzone,OT · PLC,TCP,502,DENY,TESTED / SCOPED PASS (VERVANGENDE BRON) / FORMAL PENDING,Firewall logde de blokkade vanaf een vervangende beheerbron.,Formele acceptatie voor de voorgeschreven bron en bewijsreview staan open. Deze stroom viel buiten het getoonde smalle OT-filter.
+M04-F14,AC04/07,Beheerzone,OT · PLC,TCP,22,DENY,TESTED / SCOPED PASS (VERVANGENDE BRON) / FORMAL PENDING,Firewall logde de blokkade vanaf een vervangende beheerbron. De gefilterde OT-capture telde nul treffers.,"Formele bronacceptatie, review van tijddekking en besluit over SSH-beheer staan open."
+M04-F15,AC04/07,Beheerzone,OT · PLC,TCP,44818,DENY,TESTED / SCOPED PASS (VERVANGENDE BRON) / FORMAL PENDING,Firewall logde de blokkade vanaf een vervangende beheerbron. De gefilterde OT-capture telde nul treffers.,Formele bronacceptatie en review van tijddekking staan open.
+M04-F16,AC04/07,OT · PLC,Beheerzone,TCP,8080,DENY,TESTED / SCOPED PASS,Client meldde een time-out en de firewall logde de blokkade.,Uitkomst geldt voor de geteste stroom.
+M04-F17,AC04/07,OT · HMI,Firewallbeheer,TCP,443,DENY / OWNER-CONFIRM,TESTED / SCOPED PASS,HTTPS-test eindigde in een time-out met een gelogde blokkade.,Beheerbeleid vraagt bevestiging door de eigenaar.
+M04-F18,AC04/07,OT · PLC,Firewallgateway,TCP,22,DENY / OWNER-CONFIRM,TESTED / SCOPED PASS,TCP-test eindigde in een time-out met een gelogde blokkade.,SSH-beheerbeleid vraagt bevestiging door de eigenaar.
+M04-F19,AC04/07,OT · PLC,Externe testbestemming,TCP,80,DENY,TESTED / SCOPED PASS,HTTP-verbinding eindigde in een time-out met een gelogde blokkade.,Uitkomst geldt voor de geteste bestemming.
+M04-F20,AC04/07,OT · PLC,DNS-testbestemming,UDP,53,DENY / OWNER-CONFIRM,DESIGN-CONFIRM,DNS-test eindigde in een time-out met een gelogde blokkade.,Keuze van de goedgekeurde resolver staat open.
+M04-F21,AC04/07,OT · HMI,NTP-testbestemming,UDP,123,DENY / OWNER-CONFIRM,DESIGN-CONFIRM,Firewall logde een blokkade. Een NTP-respons is niet waargenomen.,Keuze van de goedgekeurde tijdbron staat open.
+M04-F22,AC04/07,LAB,OT · PLC,IPv6,ICMPv6 + TCP,DENY / NO-ROUTE-VERIFIED,NO-ROUTE-VERIFIED,In de onderzochte opstelling is geen IPv6-routepad geverifieerd.,Beoordeling van de IPv6-firewallhandhaving staat open.
+M04-F23,AC04/07,LAN,OT · HMI,IPv6,ICMPv6 + TCP,DENY / NO-ROUTE-VERIFIED,NO-ROUTE-VERIFIED,In de onderzochte opstelling is geen globaal IPv6-routepad geverifieerd.,Beoordeling van het IPv6-firewallbeleid en de handhaving staat open.
+M04-F24,AC04/07,Gesimuleerd WAN,OT · PLC,TCP,502/8080,DENY,TESTED / SCOPED PASS (TCP/502 AND TCP/8080),Firewall blokkeerde alle zes TCP SYN-pakketten op de twee geteste poorten. De gelijktijdige gefilterde OT-capture telde nul treffers.,Scoped PASS voor deze twee stromen. Integrale acceptatie van AC04 en AC07 staat open.
+M04-F25,AC02,OT · HMI,OT · PLC,TCP,502,ALLOW,EXISTING-TESTED / NOT-SEGMENTATION-EVIDENCE,Functionele HMI/PLC-communicatie binnen dezelfde OT-zone is gerapporteerd.,Functiebewijs voor AC02. Het verkeer passeerde de segmentatiefirewall niet en levert dus geen AC04-bewijs.
