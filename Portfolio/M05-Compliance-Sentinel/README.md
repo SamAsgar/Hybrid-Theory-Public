@@ -266,4 +266,4 @@ De [indexrij](#idx-m05-mini-01) geeft de planning. In [C04 · casus en historisc
 
 *Build with purpose. Secure by design. Validate through evidence. Improve continuously.*
 
-**Redactie van deze structuurwijziging** · structuur goedgekeurd door Sam, ter review op de publieke werkbranch. Een afzonderlijk besluit van de Project Owner bepaalt de vrijgave.
+De publieke chapterstructuur is opgenomen in [PR #69](https://github.com/SamAsgar/Hybrid-Theory-Public/pull/69).

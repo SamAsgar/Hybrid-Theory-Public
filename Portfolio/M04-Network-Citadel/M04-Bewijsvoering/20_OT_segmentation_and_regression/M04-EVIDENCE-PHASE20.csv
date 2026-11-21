@@ -1,5 +1,3 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: M04-EVIDENCE-PHASE20.csv>
 index,evidence_id,filename,category,sha256_public,description,evidence_limit
 0,M04-20261119-001,Screenshot 2026-11-19 205046.png,LOG,6a14d39679f5ee1755f7f541e247208ee63ca4913c8578e0d905d9d555b8bb00,pfSense-firewalllog filtert LAB→PLC01-verkeer en toont geblokkeerde TCP/502-pogingen na een regelwijziging.,Beperkt bewijs van een deny op dit bron-doelpaar; geen volledige AC04-acceptatie.
 1,M04-20261119-002,Screenshot 2026-11-19 205131.png,LOG,516cef3741a950d77c7b43e1a59aeac99a42688c8e04ef0f7421039a2b579100,pfSense-firewalllog filtert LAB→FUXA01-verkeer en toont geblokkeerde verbindingen na de wijziging.,Beperkt bewijs van blokkades op de getoonde verbindingen.
