@@ -114,3 +114,7 @@ Er is **geen** M04-screenshot volledig uitgesloten. Na maskering bleef van elk b
 ## 6. Aanvulling fase 20 (20 november 2026)
 
 55 nieuwe gesaneerde PNG-afgeleiden uit de sessie van 19 november zijn toegevoegd, bovenop de oorspronkelijke 210. Adresvelden en identificatoren zijn selectief en onomkeerbaar vervangen door gevalideerde SSOT-aliassen of `REDACTED_*`, in plaats van volledige terminalvensters af te dekken. De 55 nieuwe publieke SHA-256-waarden staan in het fase-20-manifest. Dit is **geen** volledige privacy- of AC04/AC07-acceptatie. [Zie de aanvullende saneringsverantwoording](M04-Bewijsvoering/20_OT_segmentation_and_regression/M04-PHASE20-SANITIZATION-REPORT.md).
+
+## Fase 22 · 21 november 2026
+
+38 aangeleverde publieke PNG’s en één gefilterde OT-pcap zijn gecontroleerd. [Saneringsrapport van fase 22](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/M04-PHASE22-SANITIZATION-REPORT.md) · [SHA-256](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/SHA256SUMS.txt)

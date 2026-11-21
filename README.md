@@ -37,6 +37,6 @@ De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identit
 
 ## Bewijs en logboeken
 
-Het [publieke portfolio](Portfolio/README.md) koppelt tests aan gesaneerd bewijsmateriaal. De [M01-bewijsindex](Portfolio/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) bevat 82 screenshots. De [M04-galerij](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) bevat 316 gepubliceerde beelden verdeeld over 21 fasen.
+Het [publieke portfolio](Portfolio/README.md) koppelt tests aan gesaneerd bewijsmateriaal. De [M01-bewijsindex](Portfolio/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) bevat 82 screenshots. De [M04-galerij](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) bevat 354 gepubliceerde beelden verdeeld over 22 fasen.
 
 [Projectlogboeken](projectlogboeken/README.md) · [Roadmap](projectlogboeken/ROADMAP.md) · [Statuslegenda](governance/STATUSLEGENDA.md)
