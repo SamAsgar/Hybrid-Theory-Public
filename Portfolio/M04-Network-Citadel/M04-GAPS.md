@@ -39,3 +39,10 @@ Bij een pad- en bestandscontrole van de publieke evidence-set zijn **264 PNG-bes
 - **Bestaande fase-20-beelden:** finale privacy- en leesbaarheidsreview staat open.
 
 [C2-projectlog](../../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md).
+
+
+## GAP-delta 21 november 2026 — beheerzone naar OT
+
+De eigenaarsessie bevestigt binnen de getoonde scope drie door de firewall geblokkeerde directe verbindingen van een virtuele beheerbron naar de PLC: TCP/502, TCP/22 en TCP/44818. **TESTED / scoped PASS voor die beheerbron**; formele testbronacceptatie en volledig client-/firewall-/capturebewijs blijven open. Dit is geen algemene zone-isolatie-PASS.
+
+Resterend: F13–F15-bronbesluit, capture-/rollbackbewijs, IPv6-regel en alternatieve paden, veilige WAN→OT-test F24, DNS/NTP-bronbeleid, herstel- en AC01–03-evidencereview. **AC04/AC07 integraal PENDING; M04-CORE IN PROGRESS.** Wazuh, GNS3 en Suricata blijven EXT. [Gesaneerd log 21 november](../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md).

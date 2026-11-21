@@ -68,3 +68,10 @@ De [nieuwe fase-20-galerij](M04-Bewijsvoering/20_OT_segmentation_and_regression/
 [Gesaneerd sessielog](../../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Open verificatiepunten](M04-GAPS.md#c2-netwerkvalidatie--20-november-2026). De C2-log registreert aanvullende gescopeerde netwerkresultaten. De fase-20-galerij is de afzonderlijke beeldset van 19 november. M04-CORE is **IN PROGRESS**.
 
 De [fase-21-reeks](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md) bevat de chronologisch geordende CORE C2-opnamen van 20 november 2026, met een eigen manifest en saneringsrapport.
+
+
+## M04-CORE C3 | 21 november 2026 — gesaneerde testdelta
+
+Drie pogingen vanaf een afzonderlijke virtuele beheerbron naar de PLC (TCP/502, TCP/22, TCP/44818) zijn volgens de sessierapportage door pfSense geblokkeerd: **TESTED / scoped PASS binnen die bron en poorten**. De oorspronkelijke F13–F15-bron verschilt; formele bronacceptatie, aanvullende capture- en rollbackreview en integrale AC04/AC07-acceptatie blijven **PENDING**. De historische galeries en afbeeldingen zijn niet herzien of gepresenteerd als nieuw testbewijs.
+
+[Managementtestlog 21 november](../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [Open gaps](M04-GAPS.md) · [M04 Issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).

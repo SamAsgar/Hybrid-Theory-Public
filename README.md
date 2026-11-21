@@ -15,7 +15,7 @@ Op één fysieke host heb ik met VMware een bedrijfsnetwerk, een beheeromgeving 
 Een bedieningsscherm (FUXA) stuurt een industriële controller (OpenPLC) aan die een motor simuleert. Nadat ik beide systemen naar het OT-netwerk had verplaatst, testte ik twee dingen die voor een bedrijf tegelijk moeten kloppen:
 
 - **Kan de operator de installatie blijven bedienen?** Na een herstart gaf ik via het scherm een start- en stopcommando. In de controller las ik de bijbehorende statusverandering terug. [Bedieningstest van 19 november](projectlogboeken/2026-11-19-m04-openplc-autostart-en-ot-regressie.md)
-- **Houdt de firewall ongewenste toegang tegen?** Vanuit het labnetwerk probeerde ik onder meer de beheerpagina van de controller te bereiken. Het firewalllog liet zien dat de firewall dat verkeer blokkeerde. De volledige toets van alle toegestane en geblokkeerde verbindingen staat nog open. [Netwerktests van 20 november](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md)
+- **Houdt de firewall ongewenste toegang tegen?** Vanuit het labnetwerk testte ik de netwerkgrens. Op 21 november werden ook drie gerichte pogingen vanaf een afzonderlijke virtuele beheerbron naar de controller (Modbus, SSH en EtherNet/IP) volgens de sessielogs door pfSense geblokkeerd. Dit zijn **gescopeerde deelresultaten**, geen formele acceptatie van de volledige segmentatie. [Netwerktests van 20 november](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Managementtests van 21 november](projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
 
 ## Identiteit en bedrijfscontinuïteit
 
@@ -25,14 +25,14 @@ Een bedieningsscherm (FUXA) stuurt een industriële controller (OpenPLC) aan die
 
 ## Missies
 
-De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identiteit, netwerkbeveiliging en de beoordeling van maatregelen. De stand hieronder is van 20 november 2026. Voor alle vijf staat de eerste milestone nog open.
+De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identiteit, netwerkbeveiliging en de beoordeling van maatregelen. De stand hieronder is van 21 november 2026. Voor alle vijf staat de eerste milestone nog open.
 
 | Missie | Voortgang |
 |---|---|
 | [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/42) | Een deel van de controles op host en hypervisor is uitgevoerd. Voor klembord en slepen tussen host en gast geldt een uitzondering op geselecteerde Windows-VM’s. |
 | [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/43) | Het herstelontwerp ligt er. Een restore op een afzonderlijke host moet nog worden aangetoond. |
 | [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) | Centraal gebruikersbeheer met Active Directory, naamomzetting (DNS), aanmelden op het domein en één groepsbeleid zijn getest. De uitbreiding met Entra ID is gepland. |
-| [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | De bediening van de PLC en specifieke firewallblokkades zijn getest. De volledige toets op segmentatie en toegestane verkeersstromen (AC04/AC07) staat open. |
+| [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | PLC/HMI-functionaliteit en gerichte firewallblokkeringen zijn getest; drie management→OT-denies zijn op 21 november als scoped PASS gerapporteerd. Bronacceptatie, bewijsreview en integrale AC04/AC07 blijven open. |
 | [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) | De onderzoeksopzet is goedgekeurd. De eerste casus is gepland: beoordelen hoe de scheiding tussen de netwerken aansluit op ISO/IEC 27001 A.8.22. |
 
 ## Bewijs en logboeken

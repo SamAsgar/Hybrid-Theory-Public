@@ -90,3 +90,12 @@ LAB en OT blijven afzonderlijke VMware LAN Segments. De aangewezen beheerbron `M
 De C2-sessie bevestigde gerichte LAB→PLC- en OT→beheer/firewall/extern-blokkades. Het IPv6-resultaat beschrijft de routes en L2-scope van de bekeken opstelling. Een brede LAN IPv6-allow blijft onder review. Voor de WAN-zijde is de configuratie bekeken en staat de veilige live proef open. Wazuh OT-telemetrie, GNS3-schaaluitwerking en Suricata-alertcorrelatie horen bij EXT.
 
 [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [pfSense-controles](PFSENSE_PLAN.md#m04--configuratiereview-en-deeltests-op-20-november).
+
+
+## Actualisatie 21 november 2026 — beheerzone/OT-ontwerp
+
+In de bestaande topologie is vanuit een afzonderlijke virtuele managementbron driemaal een directe verbinding naar de PLC geprobeerd: Modbus TCP/502, SSH TCP/22 en EtherNet/IP TCP/44818. Volgens de eigenaarsessie blokkeerde pfSense deze drie verbindingen op de beheer-naar-OT-grens. **TESTED / scoped PASS voor de geteste managementbron.** De canonieke F13–F15-matrix noemt een andere bron; expliciete bronacceptatie, packetcapture-/log-review en rollbackbewijs zijn nog **PENDING**. Integrale AC04/AC07: **PENDING**.
+
+De fysieke VMware-host krijgt geen permanente directe OT-route. Het beperkte webbeheer via de bestaande firewallportforwards blijft tijdelijk gehandhaafd. Uitbreiding van het virtuele beheerwerkstation en de industriële DMZ is uitgesteld tot na M04-CORE. De in het eerdere document opgenomen stand van 20 november blijft historische context.
+
+[Gesaneerd testlog 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [M04 Issue #45](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).

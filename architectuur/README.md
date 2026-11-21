@@ -143,3 +143,10 @@ De versies van 15 november, [diagram A](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBL
 ## M04-netwerkdelta — 20 november
 
 [AS-IS netwerkpaden](NETWERKONTWERP.md#m04-as-is--netwerkpaden-beoordeeld-op-20-november) · [pfSense-review](PFSENSE_PLAN.md#m04--configuratiereview-en-deeltests-op-20-november) · [Gescopeerde C2-testronde](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md). De netwerkdelta geeft de getoonde beheer-, LAB-, OT-, IPv6- en WAN-scope weer en is verwerkt in [diagram A van 20 november](#1-diagram-a--huidige-geïmplementeerde-architectuur-20-november-2026).
+
+
+## Statusdelta 21 november 2026 — beheernetwerk en OT
+
+Volgens de eigenaarsessie blokkeerde pfSense drie directe management→PLC-pogingen op TCP/502, TCP/22 en TCP/44818. Dit is **TESTED / scoped PASS voor de werkelijk gebruikte virtuele beheerbron**, niet de formele acceptatie van F13–F15 of AC04/AC07. Testbronacceptatie, capture-/rollbackbewijs, WAN→OT en de overige CORE-controles zijn nog open.
+
+De afbeeldingen op deze pagina tonen de **topologie en teststand van 20 november**; de latere C3-resultaten zijn aanvullend gedocumenteerd in het [gesaneerde sessielog van 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md). Geen directe permanente fysieke-host→OT-route of industriële DMZ in deze fase.
