@@ -4,6 +4,14 @@
 
 Deze map beschrijft de netwerkarchitectuur van het Hybrid-Theory-lab in twee lagen: wat er nu staat (diagram A) en waar het ontwerp naartoe gaat (diagram B). Adressen zijn vervangen door **vaste, officiële aliassen** zoals `PLC01_OT_IP`. Dezelfde alias verwijst overal naar hetzelfde adres; de werkelijke waarden en de vertaaltabel blijven privé.
 
+## 0. In één oogopslag — eenvoudige topologie
+
+Een vereenvoudigd overzicht voor wie snel wil zien hoe het lab is opgebouwd: één labhost, pfSense als centrale firewall en de zones MGMT, LAB en OT, plus het losstaande GNS3-testnet. Geen adressen of aliassen; voor details en teststatus zie diagram A1–A3 hieronder.
+
+![Hybrid-Theory — eenvoudige netwerktopologie: labhost, pfSense, zones MGMT, LAB en OT en het losstaande GNS3-testnet, stand 20 november 2026](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)
+
+*Figuur 0.* Illustratie, geen testbewijs. [SVG](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.png)
+
 ## 1. Diagram A — huidige geïmplementeerde architectuur (20 november 2026)
 
 Diagram A bestaat uit drie delen, zodat de tekst op schermbreedte leesbaar blijft. Alle drie zijn **architectuurillustraties**, geen testbewijs en geen live-meting, en bevatten geen werkelijke adressen.
