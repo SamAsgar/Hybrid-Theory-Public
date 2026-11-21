@@ -1,70 +1,25 @@
 # Hybrid-Theory
 
-## Cybersecurity engineering voor hybride IT/OT-omgevingen
+Hybrid-Theory is een cybersecuritylab voor IT en industriële besturing (OT). In een virtuele omgeving met VMware en pfSense onderzoek ik hoe je systemen van elkaar scheidt, wie toegang krijgt en hoe je met tests en logs kunt vaststellen of die grenzen werken.
 
-Hybrid-Theory is een hands-on cybersecurity-engineeringlab en experimenteel onderzoeksproject. Het onderzoekt hoe architectuur, netwerkgrenzen, identiteit en onderlinge afhankelijkheden invloed hebben op beveiliging en systeemrisico. De nadruk ligt op aantoonbare, afgebakende tests en transparante documentatie; het project claimt geen certificering of milestone-acceptatie.
+**Begin bij [Network Citadel](Portfolio/M04-Network-Citadel/README.md).** In deze missie stuurt een FUXA-bedieningsscherm een OpenPLC-controller aan. De start-stoptest laat zien hoe de controller reageert. De [netwerktests van 20 november](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) laten vervolgens zien welke verbindingen de firewall blokkeerde en welke daarvan in de logs terug te vinden zijn.
 
-### In 60 seconden
+[Bekijk de eenvoudige topologie](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg) · [Topologie met netwerkzones en aliassen](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [Alle architectuurdiagrammen](architectuur/README.md)
 
-- **Domein:** hybride IT/OT-beveiliging, netwerksegmentatie, virtualisatie, identity & access management en security engineering.
-- **Huidige basis:** VMware Workstation met pfSense en afzonderlijke WAN-SIM-, MGMT-, LAB- en OT-netwerken; Windows Server/AD DS, Windows 11, Ubuntu, GNS3/Wireshark, OpenPLC, FUXA en Wazuh.
-- **Ontwerp:** PLC en HMI zijn ingericht op het OT-netwerk. Het doelontwerp met aanvullende zones, Azure en onafhankelijke recovery is ontwerp/planning, geen gerealiseerde omgeving.
-- **Werkwijze:** baseline, gescopeerde test, resultaat en bewijsgrens worden apart vastgelegd. Een configuratie of screenshot is niet op zichzelf bewijs van werking of van een behaalde milestone.
-- **Resultaten:** AD/DNS, domain join en één GPO zijn binnen scope getest; GNS3 ARP/ICMP-tests zijn gedocumenteerd. Wazuh-dashboardtoegang is getest, maar agentdetectie is niet aangetoond.
+## Missies
 
-### Architectuur
+Stand op 20 november 2026. Elke missie heeft eigen acceptatiecriteria. Voor alle vijf staat de eerste milestone nog open.
 
-**In één oogopslag:**
-
-![Hybrid-Theory — eenvoudige netwerktopologie: labhost, pfSense, zones MGMT, LAB en OT en het losstaande GNS3-testnet, stand 20 november 2026](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)
-
-**Gedetailleerd (aliassen en zones):**
-
-![Diagram A1 — topologie en zones, stand 20 november 2026](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg)
-
-[Diagram A1 · topologie en zones](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [Diagram A2 · beheerpaden en OT-zonegrens](architectuur/diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg) · [Diagram A3 · teststatus en acceptatie](architectuur/diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg) · [Doelarchitectuur · Diagram B](architectuur/diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-20.svg) · [Architectuur- en netwerkontwerp](architectuur/README.md)
-
-Diagram A toont de huidige netwerken, geïmplementeerde onderdelen en de gescopeerde M04-teststatus per 20 november; Diagram B is een doelontwerp en geen implementatie. Beide zijn architectuurillustraties, geen zelfstandig testbewijs. Zie ook de [architectuurbaseline](architectuur/ARCHITECTUUR_BASELINE.md) en het [netwerkontwerp](architectuur/NETWERKONTWERP.md).
-
-### Missies en aantoonbare voortgang
-
-**Actuele missie-issues | M05 bovenaan bij GitHub Created on → Newest:** [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/42) → [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/43) → [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) → [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) → [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46). De oorspronkelijke logboeken en eerdere index-issues blijven als gesloten archief beschikbaar.
-
-**Missionmodel (20 november 2026):** M01–M05 zijn **permanente Main Missions** zonder definitieve afsluitstatus. Voortgang loopt via **milestones** met vooraf vastgestelde criteria en acceptatie door Sam, en via kleinere **mini-oefeningen**. **Geen missie heeft Milestone 01 bereikt.** Technische PASS-resultaten hieronder zijn scoped bevindingen, geen milestone-afronding. Zie de [roadmap](projectlogboeken/ROADMAP.md#permanente-main-missions-milestones-en-mini-oefeningen) en de [statuslegenda](governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026).
-
-
-| Missie | Status en beknopte scope |
+| Missie | Voortgang |
 |---|---|
-| **M01 — Hypervisor Fortress** | **IN PROGRESS**; gerichte HV-01–HV-04-deelcontroles met **PASS** en één **EXCEPTION**. Milestone 01 niet behaald. [Missiedocumentatie](Portfolio/M01-Hypervisor-Fortress/README.md) |
-| **M02 — Phoenix Recovery** | **PENDING**; herstelarchitectuur is beschreven, maar onafhankelijke off-host restore is niet aangetoond. [Ontwerp en status](governance/M02-Phoenix-Recovery/README.md) |
-| **M03 — Identity Dominion** | **IN PROGRESS**; AD/DNS, domain join, testlogin en één GPO zijn **PASS binnen scope**; Entra is **PLANNED**. [AD-baselinerapport](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
-| **M04 — Network Citadel** | **M04-CORE IN PROGRESS**. Historische PLC/HMI-regressie AC01–AC03 **scoped PASS**. Aanvullende LAB- en OT-blokkades onderbouwd met firewalllogs. Integrale AC04/AC07, bewijsreview en eigenaaracceptatie **PENDING**. Milestone 01 niet behaald. AC05 **PENDING**, AC06/AC08 **PLANNED**. [Missiedocumentatie](Portfolio/M04-Network-Citadel/README.md) · [C2-testdelta](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Architectuur (diagram A)](architectuur/README.md) |
-| **M05 — Compliance Sentinel** | Structuur met zeven onderzoekshoofdstukken en Framework Register **APPROVED**; technische uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED**; eerste casus M05-MINI-01 (ISO/IEC 27001 A.8.22 op de M04-segmentatie) **PLANNED**. Geen compliance- of assuranceverklaring. [M05-documentatie](Portfolio/M05-Compliance-Sentinel/README.md) |
+| [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/42) | Een deel van de controles op host en hypervisor is uitgevoerd. Voor klembord en slepen tussen host en gast geldt een uitzondering op geselecteerde Windows-VM’s. |
+| [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/43) | Het herstelontwerp ligt er. Een restore op een afzonderlijke host moet nog worden aangetoond. |
+| [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) | AD en DNS, aanmelden op het domein en één groepsbeleid zijn getest. De uitbreiding met Entra ID is gepland. |
+| [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | De bediening van de PLC en specifieke firewallblokkades zijn getest. De volledige toets op segmentatie en toegestane verkeersstromen (AC04/AC07) staat open. |
+| [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) | De onderzoeksopzet is goedgekeurd. De eerste geplande casus toetst de M04-netwerksegmentatie aan ISO/IEC 27001 A.8.22. |
 
-### Portfolio
+## Bewijs en logboeken
 
-| Missie | Gepubliceerde bewijsset | Detail |
-|---|---|---|
-| **M01** | 82 gesaneerde screenshots | [Bewijsindex](Portfolio/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](Portfolio/M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) |
-| **M04** | 316 gepubliceerde PNG's in 21 fasen (317 registraties, waarvan M04-EV-113 zonder publieke PNG) | [Bewijsindex](Portfolio/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) · [Fase 20 (19 nov.)](Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [Saneringsrapport](Portfolio/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
+Het [publieke portfolio](Portfolio/README.md) koppelt tests aan gesaneerd bewijsmateriaal. De [M01-bewijsindex](Portfolio/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) bevat 82 screenshots. De [M04-galerij](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) bevat 316 gepubliceerde beelden verdeeld over 21 fasen.
 
-De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen behaalde milestone. Aanvullende [componentbewijsvoering](Portfolio/VMware/) en de [bewijsvoering per missie](Portfolio/README.md) zijn beschikbaar.
-
-### Status lezen
-
-De termen volgen de [statuslegenda](governance/STATUSLEGENDA.md):
-
-- **IMPLEMENTED:** component of instelling is ingericht; werking volgt daar niet automatisch uit.
-- **TESTED:** een specifieke test is uitgevoerd binnen de gedocumenteerde scope; dit zegt op zichzelf niet dat de criteria zijn gehaald.
-- **VERIFIED:** een specifieke componentfunctie is met bewijs en binnen een vastgelegde scope gecontroleerd.
-- **PASS:** acceptatiecriteria zijn gehaald binnen de expliciete testscope.
-- **EXCEPTION:** bewust geaccepteerd restrisico; geen automatische PASS.
-- **PENDING:** uitvoering, besluit of meting staat nog open.
-
-### Technische aanpak en documentatie
-
-Het portfolio legt ontwerpkeuzes, trust boundaries, testmethodologie, resultaten en openstaande verificaties vast. De bredere onderzoeksvraag verkent systeemrisico en cross-layer dependencies; CAT/ACE is een experimenteel concept en **niet gevalideerd**.
-
-[Roadmap](projectlogboeken/ROADMAP.md) · [Projectlogboeken](projectlogboeken/README.md) · [Governance](governance/README.md) · [CAT/ACE-onderzoeksdocumentatie](governance/CAT_ACE_v0.4.md) · [Academische achtergrond](onderzoek/academische-referenties/README.md) · [AI-samenwerking](ai-samenwerking/README.md)
-
-**Publicatiegrens:** de repository bevat gesaneerde architectuurillustraties en bewijsafgeleiden; private bronbestanden zijn niet opgenomen. Gepubliceerde bestanden en afzonderlijke tests zijn geen algemene security- of acceptatie-PASS.
+[Projectlogboeken](projectlogboeken/README.md) · [Roadmap](projectlogboeken/ROADMAP.md) · [Statuslegenda](governance/STATUSLEGENDA.md)
