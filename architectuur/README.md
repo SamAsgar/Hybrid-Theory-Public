@@ -40,7 +40,7 @@ Diagram A bestaat uit drie delen, zodat de tekst op schermbreedte leesbaar blijf
 - **FUXA01 praat rechtstreeks met PLC01** via Modbus TCP/502. Beide staan in hetzelfde OT-subnet, dus dit verkeer loopt niet via de pfSense-router en zegt niets over de grens naar andere zones.
 - **Fysieke grens:** de labhost staat in het thuisnetwerk, dat buiten de labscope valt. WAN-SIM gaat via VMware NAT en de fysieke uplink naar buiten; NAT is geen isolatiegarantie.
 - **Beheerpad:** de aangewezen beheerbron bereikt via het host-only segment `PFSENSE_MGMT_IP`. Twee bronbeperkte LAN-forwards geven alleen toegang tot de OpenPLC-webdienst (TCP/8080) en de FUXA-webdienst (TCP/1881); dat is geen vrije toegang tot OT. Een directe route van de beheerhost naar `PLC01_OT_IP` koos de fysieke uplink; een geautoriseerd direct pad (F13–F15) is een ontwerpbesluit en **PENDING / DESIGN-CONFIRM**.
-- **Zonegrens OT (gescopeerd, 20 november):** LAB→PLC01 (F09–F12) en OT→beheer, firewall en externe HTTP (F16–F19) zijn met gelogde blokkades **TESTED / scoped PASS**. DNS/NTP vanuit OT is geblokkeerd waargenomen, maar het ontwerp voor toegestane bronnen is **DESIGN-CONFIRM** (F20/F21). IPv6 is **NO-ROUTE-VERIFIED** binnen de geïnspecteerde topologie (F22/F23), geen IPv6-firewall-PASS. WAN→OT is **CONFIG REVIEWED / SAFE LIVE TEST PENDING** (F24).
+- **Zonegrens OT (gescopeerd, 20 november):** LAB→PLC01 (F09–F12) en OT→beheer, firewall en externe HTTP (F16–F19) zijn met gelogde blokkades **TESTED / scoped PASS**. DNS/NTP vanuit OT is geblokkeerd waargenomen, maar het ontwerp voor toegestane bronnen is **DESIGN-CONFIRM** (F20/F21). IPv6 is **NO-ROUTE-VERIFIED** binnen de geïnspecteerde topologie (F22/F23), geen IPv6-firewall-PASS. Op 21 november kreeg F24 voor TCP/502 en TCP/8080 **scoped PASS**.
 - **Gepland, niet operationeel:** Wazuh OT-telemetrie (AC05 **PENDING**), Suricata IDS (AC08 **PLANNED**) en GNS3-schaaluitwerking (AC06 **PLANNED**).
 - **Het GNS3-testnet staat los** van pfSense en het thuisnetwerk.
 - **M04-CORE is IN PROGRESS:** AC01–AC03 historisch **scoped PASS**; AC04 (integrale segmentatie), AC05 en AC07 (volledige allow/deny-matrix) **PENDING**; AC06 en AC08 **PLANNED**.
@@ -59,9 +59,9 @@ De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONT
 | FUXA01 (SCADA/HMI) | OT | `FUXA01_OT_IP` | `FUXA01_OT_MAC` | **IMPLEMENTED**; HMI en Modbus-verbinding TESTED (15 nov.); START→STOP met PLC-readback TESTED / scoped PASS (19 nov.) |
 | Windows Server 2025 (DC01) | LAB | `DC01_LAB_IP` | geen alias | AD DS/DNS TESTED (1 nov.); adres **TWIJFEL** |
 | Windows 11 (CLIENT01) | LAB | `CLIENT01_DHCP_IP` | geen alias | DHCP-lease; domeinclient TESTED (1 nov.); LAB-testbron F09–F12 (20 nov.), leasebinding open |
-| Ubuntu(-beheer-VM), LAB-interface | LAB | `LAB_NET_IP` (IPv6: `LAB_NET_IPV6_LL`) | `LAB_NET_MAC` (PENDING_CAPTURE) | adres **TWIJFEL** |
+| Ubuntu(-beheer-VM), LAB-interface | LAB | `LAB_NET_IP` (IPv6: `LAB_NET_IPV6_LL`) | `LAB_NET_MAC` (PENDING_CAPTURE) | bronalias bij de LAN-proef waargenomen, identiteits- en overlapreview open |
 | Ubuntu(-beheer-VM), beheerinterface | MGMT | `MGMT_NET_IP` (IPv6: `MGMT_NET_IPV6_LL`) | `MGMT_NET_MAC` (PENDING_CAPTURE) | Cockpit PASS (25 okt.); 21 nov. bereikt pfSense-beheer, testbron F13–F15; identiteitsreview **open** |
-| Ubuntu(-beheer-VM), WAN-SIM-interface | WAN-SIM | `NET_02_IP` (IPv6: `NET_02_IPV6_LL`) | `NET_02_MAC` (PENDING_CAPTURE) | tijdens de managementtests los; daarna tijdelijke F24-testbron die pfSense WAN bereikt; actuele waarde **PENDING_CAPTURE** |
+| Ubuntu(-beheer-VM), WAN-SIM-interface | WAN-SIM | `NET_02_IP` (IPv6: `NET_02_IPV6_LL`) | `NET_02_MAC` (PENDING_CAPTURE) | tijdens de managementtests los; daarna tijdelijke F24-testbron die pfSense WAN bereikt; bronalias tijdens de proef bevestigd, adaptereindstand open |
 | Wazuh SIEM | LAB | `WAZUH_CURRENT_IP` (PENDING_CAPTURE) | geen alias | dashboard TESTED (3–4 nov.); 0 agents |
 | GNS3-VM, beheer | MGMT | `GNS3_MGMT_IP` | geen alias | beheer bereikbaar |
 | GNS3 VPCS PC1 / PC2 | GNS3-testnet (losstaand) | `GNS3_PC1_IP` / `GNS3_PC2_IP` | `GNS3_PC1_MAC` / `GNS3_PC2_MAC` | ARP/ICMP PASS binnen het testnet |
@@ -147,6 +147,6 @@ De versies van 15 november, [diagram A](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBL
 
 ## Statusdelta 21 november 2026 — beheernetwerk en OT
 
-Volgens de eigenaarsessie blokkeerde pfSense drie directe management→PLC-pogingen op TCP/502, TCP/22 en TCP/44818. Dit is **TESTED / scoped PASS voor de werkelijk gebruikte virtuele beheerbron**, niet de formele acceptatie van F13–F15 of AC04/AC07. Testbronacceptatie, capture-/rollbackbewijs, WAN→OT en de overige CORE-controles zijn nog open.
+Volgens de eigenaarsessie blokkeerde pfSense drie directe management→PLC-pogingen op TCP/502, TCP/22 en TCP/44818. Dit is **TESTED / scoped PASS voor de werkelijk gebruikte virtuele beheerbron**, niet de formele acceptatie van F13–F15 of AC04/AC07. De LAN-route is verwijderd. Formele bronacceptatie en tijdreview per poort staan open. **F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten.
 
 De afbeeldingen op deze pagina tonen de **topologie en teststand van 21 november**, inclusief de C3-resultaten uit het [gesaneerde sessielog van 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md). Geen directe permanente fysieke-host→OT-route of industriële DMZ in deze fase.

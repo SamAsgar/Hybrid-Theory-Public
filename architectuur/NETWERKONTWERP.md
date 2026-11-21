@@ -1,6 +1,6 @@
 # Netwerkontwerp en beveiligingsgrenzen | Hybrid-Theory
 
-**Bijgewerkt:** 21 november 2026 (managementtests en F24-testvoorbereiding van 21 november; diagram A gedateerd 21 november, versie van 20 november als momentopname bewaard; 19-november-regressie, CORE C2-deeltests en statusnotities van diagram B: 20 november) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** private architectuur en HT-C-010.
+**Bijgewerkt:** 21 november 2026 (managementtests en F24-eindmeting van 21 november; diagram A gedateerd 21 november, versie van 20 november als momentopname bewaard; 19-november-regressie, CORE C2-deeltests en statusnotities van diagram B: 20 november) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** private architectuur en HT-C-010.
 
 Dit document heeft twee lagen die niet door elkaar mogen lopen: de **geobserveerde situatie** (§1) en de **doelarchitectuur HT-C-010** (§2–§3). Adressen staan als officiële alias; de [componenttabel met alle aliassen](README.md#11-componenten-zones-en-officiële-aliassen) staat in Architecture.
 
@@ -38,7 +38,7 @@ Deze gegevens komen uit gedateerde sessielogs en zijn **geen nieuwe live-meting*
 | 6 | OT → andere zones en internet | Via de pfSense-OT-interface | Gerichte OT→LAB ICMP en OT→extern ICMP/TCP 443 (19 nov.) en OT→beheerhost, pfSense-beheer, pfSense-SSH en externe HTTP (F16–F19, 20 nov.) zijn met pfSense-BLOCK-events gecorreleerd (**TESTED / scoped PASS**); alternatieve paden/protocollen en integrale AC04 **PENDING** |
 | 6a | OT → externe DNS (UDP/53) en NTP (UDP/123) (F20/F21) | Via de pfSense-OT-interface | Geblokkeerd waargenomen; goedgekeurde resolver en tijdbron **DESIGN-CONFIRM** |
 | 6b | IPv6 LAB/beheer → OT (F22/F23) | Alleen link-local op de onderzochte LAB-/OT-hosts, geen IPv6-default-route | **NO-ROUTE-VERIFIED** binnen de geïnspecteerde topologie; geen IPv6-firewall-PASS; brede LAN IPv6-allow onder review |
-| 6c | WAN → OT (F24) | WAN-SIM → pfSense WAN; als tijdelijke testbron is na de managementtests de WAN-SIM-adapter van de beheer-VM (`NET_02_IP`) actief gemaakt, die pfSense WAN bereikt | Geen gebruikers-PASS en geen WAN-forwards in de bekeken configuratie: **CONFIG REVIEWED / SAFE LIVE TEST PENDING**; geen PASS zonder gelogde blokkade en bewijs |
+| 6c | WAN → OT (F24) | Tijdelijke WAN-bron → pfSense WAN → PLC, TCP/502 en TCP/8080 | **Scoped PASS**. Zes SYN op WAN, zes gelogde blokkades en nul treffers op OT. |
 | 7 | Agents en OT-telemetrie → Wazuh | Nog niet ingericht | **NOT VERIFIED**; 0 agents; AC05 **PENDING** |
 | 8 | GNS3-testnet ↔ overige netten | Geen koppeling | Losstaand; ARP/ICMP **PASS** binnen het testnet |
 
@@ -94,10 +94,10 @@ De C2-sessie bevestigde gerichte LAB→PLC- en OT→beheer/firewall/extern-blokk
 
 ## Actualisatie 21 november 2026 — beheerzone/OT-ontwerp
 
-In de bestaande topologie is vanuit een afzonderlijke virtuele managementbron driemaal een directe verbinding naar de PLC geprobeerd: Modbus TCP/502, SSH TCP/22 en EtherNet/IP TCP/44818. Volgens de eigenaarsessie blokkeerde pfSense deze drie verbindingen op de beheer-naar-OT-grens. **TESTED / scoped PASS voor de geteste managementbron.** De canonieke F13–F15-matrix noemt een andere bron; expliciete bronacceptatie, packetcapture-/log-review en rollbackbewijs zijn nog **PENDING**. Integrale AC04/AC07: **PENDING**.
+In de bestaande topologie is vanuit een afzonderlijke virtuele managementbron driemaal een directe verbinding naar de PLC geprobeerd: Modbus TCP/502, SSH TCP/22 en EtherNet/IP TCP/44818. Volgens de eigenaarsessie blokkeerde pfSense deze drie verbindingen op de beheer-naar-OT-grens. **TESTED / scoped PASS voor de geteste managementbron.** De canonieke F13–F15-matrix noemt een andere bron; expliciete bronacceptatie, packetcapture-/log-review zijn nog **PENDING**. De tijdelijke LAN-route is verwijderd. Integrale AC04/AC07: **PENDING**.
 
 De fysieke VMware-host krijgt geen permanente directe OT-route. Het beperkte webbeheer via de bestaande firewallportforwards blijft tijdelijk gehandhaafd. Uitbreiding van het virtuele beheerwerkstation en de industriële DMZ is uitgesteld tot na M04-CORE. De in het eerdere document opgenomen stand van 20 november blijft historische context.
 
-**F24-testvoorbereiding (21 november, na de managementtests):** de WAN-SIM-adapter van de beheer-VM stond tijdens de managementtests los en is daarna als **tijdelijke testbron** actief gemaakt; hij bereikt pfSense WAN rechtstreeks. Dat is geen ontwerpkeuze en geen WAN→OT- of beheerverbinding. F24 blijft **CONFIG REVIEWED / SAFE LIVE TEST PENDING**.
+**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. De tijdelijke WAN-hostroute is verwijderd en Host-only-beheer is hersteld. De eindstand van de adapters moet nog worden vastgelegd. [Daglog](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
 
 [Gesaneerd testlog 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [M04 Issue #45](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).

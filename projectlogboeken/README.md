@@ -20,7 +20,7 @@ De oorspronkelijke logs vormen **historische momentopnamen of later afgeleide ra
 | 11 november | [M04: segmentatie en beheer gevalideerd](2026-11-11-m04-segmentatie-en-beheer-validatie.md) | Nieuwe tussenstand: HMI op OT, beheerverbindingen en gerichte LAB→OT-blokkade TESTED PASS; troubleshooting en vervolgcriteria; AC04/AC07 volledig PENDING |
 | 19 november | [M04: OpenPLC-autostart en OT-regressie](2026-11-19-m04-openplc-autostart-en-ot-regressie.md) | Gesaneerde labupdate over PLC-herstart en functionele regressie. AC04/AC07 integraal PENDING. |
 | 20 november | [M04: CORE C2-netwerkvalidatie](2026-11-20-m04-core-c2-netwerkvalidatie.md) | Gerichte LAB- en OT-blokkades, routecontrole en open acceptatiegates |
-| 21 november | [M04: beheerzone en OT-firewallblokkades](2026-11-21-m04-core-management-segmentatie.md) | Drie gerichte beheer→OT-denies, scoped PASS per bron; formele AC04/AC07-acceptatie PENDING |
+| 21 november | [M04 · LAN- en WAN-blokkades naar OT](2026-11-21-m04-core-management-segmentatie.md) | F13–F15 scoped PASS voor de beheer-VM. F24 scoped PASS voor TCP/502 en TCP/8080. Beide testroutes verwijderd. |
 
 **Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
 
