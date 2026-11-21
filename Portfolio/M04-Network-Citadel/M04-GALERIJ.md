@@ -1,6 +1,6 @@
 # M04 | Evidence-galerij per fase
 
-Deze galerij is bewust in **21 pagina's** verdeeld. GitHub hoeft niet alle 316 aanwezige PNG's tegelijk te renderen. De [hoofdindex](M04-EVIDENCE-INDEX.md) registreert 265 bewijsitems tot en met 19 november; één PNG (M04-EV-113) is niet gepubliceerd. De 52 items van fase 21 (20 november) staan in het [fasemanifest](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/M04-EVIDENCE-PHASE21.csv) en zijn nog niet in de hoofdindex opgenomen. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
+Deze galerij is bewust in **21 pagina's** verdeeld. GitHub hoeft niet alle 316 aanwezige PNG's tegelijk te renderen. De [hoofdindex](M04-EVIDENCE-INDEX.md) bevat 317 registraties. Voor M04-EV-113 ontbreekt de publieke PNG. Elke fase bevat de gesaneerde screenshots met individuele omschrijvingen, beperkingen en hashes van de gepubliceerde afgeleiden.
 
 - **23× Baseline vóór de OT-migratie:** [Bekijk galerij](M04-Bewijsvoering/01_Pre_migration_baseline/README.md)
 - **3× VM-netwerkconfiguratie:** [Bekijk galerij](M04-Bewijsvoering/02_VM_Network_setup/README.md)
@@ -11,7 +11,7 @@ Deze galerij is bewust in **21 pagina's** verdeeld. GitHub hoeft niet alle 316 a
 - **25× FUXA/Modbus, AC01–AC03:** [Bekijk galerij](M04-Bewijsvoering/07_FUXA_Modbus_AC01_03/README.md)
 - **6× Snapshots en migratievoorbereiding:** [Bekijk galerij](M04-Bewijsvoering/08_Pre_migration_safety/README.md)
 - **11× pfSense OT-interface en regels:** [Bekijk galerij](M04-Bewijsvoering/09_OT_interface_rules/README.md)
-- **4× Migratiesnapshots:** [Bekijk galerij](M04-Bewijsvoering/10_Snapshots_migration/README.md)
+- **Migratiesnapshots (4 geregistreerd, 3 PNG's):** [Bekijk galerij](M04-Bewijsvoering/10_Snapshots_migration/README.md)
 - **8× Routes en client-connectiviteit:** [Bekijk galerij](M04-Bewijsvoering/11_Client_routes_tests/README.md)
 - **5× LAN-OT-firewallregels:** [Bekijk galerij](M04-Bewijsvoering/12_LAN_OT_firewall/README.md)
 - **10× LAN-portforwarding:** [Bekijk galerij](M04-Bewijsvoering/13_LAN_port_forward/README.md)

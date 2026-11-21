@@ -1,7 +1,7 @@
 # M04 Network Citadel | Evidence-index
 
-**Periode:** 30 oktober t/m 19 november 2026  
-**Inhoud:** 265 bewijsregistraties; 264 aanwezige gesaneerde PNG-afgeleiden · 20 fasen  
+**Periode:** 30 oktober t/m 20 november 2026  
+**Inhoud:** 317 bewijsregistraties · 316 aanwezige gesaneerde PNG-afgeleiden · 21 fasen  
 **Status:** vastgelegd bewijs, niet gelijk aan voltooiing van alle acceptatiecriteria.  
 **Repository:** PUBLIC. Alleen gesaneerde afgeleiden; de originelen blijven uitsluitend privé. Zie [saneringsrapport](M04-SANITIZATION-REPORT.md).
 
@@ -20,7 +20,7 @@ De datum is ontleend aan de bestandsnaam. De aanduidingen `CONFIG`, `TROUBLESHOO
 | FUXA/Modbus, AC01–AC03 | 25 | [Bekijk beelden](M04-Bewijsvoering/07_FUXA_Modbus_AC01_03/README.md) |
 | Snapshots en migratievoorbereiding | 6 | [Bekijk beelden](M04-Bewijsvoering/08_Pre_migration_safety/README.md) |
 | pfSense OT-interface en regels | 11 | [Bekijk beelden](M04-Bewijsvoering/09_OT_interface_rules/README.md) |
-| Migratiesnapshots | 4 | [Bekijk beelden](M04-Bewijsvoering/10_Snapshots_migration/README.md) |
+| Migratiesnapshots | 4 geregistreerd, 3 gepubliceerd | [Bekijk beelden](M04-Bewijsvoering/10_Snapshots_migration/README.md) |
 | Routes en client-connectiviteit | 8 | [Bekijk beelden](M04-Bewijsvoering/11_Client_routes_tests/README.md) |
 | LAN-OT-firewallregels | 5 | [Bekijk beelden](M04-Bewijsvoering/12_LAN_OT_firewall/README.md) |
 | LAN-portforwarding | 10 | [Bekijk beelden](M04-Bewijsvoering/13_LAN_port_forward/README.md) |
@@ -31,6 +31,7 @@ De datum is ontleend aan de bestandsnaam. De aanduidingen `CONFIG`, `TROUBLESHOO
 | Portforward en regressietests | 27 | [Bekijk beelden](M04-Bewijsvoering/18_Forward_and_regression/README.md) |
 | FUXA-vervolgcontrole 15 november | 7 | [Bekijk beelden](M04-Bewijsvoering/19_FUXA_followup/README.md) |
 | OT-segmentatie en regressietests 19 november | 55 | [Bekijk beelden](M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) |
+| CORE C2 firewall- en isolatietests, 20 november | 52 | [Bekijk beelden](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md) |
 
 ## Individueel evidence-register
 
@@ -302,6 +303,63 @@ De datum is ontleend aan de bestandsnaam. De aanduidingen `CONFIG`, `TROUBLESHOO
 | M04-20261119-053 | 2026-11-19 | TEST | [image(20261119-200227).png](M04-Bewijsvoering/20_OT_segmentation_and_regression/image(20261119-200227).png) | PLC01-terminal toont IPv6-adressen en routetabel zonder zichtbare bruikbare globale IPv6-route. **Nuance:** Momentopname; link-local IPv6 kan nog aanwezig zijn. |
 | M04-20261119-054 | 2026-11-19 | TEST | [image(20261119-200353).png](M04-Bewijsvoering/20_OT_segmentation_and_regression/image(20261119-200353).png) | Herhaalde PLC01-terminalweergave van de IPv6-route- en adrescontrole. **Nuance:** Duplicaat/aanvullende zichtbaarheid, geen nieuwe onafhankelijke test. |
 | M04-20261119-055 | 2026-11-19 | TEST | [image(20261119-200554).png](M04-Bewijsvoering/20_OT_segmentation_and_regression/image(20261119-200554).png) | FUXA01-terminal toont IPv6-adressen en routetabel zonder zichtbare bruikbare globale IPv6-route. **Nuance:** Momentopname; link-local IPv6 is niet hetzelfde als extern IPv6-bereik. |
+
+### Fase 21 · 20 november
+
+| ID | Type | Publieke PNG | Beschrijving |
+|---|---|---|---|
+| M04-20261120-001 | LOG | [01-202142-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/01-202142-M04-C2.png) | pfSense LAN-log met expliciete MGMT-regel voor PLC01/OpenPLC op TCP/8080. |
+| M04-20261120-002 | LOG | [02-202155-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/02-202155-M04-C2.png) | pfSense LAB-log gefilterd op TCP/22 naar PLC01. |
+| M04-20261120-003 | LOG | [03-202211-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/03-202211-M04-C2.png) | pfSense LAB-log gefilterd op TCP/44818 naar PLC01. |
+| M04-20261120-004 | LOG | [04-202252-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/04-202252-M04-C2.png) | pfSense LAB-log gefilterd op ICMP naar PLC01. De weergave bevat ook oudere logregels. |
+| M04-20261120-005 | LOG | [05-203056-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/05-203056-M04-C2.png) | pfSense LAB-log gefilterd op TCP/8080 naar PLC01. |
+| M04-20261120-006 | CONFIG | [06-205657-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/06-205657-M04-C2.png) | pfSense LAN-regels voor MGMT-toegang tot FUXA01 en PLC01 en de standaardblokkade richting OT. |
+| M04-20261120-007 | TEST | [07-210015-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/07-210015-M04-C2.png) | Lenovo PowerShell met routeringsonderzoek naar een OT-adres. |
+| M04-20261120-008 | CONFIG | [08-210144-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/08-210144-M04-C2.png) | Lenovo PowerShell met adapterstatus, IPv4-adressen en VMnet1-routegegevens. |
+| M04-20261120-009 | CONFIG | [09-210341-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/09-210341-M04-C2.png) | Lenovo PowerShell met netwerkadapters, IPv4-adressen en routetabel. |
+| M04-20261120-010 | TEST | [10-210425-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/10-210425-M04-C2.png) | Lenovo PowerShell met VMnet1-routering en HTTPS-probe naar pfSense op TCP/443. |
+| M04-20261120-011 | TEST | [11-210949-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/11-210949-M04-C2.png) | Lenovo PowerShell met HTTPS-probe en begin van de poortcontroles richting pfSense. |
+| M04-20261120-012 | TEST | [12-211033-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/12-211033-M04-C2.png) | Lenovo PowerShell met controles richting pfSense op TCP/502, TCP/22 en TCP/44818. |
+| M04-20261120-013 | TROUBLESHOOT | [13-211736-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/13-211736-M04-C2.png) | PLC01-terminal met route naar MGMT en eerste TCP/8080-poging met shelltypefout. |
+| M04-20261120-014 | TEST | [14-212139-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/14-212139-M04-C2.png) | Lenovo PowerShell vergelijkt directe TCP/8080-toegang tot PLC01 met toegang via het pfSense-portforward. |
+| M04-20261120-015 | CONFIG | [15-212349-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/15-212349-M04-C2.png) | OpenPLC-dashboard van de M04-motorsimulatie met runtimelog en luisterpoorten. |
+| M04-20261120-016 | CONFIG | [16-212529-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/16-212529-M04-C2.png) | OpenPLC-dashboard van de M04-motorsimulatie met runtimelog en luisterpoorten. |
+| M04-20261120-017 | TEST | [17-213639-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/17-213639-M04-C2.png) | PLC01-terminal met herhaalde route- en TCP/8080-probes richting MGMT. |
+| M04-20261120-018 | TEST | [18-213923-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/18-213923-M04-C2.png) | PLC01-terminal met TCP/8080-probe richting MGMT en zichtbare exitcode. |
+| M04-20261120-019 | TEST | [19-214037-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/19-214037-M04-C2.png) | PLC01-terminal met herhaalde TCP/8080-probes richting MGMT en controle van de OpenPLC-service. |
+| M04-20261120-020 | LOG | [20-214259-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/20-214259-M04-C2.png) | pfSense OT-log gefilterd op TCP/8080 met standaardblokkades richting MGMT. |
+| M04-20261120-021 | TEST | [21-215540-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/21-215540-M04-C2.png) | FUXA01-terminal met routecontrole ter voorbereiding op de TCP/443-probe richting MGMT. |
+| M04-20261120-022 | LOG | [22-220225-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/22-220225-M04-C2.png) | pfSense OT-logfilter voor TCP/443 met nul overeenkomende regels in deze opname. |
+| M04-20261120-023 | TROUBLESHOOT | [23-220340-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/23-220340-M04-C2.png) | FUXA01-terminal met route en eerste TCP/443-pogingen met shellsyntaxisfout. |
+| M04-20261120-024 | TEST | [24-220515-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/24-220515-M04-C2.png) | FUXA01-terminal met HTTPS-probe richting pfSense MGMT op TCP/443 en de weergegeven time-out. |
+| M04-20261120-025 | LOG | [25-220617-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/25-220617-M04-C2.png) | pfSense OT-log met TCP/443-regels voor de FUXA01-probe richting pfSense MGMT. |
+| M04-20261120-026 | TEST | [26-220814-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/26-220814-M04-C2.png) | PLC01-terminal met TCP/22-probe richting pfSense OT en de weergegeven time-out. |
+| M04-20261120-027 | LOG | [27-220959-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/27-220959-M04-C2.png) | pfSense OT-log met TCP/22-regels voor de PLC01-probe richting pfSense OT. |
+| M04-20261120-028 | TEST | [28-221211-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/28-221211-M04-C2.png) | PLC01-terminal met HTTP-probe naar een externe bestemming op TCP/80. |
+| M04-20261120-029 | LOG | [29-221308-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/29-221308-M04-C2.png) | pfSense OT-log met TCP/80-regels bij de externe HTTP-probe. |
+| M04-20261120-030 | TEST | [30-221528-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/30-221528-M04-C2.png) | PLC01-terminal met externe DNS-query op UDP/53 en de weergegeven time-out. |
+| M04-20261120-031 | LOG | [31-221808-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/31-221808-M04-C2.png) | pfSense OT-log met de UDP/53-regel bij de externe DNS-query. |
+| M04-20261120-032 | TEST | [32-222911-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/32-222911-M04-C2.png) | FUXA01-terminal met routecontrole en probe naar een externe NTP-bestemming op UDP/123. |
+| M04-20261120-033 | LOG | [33-223646-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/33-223646-M04-C2.png) | pfSense OT-log met UDP/123-regels bij de externe NTP-probe. |
+| M04-20261120-034 | CONFIG | [34-224123-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/34-224123-M04-C2.png) | FUXA01-terminal met IPv6-adressen en routes op de interfaces. Ondersteunende configuratiecontrole. |
+| M04-20261120-035 | CONFIG | [35-224141-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/35-224141-M04-C2.png) | PLC01-terminal met IPv6-adressen en routes op de OT-interface. Ondersteunende configuratiecontrole. |
+| M04-20261120-036 | CONFIG | [36-224331-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/36-224331-M04-C2.png) | pfSense-interfaceoverzicht met IPv6-link-local-adressen. Ondersteunende configuratiecontrole. |
+| M04-20261120-037 | CONFIG | [37-224748-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/37-224748-M04-C2.png) | Lenovo PowerShell met IPv6-adressen en IPv6-routes voor VMware- en hostinterfaces. Ondersteunende configuratiecontrole. |
+| M04-20261120-038 | CONFIG | [38-225013-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/38-225013-M04-C2.png) | Lenovo PowerShell met IPv6-routes en een gerichte controle op de IPv6-default route. Ondersteunende configuratiecontrole. |
+| M04-20261120-039 | CONFIG | [39-225428-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/39-225428-M04-C2.png) | CLIENT01 PowerShell met inventarisatie van IPv6-adressen en routes. Ondersteunende configuratiecontrole. |
+| M04-20261120-040 | CONFIG | [40-225624-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/40-225624-M04-C2.png) | CLIENT01 PowerShell met IPv6-routegegevens en controle van de default gateway. Ondersteunende configuratiecontrole. |
+| M04-20261120-041 | CONFIG | [41-230005-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/41-230005-M04-C2.png) | VMware-instellingen van een OT-VM met de netwerkadapter op het geïsoleerde OT LAN Segment. |
+| M04-20261120-042 | CONFIG | [42-230206-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/42-230206-M04-C2.png) | VMware-instellingen van een OT-VM met de netwerkadapter op het geïsoleerde OT LAN Segment. |
+| M04-20261120-043 | CONFIG | [43-230312-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/43-230312-M04-C2.png) | VMware-instellingen van de Windows-test-VM met de netwerkadapter op het geïsoleerde LAB LAN Segment. |
+| M04-20261120-044 | CONFIG | [44-230949-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/44-230949-M04-C2.png) | VMware-instellingen van pfSense met adapter 3 op het geïsoleerde LAB LAN Segment. |
+| M04-20261120-045 | CONFIG | [45-231003-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/45-231003-M04-C2.png) | VMware-instellingen van pfSense met adapter 4 op het geïsoleerde OT LAN Segment. |
+| M04-20261120-046 | CONFIG | [46-231221-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/46-231221-M04-C2.png) | pfSense WAN-regeloverzicht met bogon-blokkade en het overzicht van gebruikersregels. |
+| M04-20261120-047 | CONFIG | [47-231638-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/47-231638-M04-C2.png) | pfSense IPv4-portforwards vanaf MGMT naar de webinterfaces van FUXA01 en PLC01. |
+| M04-20261120-048 | CONFIG | [48-232137-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/48-232137-M04-C2.png) | pfSense LAN-regeloverzicht met expliciete MGMT-toegang, OT-blokkade en LAN-defaultregels. |
+| M04-20261120-049 | CONFIG | [49-232226-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/49-232226-M04-C2.png) | pfSense NAT-overzicht met MGMT-portforwards voor FUXA01 en PLC01. |
+| M04-20261120-050 | CONFIG | [50-232340-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/50-232340-M04-C2.png) | pfSense IPv4- en IPv6-routetabellen. |
+| M04-20261120-051 | CONFIG | [51-232554-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/51-232554-M04-C2.png) | pfSense IP-aliasoverzicht met de RFC1918-netwerkgroep. |
+| M04-20261120-052 | CONFIG | [52-232729-M04-C2.png](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/52-232729-M04-C2.png) | pfSense-editor voor de IPv4-regel M04 LAN → OT default deny. |
 
 ## Acceptatie en audittrail
 
