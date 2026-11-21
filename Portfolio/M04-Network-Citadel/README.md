@@ -17,6 +17,8 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 
 ## 2. Navigatie
 
+- [M04-testmatrix AC04/AC07 (CSV)](M04-AC04-AC07-TESTMATRIX.csv)
+
 - [Alle 210 screenshots met beschrijving en bewijsgrens](M04-EVIDENCE-INDEX.md)
 - [Galerij: 19 fasen, elk met beelden en toelichting](M04-GALERIJ.md)
 - [GAP-analyse en openstaande verificaties](M04-GAPS.md)
@@ -41,7 +43,7 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 |---|---|---|
 | AC01–AC03 (historische testketen) | PLC-runtime en FUXA/Modbus-configuratie of testuitvoer op de oorspronkelijke topologie | Historische resultaten zijn niet automatisch representatief na de migratie |
 | AC04 (OT-segmentatie) | OT-interface op pfSense, regels en VMnet-/routingwerk | Volledige end-to-end OT-isolatie **PENDING** |
-| AC07 (allow/deny) | Regels, logvensters en diagnostiek | Volledige testmatrix (bron, bestemming, poort) **PENDING** |
+| AC07 (allow/deny) | Regels, logvensters en diagnostiek | Integrale acceptatie **PENDING**. Zie de [testmatrix](M04-AC04-AC07-TESTMATRIX.csv) voor de status per stroom. |
 | NAT/beheerpad | NAT en port-forwarding, routes, geslaagde en mislukte tests | Alleen de zichtbaar geteste afzonderlijke paden zijn onderbouwd |
 | AC05/06/08 | Voorbereidende context rond Wazuh, GNS3 en Suricata | **Geen complete acceptatie-PASS aangetoond** |
 | FUXA 15 november | Groene PLC01-MOTOR-indicator, statuswaarde `5`, tags `Motor_Start` en `Motor_Running` tonen `0` | Live Modbus-readback en AC02-regressie **PENDING** |

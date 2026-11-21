@@ -22,7 +22,7 @@ De oorspronkelijke F13–F15-testmatrix vermeldt een andere beheerbron. **F13–
 
 ## Nog open
 
-**M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.**
+**M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.** [Publieke testmatrix](../Portfolio/M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv).
 
 1. Leg de VMware-eindstand vast (NAT uit, LAN Segment en Host-only aan). De beelden vóór F24 tonen de uitgangsstand. De afgeronde F24-proef hoeft niet opnieuw.
 2. Accepteer de beheer-VM als formele bron voor F13–F15 of plan een gecontroleerde hertest vanaf de voorgeschreven fysieke host. Beoordeel de tijddekking per poort en bevestig het SSH-beheerbeleid voor F14.
