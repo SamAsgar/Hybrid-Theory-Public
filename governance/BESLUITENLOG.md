@@ -49,3 +49,11 @@ Het historische experiment naar verkeer over een grens buiten het eigen lab word
 **Statusgebruik:** [STATUSLEGENDA](STATUSLEGENDA.md).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.
+
+<a name="pub-dec-002"></a>
+
+## PUB-DEC-002 | 21-11-2026 | M05 chapterstructuur en mini-index
+     
+**OWNER APPROVED · Sam, 21 november 2026.** ID en tekst ter bevestiging bij merge. De vijf historische assessmentdossiers zijn opgenomen in tien inhoudelijke chapters. De zeven permanente onderzoekshoofdstukken 05.1–05.7 vormen de vaste methodiek. De [mini-index](../Portfolio/M05-Compliance-Sentinel/README.md#mini-exercise-index) registreert zeventien geplande oefeningen, elk in één chapter. Sam is owner. Een oefenmap ontstaat bij de start. Het [Framework Register](../Portfolio/M05-Compliance-Sentinel/README.md#6-framework-register) beheert de kaderkeuze.
+
+M05-uitvoering **PENDING**, MS01 **NOT ACHIEVED**, exitcriteria **DRAFT**, CAT/ACE **CONCEPT / NOT VALIDATED**. C10 blijft intern en experimenteel. Publicatie volgt [PUBLICATIEBELEID §5a](PUBLICATIEBELEID.md#publicatiegates). Het restrisico rond publicatie blijft **OPEN**. Sam beslist afzonderlijk over de definitieve release.
