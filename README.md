@@ -17,6 +17,12 @@ Een bedieningsscherm (FUXA) stuurt een industriële controller (OpenPLC) aan die
 - **Kan de operator de installatie blijven bedienen?** Na een herstart gaf ik via het scherm een start- en stopcommando. In de controller las ik de bijbehorende statusverandering terug. [Bedieningstest van 19 november](projectlogboeken/2026-11-19-m04-openplc-autostart-en-ot-regressie.md)
 - **Houdt de firewall ongewenste toegang tegen?** Vanuit het labnetwerk probeerde ik onder meer de beheerpagina van de controller te bereiken. Het firewalllog liet zien dat de firewall dat verkeer blokkeerde. De volledige toets van alle toegestane en geblokkeerde verbindingen staat nog open. [Netwerktests van 20 november](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md)
 
+## Identiteit en bedrijfscontinuïteit
+
+**Hoe weet je of centraal beleid een werkplek bereikt?** Ik koppelde een Windows 11-werkplek aan een domein op Windows Server 2025 en meldde me aan met een testaccount. Een centraal ingestelde regel beperkte voor die gebruiker de toegang tot het Configuratiescherm. Zo kon ik op de werkplek zelf controleren of het beleid effect had. [Lees de identiteitsproef](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md)
+
+**Wat gebeurt er als de fysieke host uitvalt?** De virtuele systemen delen één machine. Daardoor kan één storing meerdere diensten tegelijk raken. Voor dat scenario heb ik een herstelontwerp uitgewerkt met een aparte lokale herstelserver en een back-up buiten de locatie. De volgende stap is een systeem daadwerkelijk terugzetten en meten hoe lang het duurt voordat de dienst weer bruikbaar is. [Bekijk het herstelontwerp](governance/M02-Phoenix-Recovery/README.md)
+
 ## Missies
 
 De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identiteit, netwerkbeveiliging en de beoordeling van maatregelen. De stand hieronder is van 20 november 2026. Voor alle vijf staat de eerste milestone nog open.
