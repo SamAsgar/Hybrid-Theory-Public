@@ -66,3 +66,8 @@ Dit zijn **inhoudelijke raakvlakken**, geen afrondingscriteria en geen bewijs da
 ## M04 CORE C2 — 20 november 2026
 
 [Projectlog](2026-11-20-m04-core-c2-netwerkvalidatie.md): gerichte extra LAB- en OT-denies bevestigd. De directe beheerroute, IPv6-beleidsreview, veilige WAN-test, DNS/NTP-ontwerp, herstelbewijs en formele acceptatie staan open. **AC04/AC07 integraal PENDING**. **AC05 PENDING**, **AC06/AC08 PLANNED**. De eigenaar bepaalt AC06-scope en cliëntaantal.
+
+
+## M04-CORE update 21 november 2026
+
+De [beheerzonetest](2026-11-21-m04-core-management-segmentatie.md) meldt drie gerichte, door pfSense gelogde blokkades vanaf een virtuele managementbron naar OT (TCP/502, TCP/22 en TCP/44818). **TESTED / scoped PASS** voor de feitelijke bron, maar F13–F15 formeel nog **PENDING** wegens testbronverschil en bewijsreview. **AC04/AC07 PENDING, CORE IN PROGRESS**. Resterend: capture-/rollbackbewijs, WAN→OT, IPv6, DNS/NTP, herstel en formele acceptatie. Geen permanente directe host→OT-route. EXT (Wazuh, GNS3, Suricata) en industriële DMZ volgen later.
