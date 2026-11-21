@@ -131,13 +131,13 @@
 <text x="811" y="461" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_PEER_02_MAC</text>
 <text x="779" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">geen bewezen gateway</text>
 <rect x="1024" y="390" width="243" height="102" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
-<text x="1034" y="409" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Ubuntu-beheer-VM · NAT-NIC</text>
-<text x="1034" y="425" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">tijdelijke update-adapter</text>
+<text x="1034" y="409" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">Ubuntu-beheer-VM · WAN-SIM-NIC</text>
+<text x="1034" y="425" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">na C3 actief · F24-testbron</text>
 <text x="1034" y="444" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">IP</text>
 <text x="1066" y="444" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_IP</text>
 <text x="1034" y="461" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#9da7b4" text-anchor="start">MAC</text>
 <text x="1066" y="461" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="12.5" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_MAC</text>
-<text x="1034" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">adapter uitgeschakeld (21 nov.)</text>
+<text x="1034" y="482" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" font-weight="400" fill="#d29922" text-anchor="start">bereikt pfSense WAN · F24 PENDING</text>
 <rect x="1279" y="390" width="243" height="102" rx="7" fill="#0d1117" stroke="#d29922" stroke-width="1" stroke-dasharray="5 4"/>
 <text x="1289" y="409" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="start">GNS3-VM · NAT-adapter</text>
 <text x="1289" y="425" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">tweede adapter van de VM</text>
@@ -364,7 +364,7 @@
 <text x="980" y="1770" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#9da7b4" text-anchor="start">NO-ROUTE-VERIFIED · geen IPv6-firewall-PASS</text>
 <text x="48" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="start">F24</text>
 <text x="130" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#e6edf3" text-anchor="start">WAN → OT · TCP/502, 8080</text>
-<text x="520" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">WAN-SIM → pfSense WAN</text>
+<text x="520" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">beheer-VM (WAN-SIM) → pfSense WAN</text>
 <path d="M900 1790 L952 1790" fill="none" stroke="#d29922" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#ah-a)"/>
 <text x="980" y="1794" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="600" fill="#d29922" text-anchor="start">CONFIG REVIEWED / SAFE LIVE TEST PENDING</text>
 <text x="48" y="1818" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="400" fill="#9da7b4" text-anchor="start">—</text>
@@ -407,7 +407,7 @@
 <text x="1270" y="2107" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#d29922" text-anchor="start">PENDING</text>
 <text x="1168" y="2128" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="700" fill="#e6edf3" text-anchor="start">AC08</text>
 <text x="1270" y="2128" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="12.5" font-weight="600" fill="#8b949e" text-anchor="start">PLANNED</text>
-<text x="1168" y="2153" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Diagramupdate wijzigt geen acceptatiecriteria.</text>
+<text x="1168" y="2153" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Industriële DMZ DEFERRED; EXT later.</text>
 <text x="1168" y="2170" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="11.5" font-weight="400" fill="#9da7b4" text-anchor="start">Geen eigenaaracceptatie; Milestone 01 niet behaald.</text>
 </g>
 <g id="legenda">

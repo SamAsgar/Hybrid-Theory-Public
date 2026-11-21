@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1616" viewBox="0 0 1000 1616" role="img" aria-labelledby="t d">
 <title id="t">Hybrid-Theory — Diagram A2: beheerpaden en OT-zonegrens (stand 21 november 2026)</title>
-<desc id="d">Deel 2 van 3 van diagram A. Per verkeersstroom: bron, controlepunt op pfSense, doel en de gescopeerde teststatus van 20 en 21 november (F09–F24). Beheer naar OT alleen via bronbeperkte LAN-forwards op TCP/8080 en TCP/1881; geen directe labhost→OT-route; directe beheer-VM→PLC01-probes (F13–F15) geblokkeerd, scoped PASS, formeel PENDING; LAB→OT en OT→beheer/pfSense/HTTP geblokkeerd; DNS/NTP DESIGN-CONFIRM; IPv6 NO-ROUTE-VERIFIED; WAN→OT CONFIG REVIEWED / SAFE LIVE TEST PENDING. Geen werkelijke adressen, geen testbewijs.</desc>
+<desc id="d">Deel 2 van 3 van diagram A. Per verkeersstroom: bron, controlepunt op pfSense, doel en de gescopeerde teststatus van 20 en 21 november (F09–F24). Beheer naar OT alleen via bronbeperkte LAN-forwards op TCP/8080 en TCP/1881; geen directe labhost→OT-route; directe beheer-VM→PLC01-probes (F13–F15) geblokkeerd, scoped PASS, formeel PENDING; LAB→OT en OT→beheer/pfSense/HTTP geblokkeerd; DNS/NTP DESIGN-CONFIRM; IPv6 NO-ROUTE-VERIFIED; WAN→OT CONFIG REVIEWED / SAFE LIVE TEST PENDING; WAN-SIM-adapter van de beheer-VM als voorbereide testbron. Geen werkelijke adressen, geen testbewijs.</desc>
 <defs>
 <marker id="ah-g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#3fb950"/></marker>
 <marker id="ah-r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f85149"/></marker>
@@ -145,8 +145,8 @@
 <g id="baan-9">
 <path d="M20 1040 L980 1040" fill="none" stroke="#30363d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
 <rect x="20" y="1052" width="220" height="56" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-<text x="32" y="1074" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">WAN-SIM</text>
-<text x="32" y="1096" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PFSENSE_WAN_IP</text>
+<text x="32" y="1074" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">Beheer-VM (WAN-SIM)</text>
+<text x="32" y="1096" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">NET_02_IP</text>
 <rect x="720" y="1052" width="260" height="56" rx="7" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 <text x="732" y="1074" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="14.5" font-weight="700" fill="#e6edf3" text-anchor="start">PLC01 (OT)</text>
 <text x="732" y="1096" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PLC01_OT_IP</text>
@@ -155,7 +155,7 @@
 <path d="M240 1080 L454 1080" fill="none" stroke="#d29922" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/>
 <path d="M534 1080 L720 1080" fill="none" stroke="#d29922" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#ah-a)"/>
 <text x="339.0" y="1068" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">TCP/502, 8080</text>
-<text x="32" y="1132" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#d29922" text-anchor="start">F24 CONFIG REVIEWED · geen gebruikers-PASS of WAN-forwards · veilige live test PENDING</text>
+<text x="32" y="1132" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#d29922" text-anchor="start">F24 CONFIG REVIEWED · testbron voorbereid, bereikt pfSense WAN · geen WAN-PASS of -forwards · live test PENDING</text>
 </g>
 <g id="baan-10">
 <path d="M20 1144 L980 1144" fill="none" stroke="#30363d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>

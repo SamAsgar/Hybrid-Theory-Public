@@ -1,6 +1,6 @@
 # Netwerkontwerp en beveiligingsgrenzen | Hybrid-Theory
 
-**Bijgewerkt:** 20 november 2026 (19-november-regressie, CORE C2-deeltests en ontwerp-/testgates van 20 november; diagram A en de statusnotities van diagram B gedateerd 20 november) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** private architectuur en HT-C-010.
+**Bijgewerkt:** 21 november 2026 (managementtests en F24-testvoorbereiding van 21 november; diagram A gedateerd 21 november, versie van 20 november als momentopname bewaard; 19-november-regressie, CORE C2-deeltests en statusnotities van diagram B: 20 november) · **Classificatie:** gesaneerde architectuurpublicatie · **Herkomst:** private architectuur en HT-C-010.
 
 Dit document heeft twee lagen die niet door elkaar mogen lopen: de **geobserveerde situatie** (§1) en de **doelarchitectuur HT-C-010** (§2–§3). Adressen staan als officiële alias; de [componenttabel met alle aliassen](README.md#11-componenten-zones-en-officiële-aliassen) staat in Architecture.
 
@@ -21,7 +21,7 @@ Dit document heeft twee lagen die niet door elkaar mogen lopen: de **geobserveer
 
 Deze gegevens komen uit gedateerde sessielogs en zijn **geen nieuwe live-meting**. pfSense heeft vier interfaces: WAN, LAN/MGMT, LAB en OT. Werkelijke adressen en de aliasvertaling worden niet gepubliceerd.
 
-### 1.1 Huidige verkeersstromen (stand 20 november 2026)
+### 1.1 Huidige verkeersstromen (stand 21 november 2026)
 
 ![Diagram A2: beheerpaden en OT-zonegrens per verkeersstroom, stand 21 november 2026](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-21.svg)
 
@@ -31,14 +31,14 @@ Deze gegevens komen uit gedateerde sessielogs en zijn **geen nieuwe live-meting*
 |---|---|---|---|
 | 1 | FUXA01 (`FUXA01_OT_IP`) → PLC01 (`PLC01_OT_IP`), Modbus TCP/502 | **Rechtstreeks binnen het OT-subnet**; niet via de pfSense-router | TCP-handshake (15 nov.) en na PLC01-reboot FUXA-herverbinding en HMI START→STOP met PLC-readback (19 nov.) **TESTED / scoped PASS**; formele evidence-review **PENDING** |
 | 2 | Beheerbron (`MGMT_CLIENT_IP`) → webbeheer van PLC01 (TCP/8080) en FUXA01 (TCP/1881) | MGMT → `PFSENSE_MGMT_IP` → bronbeperkte LAN-forward → OT; alleen vanaf de aangewezen beheerbron | **TESTED** (11 en 15 nov.; TCP/8080 herbevestigd 20 nov.); authenticatie/TLS open |
-| 2a | Beheerbron → PLC01 direct, TCP/502, 22 en 44818 (F13–F15) | Directe route koos de fysieke uplink; geen geautoriseerd direct pad vastgesteld | **PENDING / DESIGN-CONFIRM** |
+| 2a | Ubuntu-beheer-VM (`MGMT_NET_IP`) → PLC01 direct, TCP/502, 22 en 44818 (F13–F15) | Beheer-VM → pfSense LAN → beheer-naar-OT-regel; de fysieke labhost krijgt geen directe OT-route | Geblokkeerd: **TESTED / scoped PASS** vanaf de beheer-VM (21 nov.); formeel **PENDING** (afwijkende testbron, log-/pcapcorrelatie) |
 | 3 | LAB → OT | Via pfSense | **Geblokkeerd binnen geteste scope**: gerichte TCP/502- en TCP/1881-denyflows (19 nov.) en LAB→PLC01 TCP/8080, 22, 44818 en ICMP (F09–F12, 20 nov.) met pfSense-BLOCK-logs, **TESTED / scoped PASS**; niet de gehele AC04/AC07-matrix |
 | 4 | LAB → publiek IPv4 | LAB → pfSense → WAN (VMware NAT) | **PASS** binnen scope (26 okt.) |
 | 5 | LAB → thuisrouter (ICMP) | LAB → pfSense | **Geblokkeerd**: **PASS** (26 okt.), alleen voor de geteste bestemming en dit protocol |
 | 6 | OT → andere zones en internet | Via de pfSense-OT-interface | Gerichte OT→LAB ICMP en OT→extern ICMP/TCP 443 (19 nov.) en OT→beheerhost, pfSense-beheer, pfSense-SSH en externe HTTP (F16–F19, 20 nov.) zijn met pfSense-BLOCK-events gecorreleerd (**TESTED / scoped PASS**); alternatieve paden/protocollen en integrale AC04 **PENDING** |
 | 6a | OT → externe DNS (UDP/53) en NTP (UDP/123) (F20/F21) | Via de pfSense-OT-interface | Geblokkeerd waargenomen; goedgekeurde resolver en tijdbron **DESIGN-CONFIRM** |
 | 6b | IPv6 LAB/beheer → OT (F22/F23) | Alleen link-local op de onderzochte LAB-/OT-hosts, geen IPv6-default-route | **NO-ROUTE-VERIFIED** binnen de geïnspecteerde topologie; geen IPv6-firewall-PASS; brede LAN IPv6-allow onder review |
-| 6c | WAN → OT (F24) | WAN-SIM → pfSense WAN | Geen gebruikers-PASS en geen WAN-forwards in de bekeken configuratie: **CONFIG REVIEWED / SAFE LIVE TEST PENDING** |
+| 6c | WAN → OT (F24) | WAN-SIM → pfSense WAN; als tijdelijke testbron is na de managementtests de WAN-SIM-adapter van de beheer-VM (`NET_02_IP`) actief gemaakt, die pfSense WAN bereikt | Geen gebruikers-PASS en geen WAN-forwards in de bekeken configuratie: **CONFIG REVIEWED / SAFE LIVE TEST PENDING**; geen PASS zonder gelogde blokkade en bewijs |
 | 7 | Agents en OT-telemetrie → Wazuh | Nog niet ingericht | **NOT VERIFIED**; 0 agents; AC05 **PENDING** |
 | 8 | GNS3-testnet ↔ overige netten | Geen koppeling | Losstaand; ARP/ICMP **PASS** binnen het testnet |
 
@@ -97,5 +97,7 @@ De C2-sessie bevestigde gerichte LAB→PLC- en OT→beheer/firewall/extern-blokk
 In de bestaande topologie is vanuit een afzonderlijke virtuele managementbron driemaal een directe verbinding naar de PLC geprobeerd: Modbus TCP/502, SSH TCP/22 en EtherNet/IP TCP/44818. Volgens de eigenaarsessie blokkeerde pfSense deze drie verbindingen op de beheer-naar-OT-grens. **TESTED / scoped PASS voor de geteste managementbron.** De canonieke F13–F15-matrix noemt een andere bron; expliciete bronacceptatie, packetcapture-/log-review en rollbackbewijs zijn nog **PENDING**. Integrale AC04/AC07: **PENDING**.
 
 De fysieke VMware-host krijgt geen permanente directe OT-route. Het beperkte webbeheer via de bestaande firewallportforwards blijft tijdelijk gehandhaafd. Uitbreiding van het virtuele beheerwerkstation en de industriële DMZ is uitgesteld tot na M04-CORE. De in het eerdere document opgenomen stand van 20 november blijft historische context.
+
+**F24-testvoorbereiding (21 november, na de managementtests):** de WAN-SIM-adapter van de beheer-VM stond tijdens de managementtests los en is daarna als **tijdelijke testbron** actief gemaakt; hij bereikt pfSense WAN rechtstreeks. Dat is geen ontwerpkeuze en geen WAN→OT- of beheerverbinding. F24 blijft **CONFIG REVIEWED / SAFE LIVE TEST PENDING**.
 
 [Gesaneerd testlog 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [M04 Issue #45](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).
