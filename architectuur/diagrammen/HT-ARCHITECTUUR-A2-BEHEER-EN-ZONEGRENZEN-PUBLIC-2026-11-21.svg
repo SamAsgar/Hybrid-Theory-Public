@@ -66,7 +66,7 @@
 <path d="M240 456 L438 456" fill="none" stroke="#f85149" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M420 450 L432 462 M432 450 L420 462" fill="none" stroke="#f85149" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="339.0" y="444" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">TCP/502, 22, 44818</text>
-<text x="32" y="508" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f85149" text-anchor="start">F13–F15 GEBLOKKEERD vanaf beheer-VM · scoped PASS · <tspan fill="#d29922">formeel PENDING (testbron, pcap) · geen labhost→OT-route</tspan></text>
+<text x="32" y="508" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f85149" text-anchor="start">F13–F15 GEBLOKKEERD vanaf beheer-VM · scoped PASS · <tspan fill="#d29922">formeel PENDING (testbron, tijdreview) · geen labhost→OT-route</tspan></text>
 </g>
 <g id="baan-4">
 <path d="M20 520 L980 520" fill="none" stroke="#30363d" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
@@ -152,8 +152,8 @@
 <text x="732" y="1096" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,Liberation Mono,monospace" font-size="13" font-weight="400" fill="#79c0ff" text-anchor="start">PLC01_OT_IP</text>
 <rect x="444" y="1065" width="100" height="30" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="1"/>
 <text x="494.0" y="1085" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="700" fill="#e6edf3" text-anchor="middle">pfSense WAN</text>
-<path d="M240 1080 L454 1080" fill="none" stroke="#d29922" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/>
-<path d="M534 1080 L720 1080" fill="none" stroke="#d29922" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4" marker-end="url(#ah-a)"/>
+<path d="M240 1080 L438 1080" fill="none" stroke="#f85149" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M420 1074 L432 1086 M432 1074 L420 1086" fill="none" stroke="#f85149" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="339.0" y="1068" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="middle">TCP/502, 8080</text>
 <text x="32" y="1132" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" font-weight="600" fill="#f85149" text-anchor="start">F24 scoped PASS · TCP/502 en TCP/8080 · 6 SYN op WAN geblokkeerd · 0 treffers op OT</text>
 </g>
