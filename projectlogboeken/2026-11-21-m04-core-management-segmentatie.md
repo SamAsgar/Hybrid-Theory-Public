@@ -3,11 +3,11 @@
 **M04-CORE IN PROGRESS · AC04/AC07 PENDING.** Dit is een gesaneerde voortgangsdelta, geen onafhankelijke audit of finale acceptatie.
 
 ## Geobserveerde testdelta
-Een afzonderlijke Ubuntu-beheer-VM in de managementzone bereikte de pfSense-beheerinterface. Een gerichte TCP/502-probe naar de PLC in het afgeschermde OT-segment werd volgens de sessierapportage door de bedoelde LAN→OT-firewallregel geblokkeerd.
+Een afzonderlijke Ubuntu-beheer-VM in de managementzone bereikte de pfSense-beheerinterface. Gerichte TCP-probes naar de PLC in het afgeschermde OT-segment werden volgens de latere sessierapportage op TCP/502, TCP/22 en TCP/44818 door de bedoelde LAN→OT-firewallregel geblokkeerd.
 
-**Resultaat:** `TESTED / scoped PASS` voor deze **specifieke beheer-VM als bron**, op basis van de aangeleverde sessiewaarneming. Volledige primaire tijd-, logregel- en packetcapturecorrelatie en onafhankelijke bewijsreview staan nog open.
+**Resultaat:** `TESTED / scoped PASS` voor **alle drie de getoonde poorten vanaf deze specifieke beheer-VM**, op basis van de aangeleverde sessiewaarneming. Voor TCP/22 en TCP/44818 zijn tevens bronroute en client-timeout gerapporteerd. Volledige primaire tijd-, logregel- en packetcapturecorrelatie en onafhankelijke bewijsreview staan nog open.
 
-De oorspronkelijke F13-matrix vermeldt een andere beheerbron. Daarom blijft **F13 formeel PENDING**, tot expliciete bronacceptatie en de benodigde evidence-review. F14 (SSH, TCP/22) en F15 (EtherNet/IP, TCP/44818) blijven **PENDING**.
+De oorspronkelijke F13–F15-testmatrix vermeldt een andere beheerbron. **F13–F15 blijven formeel PENDING** tot goedkeuring van de afwijkende testbron en afronding van primaire evidence-review. De eindteller van de packetcapture op de OT-interface en het bewijs van terugdraaien van het tijdelijke testpad ontbreken nog in het aangeleverde statusrapport.
 
 ## Architectuurgrenzen
 - Fysieke virtualisatiehost krijgt geen permanente directe route naar OT.
