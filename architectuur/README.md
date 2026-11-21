@@ -1,6 +1,6 @@
 # Architectuur | Hybrid-Theory
 
-**Bijgewerkt:** 20 november 2026 · **Bron:** private architectuur en M04-testmatrix (stand 20 november; ontwerp diagram B: 5 november) · **Weergave:** gesaneerd, met officiële aliassen.
+**Bijgewerkt:** 21 november 2026 · **Bron:** private architectuur en M04-testmatrix (stand 21 november; diagram A van 15 en 20 november als momentopname bewaard; ontwerp diagram B: 5 november) · **Weergave:** gesaneerd, met officiële aliassen.
 
 Deze map beschrijft de netwerkarchitectuur van het Hybrid-Theory-lab in twee lagen: wat er nu staat (diagram A) en waar het ontwerp naartoe gaat (diagram B). Adressen zijn vervangen door **vaste, officiële aliassen** zoals `PLC01_OT_IP`. Dezelfde alias verwijst overal naar hetzelfde adres; de werkelijke waarden en de vertaaltabel blijven privé.
 
@@ -8,31 +8,31 @@ Deze map beschrijft de netwerkarchitectuur van het Hybrid-Theory-lab in twee lag
 
 Een vereenvoudigd overzicht voor wie snel wil zien hoe het lab is opgebouwd: één labhost, pfSense als centrale firewall en de zones MGMT, LAB en OT, plus het losstaande GNS3-testnet. Geen adressen of aliassen; voor details en teststatus zie diagram A1–A3 hieronder.
 
-![Hybrid-Theory — eenvoudige netwerktopologie: labhost, pfSense, zones MGMT, LAB en OT en het losstaande GNS3-testnet, stand 20 november 2026](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)
+![Hybrid-Theory — eenvoudige netwerktopologie: labhost, pfSense, zones MGMT, LAB en OT en het losstaande GNS3-testnet, stand 21 november 2026](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg)
 
-*Figuur 0.* Illustratie, geen testbewijs. [SVG](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.png)
+*Figuur 0.* Illustratie, geen testbewijs. [SVG](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg) · [PNG, hoge resolutie](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.png)
 
-## 1. Diagram A — huidige geïmplementeerde architectuur (20 november 2026)
+## 1. Diagram A — huidige geïmplementeerde architectuur (21 november 2026)
 
 Diagram A bestaat uit drie delen, zodat de tekst op schermbreedte leesbaar blijft. Alle drie zijn **architectuurillustraties**, geen testbewijs en geen live-meting, en bevatten geen werkelijke adressen.
 
 **A1 · Topologie en zones:** thuisnetwerk, labhost, pfSense-interfaces en de componenten per zone.
 
-![Hybrid-Theory — diagram A1: topologie en zones met officiële aliassen, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg)
+![Hybrid-Theory — diagram A1: topologie en zones met officiële aliassen, stand 21 november 2026](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-21.svg)
 
-*Figuur 1a.* [SVG](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.png)
+*Figuur 1a.* [SVG](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-21.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-21.png)
 
-**A2 · Beheerpaden en OT-zonegrens:** per verkeersstroom de bron, het controlepunt op pfSense, het doel en de teststatus van 20 november.
+**A2 · Beheerpaden en OT-zonegrens:** per verkeersstroom de bron, het controlepunt op pfSense, het doel en de teststatus van 20–21 november.
 
-![Hybrid-Theory — diagram A2: beheerpaden en OT-zonegrens per verkeersstroom, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg)
+![Hybrid-Theory — diagram A2: beheerpaden en OT-zonegrens per verkeersstroom, stand 21 november 2026](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-21.svg)
 
-*Figuur 1b.* [SVG](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.png)
+*Figuur 1b.* [SVG](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-21.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-21.png)
 
 **A3 · Teststatus, acceptatie en legenda:** tabel F09–F24, missie- en acceptatiestatus en legenda.
 
-![Hybrid-Theory — diagram A3: teststatus, acceptatie en legenda, stand 20 november 2026](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg)
+![Hybrid-Theory — diagram A3: teststatus, acceptatie en legenda, stand 21 november 2026](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-21.svg)
 
-*Figuur 1c.* [SVG](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.png) · Dezelfde inhoud in één groot overzicht: [SVG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg) · [PNG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.png)
+*Figuur 1c.* [SVG](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-21.svg) · [PNG, hoge resolutie](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-21.png) · Dezelfde inhoud in één groot overzicht: [SVG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-21.svg) · [PNG](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-21.png)
 
 **Wat de figuur laat zien:**
 
@@ -59,9 +59,9 @@ De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONT
 | FUXA01 (SCADA/HMI) | OT | `FUXA01_OT_IP` | `FUXA01_OT_MAC` | **IMPLEMENTED**; HMI en Modbus-verbinding TESTED (15 nov.); START→STOP met PLC-readback TESTED / scoped PASS (19 nov.) |
 | Windows Server 2025 (DC01) | LAB | `DC01_LAB_IP` | geen alias | AD DS/DNS TESTED (1 nov.); adres **TWIJFEL** |
 | Windows 11 (CLIENT01) | LAB | `CLIENT01_DHCP_IP` | geen alias | DHCP-lease; domeinclient TESTED (1 nov.); LAB-testbron F09–F12 (20 nov.), leasebinding open |
-| Ubuntu Server, LAB-interface | LAB | `LAB_NET_IP` (IPv6: `LAB_NET_IPV6_LL`) | `LAB_NET_MAC` (PENDING_CAPTURE) | adres **TWIJFEL** |
-| Ubuntu Server, beheerinterface | MGMT | `MGMT_NET_IP` (IPv6: `MGMT_NET_IPV6_LL`) | `MGMT_NET_MAC` (PENDING_CAPTURE) | Cockpit PASS (25 okt.); actuele status **NOT VERIFIED** |
-| Ubuntu Server, update-interface | WAN-SIM | `NET_02_IP` (IPv6: `NET_02_IPV6_LL`) | `NET_02_MAC` (PENDING_CAPTURE) | tijdelijk; actuele status **NOT VERIFIED** |
+| Ubuntu(-beheer-VM), LAB-interface | LAB | `LAB_NET_IP` (IPv6: `LAB_NET_IPV6_LL`) | `LAB_NET_MAC` (PENDING_CAPTURE) | adres **TWIJFEL** |
+| Ubuntu(-beheer-VM), beheerinterface | MGMT | `MGMT_NET_IP` (IPv6: `MGMT_NET_IPV6_LL`) | `MGMT_NET_MAC` (PENDING_CAPTURE) | Cockpit PASS (25 okt.); 21 nov. bereikt pfSense-beheer, testbron F13–F15; identiteitsreview **open** |
+| Ubuntu(-beheer-VM), WAN-SIM-interface | WAN-SIM | `NET_02_IP` (IPv6: `NET_02_IPV6_LL`) | `NET_02_MAC` (PENDING_CAPTURE) | tijdens de managementtests los; daarna tijdelijke F24-testbron die pfSense WAN bereikt; actuele waarde **PENDING_CAPTURE** |
 | Wazuh SIEM | LAB | `WAZUH_CURRENT_IP` (PENDING_CAPTURE) | geen alias | dashboard TESTED (3–4 nov.); 0 agents |
 | GNS3-VM, beheer | MGMT | `GNS3_MGMT_IP` | geen alias | beheer bereikbaar |
 | GNS3 VPCS PC1 / PC2 | GNS3-testnet (losstaand) | `GNS3_PC1_IP` / `GNS3_PC2_IP` | `GNS3_PC1_MAC` / `GNS3_PC2_MAC` | ARP/ICMP PASS binnen het testnet |
@@ -121,13 +121,13 @@ In de private M04-engineeringlogs is een eerste mislukte PLC-autostart vastgeleg
 
 **Openstaande architectuurrisico's:** brede LAN IPv4-/IPv6-allowregels, NAT-/beheeruitzonderingen, IPv6 en alternatieve routes, UDP-egress, verificatie van configuratieback-up en herstelbaarheid. De verkorte testwerkwijze van 20 november verandert de acceptatie-eisen **niet**. [Fase-20-evidence](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [Netwerkontwerp](NETWERKONTWERP.md).
 
-Diagram A heeft peildatum 20 november en verwerkt de CORE C2-deeltests als gescopeerde status. De figuur is **geen live-testmeting** en geen primaire evidence.
+Diagram A heeft peildatum 21 november en verwerkt de CORE C2-deeltests en de C3-managementtests als gescopeerde status. De figuur is **geen live-testmeting** en geen primaire evidence.
 
 ## 5. Historische figuren
 
 De [publieke figuur van 5 november 2026](diagrammen/HT-NETWERKARCHITECTUUR-PUBLIC-2026-11-05.svg) blijft als historische weergave bewaard. Ze dateert van vóór de OT-migratie, toont OpenPLC nog als gepland en gebruikt aliasnamen die niet de officiële zijn.
 
-De versies van 15 november, [diagram A](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) en [diagram B](diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg), blijven ongewijzigd bewaard als gedateerde weergave van die stand. Gebruik voor de actuele situatie diagram A en B van 20 november.
+De versies van 15 november, [diagram A](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-15.svg) en [diagram B](diagrammen/HT-ARCHITECTUUR-B-DOELONTWERP-PUBLIC-2026-11-15.svg), blijven ongewijzigd bewaard als gedateerde weergave van die stand. De versie van diagram A van 20 november ([overzicht](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg), [A1](diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg), [A2](diagrammen/HT-ARCHITECTUUR-A2-BEHEER-EN-ZONEGRENZEN-PUBLIC-2026-11-20.svg), [A3](diagrammen/HT-ARCHITECTUUR-A3-TESTSTATUS-PUBLIC-2026-11-20.svg), [eenvoudig](diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)) blijft eveneens als momentopname bewaard. Gebruik voor de actuele situatie diagram A van 21 november en diagram B van 20 november.
 
 ## 6. Documentatie en governance
 
@@ -149,4 +149,4 @@ De versies van 15 november, [diagram A](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBL
 
 Volgens de eigenaarsessie blokkeerde pfSense drie directe management→PLC-pogingen op TCP/502, TCP/22 en TCP/44818. Dit is **TESTED / scoped PASS voor de werkelijk gebruikte virtuele beheerbron**, niet de formele acceptatie van F13–F15 of AC04/AC07. Testbronacceptatie, capture-/rollbackbewijs, WAN→OT en de overige CORE-controles zijn nog open.
 
-De afbeeldingen op deze pagina tonen de **topologie en teststand van 20 november**; de latere C3-resultaten zijn aanvullend gedocumenteerd in het [gesaneerde sessielog van 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md). Geen directe permanente fysieke-host→OT-route of industriële DMZ in deze fase.
+De afbeeldingen op deze pagina tonen de **topologie en teststand van 21 november**, inclusief de C3-resultaten uit het [gesaneerde sessielog van 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md). Geen directe permanente fysieke-host→OT-route of industriële DMZ in deze fase.
