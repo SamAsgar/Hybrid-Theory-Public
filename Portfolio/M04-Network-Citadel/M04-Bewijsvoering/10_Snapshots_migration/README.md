@@ -1,6 +1,6 @@
 # Migratiesnapshots | M04 Network Citadel
 
-**Aantal beelden:** 4  
+**Bewijsregistraties:** 4 · **Gepubliceerde PNG's:** 3  
 **Classificatie:** PUBLIC · Gesaneerde afgeleide (onomkeerbare pixelmaskering) · geen origineel
 
 [Terug naar M04-hoofdindex](../../M04-EVIDENCE-INDEX.md)
@@ -45,9 +45,9 @@
 **Onderwerp:** VMware snapshots vóór OT-migratie  
 **Beschrijving:** VMware VM contextmenu en snapshot-/VM-overzichten voor pfSense, PLC01 en FUXA01.  
 **Bewijsgrens:** Een zichtbaar snapshotmenu bewijst nog niet dat snapshotbestand bestaat; controleer Snapshot Manager.  
-**SHA-256 (gesaneerde publicatie):** `81cbfc67edf97d9765a9a2a5dc4c3436f18fc85d79b72b25a19e1b7302b48326`
+**Historisch geregistreerde SHA-256 (publieke PNG ontbreekt):** `81cbfc67edf97d9765a9a2a5dc4c3436f18fc85d79b72b25a19e1b7302b48326`
 
-![M04-EV-113 — VMware snapshots vóór OT-migratie](<Screenshot 2026-11-08 180632.png>)
+M04-EV-113 is geregistreerd zonder publieke PNG.
 
 ---
 

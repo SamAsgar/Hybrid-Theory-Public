@@ -46,7 +46,7 @@ Diagram A toont de huidige netwerken, geïmplementeerde onderdelen en de gescope
 | Missie | Gepubliceerde bewijsset | Detail |
 |---|---|---|
 | **M01** | 82 gesaneerde screenshots | [Bewijsindex](Portfolio/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) · [Saneringsrapport](Portfolio/M01-Hypervisor-Fortress/M01-SANITIZATION-REPORT.md) |
-| **M04** | 264 aanwezige gesaneerde screenshots in 20 fasen (265 geregistreerd; één ontbreekt) | [Bewijsindex](Portfolio/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) · [Fase 20 (19 nov.)](Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [Saneringsrapport](Portfolio/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
+| **M04** | 316 gepubliceerde PNG's in 21 fasen (317 registraties, waarvan M04-EV-113 zonder publieke PNG) | [Bewijsindex](Portfolio/M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) · [Fase 20 (19 nov.)](Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md) · [Saneringsrapport](Portfolio/M04-Network-Citadel/M04-SANITIZATION-REPORT.md) |
 
 De beelden ondersteunen alleen de afzonderlijk beschreven observaties en tests; ze bewijzen geen behaalde milestone. Aanvullende [componentbewijsvoering](Portfolio/VMware/) en de [bewijsvoering per missie](Portfolio/README.md) zijn beschikbaar.
 
