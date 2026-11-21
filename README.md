@@ -1,22 +1,33 @@
 # Hybrid-Theory
 
-Hybrid-Theory is een cybersecuritylab voor IT en industriële besturing (OT). In een virtuele omgeving met VMware en pfSense onderzoek ik hoe je systemen van elkaar scheidt, wie toegang krijgt en hoe je met tests en logs kunt vaststellen of die grenzen werken.
+**Een zelfstandig gebouwd cybersecuritylab voor bedrijfs-IT en industriële besturing (OT).** In dit project onderzoek ik een praktische vraag. Hoe houd je een installatie bedienbaar en beperk je tegelijk welke systemen de besturing kunnen bereiken?
 
-**Begin bij [Network Citadel](Portfolio/M04-Network-Citadel/README.md).** In deze missie stuurt een FUXA-bedieningsscherm een OpenPLC-controller aan. De start-stoptest laat zien hoe de controller reageert. De [netwerktests van 20 november](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) laten vervolgens zien welke verbindingen de firewall blokkeerde en welke daarvan in de logs terug te vinden zijn.
+Op één fysieke host heb ik met VMware een bedrijfsnetwerk, een beheeromgeving en een gesimuleerde industriële installatie ingericht. Met Active Directory test ik hoe gebruikers toegang krijgen. Met de pfSense-firewall test ik welk verkeer tussen de netwerken is toegestaan. Per proef leg ik vast wat ik verwacht, wat ik waarneem en welke vragen openblijven.
 
-[Bekijk de eenvoudige topologie](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg) · [Topologie met netwerkzones en aliassen](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [Alle architectuurdiagrammen](architectuur/README.md)
+## Het lab in beeld
+
+[![Overzicht van de labhost, de pfSense-firewall, de beheer-, lab- en OT-netwerken en het afzonderlijke GNS3-testnet](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)
+
+[Gedetailleerde topologie met netwerkzones](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [Architectuur en ontwerpkeuzes](architectuur/README.md)
+
+## Praktijkvoorbeeld · Network Citadel
+
+Een bedieningsscherm (FUXA) stuurt een industriële controller (OpenPLC) aan die een motor simuleert. Nadat ik beide systemen naar het OT-netwerk had verplaatst, testte ik twee dingen die voor een bedrijf tegelijk moeten kloppen:
+
+- **Kan de operator de installatie blijven bedienen?** Na een herstart gaf ik via het scherm een start- en stopcommando. In de controller las ik de bijbehorende statusverandering terug. [Bedieningstest van 19 november](projectlogboeken/2026-11-19-m04-openplc-autostart-en-ot-regressie.md)
+- **Houdt de firewall ongewenste toegang tegen?** Vanuit het labnetwerk probeerde ik onder meer de beheerpagina van de controller te bereiken. Het firewalllog liet zien dat de firewall dat verkeer blokkeerde. De volledige toets van alle toegestane en geblokkeerde verbindingen staat nog open. [Netwerktests van 20 november](projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md)
 
 ## Missies
 
-Stand op 20 november 2026. Elke missie heeft eigen acceptatiecriteria. Voor alle vijf staat de eerste milestone nog open.
+De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identiteit, netwerkbeveiliging en de beoordeling van maatregelen. De stand hieronder is van 20 november 2026. Voor alle vijf staat de eerste milestone nog open.
 
 | Missie | Voortgang |
 |---|---|
 | [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/42) | Een deel van de controles op host en hypervisor is uitgevoerd. Voor klembord en slepen tussen host en gast geldt een uitzondering op geselecteerde Windows-VM’s. |
 | [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/43) | Het herstelontwerp ligt er. Een restore op een afzonderlijke host moet nog worden aangetoond. |
-| [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) | AD en DNS, aanmelden op het domein en één groepsbeleid zijn getest. De uitbreiding met Entra ID is gepland. |
+| [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) | Centraal gebruikersbeheer met Active Directory, naamomzetting (DNS), aanmelden op het domein en één groepsbeleid zijn getest. De uitbreiding met Entra ID is gepland. |
 | [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | De bediening van de PLC en specifieke firewallblokkades zijn getest. De volledige toets op segmentatie en toegestane verkeersstromen (AC04/AC07) staat open. |
-| [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) | De onderzoeksopzet is goedgekeurd. De eerste geplande casus toetst de M04-netwerksegmentatie aan ISO/IEC 27001 A.8.22. |
+| [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) | De onderzoeksopzet is goedgekeurd. De eerste casus is gepland: beoordelen hoe de scheiding tussen de netwerken aansluit op ISO/IEC 27001 A.8.22. |
 
 ## Bewijs en logboeken
 
