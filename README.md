@@ -6,9 +6,9 @@ Op één fysieke host heb ik met VMware een bedrijfsnetwerk, een beheeromgeving 
 
 ## Het lab in beeld
 
-[![Overzicht van de labhost, de pfSense-firewall, de beheer-, lab- en OT-netwerken en het afzonderlijke GNS3-testnet](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-20.svg)
+[![Overzicht van de labhost, de pfSense-firewall, de beheer-, lab- en OT-netwerken en het afzonderlijke GNS3-testnet](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg)](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg)
 
-[Gedetailleerde topologie met netwerkzones](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-20.svg) · [Architectuur en ontwerpkeuzes](architectuur/README.md)
+[Gedetailleerde topologie met netwerkzones](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-21.svg) · [Architectuur en ontwerpkeuzes](architectuur/README.md)
 
 ## Praktijkvoorbeeld · Network Citadel
 
