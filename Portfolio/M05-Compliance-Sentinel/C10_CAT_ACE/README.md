@@ -4,6 +4,37 @@ Welke claims, afhankelijkheden en kosten van de eigen methode zijn aantoonbaar?
 
 Dit chapter onderzoekt de eigen methode. De inhoudelijke chapters en bronmissies houden hun eigen bewijsketens en besluiten.
 
+## Overdrachtscontract C01–C09 → C10 (ontwerpafspraak)
+
+**Doel.** C01–C09 passen CAT/ACE als onderzoekslens toe op hun eigen mini-oefeningen. C10 onderzoekt vervolgens expliciet de **claims en beperkingen van de methode zelf** via Claims Audit (MINI-02), Dependency Atlas (MINI-05) en Measured Cost Baseline (MINI-17). C10 wordt geen vierde CAT-laag, centraal bewijsarchief, tweede SSOT, technisch verdictsysteem of extra goedkeuringsorgaan.
+
+**Eenheid van overdracht:** een *bronverwijzing naar één gescopeerde claim of bevinding*, vastgelegd in het oorspronkelijke chapter of de bronmissie. Bij een daadwerkelijk gestarte mini worden de volgende velden opgenomen **voor zover toepasselijk en beschikbaar**; ontbrekende waarden blijven expliciet `NOT VERIFIED` of `N/A` met reden. Er worden geen fictieve records vooraf ingevuld.
+
+| Veld | Betekenis / grens |
+|---|---|
+| `mini_id`, `chapter_id`, `claim_id` | Stabiele herleidbare referenties; geen nieuw centraal register |
+| `claim_text`, `scope`, `as_of` | Exacte uitspraak, grens van de beoordeling en peildatum |
+| `source_mission`, `source_ref`, `source_revision` | Canonieke bronlocatie en bronversie/commit waar controleerbaar |
+| `evidence_id_or_ref`, `evidence_integrity_ref` | Link naar oorspronkelijk bewijs; hash alleen indien vastgesteld in het brondossier |
+| `risk_id`, `owner_ref`, `control_ref`, `framework_version` | Koppelingen naar toepasselijke risico-, eigenaars- en controlbesluiten |
+| `design_state`, `implementation_state`, `operation_state` | Gescheiden beoordeling van opzet, implementatie en werking, zonder een nieuw technisch PASS te claimen |
+| `verdict_ref`, `exceptions_ref`, `residual_risk_ref` | Verwijzing naar origineel besluit, uitzonderingen en restrisico |
+| `provenance`, `reviewer_role`, `review_limits` | OBSERVED / AI-INTERPRETED / SIMULATED / HYPOTHESIS en mogelijke belangenconflicten |
+| `dependency_ref`, `dependency_confidence` | Gedeelde afhankelijkheid als OBSERVED of HYPOTHESIS, inclusief bron en tegenbewijs |
+| `cost_ref`, `cost_basis`, `comparison_scope` | MEASURED / ESTIMATED, periode en vergelijkbare beveiligings- en beschikbaarheidsgrens |
+
+**Verwerkingsroute:**
+
+1. **C01–C09:** mini legt scope, primaire framework-/criteriumkeuze en relevante bewijsverwijzingen vast; alle zeven methodiekvragen 05.1–05.7 blijven behandeld of gemotiveerd N/A.
+2. **C10 / MINI-02:** toets expliciete claims aan bron, tijd, reikwijdte en tegenbewijs. Geen onafhankelijke assurance claimen op grond van een AI-review.
+3. **C10 / MINI-05:** onderzoek gedocumenteerde én veronderstelde gedeelde afhankelijkheden. Een relatie is niet automatisch causaal.
+4. **C10 / MINI-17:** gebruik aantoonbaar gemeten kosten waar beschikbaar en onderscheid ramingen; vergelijk alternatieven alleen onder dezelfde relevante beveiligingsgrens.
+5. **Terugkoppeling:** C10 legt een eigen *methodiekbevinding* en verwijzing naar de bronclaim vast. Een technisch verdict of restrisicobesluit wijzigen kan alleen in het bevoegde brondossier met eigenaarbesluit en eventueel revalidatie.
+
+**Publicatiegrens:** overdracht naar een publieke variant bevat uitsluitend afzonderlijk gecontroleerde, gesaneerde claimmetadata en publiek toegankelijke bronlinks. Geen private URL's, echte infrastructuuridentificatoren, interne risico-details, ongepubliceerde hashes of bewijsstukken kopiëren. Is een veld niet openbaar te onderbouwen, markeer het `REDACTED / NOT PUBLICLY VERIFIED` in plaats van een interne bron bloot te leggen. Deze procesafspraak is geen afgeronde publicatiegate, assessment of owneracceptatie.
+
+**Status:** documentatie-/overdrachtsontwerp; bestaande mini-oefeningen behouden hun oorspronkelijke `PLANNED` of andere canonieke status. Geen automatische CAT/ACE-validatie, ISO-conformiteit of milestone-PASS.
+
 **Mini-oefeningen**
 
 - [M05-MINI-02 · Claims Audit](../README.md#idx-m05-mini-02)
