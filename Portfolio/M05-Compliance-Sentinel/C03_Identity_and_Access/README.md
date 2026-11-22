@@ -8,6 +8,8 @@ Kies één identiteit, systeem en peildatum. Verbind het recht, de zakelijke noo
 
 - [M05-MINI-14 · AD Access Review](../README.md#idx-m05-mini-14)
 
+**C10-overdracht:** Documenteer bij een uitgevoerde mini herleidbare claim- en bronverwijzingen volgens het [C01–C09 → C10-overdrachtscontract](../C10_CAT_ACE/README.md#overdrachtscontract-c01c09--c10-ontwerpafspraak). De bronmissie behoudt evidence, technische verdicts en eigenaarbesluiten; C10 beoordeelt uitsluitend de methodiekclaims. Een geplande mini levert nog geen overdrachtsrecord op.
+
 **Werkwijze en bronnen**
 
 Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../Methodiek/). Leg per vraag het bewijs, het ontbrekende bewijs of de reden voor N/A vast.

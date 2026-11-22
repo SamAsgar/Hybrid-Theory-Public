@@ -9,6 +9,8 @@ Bouw een tijdlijn van waarneming, bronklok, interpretatie en meldbesluit. Leg on
 - [M05-MINI-15 · Log Coverage and Time Sync](../README.md#idx-m05-mini-15)
 - [M05-MINI-08 · Reporting Timeline Exercise](../README.md#idx-m05-mini-08)
 
+**C10-overdracht:** Documenteer bij een uitgevoerde mini herleidbare claim- en bronverwijzingen volgens het [C01–C09 → C10-overdrachtscontract](../C10_CAT_ACE/README.md#overdrachtscontract-c01c09--c10-ontwerpafspraak). De bronmissie behoudt evidence, technische verdicts en eigenaarbesluiten; C10 beoordeelt uitsluitend de methodiekclaims. Een geplande mini levert nog geen overdrachtsrecord op.
+
 **Werkwijze en bronnen**
 
 Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../Methodiek/). Leg per vraag het bewijs, het ontbrekende bewijs of de reden voor N/A vast.
