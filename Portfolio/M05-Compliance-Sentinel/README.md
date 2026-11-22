@@ -267,3 +267,7 @@ De [indexrij](#idx-m05-mini-01) geeft de planning. In [C04 · casus en historisc
 *Build with purpose. Secure by design. Validate through evidence. Improve continuously.*
 
 De publieke chapterstructuur is opgenomen in [PR #69](https://github.com/SamAsgar/Hybrid-Theory-Public/pull/69).
+
+### Overdracht van inhoudelijke chapters naar C10
+
+De formele afspraak voor C01–C09 → C10 staat in [C10 · Overdrachtscontract](C10_CAT_ACE/README.md#overdrachtscontract-c01c09--c10-ontwerpafspraak). C10 gebruikt bronverwijzingen naar claims en bevindingen voor methodiekonderzoek; technische verdicts, bewijs en eigenaarbesluiten blijven bij de bronmissies. Dit is een procesafspraak, geen gestart assessment of centraal duplicaatregister.
