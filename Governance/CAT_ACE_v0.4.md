@@ -29,7 +29,7 @@ Veel bestaande kaders bieden al volwassen manieren om beveiligingsdoelen, risico
 4. Hoe verhouden de totale kosten van technische beheersing, assessment, onderhoud en herstel zich tot die van passende alternatieven bij vergelijkbare beveiligingsuitkomsten?
 5. Onder welke omstandigheden levert de aanpak **geen** voordeel op, creëert zij belangenconflicten, of produceert zij vals-positieve afhankelijkheden, schijnbesparingen en onnodige beoordelingslast?
 
-**Herkomst van de onderzoeksvraag:** [masterscriptie over systemic risk en financiële spillover-effecten](../onderzoek/academische-referenties/scriptie-2021.md) biedt academische inspiratie voor het herkennen van transmitters, receivers en keteneffecten. Een economische connectedness-analyse of DCC-GARCH-model is daarmee **niet automatisch gevalideerd voor cybersecurity**.
+**Herkomst van de onderzoeksvraag:** [masterscriptie over systemic risk en financiële spillover-effecten](../Onderzoek/Academische-Referenties/scriptie-2021.md) biedt academische inspiratie voor het herkennen van transmitters, receivers en keteneffecten. Een economische connectedness-analyse of DCC-GARCH-model is daarmee **niet automatisch gevalideerd voor cybersecurity**.
 
 ## 2. Conceptueel model: CAT-structuur en ACE-beoordelingsfunctie
 
@@ -476,10 +476,10 @@ Bij de verdere ontwikkeling moeten onder meer **effectieve scoring zonder willek
 - [Governance-index](README.md).
 - [Labkader en autorisatie](LAB_KADER.md).
 - [Wet- en regelgeving](WET_EN_REGELGEVING.md).
-- [Architectuurbaseline](../architectuur/ARCHITECTUUR_BASELINE.md).
-- [Projectroadmap](../projectlogboeken/ROADMAP.md).
+- [Architectuurbaseline](../Architectuur/ARCHITECTUUR_BASELINE.md).
+- [Projectroadmap](../Projectlogboeken/ROADMAP.md).
 - [Technische evidence](../Portfolio/README.md).
-- [Academische inspiratie: masterscriptie systeemrisico](../onderzoek/academische-referenties/scriptie-2021.md).
+- [Academische inspiratie: masterscriptie systeemrisico](../Onderzoek/Academische-Referenties/scriptie-2021.md).
 
 **Versiebeheer:** v0.4 is een **onderzoeksversie**, geen afgerond empirisch resultaat. De eerdere [v0.2](CAT_ACE_v0.2.md) blijft apart behouden. v0.3 werd als concept onderzocht; v0.4 gebruikt **Audit / Cost / Efficiency** intern, extern of hybride, zonder bewezen superioriteit. Wijzigingen in methodologie, evidenceclassificatie en benchmarkcriteria horen later expliciet gedateerd en verantwoord te worden. Gepubliceerde onderzoeksresultaten mogen niet achteraf worden aangepast aan een gewijzigde hypothese zonder vermelding.
 
@@ -487,7 +487,7 @@ Bij de verdere ontwikkeling moeten onder meer **effectieve scoring zonder willek
 
 **Onderzoeksprincipe:** *Frameworks bepalen niet vooraf welke conclusie uit een experiment moet volgen. De feiten kunnen het concept verbeteren, beperken of weerleggen.*
 
-**Statusdefinities:** [STATUSLEGENDA](STATUSLEGENDA.md). De vijf labnamen en M01–M05 volgen de [roadmap](../projectlogboeken/ROADMAP.md); onderzoeksassessments zijn geen technische labverdicts.
+**Statusdefinities:** [STATUSLEGENDA](STATUSLEGENDA.md). De vijf labnamen en M01–M05 volgen de [roadmap](../Projectlogboeken/ROADMAP.md); onderzoeksassessments zijn geen technische labverdicts.
 
 **Conceptregistratie:** HT-C-007 / CAT/ACE v0.4 in het interne RTBL-HT-Concepts-kanaal (niet openbaar).
 

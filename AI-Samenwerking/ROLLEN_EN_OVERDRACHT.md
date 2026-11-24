@@ -27,8 +27,8 @@ Akkoord Sam (Sam):
 
 ## Onderzoekscontext
 
-Het [CAT/ACE v0.4-onderzoek](../governance/CAT_ACE_v0.4.md) verbindt **CAT** (Corporate Governance & Compliance; Accountability & Management; Technology & Operations) met **ACE = Audit, Cost & Efficiency**. ACE kan **intern, extern of hybride** worden uitgevoerd, met vastgelegde rolconflicten: eerst controlwerking en evidence beoordelen, vervolgens kosten en veilige optimalisaties vergelijken en wijzigingen **hervalideren**. Claude of een andere AI kan kritisch reviewen, maar is geen formele onafhankelijke auditor. **Status: CONCEPT / NOT VALIDATED.** De technische uitvoering blijft aan de geldende engineeringafspraken en eigenaarbesluiten gebonden.
+Het [CAT/ACE v0.4-onderzoek](../Governance/CAT_ACE_v0.4.md) verbindt **CAT** (Corporate Governance & Compliance; Accountability & Management; Technology & Operations) met **ACE = Audit, Cost & Efficiency**. ACE kan **intern, extern of hybride** worden uitgevoerd, met vastgelegde rolconflicten: eerst controlwerking en evidence beoordelen, vervolgens kosten en veilige optimalisaties vergelijken en wijzigingen **hervalideren**. Claude of een andere AI kan kritisch reviewen, maar is geen formele onafhankelijke auditor. **Status: CONCEPT / NOT VALIDATED.** De technische uitvoering blijft aan de geldende engineeringafspraken en eigenaarbesluiten gebonden.
 
-**Statusgebruik:** [statuslegenda](../governance/STATUSLEGENDA.md). 
+**Statusgebruik:** [statuslegenda](../Governance/STATUSLEGENDA.md). 
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

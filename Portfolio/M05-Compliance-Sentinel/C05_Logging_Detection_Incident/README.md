@@ -17,6 +17,6 @@ Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../
 
 ISO/IEC 27001 Annex A voor logging en tijd. NIS2 artikel 23 is een onderzoeksreferentie voor een afgebakend meldscenario. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
 
-[Methodiek voor bewijskwaliteit](../Methodiek/05.3_Control_Effectiveness/README.md) · [Methodiek voor risicorecords](../Methodiek/05.2_Risk_to_Control_Traceability/README.md) · [Wet- en regelgevingskaders](../../../governance/WET_EN_REGELGEVING.md).
+[Methodiek voor bewijskwaliteit](../Methodiek/05.3_Control_Effectiveness/README.md) · [Methodiek voor risicorecords](../Methodiek/05.2_Risk_to_Control_Traceability/README.md) · [Wet- en regelgevingskaders](../../../Governance/WET_EN_REGELGEVING.md).
 
 De risicoregistratie is privé.

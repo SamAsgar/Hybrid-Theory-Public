@@ -31,3 +31,6 @@ De Nederlandstalige rapportage is uitgebreid tot elf pagina's met bedrijfscontex
 - [Controlassessment](../Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/CONTROL-ASSESSMENT.md) · [Managementadvies](../Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/MANAGEMENT-REPORT.md)
 - [M04-log 21 november](2026-11-21-m04-core-management-segmentatie.md) · [M05-issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) · [Roadmap](ROADMAP.md)
 
+## Aanvulling na merge · 24 november 2026
+
+De rapporten en dit daglog staan op de hoofdbranch na [PR #72](https://github.com/SamAsgar/Hybrid-Theory-Public/pull/72). De verwijzingen naar de draft beschrijven de situatie tijdens het schrijven. De vijf leerfasen zijn afgerond. Het controlassessment is in uitvoering. De uitwerking van 05.6 en 05.7 en de eigenaarreview staan open.

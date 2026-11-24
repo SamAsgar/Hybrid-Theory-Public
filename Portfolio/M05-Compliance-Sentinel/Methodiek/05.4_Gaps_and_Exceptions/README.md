@@ -10,7 +10,7 @@ Afwijkingen **transparant en beslisbaar** maken. Welk verschil bestaat er tussen
 
 | Begrip | Betekenis in M05 |
 |---|---|
-| **Gap identification** | Een aantoonbaar verschil vaststellen tussen een gekozen eis en de aangetoonde situatie, met type ([CAT/ACE §7](../../../../governance/CAT_ACE_v0.4.md#7-typen-gap-analyses-welke-vraag-wordt-onderzocht)) en ernst |
+| **Gap identification** | Een aantoonbaar verschil vaststellen tussen een gekozen eis en de aangetoonde situatie, met type ([CAT/ACE §7](../../../../Governance/CAT_ACE_v0.4.md#7-typen-gap-analyses-welke-vraag-wordt-onderzocht)) en ernst |
 | **Nonconformity** | De eis is aantoonbaar **niet** gehaald |
 | **Evidence gap** | Er is onvoldoende bewijs om te beoordelen of de eis is gehaald (**NOT VERIFIED**); geen aanname van een defect |
 | **Exception** | Een bewust, door Sam vastgelegd besluit om een afwijking tijdelijk toe te staan, met reden, voorwaarden en vervaldatum (**EXCEPTION**, geen PASS) |
@@ -64,7 +64,7 @@ Actuele, nog niet opgeloste technische zwaktes en de interne risicoregistratie w
 
 ## Beperkingen
 
-- **EXCEPTION is geen PASS** ([Statuslegenda §2](../../../../governance/STATUSLEGENDA.md#2-engineeringverdict-altijd-met-scope)).
+- **EXCEPTION is geen PASS** ([Statuslegenda §2](../../../../Governance/STATUSLEGENDA.md#2-engineeringverdict-altijd-met-scope)).
 - M05 sluit geen M01–M04-risico's; het doet voorstellen aan de eigenaar.
 - Restrisico-acceptatie in het lab is een labbesluit, geen juridische acceptatie namens een organisatie.
 - De publieke versie toont alleen gesaneerde voorbeelden; de volledige interne registratie is niet publiek.

@@ -17,7 +17,7 @@ Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../
 
 Product- en versiegebonden leveranciersguidance en CIS Benchmarks. Intern hypervisorbeleid levert het criterium voor de M01-casus. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
 
-[Hypervisorbeleid](../../../governance/HYPERVISOR_BEVEILIGINGSBELEID.md) · [Hardwarebaseline](../../../governance/HARDWARE_BASELINE.md) · [M01-dossier](../../M01-Hypervisor-Fortress/README.md).
+[Hypervisorbeleid](../../../Governance/HYPERVISOR_BEVEILIGINGSBELEID.md) · [Hardwarebaseline](../../../Governance/HARDWARE_BASELINE.md) · [M01-dossier](../../M01-Hypervisor-Fortress/README.md).
 
 De technische missie beheert het bewijs en de testuitslagen. M05 documenteert bron, datum, reikwijdte en begrenzing van de interpretatie.
 

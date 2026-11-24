@@ -34,7 +34,7 @@ Werkelijke adressen worden niet gepubliceerd. Het actuele overzicht staat in [Ar
 
 ## Laatst gedocumenteerde uitzondering (1 november 2026)
 
-Voor één Windows 11-testclient is tijdelijk een brede **IPv4 ALLOW Any-egressregel** gebruikt voor internettoegang en evaluatie-activatie; de bestaande RFC1918-blokkering stond daarboven. De gerichte DNS/HTTPS-/browsertest was succesvol. **Dit is geen productiebeleid, algemene egress-PASS of bewijs van de huidige live-regelstatus.** Zie [sessielog](../projectlogboeken/2026-11-01-windows-client-pfsense-windows-server-ad-ds.md).
+Voor één Windows 11-testclient is tijdelijk een brede **IPv4 ALLOW Any-egressregel** gebruikt voor internettoegang en evaluatie-activatie; de bestaande RFC1918-blokkering stond daarboven. De gerichte DNS/HTTPS-/browsertest was succesvol. **Dit is geen productiebeleid, algemene egress-PASS of bewijs van de huidige live-regelstatus.** Zie [sessielog](../Projectlogboeken/2026-11-01-windows-client-pfsense-windows-server-ad-ds.md).
 
 ## Nog open
 
@@ -46,7 +46,7 @@ Voor één Windows 11-testclient is tijdelijk een brede **IPv4 ALLOW Any-egressr
 
 **Bewijsgrens:** een bestaande regel of screenshot is configuratiebewijs, niet automatisch een bewezen end-to-end blokkade.
 
-**Statusgebruik:** [statuslegenda](../governance/STATUSLEGENDA.md).
+**Statusgebruik:** [statuslegenda](../Governance/STATUSLEGENDA.md).
 
 ## M04 — controle- en herstelgates (20 november 2026)
 
@@ -58,8 +58,8 @@ Voordat pfSense-regels opnieuw worden aangepast: controleer de configuratie-expo
 
 De twee bronbeperkte beheerforwards staan op LAN. Een gerichte IPv4-block van LAN naar OT volgt op de beheeruitzonderingen en gaat vóór de brede LAN IPv4-allow. De brede LAN IPv6-allow blijft een open beoordelingspunt. Zowel de directe Windows-route naar PLC01 als de getoonde beheerforward verklaren waarom een time-out naar het firewalladres de drie directe PLC-proeven openlaat.
 
-Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Aan het einde van C2 stond de live WAN-proef nog open. F24 heeft sinds 21 november een scoped PASS voor twee TCP-stromen. Herstelbewijs en integrale acceptatie van AC04/AC07 staan open. [Publieke testmatrix](../Portfolio/M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv). [C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Diagram A, stand 20 november](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg).
+Voor LAB en OT zijn gelogde blokkades op specifieke paden bevestigd. IPv6 is alleen afgebakend op basis van de bekeken routes en segmenten. WAN-configuratie is beoordeeld. Aan het einde van C2 stond de live WAN-proef nog open. F24 heeft sinds 21 november een scoped PASS voor twee TCP-stromen. Herstelbewijs en integrale acceptatie van AC04/AC07 staan open. [Publieke testmatrix](../Portfolio/M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv). [C2-projectlog](../Projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Diagram A, stand 20 november](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBLIC-2026-11-20.svg).
 
 ## Stand na de WAN-eindmeting · 21 november
 
-**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. De twee bestaande bronbeperkte webforwards vormen het beheerpad. F13–F15 zijn alleen voor de virtuele LAN-bron aangetoond. De brede IPv6-allow en alternatieve paden vragen nog review. [Sessieresultaten](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
+**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. De twee bestaande bronbeperkte webforwards vormen het beheerpad. F13–F15 zijn alleen voor de virtuele LAN-bron aangetoond. De brede IPv6-allow en alternatieve paden vragen nog review. [Sessieresultaten](../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)

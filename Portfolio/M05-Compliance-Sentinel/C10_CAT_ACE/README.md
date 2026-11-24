@@ -47,7 +47,7 @@ Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../
 
 CAT/ACE v0.4 heeft de status CONCEPT / NOT VALIDATED. ISO 19011 en NIST SP 800-53A zijn mogelijke methodische referenties. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
 
-[CAT/ACE v0.4](../../../governance/CAT_ACE_v0.4.md) · [Statuslegenda](../../../governance/STATUSLEGENDA.md) · [Methodiek 05.5](../Methodiek/05.5_Assurance_and_Independence/README.md) · [Methodiek 05.6](../Methodiek/05.6_Cost_and_Efficiency/README.md).
+[CAT/ACE v0.4](../../../Governance/CAT_ACE_v0.4.md) · [Statuslegenda](../../../Governance/STATUSLEGENDA.md) · [Methodiek 05.5](../Methodiek/05.5_Assurance_and_Independence/README.md) · [Methodiek 05.6](../Methodiek/05.6_Cost_and_Efficiency/README.md).
 
 ## Beoordelaar en bewijslimiet
 

@@ -16,7 +16,7 @@ Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../
 
 ISO/IEC 27001 Annex A en een passende Microsoft-baseline voor het gekozen product. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
 
-[AD-baselinelog](../../../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) · [Hardwarebaseline](../../../governance/HARDWARE_BASELINE.md) · [Architectuuroverzicht](../../../architectuur/README.md).
+[AD-baselinelog](../../../Projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) · [Hardwarebaseline](../../../Governance/HARDWARE_BASELINE.md) · [Architectuuroverzicht](../../../Architectuur/README.md).
 
 De technische missie beheert het bewijs en de testuitslagen. M05 documenteert bron, datum, reikwijdte en begrenzing van de interpretatie.
 

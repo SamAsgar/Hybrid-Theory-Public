@@ -9,12 +9,12 @@ Dit document heeft twee lagen die niet door elkaar mogen lopen: de **geobserveer
 | Onderdeel | Technologie | Status en bewijsgrens |
 |---|---|---|
 | LAB | VMware LAN Segment, pfSense/Kea DHCP (`PFSENSE_LAB_GW_IP`) | **IMPLEMENTED**; gerichte netwerk-/DHCP-/firewalltests PASS |
-| OT-zone | Eigen VMware LAN Segment, aparte pfSense-interface (`PFSENSE_OT_IP`) | **IMPLEMENTED** (8 nov.), zonder upstream-gateway. PLC01 staat sinds 8–9 nov. in dit segment en FUXA01 sinds 11–15 nov. Meerdere specifieke LAB→OT- en OT→LAB-/externe-bestemming-blokkeringen zijn op 19 nov. getest en met pfSense-logs gecorreleerd; het afgebakende beheerpad is positief getest. Integrale isolatie van de zone (AC04/AC07) **NIET BEWEZEN**. [Log 8 nov.](../projectlogboeken/2026-11-08-m04-ot-firewallinterface.md) · [Log 9 nov.](../projectlogboeken/2026-11-09-m04-plc-migratie-governance-publiek.md) · [Log 11 nov.](../projectlogboeken/2026-11-11-m04-segmentatie-en-beheer-validatie.md) |
+| OT-zone | Eigen VMware LAN Segment, aparte pfSense-interface (`PFSENSE_OT_IP`) | **IMPLEMENTED** (8 nov.), zonder upstream-gateway. PLC01 staat sinds 8–9 nov. in dit segment en FUXA01 sinds 11–15 nov. Meerdere specifieke LAB→OT- en OT→LAB-/externe-bestemming-blokkeringen zijn op 19 nov. getest en met pfSense-logs gecorreleerd; het afgebakende beheerpad is positief getest. Integrale isolatie van de zone (AC04/AC07) **NIET BEWEZEN**. [Log 8 nov.](../Projectlogboeken/2026-11-08-m04-ot-firewallinterface.md) · [Log 9 nov.](../Projectlogboeken/2026-11-09-m04-plc-migratie-governance-publiek.md) · [Log 11 nov.](../Projectlogboeken/2026-11-11-m04-segmentatie-en-beheer-validatie.md) |
 | Beheer (MGMT) | VMware host-only, Cockpit/pfSense GUI (`PFSENSE_MGMT_IP`) | Beheer binnen eerdere tests bereikbaar; actuele NIC-/routingstatus deels OPEN |
 | Updates en WAN-simulatie (WAN-SIM) | VMware NAT (`PFSENSE_WAN_IP`) | Tijdelijk egresspad gebruikt; NAT is geen isolatiegarantie voor het thuisnetwerk |
 | Windows/Identity | Windows Server en Windows 11 | AD DS/forest, DNS/SRV, domain join, testlogin en GPO **PASS binnen scope** |
 | GNS3 | VPCS, switch, Wireshark | ARP/ICMP/capture **PASS** in een losstaande simulatie |
-| FUXA01 en PLC01 | Ubuntu/Docker met FUXA (SCADA/HMI) en OpenPLC-runtime, beide in de OT-zone (`FUXA01_OT_IP`, `PLC01_OT_IP`) | Na correctie is OpenPLC bij een tweede PLC01-reboot automatisch opgestart; FUXA herverbond en START→STOP met PLC-readback is op 19 nov. **TESTED / scoped PASS**. Onafhankelijke evidence-review en formele AC01–AC03-acceptatie **PENDING**. *Historisch:* baseline AC01–AC03 **PASS binnen scope** op de eerdere NAT-topologie (6 nov.). [Log 15 nov.](../projectlogboeken/2026-11-15-m04-ot-modbus-applicatievalidatie.md) |
+| FUXA01 en PLC01 | Ubuntu/Docker met FUXA (SCADA/HMI) en OpenPLC-runtime, beide in de OT-zone (`FUXA01_OT_IP`, `PLC01_OT_IP`) | Na correctie is OpenPLC bij een tweede PLC01-reboot automatisch opgestart; FUXA herverbond en START→STOP met PLC-readback is op 19 nov. **TESTED / scoped PASS**. Onafhankelijke evidence-review en formele AC01–AC03-acceptatie **PENDING**. *Historisch:* baseline AC01–AC03 **PASS binnen scope** op de eerdere NAT-topologie (6 nov.). [Log 15 nov.](../Projectlogboeken/2026-11-15-m04-ot-modbus-applicatievalidatie.md) |
 | Wazuh | SIEM-manager/indexer/dashboard in het LAB (`WAZUH_CURRENT_IP`, PENDING_CAPTURE) | Start en dashboardlogin **PASS**; 0 agents; agentingestie en detectie **NOT VERIFIED** |
 | Recovery | M02 Phoenix Recovery | **PLANNED**; onafhankelijke restore niet aangetoond |
 | Azure | Arc/Entra/VNets | **PLANNED**; niet gedeployed |
@@ -74,7 +74,7 @@ De HT-C-010-baseline gebruikt **twee** voorgestelde subscriptions, elk met een e
 - **OPEN:** actuele lease-/interfacegegevens (o.a. `WAZUH_CURRENT_IP`), Wazuh-agentingestie, formele AC01–AC03-evidence-review, hersteltest en integrale OT-segmentatietests (AC04/AC07), hersteltests en Azure-toegang.
 - **DOEL / GEEN AUTO-MIGRATIE:** nieuwe zones, routes, firewallregels of cloudresources vereisen expliciete scope, autorisatie, kostencontrole en relevante positieve/negatieve tests.
 
-**Publicatie:** geen fysieke hostnamen, privérouteradressen, concrete IP-/MAC-adressen of private aliasvertalingen; alleen de officiële aliasnamen. Deze gesaneerde illustraties zijn geen audit- of compliancebewijs. Zie [Architecture](README.md) en [publicatiebeleid](../governance/PUBLICATIEBELEID.md).
+**Publicatie:** geen fysieke hostnamen, privérouteradressen, concrete IP-/MAC-adressen of private aliasvertalingen; alleen de officiële aliasnamen. Deze gesaneerde illustraties zijn geen audit- of compliancebewijs. Zie [Architecture](README.md) en [publicatiebeleid](../Governance/PUBLICATIEBELEID.md).
 ## 5. M04-harmonisatie 19–20 november 2026
 
 De op 19 november gedocumenteerde reboottest van PLC01 begon met **FAIL** (runtime aanwezig, motorprogramma gestopt). Na correctie van RUN-autostart volgden een geslaagde tweede reboot, FUXA-herverbinding en HMI START→STOP met PLC-statusreadback (**TESTED / scoped PASS**). Dit verandert de historische 15-november-baseline niet met terugwerkende kracht.
@@ -89,7 +89,7 @@ LAB en OT blijven afzonderlijke VMware LAN Segments. De aangewezen beheerbron `M
 
 De C2-sessie bevestigde gerichte LAB→PLC- en OT→beheer/firewall/extern-blokkades. Het IPv6-resultaat beschrijft de routes en L2-scope van de bekeken opstelling. Een brede LAN IPv6-allow blijft onder review. Aan het einde van de C2-sessie stond de live WAN-proef nog open. F24 heeft sinds 21 november een scoped PASS voor twee TCP-stromen. Wazuh OT-telemetrie, GNS3-schaaluitwerking en Suricata-alertcorrelatie horen bij EXT.
 
-[C2-projectlog](../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [pfSense-controles](PFSENSE_PLAN.md#m04--configuratiereview-en-deeltests-op-20-november).
+[C2-projectlog](../Projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [pfSense-controles](PFSENSE_PLAN.md#m04--configuratiereview-en-deeltests-op-20-november).
 
 
 ## Actualisatie 21 november 2026 — beheerzone/OT-ontwerp
@@ -98,6 +98,6 @@ In de bestaande topologie is vanuit een afzonderlijke virtuele managementbron dr
 
 De fysieke VMware-host krijgt geen permanente directe OT-route. Het beperkte webbeheer via de bestaande firewallportforwards blijft tijdelijk gehandhaafd. Uitbreiding van het virtuele beheerwerkstation en de industriële DMZ is uitgesteld tot na M04-CORE. De in het eerdere document opgenomen stand van 20 november blijft historische context.
 
-**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. De tijdelijke WAN-hostroute is verwijderd en Host-only-beheer is hersteld. De eindstand van de adapters moet nog worden vastgelegd. [Daglog](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
+**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. De tijdelijke WAN-hostroute is verwijderd en Host-only-beheer is hersteld. De eindstand van de adapters moet nog worden vastgelegd. [Daglog](../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
 
-[Gesaneerd testlog 21 november](../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [M04 Issue #45](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).
+[Gesaneerd testlog 21 november](../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [M04 Issue #45](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).

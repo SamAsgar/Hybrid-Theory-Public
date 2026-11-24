@@ -44,4 +44,4 @@ Het grote pfSense-dashboardbeeld ontbreekt in deze repository omdat de GitHub-ve
 
 **Publicatie:** GitHub-zichtbaarheid **PUBLIC** (gecontroleerd 05-11-2026); volledige beeld-/identifierscan en publicatiegates zijn nog OPEN. De screenshots bewijzen uitsluitend de weergegeven configuratie binnen hun scope.
 
-**Statusgebruik:** [statuslegenda](../../../governance/STATUSLEGENDA.md).
+**Statusgebruik:** [statuslegenda](../../../Governance/STATUSLEGENDA.md).

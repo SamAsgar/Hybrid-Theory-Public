@@ -17,7 +17,7 @@ Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../
 
 ISO/IEC 27001:2022 Annex A.8.22 voor de eerste casus. IEC 62443-3-2:2020 kan een afgebakende zones-en-conduitsvraag helpen beantwoorden. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
 
-[M04-dossier](../../M04-Network-Citadel/README.md) · [M04-bewijsgrenzen](../../M04-Network-Citadel/M04-GAPS.md) · [Gesaneerde M04-testmatrix](../../M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) · [Netwerkontwerp](../../../architectuur/NETWERKONTWERP.md).
+[M04-dossier](../../M04-Network-Citadel/README.md) · [M04-bewijsgrenzen](../../M04-Network-Citadel/M04-GAPS.md) · [Gesaneerde M04-testmatrix](../../M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) · [Netwerkontwerp](../../../Architectuur/NETWERKONTWERP.md).
 
 ## Technische bronstand van 21 november 2026
 

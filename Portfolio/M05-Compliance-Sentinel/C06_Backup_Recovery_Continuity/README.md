@@ -16,7 +16,7 @@ Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../
 
 Het M02-herstelontwerp bepaalt het interne criterium. ISO 22301 en NIST SP 800-34 zijn mogelijke contextbronnen. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
 
-[M02-herstelontwerp](../../../governance/M02-Phoenix-Recovery/README.md) · [Methodiek voor risicorecords](../Methodiek/05.2_Risk_to_Control_Traceability/README.md).
+[M02-herstelontwerp](../../../Governance/M02-Phoenix-Recovery/README.md) · [Methodiek voor risicorecords](../Methodiek/05.2_Risk_to_Control_Traceability/README.md).
 
 De technische missie beheert het bewijs en de testuitslagen. M05 documenteert bron, datum, reikwijdte en begrenzing van de interpretatie.
 

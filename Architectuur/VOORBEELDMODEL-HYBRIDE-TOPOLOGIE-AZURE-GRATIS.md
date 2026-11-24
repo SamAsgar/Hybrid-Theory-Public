@@ -1,7 +1,7 @@
 # Azure free-first | Conceptueel hybride doelontwerp
 
 **Type:** ontwerpvoorstel / **PLANNED**, niet gedeployed.  
-**Onderzoekskader:** [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) — **Audit / Cost / Efficiency**, intern, extern of hybride; **NOT VALIDATED**. Voor Azure is Cost relevant om onverwachte verbruikskosten te voorkomen; dit doelontwerp is nog niet uitgerold.
+**Onderzoekskader:** [CAT/ACE v0.4](../Governance/CAT_ACE_v0.4.md) — **Audit / Cost / Efficiency**, intern, extern of hybride; **NOT VALIDATED**. Voor Azure is Cost relevant om onverwachte verbruikskosten te voorkomen; dit doelontwerp is nog niet uitgerold.
 
 **Architectuurafstemming (5 november 2026, bijgewerkt 15 november):** de [gesaneerde netwerkarchitectuur](README.md) (diagram B) en het [netwerkontwerp](NETWERKONTWERP.md) zijn gebaseerd op private HT-C-010. De huidige baseline gebruikt **twee toekomstige subscriptions**, ieder met een eigen VNet (management en private-cloud). Exacte host-/routeradressen en operationele subnetten blijven privé; eerdere vier-subscriptiontekeningen zijn geen geautoriseerde vervanging. Geen deployment, kostenautorisatie of netwerkroute wordt uit dit diagram afgeleid.
 

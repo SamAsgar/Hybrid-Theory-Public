@@ -29,7 +29,7 @@ Veel bestaande kaders bieden al volwassen manieren om beveiligingsdoelen, risico
 4. Wat kost de aanpak aan voorbereiding, uitvoering, analyse en documentatie, vergeleken met relevante bestaande procedures?
 5. Onder welke omstandigheden levert de aanpak **geen** voordeel op, of produceert zij vals-positieve afhankelijkheden en onnodige onderzoekslast?
 
-**Herkomst van de onderzoeksvraag:** [masterscriptie over systemisch risico en financiële spillover-effecten](../onderzoek/academische-referenties/scriptie-2021.md) biedt academische inspiratie voor het herkennen van transmitters, receivers en keteneffecten. Een economische connectedness-analyse of DCC-GARCH-model is daarmee **niet automatisch gevalideerd voor cybersecurity**.
+**Herkomst van de onderzoeksvraag:** [masterscriptie over systemisch risico en financiële spillover-effecten](../Onderzoek/Academische-Referenties/scriptie-2021.md) biedt academische inspiratie voor het herkennen van transmitters, receivers en keteneffecten. Een economische connectedness-analyse of DCC-GARCH-model is daarmee **niet automatisch gevalideerd voor cybersecurity**.
 
 ## 2. Conceptueel model: CAT-lagen en ACE-evaluatiedimensies
 
@@ -344,10 +344,10 @@ Bij de verdere ontwikkeling moeten onder meer **effectieve scoring zonder willek
 - [Governance-index](README.md).
 - [Labkader en autorisatie](LAB_KADER.md).
 - [Wet- en regelgeving](WET_EN_REGELGEVING.md).
-- [Architectuurbaseline](../architectuur/ARCHITECTUUR_BASELINE.md).
-- [Projectroadmap](../projectlogboeken/ROADMAP.md).
+- [Architectuurbaseline](../Architectuur/ARCHITECTUUR_BASELINE.md).
+- [Projectroadmap](../Projectlogboeken/ROADMAP.md).
 - [Technische evidence](../Portfolio/README.md).
-- [Academische inspiratie: masterscriptie systeemrisico](../onderzoek/academische-referenties/scriptie-2021.md).
+- [Academische inspiratie: masterscriptie systeemrisico](../Onderzoek/Academische-Referenties/scriptie-2021.md).
 
 **Versiebeheer:** v0.2 is een **onderzoeksversie**, geen afgerond empirisch resultaat. Wijzigingen in methodologie, evidenceclassificatie en benchmarkcriteria horen later expliciet gedateerd en verantwoord te worden. Gepubliceerde onderzoeksresultaten mogen niet achteraf worden aangepast aan een gewijzigde hypothese zonder vermelding.
 
@@ -355,6 +355,6 @@ Bij de verdere ontwikkeling moeten onder meer **effectieve scoring zonder willek
 
 **Onderzoeksprincipe:** *Frameworks bepalen niet vooraf welke conclusie uit een experiment moet volgen. De feiten kunnen het concept verbeteren, beperken of weerleggen.*
 
-**Statusdefinities:** [STATUSLEGENDA](STATUSLEGENDA.md). De vijf labnamen en M01–M05 volgen de [roadmap](../projectlogboeken/ROADMAP.md); onderzoeksassessments zijn geen technische labverdicts.
+**Statusdefinities:** [STATUSLEGENDA](STATUSLEGENDA.md). De vijf labnamen en M01–M05 volgen de [roadmap](../Projectlogboeken/ROADMAP.md); onderzoeksassessments zijn geen technische labverdicts.
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

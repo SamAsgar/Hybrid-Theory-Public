@@ -42,7 +42,7 @@ ISO/IEC 27002:2022 (implementatierichtlijn per control), NIST SP 800-53A Rev. 5 
 
 | Dimensie | Publieke bron | Publiek gedocumenteerde stand (scoped, geen M05-oordeel) |
 |---|---|---|
-| Ontwerp | [Netwerkontwerp](../../../../architectuur/NETWERKONTWERP.md) | Zones achter de firewall met default deny als **ontwerp** (DOCUMENTED) |
+| Ontwerp | [Netwerkontwerp](../../../../Architectuur/NETWERKONTWERP.md) | Zones achter de firewall met default deny als **ontwerp** (DOCUMENTED) |
 | Implementatie | [M04-dossier](../../../M04-Network-Citadel/README.md) en [galerij](../../../M04-Network-Citadel/M04-GALERIJ.md) | OT-interface en regels zijn in gesaneerde beelden zichtbaar (DOCUMENTED) |
 | Werking | [M04 fase 20](../../../M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md), [M04-GAPS](../../../M04-Network-Citadel/M04-GAPS.md#aanvulling-19-november--gerichte-deeltests) | Gerichte deny-flows met BLOCK-events (OBSERVED, scoped); integrale AC04/AC07-matrix **PENDING** |
 
@@ -63,7 +63,7 @@ Het publieke bewijs ondersteunt dus hooguit een **scoped** oordeel over specifie
 
 ## Beperkingen
 
-- Een regelscreenshot is geen werkingsbewijs; een timeout is geen bewezen blokkade zonder logcorrelatie ([Statuslegenda §7](../../../../governance/STATUSLEGENDA.md#7-bewijsdiscipline)).
+- Een regelscreenshot is geen werkingsbewijs; een timeout is geen bewezen blokkade zonder logcorrelatie ([Statuslegenda §7](../../../../Governance/STATUSLEGENDA.md#7-bewijsdiscipline)).
 - Verkeer dat niet via de control loopt, kan de control niet bewijzen.
 - FAILs en mislukte tests blijven als historisch bewijs staan.
 - Publiek gesaneerde beelden kunnen details missen die voor een volledige beoordeling nodig zijn.
