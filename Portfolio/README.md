@@ -2,6 +2,16 @@
 
 Deze index leidt naar missiegebonden bewijs, componentinventarissen en de statusgrenzen. Bewijsbestanden tonen uitsluitend de daarin beschreven observaties; ze bewijzen op zichzelf geen behaalde milestone. M01–M05 zijn permanente Main Missions; geen missie heeft Milestone 01 bereikt ([statuslegenda §3a](../Governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026)).
 
+## Onderzoeksrapporten (PDF) / Research reports
+
+Gesaneerde rapporten voor stakeholders en IT-professionals. Netwerkadressen in deze rapporten zijn fictieve documentatievoorbeelden.
+
+| Casus | Nederlands | English |
+|---|---|---|
+| **M05-MINI-01 — IT/OT-netwerksegmentatie en risicobeheersing** | [Lees rapport (PDF)](M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/M05-MINI-01-Educatief-Afsluitdossier.pdf) | [Read report (PDF)](M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/M05-MINI-01-IT-OT-Network-Segmentation-EN.pdf) |
+
+De rapporten beschrijven een fictieve bedrijfscasus, controlinterpretatie (ISO/IEC 27001:2022), technische bewijsgrenzen en managementaanbevelingen. Het formele assessment en de eigenaarreview blijven PENDING; de rapporten vormen geen onafhankelijke audit of certificering. [Casusdossier](M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/README.md).
+
 ## Missie-index
 
 | Missie | Bewijs en navigatie | Huidige status |
@@ -10,9 +20,9 @@ Deze index leidt naar missiegebonden bewijs, componentinventarissen en de status
 | **M02 — Phoenix Recovery** | [Bewijslocatie](M02-Phoenix-Recovery/) · [Herstelarchitectuur en status](../Governance/M02-Phoenix-Recovery/README.md) | **PENDING**; onafhankelijke off-host restore niet aangetoond. |
 | **M03 — Identity Dominion** | [Bewijslocatie](M03-Identity-Dominion/) · [AD/DNS-baselinerapport](../Projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | **IN PROGRESS**; bestaande AD/DNS-tests gelden alleen binnen hun beschreven scope. |
 | **M04 — Network Citadel** | **354 gepubliceerde PNG's in 22 fasen (355 beeldregistraties, waarvan M04-EV-113 zonder publieke PNG)** [Missie-overzicht](M04-Network-Citadel/README.md) · [Bewijsindex](M04-Network-Citadel/M04-EVIDENCE-INDEX.md) · [Galerij per fase](M04-Network-Citadel/M04-GALERIJ.md) · [Gaps](M04-Network-Citadel/M04-GAPS.md) · [Saneringsrapport](M04-Network-Citadel/M04-SANITIZATION-REPORT.md) | **M04-CORE IN PROGRESS**; AC04/AC07 integraal **PENDING**; C2-deeltests vastgelegd op 20 november. |
-| **M05 — Compliance Sentinel** | [Chapters](M05-Compliance-Sentinel/README.md#inhoudelijke-chapters) · [zeven onderzoeksvragen](M05-Compliance-Sentinel/README.md#methodiek-m05) · [mini-index](M05-Compliance-Sentinel/README.md#mini-exercise-index) · [Framework Register](M05-Compliance-Sentinel/README.md#6-framework-register) | Documentarchitectuur **OWNER APPROVED**. Uitvoering **PENDING**, M05-MS01 **NOT ACHIEVED**. |
+| **M05 — Compliance Sentinel** | [Chapters](M05-Compliance-Sentinel/README.md#inhoudelijke-chapters) · [zeven onderzoeksvragen](M05-Compliance-Sentinel/README.md#methodiek-m05) · [mini-index](M05-Compliance-Sentinel/README.md#mini-exercise-index) · [Framework Register](M05-Compliance-Sentinel/README.md#6-framework-register) | Documentarchitectuur **OWNER APPROVED**. MINI-01 **IN PROGRESS**; formele assessmentacceptatie **PENDING**, M05-MS01 **NOT ACHIEVED**. |
 
-M02, M03 en M05 hebben momenteel geen missiegebonden screenshotsets in hun publicatiemappen; de M05-map bevat methodiek- en onderzoeksdocumentatie, geen uitgevoerd assessment. Een lege map of een componentbewijs elders in de repository verandert de missiestatus niet.
+M02, M03 en M05 hebben momenteel geen missiegebonden screenshotsets in hun publicatiemappen; de M05-map bevat methodiek, onderzoeksrapporten en een controlassessment in werkversie, geen formeel geaccepteerd assessment. Een lege map of een componentbewijs elders in de repository verandert de missiestatus niet.
 
 ## Componentdocumentatie
 
