@@ -68,7 +68,7 @@ Een milestone vraagt een expliciete scope, vooraf vastgestelde acceptatiecriteri
 
 ## 6. Historische labels en publicatiereview
 
-Oudere logboeken bevatten destijds gebruikte labels zoals `OPEN`, `GEPARKEERD`, `VERIFIED DIAGNOSTIC`, `INCONCLUSIVE` en `NOT FULLY VERIFIED`. Die zijn **historische formuleringen**, geen uitbreiding van de huidige statusset. Lees ze binnen de oorspronkelijke datum en scopespecificatie; actuele interpretatie staat in de latere rapporten en [roadmap](../projectlogboeken/ROADMAP.md).
+Oudere logboeken bevatten destijds gebruikte labels zoals `OPEN`, `GEPARKEERD`, `VERIFIED DIAGNOSTIC`, `INCONCLUSIVE` en `NOT FULLY VERIFIED`. Die zijn **historische formuleringen**, geen uitbreiding van de huidige statusset. Lees ze binnen de oorspronkelijke datum en scopespecificatie; actuele interpretatie staat in de latere rapporten en [roadmap](../Projectlogboeken/ROADMAP.md).
 
 **GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026). De beeld-/PDF-review, Git-geschiedenis, identifierscan en overige publicatiegates zijn nog niet volledig aangetoond. Dit is **geen EXCEPTION en geen publicatie-PASS**. Raadpleeg het [goedgekeurde publicatiebeleid](PUBLICATIEBELEID.md).
 

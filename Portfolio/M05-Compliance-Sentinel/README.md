@@ -2,11 +2,11 @@
 
 **Repository:** Hybrid-Theory-Public · **Publicatievorm:** gesaneerde onderzoeks- en methodiekdocumentatie  
 **Missietype:** **Permanente Main Mission** (geen definitieve afsluitstatus)  
-**Peildatum:** 21 november 2026 · **Eerder besluit:** missionmodel en M05-structuur goedgekeurd door Sam op 20-11-2026 (besluit [PUB-DEC-001](../../governance/BESLUITENLOG.md#pub-dec-001--20-11-2026--permanent-missionmodel-en-m05-structuur))
+**Peildatum:** 21 november 2026 · **Eerder besluit:** missionmodel en M05-structuur goedgekeurd door Sam op 20-11-2026 (besluit [PUB-DEC-001](../../Governance/BESLUITENLOG.md#pub-dec-001--20-11-2026--permanent-missionmodel-en-m05-structuur))
 
 | Statusdimensie | Stand 21-11-2026 |
 |---|---|
-| Chapterstructuur C01–C10 en mini-index | **OWNER APPROVED** ([PUB-DEC-002](../../governance/BESLUITENLOG.md#pub-dec-002)) |
+| Chapterstructuur C01–C10 en mini-index | **OWNER APPROVED** ([PUB-DEC-002](../../Governance/BESLUITENLOG.md#pub-dec-002)) |
 | Structuur van deze documentatie | **APPROVED** (structuur en frameworkbenadering) |
 | Hoofdstukken 05.1–05.7 | Ingericht; inhoud is methodiek en planning |
 | M05-technische uitvoering | **PENDING** — er is nog geen M05-assessment uitgevoerd |
@@ -36,7 +36,7 @@ Tussen "er staat een firewallregel" en "het risico is aantoonbaar beheerst en de
 
 > Hoe maken we de stap van een technische observatie naar een controleerbare uitspraak over risico, verantwoordelijkheid, werking en eventuele resterende afwijkingen, zonder compliance te verwarren met bewezen veiligheid?
 
-Controlgerichte assessments beoordelen maatregelen vaak één voor één. M05 onderzoekt daarnaast wat er gebeurt als meerdere controls van dezelfde component afhangen ([05.7 Systemic Risk](Methodiek/05.7_Systemic_Risk/README.md)). De [academische achtergrond](../../onderzoek/academische-referenties/README.md) over systemisch risico en spillover is daarbij een **inspiratiebron, geen gevalideerde methode**.
+Controlgerichte assessments beoordelen maatregelen vaak één voor één. M05 onderzoekt daarnaast wat er gebeurt als meerdere controls van dezelfde component afhangen ([05.7 Systemic Risk](Methodiek/05.7_Systemic_Risk/README.md)). De [academische achtergrond](../../Onderzoek/Academische-Referenties/README.md) over systemisch risico en spillover is daarbij een **inspiratiebron, geen gevalideerde methode**.
 
 ## 3. Permanente mission lifecycle
 
@@ -47,7 +47,7 @@ Hybrid-Theory heeft vijf **permanente Main Missions**: M01 Hypervisor Fortress, 
 - **Geen van de vijf Main Missions heeft Milestone 01 bereikt** (stand 20-11-2026).
 - Een geslaagde technische deeltest is een **scoped technische bevinding**, geen milestone-acceptatie.
 
-De statusbegrippen staan in de [Statuslegenda §3a](../../governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026).
+De statusbegrippen staan in de [Statuslegenda §3a](../../Governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026).
 
 ## 4. Main Mission, milestone en mini-oefening
 
@@ -77,7 +77,7 @@ De naam chapter is voorbehouden aan C01–C10. Onderzoekshoofdstukken 05.1–05.
 | 05.6 | [Cost & Efficiency](Methodiek/05.6_Cost_and_Efficiency/README.md) | Wat kost beheersing en beoordeling, en bestaat er een even veilig, goedkoper alternatief? |
 | 05.7 | [Systemic Risk](Methodiek/05.7_Systemic_Risk/README.md) | Welke gedeelde afhankelijkheden laten één falende component meerdere controls tegelijk raken? |
 
-**Navigatie:** [05.1](Methodiek/05.1_Scope_and_Applicability/README.md) · [05.2](Methodiek/05.2_Risk_to_Control_Traceability/README.md) · [05.3](Methodiek/05.3_Control_Effectiveness/README.md) · [05.4](Methodiek/05.4_Gaps_and_Exceptions/README.md) · [05.5](Methodiek/05.5_Assurance_and_Independence/README.md) · [05.6](Methodiek/05.6_Cost_and_Efficiency/README.md) · [05.7](Methodiek/05.7_Systemic_Risk/README.md) · [CAT/ACE v0.4](../../governance/CAT_ACE_v0.4.md) · [Wet- en regelgevingskaders](../../governance/WET_EN_REGELGEVING.md) · [Statuslegenda](../../governance/STATUSLEGENDA.md) · [M04-dossier (eerste casus)](../M04-Network-Citadel/README.md) · [Roadmap](../../projectlogboeken/ROADMAP.md)
+**Navigatie:** [05.1](Methodiek/05.1_Scope_and_Applicability/README.md) · [05.2](Methodiek/05.2_Risk_to_Control_Traceability/README.md) · [05.3](Methodiek/05.3_Control_Effectiveness/README.md) · [05.4](Methodiek/05.4_Gaps_and_Exceptions/README.md) · [05.5](Methodiek/05.5_Assurance_and_Independence/README.md) · [05.6](Methodiek/05.6_Cost_and_Efficiency/README.md) · [05.7](Methodiek/05.7_Systemic_Risk/README.md) · [CAT/ACE v0.4](../../Governance/CAT_ACE_v0.4.md) · [Wet- en regelgevingskaders](../../Governance/WET_EN_REGELGEVING.md) · [Statuslegenda](../../Governance/STATUSLEGENDA.md) · [M04-dossier (eerste casus)](../M04-Network-Citadel/README.md) · [Roadmap](../../Projectlogboeken/ROADMAP.md)
 
 ### Mapstructuur
 
@@ -118,22 +118,22 @@ M05-Compliance-Sentinel/
 
 | Mini-ID | Chapter | Onderwerp | Status | Owner | Primary Source | Last Review |
 |---|---|---|---|---|---|---|
-| <a id="idx-m05-mini-11"></a>M05-MINI-11 | [C01](C01_Governance_Scope_ISMS/README.md) | Applicability Matrix | PLANNED | Sam | [Labkader](../../governance/LAB_KADER.md) | — |
-| <a id="idx-m05-mini-03"></a>M05-MINI-03 | [C01](C01_Governance_Scope_ISMS/README.md) | Decisions and Exceptions | PLANNED | Sam | [Besluitenlog](../../governance/BESLUITENLOG.md) | — |
-| <a id="idx-m05-mini-10"></a>M05-MINI-10 | [C01](C01_Governance_Scope_ISMS/README.md) | ISMS Clauses 4–10 (oefencasus) | PLANNED | Sam | [Governance](../../governance/README.md) | — |
+| <a id="idx-m05-mini-11"></a>M05-MINI-11 | [C01](C01_Governance_Scope_ISMS/README.md) | Applicability Matrix | PLANNED | Sam | [Labkader](../../Governance/LAB_KADER.md) | — |
+| <a id="idx-m05-mini-03"></a>M05-MINI-03 | [C01](C01_Governance_Scope_ISMS/README.md) | Decisions and Exceptions | PLANNED | Sam | [Besluitenlog](../../Governance/BESLUITENLOG.md) | — |
+| <a id="idx-m05-mini-10"></a>M05-MINI-10 | [C01](C01_Governance_Scope_ISMS/README.md) | ISMS Clauses 4–10 (oefencasus) | PLANNED | Sam | [Governance](../../Governance/README.md) | — |
 | <a id="idx-m05-mini-12"></a>M05-MINI-12 | [C02](C02_Risk_Management/README.md) | Risk Register Review | PLANNED | Sam | privé risicoregister (niet publiek) | — |
-| <a id="idx-m05-mini-14"></a>M05-MINI-14 | [C03](C03_Identity_and_Access/README.md) | AD Access Review | PLANNED | Sam | [AD-baselinelog](../../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | — |
+| <a id="idx-m05-mini-14"></a>M05-MINI-14 | [C03](C03_Identity_and_Access/README.md) | AD Access Review | PLANNED | Sam | [AD-baselinelog](../../Projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | — |
 | <a id="idx-m05-mini-01"></a>M05-MINI-01 | [C04](C04_Network_Segmentation_OT/README.md) | A.8.22 Risk-to-Control | PLANNED | Sam | [Gesaneerde M04-testmatrix](../M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) | 20-11-2026 (ontwerp) |
-| <a id="idx-m05-mini-09"></a>M05-MINI-09 | [C04](C04_Network_Segmentation_OT/README.md) | Zones and Conduits | PLANNED | Sam | [Netwerkontwerp](../../architectuur/NETWERKONTWERP.md) | — |
+| <a id="idx-m05-mini-09"></a>M05-MINI-09 | [C04](C04_Network_Segmentation_OT/README.md) | Zones and Conduits | PLANNED | Sam | [Netwerkontwerp](../../Architectuur/NETWERKONTWERP.md) | — |
 | <a id="idx-m05-mini-15"></a>M05-MINI-15 | [C05](C05_Logging_Detection_Incident/README.md) | Log Coverage and Time Sync | PLANNED | Sam | privé daglog (niet publiek) | — |
-| <a id="idx-m05-mini-08"></a>M05-MINI-08 | [C05](C05_Logging_Detection_Incident/README.md) | Reporting Timeline Exercise | PLANNED | Sam | [Wet- en regelgevingskaders](../../governance/WET_EN_REGELGEVING.md) | — |
-| <a id="idx-m05-mini-07"></a>M05-MINI-07 | [C06](C06_Backup_Recovery_Continuity/README.md) | Restore Evidence Review | PLANNED | Sam | [M02-herstelontwerp](../../governance/M02-Phoenix-Recovery/README.md) | — |
-| <a id="idx-m05-mini-13"></a>M05-MINI-13 | [C07](C07_Hardening_Config_Change/README.md) | Baseline vs Reality | PLANNED | Sam | [Hardwarebaseline](../../governance/HARDWARE_BASELINE.md) | — |
+| <a id="idx-m05-mini-08"></a>M05-MINI-08 | [C05](C05_Logging_Detection_Incident/README.md) | Reporting Timeline Exercise | PLANNED | Sam | [Wet- en regelgevingskaders](../../Governance/WET_EN_REGELGEVING.md) | — |
+| <a id="idx-m05-mini-07"></a>M05-MINI-07 | [C06](C06_Backup_Recovery_Continuity/README.md) | Restore Evidence Review | PLANNED | Sam | [M02-herstelontwerp](../../Governance/M02-Phoenix-Recovery/README.md) | — |
+| <a id="idx-m05-mini-13"></a>M05-MINI-13 | [C07](C07_Hardening_Config_Change/README.md) | Baseline vs Reality | PLANNED | Sam | [Hardwarebaseline](../../Governance/HARDWARE_BASELINE.md) | — |
 | <a id="idx-m05-mini-16"></a>M05-MINI-16 | [C07](C07_Hardening_Config_Change/README.md) | Hypervisor Hardening Review | PLANNED | Sam | [M01-dossier](../M01-Hypervisor-Fortress/README.md) | — |
-| <a id="idx-m05-mini-06"></a>M05-MINI-06 | [C08](C08_Suppliers_Cloud_Third_Parties/README.md) | ICT Third-Party Register | PLANNED | Sam | [Hardwarebaseline](../../governance/HARDWARE_BASELINE.md) | — |
-| <a id="idx-m05-mini-04"></a>M05-MINI-04 | [C09](C09_Privacy_Publication/README.md) | Publication Gates | PLANNED | Sam | [Publicatiebeleid](../../governance/PUBLICATIEBELEID.md) | — |
-| <a id="idx-m05-mini-02"></a>M05-MINI-02 | [C10](C10_CAT_ACE/README.md) | Claims Audit | PLANNED | Sam | [CAT/ACE v0.4](../../governance/CAT_ACE_v0.4.md) | — |
-| <a id="idx-m05-mini-05"></a>M05-MINI-05 | [C10](C10_CAT_ACE/README.md) | Dependency Atlas | PLANNED | Sam | [CAT/ACE §8](../../governance/CAT_ACE_v0.4.md#8-dependency-analyse-relaties-kwetsbaarheid-en-causale-voorzichtigheid) | — |
+| <a id="idx-m05-mini-06"></a>M05-MINI-06 | [C08](C08_Suppliers_Cloud_Third_Parties/README.md) | ICT Third-Party Register | PLANNED | Sam | [Hardwarebaseline](../../Governance/HARDWARE_BASELINE.md) | — |
+| <a id="idx-m05-mini-04"></a>M05-MINI-04 | [C09](C09_Privacy_Publication/README.md) | Publication Gates | PLANNED | Sam | [Publicatiebeleid](../../Governance/PUBLICATIEBELEID.md) | — |
+| <a id="idx-m05-mini-02"></a>M05-MINI-02 | [C10](C10_CAT_ACE/README.md) | Claims Audit | PLANNED | Sam | [CAT/ACE v0.4](../../Governance/CAT_ACE_v0.4.md) | — |
+| <a id="idx-m05-mini-05"></a>M05-MINI-05 | [C10](C10_CAT_ACE/README.md) | Dependency Atlas | PLANNED | Sam | [CAT/ACE §8](../../Governance/CAT_ACE_v0.4.md#8-dependency-analyse-relaties-kwetsbaarheid-en-causale-voorzichtigheid) | — |
 | <a id="idx-m05-mini-17"></a>M05-MINI-17 | [C10](C10_CAT_ACE/README.md) | Measured Cost Baseline | PLANNED | Sam | [Methodiek 05.6](Methodiek/05.6_Cost_and_Efficiency/README.md) | — |
 
 
@@ -141,7 +141,7 @@ Primary Source is het vertrekdossier. De technische missie beheert het bewijs. H
 
 ## 6. Framework Register
 
-Dit is het **enige** M05-overzicht van referentiekaders. Het legt per kader vast **of en hoe M05 het toepast**. De inhoudelijke beschrijving staat in de canonieke documenten: [CAT/ACE v0.4 §4–§6](../../governance/CAT_ACE_v0.4.md#4-taxonomie-van-referentiekaders-niet-alles-is-een-regulatory-framework) voor de frameworktaxonomie en [Wet- en regelgevingskaders](../../governance/WET_EN_REGELGEVING.md) voor wetgeving en assurancestandaarden. Er komt **geen map per framework** en geen automatische volledige frameworkimplementatie.
+Dit is het **enige** M05-overzicht van referentiekaders. Het legt per kader vast **of en hoe M05 het toepast**. De inhoudelijke beschrijving staat in de canonieke documenten: [CAT/ACE v0.4 §4–§6](../../Governance/CAT_ACE_v0.4.md#4-taxonomie-van-referentiekaders-niet-alles-is-een-regulatory-framework) voor de frameworktaxonomie en [Wet- en regelgevingskaders](../../Governance/WET_EN_REGELGEVING.md) voor wetgeving en assurancestandaarden. Er komt **geen map per framework** en geen automatische volledige frameworkimplementatie.
 
 **Toepassingsstatus in dit register** (beschrijft het gebruik binnen M05, geen engineeringverdict en geen nalevingsniveau):
 
@@ -161,7 +161,7 @@ Dit is het **enige** M05-overzicht van referentiekaders. Het legt per kader vast
 | **NIST CSF 2.0** | Uitkomstgericht cybersecuritykader | Outcome-taal, Current/Target Profile, governance (05.1) | Wanneer een casus een outcome- of profielvergelijking vraagt | Schrijft geen concrete configuratie voor; Tiers zijn geen hostscore | **REFERENCE** — niet geselecteerd voor MINI-01; de actieve controlmapping is PARKED | — |
 | **CIS Controls v8.1** | Geprioriteerde controlcatalogus + Assessment Specification | Concrete Safeguards en meetcriteria (05.3) | Bij technische controltoetsing waar een Safeguard beter meetbaar is dan Annex A | Een catalogus is geen bewijs van werking; CIS Benchmarks zijn een ander product | **REFERENCE** — niet geselecteerd voor MINI-01 | — |
 | **NIST SP 800-53 Rev. 5 / 800-53A Rev. 5** | Controlcatalogus / assessmentprocedures | Examine–Interview–Test-methode en assessmentdiepgang (05.3, 05.5) | Wanneer een gestructureerde assessmentprocedure als vergelijkingsbasis dient | Gericht op federale systemen; tailoring nodig; extra stappen zijn niet automatisch beter | **REFERENCE** — methodisch bruikbaar; niet geselecteerd voor MINI-01 | — |
-| **COBIT 2019** | Enterprise IT-governancekader | Scheiding governance/management, eigenaarschap, besluitlijnen (05.1, 05.2, 05.4) | Bij vragen over verantwoordelijkheid, escalatie en risicoacceptatie | Geen technische test; de governance-managementscheiding bestond al vóór CAT/ACE | **REFERENCE**; **NOT APPLICABLE** voor MINI-01 | — |
+| **COBIT 2019** | Enterprise IT-governancekader | Scheiding Governance/management, eigenaarschap, besluitlijnen (05.1, 05.2, 05.4) | Bij vragen over verantwoordelijkheid, escalatie en risicoacceptatie | Geen technische test; de governance-managementscheiding bestond al vóór CAT/ACE | **REFERENCE**; **NOT APPLICABLE** voor MINI-01 | — |
 | **ISO 19011:2026** | Auditguidance voor managementsystemen | Auditprogramma, bewijsbetrouwbaarheid, onafhankelijkheid, auditorcompetentie (05.5) | Alleen bij passende auditvragen | Geen cybersecuritycontrolcatalogus. 4e editie, gepubliceerd mei 2026; vervangt de ingetrokken 2018-editie (geverifieerd via de iso.org-catalogus, 20-11-2026) | **REFERENCE**; **NOT APPLICABLE** voor MINI-01 | — |
 | **ISA/IEC 62443** | Industriële IT/OT-beveiligingsreeks | Zones & conduits, OT-risicoanalyse, systeemeisen (05.1, 05.7) | Alleen bij relevante OT-verdieping | Geen Security Level-claim zonder volledig 62443-assessment; de lab-OT is een simulatie | **REFERENCE** — in MINI-01 hooguit terminologisch (zones/conduits) | 09 · kandidaat [IEC 62443-3-2:2020](https://webstore.iec.ch/en/publication/30727) voor één zones-en-conduitsvraag. Bij 01 alleen aanvullend als een specifieke interpretatievraag open is. |
 | **CAT/ACE v0.4** | Eigen experimenteel onderzoeksmodel | Koppeling governance–management–techniek met Audit, Cost & Efficiency en dependency-analyse (alle hoofdstukken) | Als onderzoekslens per casus | **CONCEPT / NOT VALIDATED**; geen auditnorm, geen certificering, geen bewezen meerwaarde | **NOT VALIDATED** — actuele experimentele methodiekbaseline | 05 · §8 als intern onderzoeksmodel. Benoem bij iedere gedeelde afhankelijkheid of die is waargenomen of verondersteld. |
@@ -170,11 +170,11 @@ Dit is het **enige** M05-overzicht van referentiekaders. Het legt per kader vast
 | Interne criteria | Projectbeleid of meetcriterium | Een toetsbaar intern criterium per vraag | Versie en relevante passage bij start vastleggen | Een projectbesluit draagt een interne conclusie | Kandidaten | 03 · herleidbaar besluit. 07 · M02-herstelcriterium. 16 · hypervisorbeleid. 04 · publicatieprocedure. 02 · toegestane claim volgens statuslegenda. 17 · gemeten tijd volgens 05.6. |
 | Leveranciersbaseline | Productguidance | Vergelijking met waarneming | Exact asset, product en versie kiezen | Afwijking vraagt context en bewijs | Kandidaat | 13 · één toepasselijke leveranciersbaseline voor het gekozen asset. |
 
-**Selectieregel.** Kies per mini maximaal één primair kader of één intern toetscriterium. Leg in deze tabel de vraag, rol, editie, precieze vindplaats, toepasselijkheid en bronbeperking vast. Een secundaire bron vraagt een concrete onbeantwoorde vraag. Voor 01 is A.8.22 de primaire keuze en zijn ISO/IEC 27002 en 27005 ondersteunend. De overige casuskoppelingen zijn **CANDIDATE**. MINI-08 is een gesimuleerde NIS2-referentie. Nationale omzetting (Cbw) bepaalt de verplichtingen. Toepasselijkheid is open. Bij wetgeving vraagt de casus een normadressaat, jurisdictie en peildatum. Gedetailleerde ISO-/SOC-mappings en de Nederlandse uitwerking zijn **NOT VERIFIED** waar de toepasselijke brontekst ontbreekt. [Wet- en regelgevingskaders](../../governance/WET_EN_REGELGEVING.md).
+**Selectieregel.** Kies per mini maximaal één primair kader of één intern toetscriterium. Leg in deze tabel de vraag, rol, editie, precieze vindplaats, toepasselijkheid en bronbeperking vast. Een secundaire bron vraagt een concrete onbeantwoorde vraag. Voor 01 is A.8.22 de primaire keuze en zijn ISO/IEC 27002 en 27005 ondersteunend. De overige casuskoppelingen zijn **CANDIDATE**. MINI-08 is een gesimuleerde NIS2-referentie. Nationale omzetting (Cbw) bepaalt de verplichtingen. Toepasselijkheid is open. Bij wetgeving vraagt de casus een normadressaat, jurisdictie en peildatum. Gedetailleerde ISO-/SOC-mappings en de Nederlandse uitwerking zijn **NOT VERIFIED** waar de toepasselijke brontekst ontbreekt. [Wet- en regelgevingskaders](../../Governance/WET_EN_REGELGEVING.md).
 
 ## 7. CAT/ACE v0.4 als experimentele methode
 
-[CAT/ACE v0.4](../../governance/CAT_ACE_v0.4.md) blijft de **actuele experimentele methodiekbaseline** (`CONCEPT / NOT VALIDATED`). In M05 wordt het gebruikt als onderzoekslens, niet als auditnorm:
+[CAT/ACE v0.4](../../Governance/CAT_ACE_v0.4.md) blijft de **actuele experimentele methodiekbaseline** (`CONCEPT / NOT VALIDATED`). In M05 wordt het gebruikt als onderzoekslens, niet als auditnorm:
 
 - **CAT-C / CAT-A / CAT-T** ordenen eisen, eigenaarschap en techniek → vooral [05.1](Methodiek/05.1_Scope_and_Applicability/README.md) en [05.2](Methodiek/05.2_Risk_to_Control_Traceability/README.md).
 - **ACE-Audit** → [05.3](Methodiek/05.3_Control_Effectiveness/README.md), [05.4](Methodiek/05.4_Gaps_and_Exceptions/README.md) en [05.5](Methodiek/05.5_Assurance_and_Independence/README.md); **ACE-Cost / ACE-Efficiency** → [05.6](Methodiek/05.6_Cost_and_Efficiency/README.md); de dependency-analyse (§8 van CAT/ACE) → [05.7](Methodiek/05.7_Systemic_Risk/README.md).
@@ -202,9 +202,9 @@ Per casus, proportioneel en zonder verplichte volledige audit:
   - `AI-INTERPRETED` — duiding door een AI-assistent, niet zelfstandig geverifieerd.
   - `SIMULATED` — fictieve organisatiecontext (bijv. een gesimuleerde risico-eigenaar).
   - `HYPOTHESIS` — onbevestigde relatie of onbevestigd gevolg.
-  - `NOT VERIFIED` — onvoldoende bewijs voor de betreffende uitspraak ([Statuslegenda §5](../../governance/STATUSLEGENDA.md#5-uitsluitend-onderzoeksbeoordeling)).
-- **Ontwerp ≠ implementatie ≠ werking.** Een regelscreenshot is geen werkingsbewijs; voor werking zijn positieve én relevante negatieve tests met log- en tijdcorrelatie nodig ([Statuslegenda §7](../../governance/STATUSLEGENDA.md#7-bewijsdiscipline)).
-- **Bidirectionele traceability** volgens [CAT/ACE §9](../../governance/CAT_ACE_v0.4.md#9-traceability--en-assuranceketen): van eis naar bewijs én van technische afwijking terug naar eigenaar en eis. Ontbrekende schakels worden als gat gemarkeerd, niet ingevuld.
+  - `NOT VERIFIED` — onvoldoende bewijs voor de betreffende uitspraak ([Statuslegenda §5](../../Governance/STATUSLEGENDA.md#5-uitsluitend-onderzoeksbeoordeling)).
+- **Ontwerp ≠ implementatie ≠ werking.** Een regelscreenshot is geen werkingsbewijs; voor werking zijn positieve én relevante negatieve tests met log- en tijdcorrelatie nodig ([Statuslegenda §7](../../Governance/STATUSLEGENDA.md#7-bewijsdiscipline)).
+- **Bidirectionele traceability** volgens [CAT/ACE §9](../../Governance/CAT_ACE_v0.4.md#9-traceability--en-assuranceketen): van eis naar bewijs én van technische afwijking terug naar eigenaar en eis. Ontbrekende schakels worden als gat gemarkeerd, niet ingevuld.
 - **Historie blijft staan.** Bestaande testuitslagen, FAILs en hashes worden niet herschreven.
 
 ## 10. Status en bekende beperkingen
@@ -213,7 +213,7 @@ Per casus, proportioneel en zonder verplichte volledige audit:
 - De organisatielaag (directie, risico-eigenaar, CISO) is grotendeels **SIMULATED**; een gesimuleerd acceptatiebesluit is geen werkelijke bevoegdheid.
 - Eén persoon ontwerpt, bouwt en beoordeelt, met AI-ondersteuning: **geen formele onafhankelijkheid** ([05.5](Methodiek/05.5_Assurance_and_Independence/README.md)).
 - Normteksten van ISO/IEC zijn auteursrechtelijk beschermd; M05 noemt controltitels en ID's, niet de volledige normtekst.
-- Kleine steekproef, één lab, risico op overfitting aan een bekende omgeving ([CAT/ACE §13](../../governance/CAT_ACE_v0.4.md#13-evidence-veiligheid-validiteit-en-beperkingen)).
+- Kleine steekproef, één lab, risico op overfitting aan een bekende omgeving ([CAT/ACE §13](../../Governance/CAT_ACE_v0.4.md#13-evidence-veiligheid-validiteit-en-beperkingen)).
 - Het M04-bronbewijs is zelf nog in review (AC04/AC07 integraal **PENDING**); M05 erft die beperking.
 
 ## 11. Relatie met M01–M04
@@ -221,8 +221,8 @@ Per casus, proportioneel en zonder verplichte volledige audit:
 | Missie | Wat M05 ervan gebruikt | Grens |
 |---|---|---|
 | [M01 Hypervisor Fortress](../M01-Hypervisor-Fortress/README.md) | VM-isolatie, de vastgelegde EXCEPTION, de hypervisor als gedeelde afhankelijkheid | M05 verandert geen HV-verdicts |
-| [M02 Phoenix Recovery](../../governance/M02-Phoenix-Recovery/README.md) | Herstelbaarheid als voorwaarde voor betrouwbare controls | M05 claimt geen herstel; status volgt het M02-dossier |
-| [M03 Identity Dominion](../../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | Identiteit en DNS als gedeelde afhankelijkheid, eigenaarschap van accounts | AD-basis alleen binnen de geteste scope PASS |
+| [M02 Phoenix Recovery](../../Governance/M02-Phoenix-Recovery/README.md) | Herstelbaarheid als voorwaarde voor betrouwbare controls | M05 claimt geen herstel; status volgt het M02-dossier |
+| [M03 Identity Dominion](../../Projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | Identiteit en DNS als gedeelde afhankelijkheid, eigenaarschap van accounts | AD-basis alleen binnen de geteste scope PASS |
 | [M04 Network Citadel](../M04-Network-Citadel/README.md) | IT/OT-segmentatie als **eerste casus** (MINI-01) | M04 blijft **IN PROGRESS**; M05 accepteert geen M04-acceptatiecriteria |
 
 M05-bevindingen gaan als voorstel terug naar de betrokken missie (bijvoorbeeld als REWORK of open gap) en wijzigen daar niets zonder besluit van Sam.
@@ -254,7 +254,7 @@ De [indexrij](#idx-m05-mini-01) geeft de planning. In [C04 · casus en historisc
 - Deze publieke versie is een **gesaneerde tegenhanger** van de interne M05-documentatie. Deze documentatie beschrijft de onderwerpen, methodiekvragen en status aan de hand van publieke bronnen. De uiteindelijke vergelijking van inhoud en governance hoort bij de publicatiereview.
 - Waar het onderliggende bewijs niet publiek is, staat dat erbij; zulke uitspraken zijn voor een externe lezer **niet onafhankelijk verifieerbaar**.
 - De gesaneerde M04-beelden ondersteunen alleen de daarbij beschreven observaties ([saneringsrapport](../M04-Network-Citadel/M04-SANITIZATION-REPORT.md)).
-- Publicatie volgt het [publicatiebeleid](../../governance/PUBLICATIEBELEID.md); de daarin genoemde publicatiegates staan nog **OPEN**. Publieke zichtbaarheid is geen publicatie- of security-PASS.
+- Publicatie volgt het [publicatiebeleid](../../Governance/PUBLICATIEBELEID.md); de daarin genoemde publicatiegates staan nog **OPEN**. Publieke zichtbaarheid is geen publicatie- of security-PASS.
 
 ## 15. Principes voor continue verbetering
 

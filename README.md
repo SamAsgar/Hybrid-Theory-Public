@@ -6,22 +6,22 @@ Op één fysieke host heb ik met VMware een bedrijfsnetwerk, een beheeromgeving 
 
 ## Het lab in beeld
 
-[![Overzicht van de labhost, de pfSense-firewall, de beheer-, lab- en OT-netwerken en het afzonderlijke GNS3-testnet](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg)](architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg)
+[![Overzicht van de labhost, de pfSense-firewall, de beheer-, lab- en OT-netwerken en het afzonderlijke GNS3-testnet](Architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg)](Architectuur/diagrammen/HT-TOPOLOGIE-EENVOUDIG-PUBLIC-2026-11-21.svg)
 
-[Gedetailleerde topologie met netwerkzones](architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-21.svg) · [Architectuur en ontwerpkeuzes](architectuur/README.md)
+[Gedetailleerde topologie met netwerkzones](Architectuur/diagrammen/HT-ARCHITECTUUR-A1-TOPOLOGIE-PUBLIC-2026-11-21.svg) · [Architectuur en ontwerpkeuzes](Architectuur/README.md)
 
 ## Praktijkvoorbeeld · Network Citadel
 
 Een bedieningsscherm (FUXA) stuurt een industriële controller (OpenPLC) aan die een motor simuleert. Nadat ik beide systemen naar het OT-netwerk had verplaatst, testte ik twee dingen die voor een bedrijf tegelijk moeten kloppen:
 
-- **Kan de operator de installatie blijven bedienen?** Na een herstart gaf ik via het scherm een start- en stopcommando. In de controller las ik de bijbehorende statusverandering terug. [Bedieningstest van 19 november](projectlogboeken/2026-11-19-m04-openplc-autostart-en-ot-regressie.md)
-- **Houdt de firewall ongewenste toegang tegen?** pfSense blokkeerde vanaf de beheer-VM drie directe pogingen naar de controller. Vanaf een gesimuleerde WAN-bron bereikten zes SYN-pakketten de firewall op TCP/502 en TCP/8080. Alle zes werden geblokkeerd. De gelijktijdige gefilterde OT-capture bleef leeg. [LAN- en WAN-tests van 21 november](projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
+- **Kan de operator de installatie blijven bedienen?** Na een herstart gaf ik via het scherm een start- en stopcommando. In de controller las ik de bijbehorende statusverandering terug. [Bedieningstest van 19 november](Projectlogboeken/2026-11-19-m04-openplc-autostart-en-ot-regressie.md)
+- **Houdt de firewall ongewenste toegang tegen?** pfSense blokkeerde vanaf de beheer-VM drie directe pogingen naar de controller. Vanaf een gesimuleerde WAN-bron bereikten zes SYN-pakketten de firewall op TCP/502 en TCP/8080. Alle zes werden geblokkeerd. De gelijktijdige gefilterde OT-capture bleef leeg. [LAN- en WAN-tests van 21 november](Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
 
 ## Identiteit en bedrijfscontinuïteit
 
-**Hoe weet je of centraal beleid een werkplek bereikt?** Ik koppelde een Windows 11-werkplek aan een domein op Windows Server 2025 en meldde me aan met een testaccount. Een centraal ingestelde regel beperkte voor die gebruiker de toegang tot het Configuratiescherm. Zo kon ik op de werkplek zelf controleren of het beleid effect had. [Lees de identiteitsproef](projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md)
+**Hoe weet je of centraal beleid een werkplek bereikt?** Ik koppelde een Windows 11-werkplek aan een domein op Windows Server 2025 en meldde me aan met een testaccount. Een centraal ingestelde regel beperkte voor die gebruiker de toegang tot het Configuratiescherm. Zo kon ik op de werkplek zelf controleren of het beleid effect had. [Lees de identiteitsproef](Projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md)
 
-**Wat gebeurt er als de fysieke host uitvalt?** De virtuele systemen delen één machine. Daardoor kan één storing meerdere diensten tegelijk raken. Voor dat scenario heb ik een herstelontwerp uitgewerkt met een aparte lokale herstelserver en een back-up buiten de locatie. De volgende stap is een systeem daadwerkelijk terugzetten en meten hoe lang het duurt voordat de dienst weer bruikbaar is. [Bekijk het herstelontwerp](governance/M02-Phoenix-Recovery/README.md)
+**Wat gebeurt er als de fysieke host uitvalt?** De virtuele systemen delen één machine. Daardoor kan één storing meerdere diensten tegelijk raken. Voor dat scenario heb ik een herstelontwerp uitgewerkt met een aparte lokale herstelserver en een back-up buiten de locatie. De volgende stap is een systeem daadwerkelijk terugzetten en meten hoe lang het duurt voordat de dienst weer bruikbaar is. [Bekijk het herstelontwerp](Governance/M02-Phoenix-Recovery/README.md)
 
 ## Missies
 
@@ -39,4 +39,4 @@ De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identit
 
 Het [publieke portfolio](Portfolio/README.md) koppelt tests aan gesaneerd bewijsmateriaal. De [M01-bewijsindex](Portfolio/M01-Hypervisor-Fortress/EVIDENCE-INDEX.md) bevat 82 screenshots. De [M04-galerij](Portfolio/M04-Network-Citadel/M04-GALERIJ.md) bevat 354 gepubliceerde beelden verdeeld over 22 fasen.
 
-[Projectlogboeken](projectlogboeken/README.md) · [Roadmap](projectlogboeken/ROADMAP.md) · [Statuslegenda](governance/STATUSLEGENDA.md)
+[Projectlogboeken](Projectlogboeken/README.md) · [Roadmap](Projectlogboeken/ROADMAP.md) · [Statuslegenda](Governance/STATUSLEGENDA.md)

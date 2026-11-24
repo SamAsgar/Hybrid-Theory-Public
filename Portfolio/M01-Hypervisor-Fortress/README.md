@@ -45,4 +45,4 @@ De gepubliceerde PNG's zijn afgeleiden, geen originelen. De hashes in [MANIFEST_
 sha256sum -c M01-Hypervisor-Fortress/MANIFEST_SHA256.txt
 ```
 
-**Geen geclaimde volledige M01-PASS.** Zie de [GAP-analyse](GAP-ANALYSE.md) en de [statuslegenda](../../governance/STATUSLEGENDA.md).
+**Geen geclaimde volledige M01-PASS.** Zie de [GAP-analyse](GAP-ANALYSE.md) en de [statuslegenda](../../Governance/STATUSLEGENDA.md).

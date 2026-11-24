@@ -56,7 +56,7 @@ Gesanitized VMware-screenshot van de Wazuh-VM (SIEM/XDR) met **8 GB RAM, 4 virtu
 
 **Publicatierisico:** deze afbeeldingen staan reeds **PUBLIC**. Lokale ISO-/hostpaden kunnen zichtbaar zijn; onomkeerbare pixelredactie, metadatareview en controle van eerdere commits zijn nog vereist. Dit vormt geen geslaagde publicatiecontrole.
 
-**Statusgebruik:** [statuslegenda](../../governance/STATUSLEGENDA.md).
+**Statusgebruik:** [statuslegenda](../../Governance/STATUSLEGENDA.md).
 
 ## 8. FUXA | VM-inventaris en netwerkadapter (4 november 2026)
 
