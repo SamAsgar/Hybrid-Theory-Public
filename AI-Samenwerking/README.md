@@ -5,6 +5,6 @@ AI-ondersteunde engineering met menselijk eigenaarschap. Verschillende modellen 
 - [Rollen en overdracht](ROLLEN_EN_OVERDRACHT.md)
 - [Technische taakmatrix](technische-taakmatrix.md)
 
-**Bewijsprincipe:** technische observatie of reproduceerbare test > AI-inschatting. Alle overdrachten benoemen aannames, scope, risico, rollback en een passend gescopeerd engineeringverdict. Zie [statuslegenda](../governance/STATUSLEGENDA.md).
+**Bewijsprincipe:** technische observatie of reproduceerbare test > AI-inschatting. Alle overdrachten benoemen aannames, scope, risico, rollback en een passend gescopeerd engineeringverdict. Zie [statuslegenda](../Governance/STATUSLEGENDA.md).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

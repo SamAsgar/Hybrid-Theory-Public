@@ -59,7 +59,7 @@ De netwerkarchitectuur en IT/OT-segmentatie van Hybrid-Theory documenteren en ve
 - De gepubliceerde PNG's zijn **afgeleiden**, geen originelen. Ze zijn uitsluitend gemaakt door pixels te maskeren en opnieuw op te slaan als RGB-PNG zonder metadata (geen EXIF- of tekst-chunks).
 - De SHA-256-waarden in de index, de fase-README's, de CSV en het [manifest](M04-SHA256SUMS.txt) horen bij deze **publieke afgeleiden**. Hashes van de private originelen worden bewust niet gepubliceerd.
 - De oorspronkelijke bestandsnamen (datum en tijd van de opname) en de indeling in 20 fasen zijn behouden. Daardoor blijft de chronologische samenhang met de private bron traceerbaar zonder die bron bloot te geven.
-- Maskeringen bevatten alleen aliassen of `REDACTED_*`-labels. De koppeling tussen echte waarden en aliassen blijft privé, zoals het [publicatiebeleid](../../governance/PUBLICATIEBELEID.md) voorschrijft.
+- Maskeringen bevatten alleen aliassen of `REDACTED_*`-labels. De koppeling tussen echte waarden en aliassen blijft privé, zoals het [publicatiebeleid](../../Governance/PUBLICATIEBELEID.md) voorschrijft.
 
 ## 7. Evidence-aanvulling 19 november 2026
 
@@ -67,7 +67,7 @@ De [nieuwe fase-20-galerij](M04-Bewijsvoering/20_OT_segmentation_and_regression/
 
 ## 8. CORE C2 — 20 november 2026
 
-[Gesaneerd sessielog](../../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Open verificatiepunten](M04-GAPS.md#c2-netwerkvalidatie--20-november-2026). De C2-log registreert aanvullende gescopeerde netwerkresultaten. De fase-20-galerij is de afzonderlijke beeldset van 19 november. M04-CORE is **IN PROGRESS**.
+[Gesaneerd sessielog](../../Projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md) · [Open verificatiepunten](M04-GAPS.md#c2-netwerkvalidatie--20-november-2026). De C2-log registreert aanvullende gescopeerde netwerkresultaten. De fase-20-galerij is de afzonderlijke beeldset van 19 november. M04-CORE is **IN PROGRESS**.
 
 De [fase-21-reeks](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md) bevat de chronologisch geordende CORE C2-opnamen van 20 november 2026, met een eigen manifest en saneringsrapport.
 
@@ -76,8 +76,8 @@ De [fase-21-reeks](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md
 
 **F13–F15 · scoped PASS vanaf de geteste beheer-VM.** De LAN-regel blokkeerde TCP/502, TCP/22 en TCP/44818. De OT-eindtellers voor TCP/22 en TCP/44818 zijn nul. Voor TCP/502 is het LAN-bloklog beschikbaar. Beide tijdelijke hostroutes zijn verwijderd en Cockpit is weer bereikbaar via Host-only.
 
-**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. **M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.** [Gesaneerd daglog](../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
+**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. **M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.** [Gesaneerd daglog](../../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
 
-[Managementtestlog 21 november](../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [Open gaps](M04-GAPS.md) · [M04 Issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).
+[Managementtestlog 21 november](../../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [Open gaps](M04-GAPS.md) · [M04 Issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).
 
 [Fase 22 · 38 beelden met beschrijvingen, manifest en OT-pcap](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/README.md)

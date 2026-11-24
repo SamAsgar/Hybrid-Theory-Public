@@ -18,4 +18,4 @@ Elke mini behandelt [de zeven permanente onderzoekshoofdstukken 05.1–05.7](../
 
 ISO/IEC 27001, COBIT en NIST CSF. Voor een wettelijke vraag zijn normadressaat, jurisdictie en peildatum nodig. Kaderbronnen: **NOT VERIFIED voor README-gebruik** tot verificatie van editie en casustoepassing. De casuskeuze, versie en rol staan in het [Framework Register](../README.md#6-framework-register).
 
-[Labkader](../../../governance/LAB_KADER.md) · [Besluitenlog](../../../governance/BESLUITENLOG.md) · [AI-werkafspraken](../../../governance/AI_WERKAFSPRAKEN.md) · [Wet- en regelgevingskaders](../../../governance/WET_EN_REGELGEVING.md).
+[Labkader](../../../Governance/LAB_KADER.md) · [Besluitenlog](../../../Governance/BESLUITENLOG.md) · [AI-werkafspraken](../../../Governance/AI_WERKAFSPRAKEN.md) · [Wet- en regelgevingskaders](../../../Governance/WET_EN_REGELGEVING.md).

@@ -1,6 +1,6 @@
 # Engineeringroadmap | Hybrid-Theory
 
-**Werkstatus per 02-11-2026, M04 bijgewerkt op 20-11-2026.** Fasen 0–7 zijn technische werkpakketten; **Lab 01 t/m Lab 05** zijn de beoordelings- en uitvoeringsdomeinen. Zij zijn niet één-op-één gelijk en hoeven niet numeriek te worden uitgevoerd. Zie [statuslegenda](../governance/STATUSLEGENDA.md).
+**Werkstatus per 02-11-2026, M04 bijgewerkt op 20-11-2026.** Fasen 0–7 zijn technische werkpakketten; **Lab 01 t/m Lab 05** zijn de beoordelings- en uitvoeringsdomeinen. Zij zijn niet één-op-één gelijk en hoeven niet numeriek te worden uitgevoerd. Zie [statuslegenda](../Governance/STATUSLEGENDA.md).
 
 | Fase | Technisch werkpakket | Aangetoonde status | Nog uit te voeren |
 |---|---|---|---|
@@ -21,7 +21,7 @@
 | **M02** | **Lab 02 — Backup, Recovery & Disaster Resilience** | **PENDING**; geen onafhankelijke off-host restore | [AD-herstelgrens](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M03** | **Lab 03 — Hybrid Identity & Access Management** | **IN PROGRESS**; AD-basis gescopeerd PASS; Entra/IAM-uitbreiding niet aangetoond | [AD/DNS/domain join/GPO](2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) |
 | **M04** | **Lab 04 — Network Segmentation & Security Architecture** | **IN PROGRESS**. AC01–AC03-regressie na PLC-herstart **TESTED / PASS** binnen de geteste scope. AC04/AC07 gerichte netwerkdeeltests **PASS**. De integrale matrix en formele bewijsreview blijven **PENDING**. | [M04-basis](2026-11-06-m04-network-citadel-ot-baseline.md), [M04 11 nov.](2026-11-11-m04-segmentatie-en-beheer-validatie.md), [M04 15 nov.](2026-11-15-m04-ot-modbus-applicatievalidatie.md), [M04 19 nov.](2026-11-19-m04-openplc-autostart-en-ot-regressie.md), [M04 C2 20 nov.](2026-11-20-m04-core-c2-netwerkvalidatie.md) |
-| **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | Tien chapters en zeven vaste methodiekvragen. Assessmentwerk **IN PROGRESS**, M05-MS01 **NOT ACHIEVED**; MINI-01 vijfdelige kennistraining afgerond, formele beoordeling PENDING. | [M05-documentatie en mini-index](../Portfolio/M05-Compliance-Sentinel/README.md#mini-exercise-index) · [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) |
+| **M05** | **Lab 05 — Regulatory Assessment & Security Assurance** | Tien chapters en zeven vaste methodiekvragen. Assessmentwerk **IN PROGRESS**, M05-MS01 **NOT ACHIEVED**; MINI-01 vijfdelige kennistraining afgerond, formele beoordeling PENDING. | [M05-documentatie en mini-index](../Portfolio/M05-Compliance-Sentinel/README.md#mini-exercise-index) · [CAT/ACE v0.4](../Governance/CAT_ACE_v0.4.md) |:projectlogboeken/ROADMAP.md
 
 ## Permanente Main Missions, milestones en mini-oefeningen
 
@@ -36,7 +36,7 @@ Sinds 20 november 2026 (besluit van Sam) zijn **M01–M05 permanente Main Missio
 | **Mini-oefening** | `Mnn-MINI-nn` (bijv. M05-MINI-01) | Klein werkpakket binnen een missie | Scoped verdict; sluit geen milestone of missie af |
 | **Afgebakende zelfstandige missie** | Nog niet vastgesteld | Latere categorie ná M01–M05, met eigen begin- en eindcriteria | Eigen eindacceptatie |
 
-**Stand 20 november 2026:** geen van M01–M05 heeft **Milestone 01** bereikt. Bestaande technische PASS-resultaten blijven scoped technische bevindingen; ze zijn geen milestone-afronding. Formuleringen als "geen integrale acceptatie" of "geen volledige missie-PASS" in gedateerde logs lezen als "geen milestone-acceptatie" ([Statuslegenda §3a](../governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026)).
+**Stand 20 november 2026:** geen van M01–M05 heeft **Milestone 01** bereikt. Bestaande technische PASS-resultaten blijven scoped technische bevindingen; ze zijn geen milestone-afronding. Formuleringen als "geen integrale acceptatie" of "geen volledige missie-PASS" in gedateerde logs lezen als "geen milestone-acceptatie" ([Statuslegenda §3a](../Governance/STATUSLEGENDA.md#3a-missie--milestone--en-mini-oefeningstatus-20-11-2026)).
 
 ## Koppeltabel Fase ↔ Lab
 
@@ -59,7 +59,7 @@ Dit zijn **inhoudelijke raakvlakken**, geen afrondingscriteria en geen bewijs da
 
 **Laatst gedocumenteerde pfSense-configuratie (1 november):** een tijdelijke IPv4 ALLOW Any-egressregel voor de Windows 11-testclient, onder de bestaande RFC1918-blockregel, was gebruikt voor gerichte internet-/activatietests. **Op 8 november stond deze regel nog in de regelset** (gelezen tijdens de M04-sessie, niet gewijzigd). De actuele toestand van deze regel is sindsdien niet opnieuw vastgesteld. Zie [sessielog](2026-11-01-windows-client-pfsense-windows-server-ad-ds.md) en [M04 OT-interface](2026-11-08-m04-ot-firewallinterface.md).
 
-**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026); **publieke zichtbaarheid is geen publicatievrijgave.** Beeldredactie, volledige secretscan en Git-geschiedenis zijn niet volledig geverifieerd. Zie het [goedgekeurde publicatiebeleid](../governance/PUBLICATIEBELEID.md).
+**GitHub-zichtbaarheid: PUBLIC** (gecontroleerd 05-11-2026); **publieke zichtbaarheid is geen publicatievrijgave.** Beeldredactie, volledige secretscan en Git-geschiedenis zijn niet volledig geverifieerd. Zie het [goedgekeurde publicatiebeleid](../Governance/PUBLICATIEBELEID.md).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam; M04-regels op 08-11-2026 en 09-11-2026 bijgewerkt door Claude.
 

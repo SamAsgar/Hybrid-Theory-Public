@@ -1,6 +1,6 @@
 # Projectlogboeken | Hybrid-Theory
 
-De oorspronkelijke logs vormen **historische momentopnamen of later afgeleide rapporten**. Nieuwere, afzonderlijk gedateerde onderzoeksnotities overschrijven de oorspronkelijke testuitslagen niet. Voor actuele interpretatie: [roadmap](ROADMAP.md) en [statuslegenda](../governance/STATUSLEGENDA.md).
+De oorspronkelijke logs vormen **historische momentopnamen of later afgeleide rapporten**. Nieuwere, afzonderlijk gedateerde onderzoeksnotities overschrijven de oorspronkelijke testuitslagen niet. Voor actuele interpretatie: [roadmap](ROADMAP.md) en [statuslegenda](../Governance/STATUSLEGENDA.md).
 
 | Datum | Verslag | Reikwijdte |
 |---|---|---|
