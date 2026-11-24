@@ -9,9 +9,9 @@
 | Chapterstructuur C01–C10 en mini-index | **OWNER APPROVED** ([PUB-DEC-002](../../Governance/BESLUITENLOG.md#pub-dec-002)) |
 | Structuur van deze documentatie | **APPROVED** (structuur en frameworkbenadering) |
 | Hoofdstukken 05.1–05.7 | Ingericht; inhoud is methodiek en planning |
-| M05-technische uitvoering | **PENDING** — er is nog geen M05-assessment uitgevoerd |
+| M05-technische uitvoering | **PENDING** — geen afgerond formeel M05-assessment; educatieve casus gestart |
 | M05-MS01 — Foundational Security Assurance | **NOT ACHIEVED**; exitcriteria zijn een voorstel (**DRAFT**) |
-| M05-MINI-01 — ISO 27001 Risk-to-Control Assessment | **PLANNED**; niet gestart |
+| M05-MINI-01 — ISO 27001 Risk-to-Control Assessment | **IN PROGRESS**; vijfdelige kennistraining afgerond (5/5); casusassessment en eigenaarreview PENDING |
 | Compliance-, audit- of assuranceverklaring | **NOT ESTABLISHED** — en binnen dit lab ook niet het doel |
 
 > **Documentatie is geen assessment.** Niets op deze pagina of in de hoofdstukken is een audit-, compliance- of certificeringsuitspraak. Voorbeelden zijn illustraties, geen uitgevoerde tests. Hybrid-Theory is **niet** ISO/IEC 27001-gecertificeerd en claimt geen conformiteit met welk kader dan ook.
@@ -123,7 +123,7 @@ M05-Compliance-Sentinel/
 | <a id="idx-m05-mini-10"></a>M05-MINI-10 | [C01](C01_Governance_Scope_ISMS/README.md) | ISMS Clauses 4–10 (oefencasus) | PLANNED | Sam | [Governance](../../Governance/README.md) | — |
 | <a id="idx-m05-mini-12"></a>M05-MINI-12 | [C02](C02_Risk_Management/README.md) | Risk Register Review | PLANNED | Sam | privé risicoregister (niet publiek) | — |
 | <a id="idx-m05-mini-14"></a>M05-MINI-14 | [C03](C03_Identity_and_Access/README.md) | AD Access Review | PLANNED | Sam | [AD-baselinelog](../../Projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md) | — |
-| <a id="idx-m05-mini-01"></a>M05-MINI-01 | [C04](C04_Network_Segmentation_OT/README.md) | A.8.22 Risk-to-Control | PLANNED | Sam | [Gesaneerde M04-testmatrix](../M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) | 20-11-2026 (ontwerp) |
+| <a id="idx-m05-mini-01"></a>M05-MINI-01 | [C04](C04_Network_Segmentation_OT/README.md) | [A.8.22 Risk-to-Control](C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/README.md) | IN PROGRESS | Sam | [Gesaneerde M04-testmatrix](../M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) | 24-11-2026 (didactische review) |
 | <a id="idx-m05-mini-09"></a>M05-MINI-09 | [C04](C04_Network_Segmentation_OT/README.md) | Zones and Conduits | PLANNED | Sam | [Netwerkontwerp](../../Architectuur/NETWERKONTWERP.md) | — |
 | <a id="idx-m05-mini-15"></a>M05-MINI-15 | [C05](C05_Logging_Detection_Incident/README.md) | Log Coverage and Time Sync | PLANNED | Sam | privé daglog (niet publiek) | — |
 | <a id="idx-m05-mini-08"></a>M05-MINI-08 | [C05](C05_Logging_Detection_Incident/README.md) | Reporting Timeline Exercise | PLANNED | Sam | [Wet- en regelgevingskaders](../../Governance/WET_EN_REGELGEVING.md) | — |
@@ -137,7 +137,7 @@ M05-Compliance-Sentinel/
 | <a id="idx-m05-mini-17"></a>M05-MINI-17 | [C10](C10_CAT_ACE/README.md) | Measured Cost Baseline | PLANNED | Sam | [Methodiek 05.6](Methodiek/05.6_Cost_and_Efficiency/README.md) | — |
 
 
-Primary Source is het vertrekdossier. De technische missie beheert het bewijs. Het Framework Register onderbouwt de kaderkeuze. Last Review betreft alleen een inhoudelijke review. Alle zeventien oefeningen zijn gepland en nog niet gestart. Bij start krijgt de oefening een eigen map in het betreffende chapter.
+Primary Source is het vertrekdossier. De technische missie beheert het bewijs. Het Framework Register onderbouwt de kaderkeuze. Last Review betreft alleen een inhoudelijke review. MINI-01 is IN PROGRESS (kennistraining afgerond); de overige oefeningen blijven volgens hun afzonderlijke indexstatus. Bij start krijgt de oefening een eigen map in het betreffende chapter.
 
 ## 6. Framework Register
 
@@ -155,7 +155,7 @@ Dit is het **enige** M05-overzicht van referentiekaders. Het legt per kader vast
 
 | Framework | Type kader | Primaire relevantie voor M05 | Wanneer toepasselijk | Beperkingen | Toepassingsstatus | Casus, rol en criterium |
 |---|---|---|---|---|---| --- |
-| **ISO/IEC 27001:2022** | Managementsysteemnorm (certificeerbaar) | ISMS-eisen, risicogestuurd management, Annex A als control-sleutel (05.1–05.4) | Primair startkader; Annex A **A.8.22** in MINI-01 | Hoofdstukken 4–10 zijn de **ISMS-eisen**; Annex A is een referentielijst van controls. Een Annex A-controlassessment bewijst op zichzelf **geen ISO 27001-conformiteit**. Het lab heeft geen operationeel ISMS. | **SELECTED** voor MINI-01 (casusgebonden, geen volledige SoA); uitvoering **PLANNED** | 01 · A.8.22 voor de M04-casus. [Editie](https://www.iso.org/standard/27001) gecontroleerd, precieze normtekst NOT VERIFIED. Kandidaten: 11 · scope, 10 · clausules 4–10, 14 · afgebakende toegangsreview, 15 · logging en tijd. Bepaling en bewijs per nieuwe casus bij start verifiëren. |
+| **ISO/IEC 27001:2022** | Managementsysteemnorm (certificeerbaar) | ISMS-eisen, risicogestuurd management, Annex A als control-sleutel (05.1–05.4) | Primair startkader; Annex A **A.8.22** in MINI-01 | Hoofdstukken 4–10 zijn de **ISMS-eisen**; Annex A is een referentielijst van controls. Een Annex A-controlassessment bewijst op zichzelf **geen ISO 27001-conformiteit**. Het lab heeft geen operationeel ISMS. | **SELECTED** voor MINI-01 (casusgebonden, geen volledige SoA); uitvoering **IN PROGRESS** | 01 · A.8.22 voor de M04-casus. [Editie](https://www.iso.org/standard/27001) gecontroleerd, precieze normtekst NOT VERIFIED. Kandidaten: 11 · scope, 10 · clausules 4–10, 14 · afgebakende toegangsreview, 15 · logging en tijd. Bepaling en bewijs per nieuwe casus bij start verifiëren. |
 | **ISO/IEC 27002:2022** | Guidance bij controls | Interpretatie en implementatierichtlijn per control (05.3) | Bij het beoordelen van controlontwerp, o.a. 8.22 | Guidance, geen eis; geen testprocedure | **PLANNED** — ondersteunend bij MINI-01 | — |
 | **ISO/IEC 27005:2022** | Risicomanagementguidance | Risico-identificatie, -analyse, -evaluatie en -behandeling (05.2, 05.4) | Bij elk risicorecord | Geen voorgeschreven kans/impact-schaal; methodiekkeuze moet expliciet zijn | **PLANNED** — ondersteunend bij MINI-01 | 12 · kandidaat voor de beoordeling van één risicorecord. Bij 01 uitsluitend ondersteunend. |
 | **NIST CSF 2.0** | Uitkomstgericht cybersecuritykader | Outcome-taal, Current/Target Profile, governance (05.1) | Wanneer een casus een outcome- of profielvergelijking vraagt | Schrijft geen concrete configuratie voor; Tiers zijn geen hostscore | **REFERENCE** — niet geselecteerd voor MINI-01; de actieve controlmapping is PARKED | — |
@@ -245,7 +245,7 @@ M05-bevindingen gaan als voorstel terug naar de betrokken missie (bijvoorbeeld a
 
 Latere milestones (MS02+) zijn niet gedefinieerd. De mini-index bevat de zestien aanvullend geplande mini’s per chapter.
 
-## 13. M05-MINI-01 — ISO 27001 Risk-to-Control Assessment (EERSTE GEPLANDE CASUS)
+## 13. M05-MINI-01 — ISO 27001 Risk-to-Control Assessment (EERSTE CASUS IN UITVOERING)
 
 De [indexrij](#idx-m05-mini-01) geeft de planning. In [C04 · casus en historische traceabilitymatrix](C04_Network_Segmentation_OT/README.md#m05-mini-01) staan de oorspronkelijke zeven vragen en de gedateerde verwijzing naar M04.
 
@@ -271,3 +271,8 @@ De publieke chapterstructuur is opgenomen in [PR #69](https://github.com/SamAsga
 ### Overdracht van inhoudelijke chapters naar C10
 
 De formele afspraak voor C01–C09 → C10 staat in [C10 · Overdrachtscontract](C10_CAT_ACE/README.md#overdrachtscontract-c01c09--c10-ontwerpafspraak). C10 gebruikt bronverwijzingen naar claims en bevindingen voor methodiekonderzoek; technische verdicts, bewijs en eigenaarbesluiten blijven bij de bronmissies. Dit is een procesafspraak, geen gestart assessment of centraal duplicaatregister.
+
+
+## Educatieve afsluiting · 24 november 2026
+
+[MINI-01 dossier](C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/README.md) · [Herbruikbare afsluitstructuur (voorstel)](EDUCATIEVE-AFSLUITSTRUCTUUR.md). Kennistraining 5/5; formele beoordeling, 05.6/05.7 en owneracceptatie PENDING. Geen M05-MS01- of M04-acceptatie.
