@@ -11,7 +11,7 @@
 | Hoofdstukken 05.1–05.7 | Ingericht; inhoud is methodiek en planning |
 | M05-technische uitvoering | **PENDING** — geen afgerond formeel M05-assessment; educatieve casus gestart |
 | M05-MS01 — Foundational Security Assurance | **NOT ACHIEVED**; exitcriteria zijn een voorstel (**DRAFT**) |
-| M05-MINI-01 — ISO 27001 Risk-to-Control Assessment | **IN PROGRESS**; vijfdelige kennistraining afgerond (5/5); casusassessment en eigenaarreview PENDING |
+| M05-MINI-01 — ISO 27001 Risk-to-Control Assessment | **IN PROGRESS**; vijfdelige kennistraining afgerond (5/5); controlassessment IN PROGRESS, eigenaarreview PENDING |
 | Compliance-, audit- of assuranceverklaring | **NOT ESTABLISHED** — en binnen dit lab ook niet het doel |
 
 > **Documentatie is geen assessment.** Niets op deze pagina of in de hoofdstukken is een audit-, compliance- of certificeringsuitspraak. Voorbeelden zijn illustraties, geen uitgevoerde tests. Hybrid-Theory is **niet** ISO/IEC 27001-gecertificeerd en claimt geen conformiteit met welk kader dan ook.

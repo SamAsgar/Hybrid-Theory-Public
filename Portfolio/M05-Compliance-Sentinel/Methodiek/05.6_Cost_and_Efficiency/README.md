@@ -21,7 +21,7 @@ Inzichtelijk maken wat beveiliging en de **beoordeling** ervan kosten, en onderz
 - Een kostenbaseline en aannameregister, met periode en eenheid (**ESTIMATED** waar niet gemeten).
 - Vergelijking van de status quo met ten minste één alternatief onder **dezelfde** beveiligings-, beschikbaarheids- en risicogrenzen.
 - Een trade-offmatrix met kosten, beveiligingseffect, complexiteit en onderhoudslast.
-- Toepassing van **ACE-Cost** en **ACE-Efficiency** uit [CAT/ACE v0.4 §2–§3](../../../../governance/CAT_ACE_v0.4.md#2-conceptueel-model-cat-structuur-en-ace-beoordelingsfunctie).
+- Toepassing van **ACE-Cost** en **ACE-Efficiency** uit [CAT/ACE v0.4 §2–§3](../../../../Governance/CAT_ACE_v0.4.md#2-conceptueel-model-cat-structuur-en-ace-beoordelingsfunctie).
 
 | Vergelijkingsas | Wat wordt vastgelegd | Voorwaarde |
 |---|---|---|
@@ -39,7 +39,7 @@ CAT/ACE v0.4 (Audit, Cost & Efficiency; experimenteel), COBIT 2019 (waardecreati
 ## Praktische context binnen Hybrid-Theory
 
 - Voor M04 bestaan alleen **interne planningsramingen** (ESTIMATED); er zijn nog geen gemeten beoordelingsuren. Interne financiële en planningsgegevens worden niet gepubliceerd.
-- **Voorbeeld (gepland, niet uitgevoerd):** in MINI-01 de werkelijke beoordelingstijd registreren en afzetten tegen het rekenvoorbeeld in [CAT/ACE §3.3](../../../../governance/CAT_ACE_v0.4.md#33-praktijkvoorbeeld-1-pfsense--segmentatie-tijdelijke-internetregel-en-rule-review). Dat voorbeeld is daar uitdrukkelijk HYPOTHETICAL.
+- **Voorbeeld (gepland, niet uitgevoerd):** in MINI-01 de werkelijke beoordelingstijd registreren en afzetten tegen het rekenvoorbeeld in [CAT/ACE §3.3](../../../../Governance/CAT_ACE_v0.4.md#33-praktijkvoorbeeld-1-pfsense--segmentatie-tijdelijke-internetregel-en-rule-review). Dat voorbeeld is daar uitdrukkelijk HYPOTHETICAL.
 - **Kandidaat-trade-off (HYPOTHESIS):** een brede toestaanregel tegenover smalle least-privilege-regels met een herhaalbare regressietest. De smalle variant vraagt meer ontwerp- en testtijd, maar mogelijk minder auditlast per wijziging.
 
 ## Verwachte evidence en deliverables

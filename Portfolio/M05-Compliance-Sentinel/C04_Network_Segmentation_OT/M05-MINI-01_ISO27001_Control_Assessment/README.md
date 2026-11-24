@@ -4,7 +4,7 @@
 
 ## Voortgang en afsluitdossier · 24 november 2026
 
-**IN PROGRESS**; vijfdelige kennistraining afgerond (5/5); casusassessment en eigenaarreview PENDING. Geen live tests; 05.6 en 05.7 PENDING. Exacte normtekst NOT VERIFIED. Geen nieuwe risicoacceptatie, M04- of milestone-PASS.
+**IN PROGRESS**; vijfdelige kennistraining afgerond (5/5); controlassessment IN PROGRESS, eigenaarreview PENDING. Geen live tests; 05.6 en 05.7 PENDING. Exacte normtekst NOT VERIFIED. Geen nieuwe risicoacceptatie, M04- of milestone-PASS.
 
 - [Onderzoeksdossier · Nederlands (PDF, 11 pagina's)](M05-MINI-01-Educatief-Afsluitdossier.pdf)
 - [Research report · English (PDF, 11 pages)](M05-MINI-01-IT-OT-Network-Segmentation-EN.pdf)

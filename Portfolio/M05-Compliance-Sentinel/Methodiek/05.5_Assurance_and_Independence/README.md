@@ -21,7 +21,7 @@ Bepalen **hoeveel vertrouwen** een uitspraak over een control verdient, gegeven 
 
 ## Onderzoeksvragen
 
-1. Is de beoordeling intern, extern of hybride, en welke onafhankelijkheid is feitelijk aanwezig ([CAT/ACE §3.2](../../../../governance/CAT_ACE_v0.4.md#32-wie-voert-ace-uit-internal-external-en-hybrid))?
+1. Is de beoordeling intern, extern of hybride, en welke onafhankelijkheid is feitelijk aanwezig ([CAT/ACE §3.2](../../../../Governance/CAT_ACE_v0.4.md#32-wie-voert-ace-uit-internal-external-en-hybrid))?
 2. Welke audit trail verbindt bewijs, beoordelaar, datum en conclusie, en is die reproduceerbaar?
 3. Welk deel van het bewijs heeft Sam zelf waargenomen, en welk deel heeft een AI geïnterpreteerd?
 4. Waar ontstaat circulaire assurance?
@@ -38,11 +38,11 @@ Bepalen **hoeveel vertrouwen** een uitspraak over een control verdient, gegeven 
 
 ## Toepasselijke frameworks
 
-ISO 19011:2026 (auditprincipes, bewijs, onafhankelijkheid, competentie; alleen bij auditvragen), ISAE 3000, ISAE 3402 en SOC 2 als **denkkader** voor zekerheidsniveaus en systeemgrenzen ([Wet- en regelgevingskaders](../../../../governance/WET_EN_REGELGEVING.md)), NIST SP 800-53A (assessorrollen en assessmentdiepgang), en het three-lines-model als begripskader voor interne verdedigingslinies.
+ISO 19011:2026 (auditprincipes, bewijs, onafhankelijkheid, competentie; alleen bij auditvragen), ISAE 3000, ISAE 3402 en SOC 2 als **denkkader** voor zekerheidsniveaus en systeemgrenzen ([Wet- en regelgevingskaders](../../../../Governance/WET_EN_REGELGEVING.md)), NIST SP 800-53A (assessorrollen en assessmentdiepgang), en het three-lines-model als begripskader voor interne verdedigingslinies.
 
 ## Praktische context binnen Hybrid-Theory
 
-- **Feitelijke situatie:** één persoon ontwerpt, bouwt en test. AI-assistenten (onder meer ChatGPT en Claude) begeleiden en reviewen ([AI-samenwerking](../../../../ai-samenwerking/README.md)). Elke M05-beoordeling is daarom **INTERNAL / AI-ONDERSTEUND (SELF-ASSESSMENT)**, tenzij aantoonbaar een werkelijke onafhankelijke review plaatsvindt.
+- **Feitelijke situatie:** één persoon ontwerpt, bouwt en test. AI-assistenten (onder meer ChatGPT en Claude) begeleiden en reviewen ([AI-samenwerking](../../../../AI-Samenwerking/README.md)). Elke M05-beoordeling is daarom **INTERNAL / AI-ONDERSTEUND (SELF-ASSESSMENT)**, tenzij aantoonbaar een werkelijke onafhankelijke review plaatsvindt.
 - **Circulariteit:** M04-tests zijn deels met AI-begeleiding ontworpen en worden in MINI-01 opnieuw met AI-ondersteuning beoordeeld. MINI-01 legt daarom per bewijsstuk vast of het OBSERVED of AI-INTERPRETED is.
 - **Meerdere AI-reviews vormen geen onafhankelijke, geaccrediteerde audit.** Twee of meer AI-modellen die het eens zijn, zijn geen onafhankelijke bevestiging: ze kunnen dezelfde aannames delen en zien dezelfde aangeleverde tekst.
 

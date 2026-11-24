@@ -10,7 +10,7 @@ Een **herleidbare keten** maken van technische observatie naar managementbesluit
 Asset → Threat → Risk → Owner → Control → Evidence → Verdict → Decision
 ```
 
-Zonder die keten is een control een losse maatregel en een risicoacceptatie een losse uitspraak. De keten is **bidirectioneel**: van eis naar bewijs, en van een technische afwijking terug naar het getroffen proces, de eigenaar en de eis ([CAT/ACE §9](../../../../governance/CAT_ACE_v0.4.md#9-traceability--en-assuranceketen)).
+Zonder die keten is een control een losse maatregel en een risicoacceptatie een losse uitspraak. De keten is **bidirectioneel**: van eis naar bewijs, en van een technische afwijking terug naar het getroffen proces, de eigenaar en de eis ([CAT/ACE §9](../../../../Governance/CAT_ACE_v0.4.md#9-traceability--en-assuranceketen)).
 
 ## Onderzoeksvragen
 

@@ -1,7 +1,7 @@
 # Architectuurbaseline | Hybrid-Theory
 
 **Status:** technische architectuur als labreferentie; implementatie en geverifieerde werking worden afzonderlijk gedocumenteerd.  
-**Onderzoekscontext:** [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md), **CONCEPT / NOT VALIDATED**.
+**Onderzoekscontext:** [CAT/ACE v0.4](../Governance/CAT_ACE_v0.4.md), **CONCEPT / NOT VALIDATED**.
 
 ## 1. Beoordelingslagen CAT/ACE
 
@@ -35,7 +35,7 @@ De testomgeving is **geen productieomgeving** en heeft geen certificering.
 - **OT-zone:** eigen segment achter een aparte pfSense-interface (**IMPLEMENTED**); verkeer binnen de zone loopt niet via de firewall. De grens naar andere zones is pas bewezen na de volledige AC04/AC07-tests.
 - **Toekomstige GNS3-subnetten, IT- en Security-zones, Azure/Arc:** **PLANNED**; niet in de actuele testresultaten opnemen als reeds bewezen.
 
-Technische bewijsvoering volgt de keten: `securitydoel → control → configuratie → test → observatie → risico → gerichte remediatie`. Hypothesen blijven **onbevestigd** totdat gerichte tests ze onderbouwen; de onderzoeksschaal staat in de [statuslegenda](../governance/STATUSLEGENDA.md).
+Technische bewijsvoering volgt de keten: `securitydoel → control → configuratie → test → observatie → risico → gerichte remediatie`. Hypothesen blijven **onbevestigd** totdat gerichte tests ze onderbouwen; de onderzoeksschaal staat in de [statuslegenda](../Governance/STATUSLEGENDA.md).
 
 ## 4. Historie, status en herstel
 
@@ -45,7 +45,7 @@ Technische bewijsvoering volgt de keten: `securitydoel → control → configura
 
 **Lab 02 (M02) en Azure:** onafhankelijk off-host herstel en clouddeployment zijn nog niet aangetoond (**PENDING/PLANNED** naar onderwerp).
 
-**Operationele werkwijze:** pragmatische, risicogestuurde controles vóór de benodigde werkzaamheden; uitgebreide hardening binnen de relevante lab. [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md) is een afzonderlijk experimenteel audit-, kosten-, efficiency- en dependency-onderzoeksconcept, **geen** gevalideerde vervanger van bestaande beoordelingsprocedures.
+**Operationele werkwijze:** pragmatische, risicogestuurde controles vóór de benodigde werkzaamheden; uitgebreide hardening binnen de relevante lab. [CAT/ACE v0.4](../Governance/CAT_ACE_v0.4.md) is een afzonderlijk experimenteel audit-, kosten-, efficiency- en dependency-onderzoeksconcept, **geen** gevalideerde vervanger van bestaande beoordelingsprocedures.
 
 ## 5. M04-statusharmonisatie — 20 november 2026
 

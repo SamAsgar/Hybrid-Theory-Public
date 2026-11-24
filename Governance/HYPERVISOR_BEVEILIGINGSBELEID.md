@@ -48,7 +48,7 @@ De virtualisatielaag vormt een trust boundary onder meerdere gastbesturingssyste
 | HV-04 VM-isolatie | Gedeelde mappen bij beoordeelde VM's uit; pfSense host-guest-integratieconfiguratie **PASS voor instellingencontrole**. | Windows Server en Windows 11 behouden clipboard/drag-and-drop als **EXCEPTION**; pfSense functionele hertest **PENDING**. |
 | HV-05 t/m HV-10, off-host restore | Nog geen afgeronde integrale implementatie-/acceptatietests. | **PENDING**; snapshot ≠ onafhankelijke back-up of herstelbewijs. |
 
-**Lab 01 (M01): IN PROGRESS.** Alleen de hierboven genoemde controluitspraken hebben scoped PASS of EXCEPTION; geen integrale labacceptatie. Bronnen: [pfSense-test 26 oktober](../projectlogboeken/2026-10-26-projectstatus.md), [GNS3-baseline](../projectlogboeken/2026-10-28-gns3-kvm-diagnose-parkeerregister.md), [AD-baselinerapport](../projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md), [M01-deelreview](../projectlogboeken/2026-11-01-hypervisor-fortress-deelreview.md) en [resourcesmeting](../projectlogboeken/2026-10-27-hostcapaciteit-geheugendiagnose.md).
+**Lab 01 (M01): IN PROGRESS.** Alleen de hierboven genoemde controluitspraken hebben scoped PASS of EXCEPTION; geen integrale labacceptatie. Bronnen: [pfSense-test 26 oktober](../Projectlogboeken/2026-10-26-projectstatus.md), [GNS3-baseline](../Projectlogboeken/2026-10-28-gns3-kvm-diagnose-parkeerregister.md), [AD-baselinerapport](../Projectlogboeken/2026-11-01-ad-dns-domainjoin-gpo-samenvatting.md), [M01-deelreview](../Projectlogboeken/2026-11-01-hypervisor-fortress-deelreview.md) en [resourcesmeting](../Projectlogboeken/2026-10-27-hostcapaciteit-geheugendiagnose.md).
 
 ## 4. Risicogestuurde prioriteiten
 

@@ -32,4 +32,4 @@ De `hostnamectl`-weergave toont de virtuele Ubuntu-omgeving. Unieke machine- en 
 
 **Publicatie:** GitHub-zichtbaarheid **PUBLIC** (gecontroleerd 05-11-2026), terwijl beeld-/identifierscans nog OPEN zijn. De beelden bewijzen geen volledige netwerkrol- of afhankelijkheidsvalidatie.
 
-**Statusgebruik:** [statuslegenda](../../../governance/STATUSLEGENDA.md).
+**Statusgebruik:** [statuslegenda](../../../Governance/STATUSLEGENDA.md).

@@ -38,14 +38,14 @@ Bij een pad- en bestandscontrole van de publieke evidence-set zijn **264 PNG-bes
 - **EXT:** AC05 **PENDING** voor Wazuh OT-telemetrie. AC06 en AC08 **PLANNED**, met eigenaarbesluit over VPCS-aantal/scope en nog te bewijzen sensor- en alertketen.
 - **Bestaande fase-20-beelden:** finale privacy- en leesbaarheidsreview staat open.
 
-[C2-projectlog](../../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md).
+[C2-projectlog](../../Projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md).
 
 
 ## GAP-delta 21 november 2026 — beheerzone naar OT
 
 De eigenaarsessie bevestigt binnen de getoonde scope drie door de firewall geblokkeerde directe verbindingen van een virtuele beheerbron naar de PLC: TCP/502, TCP/22 en TCP/44818. **TESTED / scoped PASS voor die beheerbron**; formele testbronacceptatie en volledig client-/firewall-/capturebewijs blijven open. Dit is geen algemene zone-isolatie-PASS.
 
-**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. Beide testroutes zijn verwijderd. [Daglog 21 november](../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
+**F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten. Beide testroutes zijn verwijderd. [Daglog 21 november](../../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md)
 
 **M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.**
 
