@@ -6,7 +6,8 @@
 
 **IN PROGRESS**; vijfdelige kennistraining afgerond (5/5); casusassessment en eigenaarreview PENDING. Geen live tests; 05.6 en 05.7 PENDING. Exacte normtekst NOT VERIFIED. Geen nieuwe risicoacceptatie, M04- of milestone-PASS.
 
-- [Educatief afsluitdossier (PDF, 3 pagina's)](M05-MINI-01-Educatief-Afsluitdossier.pdf)
+- [Onderzoeksdossier · Nederlands (PDF, 11 pagina's)](M05-MINI-01-Educatief-Afsluitdossier.pdf)
+- [Research report · English (PDF, 11 pages)](M05-MINI-01-IT-OT-Network-Segmentation-EN.pdf)
 - [Leerresultaten en feedback](LEERRESULTATEN.md)
 - [Controlassessment, werkversie](CONTROL-ASSESSMENT.md)
 - [Managementadvies, concept](MANAGEMENT-REPORT.md)
