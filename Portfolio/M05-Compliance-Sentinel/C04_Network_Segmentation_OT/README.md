@@ -31,24 +31,24 @@ De technische missie beheert het bewijs en de testuitslagen. M05 documenteert br
 
 # M04 — Network Citadel | M05-assessmentdossier
 
-**Status:** **PLANNED** — eerste assessment M05-MINI-01 gepland, niet gestart · [Terug naar M05](../README.md)
+**Status:** **IN PROGRESS** — kennistraining afgerond; assessment en eigenaarreview open · [Terug naar M05](../README.md)
 
 Dit dossier bevat uitsluitend M05-assessments over controls, risico's en bewijs van M04 Network Citadel. De methodiek staat één keer in [Methodiek](../Methodiek/) en wordt hier niet herhaald. Bewijs en technische verdicts blijven in de missie zelf ([M04-missiedocumentatie](../../M04-Network-Citadel/README.md)); M05 verwijst daarnaar, kopieert geen bewijs en wijzigt geen verdicts.
 
 | Onderdeel | Methodiek | Assessment voor M04 | Status |
 |---|---|---|---|
-| 05.1 | [Scope & Applicability](../Methodiek/05.1_Scope_and_Applicability/README.md) | Onderdeel van M05-MINI-01 (gepland) | **PLANNED** |
-| 05.2 | [Risk-to-Control Traceability](../Methodiek/05.2_Risk_to_Control_Traceability/README.md) | Onderdeel van M05-MINI-01 (gepland) | **PLANNED** |
-| 05.3 | [Control Effectiveness](../Methodiek/05.3_Control_Effectiveness/README.md) | Onderdeel van M05-MINI-01 (gepland) | **PLANNED** |
-| 05.4 | [Gaps & Exceptions](../Methodiek/05.4_Gaps_and_Exceptions/README.md) | Onderdeel van M05-MINI-01 (gepland) | **PLANNED** |
-| 05.5 | [Assurance & Independence](../Methodiek/05.5_Assurance_and_Independence/README.md) | Onderdeel van M05-MINI-01 (gepland) | **PLANNED** |
+| 05.1 | [Scope & Applicability](../Methodiek/05.1_Scope_and_Applicability/README.md) | Didactisch behandeld; assessmentreview open | **IN PROGRESS** |
+| 05.2 | [Risk-to-Control Traceability](../Methodiek/05.2_Risk_to_Control_Traceability/README.md) | Didactisch behandeld; assessmentreview open | **IN PROGRESS** |
+| 05.3 | [Control Effectiveness](../Methodiek/05.3_Control_Effectiveness/README.md) | Didactisch behandeld; assessmentreview open | **IN PROGRESS** |
+| 05.4 | [Gaps & Exceptions](../Methodiek/05.4_Gaps_and_Exceptions/README.md) | Didactisch behandeld; assessmentreview open | **IN PROGRESS** |
+| 05.5 | [Assurance & Independence](../Methodiek/05.5_Assurance_and_Independence/README.md) | Didactisch behandeld; assessmentreview open | **IN PROGRESS** |
 | 05.6 | [Cost & Efficiency](../Methodiek/05.6_Cost_and_Efficiency/README.md) | Onderdeel van M05-MINI-01 (gepland) | **PLANNED** |
 | 05.7 | [Systemic Risk](../Methodiek/05.7_Systemic_Risk/README.md) | Onderdeel van M05-MINI-01 (gepland) | **PLANNED** |
 
 Een submap per assessment wordt pas aangemaakt wanneer het assessment daadwerkelijk start. Uitkomsten zijn scoped onderzoeksbeoordelingen (INTERNAL / AI-ondersteund) en geen milestone-acceptatie.
 
 <a id="m05-mini-01"></a>
-## M05-MINI-01 — ISO 27001 Risk-to-Control Assessment (EERSTE GEPLANDE CASUS)
+## M05-MINI-01 — ISO 27001 Risk-to-Control Assessment (EERSTE CASUS IN UITVOERING)
 
 **Status:** **PLANNED / niet gestart.** Een afzonderlijk uitvoeringsdossier wordt pas aangemaakt wanneer de oefening daadwerkelijk start.
 
@@ -77,3 +77,8 @@ Eén matrix verbindt de casus met alle zeven hoofdstukken. De kolom "Wat publiek
 | **05.7** | Welke afhankelijkheden maken dat één fout meerdere controls raakt? | [05.7 Systemic Risk](../Methodiek/05.7_Systemic_Risk/README.md) (methodiek) | Geen publieke dependency-analyse; de methodiek en een fictief voorbeeld zijn beschreven | Elke afhankelijkheid van de casus (de analyse blijft intern) | Interne dependencyregel(s) met bewijsniveau; publiek alleen een gesaneerde samenvatting na review |
 
 <!-- EINDE HISTORISCHE BRON -->
+
+
+## Leerresultaat 24 november 2026
+
+[MINI-01 · dossier en educatieve PDF](M05-MINI-01_ISO27001_Control_Assessment/README.md). Vijf leerfasen afgerond; 05.6/05.7 en formele beoordeling blijven PENDING. Historische traceabilitymatrix hierboven blijft een gedateerde bron; technische verdicts blijven bij M04.
