@@ -25,14 +25,14 @@ Een bedieningsscherm (FUXA) stuurt een industriële controller (OpenPLC) aan die
 
 ## Missies
 
-De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identiteit, netwerkbeveiliging en de beoordeling van maatregelen. De stand hieronder is van 21 november 2026. Voor alle vijf staat de eerste milestone nog open.
+De vijf missies bestrijken de onderliggende systemen, herstel na uitval, identiteit, netwerkbeveiliging en de beoordeling van maatregelen. De stand hieronder is van 27 november 2026. Voor alle vijf staat de eerste milestone nog open.
 
 | Missie | Voortgang |
 |---|---|
 | [M01 · Hypervisor Fortress](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/42) | Een deel van de controles op host en hypervisor is uitgevoerd. Voor klembord en slepen tussen host en gast geldt een uitzondering op geselecteerde Windows-VM’s. |
 | [M02 · Phoenix Recovery](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/43) | Het herstelontwerp ligt er. Een restore op een afzonderlijke host moet nog worden aangetoond. |
 | [M03 · Identity Dominion](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/44) | Centraal gebruikersbeheer met Active Directory, naamomzetting (DNS), aanmelden op het domein en één groepsbeleid zijn getest. De uitbreiding met Entra ID is gepland. |
-| [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | PLC/HMI-functionaliteit en gerichte firewallblokkeringen zijn getest; F13–F15 hebben scoped PASS vanaf de beheer-VM en F24 voor WAN→OT op TCP/502 en TCP/8080. Bronacceptatie, bewijsreview en integrale AC04/AC07 blijven open. [Publieke testmatrix](Portfolio/M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) |
+| [M04 · Network Citadel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45) | PLC/HMI-functionaliteit en gerichte firewallblokkeringen zijn getest; F13–F15 hebben scoped PASS vanaf de beheer-VM en F24 voor WAN→OT op TCP/502 en TCP/8080. Voor de SIEM-koppeling (AC05) is de gezondheid gecontroleerd en heeft de SIEM een vast adres; firewallregel, agent en detectietest volgen. Bronacceptatie, bewijsreview en integrale AC04/AC07 blijven open. [Publieke testmatrix](Portfolio/M04-Network-Citadel/M04-AC04-AC07-TESTMATRIX.csv) |
 | [M05 · Compliance Sentinel](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) | De onderzoeksopzet is goedgekeurd. De eerste casus is IN PROGRESS: vijfdelige kennistraining afgerond; assessment en eigenaarreview open. [Educatief dossier](Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/README.md). |
 
 ## Bewijs en logboeken

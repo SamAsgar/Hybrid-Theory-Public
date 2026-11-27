@@ -22,7 +22,8 @@ De oorspronkelijke logs vormen **historische momentopnamen of later afgeleide ra
 | 20 november | [M04: CORE C2-netwerkvalidatie](2026-11-20-m04-core-c2-netwerkvalidatie.md) | Gerichte LAB- en OT-blokkades, routecontrole en open acceptatiegates |
 | 21 november | [M04 · LAN- en WAN-blokkades naar OT](2026-11-21-m04-core-management-segmentatie.md) | F13–F15 scoped PASS voor de beheer-VM. F24 scoped PASS voor TCP/502 en TCP/8080. Beide testroutes verwijderd. |
 | 24 november | [M05-MINI-01 · IT/OT-controlassessment en rapportage](2026-11-24-m05-mini-01-controlassessment.md) | Kennistraining afgerond; casusassessment, 05.6/05.7 en eigenaarreview PENDING; geen nieuwe technische tests |
+| 26–27 november | [M04 · AC05 SIEM-gezondheid en vast SIEM-adres](2026-11-27-m04-ac05-wazuh-health-en-vast-adres.md) | Read-only gezondheid PASS als observatie; vast SIEM-adres TESTED / scoped PASS; firewallregel, agent en detectietest nog niet uitgevoerd; AC05 PENDING |
 
 **Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
 
-**Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam; op 08-11-2026 aangevuld door Claude.
+**Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam; op 08-11-2026 en 27-11-2026 aangevuld door Claude.
