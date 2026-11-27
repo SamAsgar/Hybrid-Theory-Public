@@ -62,7 +62,7 @@ De verkeersstromen met hun teststatus staan in [Netwerkontwerp §1.1](NETWERKONT
 | Ubuntu(-beheer-VM), LAB-interface | LAB | `LAB_NET_IP` (IPv6: `LAB_NET_IPV6_LL`) | `LAB_NET_MAC` (PENDING_CAPTURE) | bronalias bij de LAN-proef waargenomen, identiteits- en overlapreview open |
 | Ubuntu(-beheer-VM), beheerinterface | MGMT | `MGMT_NET_IP` (IPv6: `MGMT_NET_IPV6_LL`) | `MGMT_NET_MAC` (PENDING_CAPTURE) | Cockpit PASS (25 okt.); 21 nov. bereikt pfSense-beheer, testbron F13–F15; identiteitsreview **open** |
 | Ubuntu(-beheer-VM), WAN-SIM-interface | WAN-SIM | `NET_02_IP` (IPv6: `NET_02_IPV6_LL`) | `NET_02_MAC` (PENDING_CAPTURE) | tijdens de managementtests los; daarna tijdelijke F24-testbron die pfSense WAN bereikt; bronalias tijdens de proef bevestigd, adaptereindstand open |
-| Wazuh SIEM | LAB | `WAZUH_CURRENT_IP` (PENDING_CAPTURE) | geen alias | dashboard TESTED (3–4 nov.); 0 agents |
+| Wazuh SIEM | LAB | `WAZUH_CURRENT_IP` (PENDING_CAPTURE) | geen alias | dashboard TESTED (3–4 nov.); 0 agents. **Ingehaald 27 nov.:** vaste adresreservering; HMI→SIEM TCP/1514 scoped PASS, zie [Netwerkontwerp, stroom 7](NETWERKONTWERP.md#11-huidige-verkeersstromen-stand-21-november-2026) |
 | GNS3-VM, beheer | MGMT | `GNS3_MGMT_IP` | geen alias | beheer bereikbaar |
 | GNS3 VPCS PC1 / PC2 | GNS3-testnet (losstaand) | `GNS3_PC1_IP` / `GNS3_PC2_IP` | `GNS3_PC1_MAC` / `GNS3_PC2_MAC` | ARP/ICMP PASS binnen het testnet |
 | Beheerbron | MGMT | `MGMT_CLIENT_IP` | `MGMT_CLIENT_MAC` | identiteit nog te bevestigen |
