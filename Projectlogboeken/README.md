@@ -25,6 +25,7 @@ De oorspronkelijke logs vormen **historische momentopnamen of later afgeleide ra
 | 24 november | [M05-MINI-01 · IT/OT-controlassessment en rapportage](2026-11-24-m05-mini-01-controlassessment.md) | Kennistraining afgerond; casusassessment, 05.6/05.7 en eigenaarreview PENDING; geen nieuwe technische tests |
 | 26–27 november | [M04 · AC05 SIEM-gezondheid en vast SIEM-adres](2026-11-27-m04-ac05-wazuh-health-en-vast-adres.md) | Read-only gezondheid PASS als observatie; vast SIEM-adres TESTED / scoped PASS; firewallregel, agent en detectietest nog niet uitgevoerd; AC05 PENDING |
 | 27 november, vervolg | [M04 · AC05 P2 — OT→SIEM-firewallvalidatie](2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md) | Specifieke agentpoort TCP/1514 PASS; drie negatieve poortproeven met OT-default-deny-BLOCK-logs gecorreleerd. **P2 TESTED / scoped PASS**, [P2-bewijsbeperkingen](2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md#aanvullende-bewijsbeperkingen-uit-het-p2-tekstarchief); agent en FIM nog PENDING; AC05 integraal PENDING. |
+| 27 november, vervolg P3/P4 | [M04 · AC05 agentregistratie en offline installatie](2026-11-27-m04-ac05-p3-p4-offline-agentinstallatie.md) | P3/P4 TESTED / scoped PASS; managerregistratie en offline installatie bevestigd; service inactive. Agentverbinding/FIM en integrale AC05 PENDING. |
 
 **Actueel overzicht:** [Fase 0–7 en Lab 01–05](ROADMAP.md). De volledige oorspronkelijke engineeringdiscussie is niet overgenomen; dit overzicht bevat uitsluitend bestaande bestanden.
 

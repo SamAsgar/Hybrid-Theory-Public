@@ -15,7 +15,7 @@ Dit document heeft twee lagen die niet door elkaar mogen lopen: de **geobserveer
 | Windows/Identity | Windows Server en Windows 11 | AD DS/forest, DNS/SRV, domain join, testlogin en GPO **PASS binnen scope** |
 | GNS3 | VPCS, switch, Wireshark | ARP/ICMP/capture **PASS** in een losstaande simulatie |
 | FUXA01 en PLC01 | Ubuntu/Docker met FUXA (SCADA/HMI) en OpenPLC-runtime, beide in de OT-zone (`FUXA01_OT_IP`, `PLC01_OT_IP`) | Na correctie is OpenPLC bij een tweede PLC01-reboot automatisch opgestart; FUXA herverbond en START→STOP met PLC-readback is op 19 nov. **TESTED / scoped PASS**. Onafhankelijke evidence-review en formele AC01–AC03-acceptatie **PENDING**. *Historisch:* baseline AC01–AC03 **PASS binnen scope** op de eerdere NAT-topologie (6 nov.). [Log 15 nov.](../Projectlogboeken/2026-11-15-m04-ot-modbus-applicatievalidatie.md) |
-| Wazuh | SIEM-manager/indexer/dashboard in het LAB, met vaste adresreservering sinds 27 november | Start en dashboardlogin **PASS**; 0 agents; agentingestie en detectie **NOT VERIFIED** |
+| Wazuh | SIEM-manager/indexer/dashboard in het LAB, met vaste adresreservering sinds 27 november | Start en dashboardlogin **PASS**; vóór P3 0 remote agents; P3/P4 registratie/installatie scoped PASS; agentingestie en detectie **NOT VERIFIED** |
 | Recovery | M02 Phoenix Recovery | **PLANNED**; onafhankelijke restore niet aangetoond |
 | Azure | Arc/Entra/VNets | **PLANNED**; niet gedeployed |
 
@@ -39,7 +39,7 @@ Deze gegevens komen uit gedateerde sessielogs en zijn **geen nieuwe live-meting*
 | 6a | OT → externe DNS (UDP/53) en NTP (UDP/123) (F20/F21) | Via de pfSense-OT-interface | Geblokkeerd waargenomen; goedgekeurde resolver en tijdbron **DESIGN-CONFIRM** |
 | 6b | IPv6 LAB/beheer → OT (F22/F23) | Alleen link-local op de onderzochte LAB-/OT-hosts, geen IPv6-default-route | **NO-ROUTE-VERIFIED** binnen de geïnspecteerde topologie; geen IPv6-firewall-PASS; brede LAN IPv6-allow onder review |
 | 6c | WAN → OT (F24) | Tijdelijke WAN-bron → pfSense WAN → PLC, TCP/502 en TCP/8080 | **Scoped PASS**. Zes SYN op WAN, zes gelogde blokkades en nul treffers op OT. |
-| 7 | Agents en OT-telemetrie → Wazuh | HMI → SIEM via IPv4 TCP/1514 getest | Agentregistratie, eventontvangst en FIM open. AC05 **PENDING**. |
+| 7 | Agents en OT-telemetrie → Wazuh | HMI → SIEM via IPv4 TCP/1514 getest | Managerregistratie en offline agentinstallatie scoped PASS; sleutelimport, verbinding, eventontvangst en FIM open. AC05 **PENDING**. |
 | 8 | GNS3-testnet ↔ overige netten | Geen koppeling | Losstaand; ARP/ICMP **PASS** binnen het testnet |
 
 Stroom 1 is **geen firewallregel**: verkeer tussen twee hosts in hetzelfde subnet passeert de firewall niet en zegt dus niets over de zonegrens. Het beheerpad gebruikt de aangewezen bron en de expliciet toegestane webservices. Zie de C2-update voor de actuele scope. **M04-CORE blijft IN PROGRESS.**
@@ -103,3 +103,7 @@ De fysieke VMware-host krijgt geen permanente directe OT-route. Het beperkte web
 [Gesaneerd testlog 21 november](../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [M04 Issue #45](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).
 
 **Onderbouwing stroom 7 (27 november).** Op 27 november is vanaf één OT-HMI naar één SIEM via IPv4/TCP getest. TCP/1514 maakte verbinding en leverde een PASS-log op. TCP/1515, TCP/443 en TCP/55000 gaven elk een timeout met bijpassende BLOCK-logs. **P2 TESTED / scoped PASS.** Agentregistratie, eventontvangst en FIM zijn nog open. **AC05 PENDING.** [P2-uitvoeringslog](../Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md).
+
+## AC05 P3/P4 · vervolg 27 november
+
+**P3/P4 TESTED / scoped PASS:** één HMI-agent is op de Wazuh-manager geregistreerd en offline vanaf een read-only ISO geïnstalleerd. De pakketstatus is installed; de agentservice is inactive. Sleutelimport, actieve verbinding, eventingestie en FIM blijven **PENDING**. AC05 integraal **PENDING**. Stroom 7 blijft de gerichte HMI→SIEM TCP/1514-verbinding. Geen nieuwe firewalluitzondering of openstelling van de enrollmentpoort. [Uitvoeringslog](../Projectlogboeken/2026-11-27-m04-ac05-p3-p4-offline-agentinstallatie.md).

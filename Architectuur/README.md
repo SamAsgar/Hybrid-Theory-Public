@@ -101,7 +101,7 @@ De doelverbindingen staan in [Netwerkontwerp §2](NETWERKONTWERP.md#2-ht-c-010-d
 | VMware en pfSense | Host met meerdere VM's; pfSense met vier interfaces (WAN, MGMT, LAB, OT); gerichte LAB-, DHCP- en firewallproeven | Integrale segmentatie (AC04) en volledige allow/deny-matrix (AC07) |
 | Windows Server en Windows 11 | AD DS, DNS/SRV, domain join, testlogin en GPO binnen afgebakende scope | Hardening, redundantie en herstelbaarheid |
 | Ubuntu en Cockpit | Linuxbeheer en beperkte beheertoegang getest | Actuele interfacestatus, private services, optionele Azure Arc-agent |
-| Wazuh SIEM | Manager/indexer/dashboard gestart, dashboardlogin bereikt | Agentingestie (nu 0 agents), detectie en een eigen Security-zone |
+| Wazuh SIEM | Manager/indexer/dashboard gestart, dashboardlogin bereikt | Actieve agentverbinding, agentingestie, detectie en een eigen Security-zone (vóór P3 0 geregistreerde remote agents) |
 | GNS3 en Wireshark | Gescheiden VPCS-switch-test met ARP/ICMP | Uitgebreid netwerk, isolatie en routevalidatie |
 | FUXA01 en PLC01 (OT) | Beide in OT; na correctie start OpenPLC bij een tweede PLC01-reboot automatisch in RUN-modus; FUXA herverbindt en een START→STOP-cyclus met PLC-readback is op 19 november **TESTED / scoped PASS** | Formele eigenaarreview AC01–AC03, authenticatie/TLS, integrale OT-segmentatie (AC04/AC07) en hersteltest |
 | Phoenix Recovery M02 | Architectuur B ontworpen | Onafhankelijke recoveryhost, offsite en restoretest |
@@ -150,3 +150,7 @@ De versies van 15 november, [diagram A](diagrammen/HT-ARCHITECTUUR-A-HUIDIG-PUBL
 Volgens de eigenaarsessie blokkeerde pfSense drie directe management→PLC-pogingen op TCP/502, TCP/22 en TCP/44818. Dit is **TESTED / scoped PASS voor de werkelijk gebruikte virtuele beheerbron**, niet de formele acceptatie van F13–F15 of AC04/AC07. De LAN-route is verwijderd. Formele bronacceptatie en tijdreview per poort staan open. **F24 · scoped PASS voor TCP/502 en TCP/8080.** pfSense ontving zes SYN-pakketten op de gesimuleerde WAN-grens, drie per doelpoort. De IPv4-default-deny blokkeerde ze alle zes. De gelijktijdige, op bron, doel en beide poorten gefilterde OT-capture bevat nul pakketten.
 
 De afbeeldingen op deze pagina tonen de **topologie en teststand van 21 november**, inclusief de C3-resultaten uit het [gesaneerde sessielog van 21 november](../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md). Geen directe permanente fysieke-host→OT-route of industriële DMZ in deze fase.
+
+## AC05 P3/P4 · actuele tussenstand 27 november
+
+**P3/P4 TESTED / scoped PASS:** één HMI-agent is op de Wazuh-manager geregistreerd en offline vanaf een read-only ISO geïnstalleerd. De pakketstatus is installed; de agentservice is inactive. Sleutelimport, actieve verbinding, eventingestie en FIM blijven **PENDING**. AC05 integraal **PENDING**. [Uitvoeringslog](../Projectlogboeken/2026-11-27-m04-ac05-p3-p4-offline-agentinstallatie.md). De eerdere nul-agentstand is historisch.

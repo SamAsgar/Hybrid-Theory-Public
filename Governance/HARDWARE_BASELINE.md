@@ -31,3 +31,7 @@ Zie [actuele engineeringroadmap](../Projectlogboeken/ROADMAP.md), [AD-basisrappo
 ## Aanvulling 4 november 2026 | FUXA-hardwarebewijs
 
 De FUXA OT/HMI-VM is in VMware vastgelegd met **2 GB RAM, 2 processors, 20 GB SCSI-schijf** en netwerkadapter **Custom (VMnet8)**. De VM was uitgeschakeld; een lokaal ISO-pad is gesaneerd. [Screenshot](../Portfolio/VMware/08-FUXA-VMware-Inventory-Sanitized.png). **CAPTURED** voor de hardwarewaarden, niet voor IT/OT-isolatie of runtime-functionaliteit.
+
+## AC05 componentdelta · 27 november 2026
+
+**P3/P4 TESTED / scoped PASS:** één HMI-agent is op de Wazuh-manager geregistreerd en offline vanaf een read-only ISO geïnstalleerd. De pakketstatus is installed; de agentservice is inactive. Sleutelimport, actieve verbinding, eventingestie en FIM blijven **PENDING**. AC05 integraal **PENDING**. Wazuh-agent 4.14.9-1 op Ubuntu 24.04 LTS (AMD64); runtimebelasting en applicatieregressie nog niet getoetst. [Gesaneerde registratie](../Projectlogboeken/2026-11-27-m04-ac05-p3-p4-offline-agentinstallatie.md).

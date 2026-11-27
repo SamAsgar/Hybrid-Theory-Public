@@ -419,3 +419,7 @@ De datum is ontleend aan de bestandsnaam. De aanduidingen `CONFIG`, `TROUBLESHOO
 ## AC05 · vervolg op de vaste SIEM-reservering
 
 Op 27 november is vanaf één OT-HMI naar één SIEM via IPv4/TCP getest. TCP/1514 maakte verbinding en leverde een PASS-log op. TCP/1515, TCP/443 en TCP/55000 gaven elk een timeout met bijpassende BLOCK-logs. **P2 TESTED / scoped PASS.** Agentregistratie, eventontvangst en FIM zijn nog open. **AC05 PENDING.** [P2-uitvoeringslog](../../Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md) · [P2-bewijsbeperkingen](../../Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md#aanvullende-bewijsbeperkingen-uit-het-p2-tekstarchief). De CORE-testmatrix F01–F25 behandelt AC04/AC07 en bevat geen acceptatie van deze EXT-tests.
+
+## AC05 P3/P4 · vervolg 27 november
+
+**P3/P4 TESTED / scoped PASS:** één HMI-agent is op de Wazuh-manager geregistreerd en offline vanaf een read-only ISO geïnstalleerd. De pakketstatus is installed; de agentservice is inactive. Sleutelimport, actieve verbinding, eventingestie en FIM blijven **PENDING**. AC05 integraal **PENDING**. De P2-stand hierboven is een historische momentopname. Geen originele nieuwe beelden gepubliceerd of meegeteld in de galerij. [Gesaneerd uitvoeringslog](../../Projectlogboeken/2026-11-27-m04-ac05-p3-p4-offline-agentinstallatie.md).
