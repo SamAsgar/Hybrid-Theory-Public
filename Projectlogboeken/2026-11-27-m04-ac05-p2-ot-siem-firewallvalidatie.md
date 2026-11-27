@@ -40,4 +40,10 @@ De volgende fase controleert eerst op de Wazuh-manager welke agents al geregistr
 
 **Publicatiegrens:** geen echte IP-/MAC-/IPv6-adressen, interne hostnamen, gebruikersnamen, ruwe firewallregels, log-ID's, private archiefhashes, back-uppaden of secrets.
 
-**Bewijs bij de review.** [PART2 · 13 tekstbestanden, waaronder negen bewijsbeschrijvingen](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/AC05-PART2/M04-AC05-PART2-PUBLIC-EVIDENCE-20261127.zip). De bestandsintegriteit is gecontroleerd. De inhoudelijke beoordeling staat open.
+## Aanvullende bewijsbeperkingen uit het P2-tekstarchief
+
+- Een overzicht van de definitieve firewallregelvolgorde na toepassing ontbrak. De positieve clienttest en het PASS-event onderbouwen uitsluitend de geteste verbinding.
+- De terminaltests bevatten geen tijdstip per afzonderlijke test. De correlatie steunt op het bron-doelpaar, de bestemmingspoort en de overeenkomende uitkomsten. Onafhankelijke kloksynchronisatie was niet bevestigd.
+- IPv6 en alternatieve netwerkpaden vielen buiten de vier tests. Formele bewijsregistratie en review door de projecteigenaar stonden tijdens de sessie open.
+
+Het publieke P2-tekstarchief bevatte negen samenvattingen van oorspronkelijke beeldbeschrijvingen, geen screenshots of ruwe logs. De testresultaten en bewijsbeperkingen zijn in dit uitvoeringslog samengebracht; de afzonderlijke ZIP is daarom verwijderd. De twaalf interne controlesommen waren gecontroleerd. Dit vormt geen inhoudelijke bewijsacceptatie. **P2 TESTED / scoped PASS; AC05 integraal PENDING.**
