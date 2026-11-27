@@ -19,7 +19,7 @@ Een bedieningsscherm (FUXA) stuurt een industriële controller (OpenPLC) aan die
 
 ## SIEM-koppeling vanuit OT: alleen wat nodig is
 
-Na de vaste adresreservering voor de Wazuh-SIEM heb ik in pfSense één gerichte OT→SIEM-regel ingesteld voor agentcommunicatie op TCP/1514. De HMI kon deze verbinding opzetten; drie aanvullende verbindingen naar beheer- en registratiepoorten mislukten en zijn in pfSense als **BLOCK** teruggevonden. Dit is een **gescopeerde P2-PASS**, geen bewijs dat de SIEM al events verwerkt. De agentinstallatie en een File Integrity Monitoring-test volgen nog. [PART2 · 13 tekstbestanden, waaronder negen bewijsbeschrijvingen](Portfolio/M04-Network-Citadel/M04-Bewijsvoering/AC05-PART2/M04-AC05-PART2-PUBLIC-EVIDENCE-20261127.zip) · [Lees de gesaneerde P2-testregistratie](Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md).
+Na de vaste adresreservering voor de Wazuh-SIEM heb ik in pfSense één gerichte OT→SIEM-regel ingesteld voor agentcommunicatie op TCP/1514. De HMI kon deze verbinding opzetten; drie aanvullende verbindingen naar beheer- en registratiepoorten mislukten en zijn in pfSense als **BLOCK** teruggevonden. Dit is een **gescopeerde P2-PASS**, geen bewijs dat de SIEM al events verwerkt. De agentinstallatie en een File Integrity Monitoring-test volgen nog. [Lees de gesaneerde P2-testregistratie](Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md).
 
 ## Identiteit en bedrijfscontinuïteit
 
