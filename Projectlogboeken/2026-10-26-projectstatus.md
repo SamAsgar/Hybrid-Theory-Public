@@ -11,7 +11,7 @@
 **Datum:** 26 oktober 2026  
 **Status:** historisch, gesaneerd en geabstraheerd. Dit is geen letterlijke kopie van interne sessielogs.
 
-> Historische momentopname; zie [ROADMAP](ROADMAP.md) en [Besluitenlog](../governance/BESLUITENLOG.md) voor latere wijzigingen en actuele status.
+> Historische momentopname; zie [ROADMAP](ROADMAP.md) en [Besluitenlog](../Governance/BESLUITENLOG.md) voor latere wijzigingen en actuele status.
 
 ## Scope
 

@@ -1,4 +1,4 @@
-> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
+> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../Governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
 
 # Hybrid-Theory-projectlog | 27 oktober 2026 — Hostcapaciteit en RAM-diagnose
 
@@ -23,7 +23,7 @@
 - **32 GB LPDDR5 7500 MT/s** geïnstalleerd; circa **30,7 GB bruikbaar**, **1,3 GB hardware reserved**.
 - **NVMe SSD circa 954 GB**, idle diskactiviteit ongeveer 0–1%; enkele korte pieken in de grafiek. Gemeten responstijd rond 0,7 ms (momentopname).
 - CPU idle circa **4–9%**. Dit valideert **geen** gelijktijdige prestaties van vijf actieve VM's.
-- VMware Workstation toont bestaande Ubuntu Server VM en **PS-HT-FW01-pfSense**; pfSense **2 GB RAM**, **2 vCPU**, **20 GB disk**, adapters host-only/NAT/LAN Segment. Op getoonde VMware screenshot staat pfSense uit.
+- VMware Workstation toont bestaande Ubuntu Server VM en **pfSense**; pfSense **2 GB RAM**, **2 vCPU**, **20 GB disk**, adapters host-only/NAT/LAN Segment. Op getoonde VMware screenshot staat pfSense uit.
 - Screenshots bevestigen niet dat Cockpit nu operationeel is.
 
 ## 2. Geheugenmetingen (VERIFIED snapshots; oorzaken NIET VERIFIED)

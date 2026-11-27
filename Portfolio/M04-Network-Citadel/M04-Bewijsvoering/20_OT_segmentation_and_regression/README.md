@@ -9,7 +9,7 @@
 
 Echte IP-adressen, MAC-adressen en identificerende gebruikers-/hostgegevens zijn onomkeerbaar vervangen door *officiële aliassen uit de private SSOT* of, waar geen gevalideerde mapping bestaat, `REDACTED_*`. De privéwaarden en koppeltabel worden niet gepubliceerd. Overige configuratie, testuitvoer en firewallacties blijven zoveel mogelijk leesbaar. Alle screenshots zijn nieuwe publieke RGB-PNG-bestanden zonder metadata.
 
-Een screenshot, een firewallregel en een connectiviteitstimeout zijn ieder afzonderlijk beperkt bewijs. De onderliggende originelen blijven in de private repository; publicatie is geen onafhankelijke audit of integrale missie-PASS.
+Een screenshot, een firewallregel en een connectiviteitstimeout zijn ieder afzonderlijk beperkt bewijs. De onderliggende originelen blijven in Private; publicatie is geen onafhankelijke audit of integrale missie-PASS.
 
 ## Bewijsreeks
 
@@ -185,7 +185,7 @@ Een screenshot, een firewallregel en een connectiviteitstimeout zijn ieder afzon
 **Onderwerp:** `image(20261119-181717).png`  
 **Beschrijving:** pfSense toont bestaande LAN-firewallregels, waaronder toegang voor beheer en het OT-segment.  
 **Bewijsgrens:** Regeloverzicht, geen bewijs dat elke regel correct wordt afgedwongen.  
-**SHA-256 (alleen publiek gesaneerde afgeleide):** `c8d919a6f99065c22bbfda325fd884bfa233ef5ae3e186dc453ef681cf8cda40`
+**SHA-256 (alleen publiek gesaneerde afgeleide):** `7b930ae1217d2f1dd1680f4d936ab2bad9d2d62a0b0c3876ef03a1fea2498580`
 
 ![M04-20261119-016 | CONFIG](<image(20261119-181717).png>)
 
@@ -449,7 +449,7 @@ Een screenshot, een firewallregel en een connectiviteitstimeout zijn ieder afzon
 **Onderwerp:** `image(20261119-192622).png`  
 **Beschrijving:** Detailpagina van de tijdelijke LAB-firewallregel toont bron, bestemming, actie en beschrijving.  
 **Bewijsgrens:** Instellingssnapshot, geen wijzigingsbewijs.  
-**SHA-256 (alleen publiek gesaneerde afgeleide):** `b2a76fe4dd9d056a09a6e3d22cfc8f50132f61cd41394fe2c92e7ecf0b80a52c`
+**SHA-256 (alleen publiek gesaneerde afgeleide):** `28c519be5271cd99d76672ce269b2da5d552c591fdadbe6523a87256dff35277`
 
 ![M04-20261119-040 | CONFIG](<image(20261119-192622).png>)
 
@@ -493,7 +493,7 @@ Een screenshot, een firewallregel en een connectiviteitstimeout zijn ieder afzon
 **Onderwerp:** `image(20261119-194505).png`  
 **Beschrijving:** CLIENT01 toont geslaagde DNS-resolutie en daarnaast eerdere mislukte verbindingsproeven.  
 **Bewijsgrens:** DNS-succes betekent niet dat OT-connectiviteit is toegestaan; historische regels apart beoordelen.  
-**SHA-256 (alleen publiek gesaneerde afgeleide):** `50f16a8728e8345e688155d68c93d2ab9e0df2af0107e6c2c81af001036fb2a8`
+**SHA-256 (alleen publiek gesaneerde afgeleide):** `75f351498f1ed393a003b4ae292fd6512ca8972e1ecab5e3ffe86c19f5ca28f4`
 
 ![M04-20261119-044 | TEST](<image(20261119-194505).png>)
 
@@ -548,7 +548,7 @@ Een screenshot, een firewallregel en een connectiviteitstimeout zijn ieder afzon
 **Onderwerp:** `image(20261119-195743).png`  
 **Beschrijving:** pfSense LAN-regeloverzicht toont zowel specifieke beheerregels als brede standaard-allow-regels.  
 **Bewijsgrens:** Reviewpunt: daadwerkelijke exposure hangt van regelvolgorde en relevante interface af.  
-**SHA-256 (alleen publiek gesaneerde afgeleide):** `e9775abd4673f3b6a3ea834c3c0ae73834844e72026ca64bce34c7862eac517f`
+**SHA-256 (alleen publiek gesaneerde afgeleide):** `ada08ab55dba91b0a9956b84e70f4423f583652e728300ba77f14635a46488ed`
 
 ![M04-20261119-049 | CONFIG](<image(20261119-195743).png>)
 
@@ -614,6 +614,6 @@ Een screenshot, een firewallregel en een connectiviteitstimeout zijn ieder afzon
 **Onderwerp:** `image(20261119-200554).png`  
 **Beschrijving:** FUXA01-terminal toont IPv6-adressen en routetabel zonder zichtbare bruikbare globale IPv6-route.  
 **Bewijsgrens:** Momentopname; link-local IPv6 is niet hetzelfde als extern IPv6-bereik.  
-**SHA-256 (alleen publiek gesaneerde afgeleide):** `f44ed3e46793d21c6a58b98192a6815973578f0bb09f4105cfd2289efb19f46f`
+**SHA-256 (alleen publiek gesaneerde afgeleide):** `455b2422728ec582b6a08238a0b31c97fb7b8be66e602b5f17a144f00d892740`
 
 ![M04-20261119-055 | TEST](<image(20261119-200554).png>)

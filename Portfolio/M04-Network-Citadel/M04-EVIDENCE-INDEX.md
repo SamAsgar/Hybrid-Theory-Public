@@ -415,3 +415,7 @@ De datum is ontleend aan de bestandsnaam. De aanduidingen `CONFIG`, `TROUBLESHOO
 - **AC02 15 november:** groene FUXA-indicator en tagwaarden `0/0` geven nog geen bewezen live Modbus-registeruitlezing.
 
 [GAP-analyse](M04-GAPS.md) · [FUXA-addendum](M04-Bewijsvoering/19_FUXA_followup/ADDENDUM-2026-11-15.md) · [SHA-256-manifest](M04-SHA256SUMS.txt)
+
+## AC05 · vervolg op de vaste SIEM-reservering
+
+Op 27 november is vanaf één OT-HMI naar één SIEM via IPv4/TCP getest. TCP/1514 maakte verbinding en leverde een PASS-log op. TCP/1515, TCP/443 en TCP/55000 gaven elk een timeout met bijpassende BLOCK-logs. **P2 TESTED / scoped PASS.** Agentregistratie, eventontvangst en FIM zijn nog open. **AC05 PENDING.** [P2-uitvoeringslog](../../Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md) · [PART2 · 13 tekstbestanden, waaronder negen bewijsbeschrijvingen](M04-Bewijsvoering/AC05-PART2/M04-AC05-PART2-PUBLIC-EVIDENCE-20261127.zip). De CORE-testmatrix F01–F25 behandelt AC04/AC07 en bevat geen acceptatie van deze EXT-tests.

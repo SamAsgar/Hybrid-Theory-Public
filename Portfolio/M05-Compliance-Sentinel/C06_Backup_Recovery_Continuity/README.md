@@ -28,7 +28,7 @@ De technische missie beheert het bewijs en de testuitslagen. M05 documenteert br
 
 **Status:** **PENDING** — nog geen M05-assessment voor deze missie · [Terug naar M05](../README.md)
 
-Dit dossier bevat uitsluitend M05-assessments over controls, risico's en bewijs van M02 Phoenix Recovery. De methodiek staat één keer in [Methodiek](../Methodiek/) en wordt hier niet herhaald. Bewijs en technische verdicts blijven in de missie zelf ([M02-ontwerp en status](../../../governance/M02-Phoenix-Recovery/README.md)); M05 verwijst daarnaar, kopieert geen bewijs en wijzigt geen verdicts.
+Dit dossier bevat uitsluitend M05-assessments over controls, risico's en bewijs van M02 Phoenix Recovery. De methodiek staat één keer in [Methodiek](../Methodiek/) en wordt hier niet herhaald. Bewijs en technische verdicts blijven in de missie zelf ([M02-ontwerp en status](../../../Governance/M02-Phoenix-Recovery/README.md)); M05 verwijst daarnaar, kopieert geen bewijs en wijzigt geen verdicts.
 
 | Onderdeel | Methodiek | Assessment voor M02 | Status |
 |---|---|---|---|

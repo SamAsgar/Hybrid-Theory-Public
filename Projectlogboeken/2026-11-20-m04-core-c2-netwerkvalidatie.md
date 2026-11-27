@@ -17,4 +17,4 @@ Via het host-only beheersegment is TCP/8080 naar de OpenPLC-forward opnieuw beve
 
 De gerichte firewallobservaties ondersteunen **AC04/AC07**, beide integraal **PENDING**. Volledige tijd-/regel-/packetcorrelatie, passend herstelbewijs, autorisatie/TLS-review, onafhankelijke bewijsreview en eigenaaracceptatie blijven open. De eigenaar heeft de preflightcontrole en de AC01–AC03-bewijsreview uitgesteld. **AC05 PENDING**, **AC06/AC08 PLANNED**. De eigenaar bepaalt AC06-scope en cliëntaantal vóór uitvoering.
 
-[Actuele architectuur](../architectuur/NETWERKONTWERP.md) · [Open gaten](../Portfolio/M04-Network-Citadel/M04-GAPS.md) · [M04-missie](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).
+[Actuele architectuur](../Architectuur/NETWERKONTWERP.md) · [Open gaten](../Portfolio/M04-Network-Citadel/M04-GAPS.md) · [M04-missie](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).

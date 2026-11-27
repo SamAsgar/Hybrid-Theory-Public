@@ -13,7 +13,7 @@ In een begeleide avondsessie heeft Sam de firewallkant van de OT-zone gebouwd. C
 1. **Virtuele netwerkadapter:** de firewall-VM kreeg een vierde netwerkadapter op een eigen, afgezonderd virtueel segment dat alleen voor de OT-zone bedoeld is. Een eerste poging werd niet opgeslagen; de tweede wel. Het bestaande LAB-segment is daarbij bewust niet gekozen.
 2. **Preflight na het opstarten:** de bestaande WAN-, beheer- en LAB-interfaces stonden na de wijziging nog op dezelfde adapters met dezelfde adressen. Een extra netwerkkaart kan in VMware de volgorde van adapters veranderen; dat is hier niet gebeurd.
 3. **Interface toegewezen via de webinterface:** de nieuwe adapter is als interface **OT** toegevoegd. De webinterface is gekozen in plaats van het consolemenu, omdat het consolemenu vraagt alle interfaces opnieuw in te voeren.
-4. **Adressering:** de OT-interface kreeg een statisch adres in het OT-subnet uit het [goedgekeurde zoneontwerp](../architectuur/NETWERKONTWERP.md), zonder upstream gateway.
+4. **Adressering:** de OT-interface kreeg een statisch adres in het OT-subnet uit het [goedgekeurde zoneontwerp](../Architectuur/NETWERKONTWERP.md), zonder upstream gateway.
 5. **Firewallregels gelezen, niet gewijzigd:** op de OT-interface staan geen regels, dus verkeer dat via OT binnenkomt wordt standaard geweigerd. De LAB-regels blokkeren verkeer naar alle privé-adresbereiken; het OT-subnet valt daaronder.
 
 ## Statusoordeel

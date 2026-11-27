@@ -2,7 +2,7 @@
 
 **21 november 2026 · 38 gesaneerde screenshots en één OT-pcap.** M04-CORE is in uitvoering. Milestone 01 en de integrale acceptatie van AC04/AC07 staan open.
 
-[Missiedossier](../../README.md) · [Galerij per fase](../../M04-GALERIJ.md) · [Daglog](../../../../projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [CSV-manifest](M04-EVIDENCE-PHASE22.csv) · [SHA-256](SHA256SUMS.txt) · [Saneringsrapport](M04-PHASE22-SANITIZATION-REPORT.md)
+[Missiedossier](../../README.md) · [Galerij per fase](../../M04-GALERIJ.md) · [Daglog](../../../../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [CSV-manifest](M04-EVIDENCE-PHASE22.csv) · [SHA-256](SHA256SUMS.txt) · [Saneringsrapport](M04-PHASE22-SANITIZATION-REPORT.md)
 
 | Vraag | Bewijs |
 |---|---|

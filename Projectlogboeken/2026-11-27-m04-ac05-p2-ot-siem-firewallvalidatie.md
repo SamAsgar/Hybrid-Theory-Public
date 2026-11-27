@@ -30,7 +30,7 @@ Na de eerder uitgevoerde vaste adresreservering voor de Wazuh-SIEM moest de geï
 
 ## Bewijs en resterende werkzaamheden
 
-De oorspronkelijke beelden van configuratie, CLI-tests en filterlogs zijn in een **lokaal, private ZIP-archief** met tekstbeschrijvingen opgeslagen. Ze zijn **niet** als ruwe bestanden naar deze public repository geëxporteerd of formeel als repository-evidence geverifieerd. Daarom blijft de status **TESTED / scoped PASS** op basis van de gerapporteerde, gecorreleerde sessietests.
+De oorspronkelijke beelden van configuratie, CLI-tests en filterlogs zijn in een **lokaal privéarchief** met tekstbeschrijvingen opgeslagen. Ze zijn **niet** als ruwe bestanden naar Public geëxporteerd of formeel als repository-evidence geverifieerd. Daarom blijft de status **TESTED / scoped PASS** op basis van de gerapporteerde, gecorreleerde sessietests.
 
 De volgende fase controleert eerst op de Wazuh-manager welke agents al geregistreerd zijn. Daarna volgen de eerder gekozen **handmatige sleutelregistratie zonder TCP/1515-openstelling**, een **offline agentinstallatie**, de controle van de agentverbinding en een end-to-end **File Integrity Monitoring**-test. De verouderde dashboardforward en openstaande CORE-acceptatiepunten blijven afzonderlijke aandachtspunten.
 
@@ -39,3 +39,5 @@ De volgende fase controleert eerst op de Wazuh-manager welke agents al geregistr
 [Voorgaande AC05-delta (SIEM-gezondheid en vast adres)](2026-11-27-m04-ac05-wazuh-health-en-vast-adres.md) · [M04 actuele issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45)
 
 **Publicatiegrens:** geen echte IP-/MAC-/IPv6-adressen, interne hostnamen, gebruikersnamen, ruwe firewallregels, log-ID's, private archiefhashes, back-uppaden of secrets.
+
+**Bewijs bij de review.** [PART2 · 13 tekstbestanden, waaronder negen bewijsbeschrijvingen](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/AC05-PART2/M04-AC05-PART2-PUBLIC-EVIDENCE-20261127.zip). De bestandsintegriteit is gecontroleerd. De inhoudelijke beoordeling staat open.

@@ -1,4 +1,4 @@
-> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
+> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../Governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
 
 # Projectlogboek Hybrid-Theory | 24 en 25 oktober 2026
 
@@ -22,7 +22,7 @@
 ### 1. Linux-baseline en naamgeving: UITGEVOERD / PASS
 
 - Bestaande **Ubuntu Server 24.04.5 LTS**-VM in **VMware Workstation Pro** gebruikt (2 vCPU, 4 GB RAM, 30 GB virtuele schijf).
-- VM-weergavenaam gewijzigd naar **bestaande Ubuntu-VM**; gast-hostname ingesteld op `hybrid-theory-linux`.
+- VM-weergavenaam gewijzigd naar **bestaande Ubuntu-VM**; gast-hostname ingesteld op `LINUX_HOST`.
 - Normaal opstarten, lokale aanmelding en behoud van naam na herstart gecontroleerd. Deze kleine naamgevingswijziging is als **PASS** afgesloten, zonder onnodige hertests.
 - Eerder geïnstalleerde VM en opslaglocatie bleven gehandhaafd; 23 oktober was de installatie- en accountherstelsessie, **niet** een nieuwe installatie op 24 oktober.
 

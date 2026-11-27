@@ -4,7 +4,7 @@
 
 ## Aanpak
 
-- Originele bestandsnamen en volgorde behouden; bronbytes niet gewijzigd in de private repository.
+- Originele bestandsnamen en volgorde behouden; bronbytes niet gewijzigd in Private.
 - Per beeld tekstherkenning op eerder gemaakte positiescans; alleen gevoelige velden/identificatoren onomkeerbaar overschreven met officiële SSOT-aliassen of `REDACTED_*`.
 - `CLIENT01_DHCP_IP`, `PLC01_OT_IP`, `FUXA01_OT_IP`, `PFSENSE_OT_IP` en andere reeds vastgestelde aliasnamen zijn labels, geen gepubliceerde vertaaltabel.
 - Waar mapping ambigu is of ontbreekt, wordt geen identiteit geraden maar de waarde geanonimiseerd.
@@ -17,3 +17,7 @@
 De sanering is zo doelgericht mogelijk, maar kleine, afgesneden of slecht herkende tekens blijven een residueel risico. Screenshots zijn contextbewijs, geen vervanging voor een onafhankelijk uitgevoerde securityreview. Een **individuele handmatige eigenaarreview van alle 55 beelden** blijft vereist vóór merge. Geen originele SHA-256's of SSOT-waardentabellen worden meegepubliceerd.
 
 **Technische acceptatie:** M04-CORE IN PROGRESS. AC04/AC07 integraal PENDING. De beschreven AC01–AC03- en firewallresultaten zijn gescopeerde deeltests.
+
+## Nacontrole van 27 november
+
+In beelden 016, 040, 044 en 049 zijn aanvullende netwerkgegevens afgeschermd. De terminalweergave in 044 is geheel afgeschermd. De bewijsbeschrijvingen en de oorspronkelijke testscope blijven beschikbaar. De registers bevatten de hashes van de bijgewerkte publieke afbeeldingen. Eerdere versies zijn via Git bereikbaar.

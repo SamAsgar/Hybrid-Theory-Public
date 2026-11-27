@@ -34,7 +34,7 @@
 **Onderwerp:** VMware snapshots vóór OT-migratie  
 **Beschrijving:** VMware VM contextmenu en snapshot-/VM-overzichten voor pfSense, PLC01 en FUXA01.  
 **Bewijsgrens:** Een zichtbaar snapshotmenu bewijst nog niet dat snapshotbestand bestaat; controleer Snapshot Manager.  
-**SHA-256 (gesaneerde publicatie):** `1ff68bc3d46625ca01d43e0d7870903b72b16d349bb45073a798399d5f9b0702`
+**SHA-256 (gesaneerde publicatie):** `6e7bec3b06d1ca20aff8cfc140f912387c4f3b98a0dfbc921a8f8eb037c889f1`
 
 ![M04-EV-112 — VMware snapshots vóór OT-migratie](<Screenshot 2026-11-08 175543.png>)
 

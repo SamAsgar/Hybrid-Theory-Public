@@ -32,6 +32,6 @@ De besproken ontwerpen worden later via **CAT/ACE v0.4** onderzocht op governanc
 
 **Niet gewijzigd:** de eerder gedocumenteerde technische labstatus en testverdicts. **M02 blijft PENDING** totdat daadwerkelijke back-ups en onafhankelijke hersteltests met bewijs zijn uitgevoerd.
 
-Voor achtergrond en eerdere technische resultaten: [projectlogboeken](README.md), [projectroadmap](ROADMAP.md) en [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md).
+Voor achtergrond en eerdere technische resultaten: [projectlogboeken](README.md), [projectroadmap](ROADMAP.md) en [CAT/ACE v0.4](../Governance/CAT_ACE_v0.4.md).
 
 *Publieke, geabstraheerde onderzoeksnotitie. Geen operationele identificatoren, herstelgeheimen of privé-bronlinks opgenomen.*

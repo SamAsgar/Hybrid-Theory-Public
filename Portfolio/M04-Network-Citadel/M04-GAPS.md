@@ -54,3 +54,7 @@ De eigenaarsessie bevestigt binnen de getoonde scope drie door de firewall geblo
 3. Bepaal de OT-resolver en tijdbron en toets F20/F21 aan dat beleid. Beoordeel de brede LAN IPv6-allow en alternatieve paden voor F22/F23. Verifieer de LAB-bron en de doelrol van de beheerforward waar de conclusie daarvan afhangt.
 4. Verifieer de pfSense-configback-up, het PLC-checkpoint van ná de autostartfix en herstel in isolatie. OpenPLC-autostart en de START→STOP-keten hebben sinds 19 november een scoped PASS. Rond de AC01–AC03-bewijsreview af en herhaal alleen ontbrekende onderdelen.
 5. Registreer per resterende flow de uitkomst of gemotiveerde uitzondering en laat de eigenaar AC04/AC07 aftekenen. Daarna volgen Wazuh-events (AC05), de vast te stellen GNS3-scope en test (AC06) en Suricata → Wazuh (AC08).
+
+## AC05 · stand na de P2-tests van 27 november
+
+Op 27 november is vanaf één OT-HMI naar één SIEM via IPv4/TCP getest. TCP/1514 maakte verbinding en leverde een PASS-log op. TCP/1515, TCP/443 en TCP/55000 gaven elk een timeout met bijpassende BLOCK-logs. **P2 TESTED / scoped PASS.** Agentregistratie, eventontvangst en FIM zijn nog open. **AC05 PENDING.** [P2-uitvoeringslog](../../Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md).
