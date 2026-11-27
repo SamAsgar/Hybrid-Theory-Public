@@ -71,3 +71,7 @@ Dit zijn **inhoudelijke raakvlakken**, geen afrondingscriteria en geen bewijs da
 ## M04-CORE update 21 november 2026
 
 **M04-CORE IN PROGRESS · Milestone 01 open · AC04/AC07 integraal PENDING.** F24 is aangetoond voor TCP/502 en TCP/8080. F13–F15 wachten op formele bronacceptatie en review per poort. Beide tijdelijke routes zijn verwijderd. De adaptereindstand, DNS/NTP, IPv6 en alternatieve paden, AC01–AC03-review en herstelvalidatie staan open. EXT en de industriële DMZ volgen later. [Uitvoering en resterende stappen](2026-11-21-m04-core-management-segmentatie.md)
+
+## M04-EXT AC05 · voortgang 27 november 2026
+
+**P3/P4 TESTED / scoped PASS:** één HMI-agent is op de Wazuh-manager geregistreerd en offline vanaf een read-only ISO geïnstalleerd. De pakketstatus is installed; de agentservice is inactive. Sleutelimport, actieve verbinding, eventingestie en FIM blijven **PENDING**. AC05 integraal **PENDING**. P1/P2 eerder scoped PASS. [Gesaneerd log](2026-11-27-m04-ac05-p3-p4-offline-agentinstallatie.md). CORE, AC06 en AC08 ongewijzigd.
