@@ -1,4 +1,4 @@
-> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
+> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../Governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
 
 # GNS3 | Eerste boot, KVM-diagnose en parkeerregister
 
@@ -9,7 +9,7 @@
 > **Uitkomst:** GNS3/VPCS/ARP/ICMP en Wireshark-baseline beperkt PASS; nested KVM bleef PARKED.  
 > **Besluit:** GNS3 uitbreiden pas bij noodzaak, en volledige dataplane-isolatie apart toetsen.
 
-> **Actuele statusinterpretatie (29-10-2026):** PK-HT-001 is **PARKED** met heropening bij aantoonbare KVM-afhankelijke functionaliteitsblokkade; PARKED is een workflowstatus, **geen REWORK- of PASS-verdict voor nested KVM**. De geteste lichte VPCS/ARP/ICMP-baseline heeft scoped PASS. Eerdere statuslabels blijven als sessiegeschiedenis zichtbaar. [Statuslegenda](../governance/STATUSLEGENDA.md) · [Fasering](ROADMAP.md).
+> **Actuele statusinterpretatie (29-10-2026):** PK-HT-001 is **PARKED** met heropening bij aantoonbare KVM-afhankelijke functionaliteitsblokkade; PARKED is een workflowstatus, **geen REWORK- of PASS-verdict voor nested KVM**. De geteste lichte VPCS/ARP/ICMP-baseline heeft scoped PASS. Eerdere statuslabels blijven als sessiegeschiedenis zichtbaar. [Statuslegenda](../Governance/STATUSLEGENDA.md) · [Fasering](ROADMAP.md).
 
 > **ACTUELE STATUS | 29-10-2026 — GNS3/Wireshark-baseline afgerond; vervolgwerk geparkeerd**  
 > Dit overzicht heeft voorrang boven oudere OPEN-/to-do-vermeldingen hieronder. Historische sessiegegevens blijven ongewijzigd voor traceerbaarheid. **Afronding betekent: voldoende voor huidige fase, niet dat alle validatiepunten zijn gesloten.**
@@ -38,7 +38,7 @@
 **Methodologie:** Risk-Based Validation
 
 ## Geverifieerde observaties (screenshots gebruiker)
-- GNS3 VMware-appliance 2.2.61 geïmporteerd onder VM-naam `PS-HT-VM02-GNS3`; runtime onder `REDACTED_LOCAL_PATH`.
+- GNS3 VMware-appliance 2.2.61 geïmporteerd onder VM-naam `GNS3-VM`; runtime onder `REDACTED_LOCAL_PATH`.
 - 4 GiB (4096 MB) RAM, 2 vCPU ingesteld. OVA presenteert twee virtuele SCSI-schijven van 100 GB en 1 TB virtuele capaciteit; werkelijk ruimtegebruik en benodigde volumes nog niet gecontroleerd.
 - NIC1 VMware host-only, NIC2 NAT met **Connected** en **Connect at power on** uit. Geen empirisch bewijs van volledige segmentisolatie.
 - Eerste start met nested AMD-V/RVI ingeschakeld toonde `Virtualized AMD-V/RVI is not supported on this platform`. Na uitschakelen van doorgifte in VM-instellingen start de GNS3-appliance.
@@ -133,9 +133,9 @@
 **Scope:** uitsluitend nieuwe werkzaamheden na het vorige GNS3 Desktop/vmrun-addendum. Eerder beschreven VM-import, VBS/ULM-analyse, MacBook, Windows-media en parkeerpunten niet opnieuw geregistreerd.
 
 ### VERIFIED / PASS (gebruikersscreenshots en terminal)
-1. **Persistente Windows User PATH hersteld:** `where.exe vmrun` in nieuwe PowerShell-sessie retourneert `C:\Program Files\VMware\VMware Workstation\vmrun.exe`. GNS3 opent vervolgens VMware en start bestaande `PS-HT-VM02-GNS3`; geen nieuwe appliance aangemaakt.
+1. **Persistente Windows User PATH hersteld:** `where.exe vmrun` in nieuwe PowerShell-sessie retourneert `C:\Program Files\VMware\VMware Workstation\vmrun.exe`. GNS3 opent vervolgens VMware en start bestaande `GNS3-VM`; geen nieuwe appliance aangemaakt.
 2. **VM boot / beperking:** eerste poging met nested AMD-V/RVI gaf incompatibiliteitsmelding en `FeatureCompatLate`/ `hv.capable`-startfout. CPU-checkbox `Virtualize Intel VT-x/EPT or AMD-V/RVI` uitgeschakeld; GNS3 VM start. Console: GNS3 2.2.61, `KVM support available: False`. PK-HT-001 blijft **PARKED**, niet opgelost.
-3. **Desktop ↔ VM:** GNS3 Desktop toont twee groene servers: lokale server en `PS-HT-VM02-GNS3`. PASS voor beheerverbinding en lichte workload, niet voor brede appliance-compatibiliteit.
+3. **Desktop ↔ VM:** GNS3 Desktop toont twee groene servers: lokale server en `GNS3-VM`. PASS voor beheerverbinding en lichte workload, niet voor brede appliance-compatibiliteit.
 4. **Topologie:** `HT-GNS3-LAB01-Network-Baseline`; VPCS PC1 — Ethernet Switch1 — VPCS PC2; geen Cloud/NAT/bridge/pfSense toegevoegd. PC1 `LAB_IP_REDACTED`, PC2 `LAB_IP_REDACTED`.
 5. **Connectivity en ARP:** Sam bevestigde ping in beide richtingen. Screenshot PC1 toont vijf ICMP-antwoorden van `LAB_IP_REDACTED`; daarna `show arp` met een geldige MAC-mapping. Tijdelijke lege ARP-cache vóór ping is verklaard.
 6. **Wireshark capture:** capture op PC1–Switch1; screenshot met **12 frames**: 2 ARP (request/reply), 10 ICMP (5 requests/5 replies). PASS voor L2/L3-verkeer in deze topologie.

@@ -40,6 +40,6 @@ Een vooraf voorgestelde pre-promotiesnapshot werd niet aangemaakt. De promotie v
 
 **Eindstatus:** `AD/CLIENT BASELINE: PASS binnen beschreven testscope`. Geen claim van volledige IAM-, netwerk- of disaster-recovery-acceptatie.
 
-**Statusgebruik:** [statuslegenda](../governance/STATUSLEGENDA.md). 
+**Statusgebruik:** [statuslegenda](../Governance/STATUSLEGENDA.md). 
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

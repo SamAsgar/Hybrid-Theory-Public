@@ -81,3 +81,7 @@ De [fase-21-reeks](M04-Bewijsvoering/21_CORE_C2_firewall_and_isolation/README.md
 [Managementtestlog 21 november](../../Projectlogboeken/2026-11-21-m04-core-management-segmentatie.md) · [Open gaps](M04-GAPS.md) · [M04 Issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/45).
 
 [Fase 22 · 38 beelden met beschrijvingen, manifest en OT-pcap](M04-Bewijsvoering/22_CORE_C3_LAN_WAN_OT/README.md)
+
+## AC05 · vervolg op de vaste SIEM-reservering
+
+Op 27 november is vanaf één OT-HMI naar één SIEM via IPv4/TCP getest. TCP/1514 maakte verbinding en leverde een PASS-log op. TCP/1515, TCP/443 en TCP/55000 gaven elk een timeout met bijpassende BLOCK-logs. **P2 TESTED / scoped PASS.** Agentregistratie, eventontvangst en FIM zijn nog open. **AC05 PENDING.** [P2-uitvoeringslog](../../Projectlogboeken/2026-11-27-m04-ac05-p2-ot-siem-firewallvalidatie.md) · [PART2 · 13 tekstbestanden, waaronder negen bewijsbeschrijvingen](M04-Bewijsvoering/AC05-PART2/M04-AC05-PART2-PUBLIC-EVIDENCE-20261127.zip). De CORE-testmatrix F01–F25 behandelt AC04/AC07 en bevat geen acceptatie van deze EXT-tests.

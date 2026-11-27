@@ -29,8 +29,8 @@ HV-05 t/m HV-10 (uitgebreide logging, herstelbaarheid, logintegriteit, incidentr
 
 **Verdict:** uitsluitend de beoordeelde deelcontrols **PASS met één EXCEPTION** binnen hun scope. **Lab 01 (M01): IN PROGRESS**, geen totale labacceptatie.
 
-**Beleidscontext:** controls op 1 november getoetst tegen toen nog conceptcriteria; het [hypervisorbeleid](../governance/HYPERVISOR_BEVEILIGINGSBELEID.md) is door Sam goedgekeurd op 02-11-2026. Dat verandert de oude testuitslag niet.
+**Beleidscontext:** controls op 1 november getoetst tegen toen nog conceptcriteria; het [hypervisorbeleid](../Governance/HYPERVISOR_BEVEILIGINGSBELEID.md) is door Sam goedgekeurd op 02-11-2026. Dat verandert de oude testuitslag niet.
 
-**Statusgebruik:** [statuslegenda](../governance/STATUSLEGENDA.md).
+**Statusgebruik:** [statuslegenda](../Governance/STATUSLEGENDA.md).
 
 **Redactie:** Opgesteld met ChatGPT op basis van metingen en besluiten van Sam.

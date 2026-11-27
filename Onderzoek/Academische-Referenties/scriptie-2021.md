@@ -54,7 +54,7 @@ Deze uitkomsten zijn **historische onderzoeksresultaten van een afgebakende data
 **Bestandsaanwezigheid (02-11-2026, geverifieerd via GitHub):**
 
 - `Dissertation_ShamirAsgarali_SystemicRisk_2021_NorthumbriaUniversity.pdf` — PDF aanwezig.
-- `Screenshot 2026-11-01 234815.png` — academische afbeelding aanwezig.
+- `Northumbria MSc Degree (sanitized).png` — academische afbeelding aanwezig.
 - `Screenshot 2026-11-01 234958.png` — academische afbeelding aanwezig.
 
 De eerdere lijst met voorbereide `PUBLIC_REDACTED`-bestandsnamen verwees naar **niet-aanwezige bestandsnamen** en is vervangen door de werkelijk geüploade bestanden. **Aanwezig betekent niet aantoonbaar gesaneerd.** De PDF en PNG's moeten nog op pixels, PDF-inhoud, metadata en historische versies worden beoordeeld. Vanwege die openstaande review is hier nog geen afzonderlijke downloadlink toegevoegd.

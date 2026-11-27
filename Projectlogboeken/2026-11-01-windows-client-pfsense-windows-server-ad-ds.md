@@ -1,4 +1,4 @@
-> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
+> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../Governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
 
 # Projectlog | 1 november 2026
 
@@ -12,7 +12,7 @@
 ## Windows-client online, pfSense LAB werkend en Windows Server klaar voor AD-promotie
 
 **Project:** Hybrid-Theory  
-**Scope:** pfSense LAB + `PS-HT-CLIENT01-Win11` + `PS-HT-VM03-WindowsServer` (hostname `PS-HT-DC01`)  
+**Scope:** pfSense LAB + `CLIENT01` + `Windows Server` (hostname `DC01`)  
 **Uitvoering:** Sam, met technische begeleiding door ChatGPT  
 **Aanpak:** Risk-Based Validation, korte functionele tests, geen onnodige extra hardening  
 **Resultaat:** **PASS** voor gerichte netwerk-, activatie- en AD DS-installatietests; **PENDING** voor domeinpromotie, AD DNS, domain join, GPO en volledige missieacceptatie  
@@ -38,7 +38,7 @@ De Windows Server 2025 Standard Evaluation-VM heeft een vaste naam en een vast I
 | pfSense outbound NAT | Automatic Outbound NAT toont LAB-netwerk als bron via WAN | **PASS** configuratiewaarneming |
 | Windows 11 DNS/HTTPS | `nslookup microsoft.com` geeft adres terug via pfSense; `Test-NetConnection microsoft.com -Port 443` geeft `TcpTestSucceeded=True`; NU.nl opent | **PASS** voor geteste DNS/HTTPS/browsertoegang |
 | Windows Server 2025 | LAN Segment-adapter actief, 2 vCPU, 4 GB RAM, 80 GB virtuele schijf; tijdelijk DHCP-adres ontvangen | **PASS** adapter en LAB-DHCP |
-| Windows Server IP/naam | `PS-HT-DC01`; Ethernet0 (ifIndex 6), vast `LAB_IP_REDACTED` met `AddressState: Preferred`; gateway en tijdelijk DNS via `LAB_IP_REDACTED` | **PASS** vast serveradres en hostname |
+| Windows Server IP/naam | `DC01`; Ethernet0 (ifIndex 6), vast `LAB_IP_REDACTED` met `AddressState: Preferred`; gateway en tijdelijk DNS via `LAB_IP_REDACTED` | **PASS** vast serveradres en hostname |
 | Windows Server AD DS-rol | `Install-WindowsFeature AD-Domain-Services -IncludeManagementTools` geeft `Success=True`, `Exit Code=Success`, `Restart Needed=No` | **PASS** rolinstallatie; promotie **PENDING** |
 
 ### Nieuwe troubleshooting en verklaringen
@@ -71,7 +71,7 @@ De regels zijn in de pfSense-GUI toegepast. DNS, TCP/443 en een echte browserpag
 
 ### To-do volgende sessie | maandag 2 november 2026
 
-- [ ] **P0 — AD-forest maken:** op `PS-HT-DC01` in Server Manager 'Promote this server to a domain controller' → 'Add a new forest'; voorgesteld labdomein `LAB_DOMAIN` (nog te bevestigen bij wizard). DSRM-wachtwoord veilig bewaren, geen secret in GitHub; promotie en reboot controleren.
+- [ ] **P0 — AD-forest maken:** op `DC01` in Server Manager 'Promote this server to a domain controller' → 'Add a new forest'; voorgesteld labdomein `LAB_DOMAIN` (nog te bevestigen bij wizard). DSRM-wachtwoord veilig bewaren, geen secret in GitHub; promotie en reboot controleren.
 - [ ] **P0 — AD DNS werkend:** DC gebruikt zichzelf als DNS (`LAB_IP_REDACTED`); configureer waar nodig DNS-forwarder via pfSense; controleer SRV-records, interne naamresolutie en minimaal de benodigde DNS-verbindingen. Geen blinde netwerkwijzigingen.
 - [ ] **P0 — Windows 11 domain join:** client-DNS naar `LAB_IP_REDACTED` (DHCP-optie of gecontroleerde clientinstelling), join, herstart en inloggen met testdomeingebruiker. Werking aantonen.
 - [ ] **P0 — Eerste GPO:** één eenvoudig, zichtbaar en reproduceerbaar beleid toepassen en het resultaat op de client verifiëren (`gpresult` of vergelijkbaar). Daarmee M03-techniek demonstreren zonder lange extra audit.
@@ -87,7 +87,7 @@ De regels zijn in de pfSense-GUI toegepast. DNS, TCP/443 en een echte browserpag
 
 ## Avondaanvulling | 1 november 2026 — Lab-1, evidence en CAT/ACE v0.2 (historische fase)
 
-> **Redactionele verwijzing toegevoegd 03-11-2026:** deze log beschrijft de **op 1 november geldende v0.2-onderzoeksfase** en is bewust niet met terugwerkende kracht herschreven. De **actuele onderzoeksversie is [CAT/ACE v0.4](../governance/CAT_ACE_v0.4.md)**: **Audit, Cost & Efficiency**, intern/extern/hybride, met toetsbaar bewijs, kosten- en efficiëntieafwegingen en Revalidation. De logstatus en toenmalige experimenten blijven historisch; v0.4 is **CONCEPT / NOT VALIDATED**.
+> **Redactionele verwijzing toegevoegd 03-11-2026:** deze log beschrijft de **op 1 november geldende v0.2-onderzoeksfase** en is bewust niet met terugwerkende kracht herschreven. De **actuele onderzoeksversie is [CAT/ACE v0.4](../Governance/CAT_ACE_v0.4.md)**: **Audit, Cost & Efficiency**, intern/extern/hybride, met toetsbaar bewijs, kosten- en efficiëntieafwegingen en Revalidation. De logstatus en toenmalige experimenten blijven historisch; v0.4 is **CONCEPT / NOT VALIDATED**.
 
 **Aard van deze aanvulling:** nieuwe werkzaamheden en inzichten van later op dezelfde datum. Het eerdere gedeelte van dit log blijft een historische momentopname. De terminologie, beleidsstatus en testuitslagen van de eerdere sessie worden **niet met terugwerkende kracht herschreven**. De projectlogboeken van 25 t/m 31 oktober zijn ongewijzigd gelaten.
 
@@ -137,7 +137,7 @@ Vandaag is de destijds geldende richting **CAT/ACE v0.2 (historisch, inmiddels o
 
 Als vergelijkingsmateriaal zijn o.a. **NIST CSF 2.0, CIS Controls v8.1 en NIST SP 800-53A** benoemd. Dat impliceert **geen** formele methodiekvalidatie, certificering of complianceclaim. De langetermijnambitie blijft empirische toetsing in **100+ labs**; de praktische labs behouden prioriteit boven theorievorming.
 
-Het bestand [`ai-samenwerking/ROLLEN_EN_OVERDRACHT.md`](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md) is **vandaag** gericht aangepast: oude methodologieverwijzingen daar zijn destijds vervangen door **CAT/ACE v0.2 (historische momentopname)**, met onderzoekskader en benchmarkreferenties. Dit is een **documentatieaanpassing in één bestand** en geen geautoriseerde projectbrede conversie van de bestaande governance. De nog bestaande verwijzingen naar de eerdere Risk-Based Validation-werkdefinitie in andere documenten en oude logs blijven vooralsnog als historische of nog niet geharmoniseerde context staan. **Geen stilzwijgende vervanging van HT-009 of oudere testuitslagen.**
+Het bestand [`ai-samenwerking/ROLLEN_EN_OVERDRACHT.md`](../AI-Samenwerking/ROLLEN_EN_OVERDRACHT.md) is **vandaag** gericht aangepast: oude methodologieverwijzingen daar zijn destijds vervangen door **CAT/ACE v0.2 (historische momentopname)**, met onderzoekskader en benchmarkreferenties. Dit is een **documentatieaanpassing in één bestand** en geen geautoriseerde projectbrede conversie van de bestaande governance. De nog bestaande verwijzingen naar de eerdere Risk-Based Validation-werkdefinitie in andere documenten en oude logs blijven vooralsnog als historische of nog niet geharmoniseerde context staan. **Geen stilzwijgende vervanging van HT-009 of oudere testuitslagen.**
 
 Voor operationele uitvoering blijven de geldende eigenaarafspraken leidend, met name **HT-011: Flexible Security / Mission-Based Hardening**, bestaande trust boundaries, autorisatie, secretsbescherming en passende rollback. Een concept is niet automatisch een uitvoeringsbesluit.
 
@@ -152,6 +152,6 @@ Voor operationele uitvoering blijven de geldende eigenaarafspraken leidend, met 
 
 **Verificatieregel:** `PLANNED / IMPLEMENTED / VERIFIED` betreft componentstatus; `PASS / REWORK / EXCEPTION` betreft een geteste uitspraak binnen een vastgelegde scope. Een GitHub-commit of screenshot is niet op zichzelf een technische PASS.
 
-**Bronnen voor deze aanvulling:** Lab 01 README (niet gepubliceerd) · [pfSense README](../Portfolio/VMware/pfSense/README.md) · [Windows Server 2025 README](<../Portfolio/VMware/Windows Server 2025/README.md>) · [Rollen en overdracht](../ai-samenwerking/ROLLEN_EN_OVERDRACHT.md).
+**Bronnen voor deze aanvulling:** Lab 01 README (niet gepubliceerd) · [pfSense README](../Portfolio/VMware/pfSense/README.md) · [Windows Server 2025 README](<../Portfolio/VMware/Windows Server 2025/README.md>) · [Rollen en overdracht](../AI-Samenwerking/ROLLEN_EN_OVERDRACHT.md).
 
 **Einde aanvulling:** status op basis van op 1 november beschikbare logs, screenshots en repositorycontrole; geen nieuwe live-VM-test door deze logboekupdate.

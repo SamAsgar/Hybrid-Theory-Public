@@ -47,12 +47,12 @@ f191c793ecfd2b9d38b7c2783622b0b44fe49bedf6273b51bfe2f5890245e96f  M01-Hypervisor
 cb45e92f5986c0d15ad276ddf094104a6ee7a893a8f281914e266adf36386488  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 210504.png
 5f8caa3ebef6177783e52038be7a13aaf4bec64f55898fe18f7abcf9045908ad  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 211539.png
 da5abc0a861d325e8ddb2eaf3fef44692a85982b00e8d0317a18b7d136620bb9  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 211748.png
-0667a2957c2d81a4e544a774a4e69e3385137ccfb638b5c8aac1269410f1612e  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214750.png
-eab413ebc09fad2f6084ca02cf1cfabbb5f94790736a6b2c000e181e8ed96879  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214757.png
-36546a8e84c832d30e717c1fe344ea355138166bae1c8e5662be0754dc1f0103  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214807.png
-56a36d39e20f96c08f75349f6271c185a153953d5b4497492cfda7ce839ab58a  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214814.png
-e3d313409ea1807f89b0824eff01ac4daf78407d2f48965e98a373a389ab2e38  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214818.png
-db0bf3cd2f86152151190cc4835c86220d203ca8f7b8c22a3fe59b34602a6bb8  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214827.png
+2a4f393c9ab7030ca3be952943c64b0acebbf7d0af179a5b09c8c1500f5554a8  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214750.png
+2fdade26abbf2022bf5f928ce1a579fd62e3821560ec3ee64485a578a7991354  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214757.png
+1209c906a0a0e01bb1904317e1ac63eebb508d96b2fbf0fdad54aa7ec9ec4174  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214807.png
+bf2c282b61970042771bf70bd3e6e4b511684dee00e72a58cc007e2fd7b0f3f3  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214814.png
+d641024570d10e984d1acffc1217d4126adbb8fedcc52fa0f84cd8152dda068a  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214818.png
+4659e466b5c8ecc7f66db8101b0c74f748ef0f0c71d388d239be552bacd14193  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 214827.png
 1ad90aa799b80beb6c8211d95cc0c9e742df6a689c958b2780a5dd5ef16508a3  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-02 232059.png
 4becbb8c8e02c9eb51b7c0f1171a48e729c50e14206afaab5a9664a3786231e4  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 161308.png
 1d085638b336be17b5d114dc31b8568c8ab249a9b86ea0202449a21a2e5cea28  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 162709.png
@@ -60,7 +60,7 @@ db0bf3cd2f86152151190cc4835c86220d203ca8f7b8c22a3fe59b34602a6bb8  M01-Hypervisor
 f81615090617522159a830a08f9044b74087311432e1c1de20ba8e3862fc1f67  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 223326.png
 4c72bae530b7b9b7610a70dcf9f45fc4a6b483ac04c9442ff7a8cee3761f5811  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 223631.png
 0135d19f3be049e6c2785928ad6c845289bdde438d91ab1303876478cd49d9d6  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 224224.png
-c9390a36056470a36753289d0b260758e795600a9dc88638e7fdcd49f4297b92  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 224709.png
+9b46395c1cba5d8123c93468862dac4d7b64cb48ba9c4ab84651fea8c32db83c  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 224709.png
 5521523fe87df0c3ed136d5597d631b118b86e2d8b6d1c803625a07a2f6f8ff5  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-03 225546.png
 d995f49e87f251818572ff1d231e5caabebbe0ec507460a70584dcd02591917a  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-04 002440.png
 460985f4b04fa6546f6420a4496eac4e6c13f740d85f60bdaf7ed4916a402cf3  M01-Hypervisor-Fortress/M01-Bewijsvoering/Screenshot 2026-11-05 172230.png

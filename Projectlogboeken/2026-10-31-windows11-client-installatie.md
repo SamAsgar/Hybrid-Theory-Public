@@ -1,4 +1,4 @@
-> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
+> **Historische momentopname (gesaneerde export).** Deze sessie is niet retrospectief aangepast aan later werk; zie [de actuele roadmap](ROADMAP.md) en [publieke besluiten](../Governance/BESLUITENLOG.md). Echte IP-adressen, domeinen, paden, privésystemen en interne bronlinks zijn verwijderd. `LAB_IP_REDACTED` is geen bruikbare configuratiewaarde.
 
 # Projectlog | 31 oktober 2026
 
@@ -11,7 +11,7 @@
 ## Windows 11-client geïnstalleerd: eerste desktop bereikt
 
 **Project:** Hybrid-Theory  
-**Component:** `PS-HT-CLIENT01-Win11` (VMware Workstation Pro)  
+**Component:** `CLIENT01` (VMware Workstation Pro)  
 **Sessietype:** OS-installatie en eerste inrichting (OOBE)  
 **Uitvoering:** Sam met stapsgewijze begeleiding van ChatGPT  
 **Methodologie:** Risk-Based Validation  
@@ -23,7 +23,7 @@ De Windows 11-client is als afzonderlijke virtuele machine geïnstalleerd. De ee
 
 ### Uitgevoerde stappen en observaties
 
-1. Bestaande VMware-VM `PS-HT-CLIENT01-Win11` opgestart. Vanuit de UEFI Boot Manager gestart vanaf de virtuele SATA-CDROM met de Windows 11-installatiemedia.
+1. Bestaande VMware-VM `CLIENT01` opgestart. Vanuit de UEFI Boot Manager gestart vanaf de virtuele SATA-CDROM met de Windows 11-installatiemedia.
 2. Windows Setup: toetsenbord **United States-International** gekozen; nieuwe installatie (**Install Windows 11**) geselecteerd.
 3. De installatiedoelschijf in Windows Setup was **Disk 0: 64,0 GB Unallocated Space**. De lege virtuele schijf is geselecteerd; Windows Setup beheert de benodigde partities.
 4. Windows 11 OOBE uitgevoerd. Bij netwerkverbinding is **I don't have internet** gekozen; verdere eerste inrichting is afgerond.

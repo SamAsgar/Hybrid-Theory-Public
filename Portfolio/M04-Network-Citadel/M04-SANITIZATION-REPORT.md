@@ -1,7 +1,7 @@
 # M04 | Saneringsrapport en publicatieverantwoording
 
 **Datum migratie:** 17 november 2026  
-**Bron:** private repository, map `Portfolio/Lab-4 | Network Citadel` (alleen gelezen, niets gewijzigd)  
+**Bron:** Private, map `Portfolio/Lab-4 | Network Citadel` (alleen gelezen, niets gewijzigd)  
 **Doel:** `Portfolio/M04-Network-Citadel/` in deze publieke repository  
 **Principe:** maximale technische transparantie, geen gevoelige blootstelling. Bij twijfel is gemaskeerd.
 

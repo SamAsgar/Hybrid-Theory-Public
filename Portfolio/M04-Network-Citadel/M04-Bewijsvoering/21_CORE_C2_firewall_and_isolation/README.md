@@ -11,7 +11,7 @@ De openbare PNG's zijn afgeleiden van de private originelen. Geselecteerde woord
 
 De opnamen staan chronologisch op tijd (CET). Voor Windows-opnamen komt de tijd uit de oorspronkelijke bestandsnaam; voor de overige opnamen is de bijlagetijd een indicatie en kan de werkelijke opname eerder liggen. Tijden die in een log of terminal zichtbaar zijn, horen bij de getoonde gebeurtenis. Test-ID's staan alleen waar de koppeling bevestigd is. Twee bronopnamen zijn byte-identiek (M04-20261120-015 en -016); beide afgeleiden zijn behouden en de hashes gelden voor de openbare afgeleiden.
 
-Een screenshot, een firewallregel en een connectiviteitstime-out zijn ieder afzonderlijk beperkt bewijs. Configuratiebeelden gelden als contextbewijs. De onderliggende originelen blijven in de private repository; publicatie is geen onafhankelijke audit of integrale missie-PASS. [C2-projectlog](../../../../projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md)
+Een screenshot, een firewallregel en een connectiviteitstime-out zijn ieder afzonderlijk beperkt bewijs. Configuratiebeelden gelden als contextbewijs. De onderliggende originelen blijven in Private; publicatie is geen onafhankelijke audit of integrale missie-PASS. [C2-projectlog](../../../../Projectlogboeken/2026-11-20-m04-core-c2-netwerkvalidatie.md)
 
 ## Bewijsreeks
 

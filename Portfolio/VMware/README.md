@@ -69,7 +69,7 @@ Sanitized momentopname van de **uitgeschakelde FUXA-VM** in VMware Workstation. 
 
 ## 9. OpenPLC | VMware-hardware-inventaris (5 november 2026)
 
-Gesaneerde momentopname van de virtuele machine `PS-HT-OT-PLC01` in VMware Workstation. Zichtbaar op het moment van vastlegging: **2 GB RAM, 2 processors, 20 GB SCSI-opslag** en één netwerkadapter op **NAT**. De VM staat **uit** (VMware toont *Power on this virtual machine*). De overige VM-inventaris is buiten beeld gelaten en het lokale CD/DVD-/ISO-pad is onomkeerbaar afgeschermd. Het beeld is voor compacte en veilige publicatie in zwart-wit opgeslagen; de getoonde resourcewaarden zijn niet gewijzigd.
+Gesaneerde momentopname van de virtuele machine `PLC01` in VMware Workstation. Zichtbaar op het moment van vastlegging: **2 GB RAM, 2 processors, 20 GB SCSI-opslag** en één netwerkadapter op **NAT**. De VM staat **uit** (VMware toont *Power on this virtual machine*). De overige VM-inventaris is buiten beeld gelaten en het lokale CD/DVD-/ISO-pad is onomkeerbaar afgeschermd. Het beeld is voor compacte en veilige publicatie in zwart-wit opgeslagen; de getoonde resourcewaarden zijn niet gewijzigd.
 
 ![OpenPLC | gesaneerde VMware-hardware-inventaris](09-OpenPLC-VMware-Inventory-Sanitized.png)
 
