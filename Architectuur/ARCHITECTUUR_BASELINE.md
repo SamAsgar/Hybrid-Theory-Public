@@ -51,4 +51,4 @@ Technische bewijsvoering volgt de keten: `securitydoel → control → configura
 
 De technische architectuurbaseline blijft een VMware/pfSense-omgeving met WAN-SIM, MGMT, LAB en een afzonderlijke OT-zone. Diagram A is op 20 november geactualiseerd; diagram B kreeg alleen gedateerde statusnotities. Dit is een **statusdelta, geen herontwerp**. Op 19 november zijn de OpenPLC-autostartcorrectie en HMI START→STOP-readback binnen scope getest. Gerichte LAB→OT- en OT→andere-zone/extern-blokkeringen zijn met pfSense-logs gecorreleerd; de volledige AC04/AC07-matrix en formele eigenaaracceptatie blijven **PENDING**. De gerichte uitvoering van 20 november verandert deze acceptatiegrenzen niet.
 
-[Actuele afgebakende testobservaties](NETWERKONTWERP.md#5-m04-harmonisatie-1920-november-2026) · [Gesaneerde fase-20-evidence](../Portfolio/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md).
+[Actuele afgebakende testobservaties](NETWERKONTWERP.md#5-m04-harmonisatie-1920-november-2026) · [Gesaneerde fase-20-evidence](../Labs/M04-Network-Citadel/M04-Bewijsvoering/20_OT_segmentation_and_regression/README.md).

@@ -39,7 +39,7 @@
 
 ## Integriteit
 
-De gepubliceerde PNG's zijn afgeleiden, geen originelen. De hashes in [MANIFEST_SHA256.txt](MANIFEST_SHA256.txt) horen bij deze publieke bestanden. Hashes van de private originelen worden bewust niet gepubliceerd. Controle vanuit `Portfolio/`:
+De gepubliceerde PNG's zijn afgeleiden, geen originelen. De hashes in [MANIFEST_SHA256.txt](MANIFEST_SHA256.txt) horen bij deze publieke bestanden. Hashes van de private originelen worden bewust niet gepubliceerd. Controle vanuit `Labs/`:
 
 ```bash
 sha256sum -c M01-Hypervisor-Fortress/MANIFEST_SHA256.txt

@@ -25,7 +25,7 @@ M04 rapporteert een geslaagde, afgebakende blokkade aan de geteste netwerkgrens.
 
 De technische missie beheert het bewijs en de testuitslagen. M05 documenteert bron, datum, reikwijdte en begrenzing van de interpretatie.
 
-> **Historische bronpassage** · peilcommit `98bd282`, oorspronkelijk pad `Portfolio/M05-Compliance-Sentinel/M04-Network-Citadel/README.md`. [Permalink](https://github.com/SamAsgar/Hybrid-Theory-Public/blob/98bd28252b2adde6a2c129b1d9d3d12641e4fa2d/Portfolio/M05-Compliance-Sentinel/M04-Network-Citadel/README.md). De onderstaande passage bewaart de toenmalige status. De [mini-index](../README.md#mini-exercise-index) bevat de actuele werkstatus.
+> **Historische bronpassage** · peilcommit `98bd282`, oorspronkelijk pad `Labs/M05-Compliance-Sentinel/M04-Network-Citadel/README.md`. [Permalink](https://github.com/SamAsgar/Hybrid-Theory-Public/blob/98bd28252b2adde6a2c129b1d9d3d12641e4fa2d/Portfolio/M05-Compliance-Sentinel/M04-Network-Citadel/README.md). De onderstaande passage bewaart de toenmalige status. De [mini-index](../README.md#mini-exercise-index) bevat de actuele werkstatus.
 
 <!-- BEGIN HISTORISCHE BRON -->
 

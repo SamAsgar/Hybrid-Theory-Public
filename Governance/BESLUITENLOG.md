@@ -24,7 +24,7 @@
 1. M01–M05 zijn **permanente Main Missions** zonder definitieve afsluitstatus; ontwikkeling en verbetering zijn continu.
 2. Voortgang loopt via **milestones** met expliciete scope, vooraf vastgestelde acceptatiecriteria, bewijs, beoordeling en acceptatie door Sam. **Geen missie heeft Milestone 01 bereikt.** Technische PASS-resultaten blijven scoped bevindingen.
 3. **Mini-oefeningen** sluiten geen milestone of missie af. **Afgebakende zelfstandige missies** vormen later een aparte categorie, met nog vast te stellen identificatie.
-4. **M05 Compliance Sentinel** krijgt zeven onderzoekshoofdstukken (05.1–05.7) en één Framework Register ([M05-documentatie](../Portfolio/M05-Compliance-Sentinel/README.md)). ISO/IEC 27001:2022 Annex A is het primaire startkader voor M05-MINI-01; CAT/ACE v0.4 blijft experimenteel (**CONCEPT / NOT VALIDATED**).
+4. **M05 Compliance Sentinel** krijgt zeven onderzoekshoofdstukken (05.1–05.7) en één Framework Register ([M05-documentatie](../Labs/M05-Compliance-Sentinel/README.md)). ISO/IEC 27001:2022 Annex A is het primaire startkader voor M05-MINI-01; CAT/ACE v0.4 blijft experimenteel (**CONCEPT / NOT VALIDATED**).
 
 **Status:** M05-uitvoering **PENDING**; M05-MS01 **NOT ACHIEVED** (exitcriteria **DRAFT**); M05-MINI-01 **PLANNED**; compliance- of assuranceverklaring **NOT ESTABLISHED**. Dit besluit autoriseert geen technische tests, configuratiewijzigingen of milestone-acceptatie.
 
@@ -54,6 +54,6 @@ Het historische experiment naar verkeer over een grens buiten het eigen lab word
 
 ## PUB-DEC-002 | 21-11-2026 | M05 chapterstructuur en mini-index
      
-**OWNER APPROVED · Sam, 21 november 2026.** ID en tekst ter bevestiging bij merge. De vijf historische assessmentdossiers zijn opgenomen in tien inhoudelijke chapters. De zeven permanente onderzoekshoofdstukken 05.1–05.7 vormen de vaste methodiek. De [mini-index](../Portfolio/M05-Compliance-Sentinel/README.md#mini-exercise-index) registreert zeventien geplande oefeningen, elk in één chapter. Sam is owner. Een oefenmap ontstaat bij de start. Het [Framework Register](../Portfolio/M05-Compliance-Sentinel/README.md#6-framework-register) beheert de kaderkeuze.
+**OWNER APPROVED · Sam, 21 november 2026.** ID en tekst ter bevestiging bij merge. De vijf historische assessmentdossiers zijn opgenomen in tien inhoudelijke chapters. De zeven permanente onderzoekshoofdstukken 05.1–05.7 vormen de vaste methodiek. De [mini-index](../Labs/M05-Compliance-Sentinel/README.md#mini-exercise-index) registreert zeventien geplande oefeningen, elk in één chapter. Sam is owner. Een oefenmap ontstaat bij de start. Het [Framework Register](../Labs/M05-Compliance-Sentinel/README.md#6-framework-register) beheert de kaderkeuze.
 
 M05-uitvoering **PENDING**, MS01 **NOT ACHIEVED**, exitcriteria **DRAFT**, CAT/ACE **CONCEPT / NOT VALIDATED**. C10 blijft intern en experimenteel. Publicatie volgt [PUBLICATIEBELEID §5a](PUBLICATIEBELEID.md#publicatiegates). Het restrisico rond publicatie blijft **OPEN**. Sam beslist afzonderlijk over de definitieve release.

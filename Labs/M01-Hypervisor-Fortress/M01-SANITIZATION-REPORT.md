@@ -1,8 +1,8 @@
 # M01 | Saneringsrapport en publicatieverantwoording
 
 **Datum migratie:** 17 november 2026  
-**Bron:** Private, map `Portfolio/M01-Hypervisor-Fortress` (alleen gelezen, niets gewijzigd)  
-**Doel:** `Portfolio/M01-Hypervisor-Fortress/` in deze publieke repository  
+**Bron:** Private, map `Labs/M01-Hypervisor-Fortress` (alleen gelezen, niets gewijzigd)  
+**Doel:** `Labs/M01-Hypervisor-Fortress/` in deze publieke repository  
 **Principe:** maximale technische transparantie, geen gevoelige blootstelling. Bij twijfel is gemaskeerd.
 
 ## 1. Werkwijze
