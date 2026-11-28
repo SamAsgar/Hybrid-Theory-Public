@@ -26,9 +26,9 @@ De Nederlandstalige rapportage is uitgebreid tot elf pagina's met bedrijfscontex
 
 ## Documentatie en verwijzingen
 
-- [MINI-01 dossier](../Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/README.md)
-- [Nederlandstalig rapport](../Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/M05-MINI-01-Educatief-Afsluitdossier.pdf) · [English research report](../Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/M05-MINI-01-IT-OT-Network-Segmentation-EN.pdf)
-- [Controlassessment](../Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/CONTROL-ASSESSMENT.md) · [Managementadvies](../Portfolio/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/MANAGEMENT-REPORT.md)
+- [MINI-01 dossier](../Labs/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/README.md)
+- [Nederlandstalig rapport](../Labs/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/M05-MINI-01-Educatief-Afsluitdossier.pdf) · [English research report](../Labs/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/M05-MINI-01-IT-OT-Network-Segmentation-EN.pdf)
+- [Controlassessment](../Labs/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/CONTROL-ASSESSMENT.md) · [Managementadvies](../Labs/M05-Compliance-Sentinel/C04_Network_Segmentation_OT/M05-MINI-01_ISO27001_Control_Assessment/MANAGEMENT-REPORT.md)
 - [M04-log 21 november](2026-11-21-m04-core-management-segmentatie.md) · [M05-issue](https://github.com/SamAsgar/Hybrid-Theory-Public/issues/46) · [Roadmap](ROADMAP.md)
 
 ## Aanvulling na merge · 24 november 2026

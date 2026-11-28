@@ -478,7 +478,7 @@ Bij de verdere ontwikkeling moeten onder meer **effectieve scoring zonder willek
 - [Wet- en regelgeving](WET_EN_REGELGEVING.md).
 - [Architectuurbaseline](../Architectuur/ARCHITECTUUR_BASELINE.md).
 - [Projectroadmap](../Projectlogboeken/ROADMAP.md).
-- [Technische evidence](../Portfolio/README.md).
+- [Technische evidence](../Labs/README.md).
 - [Academische inspiratie: masterscriptie systeemrisico](../Onderzoek/Academische-Referenties/scriptie-2021.md).
 
 **Versiebeheer:** v0.4 is een **onderzoeksversie**, geen afgerond empirisch resultaat. De eerdere [v0.2](CAT_ACE_v0.2.md) blijft apart behouden. v0.3 werd als concept onderzocht; v0.4 gebruikt **Audit / Cost / Efficiency** intern, extern of hybride, zonder bewezen superioriteit. Wijzigingen in methodologie, evidenceclassificatie en benchmarkcriteria horen later expliciet gedateerd en verantwoord te worden. Gepubliceerde onderzoeksresultaten mogen niet achteraf worden aangepast aan een gewijzigde hypothese zonder vermelding.
